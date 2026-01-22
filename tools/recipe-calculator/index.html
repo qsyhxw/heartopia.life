@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Heartopia Recipe Calculator: Calculate Cooking Profits</title>
+    <meta name="description"
+        content="Free Heartopia recipe profit calculator. Calculate cooking profits, compare recipe ROI, and find the best dishes to maximize your Gold earnings!">
+    <meta name="keywords"
+        content="heartopia calculator, heartopia recipe profit, heartopia cooking calculator, heartopia gold calculator">
+    <meta name="author" content="Heartopia.Life">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://heartopia.life/tools/recipe-calculator/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Heartopia Recipe Calculator">
+    <meta property="og:description" content="Calculate cooking profits and find the best recipes.">
+    <meta property="og:url" content="https://heartopia.life/tools/recipe-calculator/">
+    <meta property="og:site_name" content="Heartopia.Life">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cozy': {
+                            'cream': '#FFF8F0',
+                            'peach': '#FFE5D9',
+                            'coral': '#FF9B85',
+                            'rose': '#D4A5A5',
+                            'sage': '#A8C686',
+                            'mint': '#B8E0D2',
+                            'sky': '#95C8D8',
+                            'wood': '#8B7355',
+                            'bark': '#5D4E37',
+                        }
+                    },
+                    fontFamily: {
+                        'display': ['Georgia', 'serif'],
+                        'body': ['system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(139, 115, 85, 0.12);
+        }
+    </style>
+</head>
+
+<body class="bg-cozy-cream text-cozy-bark font-body">
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-cozy-peach/50">
+        <nav class="max-w-6xl mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center gap-2 group">
+                    <span class="text-2xl">🏡</span>
+                    <span class="font-display text-xl font-bold text-cozy-bark">Heartopia<span
+                            class="text-cozy-sage">.Life</span></span>
+                </a>
+                <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+                    <li><a href="/codes/" class="hover:text-cozy-coral">🎁 Codes</a></li>
+                    <li><a href="/beginner-guide/" class="hover:text-cozy-coral">Guides</a></li>
+                    <li><a href="/hobbies/" class="hover:text-cozy-coral">Hobbies</a></li>
+                    <li><a href="/npcs/" class="hover:text-cozy-coral">NPCs</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-8">
+
+        <!-- Breadcrumb -->
+        <nav class="text-sm text-cozy-wood mb-6">
+            <a href="/" class="hover:text-cozy-coral">Home</a>
+            <span class="mx-2">›</span>
+            <a href="/tools/" class="hover:text-cozy-coral">Tools</a>
+            <span class="mx-2">›</span>
+            <span class="text-cozy-bark font-medium">Recipe Calculator</span>
+        </nav>
+
+        <!-- Hero -->
+        <div class="bg-gradient-to-br from-amber-100 to-cozy-coral/20 rounded-2xl p-6 md:p-8 mb-8">
+            <div class="flex items-center gap-2 text-sm font-medium text-cozy-sage mb-3">
+                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                Interactive Tool
+            </div>
+            <h1 class="font-display text-3xl md:text-4xl font-bold text-cozy-bark mb-4">
+                🧮 Heartopia Recipe Calculator
+            </h1>
+            <p class="text-cozy-wood text-lg">
+                Calculate cooking profits instantly. Select a recipe, input ingredient costs, and see your
+                <strong>profit per dish</strong>!
+            </p>
+        </div>
+
+        <!-- Calculator Section -->
+        <section class="bg-white rounded-2xl p-6 border border-cozy-peach/30 mb-8">
+            <h2 class="font-display text-xl font-bold mb-6 flex items-center gap-2">
+                📊 Profit Calculator
+            </h2>
+
+            <!-- Recipe Selector -->
+            <div class="mb-6">
+                <label class="block text-sm font-medium mb-2">Select Recipe:</label>
+                <select id="recipe-select"
+                    class="w-full p-3 border border-cozy-peach rounded-lg bg-cozy-cream focus:ring-2 focus:ring-cozy-coral focus:border-cozy-coral"
+                    onchange="updateRecipe()">
+                    <option value="">-- Choose a Recipe --</option>
+                    <optgroup label="🍓 Jams (Best Profit)">
+                        <option value="apple-jam">Apple Jam (4x Apple)</option>
+                        <option value="blueberry-jam">Blueberry Jam (4x Blueberry)</option>
+                        <option value="strawberry-jam">Strawberry Jam (4x Strawberry)</option>
+                        <option value="mixed-jam">Mixed Jam (4x Mixed Fruits)</option>
+                    </optgroup>
+                    <optgroup label="🥗 Salads">
+                        <option value="house-salad">House Salad (2x Vegetable)</option>
+                        <option value="fruit-salad">Fruit Salad (2x Strawberry + 1x Apple)</option>
+                    </optgroup>
+                    <optgroup label="🍲 Soups & Stews">
+                        <option value="mushroom-stew">Mushroom Stew (2x Potato + 4x Mushroom + 1x Onion)</option>
+                        <option value="fish-soup">Fish Soup (1x Herb + 2x Fish + 2x Tomato + 2x Potato)</option>
+                        <option value="vegetable-soup">Vegetable Soup (1x Cabbage + 2x Carrot + 1x Onion + 2x Potato)
+                        </option>
+                    </optgroup>
+                    <optgroup label="🥧 Baked Goods">
+                        <option value="mushroom-pie">Mushroom Pie (2x Mushroom + 1x Wheat + 1x Egg)</option>
+                        <option value="cheesecake">Cheesecake (1x Cheese + 1x Milk + 1x Wheat)</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <!-- Ingredients Display -->
+            <div id="ingredients-section" class="hidden mb-6">
+                <label class="block text-sm font-medium mb-2">Ingredients Cost (enter your buy/farm cost):</label>
+                <div id="ingredients-list" class="space-y-3">
+                    <!-- Dynamic ingredients will be added here -->
+                </div>
+            </div>
+
+            <!-- Star Rating -->
+            <div id="star-section" class="hidden mb-6">
+                <label class="block text-sm font-medium mb-2">Quality Star Rating:</label>
+                <div class="flex gap-2">
+                    <button onclick="setStarRating(1)"
+                        class="star-btn px-4 py-2 rounded-lg border border-cozy-peach hover:bg-cozy-peach/50 transition-colors"
+                        data-star="1">★</button>
+                    <button onclick="setStarRating(2)"
+                        class="star-btn px-4 py-2 rounded-lg border border-cozy-peach hover:bg-cozy-peach/50 transition-colors"
+                        data-star="2">★★</button>
+                    <button onclick="setStarRating(3)"
+                        class="star-btn px-4 py-2 rounded-lg border border-cozy-peach hover:bg-cozy-peach/50 transition-colors"
+                        data-star="3">★★★</button>
+                    <button onclick="setStarRating(4)"
+                        class="star-btn px-4 py-2 rounded-lg border border-cozy-peach hover:bg-cozy-peach/50 transition-colors"
+                        data-star="4">★★★★</button>
+                    <button onclick="setStarRating(5)"
+                        class="star-btn px-4 py-2 rounded-lg border border-cozy-peach hover:bg-cozy-peach/50 transition-colors"
+                        data-star="5">★★★★★</button>
+                </div>
+                <p class="text-xs text-cozy-wood mt-1">Higher stars = higher sell price (depends on Cooking Level)</p>
+            </div>
+
+            <!-- Calculate Button -->
+            <button id="calculate-btn" onclick="calculateProfit()"
+                class="hidden w-full bg-cozy-coral hover:bg-cozy-rose text-white font-bold py-3 rounded-xl transition-colors">
+                Calculate Profit 💰
+            </button>
+
+            <!-- Results -->
+            <div id="results"
+                class="hidden mt-6 p-4 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl border border-green-200">
+                <h3 class="font-bold text-lg mb-3">📈 Results</h3>
+                <div class="grid grid-cols-2 gap-4 text-sm">
+                    <div>
+                        <span class="text-cozy-wood">Ingredient Cost:</span>
+                        <span id="result-cost" class="font-bold text-red-500 ml-2">0G</span>
+                    </div>
+                    <div>
+                        <span class="text-cozy-wood">Sell Price:</span>
+                        <span id="result-sell" class="font-bold text-green-600 ml-2">0G</span>
+                    </div>
+                    <div class="col-span-2 pt-2 border-t border-green-200">
+                        <span class="text-cozy-wood">Net Profit:</span>
+                        <span id="result-profit" class="font-bold text-2xl text-green-600 ml-2">0G</span>
+                        <span id="result-roi" class="text-sm text-cozy-wood ml-2">(0% ROI)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Profit Reference -->
+        <section class="bg-white rounded-2xl p-6 border border-cozy-peach/30 mb-8">
+            <h2 class="font-display text-xl font-bold mb-4 flex items-center gap-2">
+                🏆 Best Profit Recipes (Quick Reference)
+            </h2>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm">
+                    <thead class="bg-amber-50 text-left">
+                        <tr>
+                            <th class="px-4 py-3 font-bold">Recipe</th>
+                            <th class="px-4 py-3 font-bold">Sell (1★)</th>
+                            <th class="px-4 py-3 font-bold">Sell (3★)</th>
+                            <th class="px-4 py-3 font-bold">Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-cozy-peach/20">
+                        <tr class="bg-yellow-50/50">
+                            <td class="px-4 py-2 font-medium">🍄 Mushroom Stew</td>
+                            <td class="px-4 py-2">~300G</td>
+                            <td class="px-4 py-2 font-bold text-green-600">500G</td>
+                            <td class="px-4 py-2 text-xs text-cozy-wood">Free mushrooms!</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 font-medium">🌈 Mixed Jam</td>
+                            <td class="px-4 py-2">~200G</td>
+                            <td class="px-4 py-2 font-bold text-green-600">320G</td>
+                            <td class="px-4 py-2 text-xs text-cozy-wood">Use foraged fruits</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 font-medium">🐟 Fish Soup</td>
+                            <td class="px-4 py-2">~180G</td>
+                            <td class="px-4 py-2 font-bold text-green-600">260G</td>
+                            <td class="px-4 py-2 text-xs text-cozy-wood">Use cheap fish</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 font-medium">🫐 Blueberry Jam</td>
+                            <td class="px-4 py-2">170G</td>
+                            <td class="px-4 py-2 font-bold">255G</td>
+                            <td class="px-4 py-2 text-xs text-cozy-wood">Easy to make</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 font-medium">🍎 Apple Jam</td>
+                            <td class="px-4 py-2">180G</td>
+                            <td class="px-4 py-2 font-bold">270G</td>
+                            <td class="px-4 py-2 text-xs text-cozy-wood">Free apples from trees</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section class="bg-cozy-mint/20 rounded-xl p-6 mb-8">
+            <h2 class="font-bold mb-3">💡 Profit Tips</h2>
+            <ul class="text-sm text-cozy-wood space-y-2">
+                <li>• <strong>Use 1★ ingredients</strong> — Higher star raw materials may sell for more directly</li>
+                <li>• <strong>Forage free ingredients</strong> — Mushrooms, apples, and berries are free!</li>
+                <li>• <strong>Level up Cooking</strong> — Higher levels unlock higher star dishes</li>
+                <li>• <strong>Avoid burning</strong> — Failed QTE = lower quality dish</li>
+            </ul>
+        </section>
+
+        <!-- Related Guides -->
+        <section class="pt-8 border-t border-cozy-peach/30">
+            <h2 class="font-bold text-xl mb-6">📚 Related Guides</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <a href="/database/recipes/"
+                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-3xl">🍳</span>
+                    <div>
+                        <h3 class="font-bold">Recipe Database</h3>
+                        <p class="text-sm text-cozy-wood">All recipes & ingredients</p>
+                    </div>
+                </a>
+                <a href="/hobbies/cooking/"
+                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-3xl">👨‍🍳</span>
+                    <div>
+                        <h3 class="font-bold">Cooking Guide</h3>
+                        <p class="text-sm text-cozy-wood">How to unlock & level</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Disclaimer -->
+        <section class="mt-8 bg-cozy-bark/10 rounded-xl p-4 text-sm text-cozy-wood">
+            <p>Prices are estimates based on community data. Actual in-game prices may vary by star rating and game
+                version. This is an unofficial fan tool.</p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-cozy-bark text-white py-8 mt-12">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <a href="/" class="inline-flex items-center gap-2 mb-4">
+                <span class="text-xl">🏡</span>
+                <span class="font-display font-bold">Heartopia<span class="text-cozy-sage">.Life</span></span>
+            </a>
+            <p class="text-white/60 text-sm mb-4">Unofficial fan site. Not affiliated with XD Entertainment.</p>
+            <p class="text-white/40 text-xs">© 2026 Heartopia.Life</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Calculator Logic -->
+    <script>
+        // Recipe data with sell prices (1-star base)
+        const recipes = {
+            'apple-jam': {
+                name: 'Apple Jam',
+                ingredients: [{ name: 'Apple', qty: 4, defaultCost: 0 }],
+                sellPrices: [180, 225, 270, 360, 450]
+            },
+            'blueberry-jam': {
+                name: 'Blueberry Jam',
+                ingredients: [{ name: 'Blueberry', qty: 4, defaultCost: 16 }],
+                sellPrices: [170, 212, 255, 340, 425]
+            },
+            'strawberry-jam': {
+                name: 'Strawberry Jam',
+                ingredients: [{ name: 'Strawberry', qty: 4, defaultCost: 20 }],
+                sellPrices: [180, 225, 270, 360, 450]
+            },
+            'mixed-jam': {
+                name: 'Mixed Jam',
+                ingredients: [{ name: 'Mixed Fruits', qty: 4, defaultCost: 15 }],
+                sellPrices: [200, 260, 320, 400, 500]
+            },
+            'house-salad': {
+                name: 'House Salad',
+                ingredients: [{ name: 'Vegetable', qty: 2, defaultCost: 30 }],
+                sellPrices: [90, 112, 135, 180, 225]
+            },
+            'fruit-salad': {
+                name: 'Fruit Salad',
+                ingredients: [
+                    { name: 'Strawberry', qty: 2, defaultCost: 20 },
+                    { name: 'Apple', qty: 1, defaultCost: 0 }
+                ],
+                sellPrices: [55, 68, 82, 110, 137]
+            },
+            'mushroom-stew': {
+                name: 'Mushroom Stew',
+                ingredients: [
+                    { name: 'Potato', qty: 2, defaultCost: 25 },
+                    { name: 'Mushroom', qty: 4, defaultCost: 0 },
+                    { name: 'Onion', qty: 1, defaultCost: 20 }
+                ],
+                sellPrices: [300, 375, 500, 600, 750]
+            },
+            'fish-soup': {
+                name: 'Fish Soup',
+                ingredients: [
+                    { name: 'Herb', qty: 1, defaultCost: 10 },
+                    { name: 'Fish', qty: 2, defaultCost: 50 },
+                    { name: 'Tomato', qty: 2, defaultCost: 30 },
+                    { name: 'Potato', qty: 2, defaultCost: 25 }
+                ],
+                sellPrices: [180, 220, 260, 340, 420]
+            },
+            'vegetable-soup': {
+                name: 'Vegetable Soup',
+                ingredients: [
+                    { name: 'Cabbage', qty: 1, defaultCost: 35 },
+                    { name: 'Carrot', qty: 2, defaultCost: 20 },
+                    { name: 'Onion', qty: 1, defaultCost: 20 },
+                    { name: 'Potato', qty: 2, defaultCost: 25 }
+                ],
+                sellPrices: [150, 187, 225, 300, 375]
+            },
+            'mushroom-pie': {
+                name: 'Mushroom Pie',
+                ingredients: [
+                    { name: 'Mushroom', qty: 2, defaultCost: 0 },
+                    { name: 'Wheat', qty: 1, defaultCost: 15 },
+                    { name: 'Egg', qty: 1, defaultCost: 20 }
+                ],
+                sellPrices: [120, 150, 180, 240, 300]
+            },
+            'cheesecake': {
+                name: 'Cheesecake',
+                ingredients: [
+                    { name: 'Cheese', qty: 1, defaultCost: 50 },
+                    { name: 'Milk', qty: 1, defaultCost: 30 },
+                    { name: 'Wheat', qty: 1, defaultCost: 15 }
+                ],
+                sellPrices: [150, 187, 225, 300, 375]
+            }
+        };
+
+        let currentRecipe = null;
+        let currentStarRating = 1;
+
+        function updateRecipe() {
+            const select = document.getElementById('recipe-select');
+            const recipeKey = select.value;
+
+            if (!recipeKey) {
+                document.getElementById('ingredients-section').classList.add('hidden');
+                document.getElementById('star-section').classList.add('hidden');
+                document.getElementById('calculate-btn').classList.add('hidden');
+                document.getElementById('results').classList.add('hidden');
+                currentRecipe = null;
+                return;
+            }
+
+            currentRecipe = recipes[recipeKey];
+
+            // Generate ingredient inputs
+            const ingredientsList = document.getElementById('ingredients-list');
+            ingredientsList.innerHTML = currentRecipe.ingredients.map((ing, i) => `
+                <div class="flex items-center gap-3">
+                    <span class="w-32 text-sm">${ing.qty}x ${ing.name}</span>
+                    <input type="number" id="ing-${i}" value="${ing.defaultCost * ing.qty}" 
+                           class="flex-1 p-2 border border-cozy-peach rounded-lg" 
+                           placeholder="Cost in Gold" min="0">
+                    <span class="text-cozy-wood text-sm">G</span>
+                </div>
+            `).join('');
+
+            // Show sections
+            document.getElementById('ingredients-section').classList.remove('hidden');
+            document.getElementById('star-section').classList.remove('hidden');
+            document.getElementById('calculate-btn').classList.remove('hidden');
+            document.getElementById('results').classList.add('hidden');
+
+            // Reset star rating
+            setStarRating(1);
+        }
+
+        function setStarRating(stars) {
+            currentStarRating = stars;
+            document.querySelectorAll('.star-btn').forEach(btn => {
+                if (parseInt(btn.dataset.star) === stars) {
+                    btn.classList.add('bg-cozy-coral', 'text-white');
+                    btn.classList.remove('hover:bg-cozy-peach/50');
+                } else {
+                    btn.classList.remove('bg-cozy-coral', 'text-white');
+                    btn.classList.add('hover:bg-cozy-peach/50');
+                }
+            });
+        }
+
+        function calculateProfit() {
+            if (!currentRecipe) return;
+
+            // Calculate total ingredient cost
+            let totalCost = 0;
+            currentRecipe.ingredients.forEach((ing, i) => {
+                const input = document.getElementById(`ing-${i}`);
+                totalCost += parseInt(input.value) || 0;
+            });
+
+            // Get sell price based on star rating
+            const sellPrice = currentRecipe.sellPrices[currentStarRating - 1];
+            const profit = sellPrice - totalCost;
+            const roi = totalCost > 0 ? Math.round((profit / totalCost) * 100) : (profit > 0 ? 999 : 0);
+
+            // Display results
+            document.getElementById('result-cost').textContent = `${totalCost}G`;
+            document.getElementById('result-sell').textContent = `${sellPrice}G`;
+            document.getElementById('result-profit').textContent = `${profit >= 0 ? '+' : ''}${profit}G`;
+            document.getElementById('result-profit').className = profit >= 0 ? 'font-bold text-2xl text-green-600 ml-2' : 'font-bold text-2xl text-red-500 ml-2';
+            document.getElementById('result-roi').textContent = `(${roi}% ROI)`;
+
+            document.getElementById('results').classList.remove('hidden');
+        }
+    </script>
+
+</body>
+
+</html>
