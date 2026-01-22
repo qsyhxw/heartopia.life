@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Heartopia Database: Fish, Recipes & Complete Item Lists</title>
+    <meta name="description"
+        content="Complete Heartopia database. All fish, recipes, crops, and items with locations, prices, and detailed information!">
+    <meta name="keywords" content="heartopia database, heartopia fish, heartopia recipes, heartopia items">
+    <meta name="author" content="Heartopia.Life">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://heartopia.life/database/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Heartopia Database: All Items & Data">
+    <meta property="og:description" content="Complete fish, recipes, and item database for Heartopia.">
+    <meta property="og:url" content="https://heartopia.life/database/">
+    <meta property="og:site_name" content="Heartopia.Life">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cozy': {
+                            'cream': '#FFF8F0',
+                            'peach': '#FFE5D9',
+                            'coral': '#FF9B85',
+                            'rose': '#D4A5A5',
+                            'sage': '#A8C686',
+                            'mint': '#B8E0D2',
+                            'sky': '#95C8D8',
+                            'wood': '#8B7355',
+                            'bark': '#5D4E37',
+                        }
+                    },
+                    fontFamily: {
+                        'display': ['Georgia', 'serif'],
+                        'body': ['system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(139, 115, 85, 0.15);
+        }
+    </style>
+</head>
+
+<body class="bg-cozy-cream text-cozy-bark font-body">
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-cozy-peach/50">
+        <nav class="max-w-6xl mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center gap-2 group">
+                    <span class="text-2xl">🏡</span>
+                    <span class="font-display text-xl font-bold text-cozy-bark">Heartopia<span
+                            class="text-cozy-sage">.Life</span></span>
+                </a>
+                <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+                    <li><a href="/codes/" class="hover:text-cozy-coral">🎁 Codes</a></li>
+                    <li><a href="/beginner-guide/" class="hover:text-cozy-coral">Guides</a></li>
+                    <li><a href="/hobbies/" class="hover:text-cozy-coral">Hobbies</a></li>
+                    <li><a href="/npcs/" class="hover:text-cozy-coral">NPCs</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-8">
+
+        <!-- Breadcrumb -->
+        <nav class="text-sm text-cozy-wood mb-6">
+            <a href="/" class="hover:text-cozy-coral">Home</a>
+            <span class="mx-2">›</span>
+            <span class="text-cozy-bark font-medium">Database</span>
+        </nav>
+
+        <!-- Hero -->
+        <div class="bg-gradient-to-br from-blue-100 to-cozy-sky/30 rounded-2xl p-6 md:p-8 mb-8">
+            <h1 class="font-display text-3xl md:text-4xl font-bold text-cozy-bark mb-4">
+                📚 Heartopia Database
+            </h1>
+            <p class="text-cozy-wood text-lg">
+                Complete item databases with locations, prices, and detailed information for all collectibles!
+            </p>
+        </div>
+
+        <!-- Database Grid -->
+        <section class="grid md:grid-cols-2 gap-6 mb-12">
+
+            <!-- Fish Database -->
+            <a href="/database/fish/" class="card-hover bg-white rounded-2xl p-6 border-2 border-cozy-sky/50">
+                <div class="w-16 h-16 bg-cozy-sky/20 rounded-2xl flex items-center justify-center mb-4">
+                    <span class="text-3xl">🐟</span>
+                </div>
+                <div class="flex items-center gap-2 mb-2">
+                    <h2 class="font-display text-xl font-bold">Fish Database</h2>
+                    <span class="text-xs bg-cozy-sky text-white px-2 py-0.5 rounded-full">94 Fish</span>
+                </div>
+                <p class="text-cozy-wood text-sm mb-3">All fish with locations, times, weather conditions, and sell
+                    prices by star rating.</p>
+                <ul class="text-xs text-cozy-wood space-y-1 mb-3">
+                    <li>• River, Lake & Sea fish</li>
+                    <li>• Rare & Legendary catches</li>
+                    <li>• Price by star rating</li>
+                </ul>
+                <span class="text-cozy-sky font-medium text-sm">Browse Fish →</span>
+            </a>
+
+            <!-- Recipe Database -->
+            <a href="/database/recipes/" class="card-hover bg-white rounded-2xl p-6 border-2 border-cozy-coral/30">
+                <div class="w-16 h-16 bg-cozy-coral/20 rounded-2xl flex items-center justify-center mb-4">
+                    <span class="text-3xl">🍳</span>
+                </div>
+                <div class="flex items-center gap-2 mb-2">
+                    <h2 class="font-display text-xl font-bold">Recipe Database</h2>
+                    <span class="text-xs bg-cozy-coral text-white px-2 py-0.5 rounded-full">25+ Recipes</span>
+                </div>
+                <p class="text-cozy-wood text-sm mb-3">All cooking recipes with ingredients, unlock levels, and sell
+                    prices.</p>
+                <ul class="text-xs text-cozy-wood space-y-1 mb-3">
+                    <li>• Jams, Soups, Pies & more</li>
+                    <li>• Ingredient lists</li>
+                    <li>• Profit comparison</li>
+                </ul>
+                <span class="text-cozy-coral font-medium text-sm">Browse Recipes →</span>
+            </a>
+
+            <!-- Coming Soon: Crops -->
+            <div class="bg-white/50 rounded-2xl p-6 border-2 border-dashed border-cozy-peach/50 opacity-60">
+                <div class="w-16 h-16 bg-cozy-sage/20 rounded-2xl flex items-center justify-center mb-4">
+                    <span class="text-3xl">🌾</span>
+                </div>
+                <h2 class="font-display text-xl font-bold mb-2">Crop Database</h2>
+                <p class="text-cozy-wood text-sm mb-3">All crops with growth times, seed prices, and harvest values.</p>
+                <span class="text-cozy-wood font-medium text-sm">Coming Soon</span>
+            </div>
+
+            <!-- Coming Soon: Insects -->
+            <div class="bg-white/50 rounded-2xl p-6 border-2 border-dashed border-cozy-peach/50 opacity-60">
+                <div class="w-16 h-16 bg-cozy-mint/30 rounded-2xl flex items-center justify-center mb-4">
+                    <span class="text-3xl">🦋</span>
+                </div>
+                <h2 class="font-display text-xl font-bold mb-2">Insect Database</h2>
+                <p class="text-cozy-wood text-sm mb-3">All insects with locations, times, weather, and sell prices.</p>
+                <span class="text-cozy-wood font-medium text-sm">Coming Soon</span>
+            </div>
+
+        </section>
+
+        <!-- Related Links -->
+        <section class="pt-8 border-t border-cozy-peach/30">
+            <h2 class="font-bold text-xl mb-6">🛠️ Interactive Tools</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <a href="/tools/recipe-calculator/"
+                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-2xl">🧮</span>
+                    <div>
+                        <h3 class="font-bold">Recipe Calculator</h3>
+                        <p class="text-sm text-cozy-wood">Calculate cooking profits</p>
+                    </div>
+                </a>
+                <a href="/tools/"
+                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-2xl">🛠️</span>
+                    <div>
+                        <h3 class="font-bold">All Tools</h3>
+                        <p class="text-sm text-cozy-wood">Calculators & helpers</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-cozy-bark text-white py-8 mt-12">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <a href="/" class="inline-flex items-center gap-2 mb-4">
+                <span class="text-xl">🏡</span>
+                <span class="font-display font-bold">Heartopia<span class="text-cozy-sage">.Life</span></span>
+            </a>
+            <p class="text-white/60 text-sm mb-4">Unofficial fan site. Not affiliated with XD Entertainment.</p>
+            <p class="text-white/40 text-xs">© 2026 Heartopia.Life</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
