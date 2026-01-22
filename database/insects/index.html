@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Heartopia Insects Database: All Butterflies, Beetles & Moths</title>
+    <meta name="description"
+        content="Complete Heartopia insect database. 30+ butterflies, beetles & moths with locations, spawn times, weather conditions & sell prices by star rating.">
+    <meta name="keywords"
+        content="heartopia insects, heartopia butterflies, heartopia beetles, heartopia moths, heartopia insect catching">
+    <meta name="author" content="Heartopia.Life">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://heartopia.life/database/insects/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Heartopia Insects Database: Butterflies, Beetles & Moths">
+    <meta property="og:description" content="Complete insect database with locations, times, weather, and sell prices.">
+    <meta property="og:url" content="https://heartopia.life/database/insects/">
+    <meta property="og:site_name" content="Heartopia.Life">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cozy': {
+                            'cream': '#FFF8F0',
+                            'peach': '#FFE5D9',
+                            'coral': '#FF9B85',
+                            'rose': '#D4A5A5',
+                            'sage': '#A8C686',
+                            'mint': '#B8E0D2',
+                            'sky': '#95C8D8',
+                            'wood': '#8B7355',
+                            'bark': '#5D4E37',
+                        }
+                    },
+                    fontFamily: {
+                        'display': ['Georgia', 'serif'],
+                        'body': ['system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(139, 115, 85, 0.12);
+        }
+
+        .insect-table tr:hover {
+            background-color: rgba(184, 224, 210, 0.15);
+        }
+    </style>
+</head>
+
+<body class="bg-cozy-cream text-cozy-bark font-body">
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-cozy-peach/50">
+        <nav class="max-w-6xl mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center gap-2 group">
+                    <span class="text-2xl">🏡</span>
+                    <span class="font-display text-xl font-bold text-cozy-bark">Heartopia<span
+                            class="text-cozy-sage">.Life</span></span>
+                </a>
+                <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+                    <li><a href="/codes/" class="hover:text-cozy-coral">🎁 Codes</a></li>
+                    <li><a href="/beginner-guide/" class="hover:text-cozy-coral">Guides</a></li>
+                    <li><a href="/hobbies/" class="hover:text-cozy-coral">Hobbies</a></li>
+                    <li><a href="/npcs/" class="hover:text-cozy-coral">NPCs</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8">
+
+        <!-- Breadcrumb -->
+        <nav class="text-sm text-cozy-wood mb-6">
+            <a href="/" class="hover:text-cozy-coral">Home</a>
+            <span class="mx-2">›</span>
+            <a href="/database/" class="hover:text-cozy-coral">Database</a>
+            <span class="mx-2">›</span>
+            <span class="text-cozy-bark font-medium">Insects</span>
+        </nav>
+
+        <!-- Hero -->
+        <div class="bg-gradient-to-br from-teal-100 to-cozy-mint/40 rounded-2xl p-6 md:p-8 mb-8">
+            <div class="flex items-center gap-2 text-sm font-medium text-cozy-sage mb-3">
+                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                Updated: January 2026
+            </div>
+            <h1 class="font-display text-3xl md:text-4xl font-bold text-cozy-bark mb-4">
+                🦋 Heartopia Insects Database
+            </h1>
+            <p class="text-cozy-wood text-lg">
+                Complete database of all catchable insects. <strong>30+ butterflies, beetles & moths</strong> with
+                locations, spawn times, weather conditions & sell prices!
+            </p>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
+                <div class="text-2xl mb-1">👨‍🏫</div>
+                <div class="text-xs text-cozy-wood">Mentor: Naniwa</div>
+            </div>
+            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
+                <div class="text-2xl mb-1">📊</div>
+                <div class="text-xs text-cozy-wood">Unlock: DG Level 6</div>
+            </div>
+            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
+                <div class="text-2xl mb-1">🔧</div>
+                <div class="text-xs text-cozy-wood">Tool: Bubble Net</div>
+            </div>
+            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
+                <div class="text-2xl mb-1">🦋</div>
+                <div class="text-lg font-bold">30+</div>
+                <div class="text-xs text-cozy-wood">Total Insects</div>
+            </div>
+        </div>
+
+        <!-- TOC -->
+        <div class="bg-white rounded-xl p-6 mb-8 border border-cozy-peach/30">
+            <h2 class="font-bold text-lg mb-3">📋 Quick Navigation</h2>
+            <ul class="grid md:grid-cols-3 gap-2 text-sm">
+                <li><a href="#butterflies" class="text-cozy-coral hover:underline">→ Butterflies</a></li>
+                <li><a href="#beetles" class="text-cozy-coral hover:underline">→ Beetles</a></li>
+                <li><a href="#moths" class="text-cozy-coral hover:underline">→ Moths</a></li>
+                <li><a href="#prices" class="text-cozy-coral hover:underline">→ Sell Prices</a></li>
+                <li><a href="#tips" class="text-cozy-coral hover:underline">→ Catching Tips</a></li>
+            </ul>
+        </div>
+
+        <!-- Weather Legend -->
+        <div class="bg-cozy-sky/10 rounded-xl p-4 mb-8">
+            <h3 class="font-bold mb-2">🌤️ Weather Icons</h3>
+            <div class="flex flex-wrap gap-4 text-sm">
+                <span>☀️ = Sunny</span>
+                <span>🌧️ = Rainy</span>
+                <span>🌈 = Rainbow</span>
+                <span>🌐 = Any Weather</span>
+            </div>
+        </div>
+
+        <!-- CONTENT -->
+        <article class="space-y-12">
+
+            <!-- BUTTERFLIES -->
+            <section id="butterflies" class="scroll-mt-20">
+                <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
+                    🦋 Butterflies
+                </h2>
+
+                <div class="bg-white rounded-xl overflow-hidden border border-cozy-peach/30">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm insect-table">
+                            <thead class="bg-teal-50 text-left">
+                                <tr>
+                                    <th class="px-4 py-3 font-bold">Name</th>
+                                    <th class="px-4 py-3 font-bold">Lv</th>
+                                    <th class="px-4 py-3 font-bold">Location</th>
+                                    <th class="px-4 py-3 font-bold">Time</th>
+                                    <th class="px-4 py-3 font-bold">Weather</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-cozy-peach/20">
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Postman Butterfly</td>
+                                    <td class="px-4 py-3">1</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Bait Insects Event</td>
+                                    <td class="px-4 py-3">All Day</td>
+                                    <td class="px-4 py-3">☀️🌧️🌈</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Cabbage White</td>
+                                    <td class="px-4 py-3">1</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Fishing Village</td>
+                                    <td class="px-4 py-3">All Day</td>
+                                    <td class="px-4 py-3">🌐</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Common Blue Butterfly</td>
+                                    <td class="px-4 py-3">2</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Town Square / Central Area</td>
+                                    <td class="px-4 py-3">All Day</td>
+                                    <td class="px-4 py-3">🌐</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Sulkowsky's Morpho</td>
+                                    <td class="px-4 py-3">2</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Insect Attractor</td>
+                                    <td class="px-4 py-3">—</td>
+                                    <td class="px-4 py-3">—</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Purple Emperor</td>
+                                    <td class="px-4 py-3">3</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Flower Field / Whale Mt.</td>
+                                    <td class="px-4 py-3">12PM-12AM</td>
+                                    <td class="px-4 py-3">☀️🌈</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Red-Necked Swallowtail</td>
+                                    <td class="px-4 py-3">3</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Player Home Garden</td>
+                                    <td class="px-4 py-3">All Day</td>
+                                    <td class="px-4 py-3">🌐</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Rajah Brooke's Birdwing</td>
+                                    <td class="px-4 py-3">3</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Player Home</td>
+                                    <td class="px-4 py-3">6PM-12PM</td>
+                                    <td class="px-4 py-3">☀️🌈</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Peacock Butterfly</td>
+                                    <td class="px-4 py-3">4</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Flower Field / Windmill</td>
+                                    <td class="px-4 py-3">All Day</td>
+                                    <td class="px-4 py-3">☀️🌧️🌈</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Morpho Butterfly</td>
+                                    <td class="px-4 py-3">5</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Flower Field</td>
+                                    <td class="px-4 py-3">6AM-6PM</td>
+                                    <td class="px-4 py-3">☀️</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Blue Morpho Butterfly</td>
+                                    <td class="px-4 py-3">6</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Flower Field / Spirit Oak</td>
+                                    <td class="px-4 py-3">6AM-6PM</td>
+                                    <td class="px-4 py-3">☀️🌈</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Apollo</td>
+                                    <td class="px-4 py-3">7</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Bait Insects Event</td>
+                                    <td class="px-4 py-3">All Day</td>
+                                    <td class="px-4 py-3">☀️🌧️🌈</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Dead Leaf Butterfly</td>
+                                    <td class="px-4 py-3">8</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Suburbs / Forest</td>
+                                    <td class="px-4 py-3">All Day</td>
+                                    <td class="px-4 py-3">🌐</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Glasswing Butterfly</td>
+                                    <td class="px-4 py-3">8</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Flower Field</td>
+                                    <td class="px-4 py-3">6AM-12PM</td>
+                                    <td class="px-4 py-3">☀️</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Golden Butterfly</td>
+                                    <td class="px-4 py-3">8</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Flower Field</td>
+                                    <td class="px-4 py-3">6AM-12PM</td>
+                                    <td class="px-4 py-3">☀️🌈</td>
+                                </tr>
+                                <tr class="bg-purple-50/50">
+                                    <td class="px-4 py-3 font-medium">Monarch Butterfly ⭐</td>
+                                    <td class="px-4 py-3">10</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Rare spawn</td>
+                                    <td class="px-4 py-3">—</td>
+                                    <td class="px-4 py-3">—</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BEETLES -->
+            <section id="beetles" class="scroll-mt-20">
+                <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
+                    🪲 Beetles
+                </h2>
+
+                <div class="bg-white rounded-xl overflow-hidden border border-cozy-peach/30">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm insect-table">
+                            <thead class="bg-amber-50 text-left">
+                                <tr>
+                                    <th class="px-4 py-3 font-bold">Name</th>
+                                    <th class="px-4 py-3 font-bold">Lv</th>
+                                    <th class="px-4 py-3 font-bold">Location</th>
+                                    <th class="px-4 py-3 font-bold">Time</th>
+                                    <th class="px-4 py-3 font-bold">Weather</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-cozy-peach/20">
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Asparagus Beetle</td>
+                                    <td class="px-4 py-3">1</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Flower Field</td>
+                                    <td class="px-4 py-3">All Day</td>
+                                    <td class="px-4 py-3">☀️🌧️🌈</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Amethyst Flower Beetle</td>
+                                    <td class="px-4 py-3">2</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Home Lot Rocks</td>
+                                    <td class="px-4 py-3">All Day</td>
+                                    <td class="px-4 py-3">🌧️🌈</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Green Tiger Beetle</td>
+                                    <td class="px-4 py-3">2</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Onsen Mountain / All</td>
+                                    <td class="px-4 py-3">All Day</td>
+                                    <td class="px-4 py-3">🌐</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Seven-Spotted Ladybug</td>
+                                    <td class="px-4 py-3">2</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Suburbs</td>
+                                    <td class="px-4 py-3">All Day</td>
+                                    <td class="px-4 py-3">🌧️🌈</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Wasp Beetle</td>
+                                    <td class="px-4 py-3">2</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Forest / Flower Field</td>
+                                    <td class="px-4 py-3">All Day</td>
+                                    <td class="px-4 py-3">🌧️🌈</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Fire-Colored Beetle</td>
+                                    <td class="px-4 py-3">3</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Onsen Mountain</td>
+                                    <td class="px-4 py-3">All Day</td>
+                                    <td class="px-4 py-3">☀️🌧️🌈</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Red-winged Beetle</td>
+                                    <td class="px-4 py-3">3</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Hot Spring / Forest</td>
+                                    <td class="px-4 py-3">All Day</td>
+                                    <td class="px-4 py-3">🌐</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Variable Ladybug</td>
+                                    <td class="px-4 py-3">4</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Various</td>
+                                    <td class="px-4 py-3">—</td>
+                                    <td class="px-4 py-3">—</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Asian Lady Beetle</td>
+                                    <td class="px-4 py-3">5</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Forest Deer Tower</td>
+                                    <td class="px-4 py-3">12PM-12AM</td>
+                                    <td class="px-4 py-3">🌧️🌈</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Scarab Beetle</td>
+                                    <td class="px-4 py-3">6</td>
+                                    <td class="px-4 py-3 text-cozy-wood">—</td>
+                                    <td class="px-4 py-3">—</td>
+                                    <td class="px-4 py-3">—</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Silver Jewel Beetle</td>
+                                    <td class="px-4 py-3">6</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Forest</td>
+                                    <td class="px-4 py-3">All Day</td>
+                                    <td class="px-4 py-3">🌈</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Golden Jewel Beetle</td>
+                                    <td class="px-4 py-3">6</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Forest</td>
+                                    <td class="px-4 py-3">All Day</td>
+                                    <td class="px-4 py-3">🌈</td>
+                                </tr>
+                                <tr class="bg-yellow-50/50">
+                                    <td class="px-4 py-3 font-medium">Elegant Flower Beetle</td>
+                                    <td class="px-4 py-3">7</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Whale Mt. Flower Field</td>
+                                    <td class="px-4 py-3">6AM-6PM</td>
+                                    <td class="px-4 py-3">🌧️🌈</td>
+                                </tr>
+                                <tr class="bg-yellow-50/50">
+                                    <td class="px-4 py-3 font-medium">Golden Jewel Scarab</td>
+                                    <td class="px-4 py-3">7</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Forest Jump Puzzle</td>
+                                    <td class="px-4 py-3">12PM-12AM</td>
+                                    <td class="px-4 py-3">☀️🌈</td>
+                                </tr>
+                                <tr class="bg-yellow-50/50">
+                                    <td class="px-4 py-3 font-medium">Stag Beetle ⭐</td>
+                                    <td class="px-4 py-3">7</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Forest / Jump Puzzle</td>
+                                    <td class="px-4 py-3">6PM-6AM</td>
+                                    <td class="px-4 py-3">🌧️☀️🌈</td>
+                                </tr>
+                                <tr class="bg-yellow-50/50">
+                                    <td class="px-4 py-3 font-medium">Hercules Beetle ⭐</td>
+                                    <td class="px-4 py-3">7</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Forest / Deer Tower</td>
+                                    <td class="px-4 py-3">6PM-6AM</td>
+                                    <td class="px-4 py-3">🌧️☀️🌈</td>
+                                </tr>
+                                <tr class="bg-yellow-50/50">
+                                    <td class="px-4 py-3 font-medium">Rhinoceros Beetle</td>
+                                    <td class="px-4 py-3">7</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Forest</td>
+                                    <td class="px-4 py-3">6PM-6AM</td>
+                                    <td class="px-4 py-3">🌧️</td>
+                                </tr>
+                                <tr class="bg-purple-50/50">
+                                    <td class="px-4 py-3 font-medium">Horned Beetle</td>
+                                    <td class="px-4 py-3">8</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Fishing Village East Pier</td>
+                                    <td class="px-4 py-3">6PM-6AM</td>
+                                    <td class="px-4 py-3">☀️🌈</td>
+                                </tr>
+                                <tr class="bg-purple-50/50">
+                                    <td class="px-4 py-3 font-medium">Giant Stag Beetle</td>
+                                    <td class="px-4 py-3">8</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Deep Forest</td>
+                                    <td class="px-4 py-3">6PM-6AM</td>
+                                    <td class="px-4 py-3">☀️🌧️</td>
+                                </tr>
+                                <tr class="bg-purple-50/50">
+                                    <td class="px-4 py-3 font-medium">Rainbow Stag Beetle ⭐</td>
+                                    <td class="px-4 py-3">8</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Deep Forest</td>
+                                    <td class="px-4 py-3">12AM-6AM</td>
+                                    <td class="px-4 py-3">🌈</td>
+                                </tr>
+                                <tr class="bg-purple-50/50">
+                                    <td class="px-4 py-3 font-medium">Minotaur Beetle</td>
+                                    <td class="px-4 py-3">8</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Onsen Mt. Ruins</td>
+                                    <td class="px-4 py-3">12AM-6PM</td>
+                                    <td class="px-4 py-3">☀️🌧️🌈</td>
+                                </tr>
+                                <tr class="bg-purple-50/50">
+                                    <td class="px-4 py-3 font-medium">Golden Scarab ⭐</td>
+                                    <td class="px-4 py-3">9</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Ruins (Lucky Event)</td>
+                                    <td class="px-4 py-3">12PM-6PM</td>
+                                    <td class="px-4 py-3">🍀 Event</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MOTHS -->
+            <section id="moths" class="scroll-mt-20">
+                <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
+                    🦋 Moths
+                </h2>
+
+                <div class="bg-white rounded-xl overflow-hidden border border-cozy-peach/30">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm insect-table">
+                            <thead class="bg-indigo-50 text-left">
+                                <tr>
+                                    <th class="px-4 py-3 font-bold">Name</th>
+                                    <th class="px-4 py-3 font-bold">Lv</th>
+                                    <th class="px-4 py-3 font-bold">Location</th>
+                                    <th class="px-4 py-3 font-bold">Time</th>
+                                    <th class="px-4 py-3 font-bold">Weather</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-cozy-peach/20">
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Mini Moon Moth</td>
+                                    <td class="px-4 py-3">2</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Suburbs</td>
+                                    <td class="px-4 py-3">—</td>
+                                    <td class="px-4 py-3">—</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Isabella Tiger Moth</td>
+                                    <td class="px-4 py-3">6</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Forest</td>
+                                    <td class="px-4 py-3">6PM-12AM</td>
+                                    <td class="px-4 py-3">🌐</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">White Witch Moth</td>
+                                    <td class="px-4 py-3">8</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Forest / Deep Forest</td>
+                                    <td class="px-4 py-3">12AM-6AM</td>
+                                    <td class="px-4 py-3">🌐</td>
+                                </tr>
+                                <tr class="bg-purple-50/50">
+                                    <td class="px-4 py-3 font-medium">Atlas Moth ⭐</td>
+                                    <td class="px-4 py-3">9</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Forest</td>
+                                    <td class="px-4 py-3">6AM-12AM</td>
+                                    <td class="px-4 py-3">🌐</td>
+                                </tr>
+                                <tr class="bg-purple-50/50">
+                                    <td class="px-4 py-3 font-medium">Luna Moth ⭐</td>
+                                    <td class="px-4 py-3">9</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Forest</td>
+                                    <td class="px-4 py-3">12AM-6AM</td>
+                                    <td class="px-4 py-3">☀️🌈</td>
+                                </tr>
+                                <tr class="bg-purple-50/50">
+                                    <td class="px-4 py-3 font-medium">Phoenix Moth ⭐</td>
+                                    <td class="px-4 py-3">10</td>
+                                    <td class="px-4 py-3 text-cozy-wood">Rare spawn</td>
+                                    <td class="px-4 py-3">—</td>
+                                    <td class="px-4 py-3">—</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SELL PRICES -->
+            <section id="prices" class="scroll-mt-20">
+                <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
+                    💰 Sell Prices by Star Rating
+                </h2>
+
+                <p class="text-cozy-wood mb-4">Insects have different sell prices based on their star rating (quality).
+                    Higher stars = higher Gold!</p>
+
+                <div class="bg-white rounded-xl overflow-hidden border border-cozy-peach/30 mb-4">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm">
+                            <thead class="bg-yellow-50 text-left">
+                                <tr>
+                                    <th class="px-4 py-3 font-bold">Insect</th>
+                                    <th class="px-4 py-3 font-bold">1★</th>
+                                    <th class="px-4 py-3 font-bold">2★</th>
+                                    <th class="px-4 py-3 font-bold">3★</th>
+                                    <th class="px-4 py-3 font-bold">4★</th>
+                                    <th class="px-4 py-3 font-bold">5★</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-cozy-peach/20">
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Cabbage White (Lv1)</td>
+                                    <td class="px-4 py-3">30G</td>
+                                    <td class="px-4 py-3">45G</td>
+                                    <td class="px-4 py-3">60G</td>
+                                    <td class="px-4 py-3">120G</td>
+                                    <td class="px-4 py-3">240G</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Postman Butterfly (Lv1)</td>
+                                    <td class="px-4 py-3">30G</td>
+                                    <td class="px-4 py-3">45G</td>
+                                    <td class="px-4 py-3">60G</td>
+                                    <td class="px-4 py-3">120G</td>
+                                    <td class="px-4 py-3">240G</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Asparagus Beetle (Lv1)</td>
+                                    <td class="px-4 py-3">55G</td>
+                                    <td class="px-4 py-3">82G</td>
+                                    <td class="px-4 py-3">110G</td>
+                                    <td class="px-4 py-3">220G</td>
+                                    <td class="px-4 py-3 text-cozy-wood">—</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Asian Lady Beetle (Lv5)</td>
+                                    <td class="px-4 py-3">165G</td>
+                                    <td class="px-4 py-3">247G</td>
+                                    <td class="px-4 py-3">330G</td>
+                                    <td class="px-4 py-3">660G</td>
+                                    <td class="px-4 py-3 font-bold text-cozy-coral">1,320G</td>
+                                </tr>
+                                <tr class="bg-yellow-50/50">
+                                    <td class="px-4 py-3 font-medium">Stag Beetle (Lv7)</td>
+                                    <td class="px-4 py-3">275G</td>
+                                    <td class="px-4 py-3">412G</td>
+                                    <td class="px-4 py-3">550G</td>
+                                    <td class="px-4 py-3 font-bold">1,100G</td>
+                                    <td class="px-4 py-3 text-cozy-wood">—</td>
+                                </tr>
+                                <tr class="bg-yellow-50/50">
+                                    <td class="px-4 py-3 font-medium">Golden Jewel Scarab (Lv7)</td>
+                                    <td class="px-4 py-3">275G</td>
+                                    <td class="px-4 py-3">412G</td>
+                                    <td class="px-4 py-3">550G</td>
+                                    <td class="px-4 py-3 font-bold">1,100G</td>
+                                    <td class="px-4 py-3 text-cozy-wood">—</td>
+                                </tr>
+                                <tr class="bg-yellow-50/50">
+                                    <td class="px-4 py-3 font-medium">Elegant Flower Beetle (Lv7)</td>
+                                    <td class="px-4 py-3">275G</td>
+                                    <td class="px-4 py-3">412G</td>
+                                    <td class="px-4 py-3">550G</td>
+                                    <td class="px-4 py-3 font-bold">1,100G</td>
+                                    <td class="px-4 py-3 text-cozy-wood">—</td>
+                                </tr>
+                                <tr class="bg-yellow-50/50">
+                                    <td class="px-4 py-3 font-medium">Minotaur Beetle (Lv8)</td>
+                                    <td class="px-4 py-3">275G</td>
+                                    <td class="px-4 py-3">412G</td>
+                                    <td class="px-4 py-3">550G</td>
+                                    <td class="px-4 py-3 font-bold">1,100G</td>
+                                    <td class="px-4 py-3 text-cozy-wood">—</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="bg-cozy-mint/20 rounded-xl p-4">
+                    <p class="text-sm text-cozy-wood"><strong>💡 Tip:</strong> Upgrade the <strong>"Insect Quality"
+                            skill</strong> in the Insect Catching hobby to increase your chance of catching higher ★
+                        insects!</p>
+                </div>
+            </section>
+
+            <!-- TIPS -->
+            <section id="tips" class="scroll-mt-20">
+                <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
+                    💡 Catching Tips
+                </h2>
+
+                <div class="space-y-4">
+                    <div class="bg-white rounded-xl p-4 border border-cozy-peach/30">
+                        <h3 class="font-bold mb-2 text-cozy-sage">✅ Do</h3>
+                        <ul class="text-sm text-cozy-wood space-y-1">
+                            <li>• <strong>Approach slowly</strong> — Insects fly away if you run</li>
+                            <li>• <strong>Check the weather</strong> — Rainbow weather = rare spawns!</li>
+                            <li>• <strong>Hunt at night</strong> — Rare beetles spawn 6PM-6AM</li>
+                            <li>• <strong>Use Insect Attractor</strong> — Spawns special insects</li>
+                            <li>• <strong>Upgrade Insect Quality skill</strong> — Better ★ ratings</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-4 border border-cozy-peach/30">
+                        <h3 class="font-bold mb-2 text-cozy-coral">🏆 Best Profit Insects</h3>
+                        <ul class="text-sm text-cozy-wood space-y-1">
+                            <li>• <strong>Stag Beetle (Lv7)</strong> — 1,100G at 4★, Forest at night</li>
+                            <li>• <strong>Rainbow Stag Beetle (Lv8)</strong> — Deep Forest, Rainbow weather only</li>
+                            <li>• <strong>Golden Scarab (Lv9)</strong> — Ruins, Lucky Event only</li>
+                            <li>• <strong>Asian Lady Beetle (Lv5)</strong> — 1,320G at 5★</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </article>
+
+        <!-- Related Guides -->
+        <section class="mt-12 pt-8 border-t border-cozy-peach/30">
+            <h2 class="font-bold text-xl mb-6">📚 Related Guides</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <a href="/hobbies/insect-catching/"
+                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-3xl">🦋</span>
+                    <div>
+                        <h3 class="font-bold">Insect Catching Guide</h3>
+                        <p class="text-sm text-cozy-wood">How to unlock & level up</p>
+                    </div>
+                </a>
+                <a href="/database/fish/"
+                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-3xl">🐟</span>
+                    <div>
+                        <h3 class="font-bold">Fish Database</h3>
+                        <p class="text-sm text-cozy-wood">94 fish with prices</p>
+                    </div>
+                </a>
+                <a href="/progression/money-making/"
+                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-3xl">💰</span>
+                    <div>
+                        <h3 class="font-bold">Money Making Guide</h3>
+                        <p class="text-sm text-cozy-wood">Best Gold strategies</p>
+                    </div>
+                </a>
+                <a href="/npcs/"
+                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-3xl">👥</span>
+                    <div>
+                        <h3 class="font-bold">NPC Guide</h3>
+                        <p class="text-sm text-cozy-wood">Find Naniwa</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Disclaimer -->
+        <section class="mt-8 bg-cozy-bark/10 rounded-xl p-4 text-sm text-cozy-wood">
+            <p><strong>Sources:</strong> GameRant, TheGamer, Gamezebo, MrGuider, GamingOnPhone, VG247, DeltiaGaming
+                (January 2026). Data based on Heartopia Global Launch (Jan 7, 2026). Some spawn conditions may vary by
+                patch. This is an unofficial fan guide.</p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-cozy-bark text-white py-8 mt-12">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <a href="/" class="inline-flex items-center gap-2 mb-4">
+                <span class="text-xl">🏡</span>
+                <span class="font-display font-bold">Heartopia<span class="text-cozy-sage">.Life</span></span>
+            </a>
+            <p class="text-white/60 text-sm mb-4">Unofficial fan site. Not affiliated with XD Entertainment.</p>
+            <p class="text-white/40 text-xs">© 2026 Heartopia.Life</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
