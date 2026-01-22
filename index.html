@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Heartopia.Life - Codes, Recipes, Fishing & Building Wiki</title>
+    <meta name="description"
+        content="Your complete Heartopia guide hub. Daily updated codes, all recipes, fishing spots, cooking tips, money-making strategies & beginner guides. 100% free!">
+    <meta name="keywords"
+        content="heartopia codes, heartopia guide, heartopia recipes, heartopia fishing, heartopia cooking, heartopia tips, heartopia wiki">
+    <meta name="author" content="Heartopia.Life">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://heartopia.life/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Heartopia.Life - Codes, Recipes, Fishing & Building Wiki">
+    <meta property="og:description"
+        content="Your complete Heartopia guide hub. Daily updated codes, all recipes, fishing spots, cooking tips & beginner guides.">
+    <meta property="og:url" content="https://heartopia.life/">
+    <meta property="og:site_name" content="Heartopia.Life">
+    <meta property="og:image" content="https://heartopia.life/og-image.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Heartopia.Life - Codes, Recipes, Fishing & Building Wiki">
+    <meta name="twitter:description"
+        content="Your complete Heartopia guide hub. Daily updated codes, recipes & beginner guides.">
+    <meta name="twitter:image" content="https://heartopia.life/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Cozy warm palette inspired by life sim games
+                        'cozy': {
+                            'cream': '#FFF8F0',
+                            'peach': '#FFE5D9',
+                            'coral': '#FF9B85',
+                            'rose': '#D4A5A5',
+                            'sage': '#A8C686',
+                            'mint': '#B8E0D2',
+                            'sky': '#95C8D8',
+                            'wood': '#8B7355',
+                            'bark': '#5D4E37',
+                        }
+                    },
+                    fontFamily: {
+                        'display': ['Georgia', 'serif'],
+                        'body': ['system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Cozy gradient background */
+        .cozy-gradient {
+            background: linear-gradient(135deg, #FFF8F0 0%, #FFE5D9 50%, #B8E0D2 100%);
+        }
+
+        /* Card hover effect */
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(139, 115, 85, 0.15);
+        }
+
+        /* Code copy animation placeholder */
+        .code-badge {
+            font-family: 'Courier New', monospace;
+            letter-spacing: 0.05em;
+        }
+    </style>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "@id": "https://heartopia.life/#website",
+                "url": "https://heartopia.life/",
+                "name": "Heartopia.Life",
+                "description": "Your complete Heartopia guide hub for codes, recipes, fishing, cooking and building guides.",
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "https://heartopia.life/search?q={search_term_string}",
+                    "query-input": "required name=search_term_string"
+                }
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://heartopia.life/#organization",
+                "name": "Heartopia.Life",
+                "url": "https://heartopia.life/",
+                "logo": "https://heartopia.life/logo.png",
+                "description": "Fan-made guide site for Heartopia game"
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://heartopia.life/#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What is Heartopia?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Heartopia is a multiplayer cozy life simulation game developed by XD Entertainment. It features home building, hobbies like fishing and cooking, gardening, pet adoption, and social interactions. It's available on PC, iOS, and Android."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How do I redeem codes in Heartopia?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Open your in-game Watch (TAB on PC or smartphone icon on mobile), go to Settings, click Redeem Code at the bottom right, enter your code, and press Confirm. Rewards will be sent to your Mailbox."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is Heartopia free to play?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, Heartopia is free to play on all platforms (PC, iOS, Android, Steam). It uses a free-to-play model with optional in-game purchases."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What platforms is Heartopia available on?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Heartopia is available on PC (via official website and Steam), iOS (App Store), and Android (Google Play). It launched on January 7, 2026."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How do I make money fast in Heartopia?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "The best way to make money in Heartopia is through cooking. Process raw ingredients into dishes like jam to significantly increase their sell value. Farming and fishing are also good money-making methods."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What hobbies are available in Heartopia?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Heartopia features 7 hobbies: Fishing, Cooking, Gardening, Birdwatching, Insect Catching, Cat Caring, and Dog Caring. Some are unlocked through tutorials while others require DG level progression."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What is DG Level in Heartopia?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "DG (Developer Grade) Level is your main progression system in Heartopia. Increasing your DG level unlocks new features, hobbies, furniture, and story content. You earn Contribution Medals from quests to level up."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is Heartopia similar to Animal Crossing?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, Heartopia shares many similarities with Animal Crossing and Stardew Valley. It features cozy life simulation gameplay including home building, gardening, fishing, cooking, and social interactions with characters."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+</head>
+
+<body class="bg-cozy-cream text-cozy-bark font-body">
+
+    <!-- ===================== -->
+    <!-- 1. HEADER / NAVIGATION -->
+    <!-- ===================== -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-cozy-peach/50">
+        <nav class="max-w-6xl mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="/" class="flex items-center gap-2 group" aria-label="Heartopia.Life Home">
+                    <span class="text-2xl" role="img" aria-hidden="true">🏡</span>
+                    <span
+                        class="font-display text-xl font-bold text-cozy-bark group-hover:text-cozy-coral transition-colors">
+                        Heartopia<span class="text-cozy-sage">.Life</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+                    <li><a href="/codes/"
+                            class="text-cozy-coral hover:text-cozy-bark transition-colors flex items-center gap-1">🎁
+                            Codes</a></li>
+                    <li><a href="/beginner-guide/" class="hover:text-cozy-coral transition-colors">Guides</a></li>
+                    <li><a href="/hobbies/" class="hover:text-cozy-coral transition-colors">Hobbies</a></li>
+                    <li><a href="/database/recipes/" class="hover:text-cozy-coral transition-colors">Database</a></li>
+                    <li><a href="/tools/recipe-calculator/" class="hover:text-cozy-coral transition-colors">Tools</a>
+                    </li>
+                </ul>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2 hover:bg-cozy-peach/50 rounded-lg" aria-label="Open menu"
+                    onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-cozy-peach/50 pt-4">
+                <ul class="flex flex-col gap-3 text-sm font-medium">
+                    <li><a href="/codes/" class="text-cozy-coral flex items-center gap-2 py-2">🎁 Codes</a></li>
+                    <li><a href="/beginner-guide/" class="py-2 hover:text-cozy-coral">Guides</a></li>
+                    <li><a href="/hobbies/" class="py-2 hover:text-cozy-coral">Hobbies</a></li>
+                    <li><a href="/database/recipes/" class="py-2 hover:text-cozy-coral">Database</a></li>
+                    <li><a href="/tools/recipe-calculator/" class="py-2 hover:text-cozy-coral">Tools</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ===================== -->
+        <!-- 2. HERO SECTION -->
+        <!-- ===================== -->
+        <section class="cozy-gradient py-16 md:py-24">
+            <div class="max-w-6xl mx-auto px-4 text-center">
+                <!-- Trust Badge -->
+                <div
+                    class="inline-flex items-center gap-2 bg-white/70 backdrop-blur px-4 py-2 rounded-full text-sm font-medium text-cozy-sage mb-6">
+                    <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                    Updated Daily • January 2026
+                </div>
+
+                <!-- H1 -->
+                <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-cozy-bark leading-tight mb-6">
+                    Your Complete<br class="hidden sm:block">
+                    <span class="text-cozy-coral">Heartopia</span>
+                    <span class="text-cozy-sage">Life</span> Wiki
+                </h1>
+
+                <!-- Tagline -->
+                <p class="text-lg md:text-xl text-cozy-wood max-w-2xl mx-auto mb-8">
+                    All codes, recipes, fishing spots, cooking tips & beginner guides for your cozy life in Heartopia.
+                    100% free, updated daily!
+                </p>
+
+                <!-- CTAs -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/codes/"
+                        class="inline-flex items-center justify-center gap-2 bg-cozy-coral hover:bg-cozy-rose text-white font-bold px-8 py-4 rounded-xl text-lg shadow-lg hover:shadow-xl transition-all card-hover">
+                        🎁 Get All Codes
+                    </a>
+                    <a href="/beginner-guide/"
+                        class="inline-flex items-center justify-center gap-2 bg-white hover:bg-cozy-peach text-cozy-bark font-bold px-8 py-4 rounded-xl text-lg shadow-md hover:shadow-lg transition-all card-hover border border-cozy-peach">
+                        📖 Start Playing
+                    </a>
+                </div>
+
+                <!-- Platform Icons -->
+                <div class="mt-10 flex items-center justify-center gap-6 text-cozy-wood/70 text-sm">
+                    <span class="flex items-center gap-1">💻 PC</span>
+                    <span class="flex items-center gap-1">📱 iOS</span>
+                    <span class="flex items-center gap-1">🤖 Android</span>
+                    <span class="flex items-center gap-1">🎮 Steam</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== -->
+        <!-- 3. QUICK START (Start Here) -->
+        <!-- ===================== -->
+        <section class="py-12 md:py-16 bg-white">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="font-display text-2xl md:text-3xl font-bold text-center mb-10">
+                    🚀 Start Here
+                </h2>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- Card 1: New Player -->
+                    <a href="/beginner-guide/"
+                        class="card-hover bg-gradient-to-br from-cozy-peach to-cozy-cream p-6 rounded-2xl border border-cozy-peach/50">
+                        <div class="text-4xl mb-4">🌱</div>
+                        <h3 class="font-display text-xl font-bold mb-2">New Player?</h3>
+                        <p class="text-cozy-wood text-sm mb-4">Complete beginner's guide with your first 10 steps to
+                            success.</p>
+                        <span class="text-cozy-coral font-medium text-sm">Read Guide →</span>
+                    </a>
+
+                    <!-- Card 2: Codes -->
+                    <a href="/codes/"
+                        class="card-hover bg-gradient-to-br from-cozy-mint to-cozy-cream p-6 rounded-2xl border border-cozy-mint/50">
+                        <div class="text-4xl mb-4">🎁</div>
+                        <h3 class="font-display text-xl font-bold mb-2">Free Rewards</h3>
+                        <p class="text-cozy-wood text-sm mb-4">All active codes for Moonlight Crystals, Wishing Stars &
+                            more.</p>
+                        <span class="text-cozy-sage font-medium text-sm">Get Codes →</span>
+                    </a>
+
+                    <!-- Card 3: Money Guide -->
+                    <a href="/progression/money-making/"
+                        class="card-hover bg-gradient-to-br from-cozy-sky/30 to-cozy-cream p-6 rounded-2xl border border-cozy-sky/50">
+                        <div class="text-4xl mb-4">💰</div>
+                        <h3 class="font-display text-xl font-bold mb-2">Need Gold?</h3>
+                        <p class="text-cozy-wood text-sm mb-4">Best money-making methods: cooking, farming & fishing for
+                            profit.</p>
+                        <span class="text-cozy-sky font-medium text-sm">Make Money →</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== -->
+        <!-- 4. LIVE CODES PREVIEW -->
+        <!-- ===================== -->
+        <section class="py-12 md:py-16 bg-cozy-cream">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex items-center justify-between mb-8">
+                    <h2 class="font-display text-2xl md:text-3xl font-bold flex items-center gap-2">
+                        🎁 Active Codes
+                        <span class="text-xs bg-green-500 text-white px-2 py-1 rounded-full font-normal">LIVE</span>
+                    </h2>
+                    <a href="/codes/" class="text-cozy-coral hover:text-cozy-bark font-medium text-sm">
+                        View All →
+                    </a>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="divide-y divide-cozy-peach/30">
+                        <!-- Code 1 -->
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 gap-3">
+                            <div>
+                                <code
+                                    class="code-badge bg-cozy-bark text-white px-3 py-1 rounded text-sm font-bold">happy2026</code>
+                                <span class="ml-3 text-cozy-wood text-sm">Moonlight Crystal ×10, Gold ×8,888</span>
+                            </div>
+                            <span class="text-xs text-cozy-rose">Expires: Mar 31, 2026</span>
+                        </div>
+
+                        <!-- Code 2 -->
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 gap-3">
+                            <div>
+                                <code
+                                    class="code-badge bg-cozy-bark text-white px-3 py-1 rounded text-sm font-bold">heartopia0108</code>
+                                <span class="ml-3 text-cozy-wood text-sm">Moonlight Crystals ×100</span>
+                            </div>
+                            <span class="text-xs text-cozy-rose">Expires: Feb 7, 2026</span>
+                        </div>
+
+                        <!-- Code 3 -->
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 gap-3">
+                            <div>
+                                <code
+                                    class="code-badge bg-cozy-bark text-white px-3 py-1 rounded text-sm font-bold">dcthx4u</code>
+                                <span class="ml-3 text-cozy-wood text-sm">Wishing Star ×10</span>
+                            </div>
+                            <span class="text-xs text-cozy-rose">Expires: Jun 29, 2026</span>
+                        </div>
+                    </div>
+
+                    <!-- View All Button -->
+                    <div class="bg-cozy-peach/30 p-4 text-center">
+                        <a href="/codes/"
+                            class="inline-flex items-center justify-center gap-2 bg-cozy-coral hover:bg-cozy-rose text-white font-bold px-6 py-3 rounded-xl transition-colors">
+                            View All 20+ Active Codes
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== -->
+        <!-- 5. TOOLS SECTION -->
+        <!-- ===================== -->
+        <section class="py-12 md:py-16 bg-white">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="font-display text-2xl md:text-3xl font-bold text-center mb-4">
+                    🛠️ Heartopia Tools & Databases
+                </h2>
+                <p class="text-cozy-wood text-center mb-10 max-w-xl mx-auto">
+                    Interactive tools to help you plan recipes, find fish, and optimize your gameplay.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- Tool 1: Recipe Database -->
+                    <a href="/database/recipes/"
+                        class="card-hover group bg-white border-2 border-cozy-peach rounded-2xl p-6 text-center">
+                        <div
+                            class="w-16 h-16 bg-cozy-coral/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-cozy-coral/30 transition-colors">
+                            <span class="text-3xl">🍳</span>
+                        </div>
+                        <h3 class="font-display text-lg font-bold mb-2">Recipe Database</h3>
+                        <p class="text-cozy-wood text-sm">All recipes with ingredients, sell prices & profit
+                            calculations.</p>
+                    </a>
+
+                    <!-- Tool 2: Fish Catalog -->
+                    <a href="/database/fish/"
+                        class="card-hover group bg-white border-2 border-cozy-mint rounded-2xl p-6 text-center">
+                        <div
+                            class="w-16 h-16 bg-cozy-sage/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-cozy-sage/30 transition-colors">
+                            <span class="text-3xl">🐟</span>
+                        </div>
+                        <h3 class="font-display text-lg font-bold mb-2">Fish Catalog</h3>
+                        <p class="text-cozy-wood text-sm">Complete fish list with locations, rarity & best selling
+                            prices.</p>
+                    </a>
+
+                    <!-- Tool 3: Recipe Calculator -->
+                    <a href="/tools/recipe-calculator/"
+                        class="card-hover group bg-white border-2 border-cozy-sky rounded-2xl p-6 text-center">
+                        <div
+                            class="w-16 h-16 bg-cozy-sky/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-cozy-sky/30 transition-colors">
+                            <span class="text-3xl">🧮</span>
+                        </div>
+                        <h3 class="font-display text-lg font-bold mb-2">Recipe Calculator</h3>
+                        <p class="text-cozy-wood text-sm">Calculate profits from your ingredients. Find the best recipes
+                            to cook.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== -->
+        <!-- 6. HOBBIES GRID -->
+        <!-- ===================== -->
+        <section class="py-12 md:py-16 bg-cozy-cream">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="font-display text-2xl md:text-3xl font-bold text-center mb-4">
+                    🎣 Heartopia Hobbies Guides
+                </h2>
+                <p class="text-cozy-wood text-center mb-10 max-w-xl mx-auto">
+                    Master all 7 hobbies in Heartopia with our in-depth guides.
+                </p>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                    <!-- Hobby Cards -->
+                    <a href="/hobbies/fishing/"
+                        class="card-hover bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
+                        <span class="text-3xl block mb-2">🎣</span>
+                        <span class="font-medium text-sm">Fishing</span>
+                    </a>
+                    <a href="/hobbies/cooking/"
+                        class="card-hover bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
+                        <span class="text-3xl block mb-2">🍳</span>
+                        <span class="font-medium text-sm">Cooking</span>
+                    </a>
+                    <a href="/hobbies/gardening/"
+                        class="card-hover bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
+                        <span class="text-3xl block mb-2">🌻</span>
+                        <span class="font-medium text-sm">Gardening</span>
+                    </a>
+                    <a href="/hobbies/birdwatching/"
+                        class="card-hover bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
+                        <span class="text-3xl block mb-2">🐦</span>
+                        <span class="font-medium text-sm">Birdwatching</span>
+                    </a>
+                    <a href="/hobbies/insect-catching/"
+                        class="card-hover bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
+                        <span class="text-3xl block mb-2">🦋</span>
+                        <span class="font-medium text-sm">Insects</span>
+                    </a>
+                    <a href="/hobbies/pet-caring/"
+                        class="card-hover bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
+                        <span class="text-3xl block mb-2">🐱</span>
+                        <span class="font-medium text-sm">Pets</span>
+                    </a>
+                </div>
+
+                <div class="text-center mt-8">
+                    <a href="/hobbies/"
+                        class="inline-flex items-center gap-2 text-cozy-coral hover:text-cozy-bark font-medium">
+                        View All Hobbies Guides →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== -->
+        <!-- 7. POPULAR GUIDES -->
+        <!-- ===================== -->
+        <section class="py-12 md:py-16 bg-white">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="font-display text-2xl md:text-3xl font-bold text-center mb-10">
+                    📚 Popular Guides
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <a href="/codes/"
+                        class="card-hover flex items-center gap-4 bg-cozy-cream rounded-xl p-4 border border-cozy-peach/30">
+                        <span class="text-2xl">🎁</span>
+                        <div>
+                            <h3 class="font-bold">All Active Codes (January 2026)</h3>
+                            <p class="text-cozy-wood text-sm">Updated daily • 20+ codes</p>
+                        </div>
+                    </a>
+
+                    <a href="/beginner-guide/"
+                        class="card-hover flex items-center gap-4 bg-cozy-cream rounded-xl p-4 border border-cozy-peach/30">
+                        <span class="text-2xl">🌱</span>
+                        <div>
+                            <h3 class="font-bold">Beginner's Guide: First 10 Steps</h3>
+                            <p class="text-cozy-wood text-sm">Essential tips for new players</p>
+                        </div>
+                    </a>
+
+                    <a href="/hobbies/cooking/"
+                        class="card-hover flex items-center gap-4 bg-cozy-cream rounded-xl p-4 border border-cozy-peach/30">
+                        <span class="text-2xl">🍳</span>
+                        <div>
+                            <h3 class="font-bold">Cooking Guide: Best Recipes</h3>
+                            <p class="text-cozy-wood text-sm">Most profitable dishes to cook</p>
+                        </div>
+                    </a>
+
+                    <a href="/hobbies/fishing/"
+                        class="card-hover flex items-center gap-4 bg-cozy-cream rounded-xl p-4 border border-cozy-peach/30">
+                        <span class="text-2xl">🎣</span>
+                        <div>
+                            <h3 class="font-bold">Fishing Guide: All Fish & Locations</h3>
+                            <p class="text-cozy-wood text-sm">Complete fish catalog</p>
+                        </div>
+                    </a>
+
+                    <a href="/progression/money-making/"
+                        class="card-hover flex items-center gap-4 bg-cozy-cream rounded-xl p-4 border border-cozy-peach/30">
+                        <span class="text-2xl">💰</span>
+                        <div>
+                            <h3 class="font-bold">How to Make Money Fast</h3>
+                            <p class="text-cozy-wood text-sm">Best gold farming methods</p>
+                        </div>
+                    </a>
+
+                    <a href="/progression/dg-level/"
+                        class="card-hover flex items-center gap-4 bg-cozy-cream rounded-xl p-4 border border-cozy-peach/30">
+                        <span class="text-2xl">⬆️</span>
+                        <div>
+                            <h3 class="font-bold">DG Level Guide</h3>
+                            <p class="text-cozy-wood text-sm">How to level up faster</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== -->
+        <!-- 8. ABOUT THE GAME -->
+        <!-- ===================== -->
+        <section class="py-12 md:py-16 bg-cozy-peach/30">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h2 class="font-display text-2xl md:text-3xl font-bold mb-6">
+                    🏡 What is Heartopia?
+                </h2>
+                <p class="text-cozy-wood leading-relaxed mb-6">
+                    <strong>Heartopia</strong> is a multiplayer cozy life simulation game developed by <strong>XD
+                        Entertainment</strong>. Released on <strong>January 7, 2026</strong> for PC, iOS, and Android
+                    (Steam release on January 16, 2026), it offers a relaxing experience similar to Animal Crossing and
+                    Stardew Valley.
+                </p>
+                <p class="text-cozy-wood leading-relaxed">
+                    Build your dream home, engage in hobbies like <strong>fishing, cooking, gardening, and
+                        birdwatching</strong>, adopt pets, and form connections with other players. Heartopia emphasizes
+                    creativity, freedom, and enjoying life's simple moments.
+                </p>
+            </div>
+        </section>
+
+        <!-- ===================== -->
+        <!-- 9. FAQ SECTION -->
+        <!-- ===================== -->
+        <section class="py-12 md:py-16 bg-white" id="faq">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="font-display text-2xl md:text-3xl font-bold text-center mb-10">
+                    ❓ Frequently Asked Questions
+                </h2>
+
+                <div class="space-y-4">
+                    <!-- FAQ 1 -->
+                    <details class="group bg-cozy-cream rounded-xl border border-cozy-peach/30">
+                        <summary class="flex items-center justify-between p-4 cursor-pointer font-medium">
+                            <span>What is Heartopia?</span>
+                            <span class="text-cozy-coral group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-4 pb-4 text-cozy-wood text-sm">
+                            Heartopia is a multiplayer cozy life simulation game developed by XD Entertainment. It
+                            features home building, hobbies like fishing and cooking, gardening, pet adoption, and
+                            social interactions. It's available on PC, iOS, and Android.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 2 -->
+                    <details class="group bg-cozy-cream rounded-xl border border-cozy-peach/30">
+                        <summary class="flex items-center justify-between p-4 cursor-pointer font-medium">
+                            <span>How do I redeem codes in Heartopia?</span>
+                            <span class="text-cozy-coral group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-4 pb-4 text-cozy-wood text-sm">
+                            Open your in-game Watch (press TAB on PC or tap the smartphone icon on mobile), go to
+                            Settings, click "Redeem Code" at the bottom right, enter your code, and press Confirm.
+                            Rewards will be sent to your Mailbox.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 3 -->
+                    <details class="group bg-cozy-cream rounded-xl border border-cozy-peach/30">
+                        <summary class="flex items-center justify-between p-4 cursor-pointer font-medium">
+                            <span>Is Heartopia free to play?</span>
+                            <span class="text-cozy-coral group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-4 pb-4 text-cozy-wood text-sm">
+                            Yes, Heartopia is free to play on all platforms (PC, iOS, Android, Steam). It uses a
+                            free-to-play model with optional in-game purchases and gacha mechanics for cosmetic items.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 4 -->
+                    <details class="group bg-cozy-cream rounded-xl border border-cozy-peach/30">
+                        <summary class="flex items-center justify-between p-4 cursor-pointer font-medium">
+                            <span>What platforms is Heartopia available on?</span>
+                            <span class="text-cozy-coral group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-4 pb-4 text-cozy-wood text-sm">
+                            Heartopia is available on PC (via official website and Steam), iOS (App Store), and Android
+                            (Google Play). It launched on January 7, 2026, with Steam release on January 16-17, 2026.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 5 -->
+                    <details class="group bg-cozy-cream rounded-xl border border-cozy-peach/30">
+                        <summary class="flex items-center justify-between p-4 cursor-pointer font-medium">
+                            <span>How do I make money fast in Heartopia?</span>
+                            <span class="text-cozy-coral group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-4 pb-4 text-cozy-wood text-sm">
+                            The best way to make money in Heartopia is through cooking. Process raw ingredients into
+                            dishes like jam — for example, 4 blueberries (64 gold) can become blueberry jam (170 gold).
+                            Farming crops and fishing are also profitable.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 6 -->
+                    <details class="group bg-cozy-cream rounded-xl border border-cozy-peach/30">
+                        <summary class="flex items-center justify-between p-4 cursor-pointer font-medium">
+                            <span>What hobbies are available in Heartopia?</span>
+                            <span class="text-cozy-coral group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-4 pb-4 text-cozy-wood text-sm">
+                            Heartopia features 7 hobbies: Fishing, Cooking, Gardening, Birdwatching, Insect Catching,
+                            Cat Caring, and Dog Caring. Fishing and Gardening are unlocked in the tutorial; others
+                            require DG level progression and Hobby Expansion Tickets.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 7 -->
+                    <details class="group bg-cozy-cream rounded-xl border border-cozy-peach/30">
+                        <summary class="flex items-center justify-between p-4 cursor-pointer font-medium">
+                            <span>What is DG Level in Heartopia?</span>
+                            <span class="text-cozy-coral group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-4 pb-4 text-cozy-wood text-sm">
+                            DG (Developer Grade) Level is your main progression system in Heartopia. Increasing your DG
+                            level unlocks new features, hobbies, furniture, and story content. Complete daily, weekly,
+                            and main quests to earn Contribution Medals for leveling up.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 8 -->
+                    <details class="group bg-cozy-cream rounded-xl border border-cozy-peach/30">
+                        <summary class="flex items-center justify-between p-4 cursor-pointer font-medium">
+                            <span>Is Heartopia similar to Animal Crossing?</span>
+                            <span class="text-cozy-coral group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-4 pb-4 text-cozy-wood text-sm">
+                            Yes, Heartopia shares many similarities with Animal Crossing and Stardew Valley. It features
+                            cozy life simulation gameplay including home building, gardening, fishing, cooking, and
+                            social interactions with characters.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 9 -->
+                    <details class="group bg-cozy-cream rounded-xl border border-cozy-peach/30">
+                        <summary class="flex items-center justify-between p-4 cursor-pointer font-medium">
+                            <span>How do I unlock cooking in Heartopia?</span>
+                            <span class="text-cozy-coral group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-4 pb-4 text-cozy-wood text-sm">
+                            To unlock cooking, you need to increase your DG level, obtain a Hobby Expansion Ticket, and
+                            give it to the appropriate NPC. Cooking is recommended as your third hobby after Fishing and
+                            Gardening due to its excellent profit potential.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 10 -->
+                    <details class="group bg-cozy-cream rounded-xl border border-cozy-peach/30">
+                        <summary class="flex items-center justify-between p-4 cursor-pointer font-medium">
+                            <span>Where can I find more Heartopia codes?</span>
+                            <span class="text-cozy-coral group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-4 pb-4 text-cozy-wood text-sm">
+                            Check our <a href="/codes/" class="text-cozy-coral underline">Codes page</a> for the most
+                            up-to-date list of active Heartopia codes. We update it daily with new codes from official
+                            sources, events, and promotions.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== -->
+        <!-- 10. DISCLAIMER / COMPLIANCE -->
+        <!-- ===================== -->
+        <section class="py-8 bg-cozy-bark text-white/80">
+            <div class="max-w-4xl mx-auto px-4 text-center text-sm">
+                <p class="mb-2">
+                    <strong>Heartopia.Life</strong> is an unofficial fan site and is not affiliated with, endorsed, or
+                    sponsored by XD Entertainment or XD Inc.
+                </p>
+                <p class="mb-2">
+                    Heartopia™ and all related content, logos, and images are trademarks of XD Entertainment. All game
+                    content and materials are © XD Entertainment.
+                </p>
+                <p>
+                    This site is for informational purposes only. We do not host game downloads or provide any game
+                    files.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===================== -->
+    <!-- 11. FOOTER -->
+    <!-- ===================== -->
+    <footer class="bg-cozy-bark text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- Brand -->
+                <div>
+                    <a href="/" class="flex items-center gap-2 mb-4">
+                        <span class="text-2xl">🏡</span>
+                        <span class="font-display text-xl font-bold">Heartopia<span
+                                class="text-cozy-sage">.Life</span></span>
+                    </a>
+                    <p class="text-white/70 text-sm">
+                        Your complete Heartopia resource. Codes, guides, recipes & more.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-white/70 text-sm">
+                        <li><a href="/codes/" class="hover:text-white transition-colors">All Codes</a></li>
+                        <li><a href="/beginner-guide/" class="hover:text-white transition-colors">Beginner Guide</a>
+                        </li>
+                        <li><a href="/hobbies/" class="hover:text-white transition-colors">Hobbies</a></li>
+                        <li><a href="/database/recipes/" class="hover:text-white transition-colors">Recipes</a></li>
+                    </ul>
+                </div>
+
+                <!-- Guides -->
+                <div>
+                    <h4 class="font-bold mb-4">Popular Guides</h4>
+                    <ul class="space-y-2 text-white/70 text-sm">
+                        <li><a href="/hobbies/fishing/" class="hover:text-white transition-colors">Fishing Guide</a>
+                        </li>
+                        <li><a href="/hobbies/cooking/" class="hover:text-white transition-colors">Cooking Guide</a>
+                        </li>
+                        <li><a href="/progression/money-making/" class="hover:text-white transition-colors">Money
+                                Guide</a></li>
+                        <li><a href="/progression/dg-level/" class="hover:text-white transition-colors">DG Level
+                                Guide</a></li>
+                    </ul>
+                </div>
+
+                <!-- About -->
+                <div>
+                    <h4 class="font-bold mb-4">About</h4>
+                    <ul class="space-y-2 text-white/70 text-sm">
+                        <li><a href="/about/" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="/contact/" class="hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="/privacy/" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="/disclaimer/" class="hover:text-white transition-colors">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-white/20 pt-8 text-center text-white/50 text-sm">
+                <p>© 2026 Heartopia.Life. All rights reserved. Not affiliated with XD Entertainment.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
