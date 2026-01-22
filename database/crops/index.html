@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Heartopia Crops Database: All Seeds, Growth Times & Prices</title>
+    <meta name="description"
+        content="Complete Heartopia crops database. All 13+ crops with growth times, seed prices, sell prices & gardening level unlocks. Maximize your farming profits!">
+    <meta name="keywords"
+        content="heartopia crops, heartopia seeds, heartopia farming, heartopia gardening, heartopia vegetables">
+    <meta name="author" content="Heartopia.Life">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://heartopia.life/database/crops/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Heartopia Crops Database: All Seeds & Prices">
+    <meta property="og:description" content="Complete crop database with growth times, seed prices, and sell values.">
+    <meta property="og:url" content="https://heartopia.life/database/crops/">
+    <meta property="og:site_name" content="Heartopia.Life">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cozy': {
+                            'cream': '#FFF8F0',
+                            'peach': '#FFE5D9',
+                            'coral': '#FF9B85',
+                            'rose': '#D4A5A5',
+                            'sage': '#A8C686',
+                            'mint': '#B8E0D2',
+                            'sky': '#95C8D8',
+                            'wood': '#8B7355',
+                            'bark': '#5D4E37',
+                        }
+                    },
+                    fontFamily: {
+                        'display': ['Georgia', 'serif'],
+                        'body': ['system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(139, 115, 85, 0.12);
+        }
+
+        .crop-table tr:hover {
+            background-color: rgba(168, 198, 134, 0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-cozy-cream text-cozy-bark font-body">
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-cozy-peach/50">
+        <nav class="max-w-6xl mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center gap-2 group">
+                    <span class="text-2xl">🏡</span>
+                    <span class="font-display text-xl font-bold text-cozy-bark">Heartopia<span
+                            class="text-cozy-sage">.Life</span></span>
+                </a>
+                <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+                    <li><a href="/codes/" class="hover:text-cozy-coral">🎁 Codes</a></li>
+                    <li><a href="/beginner-guide/" class="hover:text-cozy-coral">Guides</a></li>
+                    <li><a href="/hobbies/" class="hover:text-cozy-coral">Hobbies</a></li>
+                    <li><a href="/npcs/" class="hover:text-cozy-coral">NPCs</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8">
+
+        <!-- Breadcrumb -->
+        <nav class="text-sm text-cozy-wood mb-6">
+            <a href="/" class="hover:text-cozy-coral">Home</a>
+            <span class="mx-2">›</span>
+            <a href="/database/" class="hover:text-cozy-coral">Database</a>
+            <span class="mx-2">›</span>
+            <span class="text-cozy-bark font-medium">Crops</span>
+        </nav>
+
+        <!-- Hero -->
+        <div class="bg-gradient-to-br from-green-100 to-cozy-sage/30 rounded-2xl p-6 md:p-8 mb-8">
+            <div class="flex items-center gap-2 text-sm font-medium text-cozy-sage mb-3">
+                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                Updated: January 2026
+            </div>
+            <h1 class="font-display text-3xl md:text-4xl font-bold text-cozy-bark mb-4">
+                🌾 Heartopia Crops Database
+            </h1>
+            <p class="text-cozy-wood text-lg">
+                Complete database of all farmable crops in Heartopia. <strong>Growth times, seed prices, sell
+                    values</strong> & unlock levels for every vegetable and fruit!
+            </p>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
+                <div class="text-2xl mb-1">👨‍🌾</div>
+                <div class="text-xs text-cozy-wood">Mentor: Blanc</div>
+            </div>
+            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
+                <div class="text-2xl mb-1">🌱</div>
+                <div class="text-lg font-bold">13+</div>
+                <div class="text-xs text-cozy-wood">Total Crops</div>
+            </div>
+            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
+                <div class="text-2xl mb-1">⏱️</div>
+                <div class="text-xs text-cozy-wood">15min - 12hr Growth</div>
+            </div>
+            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
+                <div class="text-2xl mb-1">💰</div>
+                <div class="text-xs text-cozy-wood">Cook for 2-3x Profit!</div>
+            </div>
+        </div>
+
+        <!-- TOC -->
+        <div class="bg-white rounded-xl p-6 mb-8 border border-cozy-peach/30">
+            <h2 class="font-bold text-lg mb-3">📋 Quick Navigation</h2>
+            <ul class="grid md:grid-cols-3 gap-2 text-sm">
+                <li><a href="#starter" class="text-cozy-coral hover:underline">→ Starter Crops (Lv1-2)</a></li>
+                <li><a href="#mid" class="text-cozy-coral hover:underline">→ Mid-Game Crops (Lv3-6)</a></li>
+                <li><a href="#advanced" class="text-cozy-coral hover:underline">→ Advanced Crops (Lv7+)</a></li>
+                <li><a href="#profit" class="text-cozy-coral hover:underline">→ Profit Comparison</a></li>
+                <li><a href="#tips" class="text-cozy-coral hover:underline">→ Farming Tips</a></li>
+            </ul>
+        </div>
+
+        <!-- CONTENT -->
+        <article class="space-y-12">
+
+            <!-- STARTER CROPS -->
+            <section id="starter" class="scroll-mt-20">
+                <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
+                    🌱 Starter Crops (Level 1-2)
+                </h2>
+                <p class="text-cozy-wood mb-4">These crops are available from the beginning. Great for learning and
+                    early income!</p>
+
+                <div class="bg-white rounded-xl overflow-hidden border border-cozy-peach/30">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm crop-table">
+                            <thead class="bg-green-50 text-left">
+                                <tr>
+                                    <th class="px-4 py-3 font-bold">Crop</th>
+                                    <th class="px-4 py-3 font-bold">Level</th>
+                                    <th class="px-4 py-3 font-bold">Growth</th>
+                                    <th class="px-4 py-3 font-bold">Seed</th>
+                                    <th class="px-4 py-3 font-bold">Sell</th>
+                                    <th class="px-4 py-3 font-bold">Profit</th>
+                                    <th class="px-4 py-3 font-bold">Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-cozy-peach/20">
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">🍅 Tomato</td>
+                                    <td class="px-4 py-3">1</td>
+                                    <td class="px-4 py-3 text-green-600 font-medium">15 min</td>
+                                    <td class="px-4 py-3">10G</td>
+                                    <td class="px-4 py-3 font-bold">30G</td>
+                                    <td class="px-4 py-3 text-green-600">+20G</td>
+                                    <td class="px-4 py-3 text-xs text-cozy-wood">Fastest crop! Great for House Salad
+                                    </td>
+                                </tr>
+                                <tr class="bg-yellow-50/50">
+                                    <td class="px-4 py-3 font-medium">🥔 Potato ⭐</td>
+                                    <td class="px-4 py-3">1</td>
+                                    <td class="px-4 py-3">60 min</td>
+                                    <td class="px-4 py-3">30G</td>
+                                    <td class="px-4 py-3 font-bold">90G</td>
+                                    <td class="px-4 py-3 text-green-600 font-medium">+60G</td>
+                                    <td class="px-4 py-3 text-xs text-cozy-wood">Best early profit! Fish & Chips
+                                        ingredient</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">🌾 Wheat</td>
+                                    <td class="px-4 py-3">2</td>
+                                    <td class="px-4 py-3">4 hr</td>
+                                    <td class="px-4 py-3">95G</td>
+                                    <td class="px-4 py-3 font-bold">285G</td>
+                                    <td class="px-4 py-3 text-green-600">+190G</td>
+                                    <td class="px-4 py-3 text-xs text-cozy-wood">Essential for baking recipes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="bg-cozy-mint/20 rounded-xl p-4 mt-4">
+                    <p class="text-sm text-cozy-wood"><strong>💡 Tip:</strong> Potatoes give 60-100 more Gold than
+                        Tomatoes per harvest. Invest in Potato seeds once you have some capital!</p>
+                </div>
+            </section>
+
+            <!-- MID-GAME CROPS -->
+            <section id="mid" class="scroll-mt-20">
+                <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
+                    🥬 Mid-Game Crops (Level 3-6)
+                </h2>
+                <p class="text-cozy-wood mb-4">Unlocked as you level up your Gardening hobby. Higher investment, higher
+                    returns!</p>
+
+                <div class="bg-white rounded-xl overflow-hidden border border-cozy-peach/30">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm crop-table">
+                            <thead class="bg-green-50 text-left">
+                                <tr>
+                                    <th class="px-4 py-3 font-bold">Crop</th>
+                                    <th class="px-4 py-3 font-bold">Level</th>
+                                    <th class="px-4 py-3 font-bold">Growth</th>
+                                    <th class="px-4 py-3 font-bold">Seed</th>
+                                    <th class="px-4 py-3 font-bold">Sell</th>
+                                    <th class="px-4 py-3 font-bold">Profit</th>
+                                    <th class="px-4 py-3 font-bold">Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-cozy-peach/20">
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">🥬 Lettuce</td>
+                                    <td class="px-4 py-3">3</td>
+                                    <td class="px-4 py-3">8 hr</td>
+                                    <td class="px-4 py-3">145G</td>
+                                    <td class="px-4 py-3 font-bold">435G</td>
+                                    <td class="px-4 py-3 text-green-600">+290G</td>
+                                    <td class="px-4 py-3 text-xs text-cozy-wood">Salad recipes</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">🍍 Pineapple</td>
+                                    <td class="px-4 py-3">4</td>
+                                    <td class="px-4 py-3 text-green-600 font-medium">30 min</td>
+                                    <td class="px-4 py-3">15G</td>
+                                    <td class="px-4 py-3 font-bold">52G</td>
+                                    <td class="px-4 py-3 text-green-600">+37G</td>
+                                    <td class="px-4 py-3 text-xs text-cozy-wood">Fast! Great for Pineapple Jam</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">🥕 Carrot</td>
+                                    <td class="px-4 py-3">5</td>
+                                    <td class="px-4 py-3">2 hr</td>
+                                    <td class="px-4 py-3">50G</td>
+                                    <td class="px-4 py-3 font-bold">155G</td>
+                                    <td class="px-4 py-3 text-green-600">+105G</td>
+                                    <td class="px-4 py-3 text-xs text-cozy-wood">Carrot Cake ingredient, rabbits love
+                                        it!</td>
+                                </tr>
+                                <tr class="bg-yellow-50/50">
+                                    <td class="px-4 py-3 font-medium">🍓 Strawberry ⭐</td>
+                                    <td class="px-4 py-3">6</td>
+                                    <td class="px-4 py-3">6 hr</td>
+                                    <td class="px-4 py-3">125G</td>
+                                    <td class="px-4 py-3 font-bold">375G</td>
+                                    <td class="px-4 py-3 text-green-600 font-medium">+250G</td>
+                                    <td class="px-4 py-3 text-xs text-cozy-wood">Strawberry Jam! Part of rotation
+                                        strategy</td>
+                                </tr>
+                                <tr class="bg-yellow-50/50">
+                                    <td class="px-4 py-3 font-medium">🌽 Corn ⭐</td>
+                                    <td class="px-4 py-3">6</td>
+                                    <td class="px-4 py-3">12 hr</td>
+                                    <td class="px-4 py-3">170G</td>
+                                    <td class="px-4 py-3 font-bold">510G</td>
+                                    <td class="px-4 py-3 text-green-600 font-medium">+340G</td>
+                                    <td class="px-4 py-3 text-xs text-cozy-wood">Corn Soup, overnight crop!</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl p-4 mt-4 border border-yellow-200">
+                    <h3 class="font-bold mb-2">🔄 Strawberry-Corn Rotation</h3>
+                    <p class="text-sm text-cozy-wood">Plant <strong>Corn</strong> before bed (12hr), harvest in morning.
+                        Then plant <strong>Strawberry</strong> (6hr), harvest in evening. Repeat daily for maximum Gold!
+                    </p>
+                </div>
+            </section>
+
+            <!-- ADVANCED CROPS -->
+            <section id="advanced" class="scroll-mt-20">
+                <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
+                    🍇 Advanced Crops (Level 7+)
+                </h2>
+                <p class="text-cozy-wood mb-4">High-level crops with the best returns. Unlock these as you progress!</p>
+
+                <div class="bg-white rounded-xl overflow-hidden border border-cozy-peach/30">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm crop-table">
+                            <thead class="bg-purple-50 text-left">
+                                <tr>
+                                    <th class="px-4 py-3 font-bold">Crop</th>
+                                    <th class="px-4 py-3 font-bold">Level</th>
+                                    <th class="px-4 py-3 font-bold">Growth</th>
+                                    <th class="px-4 py-3 font-bold">Seed</th>
+                                    <th class="px-4 py-3 font-bold">Sell</th>
+                                    <th class="px-4 py-3 font-bold">Profit</th>
+                                    <th class="px-4 py-3 font-bold">Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-cozy-peach/20">
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">🍇 Grape</td>
+                                    <td class="px-4 py-3">7</td>
+                                    <td class="px-4 py-3">—</td>
+                                    <td class="px-4 py-3">160G</td>
+                                    <td class="px-4 py-3 font-bold">480G</td>
+                                    <td class="px-4 py-3 text-green-600">+320G</td>
+                                    <td class="px-4 py-3 text-xs text-cozy-wood">Wine recipes</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">🍆 Eggplant</td>
+                                    <td class="px-4 py-3">8</td>
+                                    <td class="px-4 py-3">—</td>
+                                    <td class="px-4 py-3">135G</td>
+                                    <td class="px-4 py-3 font-bold">405G</td>
+                                    <td class="px-4 py-3 text-green-600">+270G</td>
+                                    <td class="px-4 py-3 text-xs text-cozy-wood">Ratatouille ingredient</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">🍵 Tea Tree</td>
+                                    <td class="px-4 py-3">11</td>
+                                    <td class="px-4 py-3">—</td>
+                                    <td class="px-4 py-3">25G</td>
+                                    <td class="px-4 py-3 font-bold">75G</td>
+                                    <td class="px-4 py-3 text-green-600">+50G</td>
+                                    <td class="px-4 py-3 text-xs text-cozy-wood">Tea & beverage recipes</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">🍫 Cacao Tree</td>
+                                    <td class="px-4 py-3">12</td>
+                                    <td class="px-4 py-3">—</td>
+                                    <td class="px-4 py-3">110G</td>
+                                    <td class="px-4 py-3 font-bold">330G</td>
+                                    <td class="px-4 py-3 text-green-600">+220G</td>
+                                    <td class="px-4 py-3 text-xs text-cozy-wood">Chocolate recipes</td>
+                                </tr>
+                                <tr class="bg-purple-50/50">
+                                    <td class="px-4 py-3 font-medium">🥑 Avocado ⭐</td>
+                                    <td class="px-4 py-3">13</td>
+                                    <td class="px-4 py-3">—</td>
+                                    <td class="px-4 py-3">180G</td>
+                                    <td class="px-4 py-3 font-bold text-purple-600">540G</td>
+                                    <td class="px-4 py-3 text-green-600 font-medium">+360G</td>
+                                    <td class="px-4 py-3 text-xs text-cozy-wood">Highest sell price!</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROFIT COMPARISON -->
+            <section id="profit" class="scroll-mt-20">
+                <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
+                    📊 Profit Comparison (Per Hour)
+                </h2>
+
+                <div class="bg-white rounded-xl p-6 border border-cozy-peach/30">
+                    <p class="text-cozy-wood mb-4">Which crops give the best Gold per hour? Here's the breakdown:</p>
+
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <span class="w-32 font-medium">🍅 Tomato</span>
+                            <div class="flex-1 bg-green-100 rounded-full h-6 overflow-hidden">
+                                <div class="bg-green-500 h-full rounded-full" style="width: 100%"></div>
+                            </div>
+                            <span class="font-bold text-green-600 w-24 text-right">80G/hr</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-32 font-medium">🍍 Pineapple</span>
+                            <div class="flex-1 bg-green-100 rounded-full h-6 overflow-hidden">
+                                <div class="bg-green-500 h-full rounded-full" style="width: 92%"></div>
+                            </div>
+                            <span class="font-bold text-green-600 w-24 text-right">74G/hr</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-32 font-medium">🥔 Potato</span>
+                            <div class="flex-1 bg-green-100 rounded-full h-6 overflow-hidden">
+                                <div class="bg-green-500 h-full rounded-full" style="width: 75%"></div>
+                            </div>
+                            <span class="font-bold text-green-600 w-24 text-right">60G/hr</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-32 font-medium">🥕 Carrot</span>
+                            <div class="flex-1 bg-green-100 rounded-full h-6 overflow-hidden">
+                                <div class="bg-green-500 h-full rounded-full" style="width: 65%"></div>
+                            </div>
+                            <span class="font-bold text-green-600 w-24 text-right">52G/hr</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-32 font-medium">🌾 Wheat</span>
+                            <div class="flex-1 bg-green-100 rounded-full h-6 overflow-hidden">
+                                <div class="bg-green-500 h-full rounded-full" style="width: 60%"></div>
+                            </div>
+                            <span class="font-bold text-green-600 w-24 text-right">48G/hr</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-32 font-medium">🍓 Strawberry</span>
+                            <div class="flex-1 bg-green-100 rounded-full h-6 overflow-hidden">
+                                <div class="bg-green-500 h-full rounded-full" style="width: 52%"></div>
+                            </div>
+                            <span class="font-bold text-green-600 w-24 text-right">42G/hr</span>
+                        </div>
+                    </div>
+
+                    <p class="text-xs text-cozy-wood mt-4">* Calculated as (Sell Price - Seed Price) ÷ Growth Hours.
+                        Assumes 1★ quality.</p>
+                </div>
+            </section>
+
+            <!-- TIPS -->
+            <section id="tips" class="scroll-mt-20">
+                <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
+                    💡 Farming Tips
+                </h2>
+
+                <div class="space-y-4">
+                    <div class="bg-white rounded-xl p-4 border border-cozy-peach/30">
+                        <h3 class="font-bold mb-2 text-cozy-sage">✅ Maximize Profits</h3>
+                        <ul class="text-sm text-cozy-wood space-y-1">
+                            <li>• <strong>Cook, don't sell raw!</strong> — Cooked dishes give 2-3x more Gold</li>
+                            <li>• <strong>Use 1★ ingredients for cooking</strong> — Higher ★ may sell for more raw</li>
+                            <li>• <strong>Use Fertilizer</strong> — Increases harvest quality</li>
+                            <li>• <strong>Use Growth Booster</strong> — Reduces growth time</li>
+                            <li>• <strong>Water regularly</strong> — Skipping delays growth!</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-4 border border-cozy-peach/30">
+                        <h3 class="font-bold mb-2 text-cozy-coral">🏆 Best Crops by Situation</h3>
+                        <ul class="text-sm text-cozy-wood space-y-1">
+                            <li>• <strong>Active play:</strong> Tomato (15 min) or Pineapple (30 min)</li>
+                            <li>• <strong>Overnight farming:</strong> Corn (12 hr) or Lettuce (8 hr)</li>
+                            <li>• <strong>Best ROI:</strong> Potato (Lv1) or Avocado (Lv13)</li>
+                            <li>• <strong>For recipes:</strong> Wheat (baking) or Strawberry (jam)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </article>
+
+        <!-- Related Guides -->
+        <section class="mt-12 pt-8 border-t border-cozy-peach/30">
+            <h2 class="font-bold text-xl mb-6">📚 Related Guides</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <a href="/hobbies/gardening/"
+                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-3xl">🌱</span>
+                    <div>
+                        <h3 class="font-bold">Gardening Guide</h3>
+                        <p class="text-sm text-cozy-wood">How to unlock & level up</p>
+                    </div>
+                </a>
+                <a href="/database/recipes/"
+                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-3xl">🍳</span>
+                    <div>
+                        <h3 class="font-bold">Recipe Database</h3>
+                        <p class="text-sm text-cozy-wood">Cook crops for more profit</p>
+                    </div>
+                </a>
+                <a href="/progression/money-making/"
+                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-3xl">💰</span>
+                    <div>
+                        <h3 class="font-bold">Money Making Guide</h3>
+                        <p class="text-sm text-cozy-wood">Best Gold farming strategies</p>
+                    </div>
+                </a>
+                <a href="/npcs/"
+                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-3xl">👥</span>
+                    <div>
+                        <h3 class="font-bold">NPC Guide</h3>
+                        <p class="text-sm text-cozy-wood">Find Blanc for seeds</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Disclaimer -->
+        <section class="mt-8 bg-cozy-bark/10 rounded-xl p-4 text-sm text-cozy-wood">
+            <p><strong>Sources:</strong> Gam3s.gg, GameRant, TheGamer, Gamezebo, KongBakPao (January 2026). Prices shown
+                are base 1★ values. This is an unofficial fan guide.</p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-cozy-bark text-white py-8 mt-12">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <a href="/" class="inline-flex items-center gap-2 mb-4">
+                <span class="text-xl">🏡</span>
+                <span class="font-display font-bold">Heartopia<span class="text-cozy-sage">.Life</span></span>
+            </a>
+            <p class="text-white/60 text-sm mb-4">Unofficial fan site. Not affiliated with XD Entertainment.</p>
+            <p class="text-white/40 text-xs">© 2026 Heartopia.Life</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
