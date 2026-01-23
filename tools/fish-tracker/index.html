@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Heartopia Fish Tracker: Track Your Collection & Find Missing Fish</title>
+    <meta name="description"
+        content="Free Heartopia fish tracker tool. Track your 94+ fish collection, filter by location, weather & time. Find missing fish and complete your catalog!">
+    <meta name="keywords"
+        content="heartopia fish tracker, heartopia fish collection, heartopia fish catalog, heartopia fishing guide">
+    <meta name="author" content="Heartopia.Life">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://heartopia.life/tools/fish-tracker/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Heartopia Fish Tracker: Complete Your Collection">
+    <meta property="og:description"
+        content="Track caught fish, find missing ones, and filter by location/weather/time.">
+    <meta property="og:url" content="https://heartopia.life/tools/fish-tracker/">
+    <meta property="og:site_name" content="Heartopia.Life">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cozy': {
+                            'cream': '#FFF8F0',
+                            'peach': '#FFE5D9',
+                            'coral': '#FF9B85',
+                            'rose': '#D4A5A5',
+                            'sage': '#A8C686',
+                            'mint': '#B8E0D2',
+                            'sky': '#95C8D8',
+                            'wood': '#8B7355',
+                            'bark': '#5D4E37',
+                        }
+                    },
+                    fontFamily: {
+                        'display': ['Georgia', 'serif'],
+                        'body': ['system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(139, 115, 85, 0.12);
+        }
+
+        .fish-card.caught {
+            opacity: 0.5;
+        }
+
+        .fish-card.caught::after {
+            content: '✓';
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: #22c55e;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body class="bg-cozy-cream text-cozy-bark font-body">
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-cozy-peach/50">
+        <nav class="max-w-6xl mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center gap-2 group">
+                    <span class="text-2xl">🏡</span>
+                    <span class="font-display text-xl font-bold text-cozy-bark">Heartopia<span
+                            class="text-cozy-sage">.Life</span></span>
+                </a>
+                <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+                    <li><a href="/codes/" class="hover:text-cozy-coral">🎁 Codes</a></li>
+                    <li><a href="/beginner-guide/" class="hover:text-cozy-coral">Guides</a></li>
+                    <li><a href="/hobbies/" class="hover:text-cozy-coral">Hobbies</a></li>
+                    <li><a href="/tools/" class="text-cozy-coral font-bold">Tools</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8">
+
+        <!-- Breadcrumb -->
+        <nav class="text-sm text-cozy-wood mb-6">
+            <a href="/" class="hover:text-cozy-coral">Home</a>
+            <span class="mx-2">›</span>
+            <a href="/tools/" class="hover:text-cozy-coral">Tools</a>
+            <span class="mx-2">›</span>
+            <span class="text-cozy-bark font-medium">Fish Tracker</span>
+        </nav>
+
+        <!-- Hero -->
+        <div class="bg-gradient-to-br from-blue-100 to-cozy-sky/30 rounded-2xl p-6 md:p-8 mb-8">
+            <h1 class="font-display text-3xl md:text-4xl font-bold text-cozy-bark mb-4">
+                🐟 Heartopia Fish Tracker
+            </h1>
+            <p class="text-cozy-wood text-lg">
+                Track your fish collection, mark caught fish, and find missing ones with filters. Progress saves locally
+                in your browser!
+            </p>
+        </div>
+
+        <!-- STATS BAR -->
+        <div class="bg-white rounded-xl p-4 mb-6 border border-cozy-peach/30">
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <div class="flex items-center gap-6">
+                    <div>
+                        <span class="text-2xl font-bold text-cozy-sky" id="caught-count">0</span>
+                        <span class="text-cozy-wood text-sm"> / <span id="total-count">0</span> Caught</span>
+                    </div>
+                    <div class="h-8 w-px bg-cozy-peach/50"></div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-32 h-3 bg-cozy-peach/30 rounded-full overflow-hidden">
+                            <div id="progress-bar" class="h-full bg-cozy-sky rounded-full transition-all"
+                                style="width: 0%"></div>
+                        </div>
+                        <span class="text-sm font-medium" id="progress-percent">0%</span>
+                    </div>
+                </div>
+                <button onclick="resetProgress()" class="text-sm text-cozy-coral hover:underline">Reset All</button>
+            </div>
+        </div>
+
+        <!-- FILTERS -->
+        <div class="bg-white rounded-xl p-4 mb-6 border border-cozy-peach/30">
+            <h2 class="font-bold mb-4">🔍 Filter Fish</h2>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                <div>
+                    <label class="block text-xs font-medium text-cozy-wood mb-1">Location</label>
+                    <select id="filter-location" onchange="applyFilters()"
+                        class="w-full p-2 text-sm border border-cozy-peach rounded-lg bg-white">
+                        <option value="all">All Locations</option>
+                        <option value="river">🏞️ Rivers</option>
+                        <option value="lake">🏕️ Lakes</option>
+                        <option value="sea">🌊 Seas</option>
+                        <option value="special">⭐ Special</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-cozy-wood mb-1">Weather</label>
+                    <select id="filter-weather" onchange="applyFilters()"
+                        class="w-full p-2 text-sm border border-cozy-peach rounded-lg bg-white">
+                        <option value="all">All Weather</option>
+                        <option value="sunny">☀️ Sunny</option>
+                        <option value="rainy">🌧️ Rainy</option>
+                        <option value="rainbow">🌈 Rainbow</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-cozy-wood mb-1">Time</label>
+                    <select id="filter-time" onchange="applyFilters()"
+                        class="w-full p-2 text-sm border border-cozy-peach rounded-lg bg-white">
+                        <option value="all">All Times</option>
+                        <option value="morning">🌅 Morning (6-12)</option>
+                        <option value="day">☀️ Day (12-18)</option>
+                        <option value="evening">🌆 Evening (18-24)</option>
+                        <option value="night">🌙 Night (0-6)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-cozy-wood mb-1">Level</label>
+                    <select id="filter-level" onchange="applyFilters()"
+                        class="w-full p-2 text-sm border border-cozy-peach rounded-lg bg-white">
+                        <option value="all">All Levels</option>
+                        <option value="1">Level 1</option>
+                        <option value="2">Level 2</option>
+                        <option value="3">Level 3</option>
+                        <option value="4">Level 4</option>
+                        <option value="5">Level 5+</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-cozy-wood mb-1">Status</label>
+                    <select id="filter-status" onchange="applyFilters()"
+                        class="w-full p-2 text-sm border border-cozy-peach rounded-lg bg-white">
+                        <option value="all">All Fish</option>
+                        <option value="uncaught">❌ Not Caught</option>
+                        <option value="caught">✅ Caught</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- FISH GRID -->
+        <div id="fish-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 mb-8">
+            <!-- Fish cards will be inserted here -->
+        </div>
+
+        <!-- LEGEND -->
+        <div class="bg-white rounded-xl p-4 mb-8 border border-cozy-peach/30">
+            <h3 class="font-bold mb-3">📖 Legend</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                <div>
+                    <div class="font-medium mb-1">Weather</div>
+                    <div class="text-cozy-wood space-y-1">
+                        <div>☀️ Sunny</div>
+                        <div>🌧️ Rainy</div>
+                        <div>🌈 Rainbow (Rare)</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="font-medium mb-1">Time of Day</div>
+                    <div class="text-cozy-wood space-y-1">
+                        <div>🌅 Morning: 6 AM - 12 PM</div>
+                        <div>☀️ Day: 12 PM - 6 PM</div>
+                        <div>🌆 Evening: 6 PM - 12 AM</div>
+                        <div>🌙 Night: 12 AM - 6 AM</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="font-medium mb-1">Rarity</div>
+                    <div class="text-cozy-wood space-y-1">
+                        <div>⚪ Common</div>
+                        <div>🟢 Uncommon</div>
+                        <div>🔵 Rare</div>
+                        <div>🟣 Legendary</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="font-medium mb-1">How to Use</div>
+                    <div class="text-cozy-wood space-y-1">
+                        <div>Click fish to mark as caught</div>
+                        <div>Use filters to find fish</div>
+                        <div>Progress saves automatically</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Guides -->
+        <section class="pt-8 border-t border-cozy-peach/30">
+            <h2 class="font-bold text-xl mb-6">📚 Related Guides</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <a href="/hobbies/fishing/"
+                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-3xl">🎣</span>
+                    <div>
+                        <h3 class="font-bold">Fishing Guide</h3>
+                        <p class="text-sm text-cozy-wood">Learn fishing mechanics</p>
+                    </div>
+                </a>
+                <a href="/database/fish/"
+                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-3xl">🐟</span>
+                    <div>
+                        <h3 class="font-bold">Fish Database</h3>
+                        <p class="text-sm text-cozy-wood">All fish with sell prices</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Disclaimer -->
+        <section class="mt-8 bg-cozy-bark/10 rounded-xl p-4 text-sm text-cozy-wood">
+            <p><strong>Sources:</strong> Gam3s.gg, VG247, Gamezebo, Space4Games, GameRant (January 2026). Data based on
+                Heartopia Global Launch (Jan 7, 2026). Fish list may be incomplete; some rare fish require story
+                progression. This is an unofficial fan tool.</p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-cozy-bark text-white py-8 mt-12">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <a href="/" class="inline-flex items-center gap-2 mb-4">
+                <span class="text-xl">🏡</span>
+                <span class="font-display font-bold">Heartopia<span class="text-cozy-sage">.Life</span></span>
+            </a>
+            <p class="text-white/60 text-sm mb-4">Unofficial fan site. Not affiliated with XD Entertainment.</p>
+            <p class="text-white/40 text-xs">© 2026 Heartopia.Life</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Fish Tracker -->
+    <script>
+        // Fish data: [id, name, emoji, locationType, locationName, weather, time, level, rarity]
+        // locationType: river, lake, sea, special
+        // weather: any, sunny, rainy, rainbow
+        // time: any, morning, day, evening, night
+        // rarity: common, uncommon, rare, legendary
+        const fishData = [
+            // Rivers
+            [1, 'European Perch', '🐟', 'river', 'River', 'any', 'any', 1, 'common'],
+            [2, 'Oriental Shrimp', '🦐', 'river', 'River', 'any', 'any', 1, 'common'],
+            [3, 'Tilapia', '🐟', 'river', 'River', 'any', 'any', 1, 'common'],
+            [4, 'Common Barbel', '🐟', 'river', 'Shallow River', 'any', 'any', 1, 'common'],
+            [5, 'Three-Spined Stickleback', '🐟', 'river', 'Shallow River', 'any', 'any', 1, 'common'],
+            [6, 'Minnow', '🐟', 'river', 'Tranquil River', 'any', 'any', 1, 'common'],
+            [7, 'Chum Salmon', '🐟', 'river', 'Tranquil River', 'any', 'any', 2, 'uncommon'],
+            [8, 'Burbot', '🐟', 'river', 'Tranquil River', 'any', 'night', 2, 'uncommon'],
+            [9, 'Streber', '🐟', 'river', 'Rosy River', 'any', 'any', 3, 'uncommon'],
+            [10, 'Common Carp', '🐟', 'river', 'Rosy River', 'any', 'any', 4, 'common'],
+            [11, 'European Mudminnow', '🐟', 'river', 'Rosy River', 'any', 'any', 2, 'common'],
+            [12, 'Freshwater Blenny', '🐟', 'river', 'Rosy River', 'any', 'any', 2, 'common'],
+            [13, 'Spined Loach', '🐟', 'river', 'Giantwood River', 'any', 'any', 3, 'uncommon'],
+            [14, 'Red-Bellied Piranha', '🐠', 'river', 'Giantwood River', 'any', 'any', 5, 'rare'],
+            [15, 'Zander', '🐟', 'river', 'Giantwood River', 'sunny', 'evening', 3, 'uncommon'],
+            [16, 'Huchen', '🐟', 'river', 'Giantwood River', 'rainbow', 'any', 9, 'legendary'],
+            [17, 'Sturgeon', '🐟', 'river', 'Giant Tree River', 'rainbow', 'day', 7, 'rare'],
+
+            // Lakes
+            [18, 'Common Chub', '🐟', 'lake', 'Lake', 'any', 'any', 1, 'common'],
+            [19, 'Common Bleak', '🐟', 'lake', 'Lake', 'any', 'any', 1, 'common'],
+            [20, 'Crucian Carp', '🐟', 'lake', 'Suburban Lake', 'any', 'any', 1, 'common'],
+            [21, 'Schneider', '🐟', 'lake', 'Suburban Lake', 'any', 'any', 1, 'common'],
+            [22, 'Stone Loach', '🐟', 'lake', 'Suburban Lake', 'any', 'any', 2, 'common'],
+            [23, 'Grayling', '🐟', 'lake', 'Suburban Lake', 'any', 'morning', 2, 'uncommon'],
+            [24, 'European Rudd', '🐟', 'lake', 'Suburban Lake', 'any', 'any', 1, 'common'],
+            [25, 'River Crab', '🦀', 'lake', 'Suburban Lake', 'any', 'any', 4, 'common'],
+            [26, 'Mussel', '🐚', 'lake', 'Suburban Lake', 'any', 'any', 1, 'common'],
+            [27, 'Northern Pike', '🐟', 'lake', 'Suburban Lake', 'rainy', 'night', 4, 'rare'],
+            [28, 'European Smelt', '🐟', 'lake', 'Meadow Lake', 'any', 'morning', 1, 'common'],
+            [29, 'Trout', '🐟', 'lake', 'Meadow Lake', 'any', 'morning', 2, 'uncommon'],
+            [30, 'Wels Catfish', '🐟', 'lake', 'Meadow Lake', 'any', 'night', 3, 'uncommon'],
+            [31, 'Butterfly Koi', '🐠', 'lake', 'Meadow Lake', 'any', 'any', 4, 'rare'],
+            [32, 'Goldfish', '🐠', 'lake', 'Meadow Lake', 'rainy', 'day', 5, 'rare'],
+            [33, 'Common Whitefish', '🐟', 'lake', 'Onsen Mountain Lake', 'any', 'any', 1, 'common'],
+            [34, 'Ruffe', '🐟', 'lake', 'Onsen Mountain Lake', 'any', 'any', 3, 'common'],
+            [35, 'Tadpole', '🐸', 'lake', 'Onsen Mountain Lake', 'any', 'any', 4, 'common'],
+            [36, 'Mottled Sculpin', '🐟', 'lake', 'Onsen Mountain Lake', 'any', 'morning', 2, 'common'],
+            [37, 'Bluegill', '🐟', 'lake', 'Onsen Mountain Lake', 'any', 'day', 2, 'common'],
+            [38, 'Pumpkinseed', '🐠', 'lake', 'Onsen Mountain Lake', 'any', 'any', 3, 'uncommon'],
+            [39, 'Arctic Char', '🐟', 'lake', 'Onsen Mountain Lake', 'rainy', 'day', 10, 'legendary'],
+            [40, 'Tench', '🐟', 'lake', 'Forest Lake', 'any', 'any', 2, 'common'],
+            [41, 'Largemouth Bass', '🐟', 'lake', 'Forest Lake', 'any', 'any', 2, 'uncommon'],
+            [42, 'Mud Sunfish', '🐟', 'lake', 'Forest Lake', 'any', 'any', 3, 'uncommon'],
+            [43, 'European Crayfish', '🦞', 'lake', 'Forest Lake', 'any', 'any', 3, 'common'],
+            [44, 'Large Pearl Mussel', '🐚', 'lake', 'Forest Lake', 'rainbow', 'day', 5, 'rare'],
+
+            // Seas
+            [45, 'Sardine', '🐟', 'sea', 'Ocean', 'any', 'any', 1, 'common'],
+            [46, 'Sea Bass', '🐟', 'sea', 'Ocean', 'any', 'any', 1, 'common'],
+            [47, 'Skipjack Tuna', '🐟', 'sea', 'Ocean', 'any', 'any', 2, 'uncommon'],
+            [48, 'Rabbit Fish', '🐟', 'sea', 'Ocean', 'any', 'any', 2, 'common'],
+            [49, 'Sea Stickleback', '🐟', 'sea', 'Old Sea', 'any', 'any', 1, 'common'],
+            [50, 'Clownfish', '🐠', 'sea', 'Old Sea', 'any', 'any', 3, 'uncommon'],
+            [51, 'European Eel', '🐍', 'sea', 'Old Sea', 'rainbow', 'any', 4, 'rare'],
+            [52, 'Goby', '🐟', 'sea', 'Old Sea', 'any', 'day', 4, 'common'],
+            [53, 'European Plaice', '🐟', 'sea', 'Old Sea', 'any', 'any', 2, 'common'],
+            [54, 'Common Shrimp', '🦐', 'sea', 'East Sea', 'any', 'any', 1, 'common'],
+            [55, 'Ocean Sunfish', '🐟', 'sea', 'East Sea', 'any', 'night', 9, 'legendary'],
+            [56, 'Haddock', '🐟', 'sea', 'East Sea', 'sunny', 'any', 3, 'uncommon'],
+            [57, 'European Flying Squid', '🦑', 'sea', 'East Sea', 'any', 'night', 4, 'uncommon'],
+            [58, 'Beltfish', '🐟', 'sea', 'Zephyr Sea', 'any', 'any', 2, 'common'],
+            [59, 'Seahorse', '🐴', 'sea', 'Zephyr Sea', 'any', 'any', 3, 'uncommon'],
+            [60, 'False Scad', '🐟', 'sea', 'Zephyr Sea', 'any', 'any', 2, 'common'],
+            [61, 'Atlantic Pygmy Octopus', '🐙', 'sea', 'Zephyr Sea', 'any', 'night', 2, 'uncommon'],
+            [62, 'European Lobster', '🦞', 'sea', 'Zephyr Sea', 'any', 'night', 5, 'rare'],
+            [63, 'Blackspot Seabream', '🐟', 'sea', 'Zephyr Sea', 'any', 'night', 4, 'uncommon'],
+            [64, 'Atlantic Salmon', '🐟', 'sea', 'Zephyr Sea', 'any', 'any', 3, 'uncommon'],
+            [65, 'Horse Mackerel', '🐟', 'sea', 'Whale Sea', 'any', 'any', 2, 'common'],
+            [66, 'Atlantic Mackerel', '🐟', 'sea', 'Whale Sea', 'any', 'day', 2, 'common'],
+            [67, 'Swordfish', '🐟', 'sea', 'Whale Sea', 'rainbow', 'day', 10, 'legendary'],
+            [68, 'Manta Ray', '🐟', 'sea', 'Whale Sea', 'rainbow', 'day', 9, 'legendary'],
+            [69, 'King Crab', '🦀', 'sea', 'Whale Sea', 'any', 'any', 6, 'rare'],
+
+            // Special / Sea Fishing
+            [70, 'Striped Red Mullet', '🐟', 'special', 'Sea Fishing', 'any', 'any', 5, 'uncommon'],
+            [71, 'Anglerfish', '🐟', 'special', 'Sea Fishing', 'any', 'night', 2, 'uncommon'],
+            [72, 'Common Octopus', '🐙', 'special', 'Sea Fishing', 'any', 'any', 2, 'uncommon'],
+            [73, 'Turbot', '🐟', 'special', 'Sea Fishing', 'any', 'any', 2, 'uncommon'],
+            [74, 'Giant Oarfish', '🐟', 'special', 'Sea Fishing', 'rainbow', 'any', 8, 'legendary'],
+            [75, 'Golden King Crab', '🦀', 'special', 'Sea Fishing', 'rainbow', 'any', 8, 'legendary'],
+            [76, 'Cat Shark', '🦈', 'special', 'Sea Fishing', 'any', 'night', 6, 'rare'],
+            [77, 'Shortfin Mako', '🦈', 'special', 'Sea Fishing', 'any', 'any', 7, 'rare'],
+            [78, 'Giant Squid', '🦑', 'special', 'Sea Fishing', 'any', 'night', 7, 'rare'],
+            [79, 'Nursehound', '🦈', 'special', 'Sea Fishing', 'any', 'any', 6, 'rare'],
+            [80, 'Bluefin Tuna', '🐟', 'special', 'Sea Fishing', 'rainbow', 'any', 10, 'legendary'],
+
+            // Secret / Legendary
+            [81, 'Legendary Koi', '🐠', 'special', 'Secret Pond', 'any', 'night', 10, 'legendary'],
+        ];
+
+        // Load caught fish from localStorage
+        let caughtFish = JSON.parse(localStorage.getItem('heartopia-fish-caught') || '[]');
+
+        function saveCaughtFish() {
+            localStorage.setItem('heartopia-fish-caught', JSON.stringify(caughtFish));
+        }
+
+        function toggleFish(id) {
+            if (caughtFish.includes(id)) {
+                caughtFish = caughtFish.filter(f => f !== id);
+            } else {
+                caughtFish.push(id);
+            }
+            saveCaughtFish();
+            renderFish();
+            updateStats();
+        }
+
+        function updateStats() {
+            const total = fishData.length;
+            const caught = caughtFish.length;
+            const percent = Math.round((caught / total) * 100);
+
+            document.getElementById('caught-count').textContent = caught;
+            document.getElementById('total-count').textContent = total;
+            document.getElementById('progress-bar').style.width = percent + '%';
+            document.getElementById('progress-percent').textContent = percent + '%';
+        }
+
+        function applyFilters() {
+            renderFish();
+        }
+
+        function renderFish() {
+            const location = document.getElementById('filter-location').value;
+            const weather = document.getElementById('filter-weather').value;
+            const time = document.getElementById('filter-time').value;
+            const level = document.getElementById('filter-level').value;
+            const status = document.getElementById('filter-status').value;
+
+            const filtered = fishData.filter(fish => {
+                const [id, name, emoji, locType, locName, fishWeather, fishTime, fishLevel, rarity] = fish;
+
+                if (location !== 'all' && locType !== location) return false;
+                if (weather !== 'all' && fishWeather !== 'any' && fishWeather !== weather) return false;
+                if (time !== 'all' && fishTime !== 'any' && fishTime !== time) return false;
+                if (level !== 'all') {
+                    const lvl = parseInt(level);
+                    if (lvl === 5 && fishLevel < 5) return false;
+                    if (lvl !== 5 && fishLevel !== lvl) return false;
+                }
+                if (status === 'caught' && !caughtFish.includes(id)) return false;
+                if (status === 'uncaught' && caughtFish.includes(id)) return false;
+
+                return true;
+            });
+
+            const grid = document.getElementById('fish-grid');
+            grid.innerHTML = '';
+
+            if (filtered.length === 0) {
+                grid.innerHTML = '<div class="col-span-full text-center text-cozy-wood py-8">No fish match your filters</div>';
+                return;
+            }
+
+            filtered.forEach(fish => {
+                const [id, name, emoji, locType, locName, fishWeather, fishTime, fishLevel, rarity] = fish;
+                const isCaught = caughtFish.includes(id);
+
+                const rarityColors = {
+                    common: 'border-gray-200',
+                    uncommon: 'border-green-300',
+                    rare: 'border-blue-400',
+                    legendary: 'border-purple-500'
+                };
+
+                const weatherIcons = {
+                    any: '☀️🌧️🌈',
+                    sunny: '☀️',
+                    rainy: '🌧️',
+                    rainbow: '🌈'
+                };
+
+                const timeIcons = {
+                    any: '🌅☀️🌆🌙',
+                    morning: '🌅',
+                    day: '☀️',
+                    evening: '🌆',
+                    night: '🌙'
+                };
+
+                const card = document.createElement('div');
+                card.className = `fish-card relative bg-white rounded-xl p-3 border-2 ${rarityColors[rarity]} cursor-pointer transition-all hover:shadow-md ${isCaught ? 'caught' : ''}`;
+                card.onclick = () => toggleFish(id);
+
+                card.innerHTML = `
+                    <div class="text-3xl text-center mb-2">${emoji}</div>
+                    <div class="text-xs font-bold text-center mb-1 leading-tight">${name}</div>
+                    <div class="text-xs text-cozy-wood text-center">${locName}</div>
+                    <div class="flex justify-center gap-1 mt-2 text-xs">
+                        <span title="Weather">${weatherIcons[fishWeather]}</span>
+                        <span title="Time">${timeIcons[fishTime]}</span>
+                        <span class="text-cozy-wood" title="Level">Lv${fishLevel}</span>
+                    </div>
+                `;
+
+                grid.appendChild(card);
+            });
+        }
+
+        function resetProgress() {
+            if (confirm('Reset all caught fish? This cannot be undone.')) {
+                caughtFish = [];
+                saveCaughtFish();
+                renderFish();
+                updateStats();
+            }
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            renderFish();
+            updateStats();
+        });
+    </script>
+
+</body>
+
+</html>
