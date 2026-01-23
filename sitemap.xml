@@ -71,6 +71,12 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://heartopia.life/events/bait-insects/</loc>
+        <lastmod>2026-01-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://heartopia.life/npcs/</loc>
         <lastmod>2026-01-22</lastmod>
         <changefreq>weekly</changefreq>
