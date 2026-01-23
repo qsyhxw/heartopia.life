@@ -172,7 +172,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
                     </svg>
-                    Full Screen 全屏显示
+                    Full Screen
                 </button>
             </div>
             <div class="map-container border-2 border-cozy-peach/30">
@@ -194,26 +194,31 @@
 
         <!-- Fullscreen Map Modal -->
         <div id="fullscreen-map-modal" class="fixed inset-0 z-[100] hidden">
-            <div class="absolute inset-0 bg-black/90"></div>
-            <div class="relative w-full h-full flex flex-col">
-                <div class="flex items-center justify-between p-4 bg-cozy-bark/90 text-white">
-                    <h3 class="font-display font-bold text-lg">🗺️ Heartopia Interactive Map</h3>
-                    <button onclick="closeFullscreenMap()"
-                        class="flex items-center gap-2 px-4 py-2 bg-cozy-coral hover:bg-cozy-coral/80 rounded-lg transition-colors">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                        Close 关闭
-                    </button>
-                </div>
-                <div class="flex-1">
-                    <iframe id="fullscreen-map-iframe" src="" title="Heartopia Interactive Map Full Screen"
-                        class="w-full h-full border-none" allow="fullscreen">
-                    </iframe>
-                </div>
-            </div>
+    <div class="absolute inset-0 bg-black/90"></div>
+    
+    <div class="relative w-full h-full flex flex-col">
+        
+        <div class="flex items-center justify-between p-4 bg-cozy-bark/90 text-white shrink-0">
+            <h3 class="font-display font-bold text-lg">🗺️ Heartopia Interactive Map</h3>
+            <button onclick="closeFullscreenMap()"
+                class="flex items-center gap-2 px-4 py-2 bg-cozy-coral hover:bg-cozy-coral/80 rounded-lg transition-colors cursor-pointer">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                Close
+            </button>
         </div>
+        
+        <div class="flex-1 w-full h-full relative">
+            <iframe id="fullscreen-map-iframe" src="" title="Heartopia Interactive Map Full Screen"
+                class="w-full h-full border-none" 
+                allow="fullscreen"
+                referrerpolicy="no-referrer">
+            </iframe>
+        </div>
+    </div>
+</div>
 
         <script>
             function openFullscreenMap() {
