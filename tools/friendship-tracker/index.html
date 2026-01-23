@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Heartopia Friendship Tracker: NPC Gifts & Relationship Progress</title>
+    <meta name="description"
+        content="Free Heartopia friendship tracker. Track NPC relationships, find favorite gifts, and maximize friendship rewards. Reach Best Friend status faster!">
+    <meta name="keywords"
+        content="heartopia friendship tracker, heartopia npc gifts, heartopia favorite gifts, heartopia relationship guide">
+    <meta name="author" content="Heartopia.Life">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://heartopia.life/tools/friendship-tracker/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Heartopia Friendship Tracker: NPC Gift Guide">
+    <meta property="og:description" content="Track relationships, find favorite gifts, and unlock rewards faster.">
+    <meta property="og:url" content="https://heartopia.life/tools/friendship-tracker/">
+    <meta property="og:site_name" content="Heartopia.Life">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cozy': {
+                            'cream': '#FFF8F0',
+                            'peach': '#FFE5D9',
+                            'coral': '#FF9B85',
+                            'rose': '#D4A5A5',
+                            'sage': '#A8C686',
+                            'mint': '#B8E0D2',
+                            'sky': '#95C8D8',
+                            'wood': '#8B7355',
+                            'bark': '#5D4E37',
+                        }
+                    },
+                    fontFamily: {
+                        'display': ['Georgia', 'serif'],
+                        'body': ['system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(139, 115, 85, 0.12);
+        }
+
+        .heart {
+            color: #f43f5e;
+        }
+
+        .heart-empty {
+            color: #fecdd3;
+        }
+    </style>
+</head>
+
+<body class="bg-cozy-cream text-cozy-bark font-body">
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-cozy-peach/50">
+        <nav class="max-w-6xl mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center gap-2 group">
+                    <span class="text-2xl">🏡</span>
+                    <span class="font-display text-xl font-bold text-cozy-bark">Heartopia<span
+                            class="text-cozy-sage">.Life</span></span>
+                </a>
+                <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+                    <li><a href="/codes/" class="hover:text-cozy-coral">🎁 Codes</a></li>
+                    <li><a href="/beginner-guide/" class="hover:text-cozy-coral">Guides</a></li>
+                    <li><a href="/hobbies/" class="hover:text-cozy-coral">Hobbies</a></li>
+                    <li><a href="/tools/" class="text-cozy-coral font-bold">Tools</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8">
+
+        <!-- Breadcrumb -->
+        <nav class="text-sm text-cozy-wood mb-6">
+            <a href="/" class="hover:text-cozy-coral">Home</a>
+            <span class="mx-2">›</span>
+            <a href="/tools/" class="hover:text-cozy-coral">Tools</a>
+            <span class="mx-2">›</span>
+            <span class="text-cozy-bark font-medium">Friendship Tracker</span>
+        </nav>
+
+        <!-- Hero -->
+        <div class="bg-gradient-to-br from-pink-100 to-cozy-rose/30 rounded-2xl p-6 md:p-8 mb-8">
+            <h1 class="font-display text-3xl md:text-4xl font-bold text-cozy-bark mb-4">
+                💕 Heartopia Friendship Tracker
+            </h1>
+            <p class="text-cozy-wood text-lg">
+                Track your relationships with NPCs, find their favorite gifts, and unlock rewards. Progress saves
+                locally in your browser!
+            </p>
+        </div>
+
+        <!-- FRIENDSHIP LEVELS INFO -->
+        <div class="bg-white rounded-xl p-4 mb-6 border border-cozy-peach/30">
+            <h2 class="font-bold mb-3">🏆 Friendship Level Rewards</h2>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-3 text-sm">
+                <div class="bg-gray-50 rounded-lg p-3 text-center">
+                    <div class="text-lg mb-1">😐</div>
+                    <div class="font-bold">Stranger</div>
+                    <div class="text-cozy-wood text-xs">No benefits</div>
+                </div>
+                <div class="bg-blue-50 rounded-lg p-3 text-center">
+                    <div class="text-lg mb-1">🤝</div>
+                    <div class="font-bold">Acquaintance</div>
+                    <div class="text-cozy-wood text-xs">Basic dialogue</div>
+                </div>
+                <div class="bg-green-50 rounded-lg p-3 text-center">
+                    <div class="text-lg mb-1">😊</div>
+                    <div class="font-bold">Friend</div>
+                    <div class="text-cozy-wood text-xs">10% discount, quests</div>
+                </div>
+                <div class="bg-purple-50 rounded-lg p-3 text-center">
+                    <div class="text-lg mb-1">💜</div>
+                    <div class="font-bold">Close Friend</div>
+                    <div class="text-cozy-wood text-xs">20% discount, home visit</div>
+                </div>
+                <div class="bg-pink-50 rounded-lg p-3 text-center">
+                    <div class="text-lg mb-1">❤️</div>
+                    <div class="font-bold">Best Friend</div>
+                    <div class="text-cozy-wood text-xs">30% discount, blueprints</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FILTER -->
+        <div class="bg-white rounded-xl p-4 mb-6 border border-cozy-peach/30">
+            <div class="flex flex-wrap items-center gap-4">
+                <div>
+                    <label class="block text-xs font-medium text-cozy-wood mb-1">Category</label>
+                    <select id="filter-category" onchange="applyFilters()"
+                        class="p-2 text-sm border border-cozy-peach rounded-lg bg-white">
+                        <option value="all">All NPCs</option>
+                        <option value="mentor">🎓 Mentors</option>
+                        <option value="merchant">🛒 Merchants</option>
+                        <option value="resident">🏠 Residents</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-cozy-wood mb-1">Status</label>
+                    <select id="filter-status" onchange="applyFilters()"
+                        class="p-2 text-sm border border-cozy-peach rounded-lg bg-white">
+                        <option value="all">All</option>
+                        <option value="incomplete">Not Best Friend</option>
+                        <option value="complete">Best Friend ❤️</option>
+                    </select>
+                </div>
+                <div class="flex-1"></div>
+                <button onclick="resetProgress()" class="text-sm text-cozy-coral hover:underline">Reset All</button>
+            </div>
+        </div>
+
+        <!-- NPC GRID -->
+        <div id="npc-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+            <!-- NPC cards will be inserted here -->
+        </div>
+
+        <!-- TIPS -->
+        <div class="bg-white rounded-xl p-6 mb-8 border border-cozy-peach/30">
+            <h2 class="font-bold text-xl mb-4">💡 Friendship Tips</h2>
+            <div class="grid md:grid-cols-2 gap-4 text-sm text-cozy-wood">
+                <div class="flex gap-2"><span>⏰</span> <strong>Best time to gift:</strong> Morning (6 AM - 12 PM) when
+                    NPCs are most receptive</div>
+                <div class="flex gap-2"><span>🎂</span> <strong>Birthday bonus:</strong> Gifts on birthdays give 3×
+                    normal friendship points</div>
+                <div class="flex gap-2"><span>🔄</span> <strong>Rotate gifts:</strong> Use 3-4 different favorites to
+                    avoid diminishing returns</div>
+                <div class="flex gap-2"><span>📅</span> <strong>Daily visits:</strong> Talk to NPCs daily even without
+                    gifting for small gains</div>
+                <div class="flex gap-2"><span>⏳</span> <strong>Timeline:</strong> Close Friend takes ~20-30 days, Best
+                    Friend ~40-60 days</div>
+                <div class="flex gap-2"><span>😊</span> <strong>Watch mood:</strong> Avoid gifting when NPC shows
+                    negative mood indicators</div>
+            </div>
+        </div>
+
+        <!-- Related Guides -->
+        <section class="pt-8 border-t border-cozy-peach/30">
+            <h2 class="font-bold text-xl mb-6">📚 Related Guides</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <a href="/npcs/"
+                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-3xl">👥</span>
+                    <div>
+                        <h3 class="font-bold">NPC Guide</h3>
+                        <p class="text-sm text-cozy-wood">All characters & story info</p>
+                    </div>
+                </a>
+                <a href="/hobbies/"
+                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-3xl">🎣</span>
+                    <div>
+                        <h3 class="font-bold">Hobbies Guide</h3>
+                        <p class="text-sm text-cozy-wood">Craft gifts through hobbies</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Disclaimer -->
+        <section class="mt-8 bg-cozy-bark/10 rounded-xl p-4 text-sm text-cozy-wood">
+            <p><strong>Sources:</strong> Gam3s.gg, Steam Community (January 2026). Some gift preferences are
+                player-observed and may vary. Data based on Heartopia Global Launch (Jan 7, 2026). This is an unofficial
+                fan tool.</p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-cozy-bark text-white py-8 mt-12">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <a href="/" class="inline-flex items-center gap-2 mb-4">
+                <span class="text-xl">🏡</span>
+                <span class="font-display font-bold">Heartopia<span class="text-cozy-sage">.Life</span></span>
+            </a>
+            <p class="text-white/60 text-sm mb-4">Unofficial fan site. Not affiliated with XD Entertainment.</p>
+            <p class="text-white/40 text-xs">© 2026 Heartopia.Life</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Friendship Tracker -->
+    <script>
+        // NPC data: [id, name, emoji, category, favoriteGifts, location]
+        // category: mentor, merchant, resident
+        const npcData = [
+            // Mentors
+            [1, 'Vanya', '🎣', 'mentor', ['Fish', 'Fishing bait', 'Coffee'], 'Fishing area'],
+            [2, 'Blanc', '🌱', 'mentor', ['Flowers', 'Seeds', 'Vegetables'], 'Garden shop'],
+            [3, 'Massimo', '🍳', 'mentor', ['Cooked dishes', 'Ingredients', 'Recipes'], 'Restaurant'],
+            [4, 'Naniwa', '🦋', 'mentor', ['Insects', 'Butterflies', 'Nature items'], 'Forest'],
+            [5, 'Bailey J', '🐦', 'mentor', ['Bird feed', 'Photography items', 'Binoculars'], 'Bird area'],
+            [6, 'Mrs. Joan', '🐱', 'mentor', ['Pet food', 'Cat toys', 'Wool'], 'Pet area'],
+
+            // Merchants
+            [7, 'Albert', '💎', 'merchant', ['Coffee beans', 'Gemstones', 'Rare items'], 'Main plaza'],
+            [8, 'Bill', '🚢', 'merchant', ['Fish', 'Sea items', 'Bait'], 'Fishing village'],
+            [9, 'Harvey', '⛏️', 'merchant', ['Iron Ore', 'Silver Ore', 'Gold Ore'], 'Mining area'],
+
+            // Residents
+            [10, 'Jake', '🌽', 'resident', ['Corn', 'Ginseng', 'Milk'], 'Farm area'],
+            [11, 'Garrick', '🍇', 'resident', ['Tomato', 'Grape', 'Orange'], 'Orchard'],
+            [12, 'Nellie', '🥚', 'resident', ['Eggs', 'Wool', 'Milk'], 'Ranch'],
+            [13, 'Oscar', '🐟', 'resident', ['Carp', 'Sardine', 'Herring'], 'Riverside'],
+            [14, 'George', '🏖️', 'resident', ['Sand', 'Salt', 'Driftwood'], 'Beach'],
+            [15, 'Clara', '🍎', 'resident', ['Apple', 'Strawberry', 'Grape'], 'Orchard'],
+            [16, 'Calvin', '🔧', 'resident', ['Scrap Metal', 'Sand', 'Wool'], 'Workshop'],
+            [17, 'Anatolo', '🌿', 'resident', ['Ginseng', 'Wild Herbs', 'Milk'], 'Forest'],
+        ];
+
+        // Load friendship levels from localStorage (0-4: Stranger to Best Friend)
+        let friendshipLevels = JSON.parse(localStorage.getItem('heartopia-friendship') || '{}');
+
+        function saveFriendship() {
+            localStorage.setItem('heartopia-friendship', JSON.stringify(friendshipLevels));
+        }
+
+        function setFriendshipLevel(id, level) {
+            friendshipLevels[id] = level;
+            saveFriendship();
+            renderNPCs();
+        }
+
+        function applyFilters() {
+            renderNPCs();
+        }
+
+        function renderNPCs() {
+            const category = document.getElementById('filter-category').value;
+            const status = document.getElementById('filter-status').value;
+
+            const filtered = npcData.filter(npc => {
+                const [id, name, emoji, cat, gifts, loc] = npc;
+                const level = friendshipLevels[id] || 0;
+
+                if (category !== 'all' && cat !== category) return false;
+                if (status === 'complete' && level < 4) return false;
+                if (status === 'incomplete' && level >= 4) return false;
+
+                return true;
+            });
+
+            const grid = document.getElementById('npc-grid');
+            grid.innerHTML = '';
+
+            if (filtered.length === 0) {
+                grid.innerHTML = '<div class="col-span-full text-center text-cozy-wood py-8">No NPCs match your filters</div>';
+                return;
+            }
+
+            const levelNames = ['Stranger', 'Acquaintance', 'Friend', 'Close Friend', 'Best Friend'];
+            const levelColors = ['bg-gray-100', 'bg-blue-100', 'bg-green-100', 'bg-purple-100', 'bg-pink-100'];
+
+            filtered.forEach(npc => {
+                const [id, name, emoji, cat, gifts, loc] = npc;
+                const level = friendshipLevels[id] || 0;
+
+                const card = document.createElement('div');
+                card.className = `bg-white rounded-xl p-4 border border-cozy-peach/30`;
+
+                // Generate heart buttons
+                let hearts = '';
+                for (let i = 0; i < 5; i++) {
+                    const filled = i < level;
+                    hearts += `<button onclick="setFriendshipLevel(${id}, ${i + 1})" class="text-xl ${filled ? 'heart' : 'heart-empty'} hover:scale-110 transition-transform">♥</button>`;
+                }
+
+                card.innerHTML = `
+                    <div class="flex items-start gap-3">
+                        <div class="text-4xl">${emoji}</div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-2 mb-1">
+                                <h3 class="font-bold text-lg">${name}</h3>
+                                <span class="text-xs ${levelColors[level]} px-2 py-0.5 rounded-full">${levelNames[level]}</span>
+                            </div>
+                            <div class="text-xs text-cozy-wood mb-2">📍 ${loc}</div>
+                            <div class="flex gap-1 mb-3">${hearts}</div>
+                            <div class="text-xs">
+                                <span class="font-medium">Favorite gifts:</span>
+                                <span class="text-cozy-wood">${gifts.join(', ')}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                grid.appendChild(card);
+            });
+        }
+
+        function resetProgress() {
+            if (confirm('Reset all friendship progress? This cannot be undone.')) {
+                friendshipLevels = {};
+                saveFriendship();
+                renderNPCs();
+            }
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            renderNPCs();
+        });
+    </script>
+
+</body>
+
+</html>
