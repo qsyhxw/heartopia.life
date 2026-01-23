@@ -1,0 +1,12 @@
+# Robots.txt for Heartopia.Life
+# https://heartopia.life
+
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://heartopia.life/sitemap.xml
+
+# Crawl-delay (optional, be nice to servers)
+Crawl-delay: 1
