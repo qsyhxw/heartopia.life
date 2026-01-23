@@ -53,6 +53,12 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://heartopia.life/guides/achievements/</loc>
+        <lastmod>2026-01-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://heartopia.life/events/</loc>
         <lastmod>2026-01-22</lastmod>
         <changefreq>weekly</changefreq>
