@@ -214,6 +214,13 @@
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
+
+    <url>
+        <loc>https://heartopia.life/database/wildlife/</loc>
+        <lastmod>2026-01-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
     
     <!-- Tools -->
     <url>
