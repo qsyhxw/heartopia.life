@@ -77,11 +77,18 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://heartopia.life/items/inflatable-insect-attractor/</loc>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
         <loc>https://heartopia.life/events/</loc>
         <lastmod>2026-01-23</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
+
 
 
     <url>
