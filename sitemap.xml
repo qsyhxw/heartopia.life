@@ -4,7 +4,7 @@
     <!-- Homepage -->
     <url>
         <loc>https://heartopia.life/</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
@@ -12,55 +12,39 @@
     <!-- Core Pages -->
     <url>
         <loc>https://heartopia.life/codes/</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://heartopia.life/guides/</loc>
-        <lastmod>2026-01-23</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
         <loc>https://heartopia.life/beginner-guide/</loc>
-        <lastmod>2026-01-22</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://heartopia.life/guides/building/</loc>
-        <lastmod>2026-01-23</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <loc>https://heartopia.life/download/</loc>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
+    
+    <!-- Guides -->
     <url>
-        <loc>https://heartopia.life/guides/decoration/</loc>
-        <lastmod>2026-01-23</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://heartopia.life/guides/trading/</loc>
-        <lastmod>2026-01-23</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://heartopia.life/guides/daily-routine/</loc>
-        <lastmod>2026-01-23</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://heartopia.life/guides/achievements/</loc>
-        <lastmod>2026-01-23</lastmod>
+        <loc>https://heartopia.life/guides/</loc>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://heartopia.life/guides/map/</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/guides/fishing-locations/</loc>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -77,298 +61,194 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://heartopia.life/items/inflatable-insect-attractor/</loc>
+        <loc>https://heartopia.life/guides/rare-fish/</loc>
         <lastmod>2026-01-29</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://heartopia.life/events/</loc>
-        <lastmod>2026-01-23</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-
-
-    <url>
-        <loc>https://heartopia.life/events/sea-fishing/</loc>
-        <lastmod>2026-01-23</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://heartopia.life/events/bait-insects/</loc>
-        <lastmod>2026-01-23</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://heartopia.life/events/nest-of-hundreds/</loc>
-        <lastmod>2026-01-23</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://heartopia.life/events/seasons/</loc>
-        <lastmod>2026-01-23</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://heartopia.life/npcs/</loc>
-        <lastmod>2026-01-22</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <!-- Hobbies -->
-    <url>
-        <loc>https://heartopia.life/hobbies/</loc>
-        <lastmod>2026-01-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://heartopia.life/hobbies/fishing/</loc>
-        <lastmod>2026-01-22</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://heartopia.life/hobbies/cooking/</loc>
-        <lastmod>2026-01-22</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://heartopia.life/hobbies/gardening/</loc>
-        <lastmod>2026-01-22</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://heartopia.life/hobbies/insect-catching/</loc>
-        <lastmod>2026-01-22</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://heartopia.life/hobbies/birdwatching/</loc>
-        <lastmod>2026-01-22</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://heartopia.life/hobbies/cat-care/</loc>
-        <lastmod>2026-01-22</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://heartopia.life/hobbies/dog-care/</loc>
-        <lastmod>2026-01-22</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    
-    <!-- Progression -->
-    <url>
-        <loc>https://heartopia.life/progression/</loc>
-        <lastmod>2026-01-22</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://heartopia.life/progression/dg-levels/</loc>
-        <lastmod>2026-01-22</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://heartopia.life/progression/money-making/</loc>
-        <lastmod>2026-01-22</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    
-    <!-- Database -->
-    <url>
-        <loc>https://heartopia.life/database/</loc>
-        <lastmod>2026-01-22</lastmod>
+        <loc>https://heartopia.life/guides/kitchen-upgrade/</loc>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://heartopia.life/database/fish/</loc>
-        <lastmod>2026-01-22</lastmod>
+        <loc>https://heartopia.life/guides/beetles/</loc>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://heartopia.life/database/recipes/</loc>
-        <lastmod>2026-01-22</lastmod>
+        <loc>https://heartopia.life/guides/npc-locations/</loc>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://heartopia.life/database/crops/</loc>
-        <lastmod>2026-01-22</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://heartopia.life/database/insects/</loc>
-        <lastmod>2026-01-22</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-        <priority>1.0</priority>
-    </url>
-    
-    <!-- Core Pages -->
-    <url>
-        <loc>https://heartopia.life/codes/</loc>
-        <lastmod>2026-01-23</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://heartopia.life/guides/</loc>
-        <lastmod>2026-01-23</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://heartopia.life/beginner-guide/</loc>
-        <lastmod>2026-01-22</lastmod>
+        <loc>https://heartopia.life/guides/gallery/</loc>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://heartopia.life/guides/building/</loc>
-        <lastmod>2026-01-23</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://heartopia.life/guides/decoration/</loc>
-        <lastmod>2026-01-23</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://heartopia.life/guides/trading/</loc>
-        <lastmod>2026-01-23</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://heartopia.life/guides/daily-routine/</loc>
-        <lastmod>2026-01-23</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://heartopia.life/guides/achievements/</loc>
-        <lastmod>2026-01-23</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://heartopia.life/guides/map/</loc>
-        <lastmod>2026-01-23</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://heartopia.life/guides/fishing-locations/</loc>
         <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://heartopia.life/guides/decoration/</loc>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/guides/trading/</loc>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/guides/daily-routine/</loc>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/guides/achievements/</loc>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/guides/buying-plot/</loc>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/guides/house-ideas/</loc>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/guides/top-up/</loc>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- FAQ Pages (NEW) -->
+    <url>
+        <loc>https://heartopia.life/faq/gallery/</loc>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/faq/watering-crops/</loc>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/faq/change-hair/</loc>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/faq/platforms/</loc>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/faq/buy-plot/</loc>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Events -->
+    <url>
         <loc>https://heartopia.life/events/</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://heartopia.life/events/sea-fishing/</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/events/bait-insects/</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/events/nest-of-hundreds/</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/events/seasons/</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://heartopia.life/npcs/</loc>
-        <lastmod>2026-01-22</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
     </url>
     
     <!-- Hobbies -->
     <url>
         <loc>https://heartopia.life/hobbies/</loc>
-        <lastmod>2026-01-22</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://heartopia.life/hobbies/fishing/</loc>
-        <lastmod>2026-01-22</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/hobbies/cooking/</loc>
-        <lastmod>2026-01-22</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/hobbies/gardening/</loc>
-        <lastmod>2026-01-22</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/hobbies/insect-catching/</loc>
-        <lastmod>2026-01-22</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/hobbies/birdwatching/</loc>
-        <lastmod>2026-01-22</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/hobbies/cat-care/</loc>
-        <lastmod>2026-01-22</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/hobbies/dog-care/</loc>
-        <lastmod>2026-01-22</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -376,19 +256,19 @@
     <!-- Progression -->
     <url>
         <loc>https://heartopia.life/progression/</loc>
-        <lastmod>2026-01-22</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/progression/dg-levels/</loc>
-        <lastmod>2026-01-22</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/progression/money-making/</loc>
-        <lastmod>2026-01-22</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -396,102 +276,123 @@
     <!-- Database -->
     <url>
         <loc>https://heartopia.life/database/</loc>
-        <lastmod>2026-01-22</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://heartopia.life/database/fish/</loc>
-        <lastmod>2026-01-22</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://heartopia.life/database/recipes/</loc>
-        <lastmod>2026-01-22</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://heartopia.life/database/crops/</loc>
-        <lastmod>2026-01-22</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://heartopia.life/database/insects/</loc>
-        <lastmod>2026-01-22</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://heartopia.life/database/birds/</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://heartopia.life/database/pets/</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
-
     <url>
         <loc>https://heartopia.life/database/wildlife/</loc>
-        <lastmod>2026-01-28</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/database/materials/</loc>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Items -->
+    <url>
+        <loc>https://heartopia.life/items/inflatable-insect-attractor/</loc>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
     </url>
     
     <!-- Tools -->
     <url>
         <loc>https://heartopia.life/tools/</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://heartopia.life/tools/recipe-calculator/</loc>
-        <lastmod>2026-01-22</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/tools/crop-planner/</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/tools/fish-tracker/</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/tools/friendship-tracker/</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- NPCs -->
+    <url>
+        <loc>https://heartopia.life/npcs/</loc>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <!-- Info Pages -->
     <url>
         <loc>https://heartopia.life/about/</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://heartopia.life/privacy/</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
     <url>
         <loc>https://heartopia.life/contact/</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
