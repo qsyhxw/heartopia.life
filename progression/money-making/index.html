@@ -125,6 +125,26 @@
                     <li><a href="/hobbies/" class="hover:text-cozy-coral">Hobbies</a></li>
                     <li><a href="/database/recipes/" class="hover:text-cozy-coral">Database</a></li>
                 </ul>
+            
+                <button class="md:hidden p-2 hover:bg-cozy-peach/50 rounded-lg" aria-label="Open menu"
+                    onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-cozy-peach/50 pt-4">
+                <ul class="flex flex-col gap-3 text-sm font-medium">
+                    <li><a href="/guides/map/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🗺️ Map</a></li>
+                    <li><a href="/codes/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🎁 Codes</a></li>
+                    <li><a href="/guides/" class="py-2 hover:text-cozy-coral">Guides</a></li>
+                    <li><a href="/hobbies/" class="py-2 hover:text-cozy-coral">Hobbies</a></li>
+                    <li><a href="/events/" class="py-2 hover:text-cozy-coral">Events</a></li>
+                    <li><a href="/database/" class="py-2 hover:text-cozy-coral">Database</a></li>
+                    <li><a href="/tools/" class="py-2 hover:text-cozy-coral">Tools</a></li>
+                </ul>
             </div>
         </nav>
     </header>
