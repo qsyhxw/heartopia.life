@@ -39,8 +39,11 @@
     <meta property="og:site_name" content="Heartopia.Life">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -106,7 +109,7 @@
                             class="text-cozy-sage">.Life</span></span>
                 </a>
                 <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
-                    <li><a href="/guides/map/" class="hover:text-cozy-coral transition-colors flex items-center gap-1">🗺️ Map</a></li>
+                    <li><a href="/guides/map/" class="hover:text-cozy-coral transition-colors flex items-center gap-1">🗺�?Map</a></li>
                     <li><a href="/codes/" class="hover:text-cozy-coral">🎁 Codes</a></li>
                     <li><a href="/guides/" class="hover:text-cozy-coral">Guides</a></li>
                     <li><a href="/hobbies/" class="hover:text-cozy-coral">Hobbies</a></li>
@@ -124,7 +127,7 @@
         
             <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-cozy-peach/50 pt-4">
                 <ul class="flex flex-col gap-3 text-sm font-medium">
-                    <li><a href="/guides/map/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🗺️ Map</a></li>
+                    <li><a href="/guides/map/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🗺�?Map</a></li>
                     <li><a href="/codes/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🎁 Codes</a></li>
                     <li><a href="/guides/" class="py-2 hover:text-cozy-coral">Guides</a></li>
                     <li><a href="/hobbies/" class="py-2 hover:text-cozy-coral">Hobbies</a></li>
@@ -141,9 +144,9 @@
         <!-- Breadcrumb -->
         <nav class="text-sm text-cozy-wood mb-6">
             <a href="/" class="hover:text-cozy-coral">Home</a>
-            <span class="mx-2">›</span>
+            <span class="mx-2">�?/span>
             <a href="/tools/" class="hover:text-cozy-coral">Tools</a>
-            <span class="mx-2">›</span>
+            <span class="mx-2">�?/span>
             <span class="text-cozy-bark font-medium">Friendship Tracker</span>
         </nav>
 
@@ -226,7 +229,7 @@
         <div class="bg-white rounded-xl p-6 mb-8 border border-cozy-peach/30">
             <h2 class="font-bold text-xl mb-4">💡 Friendship Tips</h2>
             <div class="grid md:grid-cols-2 gap-4 text-sm text-cozy-wood">
-                <div class="flex gap-2"><span>⏰</span> <strong>Best time to gift:</strong> Morning (6 AM - 12 PM) when
+                <div class="flex gap-2"><span>�?/span> <strong>Best time to gift:</strong> Morning (6 AM - 12 PM) when
                     NPCs are most receptive</div>
                 <div class="flex gap-2"><span>🎂</span> <strong>Birthday bonus:</strong> Gifts on birthdays give 3×
                     normal friendship points</div>
@@ -234,7 +237,7 @@
                     avoid diminishing returns</div>
                 <div class="flex gap-2"><span>📅</span> <strong>Daily visits:</strong> Talk to NPCs daily even without
                     gifting for small gains</div>
-                <div class="flex gap-2"><span>⏳</span> <strong>Timeline:</strong> Close Friend takes ~20-30 days, Best
+                <div class="flex gap-2"><span>�?/span> <strong>Timeline:</strong> Close Friend takes ~20-30 days, Best
                     Friend ~40-60 days</div>
                 <div class="flex gap-2"><span>😊</span> <strong>Watch mood:</strong> Avoid gifting when NPC shows
                     negative mood indicators</div>
@@ -308,7 +311,7 @@
             [11, 'Garrick', '🍇', 'resident', ['Tomato', 'Grape', 'Orange'], 'Orchard'],
             [12, 'Nellie', '🥚', 'resident', ['Eggs', 'Wool', 'Milk'], 'Ranch'],
             [13, 'Oscar', '🐟', 'resident', ['Carp', 'Sardine', 'Herring'], 'Riverside'],
-            [14, 'George', '🏖️', 'resident', ['Sand', 'Salt', 'Driftwood'], 'Beach'],
+            [14, 'George', '🏖�?, 'resident', ['Sand', 'Salt', 'Driftwood'], 'Beach'],
             [15, 'Clara', '🍎', 'resident', ['Apple', 'Strawberry', 'Grape'], 'Orchard'],
             [16, 'Calvin', '🔧', 'resident', ['Scrap Metal', 'Sand', 'Wool'], 'Workshop'],
             [17, 'Anatolo', '🌿', 'resident', ['Ginseng', 'Wild Herbs', 'Milk'], 'Forest'],
@@ -368,7 +371,7 @@
                 let hearts = '';
                 for (let i = 0; i < 5; i++) {
                     const filled = i < level;
-                    hearts += `<button onclick="setFriendshipLevel(${id}, ${i + 1})" class="text-xl ${filled ? 'heart' : 'heart-empty'} hover:scale-110 transition-transform">♥</button>`;
+                    hearts += `<button onclick="setFriendshipLevel(${id}, ${i + 1})" class="text-xl ${filled ? 'heart' : 'heart-empty'} hover:scale-110 transition-transform">�?/button>`;
                 }
 
                 card.innerHTML = `

@@ -40,8 +40,11 @@
     <meta property="og:site_name" content="Heartopia.Life">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -90,7 +93,7 @@
         }
 
         .fish-card.caught::after {
-            content: '✓';
+            content: '�?;
             position: absolute;
             top: 8px;
             right: 8px;
@@ -119,7 +122,7 @@
                             class="text-cozy-sage">.Life</span></span>
                 </a>
                 <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
-                    <li><a href="/guides/map/" class="hover:text-cozy-coral transition-colors flex items-center gap-1">🗺️ Map</a></li>
+                    <li><a href="/guides/map/" class="hover:text-cozy-coral transition-colors flex items-center gap-1">🗺�?Map</a></li>
                     <li><a href="/codes/" class="hover:text-cozy-coral">🎁 Codes</a></li>
                     <li><a href="/guides/" class="hover:text-cozy-coral">Guides</a></li>
                     <li><a href="/hobbies/" class="hover:text-cozy-coral">Hobbies</a></li>
@@ -137,7 +140,7 @@
         
             <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-cozy-peach/50 pt-4">
                 <ul class="flex flex-col gap-3 text-sm font-medium">
-                    <li><a href="/guides/map/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🗺️ Map</a></li>
+                    <li><a href="/guides/map/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🗺�?Map</a></li>
                     <li><a href="/codes/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🎁 Codes</a></li>
                     <li><a href="/guides/" class="py-2 hover:text-cozy-coral">Guides</a></li>
                     <li><a href="/hobbies/" class="py-2 hover:text-cozy-coral">Hobbies</a></li>
@@ -154,9 +157,9 @@
         <!-- Breadcrumb -->
         <nav class="text-sm text-cozy-wood mb-6">
             <a href="/" class="hover:text-cozy-coral">Home</a>
-            <span class="mx-2">›</span>
+            <span class="mx-2">�?/span>
             <a href="/tools/" class="hover:text-cozy-coral">Tools</a>
-            <span class="mx-2">›</span>
+            <span class="mx-2">�?/span>
             <span class="text-cozy-bark font-medium">Fish Tracker</span>
         </nav>
 
@@ -201,10 +204,10 @@
                     <select id="filter-location" onchange="applyFilters()"
                         class="w-full p-2 text-sm border border-cozy-peach rounded-lg bg-white">
                         <option value="all">All Locations</option>
-                        <option value="river">🏞️ Rivers</option>
-                        <option value="lake">🏕️ Lakes</option>
+                        <option value="river">🏞�?Rivers</option>
+                        <option value="lake">🏕�?Lakes</option>
                         <option value="sea">🌊 Seas</option>
-                        <option value="special">⭐ Special</option>
+                        <option value="special">�?Special</option>
                     </select>
                 </div>
                 <div>
@@ -212,8 +215,8 @@
                     <select id="filter-weather" onchange="applyFilters()"
                         class="w-full p-2 text-sm border border-cozy-peach rounded-lg bg-white">
                         <option value="all">All Weather</option>
-                        <option value="sunny">☀️ Sunny</option>
-                        <option value="rainy">🌧️ Rainy</option>
+                        <option value="sunny">☀�?Sunny</option>
+                        <option value="rainy">🌧�?Rainy</option>
                         <option value="rainbow">🌈 Rainbow</option>
                     </select>
                 </div>
@@ -223,7 +226,7 @@
                         class="w-full p-2 text-sm border border-cozy-peach rounded-lg bg-white">
                         <option value="all">All Times</option>
                         <option value="morning">🌅 Morning (6-12)</option>
-                        <option value="day">☀️ Day (12-18)</option>
+                        <option value="day">☀�?Day (12-18)</option>
                         <option value="evening">🌆 Evening (18-24)</option>
                         <option value="night">🌙 Night (0-6)</option>
                     </select>
@@ -245,8 +248,8 @@
                     <select id="filter-status" onchange="applyFilters()"
                         class="w-full p-2 text-sm border border-cozy-peach rounded-lg bg-white">
                         <option value="all">All Fish</option>
-                        <option value="uncaught">❌ Not Caught</option>
-                        <option value="caught">✅ Caught</option>
+                        <option value="uncaught">�?Not Caught</option>
+                        <option value="caught">�?Caught</option>
                     </select>
                 </div>
             </div>
@@ -264,8 +267,8 @@
                 <div>
                     <div class="font-medium mb-1">Weather</div>
                     <div class="text-cozy-wood space-y-1">
-                        <div>☀️ Sunny</div>
-                        <div>🌧️ Rainy</div>
+                        <div>☀�?Sunny</div>
+                        <div>🌧�?Rainy</div>
                         <div>🌈 Rainbow (Rare)</div>
                     </div>
                 </div>
@@ -273,7 +276,7 @@
                     <div class="font-medium mb-1">Time of Day</div>
                     <div class="text-cozy-wood space-y-1">
                         <div>🌅 Morning: 6 AM - 12 PM</div>
-                        <div>☀️ Day: 12 PM - 6 PM</div>
+                        <div>☀�?Day: 12 PM - 6 PM</div>
                         <div>🌆 Evening: 6 PM - 12 AM</div>
                         <div>🌙 Night: 12 AM - 6 AM</div>
                     </div>
@@ -281,7 +284,7 @@
                 <div>
                     <div class="font-medium mb-1">Rarity</div>
                     <div class="text-cozy-wood space-y-1">
-                        <div>⚪ Common</div>
+                        <div>�?Common</div>
                         <div>🟢 Uncommon</div>
                         <div>🔵 Rare</div>
                         <div>🟣 Legendary</div>
@@ -520,15 +523,15 @@
 
                 const weatherIcons = {
                     any: '☀️🌧️🌈',
-                    sunny: '☀️',
-                    rainy: '🌧️',
+                    sunny: '☀�?,
+                    rainy: '🌧�?,
                     rainbow: '🌈'
                 };
 
                 const timeIcons = {
-                    any: '🌅☀️🌆🌙',
+                    any: '🌅☀️🌆�?,
                     morning: '🌅',
-                    day: '☀️',
+                    day: '☀�?,
                     evening: '🌆',
                     night: '🌙'
                 };
