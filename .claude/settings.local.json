@@ -10,7 +10,10 @@
       "Read(//d/**)",
       "WebFetch(domain:www.gamerant.com)",
       "WebFetch(domain:www.thegamer.com)",
-      "Bash(del \"d:\\\\Antigravity\\\\heartopia.life\\\\events\\\\winter-2026\\\\check.ps1\")"
+      "Bash(del \"d:\\\\Antigravity\\\\heartopia.life\\\\events\\\\winter-2026\\\\check.ps1\")",
+      "WebFetch(domain:heartopiagame.net)",
+      "WebFetch(domain:www.gamesolusi.com)",
+      "WebFetch(domain:heartopiaguide.com)"
     ]
   }
 }
