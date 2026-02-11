@@ -2,7 +2,10 @@
   "permissions": {
     "allow": [
       "WebSearch",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "WebFetch(domain:www.keengamer.com)",
+      "WebFetch(domain:www.ign.com)",
+      "WebFetch(domain:gamerant.com)"
     ]
   }
 }

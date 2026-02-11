@@ -3,3 +3,4 @@
 *.md
 screenshots/bing_check.png
 screenshots/bing_verify.png
+.claude/settings.local.json
