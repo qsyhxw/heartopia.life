@@ -7,7 +7,10 @@
       "WebFetch(domain:www.ign.com)",
       "WebFetch(domain:gamerant.com)",
       "Bash(findstr:*)",
-      "Read(//d/**)"
+      "Read(//d/**)",
+      "WebFetch(domain:www.gamerant.com)",
+      "WebFetch(domain:www.thegamer.com)",
+      "Bash(del \"d:\\\\Antigravity\\\\heartopia.life\\\\events\\\\winter-2026\\\\check.ps1\")"
     ]
   }
 }
