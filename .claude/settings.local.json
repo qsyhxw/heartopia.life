@@ -13,7 +13,8 @@
       "Bash(del \"d:\\\\Antigravity\\\\heartopia.life\\\\events\\\\winter-2026\\\\check.ps1\")",
       "WebFetch(domain:heartopiagame.net)",
       "WebFetch(domain:www.gamesolusi.com)",
-      "WebFetch(domain:heartopiaguide.com)"
+      "WebFetch(domain:heartopiaguide.com)",
+      "WebFetch(domain:gam3s.gg)"
     ]
   }
 }
