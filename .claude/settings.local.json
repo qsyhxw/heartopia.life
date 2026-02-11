@@ -14,7 +14,12 @@
       "WebFetch(domain:heartopiagame.net)",
       "WebFetch(domain:www.gamesolusi.com)",
       "WebFetch(domain:heartopiaguide.com)",
-      "WebFetch(domain:gam3s.gg)"
+      "WebFetch(domain:gam3s.gg)",
+      "WebFetch(domain:heartopia.gg)",
+      "WebFetch(domain:fyuu.net)",
+      "WebFetch(domain:www.fdaytalk.com)",
+      "WebFetch(domain:hopping-lion.pikapod.net)",
+      "WebFetch(domain:www.blogandguide.com)"
     ]
   }
 }
