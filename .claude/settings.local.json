@@ -5,7 +5,9 @@
       "Bash(npm install:*)",
       "WebFetch(domain:www.keengamer.com)",
       "WebFetch(domain:www.ign.com)",
-      "WebFetch(domain:gamerant.com)"
+      "WebFetch(domain:gamerant.com)",
+      "Bash(findstr:*)",
+      "Read(//d/**)"
     ]
   }
 }
