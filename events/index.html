@@ -37,6 +37,40 @@
     <meta property="og:description" content="Complete guide to all events with unlock levels, locations, and rewards.">
     <meta property="og:url" content="https://heartopia.life/events/">
     <meta property="og:site_name" content="Heartopia.Life">
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What events are available in Heartopia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Heartopia has 4 main events: Sea Fishing (DG Level 7), Bait the Insects (DG Level 8), Nest of Hundreds (DG Level 8), and seasonal events like Winter Frost 2026 with exclusive activities and rewards."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "When do Heartopia events unlock?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Events unlock at different DG (Members Guild) levels: Sea Fishing at DG Level 7, Bait the Insects and Nest of Hundreds at DG Level 8. Seasonal events have limited-time availability."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are seasonal events in Heartopia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Seasonal events are limited-time activities like Winter Frost 2026, featuring exclusive hobbies (Snow Sculpting), special NPCs (Azure, Eric), unique items, and festive quests at Onsen Mountain."
+                }
+            }
+        ]
+    }
+    </script>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -100,13 +134,17 @@
                             class="text-cozy-sage">.Life</span></span>
                 </a>
                 <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
-                    <li><a href="/guides/map/" class="hover:text-cozy-coral transition-colors flex items-center gap-1">🗺️ Map</a></li>
-                    <li><a href="/codes/" class="hover:text-cozy-coral">🎁 Codes</a></li>
-                    <li><a href="/guides/" class="hover:text-cozy-coral">Guides</a></li>
-                    <li><a href="/hobbies/" class="hover:text-cozy-coral">Hobbies</a></li>
-                    <li><a href="/npcs/" class="hover:text-cozy-coral">NPCs</a></li>
+                    <li><a href="/guides/map/"
+                            class="hover:text-cozy-coral transition-colors flex items-center gap-1">🗺️ Map</a></li>
+                    <li><a href="/codes/" class="hover:text-cozy-coral transition-colors flex items-center gap-1">🎁
+                            Codes</a></li>
+                    <li><a href="/guides/" class="hover:text-cozy-coral transition-colors">Guides</a></li>
+                    <li><a href="/hobbies/" class="hover:text-cozy-coral transition-colors">Hobbies</a></li>
+                    <li><a href="/events/" class="text-cozy-coral font-bold">Events</a></li>
+                    <li><a href="/database/" class="hover:text-cozy-coral transition-colors">Database</a></li>
+                    <li><a href="/npcs/" class="hover:text-cozy-coral transition-colors">NPCs</a></li>
                 </ul>
-            
+
                 <button class="md:hidden p-2 hover:bg-cozy-peach/50 rounded-lg" aria-label="Open menu"
                     onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -115,10 +153,11 @@
                     </svg>
                 </button>
             </div>
-        
+
             <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-cozy-peach/50 pt-4">
                 <ul class="flex flex-col gap-3 text-sm font-medium">
-                    <li><a href="/guides/map/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🗺️ Map</a></li>
+                    <li><a href="/guides/map/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🗺️ Map</a>
+                    </li>
                     <li><a href="/codes/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🎁 Codes</a></li>
                     <li><a href="/guides/" class="py-2 hover:text-cozy-coral">Guides</a></li>
                     <li><a href="/hobbies/" class="py-2 hover:text-cozy-coral">Hobbies</a></li>
@@ -141,9 +180,9 @@
 
         <!-- Hero -->
         <div class="bg-gradient-to-br from-purple-100 to-cozy-coral/30 rounded-2xl p-6 md:p-8 mb-8">
-            <div class="flex items-center gap-2 text-sm font-medium text-cozy-sage mb-3">
+            <div class="flex items-center gap-2 text-sm font-medium text-green-700 mb-3">
                 <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                Updated: January 2026
+                Updated: February 2026
             </div>
             <h1 class="font-display text-3xl md:text-4xl font-bold text-cozy-bark mb-4">
                 🎉 Heartopia Events Guide
@@ -196,6 +235,13 @@
                                     Time</span></td>
                             <td class="py-2 text-cozy-wood">Seasonal Hobbies</td>
                             <td class="py-2 text-cozy-wood">Various</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">❄️ Winter Frost 2026</td>
+                            <td class="py-2"><span class="bg-cyan-100 text-cyan-700 px-2 py-0.5 rounded text-xs">Limited
+                                    Time</span></td>
+                            <td class="py-2 text-cozy-wood">Snow Sculpting</td>
+                            <td class="py-2 text-cozy-wood">Onsen Mountain</td>
                         </tr>
                     </tbody>
                 </table>
@@ -393,6 +439,70 @@
                     <a href="/events/nest-of-hundreds/"
                         class="block mt-4 text-center bg-cozy-rose text-white font-bold py-3 px-6 rounded-xl hover:bg-cozy-rose/80 transition-colors">
                         📖 Read Full Nest of Hundreds Guide →
+                    </a>
+                </div>
+            </section>
+
+            <!-- WINTER FROST 2026 -->
+            <section id="winter-2026" class="scroll-mt-20">
+                <div class="card-hover bg-white rounded-2xl p-6 border-2 border-cyan-300/50">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-16 h-16 bg-cyan-100 rounded-2xl flex items-center justify-center">
+                            <span class="text-3xl">❄️</span>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-2 mb-1">
+                                <h2 class="font-display text-2xl font-bold">Winter Frost 2026</h2>
+                                <span class="bg-orange-100 text-orange-700 px-2 py-0.5 rounded text-xs">Limited
+                                    Time</span>
+                            </div>
+                            <p class="text-cozy-wood">Special winter event with snow sculpting, exclusive items &
+                                festive activities!</p>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-4 mb-4">
+                        <div class="bg-cyan-50 rounded-xl p-4">
+                            <h3 class="font-bold mb-2">📍 Location</h3>
+                            <ul class="text-sm text-cozy-wood space-y-1">
+                                <li>• <strong>Onsen Mountain</strong></li>
+                                <li>• Winter Utopia Station</li>
+                                <li>• Onsen Mountain Park</li>
+                            </ul>
+                        </div>
+                        <div class="bg-cyan-50 rounded-xl p-4">
+                            <h3 class="font-bold mb-2">🎯 Activities</h3>
+                            <ul class="text-sm text-cozy-wood space-y-1">
+                                <li>• Snow Sculpting hobby unlock</li>
+                                <li>• Winter quests with Eric</li>
+                                <li>• Exclusive winter items</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-yellow-50 rounded-xl p-4 border border-yellow-200">
+                        <h3 class="font-bold mb-2">🎁 Features</h3>
+                        <div class="grid md:grid-cols-2 gap-4 text-sm">
+                            <div>
+                                <span class="text-cozy-wood">New Hobby:</span>
+                                <span class="font-bold"> Snow Sculpting (100 ⭐)</span>
+                            </div>
+                            <div>
+                                <span class="text-cozy-wood">Event NPCs:</span>
+                                <span class="font-bold"> Azure, Eric</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 bg-cozy-mint/20 rounded-xl p-4">
+                        <p class="text-sm text-cozy-wood"><strong>💡 Tip:</strong> Visit <strong>Azure</strong> at
+                            Winter Utopia Station to unlock Snow Sculpting for 100 Wishing Stars. Complete
+                            <strong>Eric's quests</strong> at Onsen Mountain Park for exclusive winter rewards!</p>
+                    </div>
+
+                    <a href="/events/winter-2026/"
+                        class="block mt-4 text-center bg-cyan-500 text-white font-bold py-3 px-6 rounded-xl hover:bg-cyan-600 transition-colors">
+                        📖 Read Full Winter 2026 Guide →
                     </a>
                 </div>
             </section>
