@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRJ91G3VRR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-FRJ91G3VRR');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+        crossorigin="anonymous"></script>
+
+    <!-- SEO Meta Tags -->
+    <title>Heartopia Locations & Map Guide - All Areas, Shops & NPCs 2026</title>
+    <meta name="description"
+        content="Complete Heartopia locations guide covering all areas, shops, NPCs, fishing spots, and animal locations. Explore Central Town, Onsen Mountains, Flower Field, and more.">
+    <meta name="keywords"
+        content="heartopia locations, heartopia map, heartopia areas, heartopia shops, heartopia NPCs, heartopia fishing spots">
+    <meta name="author" content="Heartopia.Life">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://heartopia.life/locations/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Heartopia Locations & Map Guide">
+    <meta property="og:description"
+        content="Explore all locations in Heartopia. Find shops, NPCs, fishing spots, and hidden areas.">
+    <meta property="og:url" content="https://heartopia.life/locations/">
+    <meta property="og:site_name" content="Heartopia.Life">
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What are the main areas in Heartopia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The main areas in Heartopia include Central Town (social hub), Home Sweet Home (your personal space), Fishing Village, Amazing Forest, Flower Field, and Onsen Mountains. The game features a seamless open world without loading screens."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where is Albert Jr. located in Heartopia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Albert Jr., the Gold Merchant, roams around the Suburbs area. You can track him using his icon on the in-game map to find him and sell items for gold."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where can I find Doris the traveling merchant?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Doris appears during special weather: on Art Street during rain/snow, at the base of rainbows (often in Onsen Mountain or forest), and near meteor landing sites during meteor showers."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What shops are in Central Town?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Central Town features Bob's Furniture Shop, Dorothee's Clothing Store, Massimo's Cooking Store, Ka-Ching's General Store, and more on Residential Street and Garden Street."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where is the best fishing spot in Heartopia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Onsen Mountain Lake is a popular fishing spot offering various species like Common Whitefish, Ruffe, Tadpole, Mottled Sculpin, and Bluegill at different times and weather conditions."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cozy': {
+                            'cream': '#FFF8F0',
+                            'peach': '#FFE5D9',
+                            'coral': '#FF9B85',
+                            'rose': '#D4A5A5',
+                            'sage': '#A8C686',
+                            'mint': '#B8E0D2',
+                            'sky': '#95C8D8',
+                            'wood': '#8B7355',
+                            'bark': '#5D4E37',
+                        }
+                    },
+                    fontFamily: {
+                        'display': ['Georgia', 'serif'],
+                        'body': ['system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(139, 115, 85, 0.15);
+        }
+
+        .location-card {
+            border-left: 4px solid;
+        }
+
+        .map-container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            border-radius: 1rem;
+            overflow: hidden;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body class="bg-cozy-cream text-cozy-bark font-body">
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-cozy-peach/50">
+        <nav class="max-w-6xl mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center gap-2 group">
+                    <img src="/favicon-96x96.png" alt="Heartopia.Life" class="w-7 h-7">
+                    <span class="font-display text-xl font-bold text-cozy-bark">Heartopia<span
+                            class="text-cozy-sage">.Life</span></span>
+                </a>
+                <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+                    <li><a href="/guides/map/"
+                            class="hover:text-cozy-coral transition-colors flex items-center gap-1">🗺️ Map</a></li>
+                    <li><a href="/codes/" class="hover:text-cozy-coral transition-colors flex items-center gap-1">🎁
+                            Codes</a></li>
+                    <li><a href="/guides/" class="hover:text-cozy-coral transition-colors">Guides</a></li>
+                    <li><a href="/hobbies/" class="hover:text-cozy-coral transition-colors">Hobbies</a></li>
+                    <li><a href="/events/" class="hover:text-cozy-coral transition-colors">Events</a></li>
+                    <li><a href="/database/" class="hover:text-cozy-coral transition-colors">Database</a></li>
+                    <li><a href="/npcs/" class="hover:text-cozy-coral transition-colors">NPCs</a></li>
+                </ul>
+
+                <button class="md:hidden p-2 hover:bg-cozy-peach/50 rounded-lg" aria-label="Open menu"
+                    onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-cozy-peach/50 pt-4">
+                <ul class="flex flex-col gap-3 text-sm font-medium">
+                    <li><a href="/guides/map/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🗺️ Map</a>
+                    </li>
+                    <li><a href="/codes/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🎁 Codes</a></li>
+                    <li><a href="/guides/" class="py-2 hover:text-cozy-coral">Guides</a></li>
+                    <li><a href="/hobbies/" class="py-2 hover:text-cozy-coral">Hobbies</a></li>
+                    <li><a href="/events/" class="py-2 hover:text-cozy-coral">Events</a></li>
+                    <li><a href="/database/" class="py-2 hover:text-cozy-coral">Database</a></li>
+                    <li><a href="/npcs/" class="py-2 hover:text-cozy-coral">NPCs</a></li>
+                    <li><a href="/tools/" class="py-2 hover:text-cozy-coral">Tools</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-8">
+
+        <!-- Breadcrumb -->
+        <nav class="text-sm text-cozy-wood mb-6">
+            <a href="/" class="hover:text-cozy-coral">Home</a>
+            <span class="mx-2">›</span>
+            <span class="text-cozy-bark font-medium">Locations & Map</span>
+        </nav>
+
+        <!-- Hero -->
+        <div class="bg-gradient-to-br from-cozy-mint to-cozy-sky rounded-2xl p-6 md:p-8 mb-8">
+            <div class="flex items-center gap-2 text-sm font-medium text-green-700 mb-3">
+                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                Last Updated: February 12, 2026
+            </div>
+            <h1 class="font-display text-3xl md:text-4xl font-bold text-cozy-bark mb-4">
+                🗺️ Heartopia Locations & Map Guide
+            </h1>
+            <p class="text-cozy-wood text-lg leading-relaxed">
+                Explore the complete map of Heartopia's seamless open world. Discover all major areas, shops, NPCs,
+                fishing spots, and hidden locations across this cozy fairy-tale town.
+            </p>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
+                <div class="text-2xl font-bold text-cozy-coral">6+</div>
+                <div class="text-sm text-cozy-wood">Main Areas</div>
+            </div>
+            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
+                <div class="text-2xl font-bold text-cozy-sage">10+</div>
+                <div class="text-sm text-cozy-wood">Shops</div>
+            </div>
+            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
+                <div class="text-2xl font-bold text-cozy-sky">Seamless</div>
+                <div class="text-sm text-cozy-wood">No Loading</div>
+            </div>
+            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
+                <div class="text-2xl font-bold text-purple-600">20+</div>
+                <div class="text-sm text-cozy-wood">NPCs</div>
+            </div>
+        </div>
+
+        <!-- TOC -->
+        <div class="bg-white rounded-xl p-6 mb-8 border border-cozy-peach/30">
+            <h2 class="font-bold text-lg mb-3">📋 Quick Navigation</h2>
+            <div class="grid md:grid-cols-2 gap-2 text-sm">
+                <a href="#interactive-map" class="text-cozy-coral hover:underline">→ Interactive Map</a>
+                <a href="#main-areas" class="text-cozy-coral hover:underline">→ Main Areas</a>
+                <a href="#shops" class="text-cozy-coral hover:underline">→ Shops & Stores</a>
+                <a href="#npcs" class="text-cozy-coral hover:underline">→ NPC Locations</a>
+                <a href="#fishing" class="text-cozy-coral hover:underline">→ Fishing Spots</a>
+                <a href="#animals" class="text-cozy-coral hover:underline">→ Animal Locations</a>
+                <a href="#faq" class="text-cozy-coral hover:underline">→ FAQ</a>
+            </div>
+        </div>
+
+        <!-- Interactive Map Section -->
+        <section id="interactive-map" class="bg-white rounded-2xl p-6 mb-8 border border-cozy-peach/30">
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="font-display text-2xl font-bold">🌍 Interactive World Map</h2>
+                <button onclick="openFullscreenMap()"
+                    class="text-sm text-cozy-coral hover:underline flex items-center gap-1 cursor-pointer">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                    </svg>
+                    Full Screen
+                </button>
+            </div>
+            <div class="map-container border-2 border-cozy-peach/30">
+                <iframe id="map-iframe" src="https://webresources.cc/heartopia/en.html"
+                    title="Heartopia Interactive Map" loading="lazy" allow="fullscreen" referrerpolicy="no-referrer">
+                </iframe>
+            </div>
+            <p class="text-xs text-cozy-wood mt-3 text-center">
+                Interactive map powered by <a href="https://www.heartopia.live" target="_blank" rel="noopener"
+                    class="text-cozy-coral hover:underline">Heartopia.live</a>. Zoom, pan, and click markers for
+                details.
+            </p>
+        </section>
+
+        <!-- Fullscreen Map Modal -->
+        <div id="fullscreen-map-modal" class="fixed inset-0 z-[100] hidden">
+            <div class="absolute inset-0 bg-black/90"></div>
+
+            <div class="relative w-full h-full flex flex-col">
+
+                <div class="flex items-center justify-between p-4 bg-cozy-bark/90 text-white shrink-0">
+                    <h3 class="font-display font-bold text-lg">🗺️ Heartopia Interactive Map</h3>
+                    <button onclick="closeFullscreenMap()"
+                        class="flex items-center gap-2 px-4 py-2 bg-cozy-coral hover:bg-cozy-coral/80 rounded-lg transition-colors cursor-pointer">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                        Close
+                    </button>
+                </div>
+
+                <div class="flex-1 w-full h-full relative">
+                    <iframe id="fullscreen-map-iframe" src="" title="Heartopia Interactive Map Full Screen"
+                        class="w-full h-full border-none" allow="fullscreen" referrerpolicy="no-referrer">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function openFullscreenMap() {
+                const modal = document.getElementById('fullscreen-map-modal');
+                const iframe = document.getElementById('fullscreen-map-iframe');
+                iframe.src = 'https://webresources.cc/heartopia/en.html';
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeFullscreenMap() {
+                const modal = document.getElementById('fullscreen-map-modal');
+                const iframe = document.getElementById('fullscreen-map-iframe');
+                modal.classList.add('hidden');
+                iframe.src = '';
+                document.body.style.overflow = '';
+            }
+
+            // Close on Escape key
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') {
+                    closeFullscreenMap();
+                }
+            });
+        </script>
+
+        <!-- Main Areas -->
+        <section id="main-areas" class="mb-12">
+            <h2 class="font-display text-2xl font-bold mb-6 flex items-center gap-2">
+                🏘️ Main Areas & Districts
+            </h2>
+
+            <p class="text-cozy-wood mb-6">
+                Heartopia features a <strong>seamless open world</strong> without loading screens, designed as a cozy
+                fairy-tale town with diverse areas to explore.
+            </p>
+
+            <div class="space-y-4">
+                <!-- Central Town -->
+                <div class="location-card bg-white rounded-xl p-6 border-cozy-coral">
+                    <div class="flex items-start gap-4">
+                        <div class="text-4xl">🏛️</div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-lg mb-2">Central Town</h3>
+                            <p class="text-sm text-cozy-wood mb-2">The main social hub of Heartopia, featuring
+                                restaurants, furniture stores, clothing stores, and daily activities. Most players
+                                gather here for community interactions.</p>
+                            <p class="text-xs text-cozy-wood"><strong>Key Streets:</strong> Residential Street, Garden
+                                Street, Art Street</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Home Sweet Home -->
+                <div class="location-card bg-white rounded-xl p-6 border-cozy-sage">
+                    <div class="flex items-start gap-4">
+                        <div class="text-4xl">🏡</div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-lg mb-2">Home Sweet Home</h3>
+                            <p class="text-sm text-cozy-wood mb-2">Your personal living space that grows from a small
+                                cottage to a mansion. Central location for home building, gardening, decorating, and
+                                crafting.</p>
+                            <p class="text-xs text-cozy-wood"><strong>Expansion:</strong> Unlock additional plots at
+                                D.G. Levels 4, 6, 8, 11, 14, 16</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fishing Village -->
+                <div class="location-card bg-white rounded-xl p-6 border-blue-400">
+                    <div class="flex items-start gap-4">
+                        <div class="text-4xl">🎣</div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-lg mb-2">Fishing Village</h3>
+                            <p class="text-sm text-cozy-wood mb-2">Coastal area dedicated to fishing activities,
+                                featuring fishing spots, market stalls, and a wharf.</p>
+                            <p class="text-xs text-cozy-wood"><strong>Features:</strong> Wharf Market Stall, coastal
+                                fishing spots</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Amazing Forest -->
+                <div class="location-card bg-white rounded-xl p-6 border-green-500">
+                    <div class="flex items-start gap-4">
+                        <div class="text-4xl">🌲</div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-lg mb-2">Amazing Forest</h3>
+                            <p class="text-sm text-cozy-wood mb-2">Dense forest region for exploration, featuring
+                                sub-areas like Spirit-Oak Pine Forest and Jump Puzzle Area. Home to rare insects and
+                                wildlife.</p>
+                            <p class="text-xs text-cozy-wood"><strong>Sub-areas:</strong> Spirit-Oak Pine Forest, Jump
+                                Puzzle Area, Forest Lake Bridge</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flower Field -->
+                <div class="location-card bg-white rounded-xl p-6 border-pink-400">
+                    <div class="flex items-start gap-4">
+                        <div class="text-4xl">🌸</div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-lg mb-2">Flower Field</h3>
+                            <p class="text-sm text-cozy-wood mb-2">Beautiful meadow filled with flowers and windmills.
+                                Popular spot for photography and wildlife watching.</p>
+                            <p class="text-xs text-cozy-wood"><strong>Wildlife:</strong> Foxes, various birds</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Onsen Mountains -->
+                <div class="location-card bg-white rounded-xl p-6 border-orange-400">
+                    <div class="flex items-start gap-4">
+                        <div class="text-4xl">⛰️</div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-lg mb-2">Onsen Mountains</h3>
+                            <p class="text-sm text-cozy-wood mb-2">Warm spring-season area with hot springs, mountain
+                                lakes, and beautiful scenery. Perfect for fishing, bird photography, and relaxation.</p>
+                            <p class="text-xs text-cozy-wood"><strong>Features:</strong> Onsen Mountain Lake (fishing),
+                                hot springs, fluorite resources</p>
+                            <p class="text-xs text-cozy-wood"><strong>Winter Event:</strong> Ice skating rink, ice/snow
+                                slides</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Locations -->
+                <div class="location-card bg-white rounded-xl p-6 border-purple-400">
+                    <div class="flex items-start gap-4">
+                        <div class="text-4xl">📍</div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-lg mb-2">Other Notable Locations</h3>
+                            <ul class="text-sm text-cozy-wood space-y-1">
+                                <li>• <strong>Purple Light Beach</strong> - Coastal area connected to lighthouse</li>
+                                <li>• <strong>Lighthouse Area</strong> - Scenic viewpoint with bridge access</li>
+                                <li>• <strong>Giantwood River Bridge</strong> - Major river crossing</li>
+                                <li>• <strong>Rosy River Bridge</strong> - Scenic bridge near windmill</li>
+                                <li>• <strong>Suburbs</strong> - Residential area where Albert Jr. roams</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shops & Stores -->
+        <section id="shops" class="mb-12">
+            <h2 class="font-display text-2xl font-bold mb-6 flex items-center gap-2">
+                🏪 Shops & Stores
+            </h2>
+
+            <p class="text-cozy-wood mb-6">
+                Most shops are located in <strong>Central Town</strong> on Residential Street and Garden Street. Shop
+                inventories refresh daily.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-4">
+                <!-- Bob's Furniture Shop -->
+                <div class="bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <h3 class="font-semibold mb-2">🛋️ Bob's Furniture Shop</h3>
+                    <p class="text-sm text-cozy-wood mb-1"><strong>Location:</strong> Residential Street, Town Square
+                    </p>
+                    <p class="text-sm text-cozy-wood mb-1"><strong>Sells:</strong> Furniture, building recipes</p>
+                    <p class="text-xs text-cozy-wood">Inventory changes daily</p>
+                </div>
+
+                <!-- Dorothee's Clothing Store -->
+                <div class="bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <h3 class="font-semibold mb-2">👗 Dorothee's Clothing Store</h3>
+                    <p class="text-sm text-cozy-wood mb-1"><strong>Location:</strong> Residential Street, Town Square
+                    </p>
+                    <p class="text-sm text-cozy-wood mb-1"><strong>Sells:</strong> Clothing, accessories, customization
+                        options</p>
+                    <p class="text-xs text-cozy-wood">Upstairs: Hair, eyebrows, eyes, beards, face paint</p>
+                </div>
+
+                <!-- Massimo's Cooking Store -->
+                <div class="bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <h3 class="font-semibold mb-2">🍳 Massimo's Cooking Store</h3>
+                    <p class="text-sm text-cozy-wood mb-1"><strong>Location:</strong> Residential Street (near
+                        bookstore)</p>
+                    <p class="text-sm text-cozy-wood mb-1"><strong>Sells:</strong> Fresh produce, dry goods, seasonings,
+                        recipes</p>
+                    <p class="text-xs text-cozy-wood">Massimo is the Cooking Mentor</p>
+                </div>
+
+                <!-- Mrs. Joan's Pet Shop -->
+                <div class="bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <h3 class="font-semibold mb-2">🐾 Mrs. Joan's Pet Shop</h3>
+                    <p class="text-sm text-cozy-wood mb-1"><strong>Location:</strong> Garden Street, Central Square</p>
+                    <p class="text-sm text-cozy-wood mb-1"><strong>Sells:</strong> Pet food, furniture, accessories,
+                        clothing</p>
+                </div>
+
+                <!-- Ka-Ching's General Store -->
+                <div class="bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <h3 class="font-semibold mb-2">🛒 Ka-Ching's General Store</h3>
+                    <p class="text-sm text-cozy-wood mb-1"><strong>Location:</strong> Northwest of town, Residential
+                        Street outskirts</p>
+                    <p class="text-sm text-cozy-wood mb-1"><strong>Sells:</strong> General goods, inventory expansion
+                        (Wishing Stars)</p>
+                    <p class="text-xs text-cozy-wood">Party poppers, puzzles rotate</p>
+                </div>
+
+                <!-- Blanc's Gardening Store -->
+                <div class="bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <h3 class="font-semibold mb-2">🌱 Blanc's Gardening Store</h3>
+                    <p class="text-sm text-cozy-wood mb-1"><strong>Location:</strong> Garden Street, Town Center</p>
+                    <p class="text-sm text-cozy-wood mb-1"><strong>Sells:</strong> Planters, seeds, gardening supplies
+                    </p>
+                    <p class="text-xs text-cozy-wood">Blanc is the Gardening Mentor</p>
+                </div>
+
+                <!-- Vanya's Fishing Store -->
+                <div class="bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <h3 class="font-semibold mb-2">🎣 Vanya's Fishing Store</h3>
+                    <p class="text-sm text-cozy-wood mb-1"><strong>Location:</strong> Northern Garden Street</p>
+                    <p class="text-sm text-cozy-wood mb-1"><strong>Sells:</strong> Fish tanks (various sizes/colors)</p>
+                    <p class="text-xs text-cozy-wood">Vanya is the Fishing Mentor</p>
+                </div>
+
+                <!-- Naniwa's Insect Catching Supplies -->
+                <div class="bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <h3 class="font-semibold mb-2">🦋 Naniwa's Insect Catching Store</h3>
+                    <p class="text-sm text-cozy-wood mb-1"><strong>Location:</strong> East Garden Street</p>
+                    <p class="text-sm text-cozy-wood mb-1"><strong>Sells:</strong> Vivariums (various sizes/colors)</p>
+                </div>
+
+                <!-- Bailey J's Birdwatching Store -->
+                <div class="bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <h3 class="font-semibold mb-2">🐦 Bailey J's Birdwatching Store</h3>
+                    <p class="text-sm text-cozy-wood mb-1"><strong>Location:</strong> Garden Street (above Mrs. Joan's)
+                    </p>
+                    <p class="text-sm text-cozy-wood mb-1"><strong>Sells:</strong> Birdwatching supplies</p>
+                </div>
+
+                <!-- Annie's Music Store -->
+                <div class="bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <h3 class="font-semibold mb-2">🎵 Annie's Music Store</h3>
+                    <p class="text-sm text-cozy-wood mb-1"><strong>Location:</strong> Center of town (next to whale
+                        sculpture)</p>
+                    <p class="text-sm text-cozy-wood mb-1"><strong>Sells:</strong> Music created by other D.G. Members
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- NPC Locations -->
+        <section id="npcs" class="mb-12">
+            <h2 class="font-display text-2xl font-bold mb-6 flex items-center gap-2">
+                👥 Important NPC Locations
+            </h2>
+
+            <div class="space-y-4">
+                <!-- Albert Jr. -->
+                <div class="bg-white rounded-xl p-6 border border-cozy-peach/30">
+                    <div class="flex items-start gap-4">
+                        <div class="text-3xl">💰</div>
+                        <div class="flex-1">
+                            <h3 class="font-bold mb-2">Albert Jr. - Gold Merchant</h3>
+                            <p class="text-sm text-cozy-wood mb-2"><strong>Location:</strong> Roams around the
+                                <strong>Suburbs</strong> (not fixed)
+                            </p>
+                            <p class="text-sm text-cozy-wood mb-2"><strong>Function:</strong> Sell items for gold (food,
+                                furniture, crops, fish)</p>
+                            <p class="text-xs bg-blue-50 border border-blue-200 rounded p-2">💡 <strong>Tip:</strong>
+                                Track Albert Jr. using his icon on the in-game map</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doris -->
+                <div class="bg-white rounded-xl p-6 border border-cozy-peach/30">
+                    <div class="flex items-start gap-4">
+                        <div class="text-3xl">🌈</div>
+                        <div class="flex-1">
+                            <h3 class="font-bold mb-2">Doris - Traveling Merchant</h3>
+                            <p class="text-sm text-cozy-wood mb-2"><strong>Locations (weather-dependent):</strong></p>
+                            <ul class="text-sm text-cozy-wood space-y-1 mb-2">
+                                <li>• <strong>Rain/Snow:</strong> Art Street in main town</li>
+                                <li>• <strong>Rainbow:</strong> Base of rainbow (often Onsen Mountain or forest)</li>
+                                <li>• <strong>Meteor Shower:</strong> Near meteor landing sites (Onsen Mountain or
+                                    beaches)</li>
+                            </ul>
+                            <p class="text-xs bg-yellow-50 border border-yellow-200 rounded p-2">⚠️ Doris only appears
+                                during special weather conditions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mayor Atara -->
+                <div class="bg-white rounded-xl p-6 border border-cozy-peach/30">
+                    <div class="flex items-start gap-4">
+                        <div class="text-3xl">📋</div>
+                        <div class="flex-1">
+                            <h3 class="font-bold mb-2">Mayor Atara - Daily Quests</h3>
+                            <p class="text-sm text-cozy-wood mb-2"><strong>Location:</strong> Central Town</p>
+                            <p class="text-sm text-cozy-wood"><strong>Function:</strong> Provides daily resident
+                                requests (5 per day, 50 Contribution Medals)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-cozy-mint/20 rounded-xl p-4 mt-4">
+                <p class="text-sm text-cozy-wood">
+                    <strong>More NPCs:</strong> For a complete list of all NPCs and their locations, visit our <a
+                        href="/npcs/" class="text-cozy-coral hover:underline">NPCs Guide</a> or <a href="/characters/"
+                        class="text-cozy-coral hover:underline">Characters Page</a>.
+                </p>
+            </div>
+        </section>
+
+        <!-- Fishing Spots -->
+        <section id="fishing" class="mb-12">
+            <h2 class="font-display text-2xl font-bold mb-6 flex items-center gap-2">
+                🎣 Fishing Spots
+            </h2>
+
+            <div class="bg-white rounded-xl p-6 border border-cozy-peach/30 mb-4">
+                <h3 class="font-bold text-lg mb-4">Onsen Mountain Lake</h3>
+                <p class="text-sm text-cozy-wood mb-4">The most popular fishing spot in Heartopia, offering diverse fish
+                    species.</p>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead class="bg-cozy-peach/30">
+                            <tr>
+                                <th class="px-4 py-2 text-left">Fish</th>
+                                <th class="px-4 py-2 text-left">Time</th>
+                                <th class="px-4 py-2 text-left">Weather</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-cozy-peach/20">
+                            <tr>
+                                <td class="px-4 py-2">Common Whitefish</td>
+                                <td class="px-4 py-2">All day</td>
+                                <td class="px-4 py-2">Sunny, Rainy, Rainbow</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2">Ruffe</td>
+                                <td class="px-4 py-2">Night, Day, Evening</td>
+                                <td class="px-4 py-2">Sunny, Rainy, Rainbow</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2">Tadpole</td>
+                                <td class="px-4 py-2">All day</td>
+                                <td class="px-4 py-2">Rainy, Rainbow</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2">Mottled Sculpin</td>
+                                <td class="px-4 py-2">Morning, Day, Evening</td>
+                                <td class="px-4 py-2">Rainy, Rainbow</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2">Bluegill</td>
+                                <td class="px-4 py-2">Night, Evening</td>
+                                <td class="px-4 py-2">Sunny, Rainbow</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2">Pumpkinseed</td>
+                                <td class="px-4 py-2">Various</td>
+                                <td class="px-4 py-2">Various</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="bg-cozy-sky/20 rounded-xl p-4">
+                <p class="text-sm text-cozy-wood">
+                    <strong>More Fishing Spots:</strong> For a complete fishing guide including all locations and fish
+                    species, visit our <a href="/hobbies/fishing/" class="text-cozy-coral hover:underline">Fishing
+                        Guide</a>.
+                </p>
+            </div>
+        </section>
+
+        <!-- Animal Locations -->
+        <section id="animals" class="mb-12">
+            <h2 class="font-display text-2xl font-bold mb-6 flex items-center gap-2">
+                🦊 Animal Locations
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <h3 class="font-semibold mb-2 flex items-center gap-2">🦫 Capybaras</h3>
+                    <p class="text-sm text-cozy-wood"><strong>Location:</strong> West of Onsen Mountain Lake</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <h3 class="font-semibold mb-2 flex items-center gap-2">🦊 Foxes</h3>
+                    <p class="text-sm text-cozy-wood"><strong>Location:</strong> Flower Field</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <h3 class="font-semibold mb-2 flex items-center gap-2">🦡 Ferrets</h3>
+                    <p class="text-sm text-cozy-wood"><strong>Location:</strong> South of Rosy River, near Windmill</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <h3 class="font-semibold mb-2 flex items-center gap-2">🦙 Alpacas</h3>
+                    <p class="text-sm text-cozy-wood"><strong>Location:</strong> West of bridge connecting lighthouse to
+                        Purple Light Beach</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <h3 class="font-semibold mb-2 flex items-center gap-2">🐰 Bunnies</h3>
+                    <p class="text-sm text-cozy-wood"><strong>Location:</strong> Near Art Street</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="mb-12">
+            <h2 class="font-display text-2xl font-bold mb-6 flex items-center gap-2">
+                ❓ Frequently Asked Questions
+            </h2>
+
+            <div class="space-y-4">
+                <details class="bg-white rounded-xl p-6 border border-cozy-peach/30 cursor-pointer">
+                    <summary class="font-semibold cursor-pointer">What are the main areas in Heartopia?</summary>
+                    <p class="text-sm text-cozy-wood mt-3">The main areas include <strong>Central Town</strong> (social
+                        hub), <strong>Home Sweet Home</strong> (your personal space), <strong>Fishing Village</strong>,
+                        <strong>Amazing Forest</strong>, <strong>Flower Field</strong>, and <strong>Onsen
+                            Mountains</strong>. The game features a seamless open world without loading screens.
+                    </p>
+                </details>
+
+                <details class="bg-white rounded-xl p-6 border border-cozy-peach/30 cursor-pointer">
+                    <summary class="font-semibold cursor-pointer">Where is Albert Jr. located?</summary>
+                    <p class="text-sm text-cozy-wood mt-3">Albert Jr., the Gold Merchant, roams around the
+                        <strong>Suburbs</strong> area. You can track him using his icon on the in-game map to find him
+                        and sell items for gold.
+                    </p>
+                </details>
+
+                <details class="bg-white rounded-xl p-6 border border-cozy-peach/30 cursor-pointer">
+                    <summary class="font-semibold cursor-pointer">Where can I find Doris the traveling merchant?
+                    </summary>
+                    <p class="text-sm text-cozy-wood mt-3">Doris appears during special weather: on <strong>Art
+                            Street</strong> during rain/snow, at the <strong>base of rainbows</strong> (often in Onsen
+                        Mountain or forest), and near <strong>meteor landing sites</strong> during meteor showers.</p>
+                </details>
+
+                <details class="bg-white rounded-xl p-6 border border-cozy-peach/30 cursor-pointer">
+                    <summary class="font-semibold cursor-pointer">What shops are in Central Town?</summary>
+                    <p class="text-sm text-cozy-wood mt-3">Central Town features <strong>Bob's Furniture Shop</strong>,
+                        <strong>Dorothee's Clothing Store</strong>, <strong>Massimo's Cooking Store</strong>,
+                        <strong>Ka-Ching's General Store</strong>, and more on Residential Street and Garden Street.
+                        Most shops refresh their inventory daily.
+                    </p>
+                </details>
+
+                <details class="bg-white rounded-xl p-6 border border-cozy-peach/30 cursor-pointer">
+                    <summary class="font-semibold cursor-pointer">Where is the best fishing spot?</summary>
+                    <p class="text-sm text-cozy-wood mt-3"><strong>Onsen Mountain Lake</strong> is a popular fishing
+                        spot offering various species like Common Whitefish, Ruffe, Tadpole, Mottled Sculpin, and
+                        Bluegill at different times and weather conditions.</p>
+                </details>
+
+                <details class="bg-white rounded-xl p-6 border border-cozy-peach/30 cursor-pointer">
+                    <summary class="font-semibold cursor-pointer">How do I unlock new areas?</summary>
+                    <p class="text-sm text-cozy-wood mt-3">Most areas are accessible from the start. However,
+                        <strong>Home Plots</strong> unlock at specific D.G. Member Levels (4, 6, 8, 11, 14, 16). Some
+                        event-specific locations appear during seasonal events.
+                    </p>
+                </details>
+
+                <details class="bg-white rounded-xl p-6 border border-cozy-peach/30 cursor-pointer">
+                    <summary class="font-semibold cursor-pointer">Are there loading screens between areas?</summary>
+                    <p class="text-sm text-cozy-wood mt-3">No! Heartopia features a <strong>seamless open world</strong>
+                        without loading screens, allowing for continuous exploration across the entire map.</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- Related Guides -->
+        <section class="mb-8">
+            <h2 class="font-bold text-lg mb-4">📚 Related Guides</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <a href="/guides/map/"
+                    class="card-hover flex items-center gap-3 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-2xl">🗺️</span>
+                    <span class="font-medium">Interactive Map</span>
+                </a>
+                <a href="/npcs/"
+                    class="card-hover flex items-center gap-3 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-2xl">👥</span>
+                    <span class="font-medium">All NPCs & Characters</span>
+                </a>
+                <a href="/hobbies/fishing/"
+                    class="card-hover flex items-center gap-3 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-2xl">🎣</span>
+                    <span class="font-medium">Fishing Guide</span>
+                </a>
+                <a href="/database/"
+                    class="card-hover flex items-center gap-3 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-2xl">📚</span>
+                    <span class="font-medium">Database</span>
+                </a>
+                <a href="/events/"
+                    class="card-hover flex items-center gap-3 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-2xl">🎉</span>
+                    <span class="font-medium">Events Calendar</span>
+                </a>
+                <a href="/gameplay/"
+                    class="card-hover flex items-center gap-3 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-2xl">🎮</span>
+                    <span class="font-medium">Gameplay Guide</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Disclaimer -->
+        <section class="bg-cozy-bark/10 rounded-xl p-4 text-sm text-cozy-wood mb-8">
+            <p><strong>Disclaimer:</strong> This locations guide is based on Heartopia v1.0 (January 2026 release). Some
+                locations may be event-specific or seasonal. Information verified through professional gaming media
+                (TheGamer, GameRant, VG247, Eurogamer) and community guides (LDPlayer, KeenGamer) as of February 12,
+                2026.</p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-cozy-bark text-white py-8">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <a href="/" class="inline-flex items-center gap-2 mb-4">
+                <span class="text-xl">🏡</span>
+                <span class="font-display font-bold">Heartopia<span class="text-cozy-sage">.Life</span></span>
+            </a>
+            <p class="text-white/60 text-sm mb-4">Unofficial fan site. Not affiliated with XD Inc.</p>
+            <p class="text-white/40 text-xs">© 2026 Heartopia.Life</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
