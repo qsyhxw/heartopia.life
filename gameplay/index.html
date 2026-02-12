@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRJ91G3VRR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-FRJ91G3VRR');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+        crossorigin="anonymous"></script>
+
+    <!-- SEO Meta Tags -->
+    <title>Heartopia Gameplay Guide - How to Play, Tips & Features 2026</title>
+    <meta name="description"
+        content="Complete Heartopia gameplay guide covering 7 hobbies, progression system, energy management, and daily activities. Learn how to play with beginner tips and strategies.">
+    <meta name="keywords"
+        content="heartopia gameplay, heartopia how to play, heartopia game mechanics, heartopia tips, heartopia hobbies, heartopia progression">
+    <meta name="author" content="Heartopia.Life">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://heartopia.life/gameplay/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Heartopia Gameplay Guide - How to Play">
+    <meta property="og:description"
+        content="Master Heartopia with our complete gameplay guide. Learn about 7 hobbies, progression, energy system, and daily routines.">
+    <meta property="og:url" content="https://heartopia.life/gameplay/">
+    <meta property="og:site_name" content="Heartopia.Life">
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Is Heartopia multiplayer or single-player?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Heartopia supports multiplayer features including visiting friends' homes and co-building. However, the core experience is primarily single-player focused on your personal island and progression."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What platforms can I play Heartopia on?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Heartopia is available on PC (TapTap client and Steam), iOS, and Android. The game supports cross-platform play, allowing you to access your account across devices."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How many hobbies are in Heartopia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "There are 7 main hobbies in Heartopia: Fishing, Gardening, Cooking, Insect Catching, Bird Watching, Cat Care, and Dog Care."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the fastest way to level up D.G.?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Complete 5 Daily Resident Requests every day for 50 Contribution Medals. Also participate in mini-game events and weekly quests for bonus medals."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What's the best hobby for making money?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Cooking combined with Gardening and Fishing provides the best profit. Processed goods (cooked dishes) sell for significantly more than raw materials."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cozy': {
+                            'cream': '#FFF8F0',
+                            'peach': '#FFE5D9',
+                            'coral': '#FF9B85',
+                            'rose': '#D4A5A5',
+                            'sage': '#A8C686',
+                            'mint': '#B8E0D2',
+                            'sky': '#95C8D8',
+                            'wood': '#8B7355',
+                            'bark': '#5D4E37',
+                        }
+                    },
+                    fontFamily: {
+                        'display': ['Georgia', 'serif'],
+                        'body': ['system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(139, 115, 85, 0.15);
+        }
+
+        .hobby-card {
+            border-left: 4px solid;
+        }
+    </style>
+</head>
+
+<body class="bg-cozy-cream text-cozy-bark font-body">
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-cozy-peach/50">
+        <nav class="max-w-6xl mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center gap-2 group">
+                    <img src="/favicon-96x96.png" alt="Heartopia.Life" class="w-7 h-7">
+                    <span class="font-display text-xl font-bold text-cozy-bark">Heartopia<span
+                            class="text-cozy-sage">.Life</span></span>
+                </a>
+                <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+                    <li><a href="/guides/map/"
+                            class="hover:text-cozy-coral transition-colors flex items-center gap-1">🗺️ Map</a></li>
+                    <li><a href="/codes/" class="hover:text-cozy-coral transition-colors flex items-center gap-1">🎁
+                            Codes</a></li>
+                    <li><a href="/guides/" class="hover:text-cozy-coral transition-colors">Guides</a></li>
+                    <li><a href="/hobbies/" class="hover:text-cozy-coral transition-colors">Hobbies</a></li>
+                    <li><a href="/events/" class="hover:text-cozy-coral transition-colors">Events</a></li>
+                    <li><a href="/database/" class="hover:text-cozy-coral transition-colors">Database</a></li>
+                    <li><a href="/npcs/" class="hover:text-cozy-coral transition-colors">NPCs</a></li>
+                </ul>
+
+                <button class="md:hidden p-2 hover:bg-cozy-peach/50 rounded-lg" aria-label="Open menu"
+                    onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-cozy-peach/50 pt-4">
+                <ul class="flex flex-col gap-3 text-sm font-medium">
+                    <li><a href="/guides/map/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🗺️ Map</a>
+                    </li>
+                    <li><a href="/codes/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🎁 Codes</a></li>
+                    <li><a href="/guides/" class="py-2 hover:text-cozy-coral">Guides</a></li>
+                    <li><a href="/hobbies/" class="py-2 hover:text-cozy-coral">Hobbies</a></li>
+                    <li><a href="/events/" class="py-2 hover:text-cozy-coral">Events</a></li>
+                    <li><a href="/database/" class="py-2 hover:text-cozy-coral">Database</a></li>
+                    <li><a href="/npcs/" class="py-2 hover:text-cozy-coral">NPCs</a></li>
+                    <li><a href="/tools/" class="py-2 hover:text-cozy-coral">Tools</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-8">
+
+        <!-- Breadcrumb -->
+        <nav class="text-sm text-cozy-wood mb-6">
+            <a href="/" class="hover:text-cozy-coral">Home</a>
+            <span class="mx-2">›</span>
+            <span class="text-cozy-bark font-medium">Gameplay Guide</span>
+        </nav>
+
+        <!-- Hero -->
+        <div class="bg-gradient-to-br from-cozy-mint to-cozy-sky rounded-2xl p-6 md:p-8 mb-8">
+            <div class="flex items-center gap-2 text-sm font-medium text-green-700 mb-3">
+                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                Last Updated: February 12, 2026
+            </div>
+            <h1 class="font-display text-3xl md:text-4xl font-bold text-cozy-bark mb-4">
+                🎮 Heartopia Gameplay Guide - Everything You Need to Know
+            </h1>
+            <p class="text-cozy-wood text-lg leading-relaxed">
+                Heartopia is a cozy multiplayer life simulation game where you build your dream island home, master 7
+                different hobbies, and connect with charming residents. Released on January 7, 2026 for PC, iOS, and
+                Android, this free-to-play game by XD Inc. offers a relaxing, stress-free experience focused on
+                creativity and daily routines.
+            </p>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
+                <div class="text-2xl font-bold text-cozy-coral">7</div>
+                <div class="text-sm text-cozy-wood">Hobbies</div>
+            </div>
+            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
+                <div class="text-2xl font-bold text-cozy-sage">Free</div>
+                <div class="text-sm text-cozy-wood">To Play</div>
+            </div>
+            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
+                <div class="text-2xl font-bold text-cozy-sky">3</div>
+                <div class="text-sm text-cozy-wood">Platforms</div>
+            </div>
+            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
+                <div class="text-2xl font-bold text-purple-600">Relaxing</div>
+                <div class="text-sm text-cozy-wood">Play Style</div>
+            </div>
+        </div>
+
+        <!-- TOC -->
+        <div class="bg-white rounded-xl p-6 mb-8 border border-cozy-peach/30">
+            <h2 class="font-bold text-lg mb-3">📋 Quick Navigation</h2>
+            <div class="grid md:grid-cols-2 gap-2 text-sm">
+                <a href="#overview" class="text-cozy-coral hover:underline">→ Core Gameplay Overview</a>
+                <a href="#daily-loop" class="text-cozy-coral hover:underline">→ Daily Gameplay Loop</a>
+                <a href="#hobbies" class="text-cozy-coral hover:underline">→ Seven Main Hobbies</a>
+                <a href="#progression" class="text-cozy-coral hover:underline">→ Progression System</a>
+                <a href="#energy" class="text-cozy-coral hover:underline">→ Energy & Stamina</a>
+                <a href="#tips" class="text-cozy-coral hover:underline">→ Beginner Tips</a>
+                <a href="#faq" class="text-cozy-coral hover:underline">→ FAQ</a>
+                <a href="#guides" class="text-cozy-coral hover:underline">→ Related Guides</a>
+            </div>
+        </div>
+
+        <!-- Core Gameplay Overview -->
+        <section id="overview" class="mb-12">
+            <h2 class="font-display text-2xl font-bold mb-6 flex items-center gap-2">
+                🎮 Core Gameplay Overview
+            </h2>
+
+            <div class="bg-white rounded-2xl p-6 border border-cozy-peach/30 mb-6">
+                <h3 class="font-bold text-lg mb-4">What is Heartopia?</h3>
+                <p class="text-cozy-wood mb-4">
+                    Heartopia is a <strong>multiplayer life simulation game</strong> that emphasizes peaceful, creative
+                    gameplay without competitive pressure.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-4 text-sm">
+                    <div>
+                        <p class="font-semibold text-cozy-bark mb-2">📱 Platforms</p>
+                        <p class="text-cozy-wood">PC (TapTap, Steam), iOS, Android</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-cozy-bark mb-2">📅 Release Date</p>
+                        <p class="text-cozy-wood">Jan 7, 2026 (Mobile/PC), Jan 16 (Steam)</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-cozy-bark mb-2">🏢 Developer</p>
+                        <p class="text-cozy-wood">XD Inc.</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-cozy-bark mb-2">💰 Price</p>
+                        <p class="text-cozy-wood">Free-to-Play (optional purchases)</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-cozy-bark mb-2">🎨 Play Style</p>
+                        <p class="text-cozy-wood">Relaxing, Creative, Social</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-cozy-bark mb-2">🔄 Cross-Platform</p>
+                        <p class="text-cozy-wood">Yes - access across devices</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Daily Gameplay Loop -->
+        <section id="daily-loop" class="mb-12">
+            <h2 class="font-display text-2xl font-bold mb-6 flex items-center gap-2">
+                🔄 Daily Gameplay Loop
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-xl p-6 border border-orange-200">
+                    <div class="text-4xl mb-3">🌅</div>
+                    <h3 class="font-bold text-lg mb-3">Morning</h3>
+                    <ul class="space-y-2 text-sm text-cozy-wood">
+                        <li>✓ Check mailbox for rewards</li>
+                        <li>✓ Water crops & harvest</li>
+                        <li>✓ Complete daily quests</li>
+                        <li>✓ Feed and care for pets</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-6 border border-cyan-200">
+                    <div class="text-4xl mb-3">☀️</div>
+                    <h3 class="font-bold text-lg mb-3">Afternoon</h3>
+                    <ul class="space-y-2 text-sm text-cozy-wood">
+                        <li>✓ Fish, catch bugs, watch birds</li>
+                        <li>✓ Visit NPCs & give gifts</li>
+                        <li>✓ Craft items & cook recipes</li>
+                        <li>✓ Explore for prize bubbles</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 border border-purple-200">
+                    <div class="text-4xl mb-3">🌙</div>
+                    <h3 class="font-bold text-lg mb-3">Evening</h3>
+                    <ul class="space-y-2 text-sm text-cozy-wood">
+                        <li>✓ Decorate & expand house</li>
+                        <li>✓ Participate in events</li>
+                        <li>✓ Process materials</li>
+                        <li>✓ Rest to restore energy</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seven Main Hobbies -->
+        <section id="hobbies" class="mb-12">
+            <h2 class="font-display text-2xl font-bold mb-6 flex items-center gap-2">
+                🌟 Seven Main Hobbies
+            </h2>
+
+            <p class="text-cozy-wood mb-6">
+                Heartopia features <strong>7 core hobbies</strong> that you can master for rewards and progression. Each
+                hobby requires a <strong>Hobby Expansion Ticket</strong> to unlock.
+            </p>
+
+            <div class="space-y-4">
+                <!-- Fishing -->
+                <div class="hobby-card bg-white rounded-xl p-6 border-cozy-sky">
+                    <div class="flex items-start gap-4">
+                        <div class="text-4xl">🎣</div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-lg mb-2">Fishing</h3>
+                            <p class="text-sm text-cozy-wood mb-2"><strong>Mentor:</strong> Vanya |
+                                <strong>Unlock:</strong> Tutorial (early game)
+                            </p>
+                            <p class="text-sm text-cozy-wood mb-2">Catch fish in lakes, rivers, and ocean. Fish can be
+                                cooked or sold for profit.</p>
+                            <a href="/hobbies/fishing/" class="text-sm text-cozy-coral hover:underline">→ Fishing
+                                Guide</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gardening -->
+                <div class="hobby-card bg-white rounded-xl p-6 border-cozy-sage">
+                    <div class="flex items-start gap-4">
+                        <div class="text-4xl">🌱</div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-lg mb-2">Gardening</h3>
+                            <p class="text-sm text-cozy-wood mb-2"><strong>Mentor:</strong> Blanc |
+                                <strong>Unlock:</strong> D.G. Member Level 3
+                            </p>
+                            <p class="text-sm text-cozy-wood mb-2">Plant crops, water plants, and harvest for cooking or
+                                selling.</p>
+                            <a href="/guides/best-crops/" class="text-sm text-cozy-coral hover:underline">→ Best Crops
+                                Guide</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cooking -->
+                <div class="hobby-card bg-white rounded-xl p-6 border-cozy-coral">
+                    <div class="flex items-start gap-4">
+                        <div class="text-4xl">🍳</div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-lg mb-2">Cooking</h3>
+                            <p class="text-sm text-cozy-wood mb-2"><strong>Mentor:</strong> Massimo |
+                                <strong>Unlock:</strong> D.G. Member Level 5
+                            </p>
+                            <p class="text-sm text-cozy-wood mb-2">Prepare dishes using ingredients. Food restores
+                                energy and sells for high profit.</p>
+                            <p class="text-sm bg-yellow-50 border border-yellow-200 rounded p-2 mb-2">💡 <strong>Highly
+                                    recommended early</strong> - synergizes with Fishing and Gardening</p>
+                            <a href="/guides/best-food-to-sell/" class="text-sm text-cozy-coral hover:underline">→ Best
+                                Food to Sell</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bug Catching -->
+                <div class="hobby-card bg-white rounded-xl p-6 border-green-400">
+                    <div class="flex items-start gap-4">
+                        <div class="text-4xl">🦋</div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-lg mb-2">Insect Catching</h3>
+                            <p class="text-sm text-cozy-wood mb-2"><strong>Unlock:</strong> D.G. Member Level 5</p>
+                            <p class="text-sm text-cozy-wood mb-2">Catch insects around the island. Complete collections
+                                and participate in events.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bird Watching -->
+                <div class="hobby-card bg-white rounded-xl p-6 border-blue-400">
+                    <div class="flex items-start gap-4">
+                        <div class="text-4xl">🐦</div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-lg mb-2">Bird Watching</h3>
+                            <p class="text-sm text-cozy-wood mb-2"><strong>Unlock:</strong> D.G. Member Level 5</p>
+                            <p class="text-sm text-cozy-wood mb-2">Observe and catalog bird species. Discover rare birds
+                                in different locations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cat Care -->
+                <div class="hobby-card bg-white rounded-xl p-6 border-orange-400">
+                    <div class="flex items-start gap-4">
+                        <div class="text-4xl">🐱</div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-lg mb-2">Cat Care</h3>
+                            <p class="text-sm text-cozy-wood mb-2"><strong>Unlock:</strong> D.G. Member Level 12</p>
+                            <p class="text-sm text-cozy-wood mb-2">Adopt and care for cats. Build bonds with different
+                                cat personalities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dog Care -->
+                <div class="hobby-card bg-white rounded-xl p-6 border-amber-600">
+                    <div class="flex items-start gap-4">
+                        <div class="text-4xl">🐕</div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-lg mb-2">Dog Care</h3>
+                            <p class="text-sm text-cozy-wood mb-2"><strong>Unlock:</strong> D.G. Member Level 12</p>
+                            <p class="text-sm text-cozy-wood mb-2">Adopt and care for dogs. Build bonds with different
+                                dog personalities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progression System -->
+        <section id="progression" class="mb-12">
+            <h2 class="font-display text-2xl font-bold mb-6 flex items-center gap-2">
+                📈 Progression System: D.G. Member's Guild
+            </h2>
+
+            <div class="bg-white rounded-2xl p-6 border border-cozy-peach/30 mb-6">
+                <h3 class="font-bold text-lg mb-4">What is D.G.?</h3>
+                <p class="text-cozy-wood mb-4">
+                    The <strong>D.G. Member's Guild</strong> (Developer's Guild) is Heartopia's main progression system.
+                    Your D.G. level represents your contribution to Heartopia Town and unlocks new features, hobbies,
+                    and content.
+                </p>
+
+                <h4 class="font-semibold mb-3">How to Level Up: Earn Contribution Medals</h4>
+
+                <div class="bg-cozy-mint/20 rounded-lg p-4 mb-4">
+                    <p class="font-semibold mb-2">🎯 Primary Method: Daily Resident Requests</p>
+                    <ul class="space-y-1 text-sm text-cozy-wood ml-4">
+                        <li>• Complete up to <strong>5 Resident Requests daily</strong></li>
+                        <li>• Each request rewards <strong>10 Contribution Medals</strong></li>
+                        <li>• <strong>Maximum: 50 medals per day</strong> from daily quests</li>
+                        <li>• Requests refresh every 24 hours</li>
+                    </ul>
+                </div>
+
+                <p class="font-semibold mb-2 text-sm">Additional Methods:</p>
+                <ul class="space-y-1 text-sm text-cozy-wood ml-4">
+                    <li>• <strong>Mini-game Events:</strong> Top ranks earn 5-10 medals</li>
+                    <li>• <strong>Hosting Guests:</strong> Invite friends (2 medals per guest)</li>
+                    <li>• <strong>Town Guide Missions:</strong> 3-5 medals each</li>
+                    <li>• <strong>Weekly Quests:</strong> Bonus medals</li>
+                </ul>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 border border-cozy-peach/30">
+                <h3 class="font-bold text-lg mb-4">D.G. Level Unlocks</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead class="bg-cozy-peach/30">
+                            <tr>
+                                <th class="px-4 py-2 text-left">D.G. Level</th>
+                                <th class="px-4 py-2 text-left">Unlocks</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-cozy-peach/20">
+                            <tr>
+                                <td class="px-4 py-2 font-semibold">Level 3</td>
+                                <td class="px-4 py-2">Gardening Hobby</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 font-semibold">Level 4</td>
+                                <td class="px-4 py-2">Friendship Journal, Home Life features</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 font-semibold">Level 5</td>
+                                <td class="px-4 py-2">Cooking, Bug Catching, Birdwatching Hobbies</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 font-semibold">Level 12</td>
+                                <td class="px-4 py-2">Cat Care, Dog Care Hobbies</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 font-semibold">Level 16</td>
+                                <td class="px-4 py-2">Dreams feature (Puzzle, Writing, Music)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="text-xs text-cozy-wood mt-3">*Higher levels also unlock additional home plots, advanced shop
+                    items, and new game features.</p>
+            </div>
+        </section>
+
+        <!-- Energy System -->
+        <section id="energy" class="mb-12">
+            <h2 class="font-display text-2xl font-bold mb-6 flex items-center gap-2">
+                ⚡ Energy & Stamina System
+            </h2>
+
+            <div class="bg-white rounded-2xl p-6 border border-cozy-peach/30 mb-6">
+                <h3 class="font-bold text-lg mb-4">How Energy Works</h3>
+                <ul class="space-y-2 text-sm text-cozy-wood">
+                    <li>• <strong>Maximum Energy:</strong> 100 points (base capacity)</li>
+                    <li>• <strong>Energy Consumption:</strong> Chopping trees, fishing, digging, bug catching</li>
+                    <li>• <strong>No Energy Cost:</strong> Walking, building, socializing, decorating</li>
+                </ul>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 border border-cozy-peach/30">
+                <h3 class="font-bold text-lg mb-4">Energy Recovery Methods</h3>
+
+                <div class="space-y-4">
+                    <div class="border-l-4 border-blue-400 pl-4">
+                        <p class="font-semibold mb-1">💤 Sleeping (Fastest Passive)</p>
+                        <p class="text-sm text-cozy-wood mb-1"><strong>Rate:</strong> +1 energy every 5 seconds</p>
+                        <p class="text-sm text-cozy-wood"><strong>Best Practice:</strong> Log out while sleeping = full
+                            energy on return</p>
+                    </div>
+
+                    <div class="border-l-4 border-green-400 pl-4">
+                        <p class="font-semibold mb-1">🍽️ Eating Food (Instant)</p>
+                        <p class="text-sm text-cozy-wood mb-1"><strong>Effect:</strong> Instant energy refill</p>
+                        <p class="text-sm text-cozy-wood"><strong>Best Foods:</strong> Cooked dishes > raw ingredients
+                        </p>
+                    </div>
+
+                    <div class="border-l-4 border-cyan-400 pl-4">
+                        <p class="font-semibold mb-1">🛁 Bathing (Passive)</p>
+                        <p class="text-sm text-cozy-wood mb-1"><strong>Rate:</strong> +1 energy every 10 seconds</p>
+                        <p class="text-sm text-cozy-wood"><strong>Locations:</strong> Home bathtub or Onsen Mountain
+                            pools</p>
+                    </div>
+
+                    <div class="border-l-4 border-purple-400 pl-4">
+                        <p class="font-semibold mb-1">🎁 Gift Bubbles & Buffs</p>
+                        <p class="text-sm text-cozy-wood mb-1"><strong>Green Arrow Bubbles:</strong> Energy refill buffs
+                        </p>
+                        <p class="text-sm text-cozy-wood"><strong>Friend High-Five:</strong> Energy restore buff (once
+                            per day)</p>
+                    </div>
+                </div>
+
+                <div class="bg-red-50 border border-red-200 rounded-lg p-4 mt-4">
+                    <p class="font-semibold text-red-700 mb-2">⚠️ Low Energy Warning</p>
+                    <p class="text-sm text-cozy-wood">Below 20 Energy: Cannot run (slow walk only). Solution: Eat food,
+                        sleep, or use a vehicle.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beginner Tips -->
+        <section id="tips" class="mb-12">
+            <h2 class="font-display text-2xl font-bold mb-6 flex items-center gap-2">
+                💡 Essential Tips for Beginners
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-green-50 rounded-xl p-6 border border-green-200">
+                    <h3 class="font-bold text-lg mb-4 text-green-700">✅ DO:</h3>
+                    <ul class="space-y-2 text-sm text-cozy-wood">
+                        <li>✓ Prioritize Main Story Quests</li>
+                        <li>✓ Complete Daily Resident Requests (50 medals/day)</li>
+                        <li>✓ Focus on Farming Early (easy money)</li>
+                        <li>✓ Process Before Selling (cooked > raw)</li>
+                        <li>✓ Redeem All Codes (free rewards)</li>
+                        <li>✓ Join Seasonal Events</li>
+                        <li>✓ Check Stores Daily</li>
+                    </ul>
+                </div>
+
+                <div class="bg-red-50 rounded-xl p-6 border border-red-200">
+                    <h3 class="font-bold text-lg mb-4 text-red-700">❌ DON'T:</h3>
+                    <ul class="space-y-2 text-sm text-cozy-wood">
+                        <li>✗ Waste Energy on Low-Value Activities</li>
+                        <li>✗ Ignore Friendship Levels</li>
+                        <li>✗ Miss Limited-Time Events</li>
+                        <li>✗ Forget to Upgrade Tools</li>
+                        <li>✗ Rush Progression (enjoy the pace!)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="mb-12">
+            <h2 class="font-display text-2xl font-bold mb-6 flex items-center gap-2">
+                ❓ Frequently Asked Questions
+            </h2>
+
+            <div class="space-y-4">
+                <details class="bg-white rounded-xl p-6 border border-cozy-peach/30 cursor-pointer">
+                    <summary class="font-semibold cursor-pointer">Is Heartopia multiplayer or single-player?</summary>
+                    <p class="text-sm text-cozy-wood mt-3">Heartopia supports <strong>multiplayer features</strong>
+                        including visiting friends' homes, co-building, and social interactions. However, the core
+                        experience is <strong>primarily single-player</strong> focused on your personal island and
+                        progression.</p>
+                </details>
+
+                <details class="bg-white rounded-xl p-6 border border-cozy-peach/30 cursor-pointer">
+                    <summary class="font-semibold cursor-pointer">What platforms can I play Heartopia on?</summary>
+                    <p class="text-sm text-cozy-wood mt-3">Heartopia is available on <strong>PC (TapTap client and
+                            Steam), iOS, and Android</strong>. The game supports <strong>cross-platform play</strong>,
+                        allowing you to access your account across devices.</p>
+                </details>
+
+                <details class="bg-white rounded-xl p-6 border border-cozy-peach/30 cursor-pointer">
+                    <summary class="font-semibold cursor-pointer">Is Heartopia free to play?</summary>
+                    <p class="text-sm text-cozy-wood mt-3">Yes, Heartopia is <strong>completely free-to-play</strong>
+                        with optional in-app purchases for cosmetic items and premium currency (Moonlight Crystals).</p>
+                </details>
+
+                <details class="bg-white rounded-xl p-6 border border-cozy-peach/30 cursor-pointer">
+                    <summary class="font-semibold cursor-pointer">How many hobbies are in Heartopia?</summary>
+                    <p class="text-sm text-cozy-wood mt-3">There are <strong>7 main hobbies</strong>: Fishing,
+                        Gardening, Cooking, Insect Catching, Bird Watching, Cat Care, and Dog Care.</p>
+                </details>
+
+                <details class="bg-white rounded-xl p-6 border border-cozy-peach/30 cursor-pointer">
+                    <summary class="font-semibold cursor-pointer">What is the fastest way to level up D.G.?</summary>
+                    <p class="text-sm text-cozy-wood mt-3">Complete <strong>5 Daily Resident Requests</strong> every day
+                        for 50 Contribution Medals. Also participate in mini-game events and weekly quests for bonus
+                        medals.</p>
+                </details>
+
+                <details class="bg-white rounded-xl p-6 border border-cozy-peach/30 cursor-pointer">
+                    <summary class="font-semibold cursor-pointer">What's the best hobby for making money?</summary>
+                    <p class="text-sm text-cozy-wood mt-3"><strong>Cooking</strong> combined with
+                        <strong>Gardening</strong> and <strong>Fishing</strong> provides the best profit. Processed
+                        goods (cooked dishes) sell for significantly more than raw materials.
+                    </p>
+                </details>
+
+                <details class="bg-white rounded-xl p-6 border border-cozy-peach/30 cursor-pointer">
+                    <summary class="font-semibold cursor-pointer">Can I play Heartopia offline?</summary>
+                    <p class="text-sm text-cozy-wood mt-3">Most features work offline, but you'll need an internet
+                        connection for multiplayer features, daily quest updates, and accessing the shop.</p>
+                </details>
+
+                <details class="bg-white rounded-xl p-6 border border-cozy-peach/30 cursor-pointer">
+                    <summary class="font-semibold cursor-pointer">How do I get more Hobby Expansion Tickets?</summary>
+                    <p class="text-sm text-cozy-wood mt-3">Hobby Expansion Tickets are earned through <strong>tutorial
+                            quests</strong> and by <strong>increasing your D.G. Member Level</strong>. They are limited,
+                        so choose hobbies strategically.</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- Related Guides -->
+        <section id="guides" class="mb-8">
+            <h2 class="font-bold text-lg mb-4">📚 Related Guides</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <a href="/beginner-guide/"
+                    class="card-hover flex items-center gap-3 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-2xl">🌱</span>
+                    <span class="font-medium">Beginner's Guide</span>
+                </a>
+                <a href="/guides/best-crops/"
+                    class="card-hover flex items-center gap-3 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-2xl">🌾</span>
+                    <span class="font-medium">Best Crops to Plant</span>
+                </a>
+                <a href="/characters/"
+                    class="card-hover flex items-center gap-3 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-2xl">👥</span>
+                    <span class="font-medium">All NPCs & Characters</span>
+                </a>
+                <a href="/hobbies/fishing/"
+                    class="card-hover flex items-center gap-3 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-2xl">🎣</span>
+                    <span class="font-medium">Fishing Guide</span>
+                </a>
+                <a href="/progression/money-making/"
+                    class="card-hover flex items-center gap-3 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-2xl">💰</span>
+                    <span class="font-medium">Money Making Guide</span>
+                </a>
+                <a href="/codes/"
+                    class="card-hover flex items-center gap-3 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-2xl">🎁</span>
+                    <span class="font-medium">All Working Codes</span>
+                </a>
+                <a href="/guides/map/"
+                    class="card-hover flex items-center gap-3 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-2xl">🗺️</span>
+                    <span class="font-medium">Interactive Map</span>
+                </a>
+                <a href="/events/"
+                    class="card-hover flex items-center gap-3 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-2xl">🎉</span>
+                    <span class="font-medium">Events Calendar</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Disclaimer -->
+        <section class="bg-cozy-bark/10 rounded-xl p-4 text-sm text-cozy-wood mb-8">
+            <p><strong>Disclaimer:</strong> This guide is based on Heartopia v1.0 (January 2026 release). Game
+                mechanics, values, and features may change in future updates. Information verified through official
+                sources (Steam, XD Inc.) and professional gaming media (GameRant, TheGamer, VG247) as of February 12,
+                2026.</p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-cozy-bark text-white py-8">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <a href="/" class="inline-flex items-center gap-2 mb-4">
+                <span class="text-xl">🏡</span>
+                <span class="font-display font-bold">Heartopia<span class="text-cozy-sage">.Life</span></span>
+            </a>
+            <p class="text-white/60 text-sm mb-4">Unofficial fan site. Not affiliated with XD Inc.</p>
+            <p class="text-white/40 text-xs">© 2026 Heartopia.Life</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
