@@ -20,11 +20,11 @@
 
 
     <!-- SEO Meta Tags -->
-    <title>Heartopia Hobbies Guide: All 7 Hobbies, Unlock Order & Mentors</title>
+    <title>Heartopia.Life Hobbies Guide - All 8 Hobbies, Unlock Order & Best Mentors</title>
     <meta name="description"
-        content="Complete Heartopia hobbies guide. All 7 hobbies explained: Fishing, Gardening, Cooking, Insect Catching, Birdwatching, Cat & Dog Care. Unlock order & mentors!">
+        content="Master all 8 Heartopia.Life hobbies! Complete guide to Fishing, Gardening, Cooking, Insect Catching, Birdwatching, Cat Care, Dog Care & Snow Sculpting. Unlock requirements, mentors & recommended order!">
     <meta name="keywords"
-        content="heartopia hobbies, heartopia all hobbies, heartopia unlock hobbies, heartopia fishing gardening cooking">
+        content="heartopia hobbies, heartopia all hobbies, heartopia unlock hobbies, heartopia fishing gardening cooking, heartopia hobby expansion tickets">
     <meta name="author" content="Heartopia.Life">
     <meta name="robots" content="index, follow">
 
@@ -37,6 +37,48 @@
     <meta property="og:description" content="Complete guide to all hobbies, unlock order & mentors in Heartopia.">
     <meta property="og:url" content="https://heartopia.life/hobbies/">
     <meta property="og:site_name" content="Heartopia.Life">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How many hobbies are in Heartopia.Life?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "There are 8 hobbies in Heartopia.Life: Fishing, Gardening, Cooking, Insect Catching, Birdwatching, Cat Care, Dog Care, and Snow Sculpting."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the best hobby to unlock first in Heartopia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Cooking is the best hobby to unlock first at DG Level 6. It synergizes perfectly with Fishing and Gardening, allowing you to turn raw materials into high-profit dishes for 2-3x Gold."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I get Hobby Expansion Tickets?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Hobby Expansion Tickets are obtained by completing tutorial quests (first 2 hobbies), increasing your DG Members Guild rank, and progressing through the main story."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I unlock Dog Care before Cat Care?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No, you must unlock Cat Care first before Dog Care becomes available. Both require DG Level 12."
+                }
+            }
+        ]
+    }
+    </script>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -100,13 +142,17 @@
                             class="text-cozy-sage">.Life</span></span>
                 </a>
                 <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
-                    <li><a href="/guides/map/" class="hover:text-cozy-coral transition-colors flex items-center gap-1">🗺️ Map</a></li>
-                    <li><a href="/codes/" class="hover:text-cozy-coral">🎁 Codes</a></li>
-                    <li><a href="/guides/" class="hover:text-cozy-coral">Guides</a></li>
+                    <li><a href="/guides/map/"
+                            class="hover:text-cozy-coral transition-colors flex items-center gap-1">🗺️ Map</a></li>
+                    <li><a href="/codes/" class="hover:text-cozy-coral transition-colors flex items-center gap-1">🎁
+                            Codes</a></li>
+                    <li><a href="/guides/" class="hover:text-cozy-coral transition-colors">Guides</a></li>
                     <li><a href="/hobbies/" class="text-cozy-coral font-bold">Hobbies</a></li>
-                    <li><a href="/database/recipes/" class="hover:text-cozy-coral">Database</a></li>
+                    <li><a href="/events/" class="hover:text-cozy-coral transition-colors">Events</a></li>
+                    <li><a href="/database/" class="hover:text-cozy-coral transition-colors">Database</a></li>
+                    <li><a href="/npcs/" class="hover:text-cozy-coral transition-colors">NPCs</a></li>
                 </ul>
-            
+
                 <button class="md:hidden p-2 hover:bg-cozy-peach/50 rounded-lg" aria-label="Open menu"
                     onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -115,10 +161,11 @@
                     </svg>
                 </button>
             </div>
-        
+
             <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-cozy-peach/50 pt-4">
                 <ul class="flex flex-col gap-3 text-sm font-medium">
-                    <li><a href="/guides/map/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🗺️ Map</a></li>
+                    <li><a href="/guides/map/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🗺️ Map</a>
+                    </li>
                     <li><a href="/codes/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🎁 Codes</a></li>
                     <li><a href="/guides/" class="py-2 hover:text-cozy-coral">Guides</a></li>
                     <li><a href="/hobbies/" class="py-2 hover:text-cozy-coral">Hobbies</a></li>
@@ -140,84 +187,135 @@
         </nav>
 
         <!-- Hero -->
-        <div class="bg-gradient-to-br from-cozy-peach to-cozy-mint rounded-2xl p-6 md:p-8 mb-8">
-            <div class="flex items-center gap-2 text-sm font-medium text-cozy-sage mb-3">
+        <div class="bg-gradient-to-br from-cozy-peach via-cozy-mint to-cozy-sky rounded-2xl p-6 md:p-8 mb-8">
+            <div class="flex items-center gap-2 text-sm font-medium text-green-700 mb-3">
                 <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                Updated: January 2026
+                Updated: February 2026
             </div>
             <h1 class="font-display text-3xl md:text-4xl font-bold text-cozy-bark mb-4">
-                🎯 Heartopia Hobbies Guide
+                🎯 Heartopia.Life Hobbies Guide
             </h1>
-            <p class="text-cozy-wood text-lg">
-                Complete guide to all <strong>7 hobbies</strong> in Heartopia. Learn unlock order, find mentors, and
-                discover which hobbies to prioritize for your cozy life!
+            <p class="text-cozy-wood text-lg mb-4">
+                Complete guide to all <strong>8 hobbies</strong> in Heartopia.Life! Learn unlock requirements, find
+                mentors, and
+                discover the best hobby order to maximize your cozy island life.
             </p>
+            <div class="flex flex-wrap gap-2">
+                <span class="bg-white/80 text-cozy-bark px-3 py-1 rounded-full text-sm font-medium">🎣 Fishing</span>
+                <span class="bg-white/80 text-cozy-bark px-3 py-1 rounded-full text-sm font-medium">🌱 Gardening</span>
+                <span class="bg-white/80 text-cozy-bark px-3 py-1 rounded-full text-sm font-medium">🍳 Cooking</span>
+                <span class="bg-white/80 text-cozy-bark px-3 py-1 rounded-full text-sm font-medium">🦋 Insects</span>
+                <span class="bg-white/80 text-cozy-bark px-3 py-1 rounded-full text-sm font-medium">🐦 Birds</span>
+                <span class="bg-white/80 text-cozy-bark px-3 py-1 rounded-full text-sm font-medium">🐱 Cats</span>
+                <span class="bg-white/80 text-cozy-bark px-3 py-1 rounded-full text-sm font-medium">🐕 Dogs</span>
+                <span class="bg-white/80 text-cozy-bark px-3 py-1 rounded-full text-sm font-medium">⛄ Snow
+                    Sculpting</span>
+            </div>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div class="bg-blue-50 rounded-xl p-4 mb-8 border-l-4 border-blue-400">
+            <h2 class="font-bold text-blue-700 mb-2">📑 Quick Navigation</h2>
+            <div class="flex flex-wrap gap-2 text-sm">
+                <a href="#overview"
+                    class="bg-white hover:bg-blue-100 text-blue-700 px-3 py-1 rounded-lg transition-colors">📊
+                    Overview</a>
+                <a href="#all-hobbies"
+                    class="bg-white hover:bg-blue-100 text-blue-700 px-3 py-1 rounded-lg transition-colors">🎮 All
+                    Hobbies</a>
+                <a href="#unlock-order"
+                    class="bg-white hover:bg-blue-100 text-blue-700 px-3 py-1 rounded-lg transition-colors">📋 Unlock
+                    Order</a>
+                <a href="#tickets"
+                    class="bg-white hover:bg-blue-100 text-blue-700 px-3 py-1 rounded-lg transition-colors">🎫
+                    Tickets</a>
+                <a href="#faq" class="bg-white hover:bg-blue-100 text-blue-700 px-3 py-1 rounded-lg transition-colors">❓
+                    FAQ</a>
+            </div>
         </div>
 
         <!-- Quick Overview -->
-        <div class="bg-white rounded-xl p-6 mb-8 border border-cozy-peach/30">
-            <h2 class="font-bold text-lg mb-4">📊 Hobby Unlock Overview</h2>
+        <div id="overview" class="bg-white rounded-xl p-6 mb-8 border border-cozy-peach/30">
+            <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
+                <span class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">📊</span>
+                Hobby Unlock Overview
+            </h2>
             <div class="overflow-x-auto">
                 <table class="w-full text-sm">
-                    <thead class="text-left border-b border-cozy-peach/30">
+                    <thead class="bg-cozy-peach/30">
                         <tr>
-                            <th class="py-2 font-bold">Hobby</th>
-                            <th class="py-2 font-bold">Unlock</th>
-                            <th class="py-2 font-bold">Mentor</th>
+                            <th class="py-3 px-3 text-left font-bold">Hobby</th>
+                            <th class="py-3 px-3 text-left font-bold">Unlock Requirement</th>
+                            <th class="py-3 px-3 text-left font-bold">Mentor</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-cozy-peach/20">
-                        <tr>
-                            <td class="py-2">🎣 Fishing</td>
-                            <td class="py-2"><span
-                                    class="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs">Tutorial</span></td>
-                            <td class="py-2 text-cozy-wood">Vanya</td>
+                        <tr class="hover:bg-cozy-peach/10">
+                            <td class="py-3 px-3 font-medium">🎣 Fishing</td>
+                            <td class="py-3 px-3"><span
+                                    class="bg-green-100 text-green-700 px-2 py-1 rounded text-xs font-medium">Tutorial</span>
+                            </td>
+                            <td class="py-3 px-3 text-cozy-wood">Vanya</td>
                         </tr>
-                        <tr>
-                            <td class="py-2">🌱 Gardening</td>
-                            <td class="py-2"><span
-                                    class="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs">Tutorial</span></td>
-                            <td class="py-2 text-cozy-wood">Blanc</td>
+                        <tr class="hover:bg-cozy-peach/10">
+                            <td class="py-3 px-3 font-medium">🌱 Gardening</td>
+                            <td class="py-3 px-3"><span
+                                    class="bg-green-100 text-green-700 px-2 py-1 rounded text-xs font-medium">Tutorial</span>
+                            </td>
+                            <td class="py-3 px-3 text-cozy-wood">Blanc</td>
                         </tr>
-                        <tr>
-                            <td class="py-2">🍳 Cooking</td>
-                            <td class="py-2"><span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs">DG
+                        <tr class="hover:bg-cozy-peach/10">
+                            <td class="py-3 px-3 font-medium">🍳 Cooking</td>
+                            <td class="py-3 px-3"><span
+                                    class="bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs font-medium">DG
                                     Level 6</span></td>
-                            <td class="py-2 text-cozy-wood">Massimo</td>
+                            <td class="py-3 px-3 text-cozy-wood">Massimo</td>
                         </tr>
-                        <tr>
-                            <td class="py-2">🦋 Insect Catching</td>
-                            <td class="py-2"><span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs">DG
+                        <tr class="hover:bg-cozy-peach/10">
+                            <td class="py-3 px-3 font-medium">🦋 Insect Catching</td>
+                            <td class="py-3 px-3"><span
+                                    class="bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs font-medium">DG
                                     Level 6</span></td>
-                            <td class="py-2 text-cozy-wood">Naniwa</td>
+                            <td class="py-3 px-3 text-cozy-wood">Naniwa</td>
                         </tr>
-                        <tr>
-                            <td class="py-2">🐦 Birdwatching</td>
-                            <td class="py-2"><span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs">DG
+                        <tr class="hover:bg-cozy-peach/10">
+                            <td class="py-3 px-3 font-medium">🐦 Birdwatching</td>
+                            <td class="py-3 px-3"><span
+                                    class="bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs font-medium">DG
                                     Level 6</span></td>
-                            <td class="py-2 text-cozy-wood">Bailey J</td>
+                            <td class="py-3 px-3 text-cozy-wood">Bailey J</td>
                         </tr>
-                        <tr>
-                            <td class="py-2">🐱 Cat Care</td>
-                            <td class="py-2"><span class="bg-purple-100 text-purple-700 px-2 py-0.5 rounded text-xs">DG
+                        <tr class="hover:bg-cozy-peach/10">
+                            <td class="py-3 px-3 font-medium">🐱 Cat Care</td>
+                            <td class="py-3 px-3"><span
+                                    class="bg-purple-100 text-purple-700 px-2 py-1 rounded text-xs font-medium">DG
                                     Level 12</span></td>
-                            <td class="py-2 text-cozy-wood">Mrs. Joan</td>
+                            <td class="py-3 px-3 text-cozy-wood">Mrs. Joan</td>
                         </tr>
-                        <tr>
-                            <td class="py-2">🐕 Dog Care</td>
-                            <td class="py-2"><span class="bg-purple-100 text-purple-700 px-2 py-0.5 rounded text-xs">DG
+                        <tr class="hover:bg-cozy-peach/10">
+                            <td class="py-3 px-3 font-medium">🐕 Dog Care</td>
+                            <td class="py-3 px-3"><span
+                                    class="bg-purple-100 text-purple-700 px-2 py-1 rounded text-xs font-medium">DG
                                     Level 12*</span></td>
-                            <td class="py-2 text-cozy-wood">Mrs. Joan</td>
+                            <td class="py-3 px-3 text-cozy-wood">Mrs. Joan</td>
+                        </tr>
+                        <tr class="hover:bg-cozy-peach/10">
+                            <td class="py-3 px-3 font-medium">⛄ Snow Sculpting</td>
+                            <td class="py-3 px-3"><span
+                                    class="bg-cyan-100 text-cyan-700 px-2 py-1 rounded text-xs font-medium">Winter
+                                    Event</span></td>
+                            <td class="py-3 px-3 text-cozy-wood">Azure</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <p class="text-xs text-cozy-wood mt-3">* Dog Care requires Cat Care to be unlocked first.</p>
+            <p class="text-xs text-cozy-wood mt-3">* Dog Care requires Cat Care to be unlocked first. Snow Sculpting is
+                only available during winter events.</p>
         </div>
 
         <!-- All Hobbies Grid -->
-        <section class="mb-12">
-            <h2 class="font-display text-2xl font-bold mb-6">🎮 All 7 Hobbies</h2>
+        <section id="all-hobbies" class="mb-12">
+            <h2 class="font-display text-2xl font-bold mb-6">🎮 All 8 Hobbies</h2>
 
             <div class="grid md:grid-cols-2 gap-6">
 
@@ -362,11 +460,31 @@
                     <div class="mt-4 text-cozy-coral text-sm font-medium">View Full Guide →</div>
                 </a>
 
+                <!-- Snow Sculpting -->
+                <a href="/hobbies/snow-sculpting/"
+                    class="card-hover bg-white rounded-2xl p-6 border border-cozy-peach/30">
+                    <div class="flex items-start gap-4">
+                        <span class="text-4xl">⛄</span>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-2 mb-1">
+                                <h3 class="font-bold text-lg">Snow Sculpting</h3>
+                                <span class="bg-cyan-100 text-cyan-700 px-2 py-0.5 rounded text-xs">Winter Event</span>
+                            </div>
+                            <p class="text-sm text-cozy-wood mb-2">Seasonal hobby! Create snow sculptures during winter
+                                events. Unlock unique designs and decorations!</p>
+                            <div class="text-xs text-cozy-wood">
+                                <strong>Mentor:</strong> Azure
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 text-cozy-coral text-sm font-medium">View Full Guide →</div>
+                </a>
+
             </div>
         </section>
 
         <!-- Unlock Order -->
-        <section class="mb-12">
+        <section id="unlock-order" class="mb-12">
             <h2 class="font-display text-2xl font-bold mb-4">📋 Recommended Unlock Order</h2>
 
             <div class="bg-white rounded-xl p-6 border border-cozy-peach/30">
@@ -427,7 +545,7 @@
         </section>
 
         <!-- Hobby Expansion Tickets -->
-        <section class="mb-12">
+        <section id="tickets" class="mb-12">
             <h2 class="font-display text-2xl font-bold mb-4">🎫 Hobby Expansion Tickets</h2>
 
             <div class="bg-cozy-sky/20 rounded-xl p-6">
@@ -444,24 +562,67 @@
             </div>
         </section>
 
+        <!-- FAQ Section -->
+        <section id="faq" class="mb-12">
+            <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
+                <span class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center">❓</span>
+                Frequently Asked Questions
+            </h2>
+            <div class="bg-white rounded-xl p-6 border border-cozy-peach/30">
+                <div class="space-y-4">
+                    <div class="border-b border-cozy-peach/30 pb-4">
+                        <h3 class="font-bold text-cozy-bark mb-2">How many hobbies are in Heartopia.Life?</h3>
+                        <p class="text-sm text-cozy-wood">There are <strong>8 hobbies</strong> in Heartopia.Life:
+                            Fishing, Gardening, Cooking, Insect Catching, Birdwatching, Cat Care, Dog Care, and Snow
+                            Sculpting (seasonal).</p>
+                    </div>
+                    <div class="border-b border-cozy-peach/30 pb-4">
+                        <h3 class="font-bold text-cozy-bark mb-2">What is the best hobby to unlock first in Heartopia?
+                        </h3>
+                        <p class="text-sm text-cozy-wood"><strong>Cooking</strong> is the best hobby to unlock first at
+                            DG Level 6. It synergizes perfectly with Fishing and Gardening, allowing you to turn raw
+                            materials into high-profit dishes for 2-3x Gold.</p>
+                    </div>
+                    <div class="border-b border-cozy-peach/30 pb-4">
+                        <h3 class="font-bold text-cozy-bark mb-2">How do I get Hobby Expansion Tickets?</h3>
+                        <p class="text-sm text-cozy-wood">Hobby Expansion Tickets are obtained by completing
+                            <strong>tutorial quests</strong> (first 2 hobbies), increasing your <strong>DG Members Guild
+                                rank</strong>, and progressing through the <strong>main story</strong>.
+                        </p>
+                    </div>
+                    <div class="border-b border-cozy-peach/30 pb-4">
+                        <h3 class="font-bold text-cozy-bark mb-2">Can I unlock Dog Care before Cat Care?</h3>
+                        <p class="text-sm text-cozy-wood">No, you <strong>must unlock Cat Care first</strong> before Dog
+                            Care becomes available. Both require DG Level 12.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-cozy-bark mb-2">Which hobbies are unlocked automatically?</h3>
+                        <p class="text-sm text-cozy-wood"><strong>Fishing and Gardening</strong> are unlocked
+                            automatically during the tutorial. All other hobbies require Hobby Expansion Tickets and
+                            specific DG Level requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Related Guides -->
         <section class="pt-8 border-t border-cozy-peach/30">
             <h2 class="font-bold text-xl mb-6">📚 Related Guides</h2>
-            <div class="grid md:grid-cols-2 gap-4">
-                <a href="/beginner-guide/"
-                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
-                    <span class="text-3xl">🌱</span>
-                    <div>
-                        <h3 class="font-bold">Beginner's Guide</h3>
-                        <p class="text-sm text-cozy-wood">10 essential tips for new players</p>
-                    </div>
-                </a>
-                <a href="/progression/money-making/"
+            <div class="grid md:grid-cols-3 gap-4">
+                <a href="/guides/best-food-to-sell/"
                     class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
                     <span class="text-3xl">💰</span>
                     <div>
-                        <h3 class="font-bold">Money Making Guide</h3>
-                        <p class="text-sm text-cozy-wood">Best ways to earn Gold fast</p>
+                        <h3 class="font-bold">Best Food to Sell</h3>
+                        <p class="text-sm text-cozy-wood">Top profitable dishes</p>
+                    </div>
+                </a>
+                <a href="/guides/best-crops/"
+                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <span class="text-3xl">🌾</span>
+                    <div>
+                        <h3 class="font-bold">Best Crops</h3>
+                        <p class="text-sm text-cozy-wood">Most profitable crops</p>
                     </div>
                 </a>
                 <a href="/codes/"
@@ -469,7 +630,7 @@
                     <span class="text-3xl">🎁</span>
                     <div>
                         <h3 class="font-bold">All Codes</h3>
-                        <p class="text-sm text-cozy-wood">Free rewards updated daily</p>
+                        <p class="text-sm text-cozy-wood">Free rewards</p>
                     </div>
                 </a>
             </div>
@@ -477,8 +638,8 @@
 
         <!-- Disclaimer -->
         <section class="mt-8 bg-cozy-bark/10 rounded-xl p-4 text-sm text-cozy-wood">
-            <p><strong>Sources:</strong> GameRant, Gam3s.gg, TheGamer, GamingOnPhone, Destructoid, Sportskeeda (January
-                2026). This is an unofficial fan guide.</p>
+            <p><strong>Sources:</strong> GameRant, Gam3s.gg, TheGamer, GamingOnPhone, Destructoid, Sportskeeda (February
+                2026). Data based on game version as of February 2026. This is an unofficial fan guide.</p>
         </section>
 
     </main>
@@ -498,4 +659,3 @@
 </body>
 
 </html>
-
