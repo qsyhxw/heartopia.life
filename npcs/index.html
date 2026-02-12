@@ -37,6 +37,40 @@
     <meta property="og:description" content="Complete guide to all NPCs, favorite gifts, and friendship tips.">
     <meta property="og:url" content="https://heartopia.life/npcs/">
     <meta property="og:site_name" content="Heartopia.Life">
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How many NPCs are in Heartopia.Life?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Heartopia.Life has over 20 NPCs including hobby mentors (Vanya, Blanc, Massimo, Naniwa, Bailey J, Mrs. Joan, Azure), merchants (Albert Jr., Ka-Ching, Dorothy, Doris), and town residents (Atara, Eric, Vernie, Will)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where is Albert Jr. in Heartopia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Albert Jr. is a wandering gold merchant who moves around town. Track his location on the Map (M key) or use the bus (200 Gold) to reach him quickly."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the best gifts for NPCs in Heartopia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The best gifts vary by NPC. Generally, home-cooked meals, freshly grown flowers, caught fish, and animal products are widely liked. Check each NPC's favorite gifts in the Friendship Journal."
+                }
+            }
+        ]
+    }
+    </script>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -100,13 +134,17 @@
                             class="text-cozy-sage">.Life</span></span>
                 </a>
                 <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
-                    <li><a href="/guides/map/" class="hover:text-cozy-coral transition-colors flex items-center gap-1">🗺️ Map</a></li>
-                    <li><a href="/codes/" class="hover:text-cozy-coral">🎁 Codes</a></li>
-                    <li><a href="/guides/" class="hover:text-cozy-coral">Guides</a></li>
-                    <li><a href="/hobbies/" class="hover:text-cozy-coral">Hobbies</a></li>
+                    <li><a href="/guides/map/"
+                            class="hover:text-cozy-coral transition-colors flex items-center gap-1">🗺️ Map</a></li>
+                    <li><a href="/codes/" class="hover:text-cozy-coral transition-colors flex items-center gap-1">🎁
+                            Codes</a></li>
+                    <li><a href="/guides/" class="hover:text-cozy-coral transition-colors">Guides</a></li>
+                    <li><a href="/hobbies/" class="hover:text-cozy-coral transition-colors">Hobbies</a></li>
+                    <li><a href="/events/" class="hover:text-cozy-coral transition-colors">Events</a></li>
+                    <li><a href="/database/" class="hover:text-cozy-coral transition-colors">Database</a></li>
                     <li><a href="/npcs/" class="text-cozy-coral font-bold">NPCs</a></li>
                 </ul>
-            
+
                 <button class="md:hidden p-2 hover:bg-cozy-peach/50 rounded-lg" aria-label="Open menu"
                     onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -115,10 +153,11 @@
                     </svg>
                 </button>
             </div>
-        
+
             <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-cozy-peach/50 pt-4">
                 <ul class="flex flex-col gap-3 text-sm font-medium">
-                    <li><a href="/guides/map/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🗺️ Map</a></li>
+                    <li><a href="/guides/map/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🗺️ Map</a>
+                    </li>
                     <li><a href="/codes/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🎁 Codes</a></li>
                     <li><a href="/guides/" class="py-2 hover:text-cozy-coral">Guides</a></li>
                     <li><a href="/hobbies/" class="py-2 hover:text-cozy-coral">Hobbies</a></li>
@@ -141,9 +180,9 @@
 
         <!-- Hero -->
         <div class="bg-gradient-to-br from-pink-100 to-cozy-peach rounded-2xl p-6 md:p-8 mb-8">
-            <div class="flex items-center gap-2 text-sm font-medium text-cozy-sage mb-3">
+            <div class="flex items-center gap-2 text-sm font-medium text-green-700 mb-3">
                 <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                Updated: January 2026
+                Updated: February 2026
             </div>
             <h1 class="font-display text-3xl md:text-4xl font-bold text-cozy-bark mb-4">
                 👥 Heartopia NPC Guide
@@ -309,6 +348,33 @@
                         </div>
                     </div>
 
+                    <!-- Azure -->
+                    <div class="bg-white rounded-xl p-5 border border-cozy-peach/30">
+                        <div class="flex items-start gap-4">
+                            <span class="text-3xl">⛄</span>
+                            <div class="flex-1">
+                                <h3 class="font-bold text-lg">Azure <span
+                                        class="text-xs bg-cyan-100 text-cyan-700 px-2 py-0.5 rounded">Winter
+                                        Event</span></h3>
+                                <p class="text-sm text-cozy-coral mb-2">Snow Sculpting Mentor</p>
+                                <div class="grid md:grid-cols-2 gap-3 text-sm">
+                                    <div>
+                                        <strong class="text-cozy-wood">📍 Location:</strong>
+                                        <p class="text-cozy-wood">Onsen Mountain (Winter Frost Season)</p>
+                                    </div>
+                                    <div>
+                                        <strong class="text-cozy-wood">🎁 Provides:</strong>
+                                        <p class="text-cozy-wood">Snow Sculpting hobby unlock (100 ⭐)</p>
+                                    </div>
+                                </div>
+                                <a href="/hobbies/snow-sculpting/"
+                                    class="text-xs text-cozy-coral hover:underline mt-2 inline-block">
+                                    → View Snow Sculpting Guide
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
@@ -388,6 +454,53 @@
                         </div>
                     </div>
 
+                    <!-- Ka-Ching -->
+                    <div class="bg-white rounded-xl p-5 border border-cozy-peach/30">
+                        <div class="flex items-start gap-4">
+                            <span class="text-3xl">🛍️</span>
+                            <div class="flex-1">
+                                <h3 class="font-bold text-lg">Ka-Ching</h3>
+                                <p class="text-sm text-cozy-coral mb-2">General Store Owner</p>
+                                <div class="grid md:grid-cols-2 gap-3 text-sm">
+                                    <div>
+                                        <strong class="text-cozy-wood">📍 Location:</strong>
+                                        <p class="text-cozy-wood">Suburban Lake, Residential Street</p>
+                                    </div>
+                                    <div>
+                                        <strong class="text-cozy-wood">🛒 Sells:</strong>
+                                        <p class="text-cozy-wood">Puzzles, Fireworks, Repair Kits, Dyes</p>
+                                    </div>
+                                </div>
+                                <a href="/guides/ka-ching/"
+                                    class="text-xs text-cozy-coral hover:underline mt-2 inline-block">
+                                    → View Full Store Guide
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dorothy -->
+                    <div class="bg-white rounded-xl p-5 border border-cozy-peach/30">
+                        <div class="flex items-start gap-4">
+                            <span class="text-3xl">👗</span>
+                            <div class="flex-1">
+                                <h3 class="font-bold text-lg"><a href="/npcs/dorothee/"
+                                        class="hover:text-cozy-coral">Dorothy</a></h3>
+                                <p class="text-sm text-cozy-coral mb-2">Clothing Store Manager</p>
+                                <div class="grid md:grid-cols-2 gap-3 text-sm">
+                                    <div>
+                                        <strong class="text-cozy-wood">📍 Location:</strong>
+                                        <p class="text-cozy-wood">Clothing Store</p>
+                                    </div>
+                                    <div>
+                                        <strong class="text-cozy-wood">🎁 Provides:</strong>
+                                        <p class="text-cozy-wood">Unlocks Clothing Store & Dress App</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
@@ -404,7 +517,8 @@
                         <div class="flex items-start gap-4">
                             <span class="text-3xl">👑</span>
                             <div class="flex-1">
-                                <h3 class="font-bold text-lg">Atara</h3>
+                                <h3 class="font-bold text-lg"><a href="/npcs/atara/"
+                                        class="hover:text-cozy-coral">Atara</a></h3>
                                 <p class="text-sm text-cozy-coral mb-2">Mayor of Heartopia</p>
                                 <div class="grid md:grid-cols-2 gap-3 text-sm">
                                     <div>
@@ -414,6 +528,75 @@
                                     <div>
                                         <strong class="text-cozy-wood">💼 Function:</strong>
                                         <p class="text-cozy-wood">Introduces Daily Requests system</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Eric -->
+                    <div class="bg-white rounded-xl p-5 border border-cozy-peach/30">
+                        <div class="flex items-start gap-4">
+                            <span class="text-3xl">❄️</span>
+                            <div class="flex-1">
+                                <h3 class="font-bold text-lg"><a href="/npcs/eric/"
+                                        class="hover:text-cozy-coral">Eric</a> <span
+                                        class="text-xs bg-cyan-100 text-cyan-700 px-2 py-0.5 rounded">Winter
+                                        Event</span></h3>
+                                <p class="text-sm text-cozy-coral mb-2">Winter Festival Coordinator</p>
+                                <div class="grid md:grid-cols-2 gap-3 text-sm">
+                                    <div>
+                                        <strong class="text-cozy-wood">📍 Location:</strong>
+                                        <p class="text-cozy-wood">Onsen Mountain Park</p>
+                                    </div>
+                                    <div>
+                                        <strong class="text-cozy-wood">🎯 Quests:</strong>
+                                        <p class="text-cozy-wood">Winter Frost event quests, Astralis in Onsen Mountain
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vernie -->
+                    <div class="bg-white rounded-xl p-5 border border-cozy-peach/30">
+                        <div class="flex items-start gap-4">
+                            <span class="text-3xl">🌸</span>
+                            <div class="flex-1">
+                                <h3 class="font-bold text-lg"><a href="/npcs/vernie/"
+                                        class="hover:text-cozy-coral">Vernie</a></h3>
+                                <p class="text-sm text-cozy-coral mb-2">Flower Field Resident</p>
+                                <div class="grid md:grid-cols-2 gap-3 text-sm">
+                                    <div>
+                                        <strong class="text-cozy-wood">📍 Location:</strong>
+                                        <p class="text-cozy-wood">Flower Field (near windmill)</p>
+                                    </div>
+                                    <div>
+                                        <strong class="text-cozy-wood">🎵 Quest:</strong>
+                                        <p class="text-cozy-wood">Astralis in Flower Field (rewards Lute instrument)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Will -->
+                    <div class="bg-white rounded-xl p-5 border border-cozy-peach/30">
+                        <div class="flex items-start gap-4">
+                            <span class="text-3xl">🗼</span>
+                            <div class="flex-1">
+                                <h3 class="font-bold text-lg"><a href="/npcs/will/"
+                                        class="hover:text-cozy-coral">Will</a></h3>
+                                <p class="text-sm text-cozy-coral mb-2">Lighthouse Resident</p>
+                                <div class="grid md:grid-cols-2 gap-3 text-sm">
+                                    <div>
+                                        <strong class="text-cozy-wood">📍 Location:</strong>
+                                        <p class="text-cozy-wood">Lighthouse Area (coastal zone)</p>
+                                    </div>
+                                    <div>
+                                        <strong class="text-cozy-wood">🔓 Unlock:</strong>
+                                        <p class="text-cozy-wood">Story progression</p>
                                     </div>
                                 </div>
                             </div>
@@ -667,4 +850,3 @@
 </body>
 
 </html>
-
