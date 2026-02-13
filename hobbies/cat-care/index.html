@@ -100,13 +100,14 @@
                             class="text-cozy-sage">.Life</span></span>
                 </a>
                 <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
-                    <li><a href="/guides/map/" class="hover:text-cozy-coral transition-colors flex items-center gap-1">🗺️ Map</a></li>
+                    <li><a href="/guides/map/"
+                            class="hover:text-cozy-coral transition-colors flex items-center gap-1">🗺️ Map</a></li>
                     <li><a href="/codes/" class="hover:text-cozy-coral">🎁 Codes</a></li>
                     <li><a href="/guides/" class="hover:text-cozy-coral">Guides</a></li>
                     <li><a href="/hobbies/" class="text-cozy-coral font-bold">Hobbies</a></li>
                     <li><a href="/npcs/" class="hover:text-cozy-coral">NPCs</a></li>
                 </ul>
-            
+
                 <button class="md:hidden p-2 hover:bg-cozy-peach/50 rounded-lg" aria-label="Open menu"
                     onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -115,10 +116,11 @@
                     </svg>
                 </button>
             </div>
-        
+
             <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-cozy-peach/50 pt-4">
                 <ul class="flex flex-col gap-3 text-sm font-medium">
-                    <li><a href="/guides/map/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🗺️ Map</a></li>
+                    <li><a href="/guides/map/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🗺️ Map</a>
+                    </li>
                     <li><a href="/codes/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🎁 Codes</a></li>
                     <li><a href="/guides/" class="py-2 hover:text-cozy-coral">Guides</a></li>
                     <li><a href="/hobbies/" class="py-2 hover:text-cozy-coral">Hobbies</a></li>
@@ -355,41 +357,56 @@
 
                 <p class="text-cozy-wood mb-4">Daily care builds your bond and levels up your Cat Caring hobby:</p>
 
-                <div class="bg-white rounded-xl overflow-hidden border border-cozy-peach/30 mb-4">
-                    <div class="overflow-x-auto">
-                        <table class="w-full text-sm">
-                            <thead class="bg-orange-50 text-left">
-                                <tr>
-                                    <th class="px-4 py-3 font-bold">Activity</th>
-                                    <th class="px-4 py-3 font-bold">How To</th>
-                                    <th class="px-4 py-3 font-bold">Effect</th>
-                                </tr>
-                            </thead>
-                            <tbody class="divide-y divide-cozy-peach/20">
-                                <tr>
-                                    <td class="px-4 py-3 font-medium">🍽️ Feeding</td>
-                                    <td class="px-4 py-3 text-cozy-wood">Give cat food or snacks</td>
-                                    <td class="px-4 py-3 text-cozy-wood">Restores hunger, increases bond</td>
-                                </tr>
-                                <tr>
-                                    <td class="px-4 py-3 font-medium">🤚 Petting</td>
-                                    <td class="px-4 py-3 text-cozy-wood">Interact with your cat</td>
-                                    <td class="px-4 py-3 text-cozy-wood">Increases happiness & bond</td>
-                                </tr>
-                                <tr>
-                                    <td class="px-4 py-3 font-medium">🧶 Playing</td>
-                                    <td class="px-4 py-3 text-cozy-wood">Use toys, chase games</td>
-                                    <td class="px-4 py-3 text-cozy-wood">Great for Energetic cats</td>
-                                </tr>
-                                <tr>
-                                    <td class="px-4 py-3 font-medium">🛁 Bathing</td>
-                                    <td class="px-4 py-3 text-cozy-wood">Give your cat a bath</td>
-                                    <td class="px-4 py-3 text-cozy-wood">Maintains cleanliness</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead class="bg-orange-50 text-left">
+                            <tr>
+                                <th class="px-4 py-3 font-bold">Activity</th>
+                                <th class="px-4 py-3 font-bold">How To</th>
+                                <th class="px-4 py-3 font-bold">Effect</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-cozy-peach/20">
+                            <tr>
+                                <td class="px-4 py-3 font-medium">🍽️ Feeding</td>
+                                <td class="px-4 py-3 text-cozy-wood">Give <a href="/hobbies/cat-care/favorite-food/"
+                                        class="text-cozy-coral font-bold hover:underline">favorite food</a></td>
+                                <td class="px-4 py-3 text-cozy-wood">High bond increase (if favorite)</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium">🤚 Petting</td>
+                                <td class="px-4 py-3 text-cozy-wood">Interact with your cat</td>
+                                <td class="px-4 py-3 text-cozy-wood">Increases happiness & bond</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium">🧶 Playing</td>
+                                <td class="px-4 py-3 text-cozy-wood">Use toys, chase games</td>
+                                <td class="px-4 py-3 text-cozy-wood">Great for Energetic cats</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium">🛁 Bathing</td>
+                                <td class="px-4 py-3 text-cozy-wood">Give your cat a bath</td>
+                                <td class="px-4 py-3 text-cozy-wood">Maintains cleanliness</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
+                </div>
+
+                <!-- Link to Food Guide -->
+                <a href="/hobbies/cat-care/favorite-food/"
+                    class="block bg-orange-50 border border-orange-200 rounded-xl p-4 flex items-center justify-between card-hover group mb-4">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">🐟</span>
+                        <div>
+                            <h3 class="font-bold text-orange-900 group-hover:text-orange-700">Find Your Cat's Favorite
+                                Food</h3>
+                            <p class="text-xs text-orange-800">Don't guess! Use our testing tier list to find what they
+                                love.</p>
+                        </div>
+                    </div>
+                    <span class="text-orange-500 font-bold">View Guide →</span>
+                </a>
 
                 <div class="bg-cozy-sky/20 rounded-xl p-4">
                     <h3 class="font-bold mb-2">📱 Pet App</h3>
@@ -509,4 +526,3 @@
 </body>
 
 </html>
-
