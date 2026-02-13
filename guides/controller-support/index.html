@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRJ91G3VRR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-FRJ91G3VRR');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+        crossorigin="anonymous"></script>
+
+
+    <!-- SEO Meta Tags -->
+    <title>Heartopia Controller Support Guide: How to Play with Gamepad (PC/Android)</title>
+    <meta name="description"
+        content="Does Heartopia have controller support? Learn how to play Heartopia with a gamepad on PC (BlueStacks/LDPlayer) and Android using keymapping tools.">
+    <meta name="keywords"
+        content="heartopia controller support, heartopia gamepad, play heartopia with controller, heartopia bluestacks controller, heartopia android controller mapping">
+    <meta name="author" content="Heartopia.Life">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://heartopia.life/guides/controller-support/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Heartopia Controller Support Guide">
+    <meta property="og:description"
+        content="How to play Heartopia with a controller on PC and Android. Complete setup guide.">
+    <meta property="og:url" content="https://heartopia.life/guides/controller-support/">
+    <meta property="og:site_name" content="Heartopia.Life">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cozy': {
+                            'cream': '#FFF8F0',
+                            'peach': '#FFE5D9',
+                            'coral': '#FF9B85',
+                            'rose': '#D4A5A5',
+                            'sage': '#A8C686',
+                            'mint': '#B8E0D2',
+                            'sky': '#95C8D8',
+                            'wood': '#8B7355',
+                            'bark': '#5D4E37',
+                        }
+                    },
+                    fontFamily: {
+                        'display': ['Georgia', 'serif'],
+                        'body': ['system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(139, 115, 85, 0.12);
+        }
+    </style>
+</head>
+
+<body class="bg-cozy-cream text-cozy-bark font-body">
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-cozy-peach/50">
+        <nav class="max-w-6xl mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center gap-2 group">
+                    <img src="/favicon-96x96.png" alt="Heartopia.Life" class="w-7 h-7">
+                    <span class="font-display text-xl font-bold text-cozy-bark">Heartopia<span
+                            class="text-cozy-sage">.Life</span></span>
+                </a>
+                <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+                    <li><a href="/guides/map/"
+                            class="hover:text-cozy-coral transition-colors flex items-center gap-1">🗺️ Map</a></li>
+                    <li><a href="/codes/" class="hover:text-cozy-coral">🎁 Codes</a></li>
+                    <li><a href="/guides/" class="hover:text-cozy-coral">Guides</a></li>
+                    <li><a href="/hobbies/" class="hover:text-cozy-coral">Hobbies</a></li>
+                    <li><a href="/events/" class="hover:text-cozy-coral">Events</a></li>
+                    <li><a href="/database/" class="hover:text-cozy-coral">Database</a></li>
+                    <li><a href="/npcs/" class="hover:text-cozy-coral">NPCs</a></li>
+                </ul>
+
+                <button class="md:hidden p-2 hover:bg-cozy-peach/50 rounded-lg" aria-label="Open menu"
+                    onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-cozy-peach/50 pt-4">
+                <ul class="flex flex-col gap-3 text-sm font-medium">
+                    <li><a href="/guides/map/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🗺️ Map</a>
+                    </li>
+                    <li><a href="/codes/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🎁 Codes</a></li>
+                    <li><a href="/guides/" class="py-2 hover:text-cozy-coral">Guides</a></li>
+                    <li><a href="/hobbies/" class="py-2 hover:text-cozy-coral">Hobbies</a></li>
+                    <li><a href="/events/" class="py-2 hover:text-cozy-coral">Events</a></li>
+                    <li><a href="/database/" class="py-2 hover:text-cozy-coral">Database</a></li>
+                    <li><a href="/npcs/" class="py-2 hover:text-cozy-coral">NPCs</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-8">
+
+        <!-- Breadcrumb -->
+        <nav class="text-sm text-cozy-wood mb-6">
+            <a href="/" class="hover:text-cozy-coral">Home</a>
+            <span class="mx-2">›</span>
+            <a href="/guides/" class="hover:text-cozy-coral">Guides</a>
+            <span class="mx-2">›</span>
+            <span class="text-cozy-bark font-medium">Controller Support</span>
+        </nav>
+
+        <!-- Hero -->
+        <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-6 md:p-8 mb-8 border border-indigo-100">
+            <div class="flex items-center gap-2 text-sm font-medium text-indigo-600 mb-3">
+                <span class="w-2 h-2 bg-indigo-500 rounded-full animate-pulse"></span>
+                Updated: January 2026
+            </div>
+            <h1 class="font-display text-3xl md:text-4xl font-bold text-cozy-bark mb-4">
+                🎮 Heartopia Controller Support Guide
+            </h1>
+            <p class="text-cozy-wood text-lg mb-6">
+                Does Heartopia have native controller support? <strong>No.</strong> currently, there is no official
+                gamepad support
+                on iOS, Android, or PC.
+            </p>
+            <div class="bg-white/80 rounded-xl p-4 border border-indigo-200">
+                <p class="font-bold text-indigo-900 mb-1">However, you CAN play with a controller using:</p>
+                <ul class="list-disc list-inside text-sm text-indigo-800 space-y-1">
+                    <li>💻 <strong>PC:</strong> Custom mapping via BlueStacks or LDPlayer (Best Method)</li>
+                    <li>📱 <strong>Android:</strong> Keymapping apps like Mantis Buddy</li>
+                    <li>🍎 <strong>iOS:</strong> No current workaround</li>
+                </ul>
+            </div>
+        </div>
+
+        <article class="space-y-12">
+
+            <!-- PC GUIDE -->
+            <section id="pc">
+                <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
+                    💻 Method 1: Playing on PC (Recommended)
+                </h2>
+                <div class="bg-white rounded-xl p-6 border border-cozy-peach/30">
+                    <p class="text-cozy-wood mb-4">The best way to play Heartopia with a controller (Xbox/PS5) is by
+                        using an Android Emulator on PC. We recommend <strong>BlueStacks</strong> or
+                        <strong>LDPlayer</strong>.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="font-bold text-lg mb-2 text-indigo-900">Step 1: Install Emulator</h3>
+                            <p class="text-sm text-cozy-wood">Download and install BlueStacks 5 (Android 11 version
+                                recommended) or LDPlayer 9 on your PC.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold text-lg mb-2 text-indigo-900">Step 2: Connect Controller</h3>
+                            <p class="text-sm text-cozy-wood">Plug in your Xbox, PS4/PS5, or generic gamepad via USB or
+                                Bluetooth <strong>BEFORE</strong> launching the emulator. You should see a "Gamepad
+                                Connected" notification.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold text-lg mb-2 text-indigo-900">Step 3: Map Keys (The Setup)</h3>
+                            <ul class="list-decimal list-inside text-sm text-cozy-wood space-y-2 ml-2">
+                                <li>Launch Heartopia inside the emulator.</li>
+                                <li>Open the <strong>"Game Controls"</strong> menu (Keyboard icon usually on the
+                                    sidebar).</li>
+                                <li>Select <strong>"Controls Editor"</strong> and switch to "Gamepad".</li>
+                                <li><strong>Movement:</strong> Drag the "D-Pad" or "Joystick" widget onto the on-screen
+                                    movement wheel.</li>
+                                <li><strong>Actions:</strong> Drag "Tap Spot" widgets onto buttons like Jump, Interact,
+                                    and Fishing. Press the controller button you want to assign (e.g., 'A' for Jump).
+                                </li>
+                                <li>Save your profile!</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ANDROID GUIDE -->
+            <section id="android">
+                <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
+                    📱 Method 2: Android (Mantis Buddy)
+                </h2>
+                <div class="bg-white rounded-xl p-6 border border-cozy-peach/30">
+                    <p class="text-cozy-wood mb-4">If you want to play on your phone/tablet with a controller, you'll
+                        need a "Keymapper" app. <strong>Mantis Buddy</strong> is the safest and most popular option.</p>
+
+                    <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-4 text-sm text-yellow-800">
+                        <strong>⚠️ Note:</strong> This usually requires enabling "USB Debugging" on your phone and
+                        connecting it to a PC/Mac once to activate the app services.
+                    </div>
+
+                    <ol class="list-decimal list-inside space-y-3 text-sm text-cozy-wood">
+                        <li>Download <strong>Mantis Gamepad Pro</strong> from the Play Store.</li>
+                        <li>Follow the in-app setup (requires activating via Wifi Debugging or PC).</li>
+                        <li>Add "Heartopia" to Mantis and launch it.</li>
+                        <li>Press the floating Mantis widget -> Click "Add" button.</li>
+                        <li>Drag the "Stick" widget to the movement wheel.</li>
+                        <li>Drag "Key" widgets to all interaction buttons and press your controller buttons to bind
+                            them.</li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- IOS & FAQ -->
+            <section id="faq">
+                <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
+                    ❓ Frequently Asked Questions
+                </h2>
+                <div class="space-y-4">
+                    <div class="bg-white rounded-xl p-5 border border-cozy-peach/30">
+                        <h3 class="font-bold text-cozy-bark mb-2">Is there any way to play on iOS with a controller?
+                        </h3>
+                        <p class="text-sm text-cozy-wood">Currently, <strong>no</strong>. iOS is very restrictive with
+                            screen overlay apps. Unless the developers add official support, you are stuck with touch
+                            controls on iPhone and iPad.</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-5 border border-cozy-peach/30">
+                        <h3 class="font-bold text-cozy-bark mb-2">Can I get banned for using Keymappers?</h3>
+                        <p class="text-sm text-cozy-wood">Generally, <strong>no</strong>. Emulators and keymappers are
+                            widely used for cozy games. However, avoid using macros (scripts that automate play) as that
+                            can flag anti-cheat systems. Simple 1:1 button mapping is considered safe by most
+                            communities.</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-5 border border-cozy-peach/30">
+                        <h3 class="font-bold text-cozy-bark mb-2">Will Heartopia add official support?</h3>
+                        <p class="text-sm text-cozy-wood">Many players have requested it on the official Discord! It is
+                            a commonly requested feature, but there is no confirmed roadmap release date yet.</p>
+                    </div>
+                </div>
+            </section>
+
+        </article>
+
+        <!-- Disclaimer -->
+        <section class="mt-8 bg-cozy-bark/10 rounded-xl p-4 text-sm text-cozy-wood">
+            <p><strong>Disclaimer:</strong> This guide involves using third-party tools (BlueStacks, Mantis Buddy).
+                Heartopia.Life is not affiliated with these apps or XD Entertainment. Use at your own discretion.</p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-cozy-bark text-white py-8 mt-12">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <a href="/" class="inline-flex items-center gap-2 mb-4">
+                <span class="text-xl">🏡</span>
+                <span class="font-display font-bold">Heartopia<span class="text-cozy-sage">.Life</span></span>
+            </a>
+            <p class="text-white/60 text-sm mb-4">Unofficial fan site. Not affiliated with XD Entertainment.</p>
+            <p class="text-white/40 text-xs">© 2026 Heartopia.Life</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
