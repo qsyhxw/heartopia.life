@@ -114,7 +114,8 @@
                             class="text-cozy-sage">.Life</span></span>
                 </a>
                 <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
-                    <li><a href="/guides/map/" class="hover:text-cozy-coral transition-colors flex items-center gap-1">🗺️ Map</a></li>
+                    <li><a href="/guides/map/"
+                            class="hover:text-cozy-coral transition-colors flex items-center gap-1">🗺️ Map</a></li>
                     <li><a href="/codes/" class="hover:text-cozy-coral">🎁 Codes</a></li>
                     <li><a href="/guides/" class="text-cozy-coral font-bold">Guides</a></li>
                     <li><a href="/hobbies/" class="hover:text-cozy-coral">Hobbies</a></li>
@@ -179,14 +180,9 @@
                 </button>
             </div>
             <div class="map-container border-2 border-cozy-peach/30">
-                <iframe 
-        id="map-iframe" 
-        src="https://webresources.cc/heartopia/en.html"
-        title="Heartopia Interactive Map" 
-        loading="lazy" 
-        allow="fullscreen"
-        referrerpolicy="no-referrer">
-    </iframe>
+                <iframe id="map-iframe" src="https://webresources.cc/heartopia/en.html"
+                    title="Heartopia Interactive Map" loading="lazy" allow="fullscreen" referrerpolicy="no-referrer">
+                </iframe>
             </div>
             <p class="text-xs text-cozy-wood mt-3 text-center">
                 Interactive map powered by <a href="https://www.heartopia.live" target="_blank" rel="noopener"
@@ -197,31 +193,29 @@
 
         <!-- Fullscreen Map Modal -->
         <div id="fullscreen-map-modal" class="fixed inset-0 z-[100] hidden">
-    <div class="absolute inset-0 bg-black/90"></div>
-    
-    <div class="relative w-full h-full flex flex-col">
-        
-        <div class="flex items-center justify-between p-4 bg-cozy-bark/90 text-white shrink-0">
-            <h3 class="font-display font-bold text-lg">🗺️ Heartopia Interactive Map</h3>
-            <button onclick="closeFullscreenMap()"
-                class="flex items-center gap-2 px-4 py-2 bg-cozy-coral hover:bg-cozy-coral/80 rounded-lg transition-colors cursor-pointer">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M6 18L18 6M6 6l12 12" />
-                </svg>
-                Close
-            </button>
+            <div class="absolute inset-0 bg-black/90"></div>
+
+            <div class="relative w-full h-full flex flex-col">
+
+                <div class="flex items-center justify-between p-4 bg-cozy-bark/90 text-white shrink-0">
+                    <h3 class="font-display font-bold text-lg">🗺️ Heartopia Interactive Map</h3>
+                    <button onclick="closeFullscreenMap()"
+                        class="flex items-center gap-2 px-4 py-2 bg-cozy-coral hover:bg-cozy-coral/80 rounded-lg transition-colors cursor-pointer">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                        Close
+                    </button>
+                </div>
+
+                <div class="flex-1 w-full h-full relative">
+                    <iframe id="fullscreen-map-iframe" src="" title="Heartopia Interactive Map Full Screen"
+                        class="w-full h-full border-none" allow="fullscreen" referrerpolicy="no-referrer">
+                    </iframe>
+                </div>
+            </div>
         </div>
-        
-        <div class="flex-1 w-full h-full relative">
-            <iframe id="fullscreen-map-iframe" src="" title="Heartopia Interactive Map Full Screen"
-                class="w-full h-full border-none" 
-                allow="fullscreen"
-                referrerpolicy="no-referrer">
-            </iframe>
-        </div>
-    </div>
-</div>
 
         <script>
             function openFullscreenMap() {
@@ -401,6 +395,12 @@
         <!-- Section 3: Key NPCs -->
         <section id="npcs" class="bg-white rounded-2xl p-6 mb-6 border border-cozy-peach/30">
             <h2 class="font-display text-2xl font-bold mb-4">👤 3. Key NPC Locations</h2>
+
+            <!-- NPC Map Image -->
+            <div class="mb-6 rounded-xl overflow-hidden shadow-lg border border-cozy-peach/30">
+                <img src="/img/map-guide-for-npcs.webp" alt="Heartopia NPC Location Map Guide" class="w-full h-auto"
+                    loading="lazy">
+            </div>
 
             <h3 class="font-bold text-lg mb-3">📍 Static NPCs</h3>
             <div class="overflow-x-auto mb-6">
