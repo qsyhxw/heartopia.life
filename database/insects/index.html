@@ -20,9 +20,9 @@
 
 
     <!-- SEO Meta Tags -->
-    <title>Heartopia Insects Database: All Butterflies, Beetles & Moths</title>
+    <title>Heartopia Insect Locations & Database: Forests, Seaside & Mountains</title>
     <meta name="description"
-        content="Complete Heartopia insect database. 30+ butterflies, beetles & moths with locations, spawn times, weather conditions & sell prices by star rating.">
+        content="Complete Heartopia insect location guide. Filter by Forest, Seaside, Mountain, or Town to find 30+ butterflies, beetles & moths. Spawn times & conditions included.">
     <meta name="keywords"
         content="heartopia insects, heartopia butterflies, heartopia beetles, heartopia moths, heartopia insect catching">
     <meta name="author" content="Heartopia.Life">
@@ -206,6 +206,37 @@
             </div>
         </div>
 
+        <!-- Filter System -->
+        <div class="bg-white rounded-xl p-4 mb-8 border border-cozy-peach/30 sticky top-20 z-40 shadow-sm">
+            <h3 class="font-bold mb-3 text-sm text-cozy-bark">🔍 Filter by Location</h3>
+            <div class="flex flex-wrap gap-4">
+                <div class="flex-1 min-w-[150px]">
+                    <label class="block text-xs font-medium text-cozy-wood mb-1">Location</label>
+                    <select id="filter-location" onchange="filterInsects()"
+                        class="w-full p-2 text-sm border border-cozy-peach rounded-lg bg-cozy-cream focus:outline-none focus:border-cozy-coral">
+                        <option value="all">🌍 All Locations</option>
+                        <option value="forest">🌲 Forest / Deep Forest</option>
+                        <option value="flower">🌸 Flower Field</option>
+                        <option value="town">🏡 Town / Suburbs</option>
+                        <option value="water">🌊 Seaside / Fishing Village</option>
+                        <option value="mountain">🌋 Onsen Mountain</option>
+                        <option value="home">🏠 Home Garden</option>
+                        <option value="event">🎉 Events</option>
+                    </select>
+                </div>
+                <div class="flex-1 min-w-[150px]">
+                    <label class="block text-xs font-medium text-cozy-wood mb-1">Weather</label>
+                    <select id="filter-weather" onchange="filterInsects()"
+                        class="w-full p-2 text-sm border border-cozy-peach rounded-lg bg-cozy-cream focus:outline-none focus:border-cozy-coral">
+                        <option value="all">🌤️ All Weather</option>
+                        <option value="sunny">☀️ Sunny</option>
+                        <option value="rainy">🌧️ Rainy</option>
+                        <option value="rainbow">🌈 Rainbow</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
         <!-- CONTENT -->
         <article class="space-y-12">
 
@@ -228,14 +259,14 @@
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-cozy-peach/20">
-                                <tr>
+                                <tr data-location="event" data-weather="any">
                                     <td class="px-4 py-3 font-medium">Postman Butterfly</td>
                                     <td class="px-4 py-3">1</td>
                                     <td class="px-4 py-3 text-cozy-wood">Bait Insects Event</td>
                                     <td class="px-4 py-3">All Day</td>
                                     <td class="px-4 py-3">☀️🌧️🌈</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="town" data-weather="any">
                                     <td class="px-4 py-3 font-medium"><a href="/database/insects/common-brimstone/"
                                             class="text-cozy-bark hover:text-cozy-coral underline decoration-dotted">Common
                                             Brimstone</a></td>
@@ -244,98 +275,98 @@
                                     <td class="px-4 py-3">All Day</td>
                                     <td class="px-4 py-3">☀️🌧️🌈</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="water" data-weather="any">
                                     <td class="px-4 py-3 font-medium">Cabbage White</td>
                                     <td class="px-4 py-3">1</td>
                                     <td class="px-4 py-3 text-cozy-wood">Fishing Village</td>
                                     <td class="px-4 py-3">All Day</td>
                                     <td class="px-4 py-3">🌐</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="town" data-weather="any">
                                     <td class="px-4 py-3 font-medium">Common Blue Butterfly</td>
                                     <td class="px-4 py-3">2</td>
                                     <td class="px-4 py-3 text-cozy-wood">Town Square / Central Area</td>
                                     <td class="px-4 py-3">All Day</td>
                                     <td class="px-4 py-3">🌐</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="home" data-weather="any">
                                     <td class="px-4 py-3 font-medium">Sulkowsky's Morpho</td>
                                     <td class="px-4 py-3">2</td>
                                     <td class="px-4 py-3 text-cozy-wood">Insect Attractor</td>
                                     <td class="px-4 py-3">—</td>
                                     <td class="px-4 py-3">—</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="flower mountain" data-weather="sunny rainbow">
                                     <td class="px-4 py-3 font-medium">Purple Emperor</td>
                                     <td class="px-4 py-3">3</td>
                                     <td class="px-4 py-3 text-cozy-wood">Flower Field / Whale Mt.</td>
                                     <td class="px-4 py-3">12PM-12AM</td>
                                     <td class="px-4 py-3">☀️🌈</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="home" data-weather="any">
                                     <td class="px-4 py-3 font-medium">Red-Necked Swallowtail</td>
                                     <td class="px-4 py-3">3</td>
                                     <td class="px-4 py-3 text-cozy-wood">Player Home Garden</td>
                                     <td class="px-4 py-3">All Day</td>
                                     <td class="px-4 py-3">🌐</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="home" data-weather="sunny rainbow">
                                     <td class="px-4 py-3 font-medium">Rajah Brooke's Birdwing</td>
                                     <td class="px-4 py-3">3</td>
                                     <td class="px-4 py-3 text-cozy-wood">Player Home</td>
                                     <td class="px-4 py-3">6PM-12PM</td>
                                     <td class="px-4 py-3">☀️🌈</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="flower" data-weather="any">
                                     <td class="px-4 py-3 font-medium">Peacock Butterfly</td>
                                     <td class="px-4 py-3">4</td>
                                     <td class="px-4 py-3 text-cozy-wood">Flower Field / Windmill</td>
                                     <td class="px-4 py-3">All Day</td>
                                     <td class="px-4 py-3">☀️🌧️🌈</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="flower" data-weather="sunny">
                                     <td class="px-4 py-3 font-medium">Morpho Butterfly</td>
                                     <td class="px-4 py-3">5</td>
                                     <td class="px-4 py-3 text-cozy-wood">Flower Field</td>
                                     <td class="px-4 py-3">6AM-6PM</td>
                                     <td class="px-4 py-3">☀️</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="flower forest" data-weather="sunny rainbow">
                                     <td class="px-4 py-3 font-medium">Blue Morpho Butterfly</td>
                                     <td class="px-4 py-3">6</td>
                                     <td class="px-4 py-3 text-cozy-wood">Flower Field / Spirit Oak</td>
                                     <td class="px-4 py-3">6AM-6PM</td>
                                     <td class="px-4 py-3">☀️🌈</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="event" data-weather="any">
                                     <td class="px-4 py-3 font-medium">Apollo</td>
                                     <td class="px-4 py-3">7</td>
                                     <td class="px-4 py-3 text-cozy-wood">Bait Insects Event</td>
                                     <td class="px-4 py-3">All Day</td>
                                     <td class="px-4 py-3">☀️🌧️🌈</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="town forest" data-weather="any">
                                     <td class="px-4 py-3 font-medium">Dead Leaf Butterfly</td>
                                     <td class="px-4 py-3">8</td>
                                     <td class="px-4 py-3 text-cozy-wood">Suburbs / Forest</td>
                                     <td class="px-4 py-3">All Day</td>
                                     <td class="px-4 py-3">🌐</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="flower" data-weather="sunny">
                                     <td class="px-4 py-3 font-medium">Glasswing Butterfly</td>
                                     <td class="px-4 py-3">8</td>
                                     <td class="px-4 py-3 text-cozy-wood">Flower Field</td>
                                     <td class="px-4 py-3">6AM-12PM</td>
                                     <td class="px-4 py-3">☀️</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="flower" data-weather="sunny rainbow">
                                     <td class="px-4 py-3 font-medium">Golden Butterfly</td>
                                     <td class="px-4 py-3">8</td>
                                     <td class="px-4 py-3 text-cozy-wood">Flower Field</td>
                                     <td class="px-4 py-3">6AM-12PM</td>
                                     <td class="px-4 py-3">☀️🌈</td>
                                 </tr>
-                                <tr class="bg-purple-50/50">
+                                <tr class="bg-purple-50/50" data-location="all">
                                     <td class="px-4 py-3 font-medium">Monarch Butterfly ⭐</td>
                                     <td class="px-4 py-3">10</td>
                                     <td class="px-4 py-3 text-cozy-wood">Rare spawn</td>
@@ -367,154 +398,155 @@
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-cozy-peach/20">
-                                <tr>
+                                <tr data-location="flower" data-weather="any">
                                     <td class="px-4 py-3 font-medium">Asparagus Beetle</td>
                                     <td class="px-4 py-3">1</td>
                                     <td class="px-4 py-3 text-cozy-wood">Flower Field</td>
                                     <td class="px-4 py-3">All Day</td>
                                     <td class="px-4 py-3">☀️🌧️🌈</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="home" data-weather="rainy rainbow">
                                     <td class="px-4 py-3 font-medium">Amethyst Flower Beetle</td>
                                     <td class="px-4 py-3">2</td>
                                     <td class="px-4 py-3 text-cozy-wood">Home Lot Rocks</td>
                                     <td class="px-4 py-3">All Day</td>
                                     <td class="px-4 py-3">🌧️🌈</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="mountain town forest" data-weather="any">
                                     <td class="px-4 py-3 font-medium">Green Tiger Beetle</td>
                                     <td class="px-4 py-3">2</td>
                                     <td class="px-4 py-3 text-cozy-wood">Onsen Mountain / All</td>
                                     <td class="px-4 py-3">All Day</td>
                                     <td class="px-4 py-3">🌐</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="town" data-weather="rainy rainbow">
                                     <td class="px-4 py-3 font-medium">Seven-Spotted Ladybug</td>
                                     <td class="px-4 py-3">2</td>
                                     <td class="px-4 py-3 text-cozy-wood">Suburbs</td>
                                     <td class="px-4 py-3">All Day</td>
                                     <td class="px-4 py-3">🌧️🌈</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="forest flower" data-weather="rainy rainbow">
                                     <td class="px-4 py-3 font-medium">Wasp Beetle</td>
                                     <td class="px-4 py-3">2</td>
                                     <td class="px-4 py-3 text-cozy-wood">Forest / Flower Field</td>
                                     <td class="px-4 py-3">All Day</td>
                                     <td class="px-4 py-3">🌧️🌈</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="mountain" data-weather="any">
                                     <td class="px-4 py-3 font-medium">Fire-Colored Beetle</td>
                                     <td class="px-4 py-3">3</td>
                                     <td class="px-4 py-3 text-cozy-wood">Onsen Mountain</td>
                                     <td class="px-4 py-3">All Day</td>
                                     <td class="px-4 py-3">☀️🌧️🌈</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="mountain forest" data-weather="any">
                                     <td class="px-4 py-3 font-medium">Red-winged Beetle</td>
                                     <td class="px-4 py-3">3</td>
                                     <td class="px-4 py-3 text-cozy-wood">Hot Spring / Forest</td>
                                     <td class="px-4 py-3">All Day</td>
                                     <td class="px-4 py-3">🌐</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="town forest home" data-weather="any">
                                     <td class="px-4 py-3 font-medium">Variable Ladybug</td>
                                     <td class="px-4 py-3">4</td>
                                     <td class="px-4 py-3 text-cozy-wood">Various</td>
                                     <td class="px-4 py-3">—</td>
                                     <td class="px-4 py-3">—</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="forest" data-weather="rainy rainbow">
                                     <td class="px-4 py-3 font-medium">Asian Lady Beetle</td>
                                     <td class="px-4 py-3">5</td>
                                     <td class="px-4 py-3 text-cozy-wood">Forest Deer Tower</td>
                                     <td class="px-4 py-3">12PM-12AM</td>
                                     <td class="px-4 py-3">🌧️🌈</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="all" data-weather="any">
                                     <td class="px-4 py-3 font-medium">Scarab Beetle</td>
                                     <td class="px-4 py-3">6</td>
                                     <td class="px-4 py-3 text-cozy-wood">—</td>
                                     <td class="px-4 py-3">—</td>
                                     <td class="px-4 py-3">—</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="forest" data-weather="rainbow">
                                     <td class="px-4 py-3 font-medium">Silver Jewel Beetle</td>
                                     <td class="px-4 py-3">6</td>
                                     <td class="px-4 py-3 text-cozy-wood">Forest</td>
                                     <td class="px-4 py-3">All Day</td>
                                     <td class="px-4 py-3">🌈</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="forest" data-weather="rainbow">
                                     <td class="px-4 py-3 font-medium">Golden Jewel Beetle</td>
                                     <td class="px-4 py-3">6</td>
                                     <td class="px-4 py-3 text-cozy-wood">Forest</td>
                                     <td class="px-4 py-3">All Day</td>
                                     <td class="px-4 py-3">🌈</td>
                                 </tr>
-                                <tr class="bg-yellow-50/50">
+                                <tr class="bg-yellow-50/50" data-location="flower mountain"
+                                    data-weather="rainy rainbow">
                                     <td class="px-4 py-3 font-medium">Elegant Flower Beetle</td>
                                     <td class="px-4 py-3">7</td>
                                     <td class="px-4 py-3 text-cozy-wood">Whale Mt. Flower Field</td>
                                     <td class="px-4 py-3">6AM-6PM</td>
                                     <td class="px-4 py-3">🌧️🌈</td>
                                 </tr>
-                                <tr class="bg-yellow-50/50">
+                                <tr class="bg-yellow-50/50" data-location="forest" data-weather="sunny rainbow">
                                     <td class="px-4 py-3 font-medium">Golden Jewel Scarab</td>
                                     <td class="px-4 py-3">7</td>
                                     <td class="px-4 py-3 text-cozy-wood">Forest Jump Puzzle</td>
                                     <td class="px-4 py-3">12PM-12AM</td>
                                     <td class="px-4 py-3">☀️🌈</td>
                                 </tr>
-                                <tr class="bg-yellow-50/50">
+                                <tr class="bg-yellow-50/50" data-location="forest" data-weather="any">
                                     <td class="px-4 py-3 font-medium">Stag Beetle ⭐</td>
                                     <td class="px-4 py-3">7</td>
                                     <td class="px-4 py-3 text-cozy-wood">Forest / Jump Puzzle</td>
                                     <td class="px-4 py-3">6PM-6AM</td>
                                     <td class="px-4 py-3">🌧️☀️🌈</td>
                                 </tr>
-                                <tr class="bg-yellow-50/50">
+                                <tr class="bg-yellow-50/50" data-location="forest" data-weather="any">
                                     <td class="px-4 py-3 font-medium">Hercules Beetle ⭐</td>
                                     <td class="px-4 py-3">7</td>
                                     <td class="px-4 py-3 text-cozy-wood">Forest / Deer Tower</td>
                                     <td class="px-4 py-3">6PM-6AM</td>
                                     <td class="px-4 py-3">🌧️☀️🌈</td>
                                 </tr>
-                                <tr class="bg-yellow-50/50">
+                                <tr class="bg-yellow-50/50" data-location="forest" data-weather="rainy">
                                     <td class="px-4 py-3 font-medium">Rhinoceros Beetle</td>
                                     <td class="px-4 py-3">7</td>
                                     <td class="px-4 py-3 text-cozy-wood">Forest</td>
                                     <td class="px-4 py-3">6PM-6AM</td>
                                     <td class="px-4 py-3">🌧️</td>
                                 </tr>
-                                <tr class="bg-purple-50/50">
+                                <tr class="bg-purple-50/50" data-location="water" data-weather="sunny rainbow">
                                     <td class="px-4 py-3 font-medium">Horned Beetle</td>
                                     <td class="px-4 py-3">8</td>
                                     <td class="px-4 py-3 text-cozy-wood">Fishing Village East Pier</td>
                                     <td class="px-4 py-3">6PM-6AM</td>
                                     <td class="px-4 py-3">☀️🌈</td>
                                 </tr>
-                                <tr class="bg-purple-50/50">
+                                <tr class="bg-purple-50/50" data-location="forest" data-weather="sunny rainy">
                                     <td class="px-4 py-3 font-medium">Giant Stag Beetle</td>
                                     <td class="px-4 py-3">8</td>
                                     <td class="px-4 py-3 text-cozy-wood">Deep Forest</td>
                                     <td class="px-4 py-3">6PM-6AM</td>
                                     <td class="px-4 py-3">☀️🌧️</td>
                                 </tr>
-                                <tr class="bg-purple-50/50">
+                                <tr class="bg-purple-50/50" data-location="forest" data-weather="rainbow">
                                     <td class="px-4 py-3 font-medium">Rainbow Stag Beetle ⭐</td>
                                     <td class="px-4 py-3">8</td>
                                     <td class="px-4 py-3 text-cozy-wood">Deep Forest</td>
                                     <td class="px-4 py-3">12AM-6AM</td>
                                     <td class="px-4 py-3">🌈</td>
                                 </tr>
-                                <tr class="bg-purple-50/50">
+                                <tr class="bg-purple-50/50" data-location="mountain" data-weather="any">
                                     <td class="px-4 py-3 font-medium">Minotaur Beetle</td>
                                     <td class="px-4 py-3">8</td>
                                     <td class="px-4 py-3 text-cozy-wood">Onsen Mt. Ruins</td>
                                     <td class="px-4 py-3">12AM-6PM</td>
                                     <td class="px-4 py-3">☀️🌧️🌈</td>
                                 </tr>
-                                <tr class="bg-purple-50/50">
+                                <tr class="bg-purple-50/50" data-location="mountain event" data-weather="any">
                                     <td class="px-4 py-3 font-medium">Golden Scarab ⭐</td>
                                     <td class="px-4 py-3">9</td>
                                     <td class="px-4 py-3 text-cozy-wood">Ruins (Lucky Event)</td>
@@ -546,42 +578,42 @@
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-cozy-peach/20">
-                                <tr>
+                                <tr data-location="town" data-weather="any">
                                     <td class="px-4 py-3 font-medium">Mini Moon Moth</td>
                                     <td class="px-4 py-3">2</td>
                                     <td class="px-4 py-3 text-cozy-wood">Suburbs</td>
                                     <td class="px-4 py-3">—</td>
                                     <td class="px-4 py-3">—</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="forest" data-weather="any">
                                     <td class="px-4 py-3 font-medium">Isabella Tiger Moth</td>
                                     <td class="px-4 py-3">6</td>
                                     <td class="px-4 py-3 text-cozy-wood">Forest</td>
                                     <td class="px-4 py-3">6PM-12AM</td>
                                     <td class="px-4 py-3">🌐</td>
                                 </tr>
-                                <tr>
+                                <tr data-location="forest" data-weather="any">
                                     <td class="px-4 py-3 font-medium">White Witch Moth</td>
                                     <td class="px-4 py-3">8</td>
                                     <td class="px-4 py-3 text-cozy-wood">Forest / Deep Forest</td>
                                     <td class="px-4 py-3">12AM-6AM</td>
                                     <td class="px-4 py-3">🌐</td>
                                 </tr>
-                                <tr class="bg-purple-50/50">
+                                <tr class="bg-purple-50/50" data-location="forest" data-weather="any">
                                     <td class="px-4 py-3 font-medium">Atlas Moth ⭐</td>
                                     <td class="px-4 py-3">9</td>
                                     <td class="px-4 py-3 text-cozy-wood">Forest</td>
                                     <td class="px-4 py-3">6AM-12AM</td>
                                     <td class="px-4 py-3">🌐</td>
                                 </tr>
-                                <tr class="bg-purple-50/50">
+                                <tr class="bg-purple-50/50" data-location="forest" data-weather="sunny rainbow">
                                     <td class="px-4 py-3 font-medium">Luna Moth ⭐</td>
                                     <td class="px-4 py-3">9</td>
                                     <td class="px-4 py-3 text-cozy-wood">Forest</td>
                                     <td class="px-4 py-3">12AM-6AM</td>
                                     <td class="px-4 py-3">☀️🌈</td>
                                 </tr>
-                                <tr class="bg-purple-50/50">
+                                <tr class="bg-purple-50/50" data-location="all" data-weather="any">
                                     <td class="px-4 py-3 font-medium">Phoenix Moth ⭐</td>
                                     <td class="px-4 py-3">10</td>
                                     <td class="px-4 py-3 text-cozy-wood">Rare spawn</td>
@@ -785,6 +817,32 @@
         </div>
     </footer>
 
+    <!-- JavaScript for filtering -->
+    <script>
+        function filterInsects() {
+            const location = document.getElementById('filter-location').value;
+            const weather = document.getElementById('filter-weather').value;
+
+            // Select all rows from all insect tables
+            const rows = document.querySelectorAll('.insect-table tbody tr');
+
+            rows.forEach(row => {
+                const rowLocs = (row.dataset.location || '').split(' '); // Support multiple locations
+                const rowWeathers = (row.dataset.weather || '').split(' ');
+
+                // Location Logic: Match if 'all' OR if row has the selected location tag
+                // Note: We'll tag rows with broad categories like 'forest' covers 'Deep Forest' too
+                let showLocation = location === 'all' || rowLocs.includes(location);
+
+                // Weather Logic
+                let showWeather = weather === 'all' ||
+                    rowWeathers.includes('any') ||
+                    rowWeathers.includes(weather);
+
+                row.style.display = (showLocation && showWeather) ? '' : 'none';
+            });
+        }
+    </script>
 </body>
 
 </html>
