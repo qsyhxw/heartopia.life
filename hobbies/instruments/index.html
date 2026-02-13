@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRJ91G3VRR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-FRJ91G3VRR');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+        crossorigin="anonymous"></script>
+
+    <!-- SEO Meta Tags -->
+    <title>Heartopia Piano & Instruments Guide: Sheet Music, Songs & How to Play</title>
+    <meta name="description"
+        content="Complete Heartopia instruments guide. Learn how to get the Piano, Lute & Guitar, unlock sheet music, and play songs using the 1-7 numbered notation system.">
+    <meta name="keywords"
+        content="heartopia piano, heartopia sheet music, heartopia instruments, heartopia how to play piano, heartopia songs, heartopia lute">
+    <meta name="author" content="Heartopia.Life">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://heartopia.life/hobbies/instruments/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Heartopia Piano & Instruments Guide">
+    <meta property="og:description"
+        content="Learn how to play Piano, unlock Sheet Music, and master instruments in Heartopia.">
+    <meta property="og:url" content="https://heartopia.life/hobbies/instruments/">
+    <meta property="og:site_name" content="Heartopia.Life">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Heartopia Piano & Instruments Guide">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Heartopia Piano & Instruments Guide: Sheet Music, Songs & How to Play",
+        "description": "Complete Heartopia instruments guide covering Piano, Lute, and Guitar, including how to unlock sheet music and play songs.",
+        "author": {"@type": "Organization", "name": "Heartopia.Life"},
+        "publisher": {"@type": "Organization", "name": "Heartopia.Life"},
+        "datePublished": "2026-02-13",
+        "dateModified": "2026-02-13"
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How do I get a Piano in Heartopia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You can get a Piano for free on Day 3 of the 7-Day Sign-in Event (New Player). You can also buy one from Annie's Music Store or the traveling Collector."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I unlock Sheet Music in Heartopia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "To unlock Sheet Music, complete the 'Astralis in Flower Field' quest line given by Vernie. This unlocks the Instrument section in your Daily Life Guide and allows you to buy scores from Annie."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does the notation system work in Heartopia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Heartopia uses a numbered musical notation system (1-7), corresponding to Do-Re-Mi-Fa-Sol-La-Ti (C Major Scale). Dots above numbers indicate a higher octave, and dots below indicate a lower octave."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cozy': {
+                            'cream': '#FFF8F0',
+                            'peach': '#FFE5D9',
+                            'coral': '#FF9B85',
+                            'rose': '#D4A5A5',
+                            'sage': '#A8C686',
+                            'mint': '#B8E0D2',
+                            'sky': '#95C8D8',
+                            'wood': '#8B7355',
+                            'bark': '#5D4E37',
+                        }
+                    },
+                    fontFamily: {
+                        'display': ['Georgia', 'serif'],
+                        'body': ['system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(139, 115, 85, 0.12);
+        }
+
+        .note-key {
+            width: 40px;
+            height: 120px;
+            background: white;
+            border: 1px solid #ddd;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-bottom: 10px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .note-key.black {
+            width: 24px;
+            height: 80px;
+            background: #333;
+            color: white;
+            position: absolute;
+            z-index: 10;
+            margin-left: -12px;
+            border-bottom-left-radius: 2px;
+            border-bottom-right-radius: 2px;
+        }
+    </style>
+</head>
+
+<body class="bg-cozy-cream text-cozy-bark font-body">
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-cozy-peach/50">
+        <nav class="max-w-6xl mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center gap-2 group">
+                    <img src="/favicon-96x96.png" alt="Heartopia.Life" class="w-7 h-7">
+                    <span class="font-display text-xl font-bold text-cozy-bark">Heartopia<span
+                            class="text-cozy-sage">.Life</span></span>
+                </a>
+                <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+                    <li><a href="/guides/map/" class="hover:text-cozy-coral flex items-center gap-1">🗺️ Map</a></li>
+                    <li><a href="/codes/" class="hover:text-cozy-coral flex items-center gap-1">🎁 Codes</a></li>
+                    <li><a href="/guides/" class="hover:text-cozy-coral">Guides</a></li>
+                    <li><a href="/hobbies/" class="hover:text-cozy-coral">Hobbies</a></li>
+                    <li><a href="/database/" class="hover:text-cozy-coral">Database</a></li>
+                </ul>
+
+                <button class="md:hidden p-2 hover:bg-cozy-peach/50 rounded-lg" aria-label="Open menu"
+                    onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-cozy-peach/50 pt-4">
+                <ul class="flex flex-col gap-3 text-sm font-medium">
+                    <li><a href="/guides/map/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🗺️ Map</a>
+                    </li>
+                    <li><a href="/codes/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🎁 Codes</a></li>
+                    <li><a href="/guides/" class="py-2 hover:text-cozy-coral">Guides</a></li>
+                    <li><a href="/hobbies/" class="py-2 hover:text-cozy-coral">Hobbies</a></li>
+                    <li><a href="/database/" class="py-2 hover:text-cozy-coral">Database</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-8">
+
+        <!-- Breadcrumb -->
+        <nav class="text-sm text-cozy-wood mb-6">
+            <a href="/" class="hover:text-cozy-coral">Home</a>
+            <span class="mx-2">›</span>
+            <a href="/hobbies/" class="hover:text-cozy-coral">Hobbies</a>
+            <span class="mx-2">›</span>
+            <span class="text-cozy-bark font-medium">Instruments & Piano</span>
+        </nav>
+
+        <!-- Hero -->
+        <div class="bg-gradient-to-br from-purple-100 to-pink-50 rounded-2xl p-6 md:p-8 mb-8">
+            <div class="flex items-center gap-2 text-sm font-medium text-purple-600 mb-3">
+                <span class="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></span>
+                Updated: February 2026
+            </div>
+            <h1 class="font-display text-3xl md:text-4xl font-bold text-cozy-bark mb-4">
+                🎹 Heartopia Piano & Instruments Guide
+            </h1>
+            <p class="text-cozy-wood text-lg">
+                Complete guide to becoming a musician in Heartopia! Learn how to unlock **Sheet Music**, get your first
+                **Piano**, and play songs using the **numbered notation system**.
+            </p>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
+                <div class="text-2xl mb-1">🎼</div>
+                <div class="text-xs text-cozy-wood">15+ Songs</div>
+            </div>
+            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
+                <div class="text-2xl mb-1">🎹</div>
+                <div class="text-xs text-cozy-wood">Free Piano (Day 3)</div>
+            </div>
+            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
+                <div class="text-2xl mb-1">🎻</div>
+                <div class="text-xs text-cozy-wood">Lute Unlocks Music</div>
+            </div>
+            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
+                <div class="text-2xl mb-1">🎶</div>
+                <div class="text-xs text-cozy-wood">Multiplayer Jams</div>
+            </div>
+        </div>
+
+        <!-- TOC -->
+        <div class="bg-white rounded-xl p-6 mb-8 border border-cozy-peach/30">
+            <h2 class="font-bold text-lg mb-3">🎵 Quick Navigation</h2>
+            <ul class="grid md:grid-cols-3 gap-2 text-sm">
+                <li><a href="#instruments" class="text-cozy-coral hover:underline">→ How to Get Instruments</a></li>
+                <li><a href="#sheet-music" class="text-cozy-coral hover:underline">→ Unlocking Sheet Music</a></li>
+                <li><a href="#how-to-play" class="text-cozy-coral hover:underline">→ How to Play (1-7 Notation)</a></li>
+                <li><a href="#songs" class="text-cozy-coral hover:underline">→ Song Library</a></li>
+                <li><a href="#faq" class="text-cozy-coral hover:underline">→ FAQ</a></li>
+            </ul>
+        </div>
+
+        <!-- How to Get Instruments -->
+        <section id="instruments" class="mb-12 scroll-mt-20">
+            <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
+                <span class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">🎻</span>
+                How to Get Instruments
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Piano -->
+                <div class="bg-white rounded-xl p-6 border-l-4 border-purple-400 shadow-sm">
+                    <h3 class="font-bold text-lg mb-2 flex items-center gap-2">
+                        <span>🎹</span> Piano
+                    </h3>
+                    <p class="text-sm text-cozy-wood mb-3">The most popular instrument. Great for playing chords.</p>
+                    <ul class="space-y-2 text-sm bg-purple-50 p-3 rounded-lg">
+                        <li class="flex items-start gap-2">
+                            <span class="text-purple-600 font-bold">1.</span>
+                            <span><strong>7-Day Sign-in (Day 3):</strong> Log in for 3 days to get a free Piano!</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-purple-600 font-bold">2.</span>
+                            <span><strong>Annie's Music Store:</strong> Buy various skins/styles for Gold.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Lute -->
+                <div class="bg-white rounded-xl p-6 border-l-4 border-amber-400 shadow-sm">
+                    <h3 class="font-bold text-lg mb-2 flex items-center gap-2">
+                        <span>🪕</span> Lute (Guitar)
+                    </h3>
+                    <p class="text-sm text-cozy-wood mb-3">Portable and unlocks the sheet music system.</p>
+                    <ul class="space-y-2 text-sm bg-amber-50 p-3 rounded-lg">
+                        <li class="flex items-start gap-2">
+                            <span class="text-amber-600 font-bold">1.</span>
+                            <span><strong>Quest Reward:</strong> Complete "Astralis in Flower Field" from Vernie.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-amber-600 font-bold">2.</span>
+                            <span><strong>Crafting:</strong> Can be crafted later for different looks.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Unlocking Sheet Music -->
+        <section id="sheet-music" class="mb-12 scroll-mt-20">
+            <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
+                <span class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center">🎼</span>
+                How to Unlock Sheet Music
+            </h2>
+
+            <div class="bg-gradient-to-r from-pink-50 to-rose-50 rounded-xl p-6 border border-pink-200">
+                <p class="mb-4 text-cozy-bark">
+                    <strong>Important:</strong> You cannot play Sheet Music immediately. You must unlock the feature
+                    first!
+                </p>
+                <ol class="space-y-4">
+                    <li class="flex gap-4 items-start">
+                        <div
+                            class="bg-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-pink-500 shadow-sm shrink-0">
+                            1</div>
+                        <div>
+                            <h4 class="font-bold">Find Vernie</h4>
+                            <p class="text-sm text-cozy-wood">Go to the <strong>Flower Field</strong> and look for
+                                Vernie (the bard NPC).</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4 items-start">
+                        <div
+                            class="bg-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-pink-500 shadow-sm shrink-0">
+                            2</div>
+                        <div>
+                            <h4 class="font-bold">Complete "Astralis in Flower Field"</h4>
+                            <p class="text-sm text-cozy-wood">Accept and finish his quest line. He will give you a
+                                <strong>Scholar's Lute</strong>.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4 items-start">
+                        <div
+                            class="bg-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-pink-500 shadow-sm shrink-0">
+                            3</div>
+                        <div>
+                            <h4 class="font-bold">Unlock "Daily Life Guide"</h4>
+                            <p class="text-sm text-cozy-wood">This unlocks the "Instrument & Music Score" app on your
+                                smartwatch.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4 items-start">
+                        <div
+                            class="bg-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-pink-500 shadow-sm shrink-0">
+                            4</div>
+                        <div>
+                            <h4 class="font-bold">Buy Scores from Annie</h4>
+                            <p class="text-sm text-cozy-wood">Visit Annie's Music Store in Town to buy scores like "Für
+                                Elise" and "Canon".</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- How to Play Mechanics -->
+        <section id="how-to-play" class="mb-12 scroll-mt-20">
+            <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
+                <span class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">🎓</span>
+                How to Read & Play Music
+            </h2>
+
+            <div class="bg-white rounded-xl p-6 border border-cozy-peach/30 mb-6">
+                <h3 class="font-bold text-lg mb-3">Numbered Musical Notation (1-7)</h3>
+                <p class="text-sm text-cozy-wood mb-4">Heartopia uses the <strong>numbered notation system</strong>
+                    (Jianpu), which is very common in Asian music games. It corresponds to the C Major scale.</p>
+
+                <div class="grid grid-cols-7 gap-1 mb-6 text-center max-w-lg mx-auto">
+                    <!-- Keys Visualization -->
+                    <div class="bg-gray-100 p-2 rounded">
+                        <div class="font-bold text-xl">1</div>
+                        <div class="text-xs text-gray-500">Do</div>
+                        <div class="text-xs text-gray-400">C</div>
+                    </div>
+                    <div class="bg-gray-100 p-2 rounded">
+                        <div class="font-bold text-xl">2</div>
+                        <div class="text-xs text-gray-500">Re</div>
+                        <div class="text-xs text-gray-400">D</div>
+                    </div>
+                    <div class="bg-gray-100 p-2 rounded">
+                        <div class="font-bold text-xl">3</div>
+                        <div class="text-xs text-gray-500">Mi</div>
+                        <div class="text-xs text-gray-400">E</div>
+                    </div>
+                    <div class="bg-gray-100 p-2 rounded">
+                        <div class="font-bold text-xl">4</div>
+                        <div class="text-xs text-gray-500">Fa</div>
+                        <div class="text-xs text-gray-400">F</div>
+                    </div>
+                    <div class="bg-gray-100 p-2 rounded">
+                        <div class="font-bold text-xl">5</div>
+                        <div class="text-xs text-gray-500">Sol</div>
+                        <div class="text-xs text-gray-400">G</div>
+                    </div>
+                    <div class="bg-gray-100 p-2 rounded">
+                        <div class="font-bold text-xl">6</div>
+                        <div class="text-xs text-gray-500">La</div>
+                        <div class="text-xs text-gray-400">A</div>
+                    </div>
+                    <div class="bg-gray-100 p-2 rounded">
+                        <div class="font-bold text-xl">7</div>
+                        <div class="text-xs text-gray-500">Ti</div>
+                        <div class="text-xs text-gray-400">B</div>
+                    </div>
+                </div>
+
+                <div class="space-y-3 text-sm">
+                    <div class="flex items-center gap-3">
+                        <span class="bg-blue-100 px-2 py-1 rounded font-mono font-bold">1</span>
+                        <span>Basic Note (Middle C)</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="bg-blue-100 px-2 py-1 rounded font-mono font-bold">1̇</span>
+                        <span>High Note (Dot on Top) = Higher Octave</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="bg-blue-100 px-2 py-1 rounded font-mono font-bold">1̣</span>
+                        <span>Low Note (Dot on Bottom) = Lower Octave</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Auto-Play Info -->
+            <div class="bg-green-50 rounded-xl p-4 border border-green-200">
+                <h3 class="font-bold text-green-800 mb-2">💡 Auto-Play Mode</h3>
+                <p class="text-sm text-green-700">Don't want to play manually? Unlock a Sheet Music item, sit at your
+                    piano, select the song from the menu, and your character will <strong>play it
+                        automatically!</strong> This is great for taking screenshots or videos.</p>
+            </div>
+        </section>
+
+        <!-- Song Library -->
+        <section id="songs" class="mb-12 scroll-mt-20">
+            <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
+                <span class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">🎶</span>
+                Song Library
+            </h2>
+            <p class="text-sm text-cozy-wood mb-4">Official songs you can unlock in-game.</p>
+
+            <div class="overflow-x-auto bg-white rounded-xl shadow-sm border border-cozy-peach/30">
+                <table class="w-full text-sm">
+                    <thead class="bg-amber-50">
+                        <tr>
+                            <th class="px-4 py-3 text-left font-bold">Song Title</th>
+                            <th class="px-4 py-3 text-left font-bold">Difficulty</th>
+                            <th class="px-4 py-3 text-left font-bold">Source</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-amber-100">
+                        <tr>
+                            <td class="px-4 py-3 font-medium">Twinkle Twinkle Little Star</td>
+                            <td class="px-4 py-3 text-green-600">★☆☆☆☆</td>
+                            <td class="px-4 py-3">Starter / Tutorial</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 font-medium">Happy Birthday</td>
+                            <td class="px-4 py-3 text-green-600">★★☆☆☆</td>
+                            <td class="px-4 py-3">Annie's Shop</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 font-medium">Ode to Joy</td>
+                            <td class="px-4 py-3 text-amber-600">★★★☆☆</td>
+                            <td class="px-4 py-3">Annie's Shop</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 font-medium">Für Elise</td>
+                            <td class="px-4 py-3 text-amber-600">★★★★☆</td>
+                            <td class="px-4 py-3">Annie's Shop</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 font-medium">Canon in D</td>
+                            <td class="px-4 py-3 text-red-500">★★★★★</td>
+                            <td class="px-4 py-3">Annie's Shop (High Level)</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 font-medium">Heartopian Melody</td>
+                            <td class="px-4 py-3 text-amber-600">★★★☆☆</td>
+                            <td class="px-4 py-3">Quest Reward</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="bg-white rounded-2xl p-6 mb-8 border border-cozy-peach/30">
+            <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
+                <span class="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center">❓</span>
+                Frequently Asked Questions
+            </h2>
+            <div class="space-y-4">
+                <div class="border-b border-cozy-peach/30 pb-4">
+                    <h3 class="font-bold text-cozy-bark mb-2">Can I play my own songs?</h3>
+                    <p class="text-sm text-cozy-wood">Yes! Just tap the keys manually. Many players look up "Numbered
+                        Notation" (Jianpu) for pop songs to play them in Heartopia.</p>
+                </div>
+                <div class="border-b border-cozy-peach/30 pb-4">
+                    <h3 class="font-bold text-cozy-bark mb-2">How do I change the instrument sound?</h3>
+                    <p class="text-sm text-cozy-wood">The sound depends on the furniture you are using. A Piano sounds
+                        like a piano, a Guitar sounds like a guitar. You can buy different instruments to change the
+                        sound.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-cozy-bark mb-2">Can friends hear me play?</h3>
+                    <p class="text-sm text-cozy-wood">Yes! If you invite friends to your home (or play in public areas),
+                        they can hear your performance in real-time.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-cozy-bark text-white py-8 mt-12">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <a href="/" class="inline-flex items-center gap-2 mb-4">
+                <span class="text-xl">🏡</span>
+                <span class="font-display font-bold">Heartopia<span class="text-cozy-sage">.Life</span></span>
+            </a>
+            <p class="text-white/60 text-sm mb-4">Unofficial fan site. Not affiliated with XD Entertainment.</p>
+            <p class="text-white/40 text-xs">© 2026 Heartopia.Life</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
