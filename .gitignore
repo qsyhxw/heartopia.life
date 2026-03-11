@@ -5,3 +5,11 @@ screenshots/bing_check.png
 screenshots/bing_verify.png
 .claude/settings.local.json
 .claude/settings.local.json
+analyze_gsc.py
+generate_blueprint.py
+get_pages.py
+gsc_data.json
+gsc_data_full.json
+pages_list.txt
+read_gsc.py
+read_gsc_docs.py
