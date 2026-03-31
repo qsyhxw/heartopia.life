@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    
-    
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -31,7 +31,8 @@
     <!-- Open Graph -->
     <meta property="og:type" content="article">
     <meta property="og:title" content="Heartopia Dorothee: Clothing Shop NPC & Style Guide (2026)">
-    <meta property="og:description" content="Find Dorothee in the Town Square clothing shop. Quest guide, hair salon unlock, and outfit tips.">
+    <meta property="og:description"
+        content="Find Dorothee in the Town Square clothing shop. Quest guide, hair salon unlock, and outfit tips.">
     <meta property="og:url" content="https://heartopia.life/npcs/dorothee/">
     <meta property="og:site_name" content="Heartopia.Life">
 
@@ -130,12 +131,26 @@
     </script>
 
     <style>
-        html { scroll-behavior: smooth; }
-        .card-hover { transition: transform 0.2s ease, box-shadow 0.2s ease; }
-        .card-hover:hover { transform: translateY(-2px); box-shadow: 0 8px 16px rgba(139, 115, 85, 0.12); }
-        .npc-avatar { background: linear-gradient(135deg, #FF9B85, #FFE5D9); border-radius: 50%; }
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(139, 115, 85, 0.12);
+        }
+
+        .npc-avatar {
+            background: linear-gradient(135deg, #FF9B85, #FFE5D9);
+            border-radius: 50%;
+        }
     </style>
 </head>
+
 <body class="bg-cozy-cream text-cozy-bark font-body">
 
     <!-- HEADER / NAVIGATION -->
@@ -144,13 +159,16 @@
             <div class="flex items-center justify-between">
                 <a href="/" class="flex items-center gap-2 group" aria-label="Heartopia.Life Home">
                     <img src="/favicon-96x96.png" alt="Heartopia.Life" class="w-7 h-7">
-                    <span class="font-display text-xl font-bold text-cozy-bark group-hover:text-cozy-coral transition-colors">
+                    <span
+                        class="font-display text-xl font-bold text-cozy-bark group-hover:text-cozy-coral transition-colors">
                         Heartopia<span class="text-cozy-sage">.Life</span>
                     </span>
                 </a>
                 <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
-                    <li><a href="/guides/map/" class="hover:text-cozy-coral transition-colors flex items-center gap-1">🗺️ Map</a></li>
-                    <li><a href="/codes/" class="hover:text-cozy-coral transition-colors flex items-center gap-1">🎁 Codes</a></li>
+                    <li><a href="/guides/map/"
+                            class="hover:text-cozy-coral transition-colors flex items-center gap-1">🗺️ Map</a></li>
+                    <li><a href="/codes/" class="hover:text-cozy-coral transition-colors flex items-center gap-1">🎁
+                            Codes</a></li>
                     <li><a href="/guides/" class="hover:text-cozy-coral transition-colors">Guides</a></li>
                     <li><a href="/hobbies/" class="hover:text-cozy-coral transition-colors">Hobbies</a></li>
                     <li><a href="/events/" class="hover:text-cozy-coral transition-colors">Events</a></li>
@@ -167,7 +185,8 @@
             </div>
             <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-cozy-peach/50 pt-4">
                 <ul class="flex flex-col gap-3 text-sm font-medium">
-                    <li><a href="/guides/map/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🗺️ Map</a></li>
+                    <li><a href="/guides/map/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🗺️ Map</a>
+                    </li>
                     <li><a href="/codes/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🎁 Codes</a></li>
                     <li><a href="/guides/" class="py-2 hover:text-cozy-coral">Guides</a></li>
                     <li><a href="/hobbies/" class="py-2 hover:text-cozy-coral">Hobbies</a></li>
@@ -203,9 +222,12 @@
                         Clothing Shopkeeper in Heartopia — Found in Town Square
                     </p>
                     <div class="flex flex-wrap justify-center md:justify-start gap-2">
-                        <span class="bg-pink-200 text-pink-800 px-3 py-1 rounded-full text-sm font-medium">👗 Clothing Shop</span>
-                        <span class="bg-amber-200 text-amber-800 px-3 py-1 rounded-full text-sm font-medium">🏪 Shopkeeper</span>
-                        <span class="bg-purple-200 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">✂️ Salon Unlock</span>
+                        <span class="bg-pink-200 text-pink-800 px-3 py-1 rounded-full text-sm font-medium">👗 Clothing
+                            Shop</span>
+                        <span class="bg-amber-200 text-amber-800 px-3 py-1 rounded-full text-sm font-medium">🏪
+                            Shopkeeper</span>
+                        <span class="bg-purple-200 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">✂️ Salon
+                            Unlock</span>
                     </div>
                 </div>
             </div>
@@ -238,12 +260,19 @@
         <!-- Quick Navigation -->
         <div class="bg-white rounded-xl p-4 mb-8 border border-cozy-peach/30">
             <div class="flex flex-wrap gap-2 text-sm">
-                <a href="#location" class="bg-pink-100 px-3 py-1.5 rounded-full hover:bg-pink-200 transition-colors">📍 Location</a>
-                <a href="#quest-guide" class="bg-purple-100 px-3 py-1.5 rounded-full hover:bg-purple-200 transition-colors">📖 Quest Guide</a>
-                <a href="#shop" class="bg-amber-100 px-3 py-1.5 rounded-full hover:bg-amber-200 transition-colors">🛒 Shop Items</a>
-                <a href="#salon" class="bg-rose-100 px-3 py-1.5 rounded-full hover:bg-rose-200 transition-colors">✂️ Hair Salon</a>
-                <a href="#gifts" class="bg-red-100 px-3 py-1.5 rounded-full hover:bg-red-200 transition-colors">🎁 Gifts</a>
-                <a href="#faq" class="bg-orange-100 px-3 py-1.5 rounded-full hover:bg-orange-200 transition-colors">❓ FAQ</a>
+                <a href="#location" class="bg-pink-100 px-3 py-1.5 rounded-full hover:bg-pink-200 transition-colors">📍
+                    Location</a>
+                <a href="#quest-guide"
+                    class="bg-purple-100 px-3 py-1.5 rounded-full hover:bg-purple-200 transition-colors">📖 Quest
+                    Guide</a>
+                <a href="#shop" class="bg-amber-100 px-3 py-1.5 rounded-full hover:bg-amber-200 transition-colors">🛒
+                    Shop Items</a>
+                <a href="#salon" class="bg-rose-100 px-3 py-1.5 rounded-full hover:bg-rose-200 transition-colors">✂️
+                    Hair Salon</a>
+                <a href="#gifts" class="bg-red-100 px-3 py-1.5 rounded-full hover:bg-red-200 transition-colors">🎁
+                    Gifts</a>
+                <a href="#faq" class="bg-orange-100 px-3 py-1.5 rounded-full hover:bg-orange-200 transition-colors">❓
+                    FAQ</a>
             </div>
         </div>
         <!-- Location Section -->
@@ -255,13 +284,21 @@
 
             <div class="bg-gradient-to-r from-pink-50 to-rose-50 rounded-xl p-4 mb-4">
                 <h3 class="font-bold text-lg mb-2">🏪 Primary Location: Morin's Clothing Store</h3>
-                <p class="text-cozy-wood mb-3">Dorothee runs <strong>Morin's Clothing Store</strong> on <strong>Residential Street</strong> in the Town Square area. She's a permanent shopkeeper NPC — you'll always find her at her store during business hours.</p>
-                <p class="text-sm text-cozy-wood">The store has two floors: the ground floor is the clothing shop with dressing rooms in the <strong>back left corner</strong>, and the second floor houses the <strong>hair salon</strong> (unlocked via quest).</p>
+                <p class="text-cozy-wood mb-3">Dorothee runs <strong>Morin's Clothing Store</strong> on
+                    <strong>Residential Street</strong> in the Town Square area. She's a permanent shopkeeper NPC —
+                    you'll always find her at her store during business hours.
+                </p>
+                <p class="text-sm text-cozy-wood">The store has two floors: the ground floor is the clothing shop with
+                    dressing rooms in the <strong>back left corner</strong>, and the second floor houses the
+                    <strong>hair salon</strong> (unlocked via quest).
+                </p>
             </div>
 
             <div class="bg-amber-50 border-l-4 border-amber-400 rounded-r-lg p-4 mb-4">
                 <p class="text-sm">
-                    <strong>💡 Tip:</strong> If you can't find the store, open your map (<strong>M key</strong>) and look for the clothing icon in the Town Square area. The store is on Residential Street — you can also use the Track feature on Dorothee's portrait.
+                    <strong>💡 Tip:</strong> If you can't find the store, open your map (<strong>M key</strong>) and
+                    look for the clothing icon in the Town Square area. The store is on Residential Street — you can
+                    also use the Track feature on Dorothee's portrait.
                 </p>
             </div>
 
@@ -269,11 +306,13 @@
             <div class="grid md:grid-cols-2 gap-3 text-sm">
                 <div class="bg-pink-50 rounded-lg p-3 border-l-4 border-pink-400">
                     <p class="font-bold text-pink-700">👗 Ground Floor — Clothing Shop</p>
-                    <p class="text-cozy-wood">Browse and buy clothes. Dressing rooms in the back left corner for trying on outfits.</p>
+                    <p class="text-cozy-wood">Browse and buy clothes. Dressing rooms in the back left corner for trying
+                        on outfits.</p>
                 </div>
                 <div class="bg-purple-50 rounded-lg p-3 border-l-4 border-purple-400">
                     <p class="font-bold text-purple-700">✂️ Second Floor — Hair Salon</p>
-                    <p class="text-cozy-wood">Head upstairs to find styling chairs and mirrors. Change hair, eyes, and skin tone here.</p>
+                    <p class="text-cozy-wood">Head upstairs to find styling chairs and mirrors. Change hair, eyes, and
+                        skin tone here.</p>
                 </div>
             </div>
         </section>
@@ -284,28 +323,38 @@
                 Dorothee's Quest Guide
             </h2>
 
-            <p class="text-cozy-wood mb-4">Dorothee is involved in several key quests that unlock Heartopia's entire appearance customization system. Complete these in order to access clothing, hair, and outfit features.</p>
+            <p class="text-cozy-wood mb-4">Dorothee is involved in several key quests that unlock Heartopia's entire
+                appearance customization system. Complete these in order to access clothing, hair, and outfit features.
+            </p>
 
             <!-- Quest 1: My New Clothes -->
             <div class="bg-gradient-to-r from-pink-50 to-rose-50 rounded-xl p-4 mb-4">
                 <h3 class="font-bold text-lg mb-2">👗 Quest 1: My New Clothes</h3>
-                <p class="text-sm text-cozy-wood mb-3">This early-game quest unlocks the ability to buy and change clothes. It's triggered by a flyer you receive during the tutorial.</p>
+                <p class="text-sm text-cozy-wood mb-3">This early-game quest unlocks the ability to buy and change
+                    clothes. It's triggered by a flyer you receive during the tutorial.</p>
                 <div class="space-y-2">
                     <div class="flex gap-3 items-start">
-                        <span class="w-7 h-7 bg-pink-200 rounded-full flex items-center justify-center text-xs font-bold text-pink-700 shrink-0">1</span>
-                        <p class="text-sm text-cozy-wood">Receive the <strong>clothing flyer</strong> during early story progression</p>
+                        <span
+                            class="w-7 h-7 bg-pink-200 rounded-full flex items-center justify-center text-xs font-bold text-pink-700 shrink-0">1</span>
+                        <p class="text-sm text-cozy-wood">Receive the <strong>clothing flyer</strong> during early story
+                            progression</p>
                     </div>
                     <div class="flex gap-3 items-start">
-                        <span class="w-7 h-7 bg-pink-200 rounded-full flex items-center justify-center text-xs font-bold text-pink-700 shrink-0">2</span>
-                        <p class="text-sm text-cozy-wood">Take the flyer to <strong>Dorothee's clothing shop</strong> in Town Square</p>
+                        <span
+                            class="w-7 h-7 bg-pink-200 rounded-full flex items-center justify-center text-xs font-bold text-pink-700 shrink-0">2</span>
+                        <p class="text-sm text-cozy-wood">Take the flyer to <strong>Dorothee's clothing shop</strong> in
+                            Town Square</p>
                     </div>
                     <div class="flex gap-3 items-start">
-                        <span class="w-7 h-7 bg-pink-200 rounded-full flex items-center justify-center text-xs font-bold text-pink-700 shrink-0">3</span>
+                        <span
+                            class="w-7 h-7 bg-pink-200 rounded-full flex items-center justify-center text-xs font-bold text-pink-700 shrink-0">3</span>
                         <p class="text-sm text-cozy-wood">Help Dorothee <strong>unpack</strong> her new stock</p>
                     </div>
                     <div class="flex gap-3 items-start">
-                        <span class="w-7 h-7 bg-green-200 rounded-full flex items-center justify-center text-xs font-bold text-green-700 shrink-0">✓</span>
-                        <p class="text-sm text-cozy-wood"><strong>Reward:</strong> Clothing shop unlocked — you can now buy and change clothes</p>
+                        <span
+                            class="w-7 h-7 bg-green-200 rounded-full flex items-center justify-center text-xs font-bold text-green-700 shrink-0">✓</span>
+                        <p class="text-sm text-cozy-wood"><strong>Reward:</strong> Clothing shop unlocked — you can now
+                            buy and change clothes</p>
                     </div>
                 </div>
             </div>
@@ -313,25 +362,33 @@
             <!-- Quest 2: Resident Request -->
             <div class="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-xl p-4 mb-4">
                 <h3 class="font-bold text-lg mb-2">✂️ Quest 2: Dorothee's Resident Request</h3>
-                <p class="text-sm text-cozy-wood mb-3">Completing Dorothee's Resident Request unlocks the <strong>hair salon</strong> on the second floor, allowing you to change hair, eyes, and skin tone.</p>
+                <p class="text-sm text-cozy-wood mb-3">Completing Dorothee's Resident Request unlocks the <strong>hair
+                        salon</strong> on the second floor, allowing you to change hair, eyes, and skin tone.</p>
                 <div class="flex gap-3 items-start">
-                    <span class="w-7 h-7 bg-green-200 rounded-full flex items-center justify-center text-xs font-bold text-green-700 shrink-0">✓</span>
-                    <p class="text-sm text-cozy-wood"><strong>Reward:</strong> Hair salon unlocked — change hairstyle, hair color, eye color, and skin tone on the 2nd floor</p>
+                    <span
+                        class="w-7 h-7 bg-green-200 rounded-full flex items-center justify-center text-xs font-bold text-green-700 shrink-0">✓</span>
+                    <p class="text-sm text-cozy-wood"><strong>Reward:</strong> Hair salon unlocked — change hairstyle,
+                        hair color, eye color, and skin tone on the 2nd floor</p>
                 </div>
             </div>
 
             <!-- Quest 3: Custom Closets -->
             <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl p-4 mb-4">
                 <h3 class="font-bold text-lg mb-2">👔 Quest 3: Custom Closets</h3>
-                <p class="text-sm text-cozy-wood mb-3">Later in the story, Dorothee teaches you about <strong>Custom Closets</strong> — the outfit preset system that lets you save and switch between outfits.</p>
+                <p class="text-sm text-cozy-wood mb-3">Later in the story, Dorothee teaches you about <strong>Custom
+                        Closets</strong> — the outfit preset system that lets you save and switch between outfits.</p>
                 <div class="flex gap-3 items-start">
-                    <span class="w-7 h-7 bg-green-200 rounded-full flex items-center justify-center text-xs font-bold text-green-700 shrink-0">✓</span>
-                    <p class="text-sm text-cozy-wood"><strong>Reward:</strong> Custom Closet feature unlocked — save outfit presets for different occasions</p>
+                    <span
+                        class="w-7 h-7 bg-green-200 rounded-full flex items-center justify-center text-xs font-bold text-green-700 shrink-0">✓</span>
+                    <p class="text-sm text-cozy-wood"><strong>Reward:</strong> Custom Closet feature unlocked — save
+                        outfit presets for different occasions</p>
                 </div>
             </div>
 
             <div class="bg-blue-50 rounded-lg p-3 text-sm">
-                <strong>💡 Outfit Presets:</strong> To fully unlock Outfit Presets, you also need <strong>800 Clothing Collection Points</strong>. You earn these by collecting clothing items — buy from Dorothee, find Prize Bubbles, and complete quests.
+                <strong>💡 Outfit Presets:</strong> To fully unlock Outfit Presets, you also need <strong>800 Clothing
+                    Collection Points</strong>. You earn these by collecting clothing items — buy from Dorothee, find
+                Prize Bubbles, and complete quests.
             </div>
         </section>
         <!-- Shop Items -->
@@ -341,7 +398,8 @@
                 What Dorothee Sells
             </h2>
 
-            <p class="text-cozy-wood mb-4">Dorothee sells <strong>everything clothing-related</strong> in Heartopia. With over 1,000 items available in the game, her shop is the main source for building your wardrobe.</p>
+            <p class="text-cozy-wood mb-4">Dorothee sells <strong>everything clothing-related</strong> in Heartopia.
+                With over 1,000 items available in the game, her shop is the main source for building your wardrobe.</p>
 
             <div class="overflow-x-auto mb-4">
                 <table class="w-full text-sm">
@@ -393,7 +451,9 @@
             </div>
 
             <div class="bg-amber-50 border-l-4 border-amber-400 rounded-r-lg p-4">
-                <p class="text-sm"><strong>💡 Tip:</strong> Dorothee's stock <strong>rotates daily</strong>, so check back often for new items. Buying clothing also earns you <strong>Clothing Collection Points</strong> — collect 800 to unlock Outfit Presets.</p>
+                <p class="text-sm"><strong>💡 Tip:</strong> Dorothee's stock <strong>rotates daily</strong>, so check
+                    back often for new items. Buying clothing also earns you <strong>Clothing Collection Points</strong>
+                    — collect 800 to unlock Outfit Presets.</p>
             </div>
         </section>
         <!-- Hair Salon -->
@@ -403,17 +463,21 @@
                 Hair Salon & Appearance Changes
             </h2>
 
-            <p class="text-cozy-wood mb-4">After completing Dorothee's Resident Request, the <strong>second floor</strong> of her store becomes a full hair salon where you can customize your character's appearance.</p>
+            <p class="text-cozy-wood mb-4">After completing Dorothee's Resident Request, the <strong>second
+                    floor</strong> of her store becomes a full hair salon where you can customize your character's
+                appearance.</p>
 
             <h3 class="font-bold mb-3">💇 What You Can Change</h3>
             <div class="grid md:grid-cols-2 gap-3 mb-4">
                 <div class="bg-rose-50 rounded-lg p-4 border border-rose-200">
                     <p class="font-bold text-rose-700 mb-2">💇 Hairstyles</p>
-                    <p class="text-sm text-cozy-wood">Browse and purchase new hairstyles. Some cost Gold, others Wishing Stars. Free options available too.</p>
+                    <p class="text-sm text-cozy-wood">Browse and purchase new hairstyles. Some cost Gold, others Wishing
+                        Stars. Free options available too.</p>
                 </div>
                 <div class="bg-purple-50 rounded-lg p-4 border border-purple-200">
                     <p class="font-bold text-purple-700 mb-2">🎨 Hair Color</p>
-                    <p class="text-sm text-cozy-wood">Change your hair color from a wide palette of options at the salon mirrors.</p>
+                    <p class="text-sm text-cozy-wood">Change your hair color from a wide palette of options at the salon
+                        mirrors.</p>
                 </div>
                 <div class="bg-blue-50 rounded-lg p-4 border border-blue-200">
                     <p class="font-bold text-blue-700 mb-2">👁️ Eye Color</p>
@@ -426,7 +490,10 @@
             </div>
 
             <div class="bg-green-50 border-l-4 border-green-400 rounded-r-lg p-4">
-                <p class="text-sm"><strong>💡 How to Access:</strong> Head to Dorothee's store, go up the <strong>staircase to the second floor</strong>, and find the <strong>mirrors behind the styling chairs</strong>. Interact with a mirror to open the appearance menu.</p>
+                <p class="text-sm"><strong>💡 How to Access:</strong> Head to Dorothee's store, go up the
+                    <strong>staircase to the second floor</strong>, and find the <strong>mirrors behind the styling
+                        chairs</strong>. Interact with a mirror to open the appearance menu.
+                </p>
             </div>
         </section>
 
@@ -439,7 +506,9 @@
 
             <div class="bg-amber-50 border-l-4 border-amber-400 rounded-r-lg p-4 mb-4">
                 <p class="text-sm">
-                    <strong>⚠️ Note:</strong> Dorothee's specific gift preferences have not yet been documented by the community. As a shopkeeper NPC, it's unclear whether she fully participates in the standard friendship/gift system.
+                    <strong>⚠️ Note:</strong> Dorothee's specific gift preferences have not yet been documented by the
+                    community. As a shopkeeper NPC, it's unclear whether she fully participates in the standard
+                    friendship/gift system.
                 </p>
             </div>
 
@@ -455,7 +524,8 @@
                 </div>
                 <div class="bg-amber-50 rounded-lg p-3 border border-amber-200">
                     <p class="font-bold text-amber-700 mb-2">🏪 Character Hint</p>
-                    <p class="text-sm text-cozy-wood">Dorothee is a fashion-focused shopkeeper who loves clothing and style. Items related to beauty, fashion, or creativity may resonate with her character.</p>
+                    <p class="text-sm text-cozy-wood">Dorothee is a fashion-focused shopkeeper who loves clothing and
+                        style. Items related to beauty, fashion, or creativity may resonate with her character.</p>
                 </div>
             </div>
         </section>
@@ -469,19 +539,28 @@
             <div class="space-y-4">
                 <div class="border-b border-cozy-peach/30 pb-4">
                     <h3 class="font-bold text-cozy-bark mb-2">Where is Dorothee in Heartopia?</h3>
-                    <p class="text-sm text-cozy-wood">Dorothee runs the clothing shop (<strong>Morin's Clothing Store</strong>) on <strong>Residential Street</strong> in the Town Square area. She sells tops, bottoms, full suits, shoes, hats, and accessories.</p>
+                    <p class="text-sm text-cozy-wood">Dorothee runs the clothing shop (<strong>Morin's Clothing
+                            Store</strong>) on <strong>Residential Street</strong> in the Town Square area. She sells
+                        tops, bottoms, full suits, shoes, hats, and accessories.</p>
                 </div>
                 <div class="border-b border-cozy-peach/30 pb-4">
                     <h3 class="font-bold text-cozy-bark mb-2">How do I unlock clothing customization?</h3>
-                    <p class="text-sm text-cozy-wood">Complete the <strong>"My New Clothes"</strong> quest. You'll receive a flyer early in the game — take it to Dorothee's shop and help her unpack. This unlocks the ability to buy and change clothes.</p>
+                    <p class="text-sm text-cozy-wood">Complete the <strong>"My New Clothes"</strong> quest. You'll
+                        receive a flyer early in the game — take it to Dorothee's shop and help her unpack. This unlocks
+                        the ability to buy and change clothes.</p>
                 </div>
                 <div class="border-b border-cozy-peach/30 pb-4">
                     <h3 class="font-bold text-cozy-bark mb-2">How do I change my hair and eyes in Heartopia?</h3>
-                    <p class="text-sm text-cozy-wood">Complete <strong>Dorothee's Resident Request</strong> quest. This unlocks the hair salon on the <strong>second floor</strong> of her store. Head upstairs, find the mirrors behind the styling chairs, and you can change hairstyle, hair color, eye color, and skin tone.</p>
+                    <p class="text-sm text-cozy-wood">Complete <strong>Dorothee's Resident Request</strong> quest. This
+                        unlocks the hair salon on the <strong>second floor</strong> of her store. Head upstairs, find
+                        the mirrors behind the styling chairs, and you can change hairstyle, hair color, eye color, and
+                        skin tone.</p>
                 </div>
                 <div>
                     <h3 class="font-bold text-cozy-bark mb-2">What does Dorothee sell?</h3>
-                    <p class="text-sm text-cozy-wood">Everything clothing-related: <strong>tops, bottoms, full suits, socks, shoes, hats, and accessories</strong> including face decor, earrings, backpacks, bags, and umbrellas. Her stock rotates daily, so check back often.</p>
+                    <p class="text-sm text-cozy-wood">Everything clothing-related: <strong>tops, bottoms, full suits,
+                            socks, shoes, hats, and accessories</strong> including face decor, earrings, backpacks,
+                        bags, and umbrellas. Her stock rotates daily, so check back often.</p>
                 </div>
             </div>
         </section>
@@ -490,21 +569,24 @@
         <section class="pt-8 border-t border-cozy-peach/30">
             <h2 class="font-bold text-xl mb-6">📚 Related Guides</h2>
             <div class="grid md:grid-cols-3 gap-4">
-                <a href="/npcs/" class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                <a href="/npcs/"
+                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
                     <span class="text-3xl">👥</span>
                     <div>
                         <h3 class="font-bold">All NPCs</h3>
                         <p class="text-sm text-cozy-wood">Full character list</p>
                     </div>
                 </a>
-                <a href="/npcs/will/" class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                <a href="/npcs/will/"
+                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
                     <span class="text-3xl">🧑</span>
                     <div>
                         <h3 class="font-bold">Will NPC Guide</h3>
                         <p class="text-sm text-cozy-wood">Location & gifts</p>
                     </div>
                 </a>
-                <a href="/guides/map/" class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                <a href="/guides/map/"
+                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
                     <span class="text-3xl">🗺️</span>
                     <div>
                         <h3 class="font-bold">Game Map</h3>
@@ -516,7 +598,9 @@
 
         <!-- Disclaimer -->
         <section class="mt-8 bg-cozy-bark/10 rounded-xl p-4 text-sm text-cozy-wood">
-            <p><strong>Sources:</strong> TheGamer, AttractMode, ScreenHype, CheatStation, GameRant, IntoIndieGames, IGN (January–February 2026). Dorothee's gift preferences are still being documented by the community. This is an unofficial fan guide — not affiliated with XD Entertainment.</p>
+            <p><strong>Sources:</strong> TheGamer, AttractMode, ScreenHype, CheatStation, GameRant, IntoIndieGames, IGN
+                (January–February 2026). Dorothee's gift preferences are still being documented by the community. This
+                is an unofficial fan guide — not affiliated with XD Entertainment.</p>
         </section>
 
     </main>
@@ -536,28 +620,30 @@
             <p class="text-white/60 text-sm mb-4">Unofficial fan site. Not affiliated with XD Entertainment.</p>
             <p class="text-white/40 text-xs">© 2026 Heartopia.Life</p>
         </div>
-    <div style="text-align: center; padding: 10px; font-size: 12px; color: #666;">
-    
-    <span data-ccpa-link="1"></span>
+        <div style="text-align: center; padding: 10px; font-size: 12px; color: #666;">
 
-    <span id="gdpr-consent-box" style="display:none;">
-        &nbsp;|&nbsp;
-        <a href="#" onclick="if(window.__cmp) window.__cmp('showModal'); return false;" style="color: #666; text-decoration: underline;">
-            Update Privacy Preferences
-        </a>
-    </span>
+            <span data-ccpa-link="1"></span>
 
-</div>
+            <span id="gdpr-consent-box" style="display:none;">
+                &nbsp;|&nbsp;
+                <a href="#" onclick="if(window.__cmp) window.__cmp('showModal'); return false;"
+                    style="color: #666; text-decoration: underline;">
+                    Update Privacy Preferences
+                </a>
+            </span>
 
-<script>
-  if (window["nitroAds"] && window["nitroAds"].loaded) {
-    document.getElementById("gdpr-consent-box").style.display = window["__tcfapi"] ? "inline" : "none";
-  } else {
-    document.addEventListener("nitroAds.loaded", () => {
-      document.getElementById("gdpr-consent-box").style.display = window["__tcfapi"] ? "inline" : "none";
-    });
-  }
-</script>
-</footer>
+        </div>
+
+        <script>
+            if (window["nitroAds"] && window["nitroAds"].loaded) {
+                document.getElementById("gdpr-consent-box").style.display = window["__tcfapi"] ? "inline" : "none";
+            } else {
+                document.addEventListener("nitroAds.loaded", () => {
+                    document.getElementById("gdpr-consent-box").style.display = window["__tcfapi"] ? "inline" : "none";
+                });
+            }
+        </script>
+    </footer>
 </body>
+
 </html>
