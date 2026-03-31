@@ -390,7 +390,28 @@
             <p class="text-white/60 text-sm mb-4">Unofficial fan site. Not affiliated with XD Entertainment.</p>
             <p class="text-white/40 text-xs">© 2026 Heartopia.Life</p>
         </div>
+    <div style="text-align: center; padding: 10px; font-size: 12px; color: #666;">
+    
     <span data-ccpa-link="1"></span>
+
+    <span id="gdpr-consent-box" style="display:none;">
+        &nbsp;|&nbsp;
+        <a href="#" onclick="if(window.__cmp) window.__cmp('showModal'); return false;" style="color: #666; text-decoration: underline;">
+            Update Privacy Preferences
+        </a>
+    </span>
+
+</div>
+
+<script>
+  if (window["nitroAds"] && window["nitroAds"].loaded) {
+    document.getElementById("gdpr-consent-box").style.display = window["__tcfapi"] ? "inline" : "none";
+  } else {
+    document.addEventListener("nitroAds.loaded", () => {
+      document.getElementById("gdpr-consent-box").style.display = window["__tcfapi"] ? "inline" : "none";
+    });
+  }
+</script>
 </footer>
 </body>
 
