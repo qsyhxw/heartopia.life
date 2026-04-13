@@ -2,25 +2,6 @@
 <html lang="en">
 
 <head>
-    <div id="test-banner-1" style="height:250px"></div>
-
-    <script data-cfasync="false">
-        window.nitroAds = window.nitroAds || { createAd: function () { return new Promise(e => { window.nitroAds.queue.push(["createAd", arguments, e]) }) }, addUserToken: function () { window.nitroAds.queue.push(["addUserToken", arguments]) }, queue: [] };
-    </script>
-    <script data-cfasync="false" async src="https://s.nitropay.com/ads-2368.js"></script>
-
-    <script>
-        window['nitroAds'].createAd('test-banner-1', {
-            "height": 250,
-            "report": {
-                "enabled": true,
-                "icon": true,
-                "wording": "Report Ad",
-                "position": "top-right"
-            }
-        });
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRJ91G3VRR"></script>
@@ -54,6 +35,9 @@
             box-shadow: 0 8px 16px rgba(139, 115, 85, .12)
         }
     </style>
+    <!-- NitroPay Global Header -->
+    <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
+    <script data-cfasync="false" async src="https://s.nitropay.com/ads-2368.js"></script>
 </head>
 
 <body class="bg-cozy-cream text-cozy-bark font-body">
