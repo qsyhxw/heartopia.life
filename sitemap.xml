@@ -439,6 +439,12 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://heartopia.life/guides/snow-sculpting/</loc>
+        <lastmod>2026-04-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://heartopia.life/guides/meteor-shower/</loc>
         <lastmod>2026-02-13</lastmod>
         <changefreq>weekly</changefreq>
