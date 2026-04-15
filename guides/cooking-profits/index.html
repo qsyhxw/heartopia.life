@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -400,7 +400,6 @@
     <!-- NitroPay Ad Units -->
     <div id="heartopia_anchor"></div>
     <div id="heartopia_side_rail"></div>
-    <div id="heartopia_floating_video"></div>
     <script>
         if(window['nitroAds']) {
             window['nitroAds'].createAd('heartopia_anchor', {
@@ -408,13 +407,13 @@
                 "anchorClose": true, "anchorPersistClose": false, "anchorStickyOffset": 0,
                 "mediaQuery": "(min-width: 0px)", "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-right" }
             });
-            window['nitroAds'].createAd('heartopia_floating_video', {
+            window['nitroAds'].createAd('floating_video', {
                 "format": "floating", "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-left" }
             });
             window['nitroAds'].createAd('heartopia_side_rail', {
                 "format": "rail", "rail": "right", "railOffsetTop": 0, "railOffsetBottom": 0,
                 "railCollisionWhitelist": [], "railCloseColor": "#666666", "railSpacing": 10,
-                "railStack": false, "railStickyTop": 0, "railVerticalAlign": "top",
+                "railStack": false, "railStickyTop": 70, "railVerticalAlign": "top",
                 "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-left" },
                 "mediaQuery": "(min-width: 1025px)"
             });

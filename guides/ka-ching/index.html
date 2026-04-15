@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -415,7 +415,6 @@
     <!-- NitroPay Ad Units -->
     <div id="heartopia_anchor"></div>
     <div id="heartopia_side_rail"></div>
-    <div id="heartopia_floating_video"></div>
     <script>
         if(window['nitroAds']) {
             // Anchor Ad
@@ -431,7 +430,7 @@
             });
 
             // Floating Video
-            window['nitroAds'].createAd('heartopia_floating_video', {
+            window['nitroAds'].createAd('floating_video', {
                 "format": "floating",
                 "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-left" }
             });
@@ -446,7 +445,7 @@
                 "railCloseColor": "#666666",
                 "railSpacing": 10,
                 "railStack": false,
-                "railStickyTop": 0,
+                "railStickyTop": 70,
                 "railVerticalAlign": "top",
                 "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-left" },
                 "mediaQuery": "(min-width: 1025px)"
