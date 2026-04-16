@@ -299,5 +299,48 @@
         </div>
     </footer>
 
+    <!-- NitroPay Ad Units -->
+    <div id="heartopia_anchor"></div>
+    <div id="heartopia_side_rail"></div>
+    <script>
+        if(window['nitroAds']) {
+            window['nitroAds'].createAd('heartopia_anchor', {
+                "format": "anchor-v2",
+                "anchor": "bottom",
+                "anchorBgColor": "rgb(0 0 0 / 80%)",
+                "anchorClose": true,
+                "anchorPersistClose": false,
+                "anchorStickyOffset": 0,
+                "mediaQuery": "(min-width: 0px)",
+                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-right" }
+            });
+            window['nitroAds'].createAd('floating_video', {
+                "format": "floating",
+                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-left" }
+            });
+            window['nitroAds'].createAd('heartopia_side_rail', {
+                "format": "rail",
+                "rail": "right",
+                "railOffsetTop": 0,
+                "railOffsetBottom": 0,
+                "railCollisionWhitelist": [],
+                "railCloseColor": "#666666",
+                "railSpacing": 10,
+                "railStack": false,
+                "railStickyTop": 70,
+                "railVerticalAlign": "top",
+                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-left" },
+                "mediaQuery": "(min-width: 1025px)"
+            });
+            window['nitroAds'].createAd('heartopia_in_content', {
+                "format": "article",
+                "articleOffsetTop": 0,
+                "pageInterval": 1,
+                "collapseEmpty": true,
+                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "bottom-right" }
+            });
+        }
+    </script>
+
 </body>
 </html>
