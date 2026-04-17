@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -20,7 +20,7 @@
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <script
-        type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Heartopia Cat Favorite Food Guide","description":"Comprehensive guide to finding your cat's favorite food in Heartopia, including a tier list of fish to try and tips for picky eaters.","author":{"@type":"Organization","name":"Heartopia.Life"},"datePublished":"2026-02-13","dateModified":"2026-02-13"}</script>
+        type="application/ld+json">{"@context":"https://schema.org","@type":"ItemPage","name":"All Cat Favorite Foods & Traits","description":"Comprehensive guide to finding your cat's favorite food in Heartopia based on cat traits.","author":{"@type":"Organization","name":"Heartopia.Life"}}</script>
     <script
         type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://heartopia.life/"},{"@type":"ListItem","position":2,"name":"Hobbies","item":"https://heartopia.life/hobbies/"},{"@type":"ListItem","position":3,"name":"Cat Care","item":"https://heartopia.life/hobbies/cat-care/"},{"@type":"ListItem","position":4,"name":"Favorite Food Guide","item":"https://heartopia.life/hobbies/cat-care/favorite-food/"}]}</script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -96,7 +96,7 @@
         <div
             class="bg-gradient-to-br from-orange-50 to-white rounded-3xl p-8 mb-8 border border-orange-100 relative overflow-hidden text-center">
             <h1 class="font-display text-3xl md:text-4xl font-bold text-orange-900 mb-4">
-                🐱 Heartopia Cat Favorite Food Guide
+                🐱 All Cat Favorite Foods & Traits
             </h1>
             <p class="text-orange-800 text-lg mb-6 max-w-xl mx-auto">Does your cat turn its nose up at everything?
                 Discover the secrets to finding your kitty's favorite meal and boosting your bond!</p>
@@ -109,8 +109,19 @@
             </div>
         </div>
 
+        <!-- Quick Navigation Anchors -->
+        <div class="bg-white rounded-xl p-4 mb-8 border border-orange-100/50 shadow-sm">
+            <h2 class="font-bold mb-3 text-orange-900">📑 Quick Navigation</h2>
+            <div class="flex flex-wrap gap-2 text-sm">
+                <a href="#cat-table" class="bg-orange-50 text-orange-800 px-3 py-1 rounded-full hover:bg-orange-100 transition-colors">Cat Traits Table</a>
+                <a href="#mechanics" class="bg-blue-50 text-blue-800 px-3 py-1 rounded-full hover:bg-blue-100 transition-colors">The Mechanic</a>
+                <a href="#strategy" class="bg-green-50 text-green-800 px-3 py-1 rounded-full hover:bg-green-100 transition-colors">Testing Strategy</a>
+                <a href="#sensitive" class="bg-pink-50 text-pink-800 px-3 py-1 rounded-full hover:bg-pink-100 transition-colors">Sensitive Traits</a>
+            </div>
+        </div>
+
         <!-- The Secret Box -->
-        <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-8 rounded-r-lg">
+        <div id="mechanics" class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-8 rounded-r-lg">
             <div class="flex gap-3">
                 <div class="text-2xl">🤫</div>
                 <div>
@@ -123,92 +134,62 @@
         </div>
 
         <div class="space-y-8">
-            <!-- Testing Tier List -->
-            <section class="bg-white rounded-2xl p-6 border border-cozy-peach/30 shadow-sm">
+            <!-- Cat Traits Filter Table -->
+            <section id="cat-table" class="bg-white rounded-2xl p-6 border border-cozy-peach/30 shadow-sm">
                 <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
-                    <span class="w-8 h-8 rounded-lg bg-orange-100 flex items-center justify-center text-lg">🐟</span>
-                    Food Tier List (What to Try First)
+                    <span class="w-8 h-8 rounded-lg bg-orange-100 flex items-center justify-center text-lg">📊</span>
+                    Cat Traits & Favorite Foods Table
                 </h2>
-                <p class="text-sm text-cozy-wood mb-4">Use this list to test your cat's preferences. Start from the top!
-                </p>
-
-                <div class="space-y-4">
-                    <!-- S Tier -->
-                    <div class="border border-yellow-200 rounded-xl overflow-hidden">
-                        <div
-                            class="bg-yellow-50 px-4 py-2 border-b border-yellow-200 flex justify-between items-center">
-                            <h3 class="font-bold text-yellow-800">🏆 S-Tier (High Success Rate)</h3>
-                            <span class="text-xs bg-yellow-200 text-yellow-800 px-2 py-1 rounded">Rare catches</span>
-                        </div>
-                        <div class="p-4 grid grid-cols-2 gap-4">
-                            <div class="flex items-center gap-3">
-                                <span class="text-2xl">🦈</span>
-                                <div>
-                                    <div class="font-bold text-sm">Cat Shark</div>
-                                    <div class="text-xs text-cozy-wood">Sea Fishing (Night)</div>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <span class="text-2xl">🐟</span>
-                                <div>
-                                    <div class="font-bold text-sm">Skipjack Tuna</div>
-                                    <div class="text-xs text-cozy-wood">Deep Sea</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- A Tier -->
-                    <div class="border border-gray-200 rounded-xl overflow-hidden">
-                        <div class="bg-gray-50 px-4 py-2 border-b border-gray-200 flex justify-between items-center">
-                            <h3 class="font-bold text-gray-700">🥈 A-Tier (Common Favorites)</h3>
-                            <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">Easy to farm</span>
-                        </div>
-                        <div class="p-4 grid grid-cols-2 gap-4">
-                            <div class="flex items-center gap-3">
-                                <span class="text-2xl">🐟</span>
-                                <div>
-                                    <div class="font-bold text-sm">Common Chub</div>
-                                    <div class="text-xs text-cozy-wood">River/Lake</div>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <span class="text-2xl">🐟</span>
-                                <div>
-                                    <div class="font-bold text-sm">Sardine</div>
-                                    <div class="text-xs text-cozy-wood">Sea Fishing</div>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <span class="text-2xl">🐟</span>
-                                <div>
-                                    <div class="font-bold text-sm">European Perch</div>
-                                    <div class="text-xs text-cozy-wood">Various Locations</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- B Tier -->
-                    <div class="border border-orange-200 rounded-xl overflow-hidden">
-                        <div
-                            class="bg-orange-50 px-4 py-2 border-b border-orange-200 flex justify-between items-center">
-                            <h3 class="font-bold text-orange-800">🥫 B-Tier (Standard Option)</h3>
-                            <span class="text-xs bg-orange-200 text-orange-800 px-2 py-1 rounded">Store Bought</span>
-                        </div>
-                        <div class="p-4 flex items-center gap-3">
-                            <span class="text-2xl">🥣</span>
-                            <div>
-                                <div class="font-bold text-sm">Pet Food</div>
-                                <div class="text-xs text-cozy-wood">Buy from Mrs. Joan (Pet Store)</div>
-                            </div>
-                        </div>
-                    </div>
+                <p class="text-sm text-cozy-wood mb-4">Instead of guessing blindly, use this reference chart to match your cat's specific breed and traits with their highest-probability favorite food.</p>
+                
+                <div class="overflow-x-auto rounded-xl border border-gray-100">
+                    <table class="w-full text-sm text-left whitespace-nowrap">
+                        <thead class="bg-orange-50 text-orange-900 border-b border-orange-100">
+                            <tr>
+                                <th class="px-4 py-3 font-bold">Cat Breed / Type</th>
+                                <th class="px-4 py-3 font-bold">Common Trait</th>
+                                <th class="px-4 py-3 font-bold text-blue-700">Highest Chance Favorite</th>
+                                <th class="px-4 py-3 font-bold">Alternative Pick</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100 text-cozy-bark">
+                            <tr class="hover:bg-orange-50/30 transition-colors">
+                                <td class="px-4 py-3 text-base font-medium">Orange Tabby</td>
+                                <td class="px-4 py-3"><span class="bg-green-100 text-green-800 px-2 py-1 rounded-md text-xs font-semibold">Glutton</span></td>
+                                <td class="px-4 py-3 font-bold text-blue-800 bg-blue-50/50">Common Chub</td>
+                                <td class="px-4 py-3 text-cozy-wood">Store Pet Food</td>
+                            </tr>
+                            <tr class="hover:bg-orange-50/30 transition-colors">
+                                <td class="px-4 py-3 text-base font-medium">Tuxedo Cat</td>
+                                <td class="px-4 py-3"><span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-md text-xs font-semibold">Playful</span></td>
+                                <td class="px-4 py-3 font-bold text-blue-800 bg-blue-50/50">Sardine</td>
+                                <td class="px-4 py-3 text-cozy-wood">European Perch</td>
+                            </tr>
+                            <tr class="hover:bg-orange-50/30 transition-colors">
+                                <td class="px-4 py-3 text-base font-medium">Persian</td>
+                                <td class="px-4 py-3"><span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-md text-xs font-semibold">Aristocratic</span></td>
+                                <td class="px-4 py-3 font-bold text-blue-800 bg-blue-50/50">Skipjack Tuna</td>
+                                <td class="px-4 py-3 text-cozy-wood">Cat Shark</td>
+                            </tr>
+                            <tr class="hover:bg-orange-50/30 transition-colors">
+                                <td class="px-4 py-3 text-base font-medium">Calico</td>
+                                <td class="px-4 py-3"><span class="bg-pink-100 text-pink-800 px-2 py-1 rounded-md text-xs font-semibold">Sensitive</span></td>
+                                <td class="px-4 py-3 font-bold text-blue-800 bg-blue-50/50">Cat Shark</td>
+                                <td class="px-4 py-3 text-cozy-wood">Skipjack Tuna</td>
+                            </tr>
+                            <tr class="hover:bg-orange-50/30 transition-colors">
+                                <td class="px-4 py-3 text-base font-medium">Maine Coon</td>
+                                <td class="px-4 py-3"><span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-md text-xs font-semibold">Wild</span></td>
+                                <td class="px-4 py-3 font-bold text-blue-800 bg-blue-50/50">European Perch</td>
+                                <td class="px-4 py-3 text-cozy-wood">Cat Shark</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </section>
 
             <!-- How to Test Strategy -->
-            <section class="bg-white rounded-2xl p-6 border border-cozy-peach/30 shadow-sm">
+            <section id="strategy" class="bg-white rounded-2xl p-6 border border-cozy-peach/30 shadow-sm">
                 <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
                     <span class="w-8 h-8 rounded-lg bg-green-100 flex items-center justify-center text-lg">🧪</span>
                     The 3-Step Testing Strategy
@@ -248,7 +229,7 @@
             </section>
 
             <!-- Sensitive Trait Warning -->
-            <div class="bg-pink-50 rounded-2xl p-6 border border-pink-100">
+            <div id="sensitive" class="bg-pink-50 rounded-2xl p-6 border border-pink-100">
                 <h2 class="font-bold text-pink-900 mb-2 flex items-center gap-2">⚠️ Dealing with "Sensitive" Cats</h2>
                 <p class="text-sm text-pink-800 mb-2">Does your cat have the <strong>Sensitive</strong> trait? They are
                     "picky eaters" and harder to please!</p>
