@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -17,22 +17,40 @@
     </script>
 
     <!-- SEO Meta Tags -->
-    <title>Heartopia Rare Materials Guide: Roaming Oak, Fluorite & Truffle Locations</title>
+    <title>Heartopia Rare Materials Guide & Rare Wood Locations</title>
     <meta name="description"
-        content="Complete Heartopia rare materials guide with locations for Roaming Oak Timber, Flawless Fluorite, Rare Timber, Black Truffle & more. Daily limits, unlock requirements & farming tips.">
+        content="Complete Heartopia rare materials guide with locations for Rare Wood Types, Flawless Fluorite, Black Truffle & more. Includes tree species, tool requirements & farming tips.">
     <meta name="keywords"
-        content="heartopia rare materials, roaming oak timber, flawless fluorite, rare timber, black truffle, heartopia farming guide, heartopia resources">
+        content="heartopia rare wood types, heartopia rare wood locations, roaming oak timber, rare timber, flawless fluorite, black truffle, heartopia farming guide">
     <meta name="author" content="Heartopia.Life">
     <meta name="robots" content="index, follow">
+
+    <!-- ItemPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemPage",
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Heartopia Rare Wood Types",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Roaming Oak Timber" },
+          { "@type": "ListItem", "position": 2, "name": "Giant Black Walnut" },
+          { "@type": "ListItem", "position": 3, "name": "Giant Red Pine" },
+          { "@type": "ListItem", "position": 4, "name": "Giant White Beech" }
+        ]
+      }
+    }
+    </script>
 
     <!-- Canonical -->
     <link rel="canonical" href="https://heartopia.life/database/materials/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Heartopia Rare Materials Guide: Roaming Oak, Fluorite & Truffle Locations">
+    <meta property="og:title" content="Heartopia Rare Materials Guide & Rare Wood Locations">
     <meta property="og:description"
-        content="Find all rare materials in Heartopia with detailed locations, daily limits, and farming strategies.">
+        content="Find all rare materials in Heartopia with detailed maps, limits, and farming strategies including Rare Wood Types.">
     <meta property="og:url" content="https://heartopia.life/database/materials/">
     <meta property="og:site_name" content="Heartopia.Life">
     <!-- Favicon -->
@@ -195,7 +213,7 @@
             <ul class="grid md:grid-cols-2 gap-2 text-sm">
                 <li><a href="#roaming-oak" class="text-cozy-coral hover:underline">1. Roaming Oak Timber</a></li>
                 <li><a href="#fluorite" class="text-cozy-coral hover:underline">2. Flawless Fluorite</a></li>
-                <li><a href="#rare-timber" class="text-cozy-coral hover:underline">3. Rare Timber (Giant Trees)</a></li>
+                <li><a href="#rare-wood-types" class="text-cozy-coral hover:underline">3. Rare Wood Types (List & Locations)</a></li>
                 <li><a href="#truffle" class="text-cozy-coral hover:underline">4. Black Truffle & Mushrooms</a></li>
                 <li><a href="#event-materials" class="text-cozy-coral hover:underline">5. Event Materials</a></li>
                 <li><a href="#purchase" class="text-cozy-coral hover:underline">6. Acorn Store Prices</a></li>
@@ -332,76 +350,62 @@
             </div>
         </section>
 
-        <!-- Section 3: Rare Timber (Giant Trees) -->
-        <section id="rare-timber" class="bg-white rounded-2xl p-6 mb-6 border border-cozy-peach/30">
+        <!-- Section 3: Rare Wood Types -->
+        <section id="rare-wood-types" class="bg-white rounded-2xl p-6 mb-6 border border-cozy-peach/30">
             <div class="flex items-center gap-3 mb-4">
                 <span class="rarity-epic text-white text-xs px-2 py-1 rounded-full font-bold">EPIC</span>
-                <h2 class="font-display text-2xl font-bold">🪵 3. Rare Timber (Giant Trees)</h2>
+                <h2 class="font-display text-2xl font-bold">🪵 3. Rare Wood Types (List & Locations)</h2>
             </div>
 
             <p class="text-cozy-wood mb-4">
-                Rare Timber comes from Giant Trees — massive trees found along the suburban roads. Unlike daily-limited
-                materials, Giant Trees respawn every 2 hours!
+                "Rare Wood" represents the highest tier of timber in Heartopia. Below is the complete list of all rare wood types, where to find their specific tree species, and the tools required to harvest them.
             </p>
 
-            <!-- Quick Facts -->
-            <div class="grid md:grid-cols-3 gap-4 mb-4">
-                <div class="bg-amber-50 rounded-xl p-4">
-                    <h4 class="font-bold text-sm mb-2">🌲 Total Trees</h4>
-                    <p class="text-2xl font-bold text-amber-600">8</p>
-                    <p class="text-xs text-cozy-wood">in Suburbs area</p>
-                </div>
-                <div class="bg-green-50 rounded-xl p-4">
-                    <h4 class="font-bold text-sm mb-2">⏰ Respawn Time</h4>
-                    <p class="text-sm font-bold text-green-600">2 Hours</p>
-                    <p class="text-xs text-cozy-wood">after harvesting</p>
-                </div>
-                <div class="bg-orange-50 rounded-xl p-4">
-                    <h4 class="font-bold text-sm mb-2">🔓 Unlock</h4>
-                    <p class="text-sm font-bold text-orange-600">Available</p>
-                    <p class="text-xs text-cozy-wood">from game start</p>
-                </div>
+            <!-- Entity Table -->
+            <div class="overflow-x-auto mb-6">
+                <table class="w-full text-sm border-collapse border border-amber-200">
+                    <thead class="bg-amber-100">
+                        <tr>
+                            <th class="px-4 py-3 text-left font-bold border-b border-amber-200">Wood Name</th>
+                            <th class="px-4 py-3 text-left font-bold border-b border-amber-200 border-l border-amber-200">Tree Species & Location</th>
+                            <th class="px-4 py-3 text-left font-bold border-b border-amber-200 border-l border-amber-200">Tool Required</th>
+                            <th class="px-4 py-3 text-left font-bold border-b border-amber-200 border-l border-amber-200">Respawn Timer</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-amber-200 bg-amber-50/30">
+                        <tr>
+                            <td class="px-4 py-3 font-bold text-amber-700">🌳 Roaming Oak Timber</td>
+                            <td class="px-4 py-3 text-cozy-wood border-l border-amber-200"><strong>NPC:</strong> Oak-Oak (Wandering Tree)<br><em class="text-xs">Location: Random daily (Suburbs)</em></td>
+                            <td class="px-4 py-3 text-cozy-wood border-l border-amber-200"><strong>None</strong><br><span class="text-xs">(Quest Interaction)</span></td>
+                            <td class="px-4 py-3 text-cozy-wood border-l border-amber-200">Daily (Reset 6:00AM)</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 font-bold text-amber-700 border-t-2 border-t-amber-300" rowspan="3">🪵 Rare Timber</td>
+                            <td class="px-4 py-3 text-cozy-wood border-l border-t-2 border-t-amber-300 border-amber-200"><strong>Tree:</strong> Giant Black Walnut<br><em class="text-xs">Location: Northeast planes near plots 4-5</em></td>
+                            <td class="px-4 py-3 text-cozy-wood border-l border-t-2 border-t-amber-300 border-amber-200 align-top" rowspan="3"><strong>Axe</strong><br><span class="text-xs">(Any tier, higher = faster)</span></td>
+                            <td class="px-4 py-3 text-cozy-wood border-l border-t-2 border-t-amber-300 border-amber-200 align-top" rowspan="3">2 Hours</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-cozy-wood border-l border-amber-200"><strong>Tree:</strong> Giant Red Pine<br><em class="text-xs">Location: Between plots 4-5</em></td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-cozy-wood border-l border-amber-200"><strong>Tree:</strong> Giant White Beech<br><em class="text-xs">Location: Suburbs ring road (Plots 01/03/08/12)</em></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
-            <!-- Tree Types -->
-            <div class="grid md:grid-cols-3 gap-4 mb-4">
-                <div class="border border-amber-200 bg-amber-50/50 rounded-xl p-4">
-                    <h4 class="font-bold mb-2">🌰 Black Walnut</h4>
-                    <p class="text-xs text-cozy-wood mb-2">Rarest of the three</p>
-                    <p class="text-sm"><strong>Location:</strong> Northeast plains, near Plots 4-5</p>
-                    <p class="text-xs text-cozy-wood mt-1">Used for: Luxury furniture</p>
-                </div>
-                <div class="border border-red-200 bg-red-50/50 rounded-xl p-4">
-                    <h4 class="font-bold mb-2">🌲 Red Pine</h4>
-                    <p class="text-xs text-cozy-wood mb-2">Medium rarity</p>
-                    <p class="text-sm"><strong>Location:</strong> Near White Beech, between Plots 4-5</p>
-                    <p class="text-xs text-cozy-wood mt-1">Used for: Garden furniture</p>
-                </div>
-                <div class="border border-gray-200 bg-gray-50/50 rounded-xl p-4">
-                    <h4 class="font-bold mb-2">🌳 White Beech</h4>
-                    <p class="text-xs text-cozy-wood mb-2">Most common of rare trees</p>
-                    <p class="text-sm"><strong>Location:</strong> Northeast plains cluster</p>
-                    <p class="text-xs text-cozy-wood mt-1">Used for: Light-colored furniture</p>
-                </div>
-            </div>
-
-            <!-- Location Guide -->
-            <div class="bg-yellow-50 rounded-xl p-4 mb-4">
-                <h3 class="font-bold mb-2">📍 Giant Tree Locations</h3>
-                <p class="text-sm text-cozy-wood mb-2">8 Giant Trees form an <strong>X-shaped pattern</strong> around
-                    the suburbs:</p>
-                <ul class="text-sm text-cozy-wood space-y-1">
-                    <li>• <strong>Near Plot 01, 03, 04, 08, 12</strong> — Along suburban roads</li>
-                    <li>• <strong>Northeast plains</strong> — 5 trees in a cluster (Black Walnut, Red Pine, White Beech)
-                    </li>
-                    <li>• <strong>How to spot:</strong> Much taller than normal trees, thick trunks</li>
-                    <li>• <strong>Tip:</strong> Drive the suburban loop road to find them all</li>
+            <!-- Detailed Guide for Giant Trees -->
+            <div class="bg-yellow-50 rounded-xl p-6 border border-yellow-200">
+                <h3 class="font-bold mb-3 text-yellow-900">📍 How to Find Giant Trees (Rare Timber)</h3>
+                <p class="text-sm text-yellow-800 mb-3">
+                    While Roaming Oak has its own mechanics (see <a href="#roaming-oak" class="underline font-bold">Section 1</a>), the generic <strong>Rare Timber</strong> drops from 8 specific Giant Trees scattered in an X-pattern around the suburbs.
+                </p>
+                <ul class="text-sm text-yellow-800 space-y-2 list-disc ml-5">
+                    <li><strong>Visual Identification:</strong> They are significantly taller and thicker than standard trees.</li>
+                    <li><strong>Harvesting Tip:</strong> Although any axe works, bringing an upgraded Axe saves a tremendous amount of durability and time.</li>
+                    <li><strong>Drop Rate Warning:</strong> Rare Timber is <strong>not guaranteed</strong> on every swing. Sometimes they will drop standard wood.</li>
                 </ul>
-            </div>
-
-            <div class="bg-cozy-sage/20 rounded-lg p-3 text-sm">
-                <strong>⚠️ Note:</strong> Rare Timber is NOT guaranteed every harvest — sometimes you'll only get
-                regular wood. Keep trying!
             </div>
         </section>
 
