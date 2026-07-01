@@ -277,7 +277,27 @@
                 Not affiliated with XD Entertainment. All game assets, images, and content belong to their respective owners.
             </p>
         </div>
-    </footer>
+    <div style="text-align: center; padding: 10px; font-size: 12px; color: #666;">
+        <span data-ccpa-link="1"></span>
+
+        <span id="gdpr-consent-box" style="display:none;">
+            &nbsp;|&nbsp;
+            <a href="#" onclick="if(window.__cmp) window.__cmp('showModal'); return false;" style="color: #666; text-decoration: underline;">
+                Update Privacy Preferences
+            </a>
+        </span>
+    </div>
+
+    <script>
+      if (window["nitroAds"] && window["nitroAds"].loaded) {
+        document.getElementById("gdpr-consent-box").style.display = window["__tcfapi"] ? "inline" : "none";
+      } else {
+        document.addEventListener("nitroAds.loaded", () => {
+          document.getElementById("gdpr-consent-box").style.display = window["__tcfapi"] ? "inline" : "none";
+        });
+      }
+    </script>
+</footer>
     <!-- NitroPay Ad Units -->
     <div id="heartopia_anchor"></div>
     <div id="heartopia_side_rail"></div>
