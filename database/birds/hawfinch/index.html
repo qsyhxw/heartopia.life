@@ -35,6 +35,9 @@
     <style>html{scroll-behavior:smooth}.card-hover{transition:transform .2s ease,box-shadow .2s ease}.card-hover:hover{transform:translateY(-2px);box-shadow:0 8px 16px rgba(139,115,85,.12)}</style>
     <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
     <script data-cfasync="false" async src="https://s.nitropay.com/ads-2368.js"></script>
+    <!-- NitroPay Global Header -->
+    <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
+    <script data-cfasync="false" async src="https://s.nitropay.com/ads-2368.js"></script>
 </head>
 
 <body class="bg-cozy-cream text-cozy-bark font-body">
@@ -84,5 +87,72 @@
     </main>
 
     <footer class="bg-white/80 border-t border-cozy-peach/50 mt-12 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-cozy-wood"><p>&copy; 2026 Heartopia.Life - A cozy guide site for Heartopia players.</p></div></footer>
+    <!-- NitroPay Ad Units -->
+    <div id="heartopia_anchor"></div>
+    <div id="heartopia_side_rail"></div>
+    <div id="heartopia_floating_video"></div>
+
+    <script>
+        if (window['nitroAds']) {
+            window['nitroAds'].createAd('heartopia_anchor', {
+                "format": "anchor-v2",
+                "anchor": "bottom",
+                "anchorBgColor": "rgb(0 0 0 / 80%)",
+                "anchorClose": true,
+                "anchorPersistClose": false,
+                "anchorStickyOffset": 0,
+                "mediaQuery": "(min-width: 0px)",
+                "report": {
+                    "enabled": true,
+                    "icon": true,
+                    "wording": "Report Ad",
+                    "position": "top-right"
+                }
+            });
+
+            window['nitroAds'].createAd('heartopia_floating_video', {
+                "format": "floating",
+                "report": {
+                    "enabled": true,
+                    "icon": true,
+                    "wording": "Report Ad",
+                    "position": "top-left"
+                }
+            });
+
+            window['nitroAds'].createAd('heartopia_side_rail', {
+                "format": "rail",
+                "rail": "right",
+                "railOffsetTop": 0,
+                "railOffsetBottom": 0,
+                "railCollisionWhitelist": [],
+                "railCloseColor": "#666666",
+                "railSpacing": 10,
+                "railStack": false,
+                "railStickyTop": 70,
+                "railVerticalAlign": "top",
+                "report": {
+                    "enabled": true,
+                    "icon": true,
+                    "wording": "Report Ad",
+                    "position": "top-left"
+                },
+                "mediaQuery": "(min-width: 1025px)"
+            });
+
+            window['nitroAds'].createAd('heartopia_in_content', {
+                "format": "article",
+                "articleOffsetTop": 0,
+                "pageInterval": 1,
+                "collapseEmpty": true,
+                "report": {
+                    "enabled": true,
+                    "icon": true,
+                    "wording": "Report Ad",
+                    "position": "bottom-right"
+                }
+            });
+        }
+    </script>
 </body>
 </html>

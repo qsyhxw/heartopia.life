@@ -114,7 +114,6 @@
         }
     }
     </script>
-    
     <!-- NitroPay Global Header -->
     <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
     <script data-cfasync="false" async src="https://s.nitropay.com/ads-2368.js"></script>
@@ -282,10 +281,10 @@
     <!-- NitroPay Ad Units -->
     <div id="heartopia_anchor"></div>
     <div id="heartopia_side_rail"></div>
+    <div id="heartopia_floating_video"></div>
 
     <script>
-        if(window['nitroAds']) {
-            // Anchor Ad（不变）
+        if (window['nitroAds']) {
             window['nitroAds'].createAd('heartopia_anchor', {
                 "format": "anchor-v2",
                 "anchor": "bottom",
@@ -294,16 +293,24 @@
                 "anchorPersistClose": false,
                 "anchorStickyOffset": 0,
                 "mediaQuery": "(min-width: 0px)",
-                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-right" }
+                "report": {
+                    "enabled": true,
+                    "icon": true,
+                    "wording": "Report Ad",
+                    "position": "top-right"
+                }
             });
 
-            // Floating Video：不绑 div，直接 createAd
-            window['nitroAds'].createAd('floating_video', {
+            window['nitroAds'].createAd('heartopia_floating_video', {
                 "format": "floating",
-                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-left" }
+                "report": {
+                    "enabled": true,
+                    "icon": true,
+                    "wording": "Report Ad",
+                    "position": "top-left"
+                }
             });
 
-            // Side Rail：railStickyTop 改为 70，仅限桌面端
             window['nitroAds'].createAd('heartopia_side_rail', {
                 "format": "rail",
                 "rail": "right",
@@ -315,17 +322,26 @@
                 "railStack": false,
                 "railStickyTop": 70,
                 "railVerticalAlign": "top",
-                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-left" },
+                "report": {
+                    "enabled": true,
+                    "icon": true,
+                    "wording": "Report Ad",
+                    "position": "top-left"
+                },
                 "mediaQuery": "(min-width: 1025px)"
             });
 
-            // In-Content Article（不变）
             window['nitroAds'].createAd('heartopia_in_content', {
                 "format": "article",
                 "articleOffsetTop": 0,
                 "pageInterval": 1,
                 "collapseEmpty": true,
-                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "bottom-right" }
+                "report": {
+                    "enabled": true,
+                    "icon": true,
+                    "wording": "Report Ad",
+                    "position": "bottom-right"
+                }
             });
         }
     </script>

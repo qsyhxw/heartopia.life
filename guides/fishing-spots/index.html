@@ -163,7 +163,6 @@
         }]
     }
     </script>
-
     <!-- NitroPay Global Header -->
     <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
     <script data-cfasync="false" async src="https://s.nitropay.com/ads-2368.js"></script>
@@ -1365,93 +1364,72 @@
         }
         </script>
     </footer>
-
     <!-- NitroPay Ad Units -->
     <div id="heartopia_anchor"></div>
     <div id="heartopia_side_rail"></div>
+    <div id="heartopia_floating_video"></div>
+
     <script>
-        if(window['nitroAds']) {
+        if (window['nitroAds']) {
             window['nitroAds'].createAd('heartopia_anchor', {
-                "format": "anchor-v2", "anchor": "bottom", "anchorBgColor": "rgb(0 0 0 / 80%)",
-                "anchorClose": true, "anchorPersistClose": false, "anchorStickyOffset": 0,
-                "mediaQuery": "(min-width: 0px)", "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-right" }
-            });
-            window['nitroAds'].createAd('floating_video', {
-                "format": "floating", "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-left" }
-            });
-            window['nitroAds'].createAd('heartopia_side_rail', {
-                "format": "rail", "rail": "right", "railOffsetTop": 0, "railOffsetBottom": 0,
-                "railCollisionWhitelist": [], "railCloseColor": "#666666", "railSpacing": 10,
-                "railStack": false, "railStickyTop": 70, "railVerticalAlign": "top",
-                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-left" },
-                "mediaQuery": "(min-width: 1025px)"
-            });
-            window['nitroAds'].createAd('heartopia_in_content', {
-                "format": "article", "articleOffsetTop": 0, "pageInterval": 1,
-                "collapseEmpty": true,
-                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "bottom-right" }
-            });
-        }
-    </script>
-
-    <!-- Interactive Filter & Search JS -->
-    <script>
-        let currentFilter = 'all';
-
-        function setFilter(btn, zone) {
-            currentFilter = zone;
-            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            filterTable();
-        }
-
-        function filterTable() {
-            const query = document.getElementById('fish-search').value.toLowerCase().trim();
-            const rows = document.querySelectorAll('#master-tbody .fish-row');
-            let count = 0;
-
-            rows.forEach(row => {
-                const name = row.dataset.name || '';
-                const zone = row.dataset.zone || '';
-                const weather = row.dataset.weather || '';
-
-                const matchZone = currentFilter === 'all' ||
-                    zone === currentFilter ||
-                    (currentFilter === 'rainbow' && weather.includes('rainbow') && !weather.includes('any'));
-
-                const matchSearch = !query || name.includes(query);
-
-                if (matchZone && matchSearch) {
-                    row.classList.remove('hidden-row');
-                    count++;
-                } else {
-                    row.classList.add('hidden-row');
+                "format": "anchor-v2",
+                "anchor": "bottom",
+                "anchorBgColor": "rgb(0 0 0 / 80%)",
+                "anchorClose": true,
+                "anchorPersistClose": false,
+                "anchorStickyOffset": 0,
+                "mediaQuery": "(min-width: 0px)",
+                "report": {
+                    "enabled": true,
+                    "icon": true,
+                    "wording": "Report Ad",
+                    "position": "top-right"
                 }
             });
 
-            // For rainbow filter, also show fish where weather data contains only "rainbow"
-            if (currentFilter === 'rainbow') {
-                rows.forEach(row => {
-                    const weather = row.dataset.weather || '';
-                    if (weather === 'rainbow') {
-                        if (!row.classList.contains('hidden-row')) return;
-                        const name = row.dataset.name || '';
-                        if (!query || name.includes(query)) {
-                            row.classList.remove('hidden-row');
-                            count++;
-                        }
-                    }
-                });
-            }
+            window['nitroAds'].createAd('heartopia_floating_video', {
+                "format": "floating",
+                "report": {
+                    "enabled": true,
+                    "icon": true,
+                    "wording": "Report Ad",
+                    "position": "top-left"
+                }
+            });
 
-            document.getElementById('result-count').textContent = count > 0
-                ? `Showing ${count} fish`
-                : '';
-            document.getElementById('no-results').classList.toggle('hidden', count > 0);
+            window['nitroAds'].createAd('heartopia_side_rail', {
+                "format": "rail",
+                "rail": "right",
+                "railOffsetTop": 0,
+                "railOffsetBottom": 0,
+                "railCollisionWhitelist": [],
+                "railCloseColor": "#666666",
+                "railSpacing": 10,
+                "railStack": false,
+                "railStickyTop": 70,
+                "railVerticalAlign": "top",
+                "report": {
+                    "enabled": true,
+                    "icon": true,
+                    "wording": "Report Ad",
+                    "position": "top-left"
+                },
+                "mediaQuery": "(min-width: 1025px)"
+            });
+
+            window['nitroAds'].createAd('heartopia_in_content', {
+                "format": "article",
+                "articleOffsetTop": 0,
+                "pageInterval": 1,
+                "collapseEmpty": true,
+                "report": {
+                    "enabled": true,
+                    "icon": true,
+                    "wording": "Report Ad",
+                    "position": "bottom-right"
+                }
+            });
         }
-
-        // Init count
-        filterTable();
     </script>
 </body>
 </html>
