@@ -345,6 +345,8 @@
                 </div>
             </div>
         </section>
+        <div id="heartopia_in_content_2" class="heartopia-ad-slot max-w-6xl mx-auto px-4 my-6 text-center"></div>
+
 
         <!-- CTA to Map -->
         <section class="mt-16 text-center bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
@@ -404,6 +406,14 @@
             });
 
             window['nitroAds'].createAd('heartopia_in_content', {
+                "format": "display",
+                "sizes": [[970, 90], [970, 250], [728, 90], [300, 250], [320, 100], [320, 50]],
+                "collapseEmpty": true,
+                "renderVisibleOnly": true,
+                "visibleMargin": 800,
+                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "bottom-right" }
+            });
+            window['nitroAds'].createAd('heartopia_in_content_2', {
                 "format": "display",
                 "sizes": [[970, 90], [970, 250], [728, 90], [300, 250], [320, 100], [320, 50]],
                 "collapseEmpty": true,
