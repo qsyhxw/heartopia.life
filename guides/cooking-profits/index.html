@@ -186,7 +186,9 @@
         </nav>
     </header>
 
-    <main id="heartopia_in_content" class="max-w-4xl mx-auto px-4 py-8 md:py-12">
+    <main class="max-w-4xl mx-auto px-4 py-8 md:py-12">
+        <div id="heartopia_in_content" class="heartopia-ad-slot max-w-6xl mx-auto px-4 my-6 text-center"></div>
+
         
         <!-- Breadcrumbs -->
         <nav class="text-sm text-cozy-wood mb-6">
@@ -411,10 +413,8 @@
             });
 
             window['nitroAds'].createAd('heartopia_in_content', {
-                "format": "article",
-                "sizes": [[970, 90], [728, 90], [300, 250], [320, 100], [320, 50]],
-                "articleOffsetTop": 700,
-                "pageInterval": 1,
+                "format": "display",
+                "sizes": [[970, 90], [970, 250], [728, 90], [300, 250], [320, 100], [320, 50]],
                 "collapseEmpty": true,
                 "renderVisibleOnly": true,
                 "visibleMargin": 800,
