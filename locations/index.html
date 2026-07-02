@@ -287,7 +287,7 @@
                 details.
             </p>
         </section>
-        <div id="heartopia_in_content" class="heartopia-ad-slot max-w-6xl mx-auto px-4 py-6"></div>
+        <div id="heartopia_in_content" class="heartopia-ad-slot max-w-6xl mx-auto px-4 my-6 text-center"></div>
 
 
         <!-- Fullscreen Map Modal -->
@@ -851,11 +851,7 @@
         </div>
 </footer>
     <!-- NitroPay Ad Units -->
-    <div id="heartopia_anchor"></div>
-    <div id="heartopia_side_rail"></div>
-    <div id="heartopia_floating_video"></div>
-
-    <script>
+<script>
         if (window['nitroAds']) {
             window['nitroAds'].createAd('heartopia_anchor', {
                 "format": "anchor-v2",
@@ -891,10 +887,10 @@
 
             window['nitroAds'].createAd('heartopia_in_content', {
                 "format": "display",
-                "sizes": [[970, 90], [728, 90], [300, 250], [320, 100], [320, 50]],
+                "sizes": [[970, 90], [970, 250], [728, 90], [300, 250], [320, 100], [320, 50]],
                 "collapseEmpty": true,
                 "renderVisibleOnly": true,
-                "visibleMargin": 200,
+                "visibleMargin": 800,
                 "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "bottom-right" }
             });
         }

@@ -58,7 +58,7 @@
             <p class="text-cozy-wood text-lg max-w-3xl">Hawfinch is an Onsen Mountain bird target. The current birds database lists it at <strong>Onsen Mountain Crater Lake</strong>, available <strong>all day</strong> in normal sunny, rainy, or rainbow weather.</p>
             <div class="flex flex-wrap gap-2 mt-5"><span class="bg-white/70 text-cozy-bark px-3 py-1 rounded-full text-sm font-medium">Onsen Mountain</span><span class="bg-white/70 text-cozy-bark px-3 py-1 rounded-full text-sm font-medium">All Day</span><span class="bg-white/70 text-cozy-bark px-3 py-1 rounded-full text-sm font-medium">1★ 16G / 5★ 512G</span></div>
         </section>
-        <div id="heartopia_in_content" class="heartopia-ad-slot max-w-6xl mx-auto px-4 py-6"></div>
+        <div id="heartopia_in_content" class="heartopia-ad-slot max-w-6xl mx-auto px-4 my-6 text-center"></div>
 
 
         <section class="grid md:grid-cols-4 gap-4 mb-8">
@@ -88,11 +88,7 @@
     <footer class="bg-white/80 border-t border-cozy-peach/50 mt-12 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-cozy-wood"><p>&copy; 2026 Heartopia.Life - A cozy guide site for Heartopia players.</p></div>
 </footer>
     <!-- NitroPay Ad Units -->
-    <div id="heartopia_anchor"></div>
-    <div id="heartopia_side_rail"></div>
-    <div id="heartopia_floating_video"></div>
-
-    <script>
+<script>
         if (window['nitroAds']) {
             window['nitroAds'].createAd('heartopia_anchor', {
                 "format": "anchor-v2",
@@ -128,10 +124,10 @@
 
             window['nitroAds'].createAd('heartopia_in_content', {
                 "format": "display",
-                "sizes": [[970, 90], [728, 90], [300, 250], [320, 100], [320, 50]],
+                "sizes": [[970, 90], [970, 250], [728, 90], [300, 250], [320, 100], [320, 50]],
                 "collapseEmpty": true,
                 "renderVisibleOnly": true,
-                "visibleMargin": 200,
+                "visibleMargin": 800,
                 "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "bottom-right" }
             });
         }
