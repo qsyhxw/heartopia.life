@@ -113,7 +113,7 @@
         </nav>
     </header>
 
-    <main id="heartopia_in_content" class="max-w-4xl mx-auto px-4 py-8">
+    <main class="max-w-4xl mx-auto px-4 py-8">
 
         <!-- Breadcrumb -->
         <nav class="text-sm text-cozy-wood mb-6">
@@ -363,8 +363,6 @@
 </footer>
     <!-- NitroPay Ad Units -->
     <div id="heartopia_anchor"></div>
-    <div id="heartopia_side_rail"></div>
-    <div id="heartopia_floating_video"></div>
 
     <script>
         if (window['nitroAds']) {
@@ -376,53 +374,7 @@
                 "anchorPersistClose": false,
                 "anchorStickyOffset": 0,
                 "mediaQuery": "(max-width: 1024px)",
-                "report": {
-                    "enabled": true,
-                    "icon": true,
-                    "wording": "Report Ad",
-                    "position": "top-right"
-                }
-            });
-
-            window['nitroAds'].createAd('heartopia_floating_video', {
-                "format": "floating",
-                "mediaQuery": "(min-width: 1025px)",
-                "report": {
-                    "enabled": true,
-                    "icon": true,
-                    "wording": "Report Ad",
-                    "position": "top-left"
-                }
-            });
-            window['nitroAds'].createAd('heartopia_side_rail', {
-                "format": "rail",
-                "rail": "right",
-                "railOffsetTop": 0,
-                "railOffsetBottom": 0,
-                "railCollisionWhitelist": [],
-                "railCloseColor": "#666666",
-                "railSpacing": 10,
-                "railStack": false,
-                "railStickyTop": 70,
-                "railVerticalAlign": "top",
-                "report": {
-                    "enabled": true,
-                    "icon": true,
-                    "wording": "Report Ad",
-                    "position": "top-left"
-                },
-                "mediaQuery": "(min-width: 1025px)"
-            });
-
-            window['nitroAds'].createAd('heartopia_in_content', {
-                "format": "article",
-                "sizes": [[970, 90], [728, 90], [320, 100], [320, 50]],
-                "articleOffsetTop": 0,
-                "pageInterval": 1,
-                "collapseEmpty": true,
-                "renderVisibleOnly": true,
-                "visibleMargin": 200,
-                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "bottom-right" }
+                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-right" }
             });
         }
     </script>

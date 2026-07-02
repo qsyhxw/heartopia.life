@@ -205,8 +205,10 @@
         </div>
     </header>
 
-    <main id="heartopia_in_content" class="max-w-6xl mx-auto px-4 py-12">
-        <!-- PC Download Section -->
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        
+        <div id="heartopia_in_content" class="max-w-6xl mx-auto px-4 py-6"></div>
+<!-- PC Download Section -->
         <section id="pc" class="mb-16">
             <h2 class="text-3xl font-display font-bold text-cozy-bark mb-4 flex items-center gap-3">
                 💻 PC Download (Windows)
@@ -530,24 +532,15 @@
                 "anchorPersistClose": false,
                 "anchorStickyOffset": 0,
                 "mediaQuery": "(max-width: 1024px)",
-                "report": {
-                    "enabled": true,
-                    "icon": true,
-                    "wording": "Report Ad",
-                    "position": "top-right"
-                }
+                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-right" }
             });
 
             window['nitroAds'].createAd('heartopia_floating_video', {
                 "format": "floating",
                 "mediaQuery": "(min-width: 1025px)",
-                "report": {
-                    "enabled": true,
-                    "icon": true,
-                    "wording": "Report Ad",
-                    "position": "top-left"
-                }
+                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-left" }
             });
+
             window['nitroAds'].createAd('heartopia_side_rail', {
                 "format": "rail",
                 "rail": "right",
@@ -559,20 +552,13 @@
                 "railStack": false,
                 "railStickyTop": 70,
                 "railVerticalAlign": "top",
-                "report": {
-                    "enabled": true,
-                    "icon": true,
-                    "wording": "Report Ad",
-                    "position": "top-left"
-                },
+                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-left" },
                 "mediaQuery": "(min-width: 1025px)"
             });
 
             window['nitroAds'].createAd('heartopia_in_content', {
-                "format": "article",
+                "format": "display",
                 "sizes": [[970, 90], [728, 90], [320, 100], [320, 50]],
-                "articleOffsetTop": 0,
-                "pageInterval": 1,
                 "collapseEmpty": true,
                 "renderVisibleOnly": true,
                 "visibleMargin": 200,
