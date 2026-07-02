@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -376,15 +376,13 @@
 
             window['nitroAds'].createAd('heartopia_in_content', {
                 "format": "article",
+                "sizes": [[970, 90], [728, 90], [320, 100], [320, 50]],
                 "articleOffsetTop": 0,
                 "pageInterval": 1,
                 "collapseEmpty": true,
-                "report": {
-                    "enabled": true,
-                    "icon": true,
-                    "wording": "Report Ad",
-                    "position": "bottom-right"
-                }
+                "renderVisibleOnly": true,
+                "visibleMargin": 200,
+                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "bottom-right" }
             });
         }
     </script>
