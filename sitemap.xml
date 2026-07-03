@@ -349,6 +349,12 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://heartopia.life/faq/global-vs-na-server-region/</loc>
+        <lastmod>2026-07-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://heartopia.life/faq/platforms/</loc>
         <lastmod>2026-07-01</lastmod>
         <changefreq>weekly</changefreq>
@@ -501,6 +507,18 @@
     <url>
         <loc>https://heartopia.life/guides/fishing-spots/</loc>
         <lastmod>2026-07-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/guides/flower-crossbreeding/</loc>
+        <lastmod>2026-07-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/guides/friends-invites-gifting/</loc>
+        <lastmod>2026-07-03</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
