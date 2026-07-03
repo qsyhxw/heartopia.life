@@ -272,6 +272,7 @@
                 <li><a href="#expiring-soon" class="text-cozy-coral hover:underline">→ Expiry Notes</a></li>
                 <li><a href="#how-to-redeem" class="text-cozy-coral hover:underline">→ How to Redeem</a></li>
                 <li><a href="#expired-codes" class="text-cozy-coral hover:underline">→ Expired Codes</a></li>
+                <li><a href="#submit-code" class="text-cozy-coral hover:underline">→ Submit a Code</a></li>
             </ul>
         </div>
 
@@ -385,6 +386,63 @@
             </div>
         </section>
         <div id="heartopia_in_content" class="heartopia-ad-slot max-w-6xl mx-auto px-4 my-6 text-center"></div>
+        <!-- SUBMIT CODE -->
+        <section id="submit-code" class="mb-12">
+            <div class="bg-white rounded-2xl p-6 border border-cozy-peach/30 shadow-sm">
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
+                    <div>
+                        <h2 class="font-display text-2xl font-bold mb-2">📨 Found a Working Code?</h2>
+                        <p class="text-cozy-wood text-sm md:text-base">
+                            Send it in for review. Submitted codes are checked before they are added to the active list.
+                        </p>
+                    </div>
+                    <span class="inline-flex w-fit items-center rounded-full bg-cozy-mint/50 px-3 py-1 text-xs font-bold text-green-800">
+                        Manual review
+                    </span>
+                </div>
+
+                <form id="code-submit-form" class="grid gap-4" novalidate>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <label class="block">
+                            <span class="block text-sm font-bold mb-2">Code *</span>
+                            <input id="submitted-code" name="code" type="text" required maxlength="40"
+                                autocomplete="off" placeholder="Example: Junegift"
+                                class="w-full rounded-xl border border-cozy-peach/60 bg-cozy-cream/40 px-4 py-3 text-sm outline-none focus:border-cozy-coral focus:ring-2 focus:ring-cozy-coral/20">
+                        </label>
+                        <label class="block">
+                            <span class="block text-sm font-bold mb-2">Reward</span>
+                            <input id="submitted-reward" name="reward" type="text" maxlength="140"
+                                placeholder="Example: Wishing Star x3"
+                                class="w-full rounded-xl border border-cozy-peach/60 bg-cozy-cream/40 px-4 py-3 text-sm outline-none focus:border-cozy-coral focus:ring-2 focus:ring-cozy-coral/20">
+                        </label>
+                    </div>
+
+                    <label class="block">
+                        <span class="block text-sm font-bold mb-2">Where did you find it?</span>
+                        <input id="submitted-source" name="source" type="text" maxlength="180"
+                            placeholder="Official post, Discord, in-game notice, or another source"
+                            class="w-full rounded-xl border border-cozy-peach/60 bg-cozy-cream/40 px-4 py-3 text-sm outline-none focus:border-cozy-coral focus:ring-2 focus:ring-cozy-coral/20">
+                    </label>
+
+                    <label class="block">
+                        <span class="block text-sm font-bold mb-2">Notes</span>
+                        <textarea id="submitted-note" name="note" rows="3" maxlength="400"
+                            placeholder="Platform, region, claim result, expiry date, or anything useful"
+                            class="w-full rounded-xl border border-cozy-peach/60 bg-cozy-cream/40 px-4 py-3 text-sm outline-none focus:border-cozy-coral focus:ring-2 focus:ring-cozy-coral/20"></textarea>
+                    </label>
+
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-3">
+                        <button type="submit"
+                            class="copy-btn inline-flex justify-center rounded-xl bg-cozy-coral px-5 py-3 text-sm font-bold text-white hover:bg-cozy-coral/90 transition-colors">
+                            Submit Code for Review
+                        </button>
+                        <p id="code-submit-status" class="text-sm text-cozy-wood" role="status" aria-live="polite">
+                            This opens your email app so the code can be verified before publishing.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </section>
 
 
         <!-- HOW TO REDEEM -->
@@ -580,6 +638,57 @@
 </footer>
     <!-- NitroPay Ad Units -->
 <script>
+        (function () {
+            var form = document.getElementById('code-submit-form');
+            if (!form) return;
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                var code = document.getElementById('submitted-code').value.trim();
+                var reward = document.getElementById('submitted-reward').value.trim();
+                var source = document.getElementById('submitted-source').value.trim();
+                var note = document.getElementById('submitted-note').value.trim();
+                var status = document.getElementById('code-submit-status');
+
+                if (!code) {
+                    status.textContent = 'Please enter the code before submitting.';
+                    status.className = 'text-sm text-red-700';
+                    document.getElementById('submitted-code').focus();
+                    return;
+                }
+
+                var body = [
+                    'New Heartopia code submission',
+                    '',
+                    'Code: ' + code,
+                    'Reward: ' + (reward || 'Unknown'),
+                    'Source: ' + (source || 'Not provided'),
+                    'Notes: ' + (note || 'None'),
+                    '',
+                    'Page: https://heartopia.life/codes/'
+                ].join('\n');
+
+                try {
+                    localStorage.setItem('heartopia:lastSubmittedCode', JSON.stringify({
+                        code: code,
+                        reward: reward,
+                        source: source,
+                        submittedAt: new Date().toISOString()
+                    }));
+                } catch (error) {}
+
+                window.location.href = 'mailto:contact@heartopia.life?subject='
+                    + encodeURIComponent('Heartopia code submission: ' + code)
+                    + '&body=' + encodeURIComponent(body);
+
+                status.textContent = 'Email draft opened. The code will be reviewed before it is added to the list.';
+                status.className = 'text-sm text-green-700';
+                form.reset();
+            });
+        })();
+    </script>
+<script>
         if (window['nitroAds']) {
             window['nitroAds'].createAd('heartopia_anchor', {
                 "format": "anchor-v2",
@@ -635,3 +744,4 @@
 </body>
 
 </html>
+
