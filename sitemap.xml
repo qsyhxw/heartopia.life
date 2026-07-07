@@ -50,13 +50,25 @@
     </url>
     <url>
         <loc>https://heartopia.life/database/birds/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/database/birds/double-barred-finch/</loc>
+        <lastmod>2026-07-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/database/birds/european-robin/</loc>
+        <lastmod>2026-07-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/database/birds/golden-oriole/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -69,6 +81,18 @@
     <url>
         <loc>https://heartopia.life/database/birds/hawfinch/</loc>
         <lastmod>2026-07-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/database/birds/winter-mandarin-duck/</loc>
+        <lastmod>2026-07-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/database/birds/wonga-pigeon/</loc>
+        <lastmod>2026-07-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -457,7 +481,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/guides/bird-locations/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
