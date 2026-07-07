@@ -194,7 +194,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/database/insects/golden-stag-beetle/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -416,7 +416,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/guides/badges/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -434,7 +434,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/guides/best-food-to-sell/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -548,7 +548,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/guides/hidden-achievements/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -632,7 +632,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/guides/painting-tools/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -954,5 +954,10 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-</urlset>
+    <url>
+        <loc>https://heartopia.life/troubleshooting/login-glitch-overlapping/</loc>
+        <lastmod>2026-07-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url></urlset>
 
