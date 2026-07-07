@@ -392,7 +392,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/guides/</loc>
-        <lastmod>2026-07-06</lastmod>
+        <lastmod>2026-07-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -633,6 +633,12 @@
     <url>
         <loc>https://heartopia.life/guides/painting-tools/</loc>
         <lastmod>2026-07-06</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/guides/picasso/</loc>
+        <lastmod>2026-07-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
