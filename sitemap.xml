@@ -445,6 +445,11 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://heartopia.life/guides/bubble-locations/</loc>
+        <lastmod>2026-07-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>    <url>
         <loc>https://heartopia.life/guides/build-ideas/</loc>
         <lastmod>2026-07-01</lastmod>
         <changefreq>weekly</changefreq>
