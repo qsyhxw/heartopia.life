@@ -331,6 +331,12 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://heartopia.life/events/tea-party/</loc>
+        <lastmod>2026-07-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://heartopia.life/events/seasons/</loc>
         <lastmod>2026-07-01</lastmod>
         <changefreq>weekly</changefreq>
