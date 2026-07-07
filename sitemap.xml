@@ -140,13 +140,25 @@
     </url>
     <url>
         <loc>https://heartopia.life/database/fish/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/database/fish/butterfly-koi/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/database/fish/sardine/</loc>
+        <lastmod>2026-07-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/database/fish/seahorse/</loc>
+        <lastmod>2026-07-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -425,7 +437,8 @@
         <lastmod>2026-07-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
-    </url>    <url>
+    </url>
+    <url>
         <loc>https://heartopia.life/faq/watering-crops/</loc>
         <lastmod>2026-07-01</lastmod>
         <changefreq>weekly</changefreq>
@@ -502,7 +515,8 @@
         <lastmod>2026-07-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
-    </url>    <url>
+    </url>
+    <url>
         <loc>https://heartopia.life/guides/build-ideas/</loc>
         <lastmod>2026-07-01</lastmod>
         <changefreq>weekly</changefreq>
@@ -717,7 +731,8 @@
         <lastmod>2026-07-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
-    </url>    <url>
+    </url>
+    <url>
         <loc>https://heartopia.life/guides/pet-personalities/</loc>
         <lastmod>2026-07-01</lastmod>
         <changefreq>weekly</changefreq>
@@ -1034,7 +1049,8 @@
         <lastmod>2026-07-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
-    </url>    <url>
+    </url>
+    <url>
         <loc>https://heartopia.life/database/materials/roaming-oak-timber/</loc>
         <lastmod>2026-07-07</lastmod>
         <changefreq>weekly</changefreq>
