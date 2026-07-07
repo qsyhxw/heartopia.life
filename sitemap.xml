@@ -677,6 +677,11 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://heartopia.life/guides/pet-favorite-food/</loc>
+        <lastmod>2026-07-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>    <url>
         <loc>https://heartopia.life/guides/pet-personalities/</loc>
         <lastmod>2026-07-01</lastmod>
         <changefreq>weekly</changefreq>
@@ -993,4 +998,28 @@
         <lastmod>2026-07-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
-    </url></urlset>
+    </url>    <url>
+        <loc>https://heartopia.life/database/materials/roaming-oak-timber/</loc>
+        <lastmod>2026-07-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/database/materials/fluorite/</loc>
+        <lastmod>2026-07-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/database/materials/mushrooms/</loc>
+        <lastmod>2026-07-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/guides/egg-locations/</loc>
+        <lastmod>2026-07-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+</urlset>
