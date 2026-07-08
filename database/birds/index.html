@@ -216,14 +216,18 @@
             <h2 class="font-display text-2xl font-bold mb-4">Bird Routes & Single-Bird Pages</h2>
             <p class="text-cozy-wood text-sm mb-4">The full database is best for all locations and prices. Use these pages when you need a route-first answer or one named bird.</p>
             <div class="grid md:grid-cols-3 gap-4 text-sm"><a href="/guides/bird-locations/" class="block bg-sky-50 rounded-xl p-4 border border-sky-200 hover:border-cozy-coral"><strong>Bird Locations Guide</strong><span class="block text-cozy-wood mt-1">Routes by area, time, and weather</span></a><a href="/database/birds/european-robin/" class="block bg-orange-50 rounded-xl p-4 border border-orange-100 hover:border-cozy-coral"><strong>European Robin</strong><span class="block text-cozy-wood mt-1">Central Area, all day</span></a><a href="/database/birds/double-barred-finch/" class="block bg-blue-50 rounded-xl p-4 border border-blue-100 hover:border-cozy-coral"><strong>Double-Barred Finch</strong><span class="block text-cozy-wood mt-1">Fishing Village Lighthouse</span></a><a href="/database/birds/golden-oriole/" class="block bg-yellow-50 rounded-xl p-4 border border-yellow-200 hover:border-cozy-coral"><strong>Golden Oriole</strong><span class="block text-cozy-wood mt-1">Home Lots and Rosy River</span></a><a href="/database/birds/hawfinch/" class="block bg-lime-50 rounded-xl p-4 border border-lime-200 hover:border-cozy-coral"><strong>Hawfinch</strong><span class="block text-cozy-wood mt-1">Onsen Mountain Crater Lake</span></a><a href="/database/wildlife/winter-bird/" class="block bg-purple-50 rounded-xl p-4 border border-purple-100 hover:border-cozy-coral"><strong>Winter Birds</strong><span class="block text-cozy-wood mt-1">Winter Frost Season route</span></a><a href="/database/birds/winter-mandarin-duck/" class="block bg-indigo-50 rounded-xl p-4 border border-indigo-100 hover:border-cozy-coral"><strong>Winter Duck Searches</strong><span class="block text-cozy-wood mt-1">Check winter duck-like names</span></a><a href="/database/birds/wonga-pigeon/" class="block bg-cozy-cream rounded-xl p-4 border border-cozy-peach/50 hover:border-cozy-coral"><strong>Wonga Pigeon Search</strong><span class="block text-cozy-wood mt-1">Check pigeon and dove name mix-ups</span></a></div></section>
-        <!-- Filter -->
-        <div class="bg-white rounded-xl p-4 mb-6 border border-cozy-peach/30">
-            <div class="flex flex-wrap gap-4">
+        <!-- Search & Filters -->
+        <section id="search-filter" class="bg-white rounded-xl p-5 mb-6 border border-cozy-peach/30 shadow-sm">
+            <h2 class="font-bold mb-3">🔍 Search & filter birds</h2>
+            <div class="grid md:grid-cols-5 gap-3">
+                <div class="md:col-span-2">
+                    <label for="bird-search" class="block text-xs font-bold text-cozy-wood mb-1">Search bird</label>
+                    <input id="bird-search" type="search" placeholder="Try Hawfinch, robin, lake, morning..." oninput="filterBirds()" class="w-full p-3 text-sm border border-cozy-peach rounded-lg bg-cozy-cream focus:outline-none focus:border-cozy-coral">
+                </div>
                 <div>
-                    <label class="block text-xs font-medium text-cozy-wood mb-1">Location</label>
-                    <select id="filter-location" onchange="filterBirds()"
-                        class="p-2 text-sm border border-cozy-peach rounded-lg bg-white">
-                        <option value="all">All Locations</option>
+                    <label for="filter-location" class="block text-xs font-bold text-cozy-wood mb-1">Location</label>
+                    <select id="filter-location" onchange="filterBirds()" class="w-full p-3 text-sm border border-cozy-peach rounded-lg bg-white">
+                        <option value="all">All locations</option>
                         <option value="river">Rosy River</option>
                         <option value="central">Central Area</option>
                         <option value="forest">Forest</option>
@@ -235,18 +239,40 @@
                     </select>
                 </div>
                 <div>
-                    <label class="block text-xs font-medium text-cozy-wood mb-1">Weather</label>
-                    <select id="filter-weather" onchange="filterBirds()"
-                        class="p-2 text-sm border border-cozy-peach rounded-lg bg-white">
-                        <option value="all">All Weather</option>
-                        <option value="any">☀️🌧️🌈 Any</option>
-                        <option value="sunny">☀️ Sunny</option>
-                        <option value="rainy">🌧️ Rainy</option>
-                        <option value="rainbow">🌈 Rainbow</option>
+                    <label for="filter-weather" class="block text-xs font-bold text-cozy-wood mb-1">Weather</label>
+                    <select id="filter-weather" onchange="filterBirds()" class="w-full p-3 text-sm border border-cozy-peach rounded-lg bg-white">
+                        <option value="all">All weather</option>
+                        <option value="any">Any</option>
+                        <option value="sunny">Sunny</option>
+                        <option value="rainy">Rainy</option>
+                        <option value="rainbow">Rainbow</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="filter-time" class="block text-xs font-bold text-cozy-wood mb-1">Time</label>
+                    <select id="filter-time" onchange="filterBirds()" class="w-full p-3 text-sm border border-cozy-peach rounded-lg bg-white">
+                        <option value="all">All times</option>
+                        <option value="all day">All day</option>
+                        <option value="morning">Morning</option>
+                        <option value="night">Night</option>
+                        <option value="event">Event</option>
                     </select>
                 </div>
             </div>
-        </div>
+            <div class="mt-3 grid md:grid-cols-[1fr_auto] gap-3 items-end">
+                <div>
+                    <label for="filter-price" class="block text-xs font-bold text-cozy-wood mb-1">5★ Info Card price</label>
+                    <select id="filter-price" onchange="filterBirds()" class="w-full md:max-w-[260px] p-3 text-sm border border-cozy-peach rounded-lg bg-white">
+                        <option value="all">All prices</option>
+                        <option value="low">Up to 384G</option>
+                        <option value="mid">385G-575G</option>
+                        <option value="high">576G+</option>
+                    </select>
+                </div>
+                <button type="button" onclick="resetBirdFilters()" class="px-4 py-3 rounded-lg bg-cozy-peach hover:bg-cozy-coral hover:text-white font-bold transition-colors">Reset filters</button>
+            </div>
+            <p class="text-sm text-cozy-wood mt-3"><strong id="bird-result-count">0</strong> matching birds shown.</p>
+        </section>
 
         <!-- Birds Table -->
         <div class="bg-white rounded-xl overflow-hidden border border-cozy-peach/30 mb-8">
@@ -541,24 +567,60 @@
             <p class="text-white/40 text-xs">© 2026 Heartopia.Life</p>
         </div>
 </footer>
-
-    <!-- JavaScript for filtering -->
+    <!-- JavaScript for database filtering -->
     <script>
+        function birdPrice(row) {
+            const cell = row.cells[5];
+            if (!cell) return null;
+            const match = cell.textContent.replace(/,/g, '').match(/\d+/);
+            return match ? Number(match[0]) : null;
+        }
+
+        function birdPriceMatches(price, bucket) {
+            if (bucket === 'all' || price === null) return true;
+            if (bucket === 'low') return price <= 384;
+            if (bucket === 'mid') return price >= 385 && price <= 575;
+            if (bucket === 'high') return price >= 576;
+            return true;
+        }
+
         function filterBirds() {
+            const query = document.getElementById('bird-search').value.trim().toLowerCase();
             const location = document.getElementById('filter-location').value;
             const weather = document.getElementById('filter-weather').value;
+            const time = document.getElementById('filter-time').value;
+            const priceBucket = document.getElementById('filter-price').value;
             const rows = document.querySelectorAll('#birds-tbody tr');
+            let visible = 0;
 
             rows.forEach(row => {
-                const rowLocation = row.dataset.location;
-                const rowWeather = row.dataset.weather;
-
-                let showLocation = location === 'all' || rowLocation === location;
-                let showWeather = weather === 'all' || rowWeather === weather || rowWeather === 'any';
-
-                row.style.display = (showLocation && showWeather) ? '' : 'none';
+                const rowLocation = row.dataset.location || '';
+                const rowWeather = row.dataset.weather || 'any';
+                const rowText = row.textContent.toLowerCase();
+                const rowTime = row.cells[2] ? row.cells[2].textContent.trim().toLowerCase() : '';
+                const price = birdPrice(row);
+                const show = (!query || rowText.includes(query)) &&
+                    (location === 'all' || rowLocation === location) &&
+                    (weather === 'all' || rowWeather === weather || rowWeather === 'any') &&
+                    (time === 'all' || rowTime.includes(time)) &&
+                    birdPriceMatches(price, priceBucket);
+                row.style.display = show ? '' : 'none';
+                if (show) visible += 1;
             });
+
+            document.getElementById('bird-result-count').textContent = visible;
         }
+
+        function resetBirdFilters() {
+            document.getElementById('bird-search').value = '';
+            document.getElementById('filter-location').value = 'all';
+            document.getElementById('filter-weather').value = 'all';
+            document.getElementById('filter-time').value = 'all';
+            document.getElementById('filter-price').value = 'all';
+            filterBirds();
+        }
+
+        document.addEventListener('DOMContentLoaded', filterBirds);
     </script>
     <!-- NitroPay Ad Units -->
 <script>

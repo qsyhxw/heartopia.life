@@ -20,7 +20,7 @@
     <!-- Meta Tags -->
     <title>Heartopia Fish Database: All 94 Fish, Locations, Prices & Sell Guide</title>
     <meta name="description"
-        content="Complete Heartopia fish database. All 94 fish with locations, sell prices, weather & time. Find Rainbow Fish, Koi, Bluefin Tuna & more rare catches!">
+        content="Searchable Heartopia fish database with 94 fish, locations, sell prices, weather, time, Rainbow Fish, Koi, Bluefin Tuna, and rare catches.">
     <meta name="keywords"
         content="heartopia fish, heartopia fishing guide, heartopia fish prices, heartopia rare fish, heartopia fish database">
     <meta name="author" content="Heartopia.Life">
@@ -32,7 +32,7 @@
     <!-- Open Graph -->
     <meta property="og:type" content="article">
     <meta property="og:title" content="Heartopia Fish Database: All 94 Fish & Prices">
-    <meta property="og:description" content="Complete fish database with locations, prices & rare catches.">
+    <meta property="og:description" content="Searchable fish database with locations, prices, weather, and rare catches.">
     <meta property="og:url" content="https://heartopia.life/database/fish/">
     <meta property="og:site_name" content="Heartopia.Life">
     <!-- Favicon -->
@@ -157,7 +157,7 @@
                 🐟 Heartopia Fish Database
             </h1>
             <p class="text-cozy-wood text-lg">
-                Complete database of all <strong>94 fish</strong> in Heartopia. Find locations, sell prices, weather
+                Browse <strong>94 fish</strong> in Heartopia. Find locations, sell prices, weather
                 conditions & rare catches!
             </p>
         </div>
@@ -199,6 +199,53 @@
             </ul>
         </div>
 
+
+        <!-- Search & Filters -->
+        <section id="search-filter" class="bg-white rounded-xl p-5 mb-8 border border-cozy-peach/30 shadow-sm">
+            <div class="flex flex-col gap-4">
+                <div class="flex flex-col md:flex-row md:items-end gap-4">
+                    <div class="flex-1 min-w-[220px]">
+                        <label for="fish-search" class="block text-xs font-bold text-cozy-wood mb-1">Search fish</label>
+                        <input id="fish-search" type="search" placeholder="Try Butterfly Koi, Sardine, Whale Sea, Rainbow..." oninput="filterFish()"
+                            class="w-full p-3 text-sm border border-cozy-peach rounded-lg bg-cozy-cream focus:outline-none focus:border-cozy-coral">
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-3 flex-1">
+                        <div>
+                            <label for="fish-category" class="block text-xs font-bold text-cozy-wood mb-1">Water type</label>
+                            <select id="fish-category" onchange="filterFish()" class="w-full p-3 text-sm border border-cozy-peach rounded-lg bg-white">
+                                <option value="all">All sections</option>
+                                <option value="rare">Rare table</option>
+                                <option value="river">River fish</option>
+                                <option value="lake">Lake fish</option>
+                                <option value="sea">Sea fish</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="fish-weather" class="block text-xs font-bold text-cozy-wood mb-1">Weather</label>
+                            <select id="fish-weather" onchange="filterFish()" class="w-full p-3 text-sm border border-cozy-peach rounded-lg bg-white">
+                                <option value="all">All weather</option>
+                                <option value="sunny">Sunny</option>
+                                <option value="rainy">Rainy</option>
+                                <option value="rainbow">Rainbow</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="fish-level" class="block text-xs font-bold text-cozy-wood mb-1">Level</label>
+                            <select id="fish-level" onchange="filterFish()" class="w-full p-3 text-sm border border-cozy-peach rounded-lg bg-white">
+                                <option value="all">All levels</option>
+                                <option value="1-3">Lv. 1-3</option>
+                                <option value="4-6">Lv. 4-6</option>
+                                <option value="7-10">Lv. 7-10</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-sm">
+                    <p class="text-cozy-wood"><strong id="fish-result-count">0</strong> matching fish shown. Filters only affect the database tables below.</p>
+                    <button type="button" onclick="resetFishFilters()" class="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-cozy-peach hover:bg-cozy-coral hover:text-white font-bold transition-colors">Reset filters</button>
+                </div>
+            </div>
+        </section>
         <!-- CONTENT -->
         <article class="space-y-12">
 
@@ -795,6 +842,67 @@
             <p class="text-white/40 text-xs">© 2026 Heartopia.Life</p>
         </div>
 </footer>
+    <!-- JavaScript for database filtering -->
+    <script>
+        function getTableLevel(row) {
+            const table = row.closest('table');
+            if (!table) return null;
+            const headers = Array.from(table.querySelectorAll('thead th')).map(th => th.textContent.trim().toLowerCase());
+            const levelIndex = headers.findIndex(text => text.includes('level'));
+            if (levelIndex < 0 || !row.cells[levelIndex]) return null;
+            const match = row.cells[levelIndex].textContent.match(/\d+/);
+            return match ? Number(match[0]) : null;
+        }
+
+        function levelMatches(level, range) {
+            if (range === 'all' || level === null) return true;
+            const parts = range.split('-').map(Number);
+            return level >= parts[0] && level <= parts[1];
+        }
+
+        function weatherMatches(text, weather) {
+            if (weather === 'all') return true;
+            const value = text.toLowerCase();
+            if (weather === 'sunny') return value.includes('sunny') || value.includes('☀');
+            if (weather === 'rainy') return value.includes('rain') || value.includes('🌧');
+            if (weather === 'rainbow') return value.includes('rainbow') || value.includes('🌈');
+            return true;
+        }
+
+        function filterFish() {
+            const query = document.getElementById('fish-search').value.trim().toLowerCase();
+            const category = document.getElementById('fish-category').value;
+            const weather = document.getElementById('fish-weather').value;
+            const levelRange = document.getElementById('fish-level').value;
+            const rows = document.querySelectorAll('.fish-table tbody tr');
+            let visible = 0;
+
+            rows.forEach(row => {
+                const text = row.textContent.toLowerCase();
+                const section = row.closest('section');
+                const sectionId = section ? section.id : '';
+                const level = getTableLevel(row);
+                const show = (!query || text.includes(query)) &&
+                    (category === 'all' || sectionId === category) &&
+                    weatherMatches(text, weather) &&
+                    levelMatches(level, levelRange);
+                row.style.display = show ? '' : 'none';
+                if (show) visible += 1;
+            });
+
+            document.getElementById('fish-result-count').textContent = visible;
+        }
+
+        function resetFishFilters() {
+            document.getElementById('fish-search').value = '';
+            document.getElementById('fish-category').value = 'all';
+            document.getElementById('fish-weather').value = 'all';
+            document.getElementById('fish-level').value = 'all';
+            filterFish();
+        }
+
+        document.addEventListener('DOMContentLoaded', filterFish);
+    </script>
     <!-- NitroPay Ad Units -->
 <script>
         if (window['nitroAds']) {
