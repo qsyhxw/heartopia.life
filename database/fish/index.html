@@ -378,65 +378,68 @@
                 </div>
             </section>
 
-            <!-- Butterfly Koi -->
-            <a href="/database/fish/butterfly-koi/"
-                class="card-hover bg-white rounded-2xl p-4 border border-cozy-peach/30">
-                <div class="flex items-center gap-4">
-                    <span class="text-3xl">🐟</span>
-                    <div>
-                        <h3 class="font-bold text-lg">Butterfly Koi</h3>
-                        <div class="text-xs text-cozy-wood flex flex-col">
-                            <span>📍 Meadow Lake</span>
-                            <span>🌧️ Rain / Rainbow</span>
+            <section id="popular-fish-pages" class="scroll-mt-20">
+                <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
+                    🔎 Popular Fish Pages
+                </h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <a href="/database/fish/butterfly-koi/"
+                        class="card-hover bg-white rounded-2xl p-4 border border-cozy-peach/30">
+                        <div class="flex items-center gap-4">
+                            <span class="text-3xl">🐟</span>
+                            <div>
+                                <h3 class="font-bold text-lg">Butterfly Koi</h3>
+                                <div class="text-xs text-cozy-wood flex flex-col">
+                                    <span>📍 Meadow Lake</span>
+                                    <span>🌧️ Rain / Rainbow</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </a>
+                    </a>
 
-            <!-- Tilapia -->
-            <a href="/database/fish/tilapia/"
-                class="card-hover bg-white rounded-2xl p-4 border border-cozy-peach/30">
-                <div class="flex items-center gap-4">
-                    <span class="text-3xl">🐟</span>
-                    <div>
-                        <h3 class="font-bold text-lg">Tilapia</h3>
-                        <div class="text-xs text-cozy-wood flex flex-col">
-                            <span>📍 Any River</span>
-                            <span>🧜 Mermaid Attractor</span>
+                    <a href="/database/fish/tilapia/"
+                        class="card-hover bg-white rounded-2xl p-4 border border-cozy-peach/30">
+                        <div class="flex items-center gap-4">
+                            <span class="text-3xl">🐟</span>
+                            <div>
+                                <h3 class="font-bold text-lg">Tilapia</h3>
+                                <div class="text-xs text-cozy-wood flex flex-col">
+                                    <span>📍 Any River</span>
+                                    <span>🧜 Mermaid Attractor</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </a>
+                    </a>
 
-            <!-- Sardine -->
-            <a href="/database/fish/sardine/"
-                class="card-hover bg-white rounded-2xl p-4 border border-cozy-peach/30">
-                <div class="flex items-center gap-4">
-                    <span class="text-3xl">🐟</span>
-                    <div>
-                        <h3 class="font-bold text-lg">Sardine</h3>
-                        <div class="text-xs text-cozy-wood flex flex-col">
-                            <span>📍 Ocean</span>
-                            <span>💰 50-400G</span>
+                    <a href="/database/fish/sardine/"
+                        class="card-hover bg-white rounded-2xl p-4 border border-cozy-peach/30">
+                        <div class="flex items-center gap-4">
+                            <span class="text-3xl">🐟</span>
+                            <div>
+                                <h3 class="font-bold text-lg">Sardine</h3>
+                                <div class="text-xs text-cozy-wood flex flex-col">
+                                    <span>📍 Ocean</span>
+                                    <span>💰 50-400G</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </a>
+                    </a>
 
-            <!-- Seahorse -->
-            <a href="/database/fish/seahorse/"
-                class="card-hover bg-white rounded-2xl p-4 border border-cozy-peach/30">
-                <div class="flex items-center gap-4">
-                    <span class="text-3xl">🐟</span>
-                    <div>
-                        <h3 class="font-bold text-lg">Seahorse</h3>
-                        <div class="text-xs text-cozy-wood flex flex-col">
-                            <span>📍 Whale Sea</span>
-                            <span>💰 100-200G</span>
+                    <a href="/database/fish/seahorse/"
+                        class="card-hover bg-white rounded-2xl p-4 border border-cozy-peach/30">
+                        <div class="flex items-center gap-4">
+                            <span class="text-3xl">🐟</span>
+                            <div>
+                                <h3 class="font-bold text-lg">Seahorse</h3>
+                                <div class="text-xs text-cozy-wood flex flex-col">
+                                    <span>📍 Whale Sea</span>
+                                    <span>💰 100-200G</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-            </a>
+            </section>
 
             <!-- RIVER FISH -->
             <section id="river" class="scroll-mt-20">
@@ -874,7 +877,7 @@
             const category = document.getElementById('fish-category').value;
             const weather = document.getElementById('fish-weather').value;
             const levelRange = document.getElementById('fish-level').value;
-            const rows = document.querySelectorAll('.fish-table tbody tr');
+            const rows = document.querySelectorAll('table.fish-table tbody tr');
             let visible = 0;
 
             rows.forEach(row => {
