@@ -304,6 +304,62 @@
                 </a>
             </div>
         </section>
+        <!-- Map Location Tool -->
+        <section id="location-tool" class="bg-white rounded-2xl p-6 mb-8 border border-cozy-peach/30 shadow-sm">
+            <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-5">
+                <div>
+                    <p class="text-xs uppercase tracking-wide text-cozy-coral font-bold mb-1">Resource / NPC / Gathering Point Tool</p>
+                    <h2 class="font-display text-2xl font-bold text-cozy-bark">Find Map Locations Fast</h2>
+                    <p class="text-sm text-cozy-wood mt-2">Search Heartopia resources, NPCs, animal troughs, fish spots, insects, birds, landmarks, and event routes. Mark places you have checked; progress is saved only in this browser.</p>
+                </div>
+                <div class="text-sm text-cozy-wood lg:text-right">
+                    <strong id="map-location-count">0</strong> results shown<br>
+                    <span id="map-location-progress">0/0 marked</span>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-[1.5fr_1fr_1fr] gap-3 mb-4">
+                <div>
+                    <label for="map-location-search" class="block text-xs font-bold text-cozy-wood mb-1">Search</label>
+                    <input id="map-location-search" type="search" placeholder="Try Doris, Fluorite, Fox Trough, Butterfly Koi, Hawfinch..." oninput="filterMapLocations()" class="w-full p-3 text-sm border border-cozy-peach rounded-lg bg-cozy-cream focus:outline-none focus:border-cozy-coral">
+                </div>
+                <div>
+                    <label for="map-type-filter" class="block text-xs font-bold text-cozy-wood mb-1">Type</label>
+                    <select id="map-type-filter" onchange="filterMapLocations()" class="w-full p-3 text-sm border border-cozy-peach rounded-lg bg-white">
+                        <option value="all">All types</option>
+                        <option value="resource">Resources</option>
+                        <option value="npc">NPCs</option>
+                        <option value="wildlife">Wild animals</option>
+                        <option value="fish">Fish spots</option>
+                        <option value="insect">Insects</option>
+                        <option value="bird">Birds</option>
+                        <option value="landmark">Landmarks</option>
+                        <option value="event">Events</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="map-area-filter" class="block text-xs font-bold text-cozy-wood mb-1">Area</label>
+                    <select id="map-area-filter" onchange="filterMapLocations()" class="w-full p-3 text-sm border border-cozy-peach rounded-lg bg-white">
+                        <option value="all">All areas</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-5 text-sm">
+                <label class="inline-flex items-center gap-2 text-cozy-wood cursor-pointer">
+                    <input id="map-hide-visited" type="checkbox" onchange="filterMapLocations()" class="h-4 w-4 accent-[#ff8a7a]">
+                    Hide marked locations
+                </label>
+                <div class="flex flex-wrap gap-2">
+                    <button id="map-reset-filters" type="button" onclick="resetMapLocationFilters()" class="px-4 py-2 rounded-lg bg-cozy-peach hover:bg-cozy-coral hover:text-white font-bold transition-colors">Reset filters</button>
+                    <button id="map-clear-visited" type="button" onclick="clearMapVisitedLocations()" class="px-4 py-2 rounded-lg border border-cozy-peach hover:border-cozy-coral font-bold transition-colors">Clear marked</button>
+                </div>
+            </div>
+
+            <div id="map-location-empty" class="hidden rounded-xl border border-cozy-peach/40 bg-cozy-cream p-4 text-sm text-cozy-wood mb-4">No matching locations. Try a broader type, area, or search term.</div>
+            <div id="map-location-results" class="grid md:grid-cols-2 gap-4"></div>
+        </section>
+
         <!-- Interactive Map Section -->
         <section class="bg-white rounded-2xl p-6 mb-8 border border-cozy-peach/30">
             <div class="flex items-center justify-between mb-4">
@@ -386,6 +442,7 @@
         <div class="bg-white rounded-xl p-4 mb-8 border border-cozy-peach/30">
             <h2 class="font-bold mb-3">📑 Table of Contents</h2>
             <ul class="grid md:grid-cols-2 gap-2 text-sm">
+                <li><a href="#location-tool" class="text-cozy-coral hover:underline">Location Finder Tool</a></li>
                 <li><a href="#areas" class="text-cozy-coral hover:underline">1. Main Areas Overview</a></li>
                 <li><a href="#map-faq" class="text-cozy-coral hover:underline">Map FAQ</a></li>
                 <li><a href="#wild-animals" class="text-cozy-coral hover:underline">2. Wild Animal Locations</a></li>
@@ -840,6 +897,7 @@
             <p class="text-white/40 text-xs">© 2026 Heartopia.Life</p>
         </div>
 </footer>
+    <script src="/assets/js/map-location-finder.js"></script>
     <!-- NitroPay Ad Units -->
 <script>
         if (window['nitroAds']) {
