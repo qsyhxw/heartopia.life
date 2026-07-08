@@ -1,0 +1,33 @@
+name: Update Heartopia Codes
+
+on:
+  schedule:
+    - cron: '20 7 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-codes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch and render codes
+        run: node scripts/update-heartopia-codes.mjs
+
+      - name: Show changes
+        run: git diff -- data/heartopia-codes.json codes/index.html sitemap.xml
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: update Heartopia codes'
+          file_pattern: 'data/heartopia-codes.json codes/index.html sitemap.xml'
