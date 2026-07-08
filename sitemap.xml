@@ -404,7 +404,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/faq/ai-controversy/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -482,7 +482,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/guides/aurora/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -548,7 +548,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/guides/controller-support/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -692,7 +692,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/guides/meteor-shower/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -860,7 +860,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/hobbies/instruments/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -932,13 +932,19 @@
     </url>
     <url>
         <loc>https://heartopia.life/npcs/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://heartopia.life/npcs/atara/</loc>
         <lastmod>2026-07-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/npcs/blanc/</loc>
+        <lastmod>2026-07-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
