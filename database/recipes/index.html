@@ -20,7 +20,7 @@
     <!-- Meta Tags -->
     <title>Heartopia Recipes Database: Cooking Recipes, Prices & Profit Links</title>
     <meta name="description"
-        content="Heartopia recipes database for cooking recipes, ingredients, unlock levels, sell prices, profit checks, Grass Cake, Black Truffle Pie, Mushroom Pie, jams, soups, and salads.">
+        content="Heartopia recipes database with search, filters, ingredients, unlock levels, sell prices, profit checks, Grass Cake, Black Truffle Pie, Mushroom Pie, jams, soups, and salads.">
     <meta name="keywords"
         content="heartopia recipes, heartopia cooking recipes, heartopia food recipes, heartopia grass cake, black truffle pie heartopia recipe, heartopia mushroom pie recipe">
     <meta name="author" content="Heartopia.Life">
@@ -104,7 +104,7 @@
                     "url": "https://heartopia.life/"
                 },
                 "datePublished": "2026-01-01",
-                "dateModified": "2026-07-08"
+                "dateModified": "2026-07-09"
             },
             {
                 "@type": "BreadcrumbList",
@@ -258,7 +258,7 @@
         <div class="bg-gradient-to-br from-orange-100 to-cozy-coral/20 rounded-2xl p-6 md:p-8 mb-8">
             <div class="flex items-center gap-2 text-sm font-medium text-cozy-sage mb-3">
                 <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                Updated: July 8, 2026
+                Updated: July 9, 2026
             </div>
             <h1 class="font-display text-3xl md:text-4xl font-bold text-cozy-bark mb-4">
                 🍳 Heartopia Recipes Database
@@ -288,6 +288,73 @@
         </div>
 
 
+        <section data-recipe-tools class="bg-white rounded-2xl p-6 mb-8 border border-cozy-peach/40 shadow-sm">
+            <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-5">
+                <div>
+                    <p class="text-sm font-bold text-cozy-coral mb-2">My Collection</p>
+                    <h2 class="font-display text-2xl font-bold text-cozy-bark">Recipe Search, Filters & Cooking Notes</h2>
+                    <p class="text-sm text-cozy-wood mt-1">Search by recipe or ingredient, filter by category and level, then mark recipes as unlocked, want to cook, or high-profit for your own route.</p>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-center text-sm">
+                    <div class="rounded-xl bg-cozy-cream px-3 py-2 border border-cozy-peach/40"><strong id="recipe-db-visible-count">0</strong><span class="block text-xs text-cozy-wood">Shown</span></div>
+                    <div class="rounded-xl bg-cozy-cream px-3 py-2 border border-cozy-peach/40"><strong id="recipe-db-unlocked-count">0</strong><span class="block text-xs text-cozy-wood">Unlocked</span></div>
+                    <div class="rounded-xl bg-cozy-cream px-3 py-2 border border-cozy-peach/40"><strong id="recipe-db-want-count">0</strong><span class="block text-xs text-cozy-wood">Want</span></div>
+                    <div class="rounded-xl bg-cozy-cream px-3 py-2 border border-cozy-peach/40"><strong id="recipe-db-profit-count">0</strong><span class="block text-xs text-cozy-wood">Profit</span></div>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-6 gap-3">
+                <label class="lg:col-span-2">
+                    <span class="block text-xs font-bold text-cozy-wood mb-1">Search recipe or ingredient</span>
+                    <input id="recipe-db-search" type="search" placeholder="Mushroom, jam, fish, truffle..." class="w-full rounded-xl border border-cozy-peach/50 bg-cozy-cream px-4 py-3 text-sm outline-none focus:border-cozy-coral">
+                </label>
+                <label>
+                    <span class="block text-xs font-bold text-cozy-wood mb-1">Category</span>
+                    <select id="recipe-db-category" class="w-full rounded-xl border border-cozy-peach/50 bg-white px-3 py-3 text-sm outline-none focus:border-cozy-coral">
+                        <option value="all">All categories</option>
+                        <option value="jams">Jams</option>
+                        <option value="salads">Salads</option>
+                        <option value="soups">Soups & Stews</option>
+                        <option value="pies">Pies & Baked</option>
+                        <option value="main">Main Dishes</option>
+                    </select>
+                </label>
+                <label>
+                    <span class="block text-xs font-bold text-cozy-wood mb-1">Level</span>
+                    <select id="recipe-db-level" class="w-full rounded-xl border border-cozy-peach/50 bg-white px-3 py-3 text-sm outline-none focus:border-cozy-coral">
+                        <option value="all">All levels</option>
+                        <option value="early">Early 1-2</option>
+                        <option value="mid">Mid 3-4</option>
+                        <option value="late">Late 5+</option>
+                    </select>
+                </label>
+                <label>
+                    <span class="block text-xs font-bold text-cozy-wood mb-1">Use</span>
+                    <select id="recipe-db-use" class="w-full rounded-xl border border-cozy-peach/50 bg-white px-3 py-3 text-sm outline-none focus:border-cozy-coral">
+                        <option value="all">All uses</option>
+                        <option value="profit">Profit</option>
+                        <option value="energy">Energy</option>
+                        <option value="unlock">Unlock / quest</option>
+                        <option value="everyday">Everyday cooking</option>
+                    </select>
+                </label>
+                <label>
+                    <span class="block text-xs font-bold text-cozy-wood mb-1">My state</span>
+                    <select id="recipe-db-state" class="w-full rounded-xl border border-cozy-peach/50 bg-white px-3 py-3 text-sm outline-none focus:border-cozy-coral">
+                        <option value="all">All recipes</option>
+                        <option value="unlocked">Unlocked</option>
+                        <option value="want">Want to cook</option>
+                        <option value="profit">Marked profit</option>
+                        <option value="high-profit">High-profit rows</option>
+                        <option value="unmarked">Unmarked</option>
+                    </select>
+                </label>
+            </div>
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mt-4">
+                <p class="text-xs text-cozy-wood"><span id="recipe-db-total-count">0</span> recipes are tracked in this table. Marks are saved in this browser only.</p>
+                <button id="recipe-db-reset" type="button" class="inline-flex items-center justify-center rounded-lg border border-cozy-peach/60 bg-white px-4 py-2 text-sm font-bold text-cozy-wood hover:border-cozy-coral">Reset filters</button>
+            </div>
+            <p id="recipe-db-empty" class="hidden mt-4 rounded-xl bg-cozy-cream p-4 text-sm text-cozy-wood">No recipes match the current filters.</p>
+        </section>
         <!-- Recipe Search Shortcuts -->
         <section class="bg-white rounded-xl p-6 mb-8 border border-cozy-peach/30">
             <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-3 mb-5">
@@ -391,7 +458,7 @@
                 <div
                     class="bg-gradient-to-r from-pink-50 to-purple-50 rounded-xl overflow-hidden border border-pink-200">
                     <div class="overflow-x-auto">
-                        <table class="w-full text-sm recipe-table">
+                        <table data-recipe-table="true" class="w-full text-sm recipe-table">
                             <thead class="bg-pink-100 text-left">
                                 <tr>
                                     <th class="px-4 py-3 font-bold">Recipe</th>
@@ -451,7 +518,7 @@
 
                 <div class="bg-white rounded-xl overflow-hidden border border-cozy-peach/30">
                     <div class="overflow-x-auto">
-                        <table class="w-full text-sm recipe-table">
+                        <table data-recipe-table="true" class="w-full text-sm recipe-table">
                             <thead class="bg-green-50 text-left">
                                 <tr>
                                     <th class="px-4 py-3 font-bold">Recipe</th>
@@ -490,7 +557,7 @@
 
                 <div class="bg-white rounded-xl overflow-hidden border border-cozy-peach/30">
                     <div class="overflow-x-auto">
-                        <table class="w-full text-sm recipe-table">
+                        <table data-recipe-table="true" class="w-full text-sm recipe-table">
                             <thead class="bg-orange-50 text-left">
                                 <tr>
                                     <th class="px-4 py-3 font-bold">Recipe</th>
@@ -563,7 +630,7 @@
 
                 <div class="bg-white rounded-xl overflow-hidden border border-cozy-peach/30">
                     <div class="overflow-x-auto">
-                        <table class="w-full text-sm recipe-table">
+                        <table data-recipe-table="true" class="w-full text-sm recipe-table">
                             <thead class="bg-amber-50 text-left">
                                 <tr>
                                     <th class="px-4 py-3 font-bold">Recipe</th>
@@ -649,7 +716,7 @@
 
                 <div class="bg-white rounded-xl overflow-hidden border border-cozy-peach/30">
                     <div class="overflow-x-auto">
-                        <table class="w-full text-sm recipe-table">
+                        <table data-recipe-table="true" class="w-full text-sm recipe-table">
                             <thead class="bg-red-50 text-left">
                                 <tr>
                                     <th class="px-4 py-3 font-bold">Recipe</th>
@@ -808,6 +875,7 @@
             <p class="text-white/40 text-xs">© 2026 Heartopia.Life</p>
         </div>
 </footer>
+    <script src="/assets/js/database-table-tools.js"></script>
     <!-- NitroPay Ad Units -->
 <script>
         if (window['nitroAds']) {
