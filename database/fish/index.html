@@ -18,7 +18,7 @@
     <!-- Meta Tags -->
     <title>Heartopia Fish Database: 112 Fish, Locations, Prices & Sell Guide</title>
     <meta name="description"
-        content="Searchable Heartopia fish database with 112 fish, locations, levels, weather, time, event fish, Bluefin Tuna, Swordfish, late-game catches, and rare routes.">
+        content="Searchable Heartopia fish database with 112 fish, images, locations, levels, shadows, categories, weather, schedules, market values, event fish, and rare routes.">
     <meta name="keywords"
         content="heartopia fish, heartopia fishing guide, heartopia fish prices, heartopia rare fish, heartopia fish database">
     <meta name="author" content="Heartopia.Life">
@@ -30,7 +30,7 @@
     <!-- Open Graph -->
     <meta property="og:type" content="article">
     <meta property="og:title" content="Heartopia Fish Database: 112 Fish & Locations">
-    <meta property="og:description" content="Searchable fish database with locations, prices, weather, and rare catches.">
+    <meta property="og:description" content="Searchable fish database with images, locations, shadows, categories, market values, weather, and rare catches.">
     <meta property="og:url" content="https://heartopia.life/database/fish/">
     <meta property="og:site_name" content="Heartopia.Life">
     <!-- Favicon -->
@@ -241,7 +241,7 @@
                         <input id="fish-search" type="search" placeholder="Try Butterfly Koi, Sardine, Whale Sea, Rainbow..." oninput="filterFish()"
                             class="w-full p-3 text-sm border border-cozy-peach rounded-lg bg-cozy-cream focus:outline-none focus:border-cozy-coral">
                     </div>
-                    <div class="grid grid-cols-2 md:grid-cols-3 gap-3 flex-1">
+                    <div class="grid grid-cols-2 lg:grid-cols-5 gap-3 flex-1">
                         <div>
                             <label for="fish-category" class="block text-xs font-bold text-cozy-wood mb-1">Water type</label>
                             <select id="fish-category" onchange="filterFish()" class="w-full p-3 text-sm border border-cozy-peach rounded-lg bg-white">
@@ -270,6 +270,29 @@
                                 <option value="4-6">Lv. 4-6</option>
                                 <option value="7-10">Lv. 7-10</option>
                                 <option value="11-14">Lv. 11-14</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="fish-shadow" class="block text-xs font-bold text-cozy-wood mb-1">Shadow</label>
+                            <select id="fish-shadow" onchange="filterFish()" class="w-full p-3 text-sm border border-cozy-peach rounded-lg bg-white">
+                                <option value="all">All shadows</option>
+                                <option value="small">Small</option>
+                                <option value="medium">Medium</option>
+                                <option value="large">Large</option>
+                                <option value="blue">Blue</option>
+                                <option value="golden">Golden</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="fish-kind" class="block text-xs font-bold text-cozy-wood mb-1">Category</label>
+                            <select id="fish-kind" onchange="filterFish()" class="w-full p-3 text-sm border border-cozy-peach rounded-lg bg-white">
+                                <option value="all">All categories</option>
+                                <option value="common">Common</option>
+                                <option value="sea fishing">Sea Fishing</option>
+                                <option value="winter frost season">Winter frost season</option>
+                                <option value="mermaid fish attractor">Mermaid Fish Attractor</option>
+                                <option value="modular streets">Modular Streets</option>
+                                <option value="dreamlight cinematics">Dreamlight Cinematics</option>
                             </select>
                         </div>
                     </div>
@@ -308,26 +331,25 @@
                 </h2>
 
                 <div class="bg-white rounded-xl p-6 border border-cozy-peach/30 mb-4">
-                    <p class="text-cozy-wood mb-4">Higher star fish sell for dramatically more Gold! Star availability
-                        depends on your Fishing Level:</p>
+                    <p class="text-cozy-wood mb-4">Market Value shows the visible star-price ladder for each fish, from lower quality to higher quality catches. Some late-game entries do not publish prices yet, so those remain marked as Check in game.</p>
 
                     <div class="grid md:grid-cols-3 gap-4 mb-4">
                         <div class="bg-gray-50 rounded-lg p-3 text-center">
-                            <div class="font-bold">Level 1</div>
-                            <div class="text-sm text-cozy-wood">★ to ★★★</div>
+                            <div class="font-bold">1 value</div>
+                            <div class="text-sm text-cozy-wood">Base catch price</div>
                         </div>
                         <div class="bg-yellow-50 rounded-lg p-3 text-center">
-                            <div class="font-bold">Level 4</div>
-                            <div class="text-sm text-cozy-wood">★ to ★★★★</div>
+                            <div class="font-bold">3 values</div>
+                            <div class="text-sm text-cozy-wood">Low to mid quality</div>
                         </div>
                         <div class="bg-purple-50 rounded-lg p-3 text-center">
-                            <div class="font-bold">Level 6+</div>
-                            <div class="text-sm text-cozy-wood">★ to ★★★★★</div>
+                            <div class="font-bold">5 values</div>
+                            <div class="text-sm text-cozy-wood">Full visible price ladder</div>
                         </div>
                     </div>
 
                     <div class="text-sm text-cozy-wood">
-                        <strong>Example:</strong> A 1★ fish at 50G → 3★ at 150G → 5★ at 400G
+                        <strong>Example:</strong> 50 / 75 / 100 / 200 / 400 means the fish has five visible market values from low to high quality.
                     </div>
                 </div>
             </section>
@@ -356,115 +378,163 @@
                                     <th class="px-4 py-3 font-bold">Fish</th>
                                     <th class="px-4 py-3 font-bold">Location</th>
                                     <th class="px-4 py-3 font-bold">Level</th>
+                                    <th class="px-4 py-3 font-bold">Shadow</th>
+                                    <th class="px-4 py-3 font-bold">Category</th>
                                     <th class="px-4 py-3 font-bold">Weather / Schedule</th>
-                                    <th class="px-4 py-3 font-bold">Price / Note</th>
+                                    <th class="px-4 py-3 font-bold">Market Value</th>
+                                    <th class="px-4 py-3 font-bold min-w-[260px]">About</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-cozy-peach/20">
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Barbel</td>
                                     <td class="px-4 py-2 text-cozy-wood">Shallow River</td>
                                     <td class="px-4 py-2">1</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">75 / 112 / 150</td>
+                                    <td class="px-4 py-2 text-cozy-wood">75 / 112 / 150 / 300 / 600</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Shallow River; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">European Perch</td>
                                     <td class="px-4 py-2 text-cozy-wood">River</td>
                                     <td class="px-4 py-2">1</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">75 / 112 / 150 / 300 / 600</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at River; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Minnow</td>
                                     <td class="px-4 py-2 text-cozy-wood">Tranquil River</td>
                                     <td class="px-4 py-2">1</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">50 / 75 / 100 / 200 / 400</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Tranquil River; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Oriental Shrimp</td>
                                     <td class="px-4 py-2 text-cozy-wood">River</td>
                                     <td class="px-4 py-2">1</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">50 / 75 / 100 / 200 / 400</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at River; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Spined Loach</td>
                                     <td class="px-4 py-2 text-cozy-wood">Giantwood River</td>
                                     <td class="px-4 py-2">1</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
                                     <td class="px-4 py-2 text-cozy-wood">50 / 75 / 100 / 200 / 400</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Giantwood River; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Streber</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rosy River</td>
                                     <td class="px-4 py-2">1</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
                                     <td class="px-4 py-2 text-cozy-wood">50 / 75 / 100 / 200 / 400</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Rosy River; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium"><a href="/database/fish/tilapia/" class="text-cozy-coral hover:underline">Tilapia</a></td>
                                     <td class="px-4 py-2 text-cozy-wood">River</td>
                                     <td class="px-4 py-2">3</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Blue</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Mermaid Fish Attractor</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">320 / 480 / 640 / 1280; Mermaid Fish Attractor</td>
+                                    <td class="px-4 py-2 text-cozy-wood">320 / 480 / 640 / 1,280 / 2,560</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Mermaid Fish Attractor fish with a Blue shadow; found at River; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Zander</td>
                                     <td class="px-4 py-2 text-cozy-wood">Giantwood River</td>
                                     <td class="px-4 py-2">3</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">230 / 345 / 460</td>
+                                    <td class="px-4 py-2 text-cozy-wood">230 / 345 / 460 / 920 / 1,840</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Giantwood River; active Day, Dawn, Dusk, Night; during Rainbow, Sunny weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Burbot</td>
                                     <td class="px-4 py-2 text-cozy-wood">Tranquil River</td>
                                     <td class="px-4 py-2">4</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Large</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dusk</td>
-                                    <td class="px-4 py-2 text-cozy-wood">230 / 345 / 460</td>
+                                    <td class="px-4 py-2 text-cozy-wood">230 / 345 / 460 / 920 / 1,840</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Large shadow; found at Tranquil River; active Day, Dusk; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Common Carp</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rosy River</td>
                                     <td class="px-4 py-2">4</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny; Day, Dusk</td>
-                                    <td class="px-4 py-2 text-cozy-wood">230 / 345 / 460</td>
+                                    <td class="px-4 py-2 text-cozy-wood">230 / 345 / 460 / 920 / 1,840</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Rosy River; active Day, Dusk; during Rainbow, Sunny weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Red-Bellied Piranha</td>
                                     <td class="px-4 py-2 text-cozy-wood">Giantwood River</td>
                                     <td class="px-4 py-2">4</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">230 / 345 / 460 / 920 / 1,840</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Giantwood River; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Freshwater Blenny</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rosy River</td>
                                     <td class="px-4 py-2">5</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">150 / 225 / 300 / 600</td>
+                                    <td class="px-4 py-2 text-cozy-wood">150 / 225 / 300 / 600 / 1,200</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Rosy River; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Chum Salmon</td>
                                     <td class="px-4 py-2 text-cozy-wood">Tranquil River</td>
                                     <td class="px-4 py-2">6</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">150 / 225 / 300 / 600</td>
+                                    <td class="px-4 py-2 text-cozy-wood">150 / 225 / 300 / 600 / 1,200</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Tranquil River; active Day, Dawn, Dusk, Night; during Rainbow weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Three-Spined Stickleback</td>
                                     <td class="px-4 py-2 text-cozy-wood">Shallow River</td>
                                     <td class="px-4 py-2">7</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">150 / 225 / 300 / 600 / 1,200</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Shallow River; active Day, Dawn, Dusk, Night; during Rainbow, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Huchen</td>
                                     <td class="px-4 py-2 text-cozy-wood">Giantwood River</td>
                                     <td class="px-4 py-2">9</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow; Day, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">570G+</td>
+                                    <td class="px-4 py-2 text-cozy-wood">380 / 570 / 760 / 1,520 / 3,040</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Giantwood River; active Day, Dusk, Night; during Rainbow weather.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -482,255 +552,363 @@
                                     <th class="px-4 py-3 font-bold">Fish</th>
                                     <th class="px-4 py-3 font-bold">Location</th>
                                     <th class="px-4 py-3 font-bold">Level</th>
+                                    <th class="px-4 py-3 font-bold">Shadow</th>
+                                    <th class="px-4 py-3 font-bold">Category</th>
                                     <th class="px-4 py-3 font-bold">Weather / Schedule</th>
-                                    <th class="px-4 py-3 font-bold">Price / Note</th>
+                                    <th class="px-4 py-3 font-bold">Market Value</th>
+                                    <th class="px-4 py-3 font-bold min-w-[260px]">About</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-cozy-peach/20">
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Common Bleak</td>
                                     <td class="px-4 py-2 text-cozy-wood">Lake</td>
                                     <td class="px-4 py-2">1</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
                                     <td class="px-4 py-2 text-cozy-wood">50 / 75 / 100 / 200 / 400</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Lake; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Common Chub</td>
                                     <td class="px-4 py-2 text-cozy-wood">Lake</td>
                                     <td class="px-4 py-2">1</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">75 / 112 / 150</td>
+                                    <td class="px-4 py-2 text-cozy-wood">75 / 112 / 150 / 300 / 600</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Lake; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Common Whitefish</td>
                                     <td class="px-4 py-2 text-cozy-wood">Onsen Mountain Lake</td>
                                     <td class="px-4 py-2">1</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">105 / 157 / 210</td>
+                                    <td class="px-4 py-2 text-cozy-wood">105 / 157 / 210 / 420 / 840</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Onsen Mountain Lake; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Crucian Carp</td>
                                     <td class="px-4 py-2 text-cozy-wood">Suburban Lake</td>
                                     <td class="px-4 py-2">1</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">75 / 112 / 150</td>
+                                    <td class="px-4 py-2 text-cozy-wood">75 / 112 / 150 / 300 / 600</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Suburban Lake; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Schneider</td>
                                     <td class="px-4 py-2 text-cozy-wood">Suburban Lake</td>
                                     <td class="px-4 py-2">1</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">50 / 75 / 100 / 200 / 400</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Suburban Lake; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Tench</td>
                                     <td class="px-4 py-2 text-cozy-wood">Forest Lake</td>
                                     <td class="px-4 py-2">1</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">50 / 75 / 100 / 200 / 400</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Forest Lake; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">European Smelt</td>
                                     <td class="px-4 py-2 text-cozy-wood">Meadow Lake</td>
                                     <td class="px-4 py-2">2</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">100 / 150 / 200</td>
+                                    <td class="px-4 py-2 text-cozy-wood">100 / 150 / 200 / 400 / 800</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Meadow Lake; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Largemouth Bass</td>
                                     <td class="px-4 py-2 text-cozy-wood">Forest Lake</td>
                                     <td class="px-4 py-2">2</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">230 / 345 / 460</td>
+                                    <td class="px-4 py-2 text-cozy-wood">230 / 345 / 460 / 920 / 1,840</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Forest Lake; active Day, Dawn, Dusk, Night; during Rainbow, Sunny weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Stone Loach</td>
                                     <td class="px-4 py-2 text-cozy-wood">Suburban Lake</td>
                                     <td class="px-4 py-2">2</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">100 / 150 / 200 / 400 / 800</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Suburban Lake; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Edible Frog</td>
                                     <td class="px-4 py-2 text-cozy-wood">Lake</td>
                                     <td class="px-4 py-2">3</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Blue</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Mermaid Fish Attractor</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">320 / 480 / 640 / 1280; Mermaid Fish Attractor</td>
+                                    <td class="px-4 py-2 text-cozy-wood">320 / 480 / 640 / 1,280 / 2,560</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Mermaid Fish Attractor fish with a Blue shadow; found at Lake; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">European Crayfish</td>
                                     <td class="px-4 py-2 text-cozy-wood">Forest Lake</td>
                                     <td class="px-4 py-2">3</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">100 / 150 / 200</td>
+                                    <td class="px-4 py-2 text-cozy-wood">100 / 150 / 200 / 400 / 800</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Forest Lake; active Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Mud Sunfish</td>
                                     <td class="px-4 py-2 text-cozy-wood">Forest Lake</td>
                                     <td class="px-4 py-2">3</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">100 / 150 / 200 / 400 / 800</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Forest Lake; active Day, Dawn, Dusk; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Ruffe</td>
                                     <td class="px-4 py-2 text-cozy-wood">Onsen Mountain Lake</td>
                                     <td class="px-4 py-2">3</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dusk</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">100 / 150 / 200 / 400 / 800</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Onsen Mountain Lake; active Day, Dusk; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium"><a href="/database/fish/butterfly-koi/" class="text-cozy-coral hover:underline">Butterfly Koi</a></td>
                                     <td class="px-4 py-2 text-cozy-wood">Meadow Lake</td>
                                     <td class="px-4 py-2">4</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Large</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">230 / 345 / 460</td>
+                                    <td class="px-4 py-2 text-cozy-wood">320 / 480 / 640 / 1,280 / 2,560</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Large shadow; found at Meadow Lake; active Day, Dawn, Dusk, Night; during Rainbow, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Mussel</td>
                                     <td class="px-4 py-2 text-cozy-wood">Suburban Lake</td>
                                     <td class="px-4 py-2">4</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">100 / 150 / 200 / 400 / 800</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Suburban Lake; active Day, Dawn, Dusk, Night; during Rainbow, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">River Crab</td>
                                     <td class="px-4 py-2 text-cozy-wood">Suburban Lake</td>
                                     <td class="px-4 py-2">4</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">100 / 150 / 200 / 400 / 800</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Suburban Lake; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Tadpole</td>
                                     <td class="px-4 py-2 text-cozy-wood">Onsen Mountain Lake</td>
                                     <td class="px-4 py-2">4</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">100 / 150 / 200</td>
+                                    <td class="px-4 py-2 text-cozy-wood">100 / 150 / 200 / 400 / 800</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Onsen Mountain Lake; active Day, Dawn, Dusk, Night; during Rainbow, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Common Rudd</td>
                                     <td class="px-4 py-2 text-cozy-wood">Suburban Lake</td>
                                     <td class="px-4 py-2">5</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">150 / 225 / 300 / 600</td>
+                                    <td class="px-4 py-2 text-cozy-wood">150 / 225 / 300 / 600 / 1,200</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Suburban Lake; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Trout</td>
                                     <td class="px-4 py-2 text-cozy-wood">Meadow Lake</td>
                                     <td class="px-4 py-2">5</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny; Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">230 / 345 / 460</td>
+                                    <td class="px-4 py-2 text-cozy-wood">230 / 345 / 460 / 920 / 1,840</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Meadow Lake; active Dusk, Night; during Rainbow, Sunny weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Grayling</td>
                                     <td class="px-4 py-2 text-cozy-wood">Suburban Lake</td>
                                     <td class="px-4 py-2">6</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">230 / 345 / 460 / 920 / 1,840</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Suburban Lake; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Large Pearl Mussel</td>
                                     <td class="px-4 py-2 text-cozy-wood">Forest Lake</td>
                                     <td class="px-4 py-2">6</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">380 / 570 / 760 / 1,520 / 3,040</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Forest Lake; active Day, Dawn, Dusk, Night; during Rainbow weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Mediterranean Killifish</td>
                                     <td class="px-4 py-2 text-cozy-wood">Suburban Lake</td>
                                     <td class="px-4 py-2">7</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny; Day, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">150 / 225 / 300 / 600 / 1,200</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Suburban Lake; active Day, Dusk, Night; during Rainbow, Sunny weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Mottled Sculpin</td>
                                     <td class="px-4 py-2 text-cozy-wood">Onsen Mountain Lake</td>
                                     <td class="px-4 py-2">7</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Rainy; Day, Dawn, Dusk</td>
-                                    <td class="px-4 py-2 text-cozy-wood">150 / 225 / 300 / 600</td>
+                                    <td class="px-4 py-2 text-cozy-wood">150 / 225 / 300 / 600 / 1,200</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Onsen Mountain Lake; active Day, Dawn, Dusk; during Rainbow, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Blue European Crayfish</td>
                                     <td class="px-4 py-2 text-cozy-wood">Forest Lake</td>
                                     <td class="px-4 py-2">8</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">250 / 375 / 500 / 1,000 / 2,000</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Forest Lake; active Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium"><a href="/database/fish/european-mudminnow/" class="text-cozy-coral hover:underline">European Mudminnow</a></td>
                                     <td class="px-4 py-2 text-cozy-wood">Suburban Lake</td>
                                     <td class="px-4 py-2">8</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny; Dawn, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">250 / 375 / 500 / 1,000 / 2,000</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Suburban Lake; active Dawn, Night; during Rainbow, Sunny weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Goldfish</td>
                                     <td class="px-4 py-2 text-cozy-wood">Meadow Lake</td>
                                     <td class="px-4 py-2">8</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Rainy; Day, Dawn, Dusk</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">250 / 375 / 500 / 1,000 / 2,000</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Meadow Lake; active Day, Dawn, Dusk; during Rainbow, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Northern Pike</td>
                                     <td class="px-4 py-2 text-cozy-wood">Suburban Lake</td>
                                     <td class="px-4 py-2">9</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Rainy; Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">610 / 915 / 1,220 / 2,440 / 4,880</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Suburban Lake; active Dusk, Night; during Rainbow, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Pumpkinseed</td>
                                     <td class="px-4 py-2 text-cozy-wood">Onsen Mountain Lake</td>
                                     <td class="px-4 py-2">9</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny; Day, Dawn, Dusk</td>
-                                    <td class="px-4 py-2 text-cozy-wood">250+</td>
+                                    <td class="px-4 py-2 text-cozy-wood">250 / 375 / 500 / 1,000 / 2,000</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Onsen Mountain Lake; active Day, Dawn, Dusk; during Rainbow, Sunny weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Arctic Char</td>
                                     <td class="px-4 py-2 text-cozy-wood">Forest Lake</td>
                                     <td class="px-4 py-2">10</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Rainy; Day, Dusk</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Rare</td>
+                                    <td class="px-4 py-2 text-cozy-wood">610 / 915 / 1,220 / 2,440 / 4,880</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Forest Lake; active Day, Dusk; during Rainbow, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Bluegill</td>
                                     <td class="px-4 py-2 text-cozy-wood">Onsen Mountain Lake</td>
                                     <td class="px-4 py-2">10</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny; Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Rare</td>
+                                    <td class="px-4 py-2 text-cozy-wood">395 / 592 / 790 / 1,580 / 3,160</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Onsen Mountain Lake; active Dusk, Night; during Rainbow, Sunny weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium"><a href="/database/fish/wels-catfish/" class="text-cozy-coral hover:underline">Wels Catfish</a></td>
                                     <td class="px-4 py-2 text-cozy-wood">Meadow Lake</td>
                                     <td class="px-4 py-2">10</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny; Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Rare</td>
+                                    <td class="px-4 py-2 text-cozy-wood">610 / 915 / 1,220 / 2,440 / 4,880</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Meadow Lake; active Dusk, Night; during Rainbow, Sunny weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Asian Arowana</td>
                                     <td class="px-4 py-2 text-cozy-wood">Meadow Lake</td>
                                     <td class="px-4 py-2">11</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow; Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Late-game fish</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Meadow Lake; active Dawn, Dusk, Night; during Rainbow weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Lionhead</td>
                                     <td class="px-4 py-2 text-cozy-wood">Onsen Mountain Lake</td>
                                     <td class="px-4 py-2">11</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Late-game fish</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Onsen Mountain Lake; active Day, Dawn, Dusk, Night; during Rainbow weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Angelfish</td>
                                     <td class="px-4 py-2 text-cozy-wood">Suburban Lake</td>
                                     <td class="px-4 py-2">12</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow; Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Late-game fish</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Suburban Lake; active Dusk, Night; during Rainbow weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Pink Betta</td>
                                     <td class="px-4 py-2 text-cozy-wood">Forest Lake</td>
                                     <td class="px-4 py-2">12</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Rainy; Day, Dusk</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Late-game fish</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Forest Lake; active Day, Dusk; during Rainbow, Rainy weather.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -748,255 +926,363 @@
                                     <th class="px-4 py-3 font-bold">Fish</th>
                                     <th class="px-4 py-3 font-bold">Location</th>
                                     <th class="px-4 py-3 font-bold">Level</th>
+                                    <th class="px-4 py-3 font-bold">Shadow</th>
+                                    <th class="px-4 py-3 font-bold">Category</th>
                                     <th class="px-4 py-3 font-bold">Weather / Schedule</th>
-                                    <th class="px-4 py-3 font-bold">Price / Note</th>
+                                    <th class="px-4 py-3 font-bold">Market Value</th>
+                                    <th class="px-4 py-3 font-bold min-w-[260px]">About</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-cozy-peach/20">
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Beltfish</td>
                                     <td class="px-4 py-2 text-cozy-wood">Zephyr Sea</td>
                                     <td class="px-4 py-2">1</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Large</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">105 / 157 / 210</td>
+                                    <td class="px-4 py-2 text-cozy-wood">105 / 157 / 210 / 420 / 840</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Large shadow; found at Zephyr Sea; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Common Prawn</td>
                                     <td class="px-4 py-2 text-cozy-wood">East Sea</td>
                                     <td class="px-4 py-2">1</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">50 / 75 / 100 / 200 / 400</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at East Sea; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium"><a href="/database/fish/sardine/" class="text-cozy-coral hover:underline">Sardine</a></td>
                                     <td class="px-4 py-2 text-cozy-wood">Ocean</td>
                                     <td class="px-4 py-2">1</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
                                     <td class="px-4 py-2 text-cozy-wood">50 / 75 / 100 / 200 / 400</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Ocean; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Scad</td>
                                     <td class="px-4 py-2 text-cozy-wood">Whale Sea</td>
                                     <td class="px-4 py-2">1</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">50 / 75 / 100 / 200 / 400</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Whale Sea; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Sea Bass</td>
                                     <td class="px-4 py-2 text-cozy-wood">Ocean</td>
                                     <td class="px-4 py-2">1</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">75 / 112 / 150</td>
+                                    <td class="px-4 py-2 text-cozy-wood">50 / 75 / 100 / 200 / 400</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Ocean; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Sea Stickleback</td>
                                     <td class="px-4 py-2 text-cozy-wood">Old Sea</td>
                                     <td class="px-4 py-2">1</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">50 / 75 / 100 / 200 / 400</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Old Sea; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Skipjack Tuna</td>
                                     <td class="px-4 py-2 text-cozy-wood">Ocean</td>
                                     <td class="px-4 py-2">1</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Large</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">210 / 315 / 420</td>
+                                    <td class="px-4 py-2 text-cozy-wood">210 / 315 / 420 / 840 / 1,680</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Large shadow; found at Ocean; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Atlantic Pygmy Octopus</td>
                                     <td class="px-4 py-2 text-cozy-wood">Zephyr Sea</td>
                                     <td class="px-4 py-2">2</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">150 / 225 / 300 / 600</td>
+                                    <td class="px-4 py-2 text-cozy-wood">150 / 225 / 300 / 600 / 1,200</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Zephyr Sea; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">False Scad</td>
                                     <td class="px-4 py-2 text-cozy-wood">Zephyr Sea</td>
                                     <td class="px-4 py-2">2</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">155 / 310 / 620 / 1,240</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Zephyr Sea; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium"><a href="/database/fish/seahorse/" class="text-cozy-coral hover:underline">Seahorse</a></td>
                                     <td class="px-4 py-2 text-cozy-wood">Whale Sea</td>
                                     <td class="px-4 py-2">2</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">100 / 150 / 200</td>
+                                    <td class="px-4 py-2 text-cozy-wood">100 / 150 / 200 / 400 / 800</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Whale Sea; active Day, Dawn, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Atlantic Salmon</td>
                                     <td class="px-4 py-2 text-cozy-wood">Whale Sea</td>
                                     <td class="px-4 py-2">3</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">155 / 232 / 310 / 620</td>
+                                    <td class="px-4 py-2 text-cozy-wood">155 / 232 / 310 / 620 / 1,240</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Whale Sea; active Day, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Clownfish</td>
                                     <td class="px-4 py-2 text-cozy-wood">Old Sea</td>
                                     <td class="px-4 py-2">3</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">100 / 150 / 200 / 400 / 800</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Old Sea; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Hermit Crab</td>
                                     <td class="px-4 py-2 text-cozy-wood">East Sea</td>
                                     <td class="px-4 py-2">3</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">100 / 150 / 200 / 400 / 800</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at East Sea; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">European Plaice</td>
                                     <td class="px-4 py-2 text-cozy-wood">Old Sea</td>
                                     <td class="px-4 py-2">4</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">230 / 345 / 460 / 920 / 1,840</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Old Sea; active Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Goby</td>
                                     <td class="px-4 py-2 text-cozy-wood">East Sea</td>
                                     <td class="px-4 py-2">4</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">150 / 225 / 300 / 600 / 1,200</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at East Sea; active Day, Dawn; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Rabbit Fish</td>
                                     <td class="px-4 py-2 text-cozy-wood">Ocean</td>
                                     <td class="px-4 py-2">4</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Blue</td>
                                     <td class="px-4 py-2 text-cozy-wood">Mermaid Fish Attractor</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                    <td class="px-4 py-2 text-cozy-wood">320 / 480 / 640 / 1,280 / 2,560</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Mermaid Fish Attractor fish with a Blue shadow; found at Ocean; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Atlantic Mackerel</td>
                                     <td class="px-4 py-2 text-cozy-wood">Whale Sea</td>
                                     <td class="px-4 py-2">5</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny; Day, Dusk</td>
-                                    <td class="px-4 py-2 text-cozy-wood">150 / 225 / 300 / 600</td>
+                                    <td class="px-4 py-2 text-cozy-wood">150 / 225 / 300 / 600 / 1,200</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Whale Sea; active Day, Dusk; during Rainbow, Sunny weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">European Lobster</td>
                                     <td class="px-4 py-2 text-cozy-wood">Zephyr Sea</td>
                                     <td class="px-4 py-2">5</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">230 / 345 / 460</td>
+                                    <td class="px-4 py-2 text-cozy-wood">230 / 345 / 460 / 920 / 1,840</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Zephyr Sea; active Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Puffer Fish</td>
                                     <td class="px-4 py-2 text-cozy-wood">Old Sea</td>
                                     <td class="px-4 py-2">6</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dusk</td>
-                                    <td class="px-4 py-2 text-cozy-wood">230 / 345 / 460</td>
+                                    <td class="px-4 py-2 text-cozy-wood">230 / 345 / 460 / 920 / 1,840</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Old Sea; active Day, Dusk; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Tub Gurnard</td>
                                     <td class="px-4 py-2 text-cozy-wood">East Sea</td>
                                     <td class="px-4 py-2">6</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">380 / 570 / 760 / 1,520 / 3,040</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at East Sea; active Day, Dawn, Dusk, Night; during Rainbow weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Blackspot Seabream</td>
                                     <td class="px-4 py-2 text-cozy-wood">Zephyr Sea</td>
                                     <td class="px-4 py-2">7</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Rainy; Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">230 / 345 / 460</td>
+                                    <td class="px-4 py-2 text-cozy-wood">230 / 345 / 460 / 920 / 1,840</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Zephyr Sea; active Dusk, Night; during Rainbow, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">European Eel</td>
                                     <td class="px-4 py-2 text-cozy-wood">Old Sea</td>
                                     <td class="px-4 py-2">7</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow; Day, Dawn, Dusk</td>
-                                    <td class="px-4 py-2 text-cozy-wood">380</td>
+                                    <td class="px-4 py-2 text-cozy-wood">380 / 570 / 760 / 1,520 / 3,040</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Old Sea; active Day, Dawn, Dusk; during Rainbow weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Haddock</td>
                                     <td class="px-4 py-2 text-cozy-wood">East Sea</td>
                                     <td class="px-4 py-2">8</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny; Day, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">230 / 345 / 460 / 920 / 1,840</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at East Sea; active Day, Dusk, Night; during Rainbow, Sunny weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">King Crab</td>
                                     <td class="px-4 py-2 text-cozy-wood">Whale Sea</td>
                                     <td class="px-4 py-2">8</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Large</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow; Day, Dawn, Dusk</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood">535 / 802 / 1,070 / 2,140 / 4,280</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Large shadow; found at Whale Sea; active Day, Dawn, Dusk; during Rainbow weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Bluefin Tuna</td>
                                     <td class="px-4 py-2 text-cozy-wood">Zephyr Sea</td>
                                     <td class="px-4 py-2">9</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Large</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow; Day, Dawn</td>
-                                    <td class="px-4 py-2 text-cozy-wood">1,200G+</td>
+                                    <td class="px-4 py-2 text-cozy-wood">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Large shadow; found at Zephyr Sea; active Day, Dawn; during Rainbow weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Ocean Sunfish</td>
                                     <td class="px-4 py-2 text-cozy-wood">East Sea</td>
                                     <td class="px-4 py-2">9</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Large</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Dawn, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">850 / 1,275</td>
+                                    <td class="px-4 py-2 text-cozy-wood">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Large shadow; found at East Sea; active Dawn, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium"><a href="/database/fish/smooth-hammerhead/" class="text-cozy-coral hover:underline">Smooth Hammerhead</a></td>
                                     <td class="px-4 py-2 text-cozy-wood">Old Sea</td>
                                     <td class="px-4 py-2">10</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Large</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow; Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Rare</td>
+                                    <td class="px-4 py-2 text-cozy-wood">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Large shadow; found at Old Sea; active Dusk, Night; during Rainbow weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Swordfish</td>
                                     <td class="px-4 py-2 text-cozy-wood">Whale Sea</td>
                                     <td class="px-4 py-2">10</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Large</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow; Day, Dawn</td>
-                                    <td class="px-4 py-2 text-cozy-wood">1,500G+</td>
+                                    <td class="px-4 py-2 text-cozy-wood">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Large shadow; found at Whale Sea; active Day, Dawn; during Rainbow weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Blackspot Sergeant</td>
                                     <td class="px-4 py-2 text-cozy-wood">Zephyr Sea</td>
                                     <td class="px-4 py-2">11</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny; Day, Dusk</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Late-game fish</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Zephyr Sea; active Day, Dusk; during Rainbow, Sunny weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Green Sea Turtle</td>
                                     <td class="px-4 py-2 text-cozy-wood">Whale Sea</td>
                                     <td class="px-4 py-2">12</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Large</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow; Day, Dusk</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Late-game fish</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Large shadow; found at Whale Sea; active Day, Dusk; during Rainbow weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Mahi-Mahi</td>
                                     <td class="px-4 py-2 text-cozy-wood">Old Sea</td>
                                     <td class="px-4 py-2">12</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Large</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow; Day, Dawn</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Late-game fish</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Large shadow; found at Old Sea; active Day, Dawn; during Rainbow weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Lionfish</td>
                                     <td class="px-4 py-2 text-cozy-wood">Whale Sea</td>
                                     <td class="px-4 py-2">13</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Rainy; Dawn, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Late-game fish</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Whale Sea; active Dawn, Night; during Rainbow, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">White-Faced Surgeonfish</td>
                                     <td class="px-4 py-2 text-cozy-wood">Old Sea</td>
                                     <td class="px-4 py-2">13</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Rainy; Day, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Late-game fish</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at Old Sea; active Day, Dusk, Night; during Rainbow, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Azure Demoiselle</td>
                                     <td class="px-4 py-2 text-cozy-wood">Zephyr Sea</td>
                                     <td class="px-4 py-2">14</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny; Day, Dusk</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Late-game fish</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Small shadow; found at Zephyr Sea; active Day, Dusk; during Rainbow, Sunny weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Blue-and-Yellow Wrasse</td>
                                     <td class="px-4 py-2 text-cozy-wood">East Sea</td>
                                     <td class="px-4 py-2">14</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Common</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny; Day, Dawn, Dusk</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Late-game fish</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Common fish with a Medium shadow; found at East Sea; active Day, Dawn, Dusk; during Rainbow, Sunny weather.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1014,129 +1300,183 @@
                                     <th class="px-4 py-3 font-bold">Fish</th>
                                     <th class="px-4 py-3 font-bold">Location</th>
                                     <th class="px-4 py-3 font-bold">Level</th>
+                                    <th class="px-4 py-3 font-bold">Shadow</th>
+                                    <th class="px-4 py-3 font-bold">Category</th>
                                     <th class="px-4 py-3 font-bold">Weather / Schedule</th>
-                                    <th class="px-4 py-3 font-bold">Price / Note</th>
+                                    <th class="px-4 py-3 font-bold">Market Value</th>
+                                    <th class="px-4 py-3 font-bold min-w-[260px]">About</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-cozy-peach/20">
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Frostspore King Crab</td>
                                     <td class="px-4 py-2 text-cozy-wood">[EVENT] Frostspore Fish, Old Sea</td>
                                     <td class="px-4 py-2">1</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Large</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Winter frost season</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Winter Frost event</td>
+                                    <td class="px-4 py-2 text-cozy-wood">215 / 322 / 430 / 860 / 1,720</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Winter frost season fish with a Large shadow; found at [EVENT] Frostspore Fish, Old Sea; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Frostspore Ocean Sunfish</td>
                                     <td class="px-4 py-2 text-cozy-wood">[EVENT] Frostspore Fish, Old Sea</td>
                                     <td class="px-4 py-2">1</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Large</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Winter frost season</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Winter Frost event</td>
+                                    <td class="px-4 py-2 text-cozy-wood">215 / 322 / 430 / 860 / 1,720</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Winter frost season fish with a Large shadow; found at [EVENT] Frostspore Fish, Old Sea; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Frostspore Puffer Fish</td>
                                     <td class="px-4 py-2 text-cozy-wood">[EVENT] Frostspore Fish, Old Sea</td>
                                     <td class="px-4 py-2">1</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Winter frost season</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Winter Frost event</td>
+                                    <td class="px-4 py-2 text-cozy-wood">155 / 232 / 310 / 620 / 1,240</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Winter frost season fish with a Medium shadow; found at [EVENT] Frostspore Fish, Old Sea; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Frostspore Seahorse</td>
                                     <td class="px-4 py-2 text-cozy-wood">[EVENT] Frostspore Fish, Old Sea</td>
                                     <td class="px-4 py-2">1</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Winter frost season</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Winter Frost event</td>
+                                    <td class="px-4 py-2 text-cozy-wood">100 / 150 / 200 / 400 / 800</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Winter frost season fish with a Small shadow; found at [EVENT] Frostspore Fish, Old Sea; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Frostspore Whale Shark</td>
                                     <td class="px-4 py-2 text-cozy-wood">[EVENT] Frostspore Fish</td>
                                     <td class="px-4 py-2">1</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Large</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Winter frost season</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Winter Frost event</td>
+                                    <td class="px-4 py-2 text-cozy-wood">320 / 480 / 640 / 1,280 / 2,560</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Winter frost season fish with a Large shadow; found at [EVENT] Frostspore Fish; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Striped Red Mullet</td>
                                     <td class="px-4 py-2 text-cozy-wood">[EVENT] Sea Fishing</td>
                                     <td class="px-4 py-2">1</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Golden</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Sea Fishing</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">320 / 480 / 640 / 1280</td>
+                                    <td class="px-4 py-2 text-cozy-wood">320 / 480 / 640 / 1,280 / 2,560</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Sea Fishing fish with a Golden shadow; found at [EVENT] Sea Fishing; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Anglerfish</td>
                                     <td class="px-4 py-2 text-cozy-wood">[EVENT] Sea Fishing</td>
                                     <td class="px-4 py-2">2</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Golden</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Sea Fishing</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">320 / 480 / 640 / 1280</td>
+                                    <td class="px-4 py-2 text-cozy-wood">320 / 480 / 640 / 1,280 / 2,560</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Sea Fishing fish with a Golden shadow; found at [EVENT] Sea Fishing; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Common Octopus</td>
                                     <td class="px-4 py-2 text-cozy-wood">[EVENT] Sea Fishing</td>
                                     <td class="px-4 py-2">2</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Sea Fishing</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">320 / 480 / 640 / 1280</td>
+                                    <td class="px-4 py-2 text-cozy-wood">320 / 480 / 640 / 1,280 / 2,560</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Sea Fishing fish with a Medium shadow; found at [EVENT] Sea Fishing; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Turbot</td>
                                     <td class="px-4 py-2 text-cozy-wood">[EVENT] Sea Fishing</td>
                                     <td class="px-4 py-2">2</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Medium</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Sea Fishing</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">320 / 480 / 640 / 1280</td>
+                                    <td class="px-4 py-2 text-cozy-wood">320 / 480 / 640 / 1,280 / 2,560</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Sea Fishing fish with a Medium shadow; found at [EVENT] Sea Fishing; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">European Flying Squid</td>
                                     <td class="px-4 py-2 text-cozy-wood">[EVENT] Sea Fishing</td>
                                     <td class="px-4 py-2">5</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Golden</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Sea Fishing</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">320 / 480 / 640 / 1280</td>
+                                    <td class="px-4 py-2 text-cozy-wood">320 / 480 / 640 / 1,280 / 2,560</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Sea Fishing fish with a Golden shadow; found at [EVENT] Sea Fishing; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Nursehound</td>
                                     <td class="px-4 py-2 text-cozy-wood">[EVENT] Sea Fishing</td>
                                     <td class="px-4 py-2">6</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Large</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Sea Fishing</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">535 / 4,280</td>
+                                    <td class="px-4 py-2 text-cozy-wood">535 / 802 / 1,070 / 2,140 / 4,280</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Sea Fishing fish with a Large shadow; found at [EVENT] Sea Fishing; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Giant Oarfish</td>
                                     <td class="px-4 py-2 text-cozy-wood">[EVENT] Sea Fishing</td>
                                     <td class="px-4 py-2">7</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Golden</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Sea Fishing</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn</td>
-                                    <td class="px-4 py-2 text-cozy-wood">535 / 4,280</td>
+                                    <td class="px-4 py-2 text-cozy-wood">535 / 1,070 / 2,140 / 4,280</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Sea Fishing fish with a Golden shadow; found at [EVENT] Sea Fishing; active Day, Dawn; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Golden King Crab</td>
                                     <td class="px-4 py-2 text-cozy-wood">[EVENT] Sea Fishing</td>
                                     <td class="px-4 py-2">8</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Golden</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Sea Fishing</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow; Day, Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Sea Fishing event</td>
+                                    <td class="px-4 py-2 text-cozy-wood">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Sea Fishing fish with a Golden shadow; found at [EVENT] Sea Fishing; active Day, Dawn, Dusk, Night; during Rainbow weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Moonfish</td>
                                     <td class="px-4 py-2 text-cozy-wood">[EVENT] Sea Fishing</td>
                                     <td class="px-4 py-2">9</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Golden</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Sea Fishing</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Sea Fishing event</td>
+                                    <td class="px-4 py-2 text-cozy-wood">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Sea Fishing fish with a Golden shadow; found at [EVENT] Sea Fishing; active Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Shortfin Mako Shark</td>
                                     <td class="px-4 py-2 text-cozy-wood">[EVENT] Sea Fishing</td>
                                     <td class="px-4 py-2">10</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Golden</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Sea Fishing</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow; Day, Dawn</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Sea Fishing event</td>
+                                    <td class="px-4 py-2 text-cozy-wood">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Sea Fishing fish with a Golden shadow; found at [EVENT] Sea Fishing; active Day, Dawn; during Rainbow weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Whale Shark</td>
                                     <td class="px-4 py-2 text-cozy-wood">[EVENT] Sea Fishing</td>
                                     <td class="px-4 py-2">11</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Golden</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Sea Fishing</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny; Dawn, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Sea Fishing event</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Sea Fishing fish with a Golden shadow; found at [EVENT] Sea Fishing; active Dawn, Dusk, Night; during Rainbow, Sunny weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Moon Jelly</td>
                                     <td class="px-4 py-2 text-cozy-wood">[EVENT] Sea Fishing</td>
                                     <td class="px-4 py-2">12</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Golden</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Sea Fishing</td>
                                     <td class="px-4 py-2 text-cozy-wood">Rainbow, Rainy; Day, Dusk, Night</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Sea Fishing event</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Check in game</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Sea Fishing fish with a Golden shadow; found at [EVENT] Sea Fishing; active Day, Dusk, Night; during Rainbow, Rainy weather.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1154,80 +1494,113 @@
                                     <th class="px-4 py-3 font-bold">Fish</th>
                                     <th class="px-4 py-3 font-bold">Location</th>
                                     <th class="px-4 py-3 font-bold">Level</th>
+                                    <th class="px-4 py-3 font-bold">Shadow</th>
+                                    <th class="px-4 py-3 font-bold">Category</th>
                                     <th class="px-4 py-3 font-bold">Weather / Schedule</th>
-                                    <th class="px-4 py-3 font-bold">Price / Note</th>
+                                    <th class="px-4 py-3 font-bold">Market Value</th>
+                                    <th class="px-4 py-3 font-bold min-w-[260px]">About</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-cozy-peach/20">
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Blue Brick Clownfish</td>
                                     <td class="px-4 py-2 text-cozy-wood">East Sea</td>
                                     <td class="px-4 py-2">1</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
                                     <td class="px-4 py-2 text-cozy-wood">Modular Streets</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                    <td class="px-4 py-2 text-cozy-wood">100 / 150 / 200 / 400 / 800</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Modular Streets fish with a Small shadow; found at East Sea; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Colorful Brick Clownfish</td>
                                     <td class="px-4 py-2 text-cozy-wood">Special Brick Fish Event</td>
                                     <td class="px-4 py-2">1</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
                                     <td class="px-4 py-2 text-cozy-wood">Modular Streets</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                    <td class="px-4 py-2 text-cozy-wood">150 / 225 / 300 / 600 / 1,200</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Modular Streets fish with a Small shadow; found at Special Brick Fish Event; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Director Common Octopus w/ Cinnamon Hat</td>
                                     <td class="px-4 py-2 text-cozy-wood">Whale Sea</td>
                                     <td class="px-4 py-2">1</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Large</td>
                                     <td class="px-4 py-2 text-cozy-wood">Dreamlight Cinematics</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                    <td class="px-4 py-2 text-cozy-wood">215 / 322 / 430 / 860 / 1,720</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Dreamlight Cinematics fish with a Large shadow; found at Whale Sea; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Director Common Octopus w/ Patterned Hat</td>
                                     <td class="px-4 py-2 text-cozy-wood">[EVENT] Octo Entertainment</td>
                                     <td class="px-4 py-2">1</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Large</td>
                                     <td class="px-4 py-2 text-cozy-wood">Dreamlight Cinematics</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                    <td class="px-4 py-2 text-cozy-wood">320 / 480 / 640 / 1,280 / 2,560</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Dreamlight Cinematics fish with a Large shadow; found at [EVENT] Octo Entertainment; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Director Pygmy Octopus w/ Brown Hat</td>
                                     <td class="px-4 py-2 text-cozy-wood">Whale Sea</td>
                                     <td class="px-4 py-2">1</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
                                     <td class="px-4 py-2 text-cozy-wood">Dreamlight Cinematics</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                    <td class="px-4 py-2 text-cozy-wood">100 / 150 / 200 / 400 / 800</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Dreamlight Cinematics fish with a Small shadow; found at Whale Sea; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Director Pygmy Octopus w/ Cyan Hat</td>
                                     <td class="px-4 py-2 text-cozy-wood">Whale Sea</td>
                                     <td class="px-4 py-2">1</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
                                     <td class="px-4 py-2 text-cozy-wood">Dreamlight Cinematics</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                    <td class="px-4 py-2 text-cozy-wood">100 / 150 / 200 / 400 / 800</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Dreamlight Cinematics fish with a Small shadow; found at Whale Sea; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Director Pygmy Octopus w/ Navy Hat</td>
                                     <td class="px-4 py-2 text-cozy-wood">Whale Sea</td>
                                     <td class="px-4 py-2">1</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
                                     <td class="px-4 py-2 text-cozy-wood">Dreamlight Cinematics</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                    <td class="px-4 py-2 text-cozy-wood">100 / 150 / 200 / 400 / 800</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Dreamlight Cinematics fish with a Small shadow; found at Whale Sea; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Green Brick Clownfish</td>
                                     <td class="px-4 py-2 text-cozy-wood">East Sea</td>
                                     <td class="px-4 py-2">1</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
                                     <td class="px-4 py-2 text-cozy-wood">Modular Streets</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                    <td class="px-4 py-2 text-cozy-wood">100 / 150 / 200 / 400 / 800</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Modular Streets fish with a Small shadow; found at East Sea; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Purple Brick Clownfish</td>
                                     <td class="px-4 py-2 text-cozy-wood">East Sea</td>
                                     <td class="px-4 py-2">1</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
                                     <td class="px-4 py-2 text-cozy-wood">Modular Streets</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                    <td class="px-4 py-2 text-cozy-wood">100 / 150 / 200 / 400 / 800</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Modular Streets fish with a Small shadow; found at East Sea; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
-                                <tr>
+                                                                <tr>
                                     <td class="px-4 py-2 font-medium">Red Brick Clownfish</td>
                                     <td class="px-4 py-2 text-cozy-wood">East Sea</td>
                                     <td class="px-4 py-2">1</td>
-                                    <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Small</td>
                                     <td class="px-4 py-2 text-cozy-wood">Modular Streets</td>
+                                    <td class="px-4 py-2 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                    <td class="px-4 py-2 text-cozy-wood">100 / 150 / 200 / 400 / 800</td>
+                                    <td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-[260px]">Modular Streets fish with a Small shadow; found at East Sea; active Day, Dawn, Dusk, Night; during Rainbow, Sunny, Rainy weather.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1339,6 +1712,14 @@
             return level >= parts[0] && level <= parts[1];
         }
 
+
+        function getCellTextByHeader(row, headerName) {
+            const table = row.closest('table');
+            if (!table) return '';
+            const headers = Array.from(table.querySelectorAll('thead th')).map(th => th.textContent.trim().toLowerCase());
+            const index = headers.findIndex(text => text.includes(headerName));
+            return index >= 0 && row.cells[index] ? row.cells[index].textContent.trim().toLowerCase() : '';
+        }
         function weatherMatches(text, weather) {
             if (weather === 'all') return true;
             const value = text.toLowerCase();
@@ -1391,6 +1772,8 @@
             const category = document.getElementById('fish-category').value;
             const weather = document.getElementById('fish-weather').value;
             const levelRange = document.getElementById('fish-level').value;
+            const shadow = document.getElementById('fish-shadow').value;
+            const kind = document.getElementById('fish-kind').value;
             const rows = document.querySelectorAll('table.fish-table tbody tr');
             let visible = 0;
 
@@ -1399,10 +1782,14 @@
                 const section = row.closest('section');
                 const sectionId = section ? section.id : '';
                 const level = getTableLevel(row);
+                const rowShadow = getCellTextByHeader(row, 'shadow');
+                const rowKind = getCellTextByHeader(row, 'category');
                 const show = (!query || text.includes(query)) &&
                     (category === 'all' || sectionId === category) &&
                     weatherMatches(text, weather) &&
-                    levelMatches(level, levelRange);
+                    levelMatches(level, levelRange) &&
+                    (shadow === 'all' || rowShadow.includes(shadow)) &&
+                    (kind === 'all' || rowKind.includes(kind));
                 row.style.display = show ? '' : 'none';
                 if (show) visible += 1;
             });
@@ -1415,6 +1802,8 @@
             document.getElementById('fish-category').value = 'all';
             document.getElementById('fish-weather').value = 'all';
             document.getElementById('fish-level').value = 'all';
+            document.getElementById('fish-shadow').value = 'all';
+            document.getElementById('fish-kind').value = 'all';
             filterFish();
         }
 
