@@ -2,8 +2,7 @@
 <html lang="en">
 
 <head>
-    
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,7 +14,6 @@
         gtag('js', new Date());
         gtag('config', 'G-FRJ91G3VRR');
     </script>
-
 
     <!-- Meta Tags -->
     <title>Heartopia Fish Database: 112 Fish, Locations, Prices & Sell Guide</title>
@@ -86,6 +84,39 @@
 
         .fish-table tr:hover {
             background-color: rgba(149, 200, 216, 0.1);
+        }
+
+        .fish-name-with-image {
+            min-width: 220px;
+        }
+
+        .fish-name-wrap {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .fish-thumb {
+            width: 40px;
+            height: 40px;
+            flex: 0 0 40px;
+            object-fit: contain;
+            border-radius: 0.75rem;
+            background: rgba(149, 200, 216, 0.12);
+            border: 1px solid rgba(149, 200, 216, 0.25);
+            padding: 0.25rem;
+        }
+
+        @media (max-width: 640px) {
+            .fish-name-with-image {
+                min-width: 190px;
+            }
+
+            .fish-thumb {
+                width: 36px;
+                height: 36px;
+                flex-basis: 36px;
+            }
         }
     </style>
     <!-- NitroPay Global Header -->
@@ -201,7 +232,6 @@
             </ul>
         </div>
 
-
         <!-- Search & Filters -->
         <section id="search-filter" class="bg-white rounded-xl p-5 mb-8 border border-cozy-peach/30 shadow-sm">
             <div class="flex flex-col gap-4">
@@ -302,7 +332,6 @@
                 </div>
             </section>
         <div id="heartopia_in_content" class="heartopia-ad-slot max-w-6xl mx-auto px-4 my-6 text-center"></div>
-
 
             <!-- RARE & LEGENDARY -->
             <section id="rare" class="scroll-mt-20">
@@ -1207,7 +1236,6 @@
             </section>
         <div id="heartopia_in_content_2" class="heartopia-ad-slot max-w-6xl mx-auto px-4 my-6 text-center"></div>
 
-
             <!-- TIPS -->
             <section id="tips" class="scroll-mt-20">
                 <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
@@ -1319,7 +1347,45 @@
             if (weather === 'rainbow') return value.includes('rainbow') || value.includes('🌈');
             return true;
         }
+        function fishImageFileName(name) {
+            return name
+                .replace(/[★☆]/g, '')
+                .replace(/['’]/g, '')
+                .replace(/[^A-Za-z0-9]+/g, '-')
+                .replace(/^-+|-+$/g, '') + '.webp';
+        }
 
+        function decorateFishImages() {
+            document.querySelectorAll('table.fish-table tbody tr').forEach(row => {
+                const cell = row.cells[0];
+                if (!cell || cell.dataset.fishImageReady === 'true') return;
+
+                const name = cell.textContent.replace(/\s+/g, ' ').trim();
+                if (!name) return;
+
+                const wrapper = document.createElement('span');
+                wrapper.className = 'fish-name-wrap';
+
+                const image = document.createElement('img');
+                image.className = 'fish-thumb';
+                image.src = '/img/fish/' + fishImageFileName(name);
+                image.alt = name + ' Heartopia fish';
+                image.loading = 'lazy';
+                image.decoding = 'async';
+                image.onerror = () => image.remove();
+
+                const label = document.createElement('span');
+                while (cell.firstChild) {
+                    label.appendChild(cell.firstChild);
+                }
+
+                wrapper.appendChild(image);
+                wrapper.appendChild(label);
+                cell.appendChild(wrapper);
+                cell.classList.add('fish-name-with-image');
+                cell.dataset.fishImageReady = 'true';
+            });
+        }
         function filterFish() {
             const query = document.getElementById('fish-search').value.trim().toLowerCase();
             const category = document.getElementById('fish-category').value;
@@ -1352,7 +1418,10 @@
             filterFish();
         }
 
-        document.addEventListener('DOMContentLoaded', filterFish);
+        document.addEventListener('DOMContentLoaded', () => {
+            decorateFishImages();
+            filterFish();
+        });
     </script>
     <script src="/assets/js/collection-progress.js"></script>
     <!-- NitroPay Ad Units -->
