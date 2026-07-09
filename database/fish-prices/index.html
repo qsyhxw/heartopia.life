@@ -1,1168 +1,532 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRJ91G3VRR"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+        function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-FRJ91G3VRR');
     </script>
-
-    <!-- SEO Meta Tags -->
-    <title>Heartopia Fish Price Guide: All Fish Sell Values (2026)</title>
-    <meta name="description"
-        content="Complete Heartopia fish price list sorted by sell value. Find the most profitable fish, star rating multipliers, and best fish to farm at every fishing level!">
-    <meta name="keywords"
-        content="heartopia fish price, heartopia fish sell price, heartopia most expensive fish, heartopia fishing profit, heartopia rainbow fish price, heartopia fish star rating">
-    <meta name="author" content="Heartopia.Life">
-    <meta name="robots" content="index, follow">
-
-    <!-- Canonical -->
-    <link rel="canonical" href="https://heartopia.life/database/fish-prices/">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Heartopia Fish Price Guide: All Fish Sell Values (2026)">
-    <meta property="og:description" content="Complete fish price list sorted by value. Find the most profitable fish to sell.">
-    <meta property="og:url" content="https://heartopia.life/database/fish-prices/">
-    <meta property="og:site_name" content="Heartopia.Life">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Heartopia Fish Price Guide - All Sell Values">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Heartopia Fish Price Guide: All Fish Sell Values (2026)",
-        "description": "Complete Heartopia fish price list sorted by sell value with star rating multipliers.",
-        "author": {"@type": "Organization", "name": "Heartopia.Life"},
-        "publisher": {"@type": "Organization", "name": "Heartopia.Life"},
-        "datePublished": "2026-02-11",
-        "dateModified": "2026-02-11"
-    }
-    </script>
-
-    <!-- FAQ Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What is the most expensive fish in Heartopia?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Rainbow Fish is the most expensive at 5,000 Gold (base). Giant Oarfish and Nursehound can reach up to 4,280G at 5-star. For commonly farmable fish, Tilapia and Edible Frog reach 1,280G at 4-star."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How do star ratings affect fish prices in Heartopia?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Fish star ratings multiply the base price: 1-star is base, 2-star is 1.5x, 3-star is 2x, 4-star is 4x, and 5-star is 8x. You unlock 4-star fish at Fishing Level 4 and 5-star at Level 6."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Should I sell fish raw or cook them in Heartopia?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Cooking fish into dishes like Fish N Chips (2,480G at 5-star) is usually more profitable than selling raw fish. However, rare fish like Rainbow Fish (5,000G) are worth more sold raw than most cooked dishes."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is the best fish to farm for gold in Heartopia?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "For beginners (Level 1-3), Striped Red Mullet at 320-1,280G is the best. Mid-level players should target Tilapia or Edible Frog (320-1,280G with Mermaid Attractor). End-game players should hunt Giant Oarfish (535-4,280G) and Rainbow Fish (5,000G)."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Where do I sell fish in Heartopia?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Sell fish to Albert Jr., the merchant NPC in Town Square. You can sell directly from your inventory. Some fish are also useful as cooking ingredients or NPC gifts."
-                }
-            }
-        ]
-    }
-    </script>
-
-    <!-- Tailwind CSS CDN -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'cozy': {
-                            'cream': '#FFF8F0',
-                            'peach': '#FFE5D9',
-                            'coral': '#FF9B85',
-                            'rose': '#D4A5A5',
-                            'sage': '#A8C686',
-                            'mint': '#B8E0D2',
-                            'sky': '#95C8D8',
-                            'wood': '#8B7355',
-                            'bark': '#5D4E37',
-                        }
-                    },
-                    fontFamily: {
-                        'display': ['Georgia', 'serif'],
-                        'body': ['system-ui', '-apple-system', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-
-    <style>
-        html { scroll-behavior: smooth; }
-        .card-hover { transition: transform 0.2s ease, box-shadow 0.2s ease; }
-        .card-hover:hover { transform: translateY(-2px); box-shadow: 0 8px 16px rgba(139, 115, 85, 0.12); }
-        .fish-table tr:hover { background-color: rgba(149, 200, 216, 0.1); }
-        .star-5 { color: #f59e0b; font-weight: bold; }
-    </style>
-    <!-- NitroPay Global Header -->
+    <script>tailwind.config={theme:{extend:{colors:{cozy:{cream:'#FFF8F0',peach:'#FFE5D9',coral:'#FF9B85',rose:'#D4A5A5',sage:'#A8C686',mint:'#B8E0D2',sky:'#95C8D8',wood:'#8B7355',bark:'#5D4E37'}},fontFamily:{display:['Georgia','serif'],body:['system-ui','-apple-system','sans-serif']}}}}</script>
+    <style>html{scroll-behavior:smooth}.card-hover{transition:transform .2s ease,box-shadow .2s ease}.card-hover:hover{transform:translateY(-2px);box-shadow:0 8px 16px rgba(139,115,85,.12)}.fish-table tr:hover{background:rgba(149,200,216,.1)}</style>
     <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
     <script data-cfasync="false" async src="https://s.nitropay.com/ads-2368.js"></script>
+    <title>Heartopia Fish Price Guide: 112 Fish Market Values</title>
+    <meta name="description" content="Current Heartopia fish price guide with 112 fish, market value ladders, images, locations, levels, shadows, and best fish to sell.">
+    <meta name="keywords" content="heartopia fish price, heartopia fish sell price, heartopia market value, heartopia fishing profit">
+    <link rel="canonical" href="https://heartopia.life/database/fish-prices/">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Heartopia Fish Price Guide: 112 Fish Market Values">
+    <meta property="og:description" content="Current fish market values with images, locations, levels, shadows, and high-value catches.">
+    <meta property="og:url" content="https://heartopia.life/database/fish-prices/">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Heartopia Fish Price Guide: 112 Fish Market Values","description":"Current Heartopia fish price guide with 112 fish and market value ladders.","url":"https://heartopia.life/database/fish-prices/","dateModified":"2026-07-09"}</script>
 </head>
-
 <body class="bg-cozy-cream text-cozy-bark font-body">
-
-    <!-- HEADER / NAVIGATION -->
     <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-cozy-peach/50">
         <nav class="max-w-6xl mx-auto px-4 py-3">
             <div class="flex items-center justify-between">
-                <a href="/" class="flex items-center gap-2 group" aria-label="Heartopia.Life Home">
-                    <img src="/favicon-96x96.png" alt="Heartopia.Life" class="w-7 h-7">
-                    <span class="font-display text-xl font-bold text-cozy-bark group-hover:text-cozy-coral transition-colors">
-                        Heartopia<span class="text-cozy-sage">.Life</span>
-                    </span>
-                </a>
-                <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
-                    <li><a href="/guides/map/" class="hover:text-cozy-coral transition-colors flex items-center gap-1">🗺️ Map</a></li>
-                    <li><a href="/codes/" class="hover:text-cozy-coral transition-colors flex items-center gap-1">🎁 Codes</a></li>
-                    <li><a href="/guides/" class="hover:text-cozy-coral transition-colors">Guides</a></li>
-                    <li><a href="/hobbies/" class="hover:text-cozy-coral transition-colors">Hobbies</a></li>
-                    <li><a href="/events/" class="hover:text-cozy-coral transition-colors">Events</a></li>
-                    <li><a href="/database/" class="hover:text-cozy-coral transition-colors">Database</a></li>
-                    <li><a href="/tools/" class="hover:text-cozy-coral transition-colors">Tools</a></li>
-                </ul>
-                <button class="md:hidden p-2 hover:bg-cozy-peach/50 rounded-lg" aria-label="Open menu"
-                    onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
-            </div>
-            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-cozy-peach/50 pt-4">
-                <ul class="flex flex-col gap-3 text-sm font-medium">
-                    <li><a href="/codes/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🎁 Codes</a></li>
-                    <li><a href="/guides/" class="py-2 hover:text-cozy-coral">Guides</a></li>
-                    <li><a href="/hobbies/" class="py-2 hover:text-cozy-coral">Hobbies</a></li>
-                    <li><a href="/events/" class="py-2 hover:text-cozy-coral">Events</a></li>
-                    <li><a href="/database/" class="py-2 hover:text-cozy-coral">Database</a></li>
-                    <li><a href="/tools/" class="py-2 hover:text-cozy-coral">Tools</a></li>
-                </ul>
+                <a href="/" class="flex items-center gap-2 group"><img src="/favicon-96x96.png" alt="Heartopia.Life" class="w-7 h-7"><span class="font-display text-xl font-bold text-cozy-bark">Heartopia<span class="text-cozy-sage">.Life</span></span></a>
+                <ul class="hidden md:flex items-center gap-6 text-sm font-medium"><li><a href="/guides/map/" class="hover:text-cozy-coral">Map</a></li><li><a href="/codes/" class="hover:text-cozy-coral">Codes</a></li><li><a href="/guides/" class="hover:text-cozy-coral">Guides</a></li><li><a href="/events/" class="hover:text-cozy-coral">Events</a></li><li><a href="/database/" class="hover:text-cozy-coral">Database</a></li><li><a href="/tools/" class="hover:text-cozy-coral">Tools</a></li></ul>
             </div>
         </nav>
     </header>
-
-    <main class="max-w-4xl mx-auto px-4 py-8">
-<!-- Breadcrumb -->
-        <nav class="text-sm text-cozy-wood mb-6">
-            <a href="/" class="hover:text-cozy-coral">Home</a>
-            <span class="mx-2">›</span>
-            <a href="/database/" class="hover:text-cozy-coral">Database</a>
-            <span class="mx-2">›</span>
-            <span class="text-cozy-bark font-medium">Fish Prices</span>
-        </nav>
-
-        <!-- Hero -->
-        <div class="bg-gradient-to-br from-blue-100 to-cozy-sky/40 rounded-2xl p-6 md:p-8 mb-8">
-            <div class="flex items-center gap-2 text-sm font-medium text-cozy-sage mb-3">
-                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                Last Updated: February 11, 2026
-            </div>
-            <h1 class="font-display text-3xl md:text-4xl font-bold text-cozy-bark mb-4">
-                🐟 Heartopia Fish Price Guide
-            </h1>
-            <p class="text-cozy-wood text-lg">
-                Complete sell price list for every fish in Heartopia, sorted by value. Find the <strong>most profitable fish</strong> to catch and maximize your gold!
-            </p>
-        </div>
-
-        <!-- Quick Stats -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
-            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
-                <p class="text-2xl font-bold text-amber-600">5,000G</p>
-                <p class="text-xs text-cozy-wood">Rainbow Fish (Base)</p>
-            </div>
-            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
-                <p class="text-2xl font-bold text-green-500">4,280G</p>
-                <p class="text-xs text-cozy-wood">Giant Oarfish (5★)</p>
-            </div>
-            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
-                <p class="text-2xl font-bold text-cozy-sky">94</p>
-                <p class="text-xs text-cozy-wood">Total Fish</p>
-            </div>
-            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30">
-                <p class="text-2xl font-bold text-cozy-coral">8x</p>
-                <p class="text-xs text-cozy-wood">5★ vs 1★ Multiplier</p>
-            </div>
-        </div>
-
-        <!-- Quick Navigation -->
-        <div class="bg-white rounded-xl p-4 mb-8 border border-cozy-peach/30">
-            <h2 class="font-bold mb-3">📑 Quick Navigation</h2>
-            <div class="flex flex-wrap gap-2 text-sm">
-                <a href="#top-tier" class="bg-amber-100 px-3 py-1 rounded-full hover:bg-amber-200">💰 Top Tier</a>
-                <a href="#mid-tier" class="bg-blue-100 px-3 py-1 rounded-full hover:bg-blue-200">📊 Mid Tier</a>
-                <a href="#budget" class="bg-green-100 px-3 py-1 rounded-full hover:bg-green-200">🌱 Budget</a>
-                <a href="#star-system" class="bg-purple-100 px-3 py-1 rounded-full hover:bg-purple-200">⭐ Star Multipliers</a>
-                <a href="#by-level" class="bg-orange-100 px-3 py-1 rounded-full hover:bg-orange-200">📈 Best by Level</a>
-                <a href="#cook-vs-sell" class="bg-rose-100 px-3 py-1 rounded-full hover:bg-rose-200">🍳 Cook vs Sell</a>
-                <a href="#tips" class="bg-pink-100 px-3 py-1 rounded-full hover:bg-pink-200">💡 Tips</a>
-                <a href="#faq" class="bg-cyan-100 px-3 py-1 rounded-full hover:bg-cyan-200">❓ FAQ</a>
-            </div>
-        </div>
-
-        <!-- Best Money Makers Highlight -->
-        <section class="bg-gradient-to-r from-yellow-50 to-amber-50 rounded-2xl p-6 mb-6 border-2 border-amber-300">
-            <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
-                <span class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">💰</span>
-                Best Money Makers
-            </h2>
-            <div class="grid md:grid-cols-2 gap-4">
-                <div class="bg-white/80 rounded-xl p-4 border border-amber-200">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="text-2xl">🌈</span>
-                        <div>
-                            <h3 class="font-bold">Rainbow Fish</h3>
-                            <p class="text-xs text-cozy-wood">Rarest & Most Valuable</p>
-                        </div>
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        <nav class="text-sm text-cozy-wood mb-6"><a href="/" class="hover:text-cozy-coral">Home</a><span class="mx-2">/</span><a href="/database/" class="hover:text-cozy-coral">Database</a><span class="mx-2">/</span><span class="font-medium text-cozy-bark">Fish Prices</span></nav>
+        <section class="bg-gradient-to-br from-blue-100 to-cozy-sky/40 rounded-2xl p-6 md:p-8 mb-8">
+            <div class="flex items-center gap-2 text-sm font-medium text-cozy-sage mb-3"><span class="w-2 h-2 bg-green-500 rounded-full"></span>Updated: July 9, 2026</div>
+            <h1 class="font-display text-3xl md:text-4xl font-bold mb-4">Heartopia Fish Price Guide</h1>
+            <p class="text-cozy-wood text-lg max-w-3xl">Current market value ladders for <strong>112 fish</strong>. The highest known value tier is <strong>6,800G</strong>, shared by Swordfish, Smooth Hammerhead, Ocean Sunfish, Golden King Crab, Moonfish, Shortfin Mako Shark, and Bluefin Tuna.</p>
+        </section>
+        <section class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30"><p class="text-2xl font-bold text-cozy-sky">112</p><p class="text-xs text-cozy-wood">Fish in table</p></div>
+            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30"><p class="text-2xl font-bold text-amber-600">6,800G</p><p class="text-xs text-cozy-wood">Highest known tier</p></div>
+            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30"><p class="text-2xl font-bold text-cozy-coral">17</p><p class="text-xs text-cozy-wood">Event fish</p></div>
+            <div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30"><p class="text-2xl font-bold text-cozy-sage">14</p><p class="text-xs text-cozy-wood">Fishing levels</p></div>
+        </section>
+        <section class="bg-gradient-to-r from-yellow-50 to-amber-50 rounded-2xl p-6 mb-6 border border-amber-200">
+            <h2 class="font-display text-2xl font-bold mb-4">Best Money Makers</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <a href="/database/fish/" class="bg-white rounded-xl p-4 border border-cozy-peach/30 hover:border-cozy-coral transition-colors flex items-center gap-4">
+                    <img src="/img/fish/Golden-King-Crab.webp" alt="Golden King Crab fish image" class="w-16 h-16 object-contain rounded-xl bg-cozy-sky/10 p-2" loading="lazy">
+                    <div>
+                        <h3 class="font-bold text-cozy-bark">Golden King Crab</h3>
+                        <p class="text-xs text-cozy-wood">[EVENT] Sea Fishing · Lv.8 · Golden shadow</p>
+                        <p class="text-xs font-semibold text-cozy-coral mt-1">850 / 1,275 / 1,700 / 3,400 / 6,800</p>
                     </div>
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs text-cozy-wood">Base Price:</span>
-                        <span class="text-xl font-bold text-amber-600">5,000G</span>
+                </a>
+                <a href="/database/fish/" class="bg-white rounded-xl p-4 border border-cozy-peach/30 hover:border-cozy-coral transition-colors flex items-center gap-4">
+                    <img src="/img/fish/Moonfish.webp" alt="Moonfish fish image" class="w-16 h-16 object-contain rounded-xl bg-cozy-sky/10 p-2" loading="lazy">
+                    <div>
+                        <h3 class="font-bold text-cozy-bark">Moonfish</h3>
+                        <p class="text-xs text-cozy-wood">[EVENT] Sea Fishing · Lv.9 · Golden shadow</p>
+                        <p class="text-xs font-semibold text-cozy-coral mt-1">850 / 1,275 / 1,700 / 3,400 / 6,800</p>
                     </div>
-                    <p class="text-xs text-cozy-wood mt-2">Starlight Sea, 🌈 Rainbow weather only, Level 10</p>
-                </div>
-                <div class="bg-white/80 rounded-xl p-4 border border-green-200">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="text-2xl">🐟</span>
-                        <div>
-                            <h3 class="font-bold">Striped Red Mullet</h3>
-                            <p class="text-xs text-cozy-wood">Best Early-Game</p>
-                        </div>
+                </a>
+                <a href="/database/fish/" class="bg-white rounded-xl p-4 border border-cozy-peach/30 hover:border-cozy-coral transition-colors flex items-center gap-4">
+                    <img src="/img/fish/Swordfish.webp" alt="Swordfish fish image" class="w-16 h-16 object-contain rounded-xl bg-cozy-sky/10 p-2" loading="lazy">
+                    <div>
+                        <h3 class="font-bold text-cozy-bark">Swordfish</h3>
+                        <p class="text-xs text-cozy-wood">Whale Sea · Lv.10 · Large shadow</p>
+                        <p class="text-xs font-semibold text-cozy-coral mt-1">850 / 1,275 / 1,700 / 3,400 / 6,800</p>
                     </div>
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs text-cozy-wood">4★ Sell Price:</span>
-                        <span class="text-xl font-bold text-green-600">1,280G</span>
+                </a>
+                <a href="/database/fish/smooth-hammerhead/" class="bg-white rounded-xl p-4 border border-cozy-peach/30 hover:border-cozy-coral transition-colors flex items-center gap-4">
+                    <img src="/img/fish/Smooth-Hammerhead.webp" alt="Smooth Hammerhead fish image" class="w-16 h-16 object-contain rounded-xl bg-cozy-sky/10 p-2" loading="lazy">
+                    <div>
+                        <h3 class="font-bold text-cozy-bark">Smooth Hammerhead</h3>
+                        <p class="text-xs text-cozy-wood">Old Sea · Lv.10 · Large shadow</p>
+                        <p class="text-xs font-semibold text-cozy-coral mt-1">850 / 1,275 / 1,700 / 3,400 / 6,800</p>
                     </div>
-                    <p class="text-xs text-cozy-wood mt-2">Sea Fishing, Level 1, no special conditions</p>
-                </div>
+                </a>
+                <a href="/database/fish/" class="bg-white rounded-xl p-4 border border-cozy-peach/30 hover:border-cozy-coral transition-colors flex items-center gap-4">
+                    <img src="/img/fish/Ocean-Sunfish.webp" alt="Ocean Sunfish fish image" class="w-16 h-16 object-contain rounded-xl bg-cozy-sky/10 p-2" loading="lazy">
+                    <div>
+                        <h3 class="font-bold text-cozy-bark">Ocean Sunfish</h3>
+                        <p class="text-xs text-cozy-wood">East Sea · Lv.9 · Large shadow</p>
+                        <p class="text-xs font-semibold text-cozy-coral mt-1">850 / 1,275 / 1,700 / 3,400 / 6,800</p>
+                    </div>
+                </a>
+                <a href="/database/fish/" class="bg-white rounded-xl p-4 border border-cozy-peach/30 hover:border-cozy-coral transition-colors flex items-center gap-4">
+                    <img src="/img/fish/Bluefin-Tuna.webp" alt="Bluefin Tuna fish image" class="w-16 h-16 object-contain rounded-xl bg-cozy-sky/10 p-2" loading="lazy">
+                    <div>
+                        <h3 class="font-bold text-cozy-bark">Bluefin Tuna</h3>
+                        <p class="text-xs text-cozy-wood">Zephyr Sea · Lv.9 · Large shadow</p>
+                        <p class="text-xs font-semibold text-cozy-coral mt-1">850 / 1,275 / 1,700 / 3,400 / 6,800</p>
+                    </div>
+                </a>
             </div>
         </section>
         <div id="heartopia_in_content" class="heartopia-ad-slot max-w-6xl mx-auto px-4 my-6 text-center"></div>
-
-
-        <!-- Top Tier Fish -->
-        <section id="top-tier" class="bg-white rounded-2xl p-6 mb-6 border border-cozy-peach/30">
-            <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
-                <span class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">⭐</span>
-                Top Tier Fish (1,000G+ Potential)
-            </h2>
-            <div class="overflow-x-auto">
-                <table class="w-full text-sm fish-table">
-                    <thead class="bg-amber-100">
-                        <tr>
-                            <th class="px-3 py-2 text-left font-bold">Fish</th>
-                            <th class="px-3 py-2 text-left font-bold">Location</th>
-                            <th class="px-2 py-2 text-center font-bold">Lvl</th>
-                            <th class="px-2 py-2 text-center font-bold">1★</th>
-                            <th class="px-2 py-2 text-center font-bold">2★</th>
-                            <th class="px-2 py-2 text-center font-bold">3★</th>
-                            <th class="px-2 py-2 text-center font-bold">4★</th>
-                            <th class="px-2 py-2 text-center font-bold star-5">5★</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-amber-100">
-                        <tr class="bg-yellow-50/50">
-                            <td class="px-3 py-2 font-medium">🌈 Rainbow Fish</td>
-                            <td class="px-3 py-2 text-cozy-wood">Starlight Sea</td>
-                            <td class="px-2 py-2 text-center">10</td>
-                            <td class="px-2 py-2 text-center font-bold text-amber-600">5,000</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr class="bg-purple-50/50">
-                            <td class="px-3 py-2 font-medium">🎏 Legendary Koi</td>
-                            <td class="px-3 py-2 text-cozy-wood">Secret Pond</td>
-                            <td class="px-2 py-2 text-center">10</td>
-                            <td class="px-2 py-2 text-center font-bold">2,000+</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr class="bg-purple-50/50">
-                            <td class="px-3 py-2 font-medium">⚔️ Swordfish</td>
-                            <td class="px-3 py-2 text-cozy-wood">Whale Sea</td>
-                            <td class="px-2 py-2 text-center">10</td>
-                            <td class="px-2 py-2 text-center font-bold">1,500+</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr class="bg-purple-50/50">
-                            <td class="px-3 py-2 font-medium">🐟 Bluefin Tuna</td>
-                            <td class="px-3 py-2 text-cozy-wood">Gentle Wind Sea</td>
-                            <td class="px-2 py-2 text-center">9</td>
-                            <td class="px-2 py-2 text-center font-bold">1,200+</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐉 Giant Oarfish</td>
-                            <td class="px-3 py-2 text-cozy-wood">Sea Fishing</td>
-                            <td class="px-2 py-2 text-center">7</td>
-                            <td class="px-2 py-2 text-center">535</td>
-                            <td class="px-2 py-2 text-center">802</td>
-                            <td class="px-2 py-2 text-center">1,070</td>
-                            <td class="px-2 py-2 text-center">2,140</td>
-                            <td class="px-2 py-2 text-center star-5">4,280</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🦈 Nursehound</td>
-                            <td class="px-3 py-2 text-cozy-wood">Sea Fishing</td>
-                            <td class="px-2 py-2 text-center">6</td>
-                            <td class="px-2 py-2 text-center">535</td>
-                            <td class="px-2 py-2 text-center">802</td>
-                            <td class="px-2 py-2 text-center">1,070</td>
-                            <td class="px-2 py-2 text-center">2,140</td>
-                            <td class="px-2 py-2 text-center star-5">4,280</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🌊 Ocean Sunfish</td>
-                            <td class="px-3 py-2 text-cozy-wood">East Sea</td>
-                            <td class="px-2 py-2 text-center">9</td>
-                            <td class="px-2 py-2 text-center">850</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center">1,275</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 Tilapia ⭐</td>
-                            <td class="px-3 py-2 text-cozy-wood">Rivers (Mermaid)</td>
-                            <td class="px-2 py-2 text-center">3</td>
-                            <td class="px-2 py-2 text-center">320</td>
-                            <td class="px-2 py-2 text-center">480</td>
-                            <td class="px-2 py-2 text-center">640</td>
-                            <td class="px-2 py-2 text-center">1,280</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐸 Edible Frog ⭐</td>
-                            <td class="px-3 py-2 text-cozy-wood">Lakes (Mermaid)</td>
-                            <td class="px-2 py-2 text-center">3</td>
-                            <td class="px-2 py-2 text-center">320</td>
-                            <td class="px-2 py-2 text-center">480</td>
-                            <td class="px-2 py-2 text-center">640</td>
-                            <td class="px-2 py-2 text-center">1,280</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr class="bg-green-50/50">
-                            <td class="px-3 py-2 font-medium">🐟 Striped Red Mullet</td>
-                            <td class="px-3 py-2 text-cozy-wood">Sea Fishing</td>
-                            <td class="px-2 py-2 text-center">1</td>
-                            <td class="px-2 py-2 text-center">320</td>
-                            <td class="px-2 py-2 text-center">480</td>
-                            <td class="px-2 py-2 text-center">640</td>
-                            <td class="px-2 py-2 text-center">1,280</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐡 Anglerfish</td>
-                            <td class="px-3 py-2 text-cozy-wood">Sea Fishing</td>
-                            <td class="px-2 py-2 text-center">2</td>
-                            <td class="px-2 py-2 text-center">320</td>
-                            <td class="px-2 py-2 text-center">480</td>
-                            <td class="px-2 py-2 text-center">640</td>
-                            <td class="px-2 py-2 text-center">1,280</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐙 Common Octopus</td>
-                            <td class="px-3 py-2 text-cozy-wood">Sea Fishing</td>
-                            <td class="px-2 py-2 text-center">2</td>
-                            <td class="px-2 py-2 text-center">320</td>
-                            <td class="px-2 py-2 text-center">480</td>
-                            <td class="px-2 py-2 text-center">640</td>
-                            <td class="px-2 py-2 text-center">1,280</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 Turbot</td>
-                            <td class="px-3 py-2 text-cozy-wood">Sea Fishing</td>
-                            <td class="px-2 py-2 text-center">2</td>
-                            <td class="px-2 py-2 text-center">320</td>
-                            <td class="px-2 py-2 text-center">480</td>
-                            <td class="px-2 py-2 text-center">640</td>
-                            <td class="px-2 py-2 text-center">1,280</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🦑 European Flying Squid</td>
-                            <td class="px-3 py-2 text-cozy-wood">Sea Fishing</td>
-                            <td class="px-2 py-2 text-center">5</td>
-                            <td class="px-2 py-2 text-center">320</td>
-                            <td class="px-2 py-2 text-center">480</td>
-                            <td class="px-2 py-2 text-center">640</td>
-                            <td class="px-2 py-2 text-center">1,280</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="bg-amber-50 rounded-lg p-3 mt-4 text-sm">
-                <strong>💡 Note:</strong> Rainbow Fish, Legendary Koi, Swordfish, and Bluefin Tuna are legendary fish with fixed base prices. They require 🌈 Rainbow weather and high fishing levels.
-            </div>
+        <section class="bg-white rounded-2xl p-6 mb-6 border border-cozy-peach/30">
+            <h2 class="font-display text-2xl font-bold mb-4">Top Market Value Table</h2>
+            <div class="overflow-x-auto"><table class="w-full text-sm fish-table"><thead class="bg-amber-100 text-left"><tr><th class="px-4 py-3">Fish</th><th class="px-4 py-3">Location</th><th class="px-4 py-3 text-center">Lvl</th><th class="px-4 py-3">Shadow</th><th class="px-4 py-3">Category</th><th class="px-4 py-3">Weather / Schedule</th><th class="px-4 py-3">Market Value</th></tr></thead><tbody class="divide-y divide-cozy-peach/30">
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Golden-King-Crab.webp" alt="Golden King Crab" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Golden King Crab</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+                                <td class="px-4 py-3 text-center">8</td>
+                                <td class="px-4 py-3 text-cozy-wood">Golden</td>
+                                <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow; Day, Dawn, Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Moonfish.webp" alt="Moonfish" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Moonfish</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+                                <td class="px-4 py-3 text-center">9</td>
+                                <td class="px-4 py-3 text-cozy-wood">Golden</td>
+                                <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny, Rainy; Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Swordfish.webp" alt="Swordfish" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Swordfish</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">Whale Sea</td>
+                                <td class="px-4 py-3 text-center">10</td>
+                                <td class="px-4 py-3 text-cozy-wood">Large</td>
+                                <td class="px-4 py-3 text-cozy-wood">Common</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow; Day, Dawn</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/smooth-hammerhead/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Smooth-Hammerhead.webp" alt="Smooth Hammerhead" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Smooth Hammerhead</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">Old Sea</td>
+                                <td class="px-4 py-3 text-center">10</td>
+                                <td class="px-4 py-3 text-cozy-wood">Large</td>
+                                <td class="px-4 py-3 text-cozy-wood">Common</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow; Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Ocean-Sunfish.webp" alt="Ocean Sunfish" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Ocean Sunfish</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">East Sea</td>
+                                <td class="px-4 py-3 text-center">9</td>
+                                <td class="px-4 py-3 text-cozy-wood">Large</td>
+                                <td class="px-4 py-3 text-cozy-wood">Common</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny, Rainy; Dawn, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Bluefin-Tuna.webp" alt="Bluefin Tuna" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Bluefin Tuna</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">Zephyr Sea</td>
+                                <td class="px-4 py-3 text-center">9</td>
+                                <td class="px-4 py-3 text-cozy-wood">Large</td>
+                                <td class="px-4 py-3 text-cozy-wood">Common</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow; Day, Dawn</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Shortfin-Mako-Shark.webp" alt="Shortfin Mako Shark" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Shortfin Mako Shark</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+                                <td class="px-4 py-3 text-center">10</td>
+                                <td class="px-4 py-3 text-cozy-wood">Golden</td>
+                                <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow; Day, Dawn</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Northern-Pike.webp" alt="Northern Pike" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Northern Pike</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">Suburban Lake</td>
+                                <td class="px-4 py-3 text-center">9</td>
+                                <td class="px-4 py-3 text-cozy-wood">Medium</td>
+                                <td class="px-4 py-3 text-cozy-wood">Common</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow, Rainy; Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">610 / 915 / 1,220 / 2,440 / 4,880</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Arctic-Char.webp" alt="Arctic Char" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Arctic Char</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">Forest Lake</td>
+                                <td class="px-4 py-3 text-center">10</td>
+                                <td class="px-4 py-3 text-cozy-wood">Medium</td>
+                                <td class="px-4 py-3 text-cozy-wood">Common</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow, Rainy; Day, Dusk</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">610 / 915 / 1,220 / 2,440 / 4,880</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/wels-catfish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Wels-Catfish.webp" alt="Wels Catfish" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Wels Catfish</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">Meadow Lake</td>
+                                <td class="px-4 py-3 text-center">10</td>
+                                <td class="px-4 py-3 text-cozy-wood">Medium</td>
+                                <td class="px-4 py-3 text-cozy-wood">Common</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny; Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">610 / 915 / 1,220 / 2,440 / 4,880</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/King-Crab.webp" alt="King Crab" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>King Crab</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">Whale Sea</td>
+                                <td class="px-4 py-3 text-center">8</td>
+                                <td class="px-4 py-3 text-cozy-wood">Large</td>
+                                <td class="px-4 py-3 text-cozy-wood">Common</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow; Day, Dawn, Dusk</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">535 / 802 / 1,070 / 2,140 / 4,280</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Giant-Oarfish.webp" alt="Giant Oarfish" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Giant Oarfish</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+                                <td class="px-4 py-3 text-center">7</td>
+                                <td class="px-4 py-3 text-cozy-wood">Golden</td>
+                                <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">535 / 1,070 / 2,140 / 4,280</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Nursehound.webp" alt="Nursehound" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Nursehound</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+                                <td class="px-4 py-3 text-center">6</td>
+                                <td class="px-4 py-3 text-cozy-wood">Large</td>
+                                <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">535 / 802 / 1,070 / 2,140 / 4,280</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Bluegill.webp" alt="Bluegill" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Bluegill</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">Onsen Mountain Lake</td>
+                                <td class="px-4 py-3 text-center">10</td>
+                                <td class="px-4 py-3 text-cozy-wood">Small</td>
+                                <td class="px-4 py-3 text-cozy-wood">Common</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny; Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">395 / 592 / 790 / 1,580 / 3,160</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Huchen.webp" alt="Huchen" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Huchen</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">Giantwood River</td>
+                                <td class="px-4 py-3 text-center">9</td>
+                                <td class="px-4 py-3 text-cozy-wood">Medium</td>
+                                <td class="px-4 py-3 text-cozy-wood">Common</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow; Day, Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">380 / 570 / 760 / 1,520 / 3,040</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Tub-Gurnard.webp" alt="Tub Gurnard" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Tub Gurnard</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">East Sea</td>
+                                <td class="px-4 py-3 text-center">6</td>
+                                <td class="px-4 py-3 text-cozy-wood">Medium</td>
+                                <td class="px-4 py-3 text-cozy-wood">Common</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow; Day, Dawn, Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">380 / 570 / 760 / 1,520 / 3,040</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Large-Pearl-Mussel.webp" alt="Large Pearl Mussel" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Large Pearl Mussel</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">Forest Lake</td>
+                                <td class="px-4 py-3 text-center">6</td>
+                                <td class="px-4 py-3 text-cozy-wood">Medium</td>
+                                <td class="px-4 py-3 text-cozy-wood">Common</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow; Day, Dawn, Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">380 / 570 / 760 / 1,520 / 3,040</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/European-Eel.webp" alt="European Eel" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>European Eel</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">Old Sea</td>
+                                <td class="px-4 py-3 text-center">7</td>
+                                <td class="px-4 py-3 text-cozy-wood">Medium</td>
+                                <td class="px-4 py-3 text-cozy-wood">Common</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow; Day, Dawn, Dusk</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">380 / 570 / 760 / 1,520 / 3,040</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Common-Octopus.webp" alt="Common Octopus" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Common Octopus</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+                                <td class="px-4 py-3 text-center">2</td>
+                                <td class="px-4 py-3 text-cozy-wood">Medium</td>
+                                <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">320 / 480 / 640 / 1,280 / 2,560</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/European-Flying-Squid.webp" alt="European Flying Squid" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>European Flying Squid</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+                                <td class="px-4 py-3 text-center">5</td>
+                                <td class="px-4 py-3 text-cozy-wood">Golden</td>
+                                <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">320 / 480 / 640 / 1,280 / 2,560</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Frostspore-Whale-Shark.webp" alt="Frostspore Whale Shark" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Frostspore Whale Shark</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">[EVENT] Frostspore Fish</td>
+                                <td class="px-4 py-3 text-center">1</td>
+                                <td class="px-4 py-3 text-cozy-wood">Large</td>
+                                <td class="px-4 py-3 text-cozy-wood">Winter frost season</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">320 / 480 / 640 / 1,280 / 2,560</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Striped-Red-Mullet.webp" alt="Striped Red Mullet" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Striped Red Mullet</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+                                <td class="px-4 py-3 text-center">1</td>
+                                <td class="px-4 py-3 text-cozy-wood">Golden</td>
+                                <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">320 / 480 / 640 / 1,280 / 2,560</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Anglerfish.webp" alt="Anglerfish" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Anglerfish</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+                                <td class="px-4 py-3 text-center">2</td>
+                                <td class="px-4 py-3 text-cozy-wood">Golden</td>
+                                <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">320 / 480 / 640 / 1,280 / 2,560</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Rabbit-Fish.webp" alt="Rabbit Fish" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Rabbit Fish</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">Ocean</td>
+                                <td class="px-4 py-3 text-center">4</td>
+                                <td class="px-4 py-3 text-cozy-wood">Blue</td>
+                                <td class="px-4 py-3 text-cozy-wood">Mermaid Fish Attractor</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">320 / 480 / 640 / 1,280 / 2,560</td>
+                            </tr>
+            </tbody></table></div>
         </section>
-
-        <!-- Mid Tier Fish -->
-        <section id="mid-tier" class="bg-white rounded-2xl p-6 mb-6 border border-cozy-peach/30">
-            <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
-                <span class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">📊</span>
-                Mid Tier Fish (200–999G Range)
-            </h2>
-            <div class="overflow-x-auto">
-                <table class="w-full text-sm fish-table">
-                    <thead class="bg-blue-100">
-                        <tr>
-                            <th class="px-3 py-2 text-left font-bold">Fish</th>
-                            <th class="px-3 py-2 text-left font-bold">Location</th>
-                            <th class="px-2 py-2 text-center font-bold">Lvl</th>
-                            <th class="px-2 py-2 text-center font-bold">1★</th>
-                            <th class="px-2 py-2 text-center font-bold">2★</th>
-                            <th class="px-2 py-2 text-center font-bold">3★</th>
-                            <th class="px-2 py-2 text-center font-bold">4★</th>
-                            <th class="px-2 py-2 text-center font-bold star-5">5★</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-blue-100">
-                        <tr class="bg-purple-50/50">
-                            <td class="px-3 py-2 font-medium">🐡 Huchen 🌈</td>
-                            <td class="px-3 py-2 text-cozy-wood">Giantwood River</td>
-                            <td class="px-2 py-2 text-center">9</td>
-                            <td class="px-2 py-2 text-center font-bold">570+</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 Pumpkinseed</td>
-                            <td class="px-3 py-2 text-cozy-wood">Onsen Mountain Lake</td>
-                            <td class="px-2 py-2 text-center">9</td>
-                            <td class="px-2 py-2 text-center">250+</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 Largemouth Bass ☀️</td>
-                            <td class="px-3 py-2 text-cozy-wood">Forest Lake</td>
-                            <td class="px-2 py-2 text-center">2</td>
-                            <td class="px-2 py-2 text-center">230</td>
-                            <td class="px-2 py-2 text-center">345</td>
-                            <td class="px-2 py-2 text-center">460</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 Burbot</td>
-                            <td class="px-3 py-2 text-cozy-wood">Tranquil River</td>
-                            <td class="px-2 py-2 text-center">4</td>
-                            <td class="px-2 py-2 text-center">230</td>
-                            <td class="px-2 py-2 text-center">345</td>
-                            <td class="px-2 py-2 text-center">460</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 Common Carp ☀️</td>
-                            <td class="px-3 py-2 text-cozy-wood">Rosy River (PM)</td>
-                            <td class="px-2 py-2 text-center">4</td>
-                            <td class="px-2 py-2 text-center">230</td>
-                            <td class="px-2 py-2 text-center">345</td>
-                            <td class="px-2 py-2 text-center">460</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 Zander</td>
-                            <td class="px-3 py-2 text-cozy-wood">Giantwood River</td>
-                            <td class="px-2 py-2 text-center">4</td>
-                            <td class="px-2 py-2 text-center">230</td>
-                            <td class="px-2 py-2 text-center">345</td>
-                            <td class="px-2 py-2 text-center">460</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 Trout</td>
-                            <td class="px-3 py-2 text-cozy-wood">Meadow Lake</td>
-                            <td class="px-2 py-2 text-center">5</td>
-                            <td class="px-2 py-2 text-center">230</td>
-                            <td class="px-2 py-2 text-center">345</td>
-                            <td class="px-2 py-2 text-center">460</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🦞 European Lobster 🌙</td>
-                            <td class="px-3 py-2 text-cozy-wood">Zephyr Sea (Night)</td>
-                            <td class="px-2 py-2 text-center">5</td>
-                            <td class="px-2 py-2 text-center">230</td>
-                            <td class="px-2 py-2 text-center">345</td>
-                            <td class="px-2 py-2 text-center">460</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐡 Puffer Fish</td>
-                            <td class="px-3 py-2 text-cozy-wood">Old Sea</td>
-                            <td class="px-2 py-2 text-center">6</td>
-                            <td class="px-2 py-2 text-center">230</td>
-                            <td class="px-2 py-2 text-center">345</td>
-                            <td class="px-2 py-2 text-center">460</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 Blackspot Seabream 🌧️🌈</td>
-                            <td class="px-3 py-2 text-cozy-wood">Zephyr Sea</td>
-                            <td class="px-2 py-2 text-center">7</td>
-                            <td class="px-2 py-2 text-center">230</td>
-                            <td class="px-2 py-2 text-center">345</td>
-                            <td class="px-2 py-2 text-center">460</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 Skipjack Tuna</td>
-                            <td class="px-3 py-2 text-cozy-wood">Ocean</td>
-                            <td class="px-2 py-2 text-center">1</td>
-                            <td class="px-2 py-2 text-center">210</td>
-                            <td class="px-2 py-2 text-center">315</td>
-                            <td class="px-2 py-2 text-center">420</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 Atlantic Salmon</td>
-                            <td class="px-3 py-2 text-cozy-wood">Whale Sea</td>
-                            <td class="px-2 py-2 text-center">3</td>
-                            <td class="px-2 py-2 text-center">155</td>
-                            <td class="px-2 py-2 text-center">232</td>
-                            <td class="px-2 py-2 text-center">310</td>
-                            <td class="px-2 py-2 text-center">620</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 Freshwater Blenny</td>
-                            <td class="px-3 py-2 text-cozy-wood">Rosy River</td>
-                            <td class="px-2 py-2 text-center">5</td>
-                            <td class="px-2 py-2 text-center">150</td>
-                            <td class="px-2 py-2 text-center">225</td>
-                            <td class="px-2 py-2 text-center">300</td>
-                            <td class="px-2 py-2 text-center">600</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 Chum Salmon 🌈</td>
-                            <td class="px-3 py-2 text-cozy-wood">Tranquil River</td>
-                            <td class="px-2 py-2 text-center">6</td>
-                            <td class="px-2 py-2 text-center">150</td>
-                            <td class="px-2 py-2 text-center">225</td>
-                            <td class="px-2 py-2 text-center">300</td>
-                            <td class="px-2 py-2 text-center">600</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 Atlantic Mackerel</td>
-                            <td class="px-3 py-2 text-cozy-wood">Whale Sea</td>
-                            <td class="px-2 py-2 text-center">5</td>
-                            <td class="px-2 py-2 text-center">150</td>
-                            <td class="px-2 py-2 text-center">225</td>
-                            <td class="px-2 py-2 text-center">300</td>
-                            <td class="px-2 py-2 text-center">600</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐙 Atlantic Pygmy Octopus</td>
-                            <td class="px-3 py-2 text-cozy-wood">Zephyr Sea</td>
-                            <td class="px-2 py-2 text-center">2</td>
-                            <td class="px-2 py-2 text-center">150</td>
-                            <td class="px-2 py-2 text-center">225</td>
-                            <td class="px-2 py-2 text-center">300</td>
-                            <td class="px-2 py-2 text-center">600</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 Mottled Sculpin</td>
-                            <td class="px-3 py-2 text-cozy-wood">Onsen Mountain Lake</td>
-                            <td class="px-2 py-2 text-center">7</td>
-                            <td class="px-2 py-2 text-center">150</td>
-                            <td class="px-2 py-2 text-center">225</td>
-                            <td class="px-2 py-2 text-center">300</td>
-                            <td class="px-2 py-2 text-center">600</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- Budget Tier Fish -->
-        <section id="budget" class="bg-white rounded-2xl p-6 mb-6 border border-cozy-peach/30">
-            <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
-                <span class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">🌱</span>
-                Budget Tier (Under 200G Base)
-            </h2>
-            <div class="bg-green-50 rounded-lg p-3 mb-4 text-sm">
-                <strong>💡 Tip:</strong> These fish are cheap individually, but Spined Loach, Sardine, and similar fish can reach <strong>400G at 5★</strong>. They're also great for cooking recipes like Fish N Chips!
-            </div>
-            <div class="overflow-x-auto">
-                <table class="w-full text-sm fish-table">
-                    <thead class="bg-green-100">
-                        <tr>
-                            <th class="px-3 py-2 text-left font-bold">Fish</th>
-                            <th class="px-3 py-2 text-left font-bold">Location</th>
-                            <th class="px-2 py-2 text-center font-bold">Lvl</th>
-                            <th class="px-2 py-2 text-center font-bold">1★</th>
-                            <th class="px-2 py-2 text-center font-bold">2★</th>
-                            <th class="px-2 py-2 text-center font-bold">3★</th>
-                            <th class="px-2 py-2 text-center font-bold">4★</th>
-                            <th class="px-2 py-2 text-center font-bold star-5">5★</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-green-100">
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 Common Whitefish</td>
-                            <td class="px-3 py-2 text-cozy-wood">Onsen Mountain Lake</td>
-                            <td class="px-2 py-2 text-center">1</td>
-                            <td class="px-2 py-2 text-center">105</td>
-                            <td class="px-2 py-2 text-center">157</td>
-                            <td class="px-2 py-2 text-center">210</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 Beltfish</td>
-                            <td class="px-3 py-2 text-cozy-wood">Zephyr Sea</td>
-                            <td class="px-2 py-2 text-center">1</td>
-                            <td class="px-2 py-2 text-center">105</td>
-                            <td class="px-2 py-2 text-center">157</td>
-                            <td class="px-2 py-2 text-center">210</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 Seahorse</td>
-                            <td class="px-3 py-2 text-cozy-wood">Whale Sea</td>
-                            <td class="px-2 py-2 text-center">1</td>
-                            <td class="px-2 py-2 text-center">100</td>
-                            <td class="px-2 py-2 text-center">150</td>
-                            <td class="px-2 py-2 text-center">200</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 European Smelt</td>
-                            <td class="px-3 py-2 text-cozy-wood">Meadow Lake</td>
-                            <td class="px-2 py-2 text-center">1</td>
-                            <td class="px-2 py-2 text-center">100</td>
-                            <td class="px-2 py-2 text-center">150</td>
-                            <td class="px-2 py-2 text-center">200</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐸 Tadpole 🌧️🌈</td>
-                            <td class="px-3 py-2 text-cozy-wood">Onsen Mountain Lake</td>
-                            <td class="px-2 py-2 text-center">4</td>
-                            <td class="px-2 py-2 text-center">100</td>
-                            <td class="px-2 py-2 text-center">150</td>
-                            <td class="px-2 py-2 text-center">200</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 Common Barbel</td>
-                            <td class="px-3 py-2 text-cozy-wood">Shallow River</td>
-                            <td class="px-2 py-2 text-center">1</td>
-                            <td class="px-2 py-2 text-center">75</td>
-                            <td class="px-2 py-2 text-center">112</td>
-                            <td class="px-2 py-2 text-center">150</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 Sea Bass</td>
-                            <td class="px-3 py-2 text-cozy-wood">Ocean</td>
-                            <td class="px-2 py-2 text-center">1</td>
-                            <td class="px-2 py-2 text-center">75</td>
-                            <td class="px-2 py-2 text-center">112</td>
-                            <td class="px-2 py-2 text-center">150</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 Common Chub</td>
-                            <td class="px-3 py-2 text-cozy-wood">Lakes</td>
-                            <td class="px-2 py-2 text-center">1</td>
-                            <td class="px-2 py-2 text-center">75</td>
-                            <td class="px-2 py-2 text-center">112</td>
-                            <td class="px-2 py-2 text-center">150</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                            <td class="px-2 py-2 text-center text-gray-400">—</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 Spined Loach</td>
-                            <td class="px-3 py-2 text-cozy-wood">Giantwood River</td>
-                            <td class="px-2 py-2 text-center">1</td>
-                            <td class="px-2 py-2 text-center">50</td>
-                            <td class="px-2 py-2 text-center">75</td>
-                            <td class="px-2 py-2 text-center">100</td>
-                            <td class="px-2 py-2 text-center">200</td>
-                            <td class="px-2 py-2 text-center star-5">400</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 Streber</td>
-                            <td class="px-3 py-2 text-cozy-wood">Rosy River</td>
-                            <td class="px-2 py-2 text-center">3</td>
-                            <td class="px-2 py-2 text-center">50</td>
-                            <td class="px-2 py-2 text-center">75</td>
-                            <td class="px-2 py-2 text-center">100</td>
-                            <td class="px-2 py-2 text-center">200</td>
-                            <td class="px-2 py-2 text-center star-5">400</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 Sardine</td>
-                            <td class="px-3 py-2 text-cozy-wood">Ocean</td>
-                            <td class="px-2 py-2 text-center">1</td>
-                            <td class="px-2 py-2 text-center">50</td>
-                            <td class="px-2 py-2 text-center">75</td>
-                            <td class="px-2 py-2 text-center">100</td>
-                            <td class="px-2 py-2 text-center">200</td>
-                            <td class="px-2 py-2 text-center star-5">400</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 Horse Mackerel</td>
-                            <td class="px-3 py-2 text-cozy-wood">Whale Sea</td>
-                            <td class="px-2 py-2 text-center">1</td>
-                            <td class="px-2 py-2 text-center">50</td>
-                            <td class="px-2 py-2 text-center">75</td>
-                            <td class="px-2 py-2 text-center">100</td>
-                            <td class="px-2 py-2 text-center">200</td>
-                            <td class="px-2 py-2 text-center star-5">400</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">🐟 Common Bleak</td>
-                            <td class="px-3 py-2 text-cozy-wood">Lakes</td>
-                            <td class="px-2 py-2 text-center">1</td>
-                            <td class="px-2 py-2 text-center">50</td>
-                            <td class="px-2 py-2 text-center">75</td>
-                            <td class="px-2 py-2 text-center">100</td>
-                            <td class="px-2 py-2 text-center">200</td>
-                            <td class="px-2 py-2 text-center star-5">400</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- Star Quality System -->
-        <section id="star-system" class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-6 mb-6 border-2 border-purple-300">
-            <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
-                <span class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">⭐</span>
-                Star Rating Multipliers
-            </h2>
-            <div class="bg-white/80 rounded-xl p-4 mb-4">
-                <h3 class="font-bold mb-3">Price Multiplier by Star Rating</h3>
-                <div class="grid grid-cols-5 gap-2 text-center">
-                    <div class="bg-gray-100 rounded-lg p-3">
-                        <p class="text-xl font-bold text-gray-500">1★</p>
-                        <p class="text-sm text-cozy-wood">Base</p>
-                        <p class="font-medium">1x</p>
-                    </div>
-                    <div class="bg-gray-100 rounded-lg p-3">
-                        <p class="text-xl font-bold text-gray-500">2★</p>
-                        <p class="text-sm text-cozy-wood">Good</p>
-                        <p class="font-medium">1.5x</p>
-                    </div>
-                    <div class="bg-gray-100 rounded-lg p-3">
-                        <p class="text-xl font-bold text-gray-400">3★</p>
-                        <p class="text-sm text-cozy-wood">Great</p>
-                        <p class="font-medium">2x</p>
-                    </div>
-                    <div class="bg-yellow-100 rounded-lg p-3 border border-yellow-300">
-                        <p class="text-xl font-bold text-yellow-600">4★</p>
-                        <p class="text-sm text-cozy-wood">Excellent</p>
-                        <p class="font-bold text-yellow-600">4x</p>
-                    </div>
-                    <div class="bg-amber-100 rounded-lg p-3 border border-amber-400">
-                        <p class="text-xl font-bold text-amber-600">5★</p>
-                        <p class="text-sm text-cozy-wood">Perfect</p>
-                        <p class="font-bold text-amber-600">8x</p>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-white/80 rounded-xl p-4 mb-4">
-                <h3 class="font-bold mb-3">🎣 Star Unlock by Fishing Level</h3>
-                <div class="grid md:grid-cols-3 gap-4">
-                    <div class="bg-gray-50 rounded-lg p-3 text-center">
-                        <div class="font-bold">Level 1–3</div>
-                        <div class="text-sm text-cozy-wood">★ to ★★★</div>
-                    </div>
-                    <div class="bg-yellow-50 rounded-lg p-3 text-center">
-                        <div class="font-bold">Level 4–5</div>
-                        <div class="text-sm text-cozy-wood">★ to ★★★★</div>
-                    </div>
-                    <div class="bg-purple-50 rounded-lg p-3 text-center">
-                        <div class="font-bold">Level 6+</div>
-                        <div class="text-sm text-cozy-wood">★ to ★★★★★</div>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-white/80 rounded-xl p-4">
-                <h3 class="font-bold mb-2">📐 Example Calculations</h3>
-                <ul class="text-sm text-cozy-wood space-y-1">
-                    <li>• <strong>Spined Loach:</strong> 50G base → 75G (2★) → 100G (3★) → 200G (4★) → 400G (5★)</li>
-                    <li>• <strong>Tilapia:</strong> 320G base → 480G (2★) → 640G (3★) → 1,280G (4★)</li>
-                    <li>• <strong>Giant Oarfish:</strong> 535G base → 1,070G (3★) → 2,140G (4★) → 4,280G (5★)</li>
-                </ul>
-                <p class="text-xs text-cozy-wood mt-2"><strong>⚠️ Note:</strong> Legendary fish (Rainbow Fish, Legendary Koi, Swordfish, Bluefin Tuna) have fixed prices that may not follow the standard multiplier pattern.</p>
-            </div>
-        </section>
-
-        <!-- Best Fish by Fishing Level -->
-        <section id="by-level" class="bg-white rounded-2xl p-6 mb-6 border border-cozy-peach/30">
-            <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
-                <span class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">📈</span>
-                Best Fish to Farm by Level
-            </h2>
-            <div class="space-y-3">
-                <div class="flex items-start gap-3 bg-green-50 rounded-lg p-3">
-                    <span class="text-xl">🌱</span>
-                    <div>
-                        <p class="font-bold text-sm">Level 1–2: Striped Red Mullet</p>
-                        <p class="text-xs text-cozy-wood">320–1,280G | Sea Fishing | No special conditions — best early-game money maker!</p>
-                    </div>
-                </div>
-                <div class="flex items-start gap-3 bg-green-50 rounded-lg p-3">
-                    <span class="text-xl">🐟</span>
-                    <div>
-                        <p class="font-bold text-sm">Level 1–2: Skipjack Tuna</p>
-                        <p class="text-xs text-cozy-wood">210–420G | Ocean | Easy backup if Sea Fishing isn't unlocked yet</p>
-                    </div>
-                </div>
-                <div class="flex items-start gap-3 bg-blue-50 rounded-lg p-3">
-                    <span class="text-xl">⭐</span>
-                    <div>
-                        <p class="font-bold text-sm">Level 3: Tilapia / Edible Frog</p>
-                        <p class="text-xs text-cozy-wood">320–1,280G | Rivers / Lakes | Requires Mermaid Attractor bait</p>
-                    </div>
-                </div>
-                <div class="flex items-start gap-3 bg-blue-50 rounded-lg p-3">
-                    <span class="text-xl">🌙</span>
-                    <div>
-                        <p class="font-bold text-sm">Level 4–5: European Lobster</p>
-                        <p class="text-xs text-cozy-wood">230–460G | Zephyr Sea | Night only — consistent income</p>
-                    </div>
-                </div>
-                <div class="flex items-start gap-3 bg-purple-50 rounded-lg p-3">
-                    <span class="text-xl">🦈</span>
-                    <div>
-                        <p class="font-bold text-sm">Level 6: Nursehound</p>
-                        <p class="text-xs text-cozy-wood">535–4,280G | Sea Fishing | Unlocks 5★ catches at this level!</p>
-                    </div>
-                </div>
-                <div class="flex items-start gap-3 bg-purple-50 rounded-lg p-3">
-                    <span class="text-xl">🐉</span>
-                    <div>
-                        <p class="font-bold text-sm">Level 7+: Giant Oarfish</p>
-                        <p class="text-xs text-cozy-wood">535–4,280G | Sea Fishing | Top farmable fish with 5★ potential</p>
-                    </div>
-                </div>
-                <div class="flex items-start gap-3 bg-amber-50 rounded-lg p-3">
-                    <span class="text-xl">🌈</span>
-                    <div>
-                        <p class="font-bold text-sm">Level 9–10: Bluefin Tuna / Swordfish / Rainbow Fish</p>
-                        <p class="text-xs text-cozy-wood">1,200–5,000G | Various Seas | Requires 🌈 Rainbow weather for most</p>
-                    </div>
-                </div>
-            </div>
+        <section class="bg-white rounded-2xl p-6 mb-6 border border-cozy-peach/30">
+            <h2 class="font-display text-2xl font-bold mb-4">Good Early Targets</h2>
+            <p class="text-sm text-cozy-wood mb-4">These fish are available at lower fishing levels and still have useful value ladders for collection or early selling routes.</p>
+            <div class="overflow-x-auto"><table class="w-full text-sm fish-table"><thead class="bg-cozy-sky/20 text-left"><tr><th class="px-4 py-3">Fish</th><th class="px-4 py-3">Location</th><th class="px-4 py-3 text-center">Lvl</th><th class="px-4 py-3">Shadow</th><th class="px-4 py-3">Category</th><th class="px-4 py-3">Weather / Schedule</th><th class="px-4 py-3">Market Value</th></tr></thead><tbody class="divide-y divide-cozy-peach/30">
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Turbot.webp" alt="Turbot" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Turbot</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+                                <td class="px-4 py-3 text-center">2</td>
+                                <td class="px-4 py-3 text-cozy-wood">Medium</td>
+                                <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">320 / 480 / 640 / 1,280 / 2,560</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Anglerfish.webp" alt="Anglerfish" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Anglerfish</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+                                <td class="px-4 py-3 text-center">2</td>
+                                <td class="px-4 py-3 text-cozy-wood">Golden</td>
+                                <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">320 / 480 / 640 / 1,280 / 2,560</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Edible-Frog.webp" alt="Edible Frog" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Edible Frog</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">Lake</td>
+                                <td class="px-4 py-3 text-center">3</td>
+                                <td class="px-4 py-3 text-cozy-wood">Blue</td>
+                                <td class="px-4 py-3 text-cozy-wood">Mermaid Fish Attractor</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">320 / 480 / 640 / 1,280 / 2,560</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Common-Octopus.webp" alt="Common Octopus" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Common Octopus</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+                                <td class="px-4 py-3 text-center">2</td>
+                                <td class="px-4 py-3 text-cozy-wood">Medium</td>
+                                <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">320 / 480 / 640 / 1,280 / 2,560</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Striped-Red-Mullet.webp" alt="Striped Red Mullet" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Striped Red Mullet</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+                                <td class="px-4 py-3 text-center">1</td>
+                                <td class="px-4 py-3 text-cozy-wood">Golden</td>
+                                <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">320 / 480 / 640 / 1,280 / 2,560</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/tilapia/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Tilapia.webp" alt="Tilapia" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Tilapia</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">River</td>
+                                <td class="px-4 py-3 text-center">3</td>
+                                <td class="px-4 py-3 text-cozy-wood">Blue</td>
+                                <td class="px-4 py-3 text-cozy-wood">Mermaid Fish Attractor</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">320 / 480 / 640 / 1,280 / 2,560</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Frostspore-Whale-Shark.webp" alt="Frostspore Whale Shark" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Frostspore Whale Shark</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">[EVENT] Frostspore Fish</td>
+                                <td class="px-4 py-3 text-center">1</td>
+                                <td class="px-4 py-3 text-cozy-wood">Large</td>
+                                <td class="px-4 py-3 text-cozy-wood">Winter frost season</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">320 / 480 / 640 / 1,280 / 2,560</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Director-Common-Octopus-w-Patterned-Hat.webp" alt="Director Common Octopus w/ Patterned Hat" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Director Common Octopus w/ Patterned Hat</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">[EVENT] Octo Entertainment</td>
+                                <td class="px-4 py-3 text-center">1</td>
+                                <td class="px-4 py-3 text-cozy-wood">Large</td>
+                                <td class="px-4 py-3 text-cozy-wood">Dreamlight Cinematics</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">320 / 480 / 640 / 1,280 / 2,560</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Zander.webp" alt="Zander" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Zander</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">Giantwood River</td>
+                                <td class="px-4 py-3 text-center">3</td>
+                                <td class="px-4 py-3 text-cozy-wood">Medium</td>
+                                <td class="px-4 py-3 text-cozy-wood">Common</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny; Day, Dawn, Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">230 / 345 / 460 / 920 / 1,840</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Largemouth-Bass.webp" alt="Largemouth Bass" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Largemouth Bass</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">Forest Lake</td>
+                                <td class="px-4 py-3 text-center">2</td>
+                                <td class="px-4 py-3 text-cozy-wood">Medium</td>
+                                <td class="px-4 py-3 text-cozy-wood">Common</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny; Day, Dawn, Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">230 / 345 / 460 / 920 / 1,840</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Director-Common-Octopus-w-Cinnamon-Hat.webp" alt="Director Common Octopus w/ Cinnamon Hat" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Director Common Octopus w/ Cinnamon Hat</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">Whale Sea</td>
+                                <td class="px-4 py-3 text-center">1</td>
+                                <td class="px-4 py-3 text-cozy-wood">Large</td>
+                                <td class="px-4 py-3 text-cozy-wood">Dreamlight Cinematics</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">215 / 322 / 430 / 860 / 1,720</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium min-w-[220px]"><a href="/database/fish/" class="inline-flex items-center gap-3 hover:text-cozy-coral"><img src="/img/fish/Frostspore-Ocean-Sunfish.webp" alt="Frostspore Ocean Sunfish" class="w-10 h-10 object-contain rounded-lg bg-cozy-sky/10 p-1" loading="lazy"><span>Frostspore Ocean Sunfish</span></a></td>
+                                <td class="px-4 py-3 text-cozy-wood">[EVENT] Frostspore Fish, Old Sea</td>
+                                <td class="px-4 py-3 text-center">1</td>
+                                <td class="px-4 py-3 text-cozy-wood">Large</td>
+                                <td class="px-4 py-3 text-cozy-wood">Winter frost season</td>
+                                <td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+                                <td class="px-4 py-3 font-semibold text-cozy-bark">215 / 322 / 430 / 860 / 1,720</td>
+                            </tr>
+            </tbody></table></div>
         </section>
         <div id="heartopia_in_content_2" class="heartopia-ad-slot max-w-6xl mx-auto px-4 my-6 text-center"></div>
-
-
-        <!-- Cook vs Sell Raw -->
-        <section id="cook-vs-sell" class="bg-gradient-to-br from-rose-50 to-orange-50 rounded-2xl p-6 mb-6 border-2 border-rose-300">
-            <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
-                <span class="w-10 h-10 bg-rose-100 rounded-lg flex items-center justify-center">🍳</span>
-                Cook vs Sell Raw
-            </h2>
-            <div class="grid md:grid-cols-2 gap-4 mb-4">
-                <div class="bg-white/80 rounded-xl p-4 border border-blue-200">
-                    <h3 class="font-bold mb-2 text-blue-700">🐟 Sell Raw</h3>
-                    <ul class="text-sm text-cozy-wood space-y-1">
-                        <li>• No cooking level needed</li>
-                        <li>• Instant gold, no extra steps</li>
-                        <li>• Rare fish (Rainbow Fish 5,000G) beat most cooked dishes</li>
-                        <li>• 5★ fish at high levels are very profitable raw</li>
-                    </ul>
-                </div>
-                <div class="bg-white/80 rounded-xl p-4 border border-orange-200">
-                    <h3 class="font-bold mb-2 text-orange-700">🍳 Cook First</h3>
-                    <ul class="text-sm text-cozy-wood space-y-1">
-                        <li>• Fish N Chips: 310–2,480G (5★) from cheap fish</li>
-                        <li>• Seafood Risotto: 490–1,960G (4★)</li>
-                        <li>• Cooking multiplies cheap fish value significantly</li>
-                        <li>• Budget fish (50–75G) become much more valuable cooked</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="bg-white/80 rounded-xl p-4 border-2 border-amber-300">
-                <p class="text-sm font-bold text-cozy-bark">💡 Verdict: Sell rare fish raw (Rainbow Fish, Legendary Koi, Swordfish). Cook cheap fish (Sardine, Sea Bass) into Fish N Chips for much higher profit.</p>
-            </div>
-        </section>
-
-        <!-- Selling Tips -->
-        <section id="tips" class="bg-white rounded-2xl p-6 mb-6 border border-cozy-peach/30">
-            <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
-                <span class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center">💡</span>
-                Selling Tips for Maximum Profit
-            </h2>
-            <div class="space-y-3">
-                <div class="flex items-start gap-3 bg-blue-50 rounded-lg p-3">
-                    <span class="text-xl">🌊</span>
+        <section class="bg-white rounded-2xl p-6 mb-6 border border-cozy-peach/30">
+            <h2 class="font-display text-2xl font-bold mb-4">Sea Fishing Value Picks</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <a href="/database/fish/" class="bg-white rounded-xl p-4 border border-cozy-peach/30 hover:border-cozy-coral transition-colors flex items-center gap-4">
+                    <img src="/img/fish/Golden-King-Crab.webp" alt="Golden King Crab fish image" class="w-16 h-16 object-contain rounded-xl bg-cozy-sky/10 p-2" loading="lazy">
                     <div>
-                        <p class="font-bold text-sm">Target Sea Fishing</p>
-                        <p class="text-xs text-cozy-wood">Striped Red Mullet, Anglerfish, and Common Octopus all sell for 320–1,280G and are available from Level 1–2!</p>
+                        <h3 class="font-bold text-cozy-bark">Golden King Crab</h3>
+                        <p class="text-xs text-cozy-wood">[EVENT] Sea Fishing · Lv.8 · Golden shadow</p>
+                        <p class="text-xs font-semibold text-cozy-coral mt-1">850 / 1,275 / 1,700 / 3,400 / 6,800</p>
                     </div>
-                </div>
-                <div class="flex items-start gap-3 bg-amber-50 rounded-lg p-3">
-                    <span class="text-xl">🌈</span>
+                </a>
+                <a href="/database/fish/" class="bg-white rounded-xl p-4 border border-cozy-peach/30 hover:border-cozy-coral transition-colors flex items-center gap-4">
+                    <img src="/img/fish/Moonfish.webp" alt="Moonfish fish image" class="w-16 h-16 object-contain rounded-xl bg-cozy-sky/10 p-2" loading="lazy">
                     <div>
-                        <p class="font-bold text-sm">Watch for Rainbow Weather</p>
-                        <p class="text-xs text-cozy-wood">Most legendary fish only appear during Rainbow weather. Check the weather forecast daily!</p>
+                        <h3 class="font-bold text-cozy-bark">Moonfish</h3>
+                        <p class="text-xs text-cozy-wood">[EVENT] Sea Fishing · Lv.9 · Golden shadow</p>
+                        <p class="text-xs font-semibold text-cozy-coral mt-1">850 / 1,275 / 1,700 / 3,400 / 6,800</p>
                     </div>
-                </div>
-                <div class="flex items-start gap-3 bg-green-50 rounded-lg p-3">
-                    <span class="text-xl">⭐</span>
+                </a>
+                <a href="/database/fish/" class="bg-white rounded-xl p-4 border border-cozy-peach/30 hover:border-cozy-coral transition-colors flex items-center gap-4">
+                    <img src="/img/fish/Shortfin-Mako-Shark.webp" alt="Shortfin Mako Shark fish image" class="w-16 h-16 object-contain rounded-xl bg-cozy-sky/10 p-2" loading="lazy">
                     <div>
-                        <p class="font-bold text-sm">Use Mermaid Attractor</p>
-                        <p class="text-xs text-cozy-wood">Tilapia and Edible Frog (320–1,280G) require this special bait. Worth the investment!</p>
+                        <h3 class="font-bold text-cozy-bark">Shortfin Mako Shark</h3>
+                        <p class="text-xs text-cozy-wood">[EVENT] Sea Fishing · Lv.10 · Golden shadow</p>
+                        <p class="text-xs font-semibold text-cozy-coral mt-1">850 / 1,275 / 1,700 / 3,400 / 6,800</p>
                     </div>
-                </div>
-                <div class="flex items-start gap-3 bg-purple-50 rounded-lg p-3">
-                    <span class="text-xl">🎯</span>
+                </a>
+                <a href="/database/fish/" class="bg-white rounded-xl p-4 border border-cozy-peach/30 hover:border-cozy-coral transition-colors flex items-center gap-4">
+                    <img src="/img/fish/Nursehound.webp" alt="Nursehound fish image" class="w-16 h-16 object-contain rounded-xl bg-cozy-sky/10 p-2" loading="lazy">
                     <div>
-                        <p class="font-bold text-sm">Level to 6 for 5-Star Catches</p>
-                        <p class="text-xs text-cozy-wood">5★ fish sell for 8x the base price. Prioritize reaching Fishing Level 6 ASAP!</p>
+                        <h3 class="font-bold text-cozy-bark">Nursehound</h3>
+                        <p class="text-xs text-cozy-wood">[EVENT] Sea Fishing · Lv.6 · Large shadow</p>
+                        <p class="text-xs font-semibold text-cozy-coral mt-1">535 / 802 / 1,070 / 2,140 / 4,280</p>
                     </div>
-                </div>
-                <div class="flex items-start gap-3 bg-rose-50 rounded-lg p-3">
-                    <span class="text-xl">💰</span>
+                </a>
+                <a href="/database/fish/" class="bg-white rounded-xl p-4 border border-cozy-peach/30 hover:border-cozy-coral transition-colors flex items-center gap-4">
+                    <img src="/img/fish/Giant-Oarfish.webp" alt="Giant Oarfish fish image" class="w-16 h-16 object-contain rounded-xl bg-cozy-sky/10 p-2" loading="lazy">
                     <div>
-                        <p class="font-bold text-sm">Sell to Albert Jr.</p>
-                        <p class="text-xs text-cozy-wood">Find him in Town Square. He buys all your fish and cooked dishes!</p>
+                        <h3 class="font-bold text-cozy-bark">Giant Oarfish</h3>
+                        <p class="text-xs text-cozy-wood">[EVENT] Sea Fishing · Lv.7 · Golden shadow</p>
+                        <p class="text-xs font-semibold text-cozy-coral mt-1">535 / 1,070 / 2,140 / 4,280</p>
                     </div>
-                </div>
+                </a>
+                <a href="/database/fish/" class="bg-white rounded-xl p-4 border border-cozy-peach/30 hover:border-cozy-coral transition-colors flex items-center gap-4">
+                    <img src="/img/fish/Striped-Red-Mullet.webp" alt="Striped Red Mullet fish image" class="w-16 h-16 object-contain rounded-xl bg-cozy-sky/10 p-2" loading="lazy">
+                    <div>
+                        <h3 class="font-bold text-cozy-bark">Striped Red Mullet</h3>
+                        <p class="text-xs text-cozy-wood">[EVENT] Sea Fishing · Lv.1 · Golden shadow</p>
+                        <p class="text-xs font-semibold text-cozy-coral mt-1">320 / 480 / 640 / 1,280 / 2,560</p>
+                    </div>
+                </a>
+                <a href="/database/fish/" class="bg-white rounded-xl p-4 border border-cozy-peach/30 hover:border-cozy-coral transition-colors flex items-center gap-4">
+                    <img src="/img/fish/Anglerfish.webp" alt="Anglerfish fish image" class="w-16 h-16 object-contain rounded-xl bg-cozy-sky/10 p-2" loading="lazy">
+                    <div>
+                        <h3 class="font-bold text-cozy-bark">Anglerfish</h3>
+                        <p class="text-xs text-cozy-wood">[EVENT] Sea Fishing · Lv.2 · Golden shadow</p>
+                        <p class="text-xs font-semibold text-cozy-coral mt-1">320 / 480 / 640 / 1,280 / 2,560</p>
+                    </div>
+                </a>
+                <a href="/database/fish/" class="bg-white rounded-xl p-4 border border-cozy-peach/30 hover:border-cozy-coral transition-colors flex items-center gap-4">
+                    <img src="/img/fish/Common-Octopus.webp" alt="Common Octopus fish image" class="w-16 h-16 object-contain rounded-xl bg-cozy-sky/10 p-2" loading="lazy">
+                    <div>
+                        <h3 class="font-bold text-cozy-bark">Common Octopus</h3>
+                        <p class="text-xs text-cozy-wood">[EVENT] Sea Fishing · Lv.2 · Medium shadow</p>
+                        <p class="text-xs font-semibold text-cozy-coral mt-1">320 / 480 / 640 / 1,280 / 2,560</p>
+                    </div>
+                </a>
             </div>
         </section>
-
-        <!-- FAQ Section -->
-        <section id="faq" class="bg-white rounded-2xl p-6 mb-6 border border-cozy-peach/30">
-            <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
-                <span class="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center">❓</span>
-                Frequently Asked Questions
-            </h2>
-            <div class="space-y-4">
-                <div class="border-b border-cozy-peach/30 pb-4">
-                    <h3 class="font-bold text-cozy-bark mb-2">What is the most expensive fish in Heartopia?</h3>
-                    <p class="text-sm text-cozy-wood"><strong>Rainbow Fish</strong> is the most expensive at 5,000 Gold (base price). <strong>Giant Oarfish</strong> and <strong>Nursehound</strong> can reach up to 4,280G at 5-star. For commonly farmable fish, <strong>Tilapia</strong> and <strong>Edible Frog</strong> reach 1,280G at 4-star.</p>
-                </div>
-                <div class="border-b border-cozy-peach/30 pb-4">
-                    <h3 class="font-bold text-cozy-bark mb-2">How do star ratings affect fish prices?</h3>
-                    <p class="text-sm text-cozy-wood">Star ratings multiply the base price: <strong>2★ = 1.5x, 3★ = 2x, 4★ = 4x, 5★ = 8x</strong>. You unlock 4-star fish at Fishing Level 4 and 5-star at Level 6.</p>
-                </div>
-                <div class="border-b border-cozy-peach/30 pb-4">
-                    <h3 class="font-bold text-cozy-bark mb-2">Should I sell fish raw or cook them?</h3>
-                    <p class="text-sm text-cozy-wood">Cooking fish into dishes like <strong>Fish N Chips</strong> (2,480G at 5★) is usually more profitable than selling raw. However, rare fish like <strong>Rainbow Fish</strong> (5,000G) are worth more sold raw than most cooked dishes.</p>
-                </div>
-                <div class="border-b border-cozy-peach/30 pb-4">
-                    <h3 class="font-bold text-cozy-bark mb-2">What is the best fish to farm for gold?</h3>
-                    <p class="text-sm text-cozy-wood">For beginners (Level 1–3), <strong>Striped Red Mullet</strong> at 320–1,280G is the best. Mid-level players should target <strong>Tilapia</strong> or <strong>Edible Frog</strong> (320–1,280G with Mermaid Attractor). End-game players should hunt <strong>Giant Oarfish</strong> (535–4,280G) and <strong>Rainbow Fish</strong> (5,000G).</p>
-                </div>
-                <div>
-                    <h3 class="font-bold text-cozy-bark mb-2">Where do I sell fish in Heartopia?</h3>
-                    <p class="text-sm text-cozy-wood">Sell fish to <strong>Albert Jr.</strong>, the merchant NPC in Town Square. You can sell directly from your inventory. Some fish are also useful as cooking ingredients or NPC gifts.</p>
-                </div>
-            </div>
+        <section class="bg-cozy-mint/20 rounded-2xl p-6 mb-6 border border-cozy-mint">
+            <h2 class="font-display text-2xl font-bold mb-4">Price Notes</h2>
+            <ul class="space-y-2 text-sm text-cozy-wood"><li><strong>Market Value</strong> is shown as the visible value ladder from the current fish table.</li><li>Some late-game or event entries may show <strong>Check in game</strong> when no public value is listed yet.</li><li>Use <a href="/database/fish/" class="text-cozy-coral font-bold hover:underline">the fish database</a> when you need the full 112 fish table with search, filters, and collection tracking.</li></ul>
         </section>
         <div id="heartopia_in_content_3" class="heartopia-ad-slot max-w-6xl mx-auto px-4 my-6 text-center"></div>
-
-
-        <!-- Related Links -->
-        <section class="pt-8 border-t border-cozy-peach/30">
-            <h2 class="font-bold text-xl mb-6">📚 Related Guides</h2>
-            <div class="grid md:grid-cols-3 gap-4">
-                <a href="/database/fish/" class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
-                    <span class="text-3xl">🐟</span>
-                    <div>
-                        <h3 class="font-bold">Fish Database</h3>
-                        <p class="text-sm text-cozy-wood">All 94 fish & locations</p>
-                    </div>
-                </a>
-                <a href="/hobbies/fishing/" class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
-                    <span class="text-3xl">🎣</span>
-                    <div>
-                        <h3 class="font-bold">Fishing Guide</h3>
-                        <p class="text-sm text-cozy-wood">How to fish & level up</p>
-                    </div>
-                </a>
-                <a href="/database/recipe-prices/" class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
-                    <span class="text-3xl">🍳</span>
-                    <div>
-                        <h3 class="font-bold">Recipe Prices</h3>
-                        <p class="text-sm text-cozy-wood">Cook fish for more profit</p>
-                    </div>
-                </a>
-            </div>
-        </section>
-
-        <!-- Disclaimer -->
-        <section class="mt-8 bg-cozy-bark/10 rounded-xl p-4 text-sm text-cozy-wood">
-            <p><strong>Sources:</strong> Roonby, ScreenHype, Gam3s.gg, GameRant, Keengamer, TheGamer, Reddit
-                (January–February 2026). Prices verified through multiple sources.
-                Some 5★ values are calculated using the observed 8x multiplier pattern.
-                Rare/legendary fish prices may vary. This is an unofficial fan guide — not affiliated with XD Entertainment.</p>
-        </section>
-
     </main>
-
-    <!-- FOOTER -->
-    <footer class="bg-cozy-bark text-white py-8 mt-12">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <a href="/" class="inline-flex items-center gap-2 mb-4">
-                <span class="text-xl">🏡</span>
-                <span class="font-display font-bold">Heartopia<span class="text-cozy-sage">.Life</span></span>
-            </a>
-            <div class="flex justify-center gap-6 text-sm text-white/70 mb-4">
-                <a href="/about/" class="hover:text-white">About</a>
-                <a href="/privacy/" class="hover:text-white">Privacy Policy</a>
-                <a href="/contact/" class="hover:text-white">Contact</a>
-            </div>
-            <p class="text-white/60 text-sm mb-4">Unofficial fan site. Not affiliated with XD Entertainment.</p>
-            <p class="text-white/40 text-xs">© 2026 Heartopia.Life</p>
-        </div>
-</footer>
-    <!-- NitroPay Ad Units -->
-<script>
+    <footer class="bg-cozy-bark text-white py-8 mt-12"><div class="max-w-6xl mx-auto px-4 text-center"><a href="/" class="inline-flex items-center gap-2 mb-4"><span class="font-display font-bold">Heartopia<span class="text-cozy-sage">.Life</span></span></a><p class="text-white/60 text-sm mb-4">Unofficial fan site. Not affiliated with XD Entertainment.</p><div class="flex justify-center gap-6 text-sm text-white/70"><a href="/privacy/" class="hover:text-white">Privacy Policy</a><a href="/contact/" class="hover:text-white">Contact</a></div></div></footer>
+    <script>
         if (window['nitroAds']) {
-            window['nitroAds'].createAd('heartopia_anchor', {
-                "format": "anchor-v2",
-                "anchor": "bottom",
-                "anchorBgColor": "rgb(0 0 0 / 80%)",
-                "anchorClose": true,
-                "anchorPersistClose": false,
-                "anchorStickyOffset": 0,
-                "mediaQuery": "(max-width: 1024px)",
-                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-right" }
-            });
-
-            window['nitroAds'].createAd('heartopia_floating_video', {
-                "format": "floating",
-                "floating": { "position": "left" },
-                "mediaQuery": "(min-width: 1025px)",
-                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-left" }
-            });
-
-            window['nitroAds'].createAd('heartopia_side_rail', {
-                "format": "rail",
-                "rail": "right",
-                "railOffsetTop": 0,
-                "railOffsetBottom": 0,
-                "railCollisionWhitelist": [],
-                "railCloseColor": "#666666",
-                "railSpacing": 10,
-                "railStack": false,
-                "railStickyTop": 70,
-                "railVerticalAlign": "top",
-                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-left" },
-                "mediaQuery": "(min-width: 1025px)"
-            });
-
-            window['nitroAds'].createAd('heartopia_in_content', {
-                "format": "display",
-                "sizes": [[970, 90], [970, 250], [728, 90], [300, 250], [320, 100], [320, 50]],
-                "collapseEmpty": true,
-                "renderVisibleOnly": true,
-                "visibleMargin": 800,
-                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "bottom-right" }
-            });
-            window['nitroAds'].createAd('heartopia_in_content_2', {
-                "format": "display",
-                "sizes": [[970, 90], [970, 250], [728, 90], [300, 250], [320, 100], [320, 50]],
-                "collapseEmpty": true,
-                "renderVisibleOnly": true,
-                "visibleMargin": 800,
-                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "bottom-right" }
-            });
-            window['nitroAds'].createAd('heartopia_in_content_3', {
-                "format": "display",
-                "sizes": [[970, 90], [970, 250], [728, 90], [300, 250], [320, 100], [320, 50]],
-                "collapseEmpty": true,
-                "renderVisibleOnly": true,
-                "visibleMargin": 800,
-                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "bottom-right" }
-            });
+            window['nitroAds'].createAd('heartopia_anchor', {"format":"anchor-v2","anchor":"bottom","anchorBgColor":"rgb(0 0 0 / 80%)","anchorClose":true,"anchorPersistClose":false,"anchorStickyOffset":0,"mediaQuery":"(max-width: 1024px)","report":{"enabled":true,"icon":true,"wording":"Report Ad","position":"top-right"}});
+            window['nitroAds'].createAd('heartopia_floating_video', {"format":"floating","floating":{"position":"left"},"mediaQuery":"(min-width: 1025px)","report":{"enabled":true,"icon":true,"wording":"Report Ad","position":"top-left"}});
+            window['nitroAds'].createAd('heartopia_side_rail', {"format":"rail","rail":"right","railOffsetTop":0,"railOffsetBottom":0,"railCollisionWhitelist":[],"railCloseColor":"#666666","railSpacing":10,"railStack":false,"railStickyTop":70,"railVerticalAlign":"top","report":{"enabled":true,"icon":true,"wording":"Report Ad","position":"top-left"},"mediaQuery":"(min-width: 1025px)"});
+            window['nitroAds'].createAd('heartopia_in_content', {"format":"display","sizes":[[970,90],[970,250],[728,90],[300,250],[320,100],[320,50]],"collapseEmpty":true,"renderVisibleOnly":true,"visibleMargin":800,"report":{"enabled":true,"icon":true,"wording":"Report Ad","position":"bottom-right"}});
+            window['nitroAds'].createAd('heartopia_in_content_2', {"format":"display","sizes":[[970,90],[970,250],[728,90],[300,250],[320,100],[320,50]],"collapseEmpty":true,"renderVisibleOnly":true,"visibleMargin":800,"report":{"enabled":true,"icon":true,"wording":"Report Ad","position":"bottom-right"}});
+            window['nitroAds'].createAd('heartopia_in_content_3', {"format":"display","sizes":[[970,90],[970,250],[728,90],[300,250],[320,100],[320,50]],"collapseEmpty":true,"renderVisibleOnly":true,"visibleMargin":800,"report":{"enabled":true,"icon":true,"wording":"Report Ad","position":"bottom-right"}});
         }
     </script>
 </body>
-
 </html>
