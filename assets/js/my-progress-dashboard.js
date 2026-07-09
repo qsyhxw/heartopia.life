@@ -5,7 +5,7 @@
             title: 'Fish collected',
             icon: '🐟',
             storageKey: 'heartopia.collection.fish',
-            total: 48,
+            total: 112,
             url: '/database/fish/',
             action: 'Open fish database',
             color: 'sky'
