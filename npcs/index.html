@@ -20,7 +20,7 @@
     <!-- Meta Tags -->
     <title>Heartopia NPC Guide: Locations, Gifts, Quests, Blanc, Doris & Vanya</title>
     <meta name="description"
-        content="Heartopia NPC guide for Blanc, Doris, Vanya, Vernie, Atara, Eric, Will, locations, gifts, quests, shops, mentors, and friendship tips.">
+        content="Heartopia NPC database with search and filters for Blanc, Doris, Vanya, Vernie, locations, gifts, quests, shops, mentors, merchants, and friendship notes.">
     <meta name="keywords"
         content="heartopia npc guide, blanc heartopia, doris heartopia location, heartopia vanya, heartopia vernie, heartopia npc gifts, heartopia npc locations">
     <meta name="author" content="Heartopia.Life">
@@ -32,7 +32,7 @@
     <!-- Open Graph -->
     <meta property="og:type" content="article">
     <meta property="og:title" content="Heartopia NPC Guide: Locations, Gifts, Quests & Shops">
-    <meta property="og:description" content="Find Heartopia NPC locations, gifts, quests, shops, and single NPC pages for Blanc, Doris, Vanya, Vernie, Atara, Eric, and Will.">
+    <meta property="og:description" content="Search Heartopia NPCs by location, role, gifts, shops, quests, and pages for Blanc, Doris, Vanya, Vernie, Atara, Eric, and Will.">
     <meta property="og:url" content="https://heartopia.life/npcs/">
     <meta property="og:site_name" content="Heartopia.Life">
 
@@ -170,7 +170,7 @@
         </nav>
     </header>
 
-    <main class="max-w-4xl mx-auto px-4 py-8">
+    <main class="max-w-6xl mx-auto px-4 py-8">
 <!-- Breadcrumb -->
         <nav class="text-sm text-cozy-wood mb-6">
             <a href="/" class="hover:text-cozy-coral">Home</a>
@@ -182,7 +182,7 @@
         <div class="bg-gradient-to-br from-pink-100 to-cozy-peach rounded-2xl p-6 md:p-8 mb-8">
             <div class="flex items-center gap-2 text-sm font-medium text-green-700 mb-3">
                 <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                Updated: July 8, 2026
+                Updated: July 9, 2026
             </div>
             <h1 class="font-display text-3xl md:text-4xl font-bold text-cozy-bark mb-4">
                 👥 Heartopia NPC Guide
@@ -192,6 +192,76 @@
             </p>
         </div>
 
+        <section data-npc-database class="bg-white rounded-2xl p-6 mb-8 border border-cozy-peach/40 shadow-sm">
+            <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-5">
+                <div>
+                    <p class="text-sm font-bold text-cozy-coral mb-2">NPC Database</p>
+                    <h2 class="font-display text-2xl font-bold text-cozy-bark">Search NPCs by Location, Function, Gifts & Quests</h2>
+                    <p class="text-sm text-cozy-wood mt-1">Use this database-style finder for Blanc, Doris, Vanya, Vernie, merchants, mentors, residents, event NPCs, gift checks, and quest routes.</p>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-5 gap-2 text-center text-sm">
+                    <div class="rounded-xl bg-cozy-cream px-3 py-2 border border-cozy-peach/40"><strong id="npc-visible-count">0</strong><span class="block text-xs text-cozy-wood">Shown</span></div>
+                    <div class="rounded-xl bg-cozy-cream px-3 py-2 border border-cozy-peach/40"><strong id="npc-total-count">0</strong><span class="block text-xs text-cozy-wood">NPCs</span></div>
+                    <div class="rounded-xl bg-cozy-cream px-3 py-2 border border-cozy-peach/40"><strong id="npc-met-count">0</strong><span class="block text-xs text-cozy-wood">Met</span></div>
+                    <div class="rounded-xl bg-cozy-cream px-3 py-2 border border-cozy-peach/40"><strong id="npc-gift-count">0</strong><span class="block text-xs text-cozy-wood">Gift</span></div>
+                    <div class="rounded-xl bg-cozy-cream px-3 py-2 border border-cozy-peach/40"><strong id="npc-quest-count">0</strong><span class="block text-xs text-cozy-wood">Quest</span></div>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-6 gap-3 mb-5">
+                <label class="lg:col-span-2">
+                    <span class="block text-xs font-bold text-cozy-wood mb-1">Search name, gift, shop, quest, area</span>
+                    <input id="npc-search" type="search" placeholder="Blanc, Doris, Vanya, fish, seeds, meteor..." class="w-full rounded-xl border border-cozy-peach/50 bg-cozy-cream px-4 py-3 text-sm outline-none focus:border-cozy-coral">
+                </label>
+                <label>
+                    <span class="block text-xs font-bold text-cozy-wood mb-1">Role</span>
+                    <select id="npc-type-filter" class="w-full rounded-xl border border-cozy-peach/50 bg-white px-3 py-3 text-sm outline-none focus:border-cozy-coral">
+                        <option value="all">All roles</option>
+                        <option value="mentor">Mentors</option>
+                        <option value="merchant">Merchants</option>
+                        <option value="resident">Residents</option>
+                        <option value="event">Event NPCs</option>
+                    </select>
+                </label>
+                <label>
+                    <span class="block text-xs font-bold text-cozy-wood mb-1">Area</span>
+                    <select id="npc-area-filter" class="w-full rounded-xl border border-cozy-peach/50 bg-white px-3 py-3 text-sm outline-none focus:border-cozy-coral">
+                        <option value="all">All areas</option>
+                        <option value="town">Town</option>
+                        <option value="garden">Garden</option>
+                        <option value="river">River</option>
+                        <option value="flower">Flower Field</option>
+                        <option value="onsen">Onsen</option>
+                        <option value="weather">Weather</option>
+                    </select>
+                </label>
+                <label>
+                    <span class="block text-xs font-bold text-cozy-wood mb-1">Function</span>
+                    <select id="npc-function-filter" class="w-full rounded-xl border border-cozy-peach/50 bg-white px-3 py-3 text-sm outline-none focus:border-cozy-coral">
+                        <option value="all">All functions</option>
+                        <option value="shop">Shop / vendor</option>
+                        <option value="quest">Quest / unlock</option>
+                        <option value="gift">Gift lookup</option>
+                        <option value="hobby">Hobby mentor</option>
+                    </select>
+                </label>
+                <label>
+                    <span class="block text-xs font-bold text-cozy-wood mb-1">My state</span>
+                    <select id="npc-state-filter" class="w-full rounded-xl border border-cozy-peach/50 bg-white px-3 py-3 text-sm outline-none focus:border-cozy-coral">
+                        <option value="all">All NPCs</option>
+                        <option value="met">Met</option>
+                        <option value="gift">Gift checked</option>
+                        <option value="quest">Quest checked</option>
+                        <option value="unmarked">Unmarked</option>
+                    </select>
+                </label>
+            </div>
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-5">
+                <p class="text-xs text-cozy-wood">Met, Gift, and Quest marks are saved in this browser only.</p>
+                <button id="npc-filter-reset" type="button" class="inline-flex items-center justify-center rounded-lg border border-cozy-peach/60 bg-white px-4 py-2 text-sm font-bold text-cozy-wood hover:border-cozy-coral">Reset filters</button>
+            </div>
+            <div id="npc-results" class="grid gap-4"></div>
+            <p id="npc-empty" class="hidden mt-4 rounded-xl bg-cozy-cream p-4 text-sm text-cozy-wood">No NPCs match the current filters.</p>
+        </section>
         <!-- TOC -->
         <div class="bg-white rounded-xl p-6 mb-8 border border-cozy-peach/30">
             <h2 class="font-bold text-lg mb-3">📋 Table of Contents</h2>
@@ -865,6 +935,7 @@
             <p class="text-white/40 text-xs">© 2026 Heartopia.Life</p>
         </div>
 </footer>
+    <script src="/assets/js/npc-database.js"></script>
     <!-- NitroPay Ad Units -->
 <script>
         if (window['nitroAds']) {
