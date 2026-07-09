@@ -19,7 +19,7 @@
     <!-- Meta Tags -->
     <title>Heartopia Interactive Map: Resource Locations, NPCs & Area Finder</title>
     <meta name="description"
-        content="Use the Heartopia interactive map and location finder for resource locations, NPC spots, fishing areas, wild animal troughs, landmarks, and mapa interactivo searches.">
+        content="Use the Heartopia interactive map, location finder, daily route checklist, and local progress tools for resources, NPCs, fishing areas, wild animal troughs, and landmarks.">
     <meta name="keywords"
         content="heartopia map, heartopia interactive map, heartopia map interactive, heartopia resource locations, heartopia location finder, heartopia mapa interactivo">
     <meta name="author" content="Heartopia.Life">
@@ -32,7 +32,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Heartopia Interactive Map & Location Finder">
     <meta property="og:description"
-        content="Find Heartopia resources, NPCs, fishing spots, wild animal troughs, landmarks, and map routes from one map hub.">
+        content="Find Heartopia resources, NPCs, fishing spots, wild animal troughs, landmarks, daily routes, and today checklist tools from one map hub.">
     <meta property="og:url" content="https://heartopia.life/guides/map/">
     <meta property="og:site_name" content="Heartopia.Life">
     <!-- Favicon -->
@@ -108,13 +108,13 @@
           "@id": "https://heartopia.life/guides/map/#webpage",
           "url": "https://heartopia.life/guides/map/",
           "name": "Heartopia Interactive Map: Resource Locations, NPCs & Area Finder",
-          "description": "Heartopia interactive map and location finder for resources, NPCs, fishing areas, wild animal troughs, landmarks, and exploration routes.",
+          "description": "Heartopia interactive map, location finder, daily route checklist, and local progress tools for resources, NPCs, fishing areas, wild animal troughs, landmarks, and exploration routes.",
           "isPartOf": {
             "@type": "WebSite",
             "name": "Heartopia.Life",
             "url": "https://heartopia.life/"
           },
-          "dateModified": "2026-07-08",
+          "dateModified": "2026-07-09",
           "inLanguage": "en"
         },
         {
@@ -135,7 +135,7 @@
             }
           },
           "datePublished": "2026-01-07",
-          "dateModified": "2026-07-08",
+          "dateModified": "2026-07-09",
           "mainEntityOfPage": "https://heartopia.life/guides/map/"
         },
         {
@@ -287,6 +287,7 @@
                     class="text-cozy-coral hover:underline">Heartopia.live</a>. Zoom, pan, and click markers for
                 details.
             </p>
+            <div id="map-focus-status" class="hidden mt-3 rounded-xl bg-cozy-mint/25 border border-cozy-mint px-4 py-3 text-sm text-cozy-bark"></div>
         </section>
         <div id="heartopia_in_content" class="heartopia-ad-slot max-w-6xl mx-auto px-4 my-6 text-center"></div>
 
@@ -349,7 +350,7 @@
                     <p class="text-xs uppercase tracking-wide text-cozy-coral font-bold mb-1">Quick answer</p>
                     <h2 class="font-display text-2xl font-bold">Heartopia Map Location Finder</h2>
                 </div>
-                <p class="text-sm text-cozy-wood">Updated July 8, 2026</p>
+                <p class="text-sm text-cozy-wood">Updated July 9, 2026</p>
             </div>
             <p class="text-cozy-wood mb-4">
                 Looking for the Heartopia map, an interactive map, or a resource location? Start with the embedded map
@@ -380,6 +381,41 @@
                     <strong>Wild animal troughs</strong>
                     <span class="block text-cozy-wood mt-1">Fox, panda, deer, capybara, alpaca, bunny, ferret, and sea otter trough spots.</span>
                 </a>
+            </div>
+        </section>
+
+        <!-- Daily Routes and Checklist -->
+        <section id="daily-routes" class="bg-white rounded-2xl p-6 mb-8 border border-cozy-peach/30 shadow-sm">
+            <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-5">
+                <div>
+                    <p class="text-xs uppercase tracking-wide text-cozy-coral font-bold mb-1">Daily Route Builder</p>
+                    <h2 class="font-display text-2xl font-bold text-cozy-bark">Daily Resource Route & Today Checklist</h2>
+                    <p class="text-sm text-cozy-wood mt-2">Pick a route to load a browser-only checklist for today's gathering run. The checklist resets by date, while long-term marked map locations stay separate.</p>
+                </div>
+                <div class="text-sm text-cozy-wood lg:text-right">
+                    <strong id="today-route-count">0/0</strong> checked today<br>
+                    <span id="today-route-date">Today</span>
+                </div>
+            </div>
+            <div id="daily-route-cards" class="grid md:grid-cols-2 xl:grid-cols-4 gap-4 mb-5"></div>
+            <div class="grid lg:grid-cols-[1fr_0.7fr] gap-5">
+                <div class="rounded-2xl border border-cozy-peach/40 bg-cozy-cream/50 p-4">
+                    <div class="flex items-center justify-between gap-3 mb-3">
+                        <h3 class="font-bold text-lg">Today Checklist</h3>
+                        <button id="today-route-clear" type="button" class="px-3 py-2 rounded-lg border border-cozy-peach hover:border-cozy-coral text-sm font-bold transition-colors">Clear today</button>
+                    </div>
+                    <div id="today-route-empty" class="rounded-xl bg-white border border-cozy-peach/40 p-4 text-sm text-cozy-wood">Choose a daily route above to create today's checklist.</div>
+                    <div id="today-route-items" class="space-y-2"></div>
+                </div>
+                <div class="rounded-2xl border border-cozy-mint/60 bg-cozy-mint/15 p-4">
+                    <h3 class="font-bold text-lg mb-2">How to use it</h3>
+                    <ul class="space-y-2 text-sm text-cozy-wood">
+                        <li>• Load a route before you start a gathering run.</li>
+                        <li>• Tap any checklist item to jump back to the map and inspect the area.</li>
+                        <li>• Use the Location Finder below for exact NPC, fish, insect, bird, and material pages.</li>
+                        <li>• Marked map locations still feed into My Progress separately.</li>
+                    </ul>
+                </div>
             </div>
         </section>
         <!-- Map Location Tool -->
@@ -445,6 +481,7 @@
                 <li><a href="#interactive-map" class="text-cozy-coral hover:underline">Interactive Map</a></li>
                 <li><a href="#common-map-searches" class="text-cozy-coral hover:underline">Common Map Searches</a></li>
                 <li><a href="#location-tool" class="text-cozy-coral hover:underline">Location Finder Tool</a></li>
+                <li><a href="#daily-routes" class="text-cozy-coral hover:underline">Daily Route Checklist</a></li>
                 <li><a href="#areas" class="text-cozy-coral hover:underline">1. Main Areas Overview</a></li>
                 <li><a href="#map-faq" class="text-cozy-coral hover:underline">Map FAQ</a></li>
                 <li><a href="#wild-animals" class="text-cozy-coral hover:underline">2. Wild Animal Locations</a></li>

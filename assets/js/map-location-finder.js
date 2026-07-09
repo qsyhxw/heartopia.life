@@ -1,5 +1,6 @@
 (function () {
     const STORAGE_KEY = 'heartopia.map.visitedLocations';
+    const TODAY_ROUTE_KEY = 'heartopia.map.todayRouteChecklist';
     const locations = [
         { name: 'Dorothy', type: 'npc', area: 'Central Town', tags: 'clothing store poster quest', note: 'Clothing store NPC unlocked through the poster quest.', link: '/guides/npc-locations/' },
         { name: 'Bob', type: 'npc', area: 'Central Town', tags: 'furniture store joinery tea table quest', note: 'Furniture store NPC tied to the joinery tea table quest.', link: '/guides/npc-locations/' },
@@ -50,6 +51,40 @@
         landmark: 'Landmarks',
         event: 'Events'
     };
+    const dailyRoutes = [
+        {
+            id: 'daily-resource-route',
+            name: 'Daily Resource Route',
+            emoji: '🧺',
+            area: 'Mixed route',
+            description: 'A fast material loop for mushrooms, timber, fluorite, bamboo, and Black Truffle checks.',
+            items: ['Shiitake Mushrooms', 'Oyster Mushrooms', 'Bamboo', 'Fluorite Mine', 'Roaming Oak', 'Black Truffle']
+        },
+        {
+            id: 'town-npc-route',
+            name: 'Town NPC Route',
+            emoji: '🏙️',
+            area: 'Central Town',
+            description: 'Quick town checks for shops, inventory upgrade, pet store, and weather merchant paths.',
+            items: ['Dorothy', 'Bob', 'Bailey J', 'Ka Ching', 'Doris']
+        },
+        {
+            id: 'wildlife-trough-route',
+            name: 'Wildlife Trough Route',
+            emoji: '🐾',
+            area: 'Animal habitats',
+            description: 'A trough route covering common wild animal feeding spots across major regions.',
+            items: ['Fox Trough', 'Alpaca Trough', 'Bunny Trough', 'Panda Trough', 'Sika Deer Trough', 'Capybara Trough', 'Sea Otter Trough']
+        },
+        {
+            id: 'photo-and-catch-route',
+            name: 'Photo & Catch Route',
+            emoji: '📸',
+            area: 'Birds, fish, insects',
+            description: 'A collection route for bird photos, fish spots, and insect areas.',
+            items: ['Central Area Birds', 'Fishing Village Lighthouse Birds', 'Onsen Mountain Birds', 'Meadow Lake', 'Fishing Village Coast', 'Forest Beetles', 'Flower Field Butterflies']
+        }
+    ];
 
     function readVisited() {
         try {
@@ -71,6 +106,57 @@
 
     function slug(text) {
         return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    }
+    function todayKey() {
+        return new Date().toISOString().slice(0, 10);
+    }
+
+    function readTodayChecklist() {
+        try {
+            const raw = localStorage.getItem(TODAY_ROUTE_KEY);
+            const value = raw ? JSON.parse(raw) : null;
+            if (!value || value.date !== todayKey()) {
+                return { date: todayKey(), routeId: '', items: [], checked: [] };
+            }
+            return {
+                date: value.date,
+                routeId: value.routeId || '',
+                items: Array.isArray(value.items) ? value.items : [],
+                checked: Array.isArray(value.checked) ? value.checked : []
+            };
+        } catch (error) {
+            return { date: todayKey(), routeId: '', items: [], checked: [] };
+        }
+    }
+
+    function writeTodayChecklist(checklist) {
+        try {
+            localStorage.setItem(TODAY_ROUTE_KEY, JSON.stringify({
+                date: todayKey(),
+                routeId: checklist.routeId || '',
+                items: Array.isArray(checklist.items) ? checklist.items : [],
+                checked: Array.isArray(checklist.checked) ? checklist.checked : []
+            }));
+        } catch (error) {
+            return;
+        }
+    }
+
+    function getLocationByName(name) {
+        return locations.find(item => item.name === name);
+    }
+
+    function scrollToMap(item) {
+        const map = document.getElementById('interactive-map');
+        const status = document.getElementById('map-focus-status');
+        if (!map) return;
+        map.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        map.classList.add('ring-4', 'ring-cozy-coral/40');
+        window.setTimeout(() => map.classList.remove('ring-4', 'ring-cozy-coral/40'), 1800);
+        if (status && item) {
+            status.classList.remove('hidden');
+            status.innerHTML = `<strong>Map focus:</strong> ${item.name} · ${item.area}. Use the map search or category filters to inspect this area, then return to the finder for the guide link.`;
+        }
     }
 
     function setupAreaOptions() {
@@ -111,7 +197,7 @@
             const checked = visited.has(itemId) ? 'checked' : '';
             const dim = visited.has(itemId) ? 'opacity-60' : '';
             return `
-                <article class="map-location-card ${dim} rounded-xl border border-cozy-peach/40 bg-cozy-cream/50 p-4" data-type="${item.type}" data-area="${item.area}">
+                <article class="map-location-card ${dim} rounded-xl border border-cozy-peach/40 bg-cozy-cream/50 p-4 cursor-pointer hover:border-cozy-coral transition-colors" data-location-id="${itemId}" data-type="${item.type}" data-area="${item.area}">
                     <div class="flex items-start justify-between gap-3">
                         <div>
                             <div class="text-xs uppercase tracking-wide text-cozy-coral font-bold">${typeLabels[item.type]}</div>
@@ -126,12 +212,72 @@
                     <div class="mt-3 flex flex-wrap items-center gap-2 text-xs">
                         <span class="rounded-full bg-white px-2 py-1 border border-cozy-peach/40">${item.area}</span>
                         <span class="rounded-full bg-white px-2 py-1 border border-cozy-peach/40">${typeLabels[item.type]}</span>
+                        <button type="button" class="map-focus-button text-cozy-coral font-bold hover:underline" data-location-id="${itemId}">Show on map</button>
                         <a href="${item.link}" class="ml-auto text-cozy-coral font-bold hover:underline">Open guide</a>
                     </div>
                 </article>`;
         }).join('');
     }
 
+
+    function renderDailyRoutes() {
+        const routeCards = document.getElementById('daily-route-cards');
+        const routeItems = document.getElementById('today-route-items');
+        const routeEmpty = document.getElementById('today-route-empty');
+        const routeCount = document.getElementById('today-route-count');
+        const routeDate = document.getElementById('today-route-date');
+        if (!routeCards || !routeItems || !routeEmpty || !routeCount || !routeDate) return;
+
+        const checklist = readTodayChecklist();
+        const checkedSet = new Set(checklist.checked);
+        routeDate.textContent = checklist.date;
+        routeCount.textContent = `${checkedSet.size}/${checklist.items.length}`;
+
+        routeCards.innerHTML = dailyRoutes.map(route => {
+            const active = checklist.routeId === route.id ? 'border-cozy-coral bg-cozy-coral/10' : 'border-cozy-peach/40 bg-cozy-cream/50';
+            return `
+                <button type="button" class="daily-route-card text-left rounded-2xl border ${active} p-4 hover:border-cozy-coral transition-colors" data-route-id="${route.id}">
+                    <div class="flex items-center justify-between gap-3 mb-2">
+                        <span class="text-2xl">${route.emoji}</span>
+                        <span class="text-xs font-bold text-cozy-coral">${route.items.length} stops</span>
+                    </div>
+                    <h3 class="font-bold text-cozy-bark">${route.name}</h3>
+                    <p class="text-xs text-cozy-wood mt-1">${route.area}</p>
+                    <p class="text-sm text-cozy-wood mt-2">${route.description}</p>
+                </button>`;
+        }).join('');
+
+        routeEmpty.classList.toggle('hidden', checklist.items.length !== 0);
+        routeItems.innerHTML = checklist.items.map(name => {
+            const item = getLocationByName(name);
+            const itemId = slug(name);
+            const checked = checkedSet.has(itemId) ? 'checked' : '';
+            const labelClass = checkedSet.has(itemId) ? 'opacity-60 line-through' : '';
+            return `
+                <label class="flex items-start gap-3 rounded-xl bg-white border border-cozy-peach/40 p-3 cursor-pointer hover:border-cozy-coral transition-colors">
+                    <input type="checkbox" class="today-route-check mt-1 h-5 w-5 rounded accent-[#ff8a7a]" data-location-id="${itemId}" ${checked}>
+                    <span class="flex-1 ${labelClass}">
+                        <strong class="block text-cozy-bark">${name}</strong>
+                        <span class="block text-sm text-cozy-wood">${item ? item.area + ' · ' + item.note : 'Route stop'}</span>
+                    </span>
+                    <button type="button" class="today-route-map text-xs font-bold text-cozy-coral hover:underline" data-location-name="${name}">Map</button>
+                </label>`;
+        }).join('');
+    }
+
+    function loadDailyRoute(routeId) {
+        const route = dailyRoutes.find(item => item.id === routeId);
+        if (!route) return;
+        writeTodayChecklist({ date: todayKey(), routeId: route.id, items: route.items, checked: [] });
+        const first = getLocationByName(route.items[0]);
+        if (first) scrollToMap(first);
+        renderDailyRoutes();
+    }
+
+    function clearTodayChecklist() {
+        writeTodayChecklist({ date: todayKey(), routeId: '', items: [], checked: [] });
+        renderDailyRoutes();
+    }
     window.filterMapLocations = renderLocations;
     window.resetMapLocationFilters = resetFilters;
     window.clearMapVisitedLocations = clearVisited;
@@ -159,6 +305,42 @@
         });
         document.getElementById('map-reset-filters')?.addEventListener('click', resetFilters);
         document.getElementById('map-clear-visited')?.addEventListener('click', clearVisited);
+        document.getElementById('today-route-clear')?.addEventListener('click', clearTodayChecklist);
+        document.getElementById('daily-route-cards')?.addEventListener('click', event => {
+            const button = event.target.closest('.daily-route-card');
+            if (!button) return;
+            loadDailyRoute(button.dataset.routeId);
+        });
+        document.getElementById('today-route-items')?.addEventListener('change', event => {
+            const input = event.target.closest('.today-route-check');
+            if (!input) return;
+            const checklist = readTodayChecklist();
+            const checked = new Set(checklist.checked);
+            if (input.checked) {
+                checked.add(input.dataset.locationId);
+            } else {
+                checked.delete(input.dataset.locationId);
+            }
+            checklist.checked = Array.from(checked).sort();
+            writeTodayChecklist(checklist);
+            renderDailyRoutes();
+        });
+        document.getElementById('today-route-items')?.addEventListener('click', event => {
+            const button = event.target.closest('.today-route-map');
+            if (!button) return;
+            event.preventDefault();
+            const item = getLocationByName(button.dataset.locationName);
+            scrollToMap(item);
+        });
+        document.getElementById('map-location-results')?.addEventListener('click', event => {
+            const focusButton = event.target.closest('.map-focus-button');
+            const card = event.target.closest('.map-location-card');
+            if (!focusButton && (!card || event.target.closest('a, input, label'))) return;
+            event.preventDefault();
+            const id = (focusButton || card).dataset.locationId;
+            const item = locations.find(location => slug(location.name) === id);
+            scrollToMap(item);
+        });
         document.getElementById('map-location-results')?.addEventListener('change', event => {
             const input = event.target.closest('.map-location-check');
             if (!input) return;
@@ -172,5 +354,6 @@
             renderLocations();
         });
         renderLocations();
+        renderDailyRoutes();
     });
 })();
