@@ -1,0 +1,34 @@
+name: Sync Heartopia Insect Database
+
+on:
+  push:
+    paths:
+      - 'data/heartopia-insects.json'
+      - 'img/insects/**'
+      - 'scripts/sync-insect-database.mjs'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-insects:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Build insect database
+        run: node scripts/sync-insect-database.mjs
+      - name: Commit generated updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add database/insects/index.html
+          if git diff --cached --quiet; then
+            echo "No insect database changes to commit."
+          else
+            git commit -m "chore: sync Heartopia insect database"
+            git push
+          fi
