@@ -419,19 +419,24 @@
     </url>
     <url>
         <loc>https://heartopia.life/database/wildlife/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-10</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/database/wildlife/deer/</loc>
-        <lastmod>2026-07-03</lastmod>
+        <lastmod>2026-07-10</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://heartopia.life/database/wildlife/panda/</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>    <url>
         <loc>https://heartopia.life/database/wildlife/winter-bird/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-10</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
