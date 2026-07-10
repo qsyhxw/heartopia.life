@@ -31,6 +31,16 @@
             color: 'coral'
         },
         {
+            id: 'wildlife',
+            title: 'Wildlife found',
+            icon: '🐾',
+            storageKey: 'heartopia.collection.wildlife',
+            total: 10,
+            url: '/database/wildlife/',
+            action: 'Open wildlife database',
+            color: 'mint'
+        },
+        {
             id: 'map',
             title: 'Map locations checked',
             icon: '🗺️',
@@ -46,7 +56,8 @@
         sky: 'bg-cozy-sky/20 border-cozy-sky/50 text-cozy-sky',
         sage: 'bg-cozy-sage/20 border-cozy-sage/50 text-cozy-sage',
         coral: 'bg-cozy-coral/20 border-cozy-coral/50 text-cozy-coral',
-        rose: 'bg-cozy-rose/20 border-cozy-rose/50 text-cozy-rose'
+        rose: 'bg-cozy-rose/20 border-cozy-rose/50 text-cozy-rose',
+        mint: 'bg-cozy-mint/30 border-cozy-mint text-cozy-sage'
     };
 
     function readArray(key) {
