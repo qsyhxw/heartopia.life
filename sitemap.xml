@@ -205,7 +205,8 @@
         <priority>0.7</priority>
     </url>
     <url>
-        $12026-07-10</lastmod>
+        <loc>https://heartopia.life/database/insects/</loc>
+        <lastmod>2026-07-10</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -276,6 +277,47 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://heartopia.life/database/insects/atlas-beetle/</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/database/insects/goliath-beetle/</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/database/insects/morpho-helena/</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/database/insects/sunset-morpho/</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/database/insects/orchid-mantis/</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/database/insects/queen-alexandras-birdwing/</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/database/insects/glasswing-butterfly/</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>    <url>
         <loc>https://heartopia.life/database/items/black-truffle/</loc>
         <lastmod>2026-07-01</lastmod>
         <changefreq>weekly</changefreq>
