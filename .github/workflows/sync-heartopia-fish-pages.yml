@@ -6,6 +6,7 @@ on:
       - 'database/fish/index.html'
       - 'img/fish/**'
       - 'scripts/sync-fish-pages.mjs'
+      - 'scripts/generate-fish-detail-pages.mjs'
   workflow_dispatch:
 
 permissions:
@@ -26,11 +27,14 @@ jobs:
       - name: Build shared fish data and page sections
         run: node scripts/sync-fish-pages.mjs
 
+      - name: Build fish detail pages
+        run: node scripts/generate-fish-detail-pages.mjs
+
       - name: Commit generated updates
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/heartopia-fish.json database/fish-prices/index.html guides/fishing-locations/index.html guides/fishing-spots/index.html guides/rare-fish/index.html guides/fish-locations/index.html
+          git add data/heartopia-fish.json sitemap.xml scripts/generate-fish-detail-pages.mjs database/fish-prices/index.html guides/fishing-locations/index.html guides/fishing-spots/index.html guides/rare-fish/index.html guides/fish-locations/index.html database/fish/bluefin-tuna/index.html database/fish/swordfish/index.html database/fish/whale-shark/index.html database/fish/mahi-mahi/index.html database/fish/green-sea-turtle/index.html database/fish/giant-oarfish/index.html database/fish/anglerfish/index.html database/fish/king-crab/index.html
           if git diff --cached --quiet; then
             echo "No fish page changes to commit."
           else
