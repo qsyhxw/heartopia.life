@@ -25,7 +25,7 @@
             title: 'Birds photographed',
             icon: '🐦',
             storageKey: 'heartopia.collection.birds',
-            total: 24,
+            total: 92,
             url: '/database/birds/',
             action: 'Open bird database',
             color: 'coral'

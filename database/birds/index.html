@@ -1,707 +1,834 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRJ91G3VRR"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-FRJ91G3VRR');
-    </script>
-
-    <!-- Page Meta Tags -->
-    <title>Heartopia Bird Locations: All Birds, Time, Weather & Info Card Prices</title>
-    <meta name="description"
-        content="Heartopia bird locations database for all birds, areas, time windows, weather conditions, and Info Card prices. Includes route links for bird locations and single-bird pages.">
-    <meta name="keywords" content="heartopia bird locations, heartopia birds, heartopia all birds, heartopia birdwatching, heartopia bird list, heartopia info cards, heartopia hawfinch, double-barred finch heartopia, european robin heartopia">
-    <meta name="author" content="Heartopia.Life">
-    <meta name="robots" content="index, follow">
-
-    <!-- Canonical -->
-    <link rel="canonical" href="https://heartopia.life/database/birds/">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Heartopia Bird Locations: All Birds, Time, Weather & Prices">
-    <meta property="og:description" content="All Heartopia bird locations with area, time, weather, and Info Card price filters.">
-    <meta property="og:url" content="https://heartopia.life/database/birds/">
-    <meta property="og:site_name" content="Heartopia.Life">
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'cozy': {
-                            'cream': '#FFF8F0',
-                            'peach': '#FFE5D9',
-                            'coral': '#FF9B85',
-                            'rose': '#D4A5A5',
-                            'sage': '#A8C686',
-                            'mint': '#B8E0D2',
-                            'sky': '#95C8D8',
-                            'wood': '#8B7355',
-                            'bark': '#5D4E37',
-                        }
-                    },
-                    fontFamily: {
-                        'display': ['Georgia', 'serif'],
-                        'body': ['system-ui', '-apple-system', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        .card-hover {
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .card-hover:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 16px rgba(139, 115, 85, 0.12);
-        }
-    </style>
-    <!-- NitroPay Global Header -->
-    <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
-    <script data-cfasync="false" async src="https://s.nitropay.com/ads-2368.js"></script>
-</head>
-
-<body class="bg-cozy-cream text-cozy-bark font-body">
-
-    <!-- HEADER -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-cozy-peach/50">
-        <nav class="max-w-6xl mx-auto px-4 py-3">
-            <div class="flex items-center justify-between">
-                <a href="/" class="flex items-center gap-2 group">
-                    <img src="/favicon-96x96.png" alt="Heartopia.Life" class="w-7 h-7">
-                    <span class="font-display text-xl font-bold text-cozy-bark">Heartopia<span
-                            class="text-cozy-sage">.Life</span></span>
-                </a>
-                <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
-                    <li><a href="/guides/map/"
-                            class="hover:text-cozy-coral transition-colors flex items-center gap-1">🗺️ Map</a></li>
-                    <li><a href="/codes/" class="hover:text-cozy-coral">🎁 Codes</a></li>
-                    <li><a href="/guides/" class="hover:text-cozy-coral">Guides</a></li>
-                    <li><a href="/database/" class="text-cozy-coral font-bold">Database</a></li>
-                    <li><a href="/tools/" class="hover:text-cozy-coral">Tools</a></li>
-                </ul>
-
-                <button class="md:hidden p-2 hover:bg-cozy-peach/50 rounded-lg" aria-label="Open menu"
-                    onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
-            </div>
-
-            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-cozy-peach/50 pt-4">
-                <ul class="flex flex-col gap-3 text-sm font-medium">
-                    <li><a href="/guides/map/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🗺️ Map</a>
-                    </li>
-                    <li><a href="/codes/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🎁 Codes</a></li>
-                    <li><a href="/guides/" class="py-2 hover:text-cozy-coral">Guides</a></li>
-                    <li><a href="/hobbies/" class="py-2 hover:text-cozy-coral">Hobbies</a></li>
-                    <li><a href="/events/" class="py-2 hover:text-cozy-coral">Events</a></li>
-                    <li><a href="/database/" class="py-2 hover:text-cozy-coral">Database</a></li>
-                    <li><a href="/tools/" class="py-2 hover:text-cozy-coral">Tools</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main class="max-w-6xl mx-auto px-4 py-8">
-<!-- Breadcrumb -->
-        <nav class="text-sm text-cozy-wood mb-6">
-            <a href="/" class="hover:text-cozy-coral">Home</a>
-            <span class="mx-2">›</span>
-            <a href="/database/" class="hover:text-cozy-coral">Database</a>
-            <span class="mx-2">›</span>
-            <span class="text-cozy-bark font-medium">Birds</span>
-        </nav>
-
-        <!-- Hero -->
-        <div class="bg-gradient-to-br from-sky-100 to-cozy-mint/30 rounded-2xl p-6 md:p-8 mb-8">
-            <h1 class="font-display text-3xl md:text-4xl font-bold text-cozy-bark mb-4">
-                🐦 Heartopia Bird Locations Database
-            </h1>
-            <p class="text-cozy-wood text-lg mb-4">
-                Use this page as the broad <strong>all bird locations</strong> table: filter birds by area, weather, time, and Info Card price. For route-first searches or specific birds like European Robin, Double-Barred Finch, Golden Oriole, and Hawfinch, use the featured pages below.
-            </p>
-            <div class="flex flex-wrap gap-4 text-sm">
-                <div class="bg-white/70 rounded-lg px-3 py-1">📍 <strong>Unlock:</strong> DG Level 6</div>
-                <div class="bg-white/70 rounded-lg px-3 py-1">👤 <strong>Mentor:</strong> Bailey J.</div>
-                <div class="bg-white/70 rounded-lg px-3 py-1">🐦 <strong>Total:</strong> 77 Species</div>
-            </div>
-        </div>
-
-        <!-- All Locations Summary -->
-        <section class="bg-white rounded-xl p-6 mb-6 border border-cozy-peach/30">
-            <h2 class="font-display text-2xl font-bold mb-4">All Bird Locations Quick Answer</h2>
-            <div class="overflow-x-auto mb-4">
-                <table class="w-full text-sm min-w-[760px]">
-                    <thead class="bg-cozy-sky/20 text-left">
-                        <tr>
-                            <th class="px-4 py-3 font-bold">Area Filter</th>
-                            <th class="px-4 py-3 font-bold">Good Targets</th>
-                            <th class="px-4 py-3 font-bold">Best Use</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-cozy-peach/30">
-                        <tr><td class="px-4 py-3 font-bold">Central Area</td><td class="px-4 py-3 text-cozy-wood"><a href="/database/birds/european-robin/" class="text-cozy-coral hover:underline">European Robin</a>, Eurasian Magpie, House Sparrow</td><td class="px-4 py-3 text-cozy-wood">Start here for easy all-day cards.</td></tr>
-                        <tr class="bg-green-50/50"><td class="px-4 py-3 font-bold">Forest</td><td class="px-4 py-3 text-cozy-wood">Eurasian Wren, Great Tit, Eurasian Jay, Tawny Owl</td><td class="px-4 py-3 text-cozy-wood">Use for forest birds and night owl checks.</td></tr>
-                        <tr><td class="px-4 py-3 font-bold">Lake / Seaside</td><td class="px-4 py-3 text-cozy-wood">Mallard, Mute Swan, Kingfisher, Smew, Seagull, Sandpiper</td><td class="px-4 py-3 text-cozy-wood">Use for water birds and morning/weather-gated targets.</td></tr>
-                        <tr class="bg-blue-50/50"><td class="px-4 py-3 font-bold">Fishing Village</td><td class="px-4 py-3 text-cozy-wood"><a href="/database/birds/double-barred-finch/" class="text-cozy-coral hover:underline">Double-Barred Finch</a>, Parrotbill, Cinnamon Ground Dove</td><td class="px-4 py-3 text-cozy-wood">Use for lighthouse, square, and pier routes.</td></tr>
-                        <tr><td class="px-4 py-3 font-bold">Onsen Mountain / Event</td><td class="px-4 py-3 text-cozy-wood"><a href="/database/birds/hawfinch/" class="text-cozy-coral hover:underline">Hawfinch</a>, Golden Pheasant, Nest of Hundreds birds</td><td class="px-4 py-3 text-cozy-wood">Use for high-intent single-bird searches and event checks.</td></tr>
-                    </tbody>
-                </table>
-            </div>
-            <p class="text-sm text-cozy-wood"><strong>How to use this page:</strong> keep the database for all-location filtering and prices; open the route guide when you need an area sweep, or a single-bird page when the query names one species.</p>
-        </section>
-        <div id="heartopia_in_content" class="heartopia-ad-slot max-w-6xl mx-auto px-4 my-6 text-center"></div>
-
-
-        <!-- Quick Info -->
-        <div class="bg-white rounded-xl p-4 mb-6 border border-cozy-peach/30">
-            <h2 class="font-bold mb-3">📖 Info Card Prices</h2>
-            <div class="grid grid-cols-5 gap-2 text-center text-sm">
-                <div class="bg-gray-100 rounded-lg p-2">
-                    <div class="font-bold">1★</div>
-                    <div class="text-xs text-cozy-wood">10-22G</div>
-                </div>
-                <div class="bg-green-100 rounded-lg p-2">
-                    <div class="font-bold">2★</div>
-                    <div class="text-xs text-cozy-wood">20-44G</div>
-                </div>
-                <div class="bg-blue-100 rounded-lg p-2">
-                    <div class="font-bold">3★</div>
-                    <div class="text-xs text-cozy-wood">40-88G</div>
-                </div>
-                <div class="bg-purple-100 rounded-lg p-2">
-                    <div class="font-bold">4★</div>
-                    <div class="text-xs text-cozy-wood">80-176G</div>
-                </div>
-                <div class="bg-yellow-100 rounded-lg p-2">
-                    <div class="font-bold">5★</div>
-                    <div class="text-xs text-cozy-wood">320-720G</div>
-                </div>
-            </div>
-            <p class="text-xs text-cozy-wood mt-2">💡 Higher quality photos are obtained by capturing birds while
-                chirping, foraging, preening, or flying.</p>
-        </div>
-
-        <!-- Featured Bird Routes -->
-        <section class="bg-white rounded-xl p-6 mb-6 border border-cozy-peach/30">
-            <h2 class="font-display text-2xl font-bold mb-4">Bird Routes & Single-Bird Pages</h2>
-            <p class="text-cozy-wood text-sm mb-4">The full database is best for all locations and prices. Use these pages when you need a route-first answer or one named bird.</p>
-            <div class="grid md:grid-cols-3 gap-4 text-sm"><a href="/guides/bird-locations/" class="block bg-sky-50 rounded-xl p-4 border border-sky-200 hover:border-cozy-coral"><strong>Bird Locations Guide</strong><span class="block text-cozy-wood mt-1">Routes by area, time, and weather</span></a><a href="/database/birds/european-robin/" class="block bg-orange-50 rounded-xl p-4 border border-orange-100 hover:border-cozy-coral"><strong>European Robin</strong><span class="block text-cozy-wood mt-1">Central Area, all day</span></a><a href="/database/birds/double-barred-finch/" class="block bg-blue-50 rounded-xl p-4 border border-blue-100 hover:border-cozy-coral"><strong>Double-Barred Finch</strong><span class="block text-cozy-wood mt-1">Fishing Village Lighthouse</span></a><a href="/database/birds/golden-oriole/" class="block bg-yellow-50 rounded-xl p-4 border border-yellow-200 hover:border-cozy-coral"><strong>Golden Oriole</strong><span class="block text-cozy-wood mt-1">Home Lots and Rosy River</span></a><a href="/database/birds/hawfinch/" class="block bg-lime-50 rounded-xl p-4 border border-lime-200 hover:border-cozy-coral"><strong>Hawfinch</strong><span class="block text-cozy-wood mt-1">Onsen Mountain Crater Lake</span></a><a href="/database/wildlife/winter-bird/" class="block bg-purple-50 rounded-xl p-4 border border-purple-100 hover:border-cozy-coral"><strong>Winter Birds</strong><span class="block text-cozy-wood mt-1">Winter Frost Season route</span></a><a href="/database/birds/winter-mandarin-duck/" class="block bg-indigo-50 rounded-xl p-4 border border-indigo-100 hover:border-cozy-coral"><strong>Winter Duck Searches</strong><span class="block text-cozy-wood mt-1">Check winter duck-like names</span></a><a href="/database/birds/wonga-pigeon/" class="block bg-cozy-cream rounded-xl p-4 border border-cozy-peach/50 hover:border-cozy-coral"><strong>Wonga Pigeon Search</strong><span class="block text-cozy-wood mt-1">Check pigeon and dove name mix-ups</span></a></div></section>
-        <!-- Search & Filters -->
-        <section id="search-filter" class="bg-white rounded-xl p-5 mb-6 border border-cozy-peach/30 shadow-sm">
-            <h2 class="font-bold mb-3">🔍 Search & filter birds</h2>
-            <div class="grid md:grid-cols-5 gap-3">
-                <div class="md:col-span-2">
-                    <label for="bird-search" class="block text-xs font-bold text-cozy-wood mb-1">Search bird</label>
-                    <input id="bird-search" type="search" placeholder="Try Hawfinch, robin, lake, morning..." oninput="filterBirds()" class="w-full p-3 text-sm border border-cozy-peach rounded-lg bg-cozy-cream focus:outline-none focus:border-cozy-coral">
-                </div>
-                <div>
-                    <label for="filter-location" class="block text-xs font-bold text-cozy-wood mb-1">Location</label>
-                    <select id="filter-location" onchange="filterBirds()" class="w-full p-3 text-sm border border-cozy-peach rounded-lg bg-white">
-                        <option value="all">All locations</option>
-                        <option value="river">Rosy River</option>
-                        <option value="central">Central Area</option>
-                        <option value="forest">Forest</option>
-                        <option value="lake">Lake</option>
-                        <option value="seaside">Seaside</option>
-                        <option value="village">Fishing Village</option>
-                        <option value="mountain">Onsen Mountain</option>
-                        <option value="event">Event Only</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="filter-weather" class="block text-xs font-bold text-cozy-wood mb-1">Weather</label>
-                    <select id="filter-weather" onchange="filterBirds()" class="w-full p-3 text-sm border border-cozy-peach rounded-lg bg-white">
-                        <option value="all">All weather</option>
-                        <option value="any">Any</option>
-                        <option value="sunny">Sunny</option>
-                        <option value="rainy">Rainy</option>
-                        <option value="rainbow">Rainbow</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="filter-time" class="block text-xs font-bold text-cozy-wood mb-1">Time</label>
-                    <select id="filter-time" onchange="filterBirds()" class="w-full p-3 text-sm border border-cozy-peach rounded-lg bg-white">
-                        <option value="all">All times</option>
-                        <option value="all day">All day</option>
-                        <option value="morning">Morning</option>
-                        <option value="night">Night</option>
-                        <option value="event">Event</option>
-                    </select>
-                </div>
-            </div>
-            <div class="mt-3 grid md:grid-cols-[1fr_auto] gap-3 items-end">
-                <div>
-                    <label for="filter-price" class="block text-xs font-bold text-cozy-wood mb-1">5★ Info Card price</label>
-                    <select id="filter-price" onchange="filterBirds()" class="w-full md:max-w-[260px] p-3 text-sm border border-cozy-peach rounded-lg bg-white">
-                        <option value="all">All prices</option>
-                        <option value="low">Up to 384G</option>
-                        <option value="mid">385G-575G</option>
-                        <option value="high">576G+</option>
-                    </select>
-                </div>
-                <button type="button" onclick="resetBirdFilters()" class="px-4 py-3 rounded-lg bg-cozy-peach hover:bg-cozy-coral hover:text-white font-bold transition-colors">Reset filters</button>
-            </div>
-            <p class="text-sm text-cozy-wood mt-3"><strong id="bird-result-count">0</strong> matching birds shown.</p>
-        </section>
-
-        <section id="my-progress" data-collection-progress data-collection-key="birds" data-collection-label="birds" data-table-selector="#birds-table" class="bg-white rounded-xl p-5 mb-6 border border-cozy-peach/30 shadow-sm">
-            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
-                <div>
-                    <h2 class="font-display text-2xl font-bold text-cozy-bark mb-2">My Collection / My Progress</h2>
-                    <p class="text-sm text-cozy-wood">Tick birds you have photographed. Progress is saved only in this browser.</p>
-                </div>
-                <div class="min-w-[220px]">
-                    <div class="flex items-end justify-between gap-4 mb-2">
-                        <div class="text-sm text-cozy-wood"><strong data-collection-count>0</strong> / <span data-collection-total>0</span> birds collected</div>
-                        <div class="font-bold text-cozy-coral" data-collection-percent>0%</div>
-                    </div>
-                    <div class="h-3 rounded-full bg-cozy-cream overflow-hidden border border-cozy-peach/40">
-                        <div data-collection-bar class="h-full bg-cozy-coral transition-all duration-300" style="width: 0%"></div>
-                    </div>
-                    <button type="button" data-collection-clear class="mt-3 text-xs font-bold text-cozy-wood hover:text-cozy-coral">Clear saved progress</button>
-                </div>
-            </div>
-        </section>
-        <!-- Birds Table -->
-        <div class="bg-white rounded-xl overflow-hidden border border-cozy-peach/30 mb-8">
-            <div class="overflow-x-auto">
-                <table class="w-full text-sm" id="birds-table">
-                    <thead class="bg-cozy-sky/20 text-left">
-                        <tr>
-                            <th class="px-4 py-3 font-bold">Bird</th>
-                            <th class="px-4 py-3 font-bold">Location</th>
-                            <th class="px-4 py-3 font-bold">Time</th>
-                            <th class="px-4 py-3 font-bold">Weather</th>
-                            <th class="px-4 py-3 font-bold text-right">1★ Price</th>
-                            <th class="px-4 py-3 font-bold text-right">5★ Price</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-cozy-peach/20" id="birds-tbody">
-
-                        <!-- Rosy River -->
-                        <tr data-location="river" data-weather="any">
-                            <td class="px-4 py-3 font-medium"><a href="/database/birds/golden-oriole/"
-                                    class="text-cozy-bark hover:text-cozy-coral">🐦 Golden Oriole</a></td>
-                            <td class="px-4 py-3">Home Lots, Rosy River</td>
-                            <td class="px-4 py-3">All Day</td>
-                            <td class="px-4 py-3">☀️🌧️🌈</td>
-                            <td class="px-4 py-3 text-right">18G</td>
-                            <td class="px-4 py-3 text-right text-green-600 font-bold">576G</td>
-                        </tr>
-
-                        <!-- Central Area -->
-                        <tr data-location="central" data-weather="any">
-                            <td class="px-4 py-3 font-medium"><a href="/database/birds/european-robin/" class="text-cozy-bark hover:text-cozy-coral">🐦 European Robin</a></td>
-                            <td class="px-4 py-3">Central Area</td>
-                            <td class="px-4 py-3">All Day</td>
-                            <td class="px-4 py-3">☀️🌧️🌈</td>
-                            <td class="px-4 py-3 text-right">10G</td>
-                            <td class="px-4 py-3 text-right text-green-600 font-bold">320G</td>
-                        </tr>
-                        <tr data-location="central" data-weather="sunny">
-                            <td class="px-4 py-3 font-medium">🐦 Eurasian Magpie</td>
-                            <td class="px-4 py-3">Central Area</td>
-                            <td class="px-4 py-3">All Day</td>
-                            <td class="px-4 py-3">☀️🌈</td>
-                            <td class="px-4 py-3 text-right">12G</td>
-                            <td class="px-4 py-3 text-right text-green-600 font-bold">384G</td>
-                        </tr>
-                        <tr data-location="central" data-weather="any">
-                            <td class="px-4 py-3 font-medium">🐦 House Sparrow</td>
-                            <td class="px-4 py-3">Central Area</td>
-                            <td class="px-4 py-3">All Day</td>
-                            <td class="px-4 py-3">☀️🌧️🌈</td>
-                            <td class="px-4 py-3 text-right">10G</td>
-                            <td class="px-4 py-3 text-right text-green-600 font-bold">320G</td>
-                        </tr>
-
-                        <!-- Forest -->
-                        <tr data-location="forest" data-weather="any">
-                            <td class="px-4 py-3 font-medium">🐦 Eurasian Wren</td>
-                            <td class="px-4 py-3">Forest</td>
-                            <td class="px-4 py-3">All Day</td>
-                            <td class="px-4 py-3">☀️🌧️🌈</td>
-                            <td class="px-4 py-3 text-right">10G</td>
-                            <td class="px-4 py-3 text-right text-green-600 font-bold">320G</td>
-                        </tr>
-                        <tr data-location="forest" data-weather="any">
-                            <td class="px-4 py-3 font-medium">🐦 Great Tit</td>
-                            <td class="px-4 py-3">Forest</td>
-                            <td class="px-4 py-3">All Day</td>
-                            <td class="px-4 py-3">☀️🌧️🌈</td>
-                            <td class="px-4 py-3 text-right">12G</td>
-                            <td class="px-4 py-3 text-right text-green-600 font-bold">384G</td>
-                        </tr>
-                        <tr data-location="forest" data-weather="rainy">
-                            <td class="px-4 py-3 font-medium">🐦 Eurasian Jay</td>
-                            <td class="px-4 py-3">Forest</td>
-                            <td class="px-4 py-3">All Day</td>
-                            <td class="px-4 py-3">🌧️🌈</td>
-                            <td class="px-4 py-3 text-right">15G</td>
-                            <td class="px-4 py-3 text-right text-green-600 font-bold">480G</td>
-                        </tr>
-                        <tr data-location="forest" data-weather="any">
-                            <td class="px-4 py-3 font-medium">🦉 Tawny Owl</td>
-                            <td class="px-4 py-3">Forest</td>
-                            <td class="px-4 py-3">Night</td>
-                            <td class="px-4 py-3">☀️🌧️🌈</td>
-                            <td class="px-4 py-3 text-right">18G</td>
-                            <td class="px-4 py-3 text-right text-green-600 font-bold">576G</td>
-                        </tr>
-
-                        <!-- Lake -->
-                        <tr data-location="lake" data-weather="any">
-                            <td class="px-4 py-3 font-medium">🦆 Mallard</td>
-                            <td class="px-4 py-3">Lake</td>
-                            <td class="px-4 py-3">All Day</td>
-                            <td class="px-4 py-3">☀️🌧️🌈</td>
-                            <td class="px-4 py-3 text-right">12G</td>
-                            <td class="px-4 py-3 text-right text-green-600 font-bold">384G</td>
-                        </tr>
-                        <tr data-location="lake" data-weather="any">
-                            <td class="px-4 py-3 font-medium">🦢 Mute Swan</td>
-                            <td class="px-4 py-3">Lake</td>
-                            <td class="px-4 py-3">All Day</td>
-                            <td class="px-4 py-3">☀️🌧️🌈</td>
-                            <td class="px-4 py-3 text-right">18G</td>
-                            <td class="px-4 py-3 text-right text-green-600 font-bold">576G</td>
-                        </tr>
-                        <tr data-location="lake" data-weather="sunny">
-                            <td class="px-4 py-3 font-medium">🐦 Kingfisher</td>
-                            <td class="px-4 py-3">Lake</td>
-                            <td class="px-4 py-3">Morning</td>
-                            <td class="px-4 py-3">☀️🌈</td>
-                            <td class="px-4 py-3 text-right">20G</td>
-                            <td class="px-4 py-3 text-right text-green-600 font-bold">640G</td>
-                        </tr>
-                        <tr data-location="lake" data-weather="rainy">
-                            <td class="px-4 py-3 font-medium">🦆 Smew</td>
-                            <td class="px-4 py-3">Lake</td>
-                            <td class="px-4 py-3">All Day</td>
-                            <td class="px-4 py-3">🌧️🌈</td>
-                            <td class="px-4 py-3 text-right">22G</td>
-                            <td class="px-4 py-3 text-right text-green-600 font-bold">720G</td>
-                        </tr>
-
-                        <!-- Seaside -->
-                        <tr data-location="seaside" data-weather="any">
-                            <td class="px-4 py-3 font-medium">🐦 Seagull</td>
-                            <td class="px-4 py-3">Seaside</td>
-                            <td class="px-4 py-3">All Day</td>
-                            <td class="px-4 py-3">☀️🌧️🌈</td>
-                            <td class="px-4 py-3 text-right">10G</td>
-                            <td class="px-4 py-3 text-right text-green-600 font-bold">320G</td>
-                        </tr>
-                        <tr data-location="seaside" data-weather="any">
-                            <td class="px-4 py-3 font-medium">🐦 Cormorant</td>
-                            <td class="px-4 py-3">Seaside</td>
-                            <td class="px-4 py-3">All Day</td>
-                            <td class="px-4 py-3">☀️🌧️🌈</td>
-                            <td class="px-4 py-3 text-right">14G</td>
-                            <td class="px-4 py-3 text-right text-green-600 font-bold">448G</td>
-                        </tr>
-                        <tr data-location="seaside" data-weather="sunny">
-                            <td class="px-4 py-3 font-medium">🐦 Sandpiper</td>
-                            <td class="px-4 py-3">Seaside Beach</td>
-                            <td class="px-4 py-3">Morning</td>
-                            <td class="px-4 py-3">☀️</td>
-                            <td class="px-4 py-3 text-right">15G</td>
-                            <td class="px-4 py-3 text-right text-green-600 font-bold">480G</td>
-                        </tr>
-
-                        <!-- Fishing Village -->
-                        <tr data-location="village" data-weather="any">
-                            <td class="px-4 py-3 font-medium"><a href="/database/birds/double-barred-finch/" class="text-cozy-bark hover:text-cozy-coral">🐦 Double-Barred Finch</a></td>
-                            <td class="px-4 py-3">Fishing Village Lighthouse</td>
-                            <td class="px-4 py-3">All Day</td>
-                            <td class="px-4 py-3">☀️🌧️🌈</td>
-                            <td class="px-4 py-3 text-right">12G</td>
-                            <td class="px-4 py-3 text-right text-green-600 font-bold">384G</td>
-                        </tr>
-                        <tr data-location="village" data-weather="sunny">
-                            <td class="px-4 py-3 font-medium">🐦 Przevalski's Parrotbill</td>
-                            <td class="px-4 py-3">Fishing Village Square</td>
-                            <td class="px-4 py-3">All Day</td>
-                            <td class="px-4 py-3">☀️🌈</td>
-                            <td class="px-4 py-3 text-right">15G</td>
-                            <td class="px-4 py-3 text-right text-green-600 font-bold">480G</td>
-                        </tr>
-                        <tr data-location="village" data-weather="rainy">
-                            <td class="px-4 py-3 font-medium">🐦 Cinnamon Ground Dove</td>
-                            <td class="px-4 py-3">Fishing Village East Pier</td>
-                            <td class="px-4 py-3">All Day</td>
-                            <td class="px-4 py-3">🌧️🌈</td>
-                            <td class="px-4 py-3 text-right">18G</td>
-                            <td class="px-4 py-3 text-right text-green-600 font-bold">576G</td>
-                        </tr>
-
-                        <!-- Flower Field -->
-                        <tr data-location="central" data-weather="any">
-                            <td class="px-4 py-3 font-medium">🐦 Pink-Necked Green Pigeon</td>
-                            <td class="px-4 py-3">Flower Field</td>
-                            <td class="px-4 py-3">All Day</td>
-                            <td class="px-4 py-3">☀️🌧️🌈</td>
-                            <td class="px-4 py-3 text-right">14G</td>
-                            <td class="px-4 py-3 text-right text-green-600 font-bold">448G</td>
-                        </tr>
-
-                        <!-- Onsen Mountain -->
-                        <tr data-location="mountain" data-weather="any">
-                            <td class="px-4 py-3 font-medium"><a href="/database/birds/hawfinch/" class="text-cozy-bark hover:text-cozy-coral">🐦 Hawfinch</a></td>
-                            <td class="px-4 py-3">Onsen Mountain Crater Lake</td>
-                            <td class="px-4 py-3">All Day</td>
-                            <td class="px-4 py-3">☀️🌧️🌈</td>
-                            <td class="px-4 py-3 text-right">16G</td>
-                            <td class="px-4 py-3 text-right text-green-600 font-bold">512G</td>
-                        </tr>
-                        <tr data-location="mountain" data-weather="rainbow">
-                            <td class="px-4 py-3 font-medium">🐦 Golden Pheasant</td>
-                            <td class="px-4 py-3">Onsen Mountain</td>
-                            <td class="px-4 py-3">Morning</td>
-                            <td class="px-4 py-3">🌈</td>
-                            <td class="px-4 py-3 text-right">22G</td>
-                            <td class="px-4 py-3 text-right text-green-600 font-bold">720G</td>
-                        </tr>
-
-                        <!-- Event Birds -->
-                        <tr class="bg-purple-50" data-location="event" data-weather="any">
-                            <td class="px-4 py-3 font-medium">🦚 Blue Peafowl</td>
-                            <td class="px-4 py-3">Nest of Hundreds Event</td>
-                            <td class="px-4 py-3">Event</td>
-                            <td class="px-4 py-3">Event</td>
-                            <td class="px-4 py-3 text-right">10G</td>
-                            <td class="px-4 py-3 text-right text-green-600 font-bold">320G</td>
-                        </tr>
-                        <tr class="bg-purple-50" data-location="event" data-weather="any">
-                            <td class="px-4 py-3 font-medium">🦜 Blue-and-Yellow Macaw</td>
-                            <td class="px-4 py-3">Nest of Hundreds Event</td>
-                            <td class="px-4 py-3">Event</td>
-                            <td class="px-4 py-3">Event</td>
-                            <td class="px-4 py-3 text-right">18G</td>
-                            <td class="px-4 py-3 text-right text-green-600 font-bold">576G</td>
-                        </tr>
-                        <tr class="bg-purple-50" data-location="event" data-weather="any">
-                            <td class="px-4 py-3 font-medium">🦜 Scarlet Macaw</td>
-                            <td class="px-4 py-3">Nest of Hundreds Event</td>
-                            <td class="px-4 py-3">Event</td>
-                            <td class="px-4 py-3">Event</td>
-                            <td class="px-4 py-3 text-right">20G</td>
-                            <td class="px-4 py-3 text-right text-green-600 font-bold">640G</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <!-- Tips -->
-        <div class="bg-white rounded-xl p-6 mb-8 border border-cozy-peach/30">
-            <h2 class="font-display text-xl font-bold mb-4">📸 Birdwatching Tips</h2>
-            <div class="grid md:grid-cols-2 gap-4 text-sm text-cozy-wood">
-                <div class="flex gap-2"><span>✅</span> Keep a safe distance to avoid scaring birds away</div>
-                <div class="flex gap-2"><span>✅</span> Wait for birds to chirp, forage, or fly for higher ★ photos</div>
-                <div class="flex gap-2"><span>✅</span> Use Auto Bird Whistles (Level 4+) to encourage pose changes</div>
-                <div class="flex gap-2"><span>✅</span> Submit 5 cards daily to Bailey J. for recycling rewards</div>
-                <div class="flex gap-2"><span>✅</span> Check weather before hunting specific birds</div>
-                <div class="flex gap-2"><span>✅</span> Join Nest of Hundreds events for exclusive birds</div>
-            </div>
-        </div>
-
-        <!-- Recycling Info -->
-        <div class="bg-cozy-sage/20 rounded-xl p-4 mb-8">
-            <h3 class="font-bold mb-2">♻️ Info Card Recycling (Unlocks at Level 2)</h3>
-            <p class="text-sm text-cozy-wood">Submit up to 5 info cards daily to Bailey J. for rewards like Repair Kits
-                and Quality Timber instead of selling for Gold.</p>
-        </div>
-
-        <!-- Related Guides -->
-        <section class="pt-8 border-t border-cozy-peach/30">
-            <h2 class="font-bold text-xl mb-6">📚 Related Guides</h2>
-            <div class="grid md:grid-cols-2 gap-4">
-                <a href="/hobbies/birdwatching/"
-                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
-                    <span class="text-3xl">📷</span>
-                    <div>
-                        <h3 class="font-bold">Birdwatching Guide</h3>
-                        <p class="text-sm text-cozy-wood">Learn mechanics & leveling tips</p>
-                    </div>
-                </a>
-                <a href="/events/"
-                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
-                    <span class="text-3xl">🎉</span>
-                    <div>
-                        <h3 class="font-bold">Events Guide</h3>
-                        <p class="text-sm text-cozy-wood">Nest of Hundreds event details</p>
-                    </div>
-                </a>
-            </div>
-        </section>
-        <div id="heartopia_in_content_2" class="heartopia-ad-slot max-w-6xl mx-auto px-4 my-6 text-center"></div>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="bg-cozy-bark text-white py-8 mt-12">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <a href="/" class="inline-flex items-center gap-2 mb-4">
-                <span class="text-xl">🏡</span>
-                <span class="font-display font-bold">Heartopia<span class="text-cozy-sage">.Life</span></span>
-            </a>
-            <div class="flex justify-center gap-6 text-sm text-white/70 mb-4">
-                <a href="/about/" class="hover:text-white">About</a>
-                <a href="/privacy/" class="hover:text-white">Privacy Policy</a>
-                <a href="/contact/" class="hover:text-white">Contact</a>
-            </div>
-            <p class="text-white/60 text-sm mb-4">Unofficial fan site. Not affiliated with XD Entertainment.</p>
-            <p class="text-white/40 text-xs">© 2026 Heartopia.Life</p>
-        </div>
-</footer>
-    <!-- JavaScript for database filtering -->
-    <script>
-        function birdColumnText(row, matcher) {
-            const table = row.closest('table');
-            if (!table) return '';
-            const headers = Array.from(table.querySelectorAll('thead th')).map(th => th.textContent.trim().toLowerCase());
-            const index = headers.findIndex(matcher);
-            return index >= 0 && row.cells[index] ? row.cells[index].textContent.trim() : '';
-        }
-
-        function birdPrice(row) {
-            const priceText = birdColumnText(row, text => text.includes('5★') && text.includes('price'));
-            const match = priceText.replace(/,/g, '').match(/\d+/);
-            return match ? Number(match[0]) : null;
-        }
-
-        function birdPriceMatches(price, bucket) {
-            if (bucket === 'all' || price === null) return true;
-            if (bucket === 'low') return price <= 384;
-            if (bucket === 'mid') return price >= 385 && price <= 575;
-            if (bucket === 'high') return price >= 576;
-            return true;
-        }
-
-        function filterBirds() {
-            const query = document.getElementById('bird-search').value.trim().toLowerCase();
-            const location = document.getElementById('filter-location').value;
-            const weather = document.getElementById('filter-weather').value;
-            const time = document.getElementById('filter-time').value;
-            const priceBucket = document.getElementById('filter-price').value;
-            const rows = document.querySelectorAll('#birds-tbody tr');
-            let visible = 0;
-
-            rows.forEach(row => {
-                const rowLocation = row.dataset.location || '';
-                const rowWeather = row.dataset.weather || 'any';
-                const rowText = row.textContent.toLowerCase();
-                const rowTime = birdColumnText(row, text => text.includes('time')).toLowerCase();
-                const price = birdPrice(row);
-                const show = (!query || rowText.includes(query)) &&
-                    (location === 'all' || rowLocation === location) &&
-                    (weather === 'all' || rowWeather === weather || rowWeather === 'any') &&
-                    (time === 'all' || rowTime.includes(time)) &&
-                    birdPriceMatches(price, priceBucket);
-                row.style.display = show ? '' : 'none';
-                if (show) visible += 1;
-            });
-
-            document.getElementById('bird-result-count').textContent = visible;
-        }
-
-        function resetBirdFilters() {
-            document.getElementById('bird-search').value = '';
-            document.getElementById('filter-location').value = 'all';
-            document.getElementById('filter-weather').value = 'all';
-            document.getElementById('filter-time').value = 'all';
-            document.getElementById('filter-price').value = 'all';
-            filterBirds();
-        }
-
-        document.addEventListener('DOMContentLoaded', filterBirds);
-    </script>
-    <script src="/assets/js/collection-progress.js"></script>
-    <!-- NitroPay Ad Units -->
-<script>
-        if (window['nitroAds']) {
-            window['nitroAds'].createAd('heartopia_anchor', {
-                "format": "anchor-v2",
-                "anchor": "bottom",
-                "anchorBgColor": "rgb(0 0 0 / 80%)",
-                "anchorClose": true,
-                "anchorPersistClose": false,
-                "anchorStickyOffset": 0,
-                "mediaQuery": "(max-width: 1024px)",
-                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-right" }
-            });
-
-            window['nitroAds'].createAd('heartopia_floating_video', {
-                "format": "floating",
-                "floating": { "position": "left" },
-                "mediaQuery": "(min-width: 1025px)",
-                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-left" }
-            });
-
-            window['nitroAds'].createAd('heartopia_side_rail', {
-                "format": "rail",
-                "rail": "right",
-                "railOffsetTop": 0,
-                "railOffsetBottom": 0,
-                "railCollisionWhitelist": [],
-                "railCloseColor": "#666666",
-                "railSpacing": 10,
-                "railStack": false,
-                "railStickyTop": 70,
-                "railVerticalAlign": "top",
-                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-left" },
-                "mediaQuery": "(min-width: 1025px)"
-            });
-
-            window['nitroAds'].createAd('heartopia_in_content', {
-                "format": "display",
-                "sizes": [[970, 90], [970, 250], [728, 90], [300, 250], [320, 100], [320, 50]],
-                "collapseEmpty": true,
-                "renderVisibleOnly": true,
-                "visibleMargin": 800,
-                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "bottom-right" }
-            });
-            window['nitroAds'].createAd('heartopia_in_content_2', {
-                "format": "display",
-                "sizes": [[970, 90], [970, 250], [728, 90], [300, 250], [320, 100], [320, 50]],
-                "collapseEmpty": true,
-                "renderVisibleOnly": true,
-                "visibleMargin": 800,
-                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "bottom-right" }
-            });
-        }
-    </script>
-</body>
-
-</html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><script async src="https://www.googletagmanager.com/gtag/js?id=G-FRJ91G3VRR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-FRJ91G3VRR');</script><script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script><script data-cfasync="false" async src="https://s.nitropay.com/ads-2368.js"></script><link rel="icon" href="/favicon.ico"><script src="https://cdn.tailwindcss.com"></script><script>tailwind.config={theme:{extend:{colors:{cozy:{cream:'#FFF8F0',peach:'#FFE5D9',coral:'#FF9B85',sage:'#A8C686',mint:'#B8E0D2',sky:'#95C8D8',wood:'#8B7355',bark:'#5D4E37'}},fontFamily:{display:['Georgia','serif'],body:['system-ui','-apple-system','sans-serif']}}}}</script><style>html{scroll-behavior:smooth}.bird-row:hover{background:rgba(184,224,210,.18)}</style><title>Heartopia Bird Locations: 92 Birds, Weather &amp; Time</title><meta name="description" content="Heartopia bird locations database with 92 birds, local images, levels, categories, weather, time, search filters, and collection progress."><meta name="robots" content="index, follow"><link rel="canonical" href="https://heartopia.life/database/birds/"><meta property="og:type" content="article"><meta property="og:title" content="Heartopia Bird Locations: 92 Birds, Weather &amp; Time"><meta property="og:description" content="Search 92 Heartopia birds by location, level, weather, time, category, and collection status."><meta property="og:url" content="https://heartopia.life/database/birds/"><meta property="og:site_name" content="Heartopia.Life"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","name":"Heartopia Bird Locations","description":"Heartopia bird locations database with 92 birds.","url":"https://heartopia.life/database/birds/","dateModified":"2026-07-10"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://heartopia.life/"},{"@type":"ListItem","position":2,"name":"Database","item":"https://heartopia.life/database/"},{"@type":"ListItem","position":3,"name":"Birds","item":"https://heartopia.life/database/birds/"}]}]}</script></head><body class="bg-cozy-cream text-cozy-bark font-body"><header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-cozy-peach/50"><nav class="max-w-6xl mx-auto px-4 py-3"><div class="flex items-center justify-between"><a href="/" class="flex items-center gap-2"><img src="/favicon-96x96.png" alt="Heartopia.Life" class="w-7 h-7"><span class="font-display text-xl font-bold">Heartopia<span class="text-cozy-sage">.Life</span></span></a><ul class="hidden md:flex items-center gap-6 text-sm font-medium"><li><a href="/guides/map/" class="hover:text-cozy-coral">Map</a></li><li><a href="/codes/" class="hover:text-cozy-coral">Codes</a></li><li><a href="/guides/" class="hover:text-cozy-coral">Guides</a></li><li><a href="/database/" class="text-cozy-coral font-bold">Database</a></li><li><a href="/tools/" class="hover:text-cozy-coral">Tools</a></li></ul></div></nav></header><main class="max-w-6xl mx-auto px-4 py-8"><nav class="text-sm text-cozy-wood mb-6"><a href="/" class="hover:text-cozy-coral">Home</a><span class="mx-2">/</span><a href="/database/" class="hover:text-cozy-coral">Database</a><span class="mx-2">/</span><span class="font-medium text-cozy-bark">Birds</span></nav><section class="bg-gradient-to-br from-sky-100 to-cozy-mint/40 rounded-2xl p-6 md:p-8 mb-8"><p class="text-sm font-semibold text-cozy-sage mb-2">Updated: July 10, 2026</p><h1 class="font-display text-3xl md:text-4xl font-bold mb-3">Heartopia Bird Locations Database</h1><p class="text-lg text-cozy-wood max-w-3xl">Search all <strong>92 birds</strong> by location, level, category, weather, and time. Every entry uses a local bird image and can be marked as photographed in this browser.</p></section><section class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8"><div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30"><p class="text-2xl font-bold text-cozy-sage">92</p><p class="text-xs text-cozy-wood">Registered birds</p></div><div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30"><p class="text-2xl font-bold text-cozy-coral">14</p><p class="text-xs text-cozy-wood">Bird levels</p></div><div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30"><p class="text-2xl font-bold text-cozy-sky">4</p><p class="text-xs text-cozy-wood">Time periods</p></div><div class="bg-white rounded-xl p-4 text-center border border-cozy-peach/30"><p class="text-2xl font-bold text-amber-600">5</p><p class="text-xs text-cozy-wood">Bird categories</p></div></section><section class="bg-white rounded-2xl p-6 mb-8 border border-cozy-peach/30"><h2 class="font-display text-2xl font-bold mb-4">Featured Bird Targets</h2><div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4"><a href="/database/birds/hawfinch/" class="bg-white rounded-xl p-4 border border-cozy-peach/30 flex items-center gap-3 hover:border-cozy-coral"><img src="/img/birds/Hawfinch.webp" alt="Hawfinch bird image" class="w-14 h-14 object-contain rounded-lg bg-cozy-mint/20 p-1" loading="lazy"><span><strong class="block text-cozy-coral">Hawfinch</strong><small class="text-cozy-wood">Onsen Mountain Lake, Crater Lake · Lv.6</small></span></a><a href="/database/birds/double-barred-finch/" class="bg-white rounded-xl p-4 border border-cozy-peach/30 flex items-center gap-3 hover:border-cozy-coral"><img src="/img/birds/Double-Barred-Finch.webp" alt="Double-Barred Finch bird image" class="w-14 h-14 object-contain rounded-lg bg-cozy-mint/20 p-1" loading="lazy"><span><strong class="block text-cozy-coral">Double-Barred Finch</strong><small class="text-cozy-wood">Lighthouse · Lv.3</small></span></a><a href="/database/birds/green-peafowl/" class="bg-white rounded-xl p-4 border border-cozy-peach/30 flex items-center gap-3 hover:border-cozy-coral"><img src="/img/birds/Green-Peafowl.webp" alt="Green Peafowl bird image" class="w-14 h-14 object-contain rounded-lg bg-cozy-mint/20 p-1" loading="lazy"><span><strong class="block text-cozy-coral">Green Peafowl</strong><small class="text-cozy-wood">Nest of Hundreds · Lv.9</small></span></a><a href="#bird-tools" class="bg-white rounded-xl p-4 border border-cozy-peach/30 flex items-center gap-3 hover:border-cozy-coral"><img src="/img/birds/Black-Stork.webp" alt="Black Stork bird image" class="w-14 h-14 object-contain rounded-lg bg-cozy-mint/20 p-1" loading="lazy"><span><strong class="block text-cozy-coral">Black Stork</strong><small class="text-cozy-wood">Meadow Lake · Lv.14</small></span></a></div></section><div id="heartopia_in_content" class="heartopia-ad-slot my-6 text-center"></div><section id="bird-tools" class="bg-white rounded-2xl p-6 mb-8 border border-cozy-peach/30"><h2 class="font-display text-2xl font-bold mb-4">Find a Bird</h2><div class="grid md:grid-cols-6 gap-3"><input id="bird-search" type="search" placeholder="Search name or location..." class="md:col-span-2 w-full p-3 text-sm border border-cozy-peach rounded-lg bg-cozy-cream"><select id="bird-level" class="w-full p-3 text-sm border border-cozy-peach rounded-lg"><option value="">All levels</option></select><select id="bird-location" class="w-full p-3 text-sm border border-cozy-peach rounded-lg"><option value="">All locations</option></select><select id="bird-weather" class="w-full p-3 text-sm border border-cozy-peach rounded-lg"><option value="">All weather</option><option>Rainbow</option><option>Sunny</option><option>Rainy</option></select><select id="bird-time" class="w-full p-3 text-sm border border-cozy-peach rounded-lg"><option value="">All times</option><option>Day</option><option>Dawn</option><option>Dusk</option><option>Night</option></select></div><div class="grid md:grid-cols-3 gap-3 mt-3"><select id="bird-category" class="w-full p-3 text-sm border border-cozy-peach rounded-lg"><option value="">All categories</option></select><select id="bird-status" class="w-full p-3 text-sm border border-cozy-peach rounded-lg"><option value="">All collection status</option><option value="collected">Photographed</option><option value="missing">Not photographed</option></select><select id="bird-sort" class="w-full p-3 text-sm border border-cozy-peach rounded-lg"><option value="level">Level: low to high</option><option value="name">Name: A-Z</option><option value="location">Location: A-Z</option></select></div><p class="text-sm text-cozy-wood mt-4"><strong id="bird-result-count">92</strong> birds shown.</p></section><section data-collection-progress data-collection-key="birds" data-collection-label="birds" data-table-selector="table.bird-table" class="bg-white rounded-2xl p-5 mb-8 border border-cozy-peach/30"><div class="flex flex-wrap items-center justify-between gap-4"><div><h2 class="font-display text-xl font-bold">My Bird Collection</h2><p class="text-sm text-cozy-wood">Mark photographed birds. Progress is saved only in this browser.</p></div><div class="text-right"><p class="text-sm text-cozy-wood"><strong data-collection-count>0</strong> / <span data-collection-total>0</span> photographed</p><p class="font-bold text-cozy-coral" data-collection-percent>0%</p></div></div><div class="h-2 bg-cozy-peach/50 rounded-full overflow-hidden mt-4"><div data-collection-bar class="h-full bg-cozy-coral" style="width:0%"></div></div><button type="button" data-collection-clear class="mt-3 text-xs font-bold text-cozy-wood hover:text-cozy-coral">Clear saved progress</button></section><section class="bg-white rounded-2xl border border-cozy-peach/30 overflow-hidden"><div class="px-6 py-5 border-b border-cozy-peach/30"><h2 class="font-display text-2xl font-bold">All 92 Birds</h2><p class="text-sm text-cozy-wood mt-1">Use the filters above to narrow the table. Event entries are kept in the same collection list.</p></div><div class="overflow-x-auto"><table class="w-full text-sm bird-table"><thead class="bg-cozy-mint/30 text-left"><tr><th class="px-3 py-3">Bird</th><th class="px-3 py-3">Location</th><th class="px-3 py-3 text-center">Lvl</th><th class="px-3 py-3">Category</th><th class="px-3 py-3">Weather</th><th class="px-3 py-3">Time</th></tr></thead><tbody id="bird-table-body" class="divide-y divide-cozy-peach/25"></tbody></table></div></section><div id="heartopia_in_content_2" class="heartopia-ad-slot my-6 text-center"></div><section class="bg-cozy-sky/10 rounded-2xl p-6 border border-cozy-sky/30"><h2 class="font-display text-2xl font-bold mb-3">Next Steps</h2><p class="text-cozy-wood">Use the bird locations guide for an area route, then open a named bird page when you need a focused answer.</p><div class="mt-4 flex flex-wrap gap-4"><a href="/guides/bird-locations/" class="font-bold text-cozy-coral hover:underline">Bird locations guide</a><a href="/tools/my-progress/" class="font-bold text-cozy-coral hover:underline">View My Progress</a><a href="/guides/map/" class="font-bold text-cozy-coral hover:underline">Open the map</a></div></section></main><footer class="bg-cozy-bark text-white py-10 mt-12"><div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-6 text-sm"><div><a href="/" class="font-display text-xl font-bold">Heartopia<span class="text-cozy-sage">.Life</span></a><p class="text-white/70 mt-2">Unofficial fan guide for Heartopia players.</p></div><div><h2 class="font-bold mb-2">Database</h2><p class="text-white/70"><a href="/database/fish/" class="hover:text-white">Fish</a> · <a href="/database/insects/" class="hover:text-white">Insects</a> · <a href="/database/recipes/" class="hover:text-white">Recipes</a></p></div><div><h2 class="font-bold mb-2">Tools</h2><p class="text-white/70"><a href="/tools/my-progress/" class="hover:text-white">My Progress</a> · <a href="/guides/map/" class="hover:text-white">Map</a></p></div></div></footer><script>const birdData=[
+  {
+    "name": "mallard",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Suburban Lake",
+    "category": "Common",
+    "img": "Mallard.webp"
+  },
+  {
+    "name": "winter mallard",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "[EVENT] Winter Birdwatching, Suburban Lake",
+    "category": "Winter frost season",
+    "img": "Winter-Mallard.webp"
+  },
+  {
+    "name": "bearded reedling",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Stone Cliff, Onsen, Crater Lake, Ruins",
+    "category": "Common",
+    "img": "Bearded-Reedling.webp"
+  },
+  {
+    "name": "eurasian bullfinch",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Suburbs",
+    "category": "Common",
+    "img": "Eurasian-Bullfinch.webp"
+  },
+  {
+    "name": "eurasian wren",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Spirit-Oak Pine Forest, Forest Lake",
+    "category": "Common",
+    "img": "Eurasian-Wren.webp"
+  },
+  {
+    "name": "pied imperial pigeon",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "East Pier of Fishing Village, Fishing Village Square, Wharf",
+    "category": "Common",
+    "img": "Pied-Imperial-Pigeon.webp"
+  },
+  {
+    "name": "greater flamingo",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Suburban Lake",
+    "category": "Common",
+    "img": "Greater-Flamingo.webp"
+  },
+  {
+    "name": "winter greater flamingo",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "[EVENT] Winter Birdwatching, Suburban Lake",
+    "category": "Winter frost season",
+    "img": "Winter-Greater-Flamingo.webp"
+  },
+  {
+    "name": "blue brick sparrow",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Onsen",
+    "category": "Modular Streets",
+    "img": "Blue-Brick-Sparrow.webp"
+  },
+  {
+    "name": "purple brick sparrow",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Ruins",
+    "category": "Modular Streets",
+    "img": "Purple-Brick-Sparrow.webp"
+  },
+  {
+    "name": "colorful brick sparrow",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Evento especial de aves de bloques",
+    "category": "Modular Streets",
+    "img": "Colorful-Brick-Sparrow.webp"
+  },
+  {
+    "name": "pink brick sparrow",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Stone Cliff",
+    "category": "Modular Streets",
+    "img": "Pink-Brick-Sparrow.webp"
+  },
+  {
+    "name": "green brick sparrow",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Crater Lake",
+    "category": "Modular Streets",
+    "img": "Green-Brick-Sparrow.webp"
+  },
+  {
+    "name": "blue-and-yellow macaw",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "[EVENT] Nest of Hundreds ",
+    "category": "Common,Nest of Hundreds ",
+    "img": "Blue-and-yellow-Macaw.webp"
+  },
+  {
+    "name": "long-tailed tit",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Blanc's Head",
+    "category": "Common",
+    "img": "Long-Tailed-Tit.webp"
+  },
+  {
+    "name": "blue suit dove",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Spirit-Oak Pine Forest, [EVENT] Actor Dove",
+    "category": "Dreamlight Cinematics",
+    "img": "Blue-Suit-Dove.webp"
+  },
+  {
+    "name": "gray suit dove",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Deer Tower, [EVENT] Actor Dove",
+    "category": "Dreamlight Cinematics",
+    "img": "Gray-Suit-Dove.webp"
+  },
+  {
+    "name": "striped suit dove",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "[EVENT] Actor Dove",
+    "category": "Dreamlight Cinematics",
+    "img": "Striped-Suit-Dove.webp"
+  },
+  {
+    "name": "red suit dove",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Forest Island, [EVENT] Actor Dove",
+    "category": "Dreamlight Cinematics",
+    "img": "Red-Suit-Dove.webp"
+  },
+  {
+    "name": "green suit dove",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Forest Jump Puzzle, [EVENT] Actor Dove",
+    "category": "Dreamlight Cinematics",
+    "img": "Green-Suit-Dove.webp"
+  },
+  {
+    "name": "wonga pigeon",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Spirit-Oak Pine Forest, Deer Tower, Forest Lake",
+    "category": "Common",
+    "img": "Wonga-Pigeon.webp"
+  },
+  {
+    "name": "winter mandarin duck",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "[EVENT] Winter Birdwatching",
+    "category": "Winter frost season",
+    "img": "Winter-Mandarin-Duck.webp"
+  },
+  {
+    "name": "blue peafowl",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "[EVENT] Nest of Hundreds ",
+    "category": "Nest of Hundreds ",
+    "img": "Blue-Peafowl.webp"
+  },
+  {
+    "name": "european robin",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Central Square",
+    "category": "Common",
+    "img": "European-Robin.webp"
+  },
+  {
+    "name": "winter smew",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "[EVENT] Winter Birdwatching, Suburban Lake",
+    "category": "Winter frost season",
+    "img": "Winter-Smew.webp"
+  },
+  {
+    "name": "winter eurasian wigeon",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "[EVENT] Winter Birdwatching, Suburban Lake",
+    "category": "Winter frost season",
+    "img": "Winter-Eurasian-Wigeon.webp"
+  },
+  {
+    "name": "eurasian collared dove",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Residential Area",
+    "category": "Common",
+    "img": "Eurasian-Collared-Dove.webp"
+  },
+  {
+    "name": "pink-necked green pigeon",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Windmill Flower Field",
+    "category": "Common",
+    "img": "Pink-Necked-Green-Pigeon.webp"
+  },
+  {
+    "name": "woodchat shrike",
+    "level": 2,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Suburbs",
+    "category": "Common",
+    "img": "Woodchat-Shrike.webp"
+  },
+  {
+    "name": "great tit",
+    "level": 2,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Crater Lake, Ruins",
+    "category": "Common",
+    "img": "Great-Tit.webp"
+  },
+  {
+    "name": "seagull",
+    "level": 2,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Seaside",
+    "category": "Common",
+    "img": "Seagull.webp"
+  },
+  {
+    "name": "eurasian nuthatch",
+    "level": 2,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "East Pier of Fishing Village, Fishing Village Square",
+    "category": "Common",
+    "img": "Eurasian-Nuthatch.webp"
+  },
+  {
+    "name": "stock dove",
+    "level": 2,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Central Square",
+    "category": "Common",
+    "img": "Stock-Dove.webp"
+  },
+  {
+    "name": "eurasian chaffinch",
+    "level": 2,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Windmill Flower Field",
+    "category": "Common",
+    "img": "Eurasian-Chaffinch.webp"
+  },
+  {
+    "name": "eurasian wigeon",
+    "level": 2,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "River",
+    "category": "Common",
+    "img": "Eurasian-Wigeon.webp"
+  },
+  {
+    "name": "european shag",
+    "level": 3,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Forest Island",
+    "category": "Common",
+    "img": "European-Shag.webp"
+  },
+  {
+    "name": "double-barred finch",
+    "level": 3,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Lighthouse",
+    "category": "Common",
+    "img": "Double-Barred-Finch.webp"
+  },
+  {
+    "name": "king eider",
+    "level": 3,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "River",
+    "category": "Common",
+    "img": "King-Eider.webp"
+  },
+  {
+    "name": "audouin’s gull",
+    "level": 3,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Whale Sea",
+    "category": "Common",
+    "img": "Audouin’s-Gull.webp"
+  },
+  {
+    "name": "red-and-green macaw",
+    "level": 3,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "[EVENT] Nest of Hundreds ",
+    "category": "Nest of Hundreds ",
+    "img": "Red-and-green-Macaw.webp"
+  },
+  {
+    "name": "silver-throated tit",
+    "level": 3,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Forest Jump Puzzle",
+    "category": "Common",
+    "img": "Silver-Throated-Tit.webp"
+  },
+  {
+    "name": "eurasian golden oriole",
+    "level": 3,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Residential Area",
+    "category": "Common",
+    "img": "Eurasian-Golden-Oriole.webp"
+  },
+  {
+    "name": "ruddy shelduck",
+    "level": 3,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Suburban Lake",
+    "category": "Common",
+    "img": "Ruddy-Shelduck.webp"
+  },
+  {
+    "name": "pine grosbeak",
+    "level": 4,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Forest Island",
+    "category": "Common",
+    "img": "Pine-Grosbeak.webp"
+  },
+  {
+    "name": "lady amherst pheasant",
+    "level": 4,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Ruins",
+    "category": "Common",
+    "img": "Lady-Amherst-Pheasant.webp"
+  },
+  {
+    "name": "white wagtail",
+    "level": 4,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Amethyst Beach",
+    "category": "Common",
+    "img": "White-Wagtail.webp"
+  },
+  {
+    "name": "regent bowerbird",
+    "level": 4,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Spirit-Oak Pine Forest",
+    "category": "Common",
+    "img": "Regent-Bowerbird.webp"
+  },
+  {
+    "name": "przevalski's parrotbill",
+    "level": 4,
+    "weather": "Rainbow, Sunny",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "East Pier of Fishing Village, Fishing Village Square",
+    "category": "Common",
+    "img": "Przevalski's-Parrotbill.webp"
+  },
+  {
+    "name": "smew",
+    "level": 4,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Forest Lake",
+    "category": "Common",
+    "img": "Smew.webp"
+  },
+  {
+    "name": "wallace's fruit dove",
+    "level": 4,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Windmill Flower Field",
+    "category": "Common",
+    "img": "Wallace's-Fruit-Dove.webp"
+  },
+  {
+    "name": "european bee-eater",
+    "level": 5,
+    "weather": "Rainbow, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Onsen Mountain Lake",
+    "category": "Common",
+    "img": "European-Bee-Eater.webp"
+  },
+  {
+    "name": "brown noddy",
+    "level": 5,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Old Sea",
+    "category": "Common",
+    "img": "Brown-Noddy.webp"
+  },
+  {
+    "name": "lesser flamingo",
+    "level": 5,
+    "weather": "Rainbow, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Forest Lake",
+    "category": "Common",
+    "img": "Lesser-Flamingo.webp"
+  },
+  {
+    "name": "great green macaw",
+    "level": 5,
+    "weather": "Rainbow, Sunny",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "[EVENT] Nest of Hundreds ",
+    "category": "Nest of Hundreds ",
+    "img": "Great-Green-Macaw.webp"
+  },
+  {
+    "name": "african olive pigeon",
+    "level": 5,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Onsen, Onsen Mountain Lake",
+    "category": "Common",
+    "img": "African-Olive-Pigeon.webp"
+  },
+  {
+    "name": "yellow bellied flycatcher",
+    "level": 5,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Fishing Village Square, Wharf",
+    "category": "Common",
+    "img": "Yellow-Bellied-Flycatcher.webp"
+  },
+  {
+    "name": "long eared owl",
+    "level": 6,
+    "weather": "Rainbow, Sunny",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Stone Cliff, Onsen Mountain Lake",
+    "category": "Common",
+    "img": "Long-Eared-Owl.webp"
+  },
+  {
+    "name": "red faced cormorant",
+    "level": 6,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Old Sea, Whale Sea",
+    "category": "Common",
+    "img": "Red-Faced-Cormorant.webp"
+  },
+  {
+    "name": "cinnamon ground dove",
+    "level": 6,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "East Pier of Fishing Village, Fishing Village Square",
+    "category": "Common",
+    "img": "Cinnamon-Ground-Dove.webp"
+  },
+  {
+    "name": "hawfinch",
+    "level": 6,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Onsen Mountain Lake, Crater Lake",
+    "category": "Common",
+    "img": "Hawfinch.webp"
+  },
+  {
+    "name": "common kestrel",
+    "level": 7,
+    "weather": "Rainbow, Sunny",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Deer Tower",
+    "category": "Common",
+    "img": "Common-Kestrel.webp"
+  },
+  {
+    "name": "tern",
+    "level": 7,
+    "weather": "Rainbow",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "East Sea, Seaside",
+    "category": "Common",
+    "img": "Tern.webp"
+  },
+  {
+    "name": "lear's macaw",
+    "level": 7,
+    "weather": "Rainbow, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "[EVENT] Nest of Hundreds ",
+    "category": "Nest of Hundreds ",
+    "img": "Lear's-Macaw.webp"
+  },
+  {
+    "name": "azure tit",
+    "level": 7,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Windmill Flower Field, Meadow Lake",
+    "category": "Common",
+    "img": "Azure-Tit.webp"
+  },
+  {
+    "name": "jambu fruit dove",
+    "level": 7,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Suburbs",
+    "category": "Common",
+    "img": "Jambu-Fruit-Dove.webp"
+  },
+  {
+    "name": "peregrine falcon",
+    "level": 8,
+    "weather": "Rainbow, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Stone Cliff, Onsen",
+    "category": "Common",
+    "img": "Peregrine-Falcon.webp"
+  },
+  {
+    "name": "eastern bluebird",
+    "level": 8,
+    "weather": "Rainbow, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Suburbs",
+    "category": "Common",
+    "img": "Eastern-Bluebird.webp"
+  },
+  {
+    "name": "pink pigeon",
+    "level": 8,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Whale Mountain, Windmill Flower Field",
+    "category": "Common",
+    "img": "Pink-Pigeon.webp"
+  },
+  {
+    "name": "redpoll",
+    "level": 8,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Spirit-Oak Pine Forest",
+    "category": "Common",
+    "img": "Redpoll.webp"
+  },
+  {
+    "name": "imperial shag",
+    "level": 9,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "East Sea, Zephyr Sea",
+    "category": "Common",
+    "img": "Imperial-Shag.webp"
+  },
+  {
+    "name": "american flamingo",
+    "level": 9,
+    "weather": "Rainbow",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Amethyst Beach",
+    "category": "Common",
+    "img": "American-Flamingo.webp"
+  },
+  {
+    "name": "white-headed duck",
+    "level": 9,
+    "weather": "Rainbow, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Onsen Mountain Lake",
+    "category": "Common",
+    "img": "White-Headed-Duck.webp"
+  },
+  {
+    "name": "green peafowl",
+    "level": 9,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "[EVENT] Nest of Hundreds ",
+    "category": "Nest of Hundreds ",
+    "img": "Green-Peafowl.webp"
+  },
+  {
+    "name": "paradise tanager",
+    "level": 9,
+    "weather": "Rainbow",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Suburbs",
+    "category": "Common",
+    "img": "Paradise-Tanager.webp"
+  },
+  {
+    "name": "eagle-owl",
+    "level": 10,
+    "weather": "Rainbow, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Deer Tower",
+    "category": "Common",
+    "img": "Eagle-Owl.webp"
+  },
+  {
+    "name": "azores bullfinch",
+    "level": 10,
+    "weather": "Rainbow",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Lighthouse",
+    "category": "Common",
+    "img": "Azores-Bullfinch.webp"
+  },
+  {
+    "name": "amur falcon",
+    "level": 10,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Crater Lake, Ruins",
+    "category": "Common",
+    "img": "Amur-Falcon.webp"
+  },
+  {
+    "name": "verditer flycatcher",
+    "level": 10,
+    "weather": "Rainbow",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Forest Jump Puzzle",
+    "category": "Common",
+    "img": "Verditer-Flycatcher.webp"
+  },
+  {
+    "name": "baikal teal",
+    "level": 11,
+    "weather": "Rainbow",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Onsen Mountain Lake",
+    "category": "Common",
+    "img": "Baikal-Teal.webp"
+  },
+  {
+    "name": "inca tern",
+    "level": 11,
+    "weather": "Rainbow, Rainy",
+    "time": "Day, Dawn, Dusk",
+    "location": "Old Sea",
+    "category": "Common",
+    "img": "Inca-Tern.webp"
+  },
+  {
+    "name": "chestnut-cheeked starling",
+    "level": 11,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Windmill Flower Field",
+    "category": "Common",
+    "img": "Chestnut-Cheeked-Starling.webp"
+  },
+  {
+    "name": "blue-headed quail-dove",
+    "level": 11,
+    "weather": "Rainbow, Sunny",
+    "time": "Day, Dusk, Night",
+    "location": "Suburbs",
+    "category": "Common",
+    "img": "Blue-Headed-Quail-Dove.webp"
+  },
+  {
+    "name": "white peafowl",
+    "level": 11,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "[EVENT] Nest of Hundreds ",
+    "category": "Nest of Hundreds ",
+    "img": "White-Peafowl.webp"
+  },
+  {
+    "name": "snowy owl",
+    "level": 12,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dusk",
+    "location": "Spirit-Oak Pine Forest",
+    "category": "Common",
+    "img": "Snowy-Owl.webp"
+  },
+  {
+    "name": "red-browed finch",
+    "level": 12,
+    "weather": "Rainbow",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Crater Lake",
+    "category": "Common",
+    "img": "Red-Browed-Finch.webp"
+  },
+  {
+    "name": "atlantic puffin",
+    "level": 12,
+    "weather": "Rainbow, Sunny",
+    "time": "Dawn, Dusk, Night",
+    "location": "Whale Sea",
+    "category": "Common",
+    "img": "Atlantic-Puffin.webp"
+  },
+  {
+    "name": "blue-footed booby",
+    "level": 12,
+    "weather": "Rainbow, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Zephyr Sea",
+    "category": "Common",
+    "img": "Blue-Footed-Booby.webp"
+  },
+  {
+    "name": "whooper swan",
+    "level": 13,
+    "weather": "Rainbow, Sunny",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Suburban Lake",
+    "category": "Common",
+    "img": "Whooper-Swan.webp"
+  },
+  {
+    "name": "black swan",
+    "level": 13,
+    "weather": "Rainbow, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "Suburban Lake",
+    "category": "Common",
+    "img": "Black-Swan.webp"
+  },
+  {
+    "name": "black peafowl",
+    "level": 13,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dawn, Dusk, Night",
+    "location": "[EVENT] Nest of Hundreds ",
+    "category": "Nest of Hundreds ",
+    "img": "Black-Peafowl.webp"
+  },
+  {
+    "name": "black stork",
+    "level": 14,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Day, Dusk, Night",
+    "location": "Meadow Lake",
+    "category": "Common",
+    "img": "Black-Stork.webp"
+  },
+  {
+    "name": "spectacled owl",
+    "level": 14,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Dawn, Night",
+    "location": "Forest Jump Puzzle",
+    "category": "Common",
+    "img": "Spectacled-Owl.webp"
+  }
+]
+;const birdLinks={'european robin':'/database/birds/european-robin/','double-barred finch':'/database/birds/double-barred-finch/','eurasian golden oriole':'/database/birds/golden-oriole/','hawfinch':'/database/birds/hawfinch/','green peafowl':'/database/birds/green-peafowl/','winter mandarin duck':'/database/birds/winter-mandarin-duck/','wonga pigeon':'/database/birds/wonga-pigeon/'};const esc=v=>String(v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');const displayName=n=>n.replace(/\b\w/g,c=>c.toUpperCase());const collected=()=>{try{return new Set(JSON.parse(localStorage.getItem('heartopia.collection.birds')||'[]'))}catch(e){return new Set()}};const unique=items=>[...new Set(items.map(String))].sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}));function addOptions(id,items,prefix){const el=document.getElementById(id);unique(items).forEach(value=>{const o=document.createElement('option');o.value=value;o.textContent=prefix?prefix+value:value;el.appendChild(o)})}addOptions('bird-level',birdData.map(b=>b.level), 'Lv. ');addOptions('bird-location',birdData.flatMap(b=>b.location.split(', ').filter(v=>!v.startsWith('[EVENT]'))));addOptions('bird-category',birdData.map(b=>b.category));function renderTable(){const body=document.getElementById('bird-table-body');body.innerHTML=birdData.map(b=>{const name=displayName(b.name),href=birdLinks[b.name],nameHtml=href?`<a href="${href}" class="font-bold text-cozy-coral hover:underline">${esc(name)}</a>`:`<span>${esc(name)}</span>`;return `<tr class="bird-row" data-bird-id="${esc(b.name)}" data-bird-name="${esc(b.name)}" data-bird-level="${b.level}" data-bird-location="${esc(b.location)}"><td class="px-3 py-3 font-medium min-w-[220px]"><span class="inline-flex items-center gap-3"><img src="/img/birds/${encodeURIComponent(b.img)}" alt="${esc(name)} bird image" class="w-11 h-11 object-contain rounded-lg bg-cozy-mint/20 p-1" loading="lazy">${nameHtml}</span></td><td class="px-3 py-3 text-cozy-wood min-w-[190px]">${esc(b.location)}</td><td class="px-3 py-3 text-center">${b.level}</td><td class="px-3 py-3 text-cozy-wood">${esc(b.category)}</td><td class="px-3 py-3 text-cozy-wood">${esc(b.weather)}</td><td class="px-3 py-3 text-cozy-wood">${esc(b.time)}</td></tr>`}).join('')}
+function filterBirds(){const q=document.getElementById('bird-search').value.trim().toLowerCase(),level=document.getElementById('bird-level').value,location=document.getElementById('bird-location').value,weather=document.getElementById('bird-weather').value,time=document.getElementById('bird-time').value,category=document.getElementById('bird-category').value,status=document.getElementById('bird-status').value,sort=document.getElementById('bird-sort').value,got=collected(),body=document.getElementById('bird-table-body');const rows=Array.from(body.querySelectorAll('tr'));let visible=0;rows.forEach(row=>{const b=birdData.find(item=>item.name===row.dataset.birdId);const show=(!q||`${b.name} ${b.location} ${b.category}`.toLowerCase().includes(q))&&(!level||String(b.level)===level)&&(!location||b.location.includes(location))&&(!weather||b.weather.includes(weather))&&(!time||b.time.includes(time))&&(!category||b.category===category)&&(!status||(status==='collected'?got.has(b.name):!got.has(b.name)));row.style.display=show?'':'none';if(show)visible++});rows.sort((a,b)=>{const left=birdData.find(item=>item.name===a.dataset.birdId),right=birdData.find(item=>item.name===b.dataset.birdId);return sort==='name'?left.name.localeCompare(right.name):sort==='location'?left.location.localeCompare(right.location):left.level-right.level||left.name.localeCompare(right.name)}).forEach(row=>body.appendChild(row));const empty=document.getElementById('bird-empty');if(empty)empty.remove();if(!visible){body.insertAdjacentHTML('beforeend','<tr id="bird-empty"><td colspan="7" class="px-4 py-10 text-center text-cozy-wood">No birds match these filters. Try clearing one condition.</td></tr>')}document.getElementById('bird-result-count').textContent=visible}
+['bird-search','bird-level','bird-location','bird-weather','bird-time','bird-category','bird-status','bird-sort'].forEach(id=>document.getElementById(id).addEventListener(id==='bird-search'?'input':'change',filterBirds));renderTable();if(window['nitroAds']){window['nitroAds'].createAd('heartopia_anchor',{format:'anchor-v2',anchor:'bottom',anchorBgColor:'rgb(0 0 0 / 80%)',anchorClose:true,anchorPersistClose:false,mediaQuery:'(max-width: 1024px)',report:{enabled:true,icon:true,wording:'Report Ad',position:'top-right'}});window['nitroAds'].createAd('heartopia_side_rail',{format:'rail',rail:'right',railOffsetTop:0,railOffsetBottom:0,railCloseColor:'#666666',railSpacing:10,railStack:false,railStickyTop:70,railVerticalAlign:'top',mediaQuery:'(min-width: 1025px)',report:{enabled:true,icon:true,wording:'Report Ad',position:'top-left'}});window['nitroAds'].createAd('heartopia_floating_video',{format:'floating',mediaQuery:'(min-width: 1025px)',report:{enabled:true,icon:true,wording:'Report Ad',position:'top-left'}});['heartopia_in_content','heartopia_in_content_2'].forEach(id=>window['nitroAds'].createAd(id,{format:'display',sizes:[[970,90],[970,250],[728,90],[300,250],[320,100],[320,50]],collapseEmpty:true,renderVisibleOnly:true,visibleMargin:800,report:{enabled:true,icon:true,wording:'Report Ad',position:'bottom-right'}}));}</script><script src="/assets/js/collection-progress.js"></script></body></html>
