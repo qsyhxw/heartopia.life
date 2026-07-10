@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    
-    
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -118,7 +118,7 @@
                     <li><a href="/hobbies/" class="hover:text-cozy-coral">Hobbies</a></li>
                     <li><a href="/database/recipes/" class="hover:text-cozy-coral">Database</a></li>
                 </ul>
-            
+
                 <button class="md:hidden p-2 hover:bg-cozy-peach/50 rounded-lg" aria-label="Open menu"
                     onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -127,7 +127,7 @@
                     </svg>
                 </button>
             </div>
-        
+
             <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-cozy-peach/50 pt-4">
                 <ul class="flex flex-col gap-3 text-sm font-medium">
                     <li><a href="/guides/map/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🗺️ Map</a></li>
@@ -157,7 +157,7 @@
         <div class="bg-gradient-to-br from-amber-100 via-yellow-50 to-cozy-mint rounded-2xl p-6 md:p-8 mb-8">
             <div class="flex items-center gap-2 text-sm font-medium text-cozy-sage mb-3">
                 <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                Updated: January 2026
+                Updated: July 10, 2026
             </div>
             <h1 class="font-display text-3xl md:text-4xl font-bold text-cozy-bark mb-4">
                 🐠 Heartopia Rare Fish Guide
@@ -206,397 +206,753 @@
         </div>
 
         <!-- CONTENT -->
-        <article class="space-y-12">            <section id="legendary" class="scroll-mt-20">
+        <article class="space-y-12">
+            <section id="legendary" class="scroll-mt-20">
                 <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">High-Value & Condition-Gated Fish</h2>
-                <p class="text-cozy-wood mb-4">Rare fish are best tracked by their conditions: weather, time, event category, fishing level, and shadow size. Use the table below to pick the next target to check.</p>
+                <p class="text-cozy-wood mb-4">Rare fish are best tracked by their conditions: weather, time, event category, fishing level, shadow size, and market value.</p>
                 <div class="overflow-x-auto bg-white rounded-xl border border-cozy-peach/30">
-                    <table class="w-full text-sm"><thead class="bg-amber-100 text-left"><tr><th class="px-4 py-3">Fish</th><th class="px-4 py-3">Location</th><th class="px-4 py-3">Level</th><th class="px-4 py-3">Weather / Time</th><th class="px-4 py-3">Market Value</th></tr></thead><tbody class="divide-y divide-cozy-peach/20">
-                            <tr><td class="px-4 py-3 font-medium"><img src="/img/fish/Swordfish.webp" alt="Swordfish" class="inline-block w-9 h-9 object-contain rounded-lg bg-cozy-sky/10 p-1 mr-2" loading="lazy">Swordfish</td><td class="px-4 py-3 text-cozy-wood">Whale Sea</td><td class="px-4 py-3">Lv.10</td><td class="px-4 py-3 text-cozy-wood">Rainbow; Day, Dawn</td><td class="px-4 py-3 text-cozy-wood">850 / 1,275 / 1,700 / 3,400 / 6,800</td></tr>
-                            <tr><td class="px-4 py-3 font-medium"><img src="/img/fish/Smooth-Hammerhead.webp" alt="Smooth Hammerhead" class="inline-block w-9 h-9 object-contain rounded-lg bg-cozy-sky/10 p-1 mr-2" loading="lazy">Smooth Hammerhead</td><td class="px-4 py-3 text-cozy-wood">Old Sea</td><td class="px-4 py-3">Lv.10</td><td class="px-4 py-3 text-cozy-wood">Rainbow; Dusk, Night</td><td class="px-4 py-3 text-cozy-wood">850 / 1,275 / 1,700 / 3,400 / 6,800</td></tr>
-                            <tr><td class="px-4 py-3 font-medium"><img src="/img/fish/Ocean-Sunfish.webp" alt="Ocean Sunfish" class="inline-block w-9 h-9 object-contain rounded-lg bg-cozy-sky/10 p-1 mr-2" loading="lazy">Ocean Sunfish</td><td class="px-4 py-3 text-cozy-wood">East Sea</td><td class="px-4 py-3">Lv.9</td><td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny, Rainy; Dawn, Night</td><td class="px-4 py-3 text-cozy-wood">850 / 1,275 / 1,700 / 3,400 / 6,800</td></tr>
-                            <tr><td class="px-4 py-3 font-medium"><img src="/img/fish/Golden-King-Crab.webp" alt="Golden King Crab" class="inline-block w-9 h-9 object-contain rounded-lg bg-cozy-sky/10 p-1 mr-2" loading="lazy">Golden King Crab</td><td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td><td class="px-4 py-3">Lv.8</td><td class="px-4 py-3 text-cozy-wood">Rainbow; Day, Dawn, Dusk, Night</td><td class="px-4 py-3 text-cozy-wood">850 / 1,275 / 1,700 / 3,400 / 6,800</td></tr>
-                            <tr><td class="px-4 py-3 font-medium"><img src="/img/fish/Moonfish.webp" alt="Moonfish" class="inline-block w-9 h-9 object-contain rounded-lg bg-cozy-sky/10 p-1 mr-2" loading="lazy">Moonfish</td><td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td><td class="px-4 py-3">Lv.9</td><td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny, Rainy; Dusk, Night</td><td class="px-4 py-3 text-cozy-wood">850 / 1,275 / 1,700 / 3,400 / 6,800</td></tr>
-                            <tr><td class="px-4 py-3 font-medium"><img src="/img/fish/Shortfin-Mako-Shark.webp" alt="Shortfin Mako Shark" class="inline-block w-9 h-9 object-contain rounded-lg bg-cozy-sky/10 p-1 mr-2" loading="lazy">Shortfin Mako Shark</td><td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td><td class="px-4 py-3">Lv.10</td><td class="px-4 py-3 text-cozy-wood">Rainbow; Day, Dawn</td><td class="px-4 py-3 text-cozy-wood">850 / 1,275 / 1,700 / 3,400 / 6,800</td></tr>
-                            <tr><td class="px-4 py-3 font-medium"><img src="/img/fish/Bluefin-Tuna.webp" alt="Bluefin Tuna" class="inline-block w-9 h-9 object-contain rounded-lg bg-cozy-sky/10 p-1 mr-2" loading="lazy">Bluefin Tuna</td><td class="px-4 py-3 text-cozy-wood">Zephyr Sea</td><td class="px-4 py-3">Lv.9</td><td class="px-4 py-3 text-cozy-wood">Rainbow; Day, Dawn</td><td class="px-4 py-3 text-cozy-wood">850 / 1,275 / 1,700 / 3,400 / 6,800</td></tr>
-                            <tr><td class="px-4 py-3 font-medium"><img src="/img/fish/Wels-Catfish.webp" alt="Wels Catfish" class="inline-block w-9 h-9 object-contain rounded-lg bg-cozy-sky/10 p-1 mr-2" loading="lazy">Wels Catfish</td><td class="px-4 py-3 text-cozy-wood">Meadow Lake</td><td class="px-4 py-3">Lv.10</td><td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny; Dusk, Night</td><td class="px-4 py-3 text-cozy-wood">610 / 915 / 1,220 / 2,440 / 4,880</td></tr>
-                            <tr><td class="px-4 py-3 font-medium"><img src="/img/fish/Northern-Pike.webp" alt="Northern Pike" class="inline-block w-9 h-9 object-contain rounded-lg bg-cozy-sky/10 p-1 mr-2" loading="lazy">Northern Pike</td><td class="px-4 py-3 text-cozy-wood">Suburban Lake</td><td class="px-4 py-3">Lv.9</td><td class="px-4 py-3 text-cozy-wood">Rainbow, Rainy; Dusk, Night</td><td class="px-4 py-3 text-cozy-wood">610 / 915 / 1,220 / 2,440 / 4,880</td></tr>
-                            <tr><td class="px-4 py-3 font-medium"><img src="/img/fish/Arctic-Char.webp" alt="Arctic Char" class="inline-block w-9 h-9 object-contain rounded-lg bg-cozy-sky/10 p-1 mr-2" loading="lazy">Arctic Char</td><td class="px-4 py-3 text-cozy-wood">Forest Lake</td><td class="px-4 py-3">Lv.10</td><td class="px-4 py-3 text-cozy-wood">Rainbow, Rainy; Day, Dusk</td><td class="px-4 py-3 text-cozy-wood">610 / 915 / 1,220 / 2,440 / 4,880</td></tr>
-                            <tr><td class="px-4 py-3 font-medium"><img src="/img/fish/Giant-Oarfish.webp" alt="Giant Oarfish" class="inline-block w-9 h-9 object-contain rounded-lg bg-cozy-sky/10 p-1 mr-2" loading="lazy">Giant Oarfish</td><td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td><td class="px-4 py-3">Lv.7</td><td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn</td><td class="px-4 py-3 text-cozy-wood">535 / 1,070 / 2,140 / 4,280</td></tr>
-                            <tr><td class="px-4 py-3 font-medium"><img src="/img/fish/Nursehound.webp" alt="Nursehound" class="inline-block w-9 h-9 object-contain rounded-lg bg-cozy-sky/10 p-1 mr-2" loading="lazy">Nursehound</td><td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td><td class="px-4 py-3">Lv.6</td><td class="px-4 py-3 text-cozy-wood">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td><td class="px-4 py-3 text-cozy-wood">535 / 802 / 1,070 / 2,140 / 4,280</td></tr>
-                            <tr><td class="px-4 py-3 font-medium"><img src="/img/fish/Butterfly-Koi.webp" alt="Butterfly Koi" class="inline-block w-9 h-9 object-contain rounded-lg bg-cozy-sky/10 p-1 mr-2" loading="lazy">Butterfly Koi</td><td class="px-4 py-3 text-cozy-wood">Meadow Lake</td><td class="px-4 py-3">Lv.4</td><td class="px-4 py-3 text-cozy-wood">Rainbow, Rainy; Day, Dawn, Dusk, Night</td><td class="px-4 py-3 text-cozy-wood">320 / 480 / 640 / 1,280 / 2,560</td></tr>
-                    </tbody></table>
-                </div>
+    <table class="w-full text-sm fish-current-table">
+      <thead class="bg-cozy-cream/70 text-left"><tr><th class="px-4 py-3 font-bold">Fish</th><th class="px-4 py-3 font-bold">Location</th><th class="px-4 py-3 font-bold">Level</th><th class="px-4 py-3 font-bold">Shadow</th><th class="px-4 py-3 font-bold">Category</th><th class="px-4 py-3 font-bold">Weather / Time</th><th class="px-4 py-3 font-bold">Market Value</th></tr></thead>
+      <tbody class="divide-y divide-cozy-peach/20"><tr data-location="sea" data-text="bluefin tuna zephyr sea common rainbow; day, dawn large">
+    <td class="px-4 py-3 font-medium">Bluefin Tuna</td>
+    <td class="px-4 py-3 text-cozy-wood">Zephyr Sea</td>
+    <td class="px-4 py-3">Lv.9</td>
+    <td class="px-4 py-3 text-cozy-wood">Large</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dawn</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+  </tr>
+<tr data-location="sea" data-text="ocean sunfish east sea common rainbow, sunny, rainy; dawn, night large">
+    <td class="px-4 py-3 font-medium">Ocean Sunfish</td>
+    <td class="px-4 py-3 text-cozy-wood">East Sea</td>
+    <td class="px-4 py-3">Lv.9</td>
+    <td class="px-4 py-3 text-cozy-wood">Large</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Dawn, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+  </tr>
+<tr data-location="sea" data-text="smooth hammerhead old sea common rainbow; dusk, night large">
+    <td class="px-4 py-3 font-medium"><a href="/database/fish/smooth-hammerhead/" class="text-cozy-coral hover:underline">Smooth Hammerhead</a></td>
+    <td class="px-4 py-3 text-cozy-wood">Old Sea</td>
+    <td class="px-4 py-3">Lv.10</td>
+    <td class="px-4 py-3 text-cozy-wood">Large</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+  </tr>
+<tr data-location="sea" data-text="swordfish whale sea common rainbow; day, dawn large">
+    <td class="px-4 py-3 font-medium">Swordfish</td>
+    <td class="px-4 py-3 text-cozy-wood">Whale Sea</td>
+    <td class="px-4 py-3">Lv.10</td>
+    <td class="px-4 py-3 text-cozy-wood">Large</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dawn</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+  </tr>
+<tr data-location="deep-sea" data-text="golden king crab [event] sea fishing sea fishing rainbow; day, dawn, dusk, night golden">
+    <td class="px-4 py-3 font-medium">Golden King Crab</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+    <td class="px-4 py-3">Lv.8</td>
+    <td class="px-4 py-3 text-cozy-wood">Golden</td>
+    <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+  </tr>
+<tr data-location="deep-sea" data-text="moonfish [event] sea fishing sea fishing rainbow, sunny, rainy; dusk, night golden">
+    <td class="px-4 py-3 font-medium">Moonfish</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+    <td class="px-4 py-3">Lv.9</td>
+    <td class="px-4 py-3 text-cozy-wood">Golden</td>
+    <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+  </tr>
+<tr data-location="deep-sea" data-text="shortfin mako shark [event] sea fishing sea fishing rainbow; day, dawn golden">
+    <td class="px-4 py-3 font-medium">Shortfin Mako Shark</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+    <td class="px-4 py-3">Lv.10</td>
+    <td class="px-4 py-3 text-cozy-wood">Golden</td>
+    <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dawn</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+  </tr>
+<tr data-location="lake" data-text="northern pike suburban lake common rainbow, rainy; dusk, night medium">
+    <td class="px-4 py-3 font-medium">Northern Pike</td>
+    <td class="px-4 py-3 text-cozy-wood">Suburban Lake</td>
+    <td class="px-4 py-3">Lv.9</td>
+    <td class="px-4 py-3 text-cozy-wood">Medium</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Rainy; Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">610 / 915 / 1,220 / 2,440 / 4,880</td>
+  </tr>
+<tr data-location="lake" data-text="arctic char forest lake common rainbow, rainy; day, dusk medium">
+    <td class="px-4 py-3 font-medium">Arctic Char</td>
+    <td class="px-4 py-3 text-cozy-wood">Forest Lake</td>
+    <td class="px-4 py-3">Lv.10</td>
+    <td class="px-4 py-3 text-cozy-wood">Medium</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Rainy; Day, Dusk</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">610 / 915 / 1,220 / 2,440 / 4,880</td>
+  </tr>
+<tr data-location="lake" data-text="wels catfish meadow lake common rainbow, sunny; dusk, night medium">
+    <td class="px-4 py-3 font-medium"><a href="/database/fish/wels-catfish/" class="text-cozy-coral hover:underline">Wels Catfish</a></td>
+    <td class="px-4 py-3 text-cozy-wood">Meadow Lake</td>
+    <td class="px-4 py-3">Lv.10</td>
+    <td class="px-4 py-3 text-cozy-wood">Medium</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny; Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">610 / 915 / 1,220 / 2,440 / 4,880</td>
+  </tr>
+<tr data-location="sea" data-text="king crab whale sea common rainbow; day, dawn, dusk large">
+    <td class="px-4 py-3 font-medium">King Crab</td>
+    <td class="px-4 py-3 text-cozy-wood">Whale Sea</td>
+    <td class="px-4 py-3">Lv.8</td>
+    <td class="px-4 py-3 text-cozy-wood">Large</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dawn, Dusk</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">535 / 802 / 1,070 / 2,140 / 4,280</td>
+  </tr>
+<tr data-location="deep-sea" data-text="nursehound [event] sea fishing sea fishing rainbow, sunny, rainy; day, dawn, dusk, night large">
+    <td class="px-4 py-3 font-medium">Nursehound</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+    <td class="px-4 py-3">Lv.6</td>
+    <td class="px-4 py-3 text-cozy-wood">Large</td>
+    <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">535 / 802 / 1,070 / 2,140 / 4,280</td>
+  </tr>
+<tr data-location="deep-sea" data-text="giant oarfish [event] sea fishing sea fishing rainbow, sunny, rainy; day, dawn golden">
+    <td class="px-4 py-3 font-medium">Giant Oarfish</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+    <td class="px-4 py-3">Lv.7</td>
+    <td class="px-4 py-3 text-cozy-wood">Golden</td>
+    <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">535 / 1,070 / 2,140 / 4,280</td>
+  </tr>
+<tr data-location="lake" data-text="bluegill onsen mountain lake common rainbow, sunny; dusk, night small">
+    <td class="px-4 py-3 font-medium">Bluegill</td>
+    <td class="px-4 py-3 text-cozy-wood">Onsen Mountain Lake</td>
+    <td class="px-4 py-3">Lv.10</td>
+    <td class="px-4 py-3 text-cozy-wood">Small</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny; Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">395 / 592 / 790 / 1,580 / 3,160</td>
+  </tr>
+<tr data-location="river" data-text="huchen giantwood river common rainbow; day, dusk, night medium">
+    <td class="px-4 py-3 font-medium">Huchen</td>
+    <td class="px-4 py-3 text-cozy-wood">Giantwood River</td>
+    <td class="px-4 py-3">Lv.9</td>
+    <td class="px-4 py-3 text-cozy-wood">Medium</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">380 / 570 / 760 / 1,520 / 3,040</td>
+  </tr>
+<tr data-location="lake" data-text="large pearl mussel forest lake common rainbow; day, dawn, dusk, night medium">
+    <td class="px-4 py-3 font-medium">Large Pearl Mussel</td>
+    <td class="px-4 py-3 text-cozy-wood">Forest Lake</td>
+    <td class="px-4 py-3">Lv.6</td>
+    <td class="px-4 py-3 text-cozy-wood">Medium</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">380 / 570 / 760 / 1,520 / 3,040</td>
+  </tr>
+<tr data-location="sea" data-text="tub gurnard east sea common rainbow; day, dawn, dusk, night medium">
+    <td class="px-4 py-3 font-medium">Tub Gurnard</td>
+    <td class="px-4 py-3 text-cozy-wood">East Sea</td>
+    <td class="px-4 py-3">Lv.6</td>
+    <td class="px-4 py-3 text-cozy-wood">Medium</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">380 / 570 / 760 / 1,520 / 3,040</td>
+  </tr>
+<tr data-location="sea" data-text="european eel old sea common rainbow; day, dawn, dusk medium">
+    <td class="px-4 py-3 font-medium">European Eel</td>
+    <td class="px-4 py-3 text-cozy-wood">Old Sea</td>
+    <td class="px-4 py-3">Lv.7</td>
+    <td class="px-4 py-3 text-cozy-wood">Medium</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dawn, Dusk</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">380 / 570 / 760 / 1,520 / 3,040</td>
+  </tr></tbody>
+    </table>
+  </div>
             </section>
-        <div id="heartopia_in_content" class="heartopia-ad-slot max-w-6xl mx-auto px-4 my-6 text-center"></div>
-
-
-            <!-- RAINBOW WEATHER FISH -->
+            <div id="heartopia_in_content" class="heartopia-ad-slot max-w-6xl mx-auto px-4 my-6 text-center"></div>
             <section id="rainbow" class="scroll-mt-20">
-                <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
-                    🌈 Rainbow Weather Fish
-                </h2>
-                <p class="text-cozy-wood mb-4">
-                    These rare fish <strong>only spawn during Rainbow Weather</strong>. Check your TV forecast or
-                    smartwatch to prepare!
-                </p>
-
-                <div class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-4 border border-purple-200 mb-6">
-                    <h3 class="font-bold mb-2">🌈 Rainbow Weather Info</h3>
-                    <ul class="text-sm text-cozy-wood space-y-1">
-                        <li>• Starts at <strong>6:00 PM server time</strong></li>
-                        <li>• Lasts for <strong>a few hours</strong></li>
-                        <li>• Check your <strong>in-house TV</strong> for weather forecast</li>
-                        <li>• Rainbow typically follows after rain</li>
-                    </ul>
-                </div>
-
-                <div class="bg-white rounded-xl overflow-hidden border border-cozy-peach/30 mb-4">
-                    <table class="w-full text-sm">
-                        <thead class="bg-gradient-to-r from-purple-100 to-pink-100 text-left">
-                            <tr>
-                                <th class="px-4 py-3 font-bold">Fish</th>
-                                <th class="px-4 py-3 font-bold">Location</th>
-                                <th class="px-4 py-3 font-bold">Time</th>
-                                <th class="px-4 py-3 font-bold">Level</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-cozy-peach/20">
-                            <tr class="bg-yellow-50">
-                                <td class="px-4 py-2 font-medium">🐟 Bluefin Tuna</td>
-                                <td class="px-4 py-2 text-cozy-wood">Zephyr Sea</td>
-                                <td class="px-4 py-2 text-cozy-wood">All Day</td>
-                                <td class="px-4 py-2">
-                                    <span class="bg-purple-100 text-purple-700 px-2 py-0.5 rounded text-xs">Lv.9</span>
-                                </td>
-                            </tr>
-                            <tr class="bg-yellow-50">
-                                <td class="px-4 py-2 font-medium">🐟 Swordfish</td>
-                                <td class="px-4 py-2 text-cozy-wood">Whale Sea</td>
-                                <td class="px-4 py-2 text-cozy-wood">All Day</td>
-                                <td class="px-4 py-2">
-                                    <span class="bg-purple-100 text-purple-700 px-2 py-0.5 rounded text-xs">Lv.9</span>
-                                </td>
-                            </tr>
-                            <tr class="bg-yellow-50">
-                                <td class="px-4 py-2 font-medium">🦈 Smooth Hammerhead</td>
-                                <td class="px-4 py-2 text-cozy-wood">Sea Fishing</td>
-                                <td class="px-4 py-2 text-cozy-wood">All Day</td>
-                                <td class="px-4 py-2">
-                                    <span class="bg-purple-100 text-purple-700 px-2 py-0.5 rounded text-xs">Lv.8+</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="px-4 py-2 font-medium">🦀 Golden King Crab</td>
-                                <td class="px-4 py-2 text-cozy-wood">Sea Fishing</td>
-                                <td class="px-4 py-2 text-cozy-wood">All Day</td>
-                                <td class="px-4 py-2">
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs">Lv.7+</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="px-4 py-2 font-medium">🐟 European Eel</td>
-                                <td class="px-4 py-2 text-cozy-wood">Old Sea</td>
-                                <td class="px-4 py-2 text-cozy-wood">Evening</td>
-                                <td class="px-4 py-2">
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs">Lv.6+</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="px-4 py-2 font-medium">🐟 Blackspot Seabream</td>
-                                <td class="px-4 py-2 text-cozy-wood">Zephyr Sea</td>
-                                <td class="px-4 py-2 text-cozy-wood">6PM-12AM</td>
-                                <td class="px-4 py-2">
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs">Lv.5+</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="px-4 py-2 font-medium">🐟 Chum Salmon</td>
-                                <td class="px-4 py-2 text-cozy-wood">Tranquil River</td>
-                                <td class="px-4 py-2 text-cozy-wood">All Day</td>
-                                <td class="px-4 py-2">
-                                    <span class="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs">Lv.4+</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="px-4 py-2 font-medium">🐚 Large Pearl Mussel</td>
-                                <td class="px-4 py-2 text-cozy-wood">Forest Lake</td>
-                                <td class="px-4 py-2 text-cozy-wood">All Day</td>
-                                <td class="px-4 py-2">
-                                    <span class="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs">Lv.3+</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="px-4 py-2 font-medium">🐟 Tub Gurnard</td>
-                                <td class="px-4 py-2 text-cozy-wood">East Sea</td>
-                                <td class="px-4 py-2 text-cozy-wood">All Day</td>
-                                <td class="px-4 py-2">
-                                    <span class="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs">Lv.5+</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="px-4 py-2 font-medium">🐟 Largemouth Bass</td>
-                                <td class="px-4 py-2 text-cozy-wood">Forest Lake</td>
-                                <td class="px-4 py-2 text-cozy-wood">All Day</td>
-                                <td class="px-4 py-2">
-                                    <span class="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs">Lv.3+</span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="bg-amber-50 rounded-xl p-4 border border-amber-200">
-                    <p class="text-sm"><strong>💰 Top Priority:</strong> Bluefin Tuna, Swordfish, Smooth Hammerhead, and Golden King Crab are the highest-value rainbow targets in the current table.</p>
-                </div>
+                <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">Rainbow Weather Priority Fish</h2>
+                <p class="text-cozy-wood mb-4">Not every rare fish is rainbow-only. Use the exact schedule below instead of assuming all highlighted catches need only rainbow weather.</p>
+                <div class="overflow-x-auto bg-white rounded-xl border border-cozy-peach/30">
+    <table class="w-full text-sm fish-current-table">
+      <thead class="bg-cozy-cream/70 text-left"><tr><th class="px-4 py-3 font-bold">Fish</th><th class="px-4 py-3 font-bold">Location</th><th class="px-4 py-3 font-bold">Level</th><th class="px-4 py-3 font-bold">Shadow</th><th class="px-4 py-3 font-bold">Category</th><th class="px-4 py-3 font-bold">Weather / Time</th><th class="px-4 py-3 font-bold">Market Value</th></tr></thead>
+      <tbody class="divide-y divide-cozy-peach/20"><tr data-location="sea" data-text="bluefin tuna zephyr sea common rainbow; day, dawn large">
+    <td class="px-4 py-3 font-medium">Bluefin Tuna</td>
+    <td class="px-4 py-3 text-cozy-wood">Zephyr Sea</td>
+    <td class="px-4 py-3">Lv.9</td>
+    <td class="px-4 py-3 text-cozy-wood">Large</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dawn</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+  </tr>
+<tr data-location="sea" data-text="ocean sunfish east sea common rainbow, sunny, rainy; dawn, night large">
+    <td class="px-4 py-3 font-medium">Ocean Sunfish</td>
+    <td class="px-4 py-3 text-cozy-wood">East Sea</td>
+    <td class="px-4 py-3">Lv.9</td>
+    <td class="px-4 py-3 text-cozy-wood">Large</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Dawn, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+  </tr>
+<tr data-location="sea" data-text="smooth hammerhead old sea common rainbow; dusk, night large">
+    <td class="px-4 py-3 font-medium"><a href="/database/fish/smooth-hammerhead/" class="text-cozy-coral hover:underline">Smooth Hammerhead</a></td>
+    <td class="px-4 py-3 text-cozy-wood">Old Sea</td>
+    <td class="px-4 py-3">Lv.10</td>
+    <td class="px-4 py-3 text-cozy-wood">Large</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+  </tr>
+<tr data-location="sea" data-text="swordfish whale sea common rainbow; day, dawn large">
+    <td class="px-4 py-3 font-medium">Swordfish</td>
+    <td class="px-4 py-3 text-cozy-wood">Whale Sea</td>
+    <td class="px-4 py-3">Lv.10</td>
+    <td class="px-4 py-3 text-cozy-wood">Large</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dawn</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+  </tr>
+<tr data-location="deep-sea" data-text="golden king crab [event] sea fishing sea fishing rainbow; day, dawn, dusk, night golden">
+    <td class="px-4 py-3 font-medium">Golden King Crab</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+    <td class="px-4 py-3">Lv.8</td>
+    <td class="px-4 py-3 text-cozy-wood">Golden</td>
+    <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+  </tr>
+<tr data-location="deep-sea" data-text="moonfish [event] sea fishing sea fishing rainbow, sunny, rainy; dusk, night golden">
+    <td class="px-4 py-3 font-medium">Moonfish</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+    <td class="px-4 py-3">Lv.9</td>
+    <td class="px-4 py-3 text-cozy-wood">Golden</td>
+    <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+  </tr>
+<tr data-location="deep-sea" data-text="shortfin mako shark [event] sea fishing sea fishing rainbow; day, dawn golden">
+    <td class="px-4 py-3 font-medium">Shortfin Mako Shark</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+    <td class="px-4 py-3">Lv.10</td>
+    <td class="px-4 py-3 text-cozy-wood">Golden</td>
+    <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dawn</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+  </tr>
+<tr data-location="lake" data-text="northern pike suburban lake common rainbow, rainy; dusk, night medium">
+    <td class="px-4 py-3 font-medium">Northern Pike</td>
+    <td class="px-4 py-3 text-cozy-wood">Suburban Lake</td>
+    <td class="px-4 py-3">Lv.9</td>
+    <td class="px-4 py-3 text-cozy-wood">Medium</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Rainy; Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">610 / 915 / 1,220 / 2,440 / 4,880</td>
+  </tr>
+<tr data-location="lake" data-text="arctic char forest lake common rainbow, rainy; day, dusk medium">
+    <td class="px-4 py-3 font-medium">Arctic Char</td>
+    <td class="px-4 py-3 text-cozy-wood">Forest Lake</td>
+    <td class="px-4 py-3">Lv.10</td>
+    <td class="px-4 py-3 text-cozy-wood">Medium</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Rainy; Day, Dusk</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">610 / 915 / 1,220 / 2,440 / 4,880</td>
+  </tr>
+<tr data-location="lake" data-text="wels catfish meadow lake common rainbow, sunny; dusk, night medium">
+    <td class="px-4 py-3 font-medium"><a href="/database/fish/wels-catfish/" class="text-cozy-coral hover:underline">Wels Catfish</a></td>
+    <td class="px-4 py-3 text-cozy-wood">Meadow Lake</td>
+    <td class="px-4 py-3">Lv.10</td>
+    <td class="px-4 py-3 text-cozy-wood">Medium</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny; Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">610 / 915 / 1,220 / 2,440 / 4,880</td>
+  </tr>
+<tr data-location="sea" data-text="king crab whale sea common rainbow; day, dawn, dusk large">
+    <td class="px-4 py-3 font-medium">King Crab</td>
+    <td class="px-4 py-3 text-cozy-wood">Whale Sea</td>
+    <td class="px-4 py-3">Lv.8</td>
+    <td class="px-4 py-3 text-cozy-wood">Large</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dawn, Dusk</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">535 / 802 / 1,070 / 2,140 / 4,280</td>
+  </tr>
+<tr data-location="deep-sea" data-text="nursehound [event] sea fishing sea fishing rainbow, sunny, rainy; day, dawn, dusk, night large">
+    <td class="px-4 py-3 font-medium">Nursehound</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+    <td class="px-4 py-3">Lv.6</td>
+    <td class="px-4 py-3 text-cozy-wood">Large</td>
+    <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">535 / 802 / 1,070 / 2,140 / 4,280</td>
+  </tr>
+<tr data-location="deep-sea" data-text="giant oarfish [event] sea fishing sea fishing rainbow, sunny, rainy; day, dawn golden">
+    <td class="px-4 py-3 font-medium">Giant Oarfish</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+    <td class="px-4 py-3">Lv.7</td>
+    <td class="px-4 py-3 text-cozy-wood">Golden</td>
+    <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">535 / 1,070 / 2,140 / 4,280</td>
+  </tr>
+<tr data-location="lake" data-text="bluegill onsen mountain lake common rainbow, sunny; dusk, night small">
+    <td class="px-4 py-3 font-medium">Bluegill</td>
+    <td class="px-4 py-3 text-cozy-wood">Onsen Mountain Lake</td>
+    <td class="px-4 py-3">Lv.10</td>
+    <td class="px-4 py-3 text-cozy-wood">Small</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny; Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">395 / 592 / 790 / 1,580 / 3,160</td>
+  </tr>
+<tr data-location="river" data-text="huchen giantwood river common rainbow; day, dusk, night medium">
+    <td class="px-4 py-3 font-medium">Huchen</td>
+    <td class="px-4 py-3 text-cozy-wood">Giantwood River</td>
+    <td class="px-4 py-3">Lv.9</td>
+    <td class="px-4 py-3 text-cozy-wood">Medium</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">380 / 570 / 760 / 1,520 / 3,040</td>
+  </tr>
+<tr data-location="lake" data-text="large pearl mussel forest lake common rainbow; day, dawn, dusk, night medium">
+    <td class="px-4 py-3 font-medium">Large Pearl Mussel</td>
+    <td class="px-4 py-3 text-cozy-wood">Forest Lake</td>
+    <td class="px-4 py-3">Lv.6</td>
+    <td class="px-4 py-3 text-cozy-wood">Medium</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">380 / 570 / 760 / 1,520 / 3,040</td>
+  </tr>
+<tr data-location="sea" data-text="tub gurnard east sea common rainbow; day, dawn, dusk, night medium">
+    <td class="px-4 py-3 font-medium">Tub Gurnard</td>
+    <td class="px-4 py-3 text-cozy-wood">East Sea</td>
+    <td class="px-4 py-3">Lv.6</td>
+    <td class="px-4 py-3 text-cozy-wood">Medium</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">380 / 570 / 760 / 1,520 / 3,040</td>
+  </tr>
+<tr data-location="sea" data-text="european eel old sea common rainbow; day, dawn, dusk medium">
+    <td class="px-4 py-3 font-medium">European Eel</td>
+    <td class="px-4 py-3 text-cozy-wood">Old Sea</td>
+    <td class="px-4 py-3">Lv.7</td>
+    <td class="px-4 py-3 text-cozy-wood">Medium</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dawn, Dusk</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">380 / 570 / 760 / 1,520 / 3,040</td>
+  </tr>
+<tr data-location="river" data-text="tilapia river mermaid fish attractor rainbow, sunny, rainy; day, dawn, dusk, night blue">
+    <td class="px-4 py-3 font-medium"><a href="/database/fish/tilapia/" class="text-cozy-coral hover:underline">Tilapia</a></td>
+    <td class="px-4 py-3 text-cozy-wood">River</td>
+    <td class="px-4 py-3">Lv.3</td>
+    <td class="px-4 py-3 text-cozy-wood">Blue</td>
+    <td class="px-4 py-3 text-cozy-wood">Mermaid Fish Attractor</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">320 / 480 / 640 / 1,280 / 2,560</td>
+  </tr>
+<tr data-location="lake" data-text="edible frog lake mermaid fish attractor rainbow, sunny, rainy; day, dawn, dusk, night blue">
+    <td class="px-4 py-3 font-medium">Edible Frog</td>
+    <td class="px-4 py-3 text-cozy-wood">Lake</td>
+    <td class="px-4 py-3">Lv.3</td>
+    <td class="px-4 py-3 text-cozy-wood">Blue</td>
+    <td class="px-4 py-3 text-cozy-wood">Mermaid Fish Attractor</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">320 / 480 / 640 / 1,280 / 2,560</td>
+  </tr>
+<tr data-location="lake" data-text="butterfly koi meadow lake common rainbow, rainy; day, dawn, dusk, night large">
+    <td class="px-4 py-3 font-medium"><a href="/database/fish/butterfly-koi/" class="text-cozy-coral hover:underline">Butterfly Koi</a></td>
+    <td class="px-4 py-3 text-cozy-wood">Meadow Lake</td>
+    <td class="px-4 py-3">Lv.4</td>
+    <td class="px-4 py-3 text-cozy-wood">Large</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Rainy; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">320 / 480 / 640 / 1,280 / 2,560</td>
+  </tr>
+<tr data-location="sea" data-text="rabbit fish ocean mermaid fish attractor rainbow, sunny, rainy; day, dawn, dusk, night blue">
+    <td class="px-4 py-3 font-medium">Rabbit Fish</td>
+    <td class="px-4 py-3 text-cozy-wood">Ocean</td>
+    <td class="px-4 py-3">Lv.4</td>
+    <td class="px-4 py-3 text-cozy-wood">Blue</td>
+    <td class="px-4 py-3 text-cozy-wood">Mermaid Fish Attractor</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">320 / 480 / 640 / 1,280 / 2,560</td>
+  </tr>
+<tr data-location="event" data-text="frostspore whale shark [event] frostspore fish winter frost season rainbow, sunny, rainy; day, dawn, dusk, night large">
+    <td class="px-4 py-3 font-medium">Frostspore Whale Shark</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Frostspore Fish</td>
+    <td class="px-4 py-3">Lv.1</td>
+    <td class="px-4 py-3 text-cozy-wood">Large</td>
+    <td class="px-4 py-3 text-cozy-wood">Winter frost season</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">320 / 480 / 640 / 1,280 / 2,560</td>
+  </tr>
+<tr data-location="deep-sea" data-text="striped red mullet [event] sea fishing sea fishing rainbow, sunny, rainy; day, dawn, dusk, night golden">
+    <td class="px-4 py-3 font-medium">Striped Red Mullet</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+    <td class="px-4 py-3">Lv.1</td>
+    <td class="px-4 py-3 text-cozy-wood">Golden</td>
+    <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">320 / 480 / 640 / 1,280 / 2,560</td>
+  </tr>
+<tr data-location="deep-sea" data-text="anglerfish [event] sea fishing sea fishing rainbow, sunny, rainy; day, dawn, dusk, night golden">
+    <td class="px-4 py-3 font-medium">Anglerfish</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+    <td class="px-4 py-3">Lv.2</td>
+    <td class="px-4 py-3 text-cozy-wood">Golden</td>
+    <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">320 / 480 / 640 / 1,280 / 2,560</td>
+  </tr>
+<tr data-location="deep-sea" data-text="common octopus [event] sea fishing sea fishing rainbow, sunny, rainy; day, dawn, dusk, night medium">
+    <td class="px-4 py-3 font-medium">Common Octopus</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+    <td class="px-4 py-3">Lv.2</td>
+    <td class="px-4 py-3 text-cozy-wood">Medium</td>
+    <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">320 / 480 / 640 / 1,280 / 2,560</td>
+  </tr>
+<tr data-location="deep-sea" data-text="turbot [event] sea fishing sea fishing rainbow, sunny, rainy; day, dawn, dusk, night medium">
+    <td class="px-4 py-3 font-medium">Turbot</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+    <td class="px-4 py-3">Lv.2</td>
+    <td class="px-4 py-3 text-cozy-wood">Medium</td>
+    <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">320 / 480 / 640 / 1,280 / 2,560</td>
+  </tr>
+<tr data-location="deep-sea" data-text="european flying squid [event] sea fishing sea fishing rainbow, sunny, rainy; day, dawn, dusk, night golden">
+    <td class="px-4 py-3 font-medium">European Flying Squid</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+    <td class="px-4 py-3">Lv.5</td>
+    <td class="px-4 py-3 text-cozy-wood">Golden</td>
+    <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">320 / 480 / 640 / 1,280 / 2,560</td>
+  </tr></tbody>
+    </table>
+  </div>
             </section>
-
-            <!-- MERMAID ATTRACTOR FISH -->
             <section id="mermaid" class="scroll-mt-20">
-                <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
-                    🧜‍♀️ Mermaid Fish Attractor Exclusives
-                </h2>
-                <p class="text-cozy-wood mb-4">
-                    These rare fish can <strong>only be caught using the Mermaid Fish Attractor</strong> in multiplayer
-                    mode!
-                </p>
-
-                <div class="bg-gradient-to-r from-cyan-50 to-blue-50 rounded-xl p-4 border border-cyan-200 mb-6">
-                    <h3 class="font-bold mb-2">🧜‍♀️ How Mermaid Attractor Works</h3>
-                    <ol class="text-sm text-cozy-wood space-y-1">
-                        <li>1. Buy <strong>Mermaid Fish Attractor</strong> from Vanya (unlocks at Fishing Lv.4)</li>
-                        <li>2. Play with <strong>friends nearby</strong> (multiplayer required)</li>
-                        <li>3. Both players use Attractors simultaneously</li>
-                        <li>4. Look for <strong>blue flashing fish shadow</strong> — only the attractor user can catch
-                            it
-                        </li>
-                    </ol>
-                </div>
-
-                <div class="grid md:grid-cols-3 gap-4 mb-4">
-                    <div class="bg-white rounded-xl p-4 border border-cozy-peach/30 text-center">
-                        <div
-                            class="w-12 h-12 rarity-epic rounded-xl mx-auto mb-2 flex items-center justify-center text-2xl">
-                            🐸</div>
-                        <h3 class="font-bold">Edible Frog</h3>
-                        <div class="text-sm text-cozy-wood mt-1">Lakes Only</div>
-                        <div class="text-xs text-cozy-coral mt-2">Mermaid Attractor Required</div>
-                    </div>
-                    <div class="bg-white rounded-xl p-4 border border-cozy-peach/30 text-center">
-                        <div
-                            class="w-12 h-12 rarity-epic rounded-xl mx-auto mb-2 flex items-center justify-center text-2xl">
-                            🐟</div>
-                        <h3 class="font-bold">Tilapia</h3>
-                        <div class="text-sm text-cozy-wood mt-1">Rivers Only</div>
-                        <div class="text-xs text-cozy-coral mt-2">Mermaid Attractor Required</div>
-                    </div>
-                    <div class="bg-white rounded-xl p-4 border border-cozy-peach/30 text-center">
-                        <div
-                            class="w-12 h-12 rarity-epic rounded-xl mx-auto mb-2 flex items-center justify-center text-2xl">
-                            🐠</div>
-                        <h3 class="font-bold">Rabbit Fish</h3>
-                        <div class="text-sm text-cozy-wood mt-1">Ocean Only</div>
-                        <div class="text-xs text-cozy-coral mt-2">Mermaid Attractor Required</div>
-                    </div>
-                </div>
-
-                <div class="mt-4">
-                    <a href="/hobbies/fishing/#mermaid-attractor"
-                        class="inline-flex items-center gap-2 text-cozy-coral font-bold hover:underline">
-                        📖 View Full Mermaid Fish Attractor Guide →
-                    </a>
-                </div>
+                <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">Mermaid Fish Attractor Targets</h2>
+                <p class="text-cozy-wood mb-4">These special blue-shadow fish use the Mermaid Fish Attractor category in the current database.</p>
+                <div class="overflow-x-auto bg-white rounded-xl border border-cozy-peach/30">
+    <table class="w-full text-sm fish-current-table">
+      <thead class="bg-cozy-cream/70 text-left"><tr><th class="px-4 py-3 font-bold">Fish</th><th class="px-4 py-3 font-bold">Location</th><th class="px-4 py-3 font-bold">Level</th><th class="px-4 py-3 font-bold">Shadow</th><th class="px-4 py-3 font-bold">Category</th><th class="px-4 py-3 font-bold">Weather / Time</th><th class="px-4 py-3 font-bold">Market Value</th></tr></thead>
+      <tbody class="divide-y divide-cozy-peach/20"><tr data-location="river" data-text="tilapia river mermaid fish attractor rainbow, sunny, rainy; day, dawn, dusk, night blue">
+    <td class="px-4 py-3 font-medium"><a href="/database/fish/tilapia/" class="text-cozy-coral hover:underline">Tilapia</a></td>
+    <td class="px-4 py-3 text-cozy-wood">River</td>
+    <td class="px-4 py-3">Lv.3</td>
+    <td class="px-4 py-3 text-cozy-wood">Blue</td>
+    <td class="px-4 py-3 text-cozy-wood">Mermaid Fish Attractor</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">320 / 480 / 640 / 1,280 / 2,560</td>
+  </tr>
+<tr data-location="lake" data-text="edible frog lake mermaid fish attractor rainbow, sunny, rainy; day, dawn, dusk, night blue">
+    <td class="px-4 py-3 font-medium">Edible Frog</td>
+    <td class="px-4 py-3 text-cozy-wood">Lake</td>
+    <td class="px-4 py-3">Lv.3</td>
+    <td class="px-4 py-3 text-cozy-wood">Blue</td>
+    <td class="px-4 py-3 text-cozy-wood">Mermaid Fish Attractor</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">320 / 480 / 640 / 1,280 / 2,560</td>
+  </tr>
+<tr data-location="sea" data-text="rabbit fish ocean mermaid fish attractor rainbow, sunny, rainy; day, dawn, dusk, night blue">
+    <td class="px-4 py-3 font-medium">Rabbit Fish</td>
+    <td class="px-4 py-3 text-cozy-wood">Ocean</td>
+    <td class="px-4 py-3">Lv.4</td>
+    <td class="px-4 py-3 text-cozy-wood">Blue</td>
+    <td class="px-4 py-3 text-cozy-wood">Mermaid Fish Attractor</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">320 / 480 / 640 / 1,280 / 2,560</td>
+  </tr></tbody>
+    </table>
+  </div>
             </section>
-
-            <!-- RAINY WEATHER FISH -->
             <section id="rainy" class="scroll-mt-20">
-                <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
-                    🌧️ Rainy Weather Fish
-                </h2>
-                <p class="text-cozy-wood mb-4">
-                    These fish spawn during <strong>rainy weather</strong> (also works in rainbow weather):
-                </p>
-
-                <div class="bg-white rounded-xl overflow-hidden border border-cozy-peach/30">
-                    <table class="w-full text-sm">
-                        <thead class="bg-gray-100 text-left">
-                            <tr>
-                                <th class="px-4 py-3 font-bold">Fish</th>
-                                <th class="px-4 py-3 font-bold">Location</th>
-                                <th class="px-4 py-3 font-bold">Time</th>
-                                <th class="px-4 py-3 font-bold">Weather</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-cozy-peach/20">
-                            <tr>
-                                <td class="px-4 py-2 font-medium">🐟 Northern Pike</td>
-                                <td class="px-4 py-2 text-cozy-wood">Forest Lake</td>
-                                <td class="px-4 py-2 text-cozy-wood">All Day</td>
-                                <td class="px-4 py-2">
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs">🌧️ Rainy</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="px-4 py-2 font-medium">🐠 Goldfish</td>
-                                <td class="px-4 py-2 text-cozy-wood">Meadow Lake</td>
-                                <td class="px-4 py-2 text-cozy-wood">6AM-6PM</td>
-                                <td class="px-4 py-2">
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs">🌧️🌈
-                                        Rain/Rainbow</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="px-4 py-2 font-medium">🐟 Butterfly Koi</td>
-                                <td class="px-4 py-2 text-cozy-wood">Meadow Lake</td>
-                                <td class="px-4 py-2 text-cozy-wood">All Day</td>
-                                <td class="px-4 py-2">
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs">🌧️🌈
-                                        Rain/Rainbow</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="px-4 py-2 font-medium">🐚 Large Pearl Mussel</td>
-                                <td class="px-4 py-2 text-cozy-wood">Forest Lake</td>
-                                <td class="px-4 py-2 text-cozy-wood">All Day</td>
-                                <td class="px-4 py-2">
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs">🌧️🌈
-                                        Rain/Rainbow</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="px-4 py-2 font-medium">🐟 Blackspot Seabream</td>
-                                <td class="px-4 py-2 text-cozy-wood">Zephyr Sea</td>
-                                <td class="px-4 py-2 text-cozy-wood">6PM-12AM</td>
-                                <td class="px-4 py-2">
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs">🌧️🌈
-                                        Rain/Rainbow</span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">Rainy, Night & Time-Gated Fish</h2>
+                <p class="text-cozy-wood mb-4">These are useful targets when you are waiting for a specific weather or time window.</p>
+                <div class="overflow-x-auto bg-white rounded-xl border border-cozy-peach/30">
+    <table class="w-full text-sm fish-current-table">
+      <thead class="bg-cozy-cream/70 text-left"><tr><th class="px-4 py-3 font-bold">Fish</th><th class="px-4 py-3 font-bold">Location</th><th class="px-4 py-3 font-bold">Level</th><th class="px-4 py-3 font-bold">Shadow</th><th class="px-4 py-3 font-bold">Category</th><th class="px-4 py-3 font-bold">Weather / Time</th><th class="px-4 py-3 font-bold">Market Value</th></tr></thead>
+      <tbody class="divide-y divide-cozy-peach/20"><tr data-location="sea" data-text="bluefin tuna zephyr sea common rainbow; day, dawn large">
+    <td class="px-4 py-3 font-medium">Bluefin Tuna</td>
+    <td class="px-4 py-3 text-cozy-wood">Zephyr Sea</td>
+    <td class="px-4 py-3">Lv.9</td>
+    <td class="px-4 py-3 text-cozy-wood">Large</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dawn</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+  </tr>
+<tr data-location="sea" data-text="ocean sunfish east sea common rainbow, sunny, rainy; dawn, night large">
+    <td class="px-4 py-3 font-medium">Ocean Sunfish</td>
+    <td class="px-4 py-3 text-cozy-wood">East Sea</td>
+    <td class="px-4 py-3">Lv.9</td>
+    <td class="px-4 py-3 text-cozy-wood">Large</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Dawn, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+  </tr>
+<tr data-location="sea" data-text="smooth hammerhead old sea common rainbow; dusk, night large">
+    <td class="px-4 py-3 font-medium"><a href="/database/fish/smooth-hammerhead/" class="text-cozy-coral hover:underline">Smooth Hammerhead</a></td>
+    <td class="px-4 py-3 text-cozy-wood">Old Sea</td>
+    <td class="px-4 py-3">Lv.10</td>
+    <td class="px-4 py-3 text-cozy-wood">Large</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+  </tr>
+<tr data-location="sea" data-text="swordfish whale sea common rainbow; day, dawn large">
+    <td class="px-4 py-3 font-medium">Swordfish</td>
+    <td class="px-4 py-3 text-cozy-wood">Whale Sea</td>
+    <td class="px-4 py-3">Lv.10</td>
+    <td class="px-4 py-3 text-cozy-wood">Large</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dawn</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+  </tr>
+<tr data-location="deep-sea" data-text="golden king crab [event] sea fishing sea fishing rainbow; day, dawn, dusk, night golden">
+    <td class="px-4 py-3 font-medium">Golden King Crab</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+    <td class="px-4 py-3">Lv.8</td>
+    <td class="px-4 py-3 text-cozy-wood">Golden</td>
+    <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+  </tr>
+<tr data-location="deep-sea" data-text="moonfish [event] sea fishing sea fishing rainbow, sunny, rainy; dusk, night golden">
+    <td class="px-4 py-3 font-medium">Moonfish</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+    <td class="px-4 py-3">Lv.9</td>
+    <td class="px-4 py-3 text-cozy-wood">Golden</td>
+    <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+  </tr>
+<tr data-location="deep-sea" data-text="shortfin mako shark [event] sea fishing sea fishing rainbow; day, dawn golden">
+    <td class="px-4 py-3 font-medium">Shortfin Mako Shark</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+    <td class="px-4 py-3">Lv.10</td>
+    <td class="px-4 py-3 text-cozy-wood">Golden</td>
+    <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dawn</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">850 / 1,275 / 1,700 / 3,400 / 6,800</td>
+  </tr>
+<tr data-location="lake" data-text="northern pike suburban lake common rainbow, rainy; dusk, night medium">
+    <td class="px-4 py-3 font-medium">Northern Pike</td>
+    <td class="px-4 py-3 text-cozy-wood">Suburban Lake</td>
+    <td class="px-4 py-3">Lv.9</td>
+    <td class="px-4 py-3 text-cozy-wood">Medium</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Rainy; Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">610 / 915 / 1,220 / 2,440 / 4,880</td>
+  </tr>
+<tr data-location="lake" data-text="arctic char forest lake common rainbow, rainy; day, dusk medium">
+    <td class="px-4 py-3 font-medium">Arctic Char</td>
+    <td class="px-4 py-3 text-cozy-wood">Forest Lake</td>
+    <td class="px-4 py-3">Lv.10</td>
+    <td class="px-4 py-3 text-cozy-wood">Medium</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Rainy; Day, Dusk</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">610 / 915 / 1,220 / 2,440 / 4,880</td>
+  </tr>
+<tr data-location="lake" data-text="wels catfish meadow lake common rainbow, sunny; dusk, night medium">
+    <td class="px-4 py-3 font-medium"><a href="/database/fish/wels-catfish/" class="text-cozy-coral hover:underline">Wels Catfish</a></td>
+    <td class="px-4 py-3 text-cozy-wood">Meadow Lake</td>
+    <td class="px-4 py-3">Lv.10</td>
+    <td class="px-4 py-3 text-cozy-wood">Medium</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny; Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">610 / 915 / 1,220 / 2,440 / 4,880</td>
+  </tr>
+<tr data-location="sea" data-text="king crab whale sea common rainbow; day, dawn, dusk large">
+    <td class="px-4 py-3 font-medium">King Crab</td>
+    <td class="px-4 py-3 text-cozy-wood">Whale Sea</td>
+    <td class="px-4 py-3">Lv.8</td>
+    <td class="px-4 py-3 text-cozy-wood">Large</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dawn, Dusk</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">535 / 802 / 1,070 / 2,140 / 4,280</td>
+  </tr>
+<tr data-location="deep-sea" data-text="nursehound [event] sea fishing sea fishing rainbow, sunny, rainy; day, dawn, dusk, night large">
+    <td class="px-4 py-3 font-medium">Nursehound</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+    <td class="px-4 py-3">Lv.6</td>
+    <td class="px-4 py-3 text-cozy-wood">Large</td>
+    <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">535 / 802 / 1,070 / 2,140 / 4,280</td>
+  </tr>
+<tr data-location="deep-sea" data-text="giant oarfish [event] sea fishing sea fishing rainbow, sunny, rainy; day, dawn golden">
+    <td class="px-4 py-3 font-medium">Giant Oarfish</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+    <td class="px-4 py-3">Lv.7</td>
+    <td class="px-4 py-3 text-cozy-wood">Golden</td>
+    <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">535 / 1,070 / 2,140 / 4,280</td>
+  </tr>
+<tr data-location="lake" data-text="bluegill onsen mountain lake common rainbow, sunny; dusk, night small">
+    <td class="px-4 py-3 font-medium">Bluegill</td>
+    <td class="px-4 py-3 text-cozy-wood">Onsen Mountain Lake</td>
+    <td class="px-4 py-3">Lv.10</td>
+    <td class="px-4 py-3 text-cozy-wood">Small</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny; Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">395 / 592 / 790 / 1,580 / 3,160</td>
+  </tr>
+<tr data-location="river" data-text="huchen giantwood river common rainbow; day, dusk, night medium">
+    <td class="px-4 py-3 font-medium">Huchen</td>
+    <td class="px-4 py-3 text-cozy-wood">Giantwood River</td>
+    <td class="px-4 py-3">Lv.9</td>
+    <td class="px-4 py-3 text-cozy-wood">Medium</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">380 / 570 / 760 / 1,520 / 3,040</td>
+  </tr>
+<tr data-location="lake" data-text="large pearl mussel forest lake common rainbow; day, dawn, dusk, night medium">
+    <td class="px-4 py-3 font-medium">Large Pearl Mussel</td>
+    <td class="px-4 py-3 text-cozy-wood">Forest Lake</td>
+    <td class="px-4 py-3">Lv.6</td>
+    <td class="px-4 py-3 text-cozy-wood">Medium</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">380 / 570 / 760 / 1,520 / 3,040</td>
+  </tr>
+<tr data-location="sea" data-text="tub gurnard east sea common rainbow; day, dawn, dusk, night medium">
+    <td class="px-4 py-3 font-medium">Tub Gurnard</td>
+    <td class="px-4 py-3 text-cozy-wood">East Sea</td>
+    <td class="px-4 py-3">Lv.6</td>
+    <td class="px-4 py-3 text-cozy-wood">Medium</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">380 / 570 / 760 / 1,520 / 3,040</td>
+  </tr>
+<tr data-location="sea" data-text="european eel old sea common rainbow; day, dawn, dusk medium">
+    <td class="px-4 py-3 font-medium">European Eel</td>
+    <td class="px-4 py-3 text-cozy-wood">Old Sea</td>
+    <td class="px-4 py-3">Lv.7</td>
+    <td class="px-4 py-3 text-cozy-wood">Medium</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow; Day, Dawn, Dusk</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">380 / 570 / 760 / 1,520 / 3,040</td>
+  </tr>
+<tr data-location="river" data-text="tilapia river mermaid fish attractor rainbow, sunny, rainy; day, dawn, dusk, night blue">
+    <td class="px-4 py-3 font-medium"><a href="/database/fish/tilapia/" class="text-cozy-coral hover:underline">Tilapia</a></td>
+    <td class="px-4 py-3 text-cozy-wood">River</td>
+    <td class="px-4 py-3">Lv.3</td>
+    <td class="px-4 py-3 text-cozy-wood">Blue</td>
+    <td class="px-4 py-3 text-cozy-wood">Mermaid Fish Attractor</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">320 / 480 / 640 / 1,280 / 2,560</td>
+  </tr>
+<tr data-location="lake" data-text="edible frog lake mermaid fish attractor rainbow, sunny, rainy; day, dawn, dusk, night blue">
+    <td class="px-4 py-3 font-medium">Edible Frog</td>
+    <td class="px-4 py-3 text-cozy-wood">Lake</td>
+    <td class="px-4 py-3">Lv.3</td>
+    <td class="px-4 py-3 text-cozy-wood">Blue</td>
+    <td class="px-4 py-3 text-cozy-wood">Mermaid Fish Attractor</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">320 / 480 / 640 / 1,280 / 2,560</td>
+  </tr>
+<tr data-location="lake" data-text="butterfly koi meadow lake common rainbow, rainy; day, dawn, dusk, night large">
+    <td class="px-4 py-3 font-medium"><a href="/database/fish/butterfly-koi/" class="text-cozy-coral hover:underline">Butterfly Koi</a></td>
+    <td class="px-4 py-3 text-cozy-wood">Meadow Lake</td>
+    <td class="px-4 py-3">Lv.4</td>
+    <td class="px-4 py-3 text-cozy-wood">Large</td>
+    <td class="px-4 py-3 text-cozy-wood">Common</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Rainy; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">320 / 480 / 640 / 1,280 / 2,560</td>
+  </tr>
+<tr data-location="sea" data-text="rabbit fish ocean mermaid fish attractor rainbow, sunny, rainy; day, dawn, dusk, night blue">
+    <td class="px-4 py-3 font-medium">Rabbit Fish</td>
+    <td class="px-4 py-3 text-cozy-wood">Ocean</td>
+    <td class="px-4 py-3">Lv.4</td>
+    <td class="px-4 py-3 text-cozy-wood">Blue</td>
+    <td class="px-4 py-3 text-cozy-wood">Mermaid Fish Attractor</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">320 / 480 / 640 / 1,280 / 2,560</td>
+  </tr>
+<tr data-location="event" data-text="frostspore whale shark [event] frostspore fish winter frost season rainbow, sunny, rainy; day, dawn, dusk, night large">
+    <td class="px-4 py-3 font-medium">Frostspore Whale Shark</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Frostspore Fish</td>
+    <td class="px-4 py-3">Lv.1</td>
+    <td class="px-4 py-3 text-cozy-wood">Large</td>
+    <td class="px-4 py-3 text-cozy-wood">Winter frost season</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">320 / 480 / 640 / 1,280 / 2,560</td>
+  </tr>
+<tr data-location="deep-sea" data-text="striped red mullet [event] sea fishing sea fishing rainbow, sunny, rainy; day, dawn, dusk, night golden">
+    <td class="px-4 py-3 font-medium">Striped Red Mullet</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+    <td class="px-4 py-3">Lv.1</td>
+    <td class="px-4 py-3 text-cozy-wood">Golden</td>
+    <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">320 / 480 / 640 / 1,280 / 2,560</td>
+  </tr>
+<tr data-location="deep-sea" data-text="anglerfish [event] sea fishing sea fishing rainbow, sunny, rainy; day, dawn, dusk, night golden">
+    <td class="px-4 py-3 font-medium">Anglerfish</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+    <td class="px-4 py-3">Lv.2</td>
+    <td class="px-4 py-3 text-cozy-wood">Golden</td>
+    <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">320 / 480 / 640 / 1,280 / 2,560</td>
+  </tr>
+<tr data-location="deep-sea" data-text="common octopus [event] sea fishing sea fishing rainbow, sunny, rainy; day, dawn, dusk, night medium">
+    <td class="px-4 py-3 font-medium">Common Octopus</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+    <td class="px-4 py-3">Lv.2</td>
+    <td class="px-4 py-3 text-cozy-wood">Medium</td>
+    <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">320 / 480 / 640 / 1,280 / 2,560</td>
+  </tr>
+<tr data-location="deep-sea" data-text="turbot [event] sea fishing sea fishing rainbow, sunny, rainy; day, dawn, dusk, night medium">
+    <td class="px-4 py-3 font-medium">Turbot</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+    <td class="px-4 py-3">Lv.2</td>
+    <td class="px-4 py-3 text-cozy-wood">Medium</td>
+    <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">320 / 480 / 640 / 1,280 / 2,560</td>
+  </tr>
+<tr data-location="deep-sea" data-text="european flying squid [event] sea fishing sea fishing rainbow, sunny, rainy; day, dawn, dusk, night golden">
+    <td class="px-4 py-3 font-medium">European Flying Squid</td>
+    <td class="px-4 py-3 text-cozy-wood">[EVENT] Sea Fishing</td>
+    <td class="px-4 py-3">Lv.5</td>
+    <td class="px-4 py-3 text-cozy-wood">Golden</td>
+    <td class="px-4 py-3 text-cozy-wood">Sea Fishing</td>
+    <td class="px-4 py-3 text-cozy-wood min-w-[220px]">Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night</td>
+    <td class="px-4 py-3 text-cozy-coral font-semibold">320 / 480 / 640 / 1,280 / 2,560</td>
+  </tr></tbody>
+    </table>
+  </div>
             </section>
-
-            <!-- HOW TO CATCH RARE FISH -->
+            <div id="heartopia_in_content_2" class="heartopia-ad-slot max-w-6xl mx-auto px-4 my-6 text-center"></div>
             <section id="how-to-catch" class="scroll-mt-20">
-                <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
-                    🎣 How to Catch Rare Fish
-                </h2>
-
-                <div class="bg-white rounded-xl p-6 border border-cozy-peach/30 mb-4">
-                    <h3 class="font-bold mb-3">Basic Steps</h3>
-                    <ol class="space-y-3 text-sm">
-                        <li class="flex items-start gap-2">
-                            <span
-                                class="w-6 h-6 bg-cozy-coral text-white rounded-full flex items-center justify-center font-bold text-xs shrink-0">1</span>
-                            <span><strong>Equip your Fishing Rod</strong> from your toolbox</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span
-                                class="w-6 h-6 bg-cozy-coral text-white rounded-full flex items-center justify-center font-bold text-xs shrink-0">2</span>
-                            <span><strong>Find fish shadows</strong> in the water — bigger = rarer fish</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span
-                                class="w-6 h-6 bg-cozy-coral text-white rounded-full flex items-center justify-center font-bold text-xs shrink-0">3</span>
-                            <span><strong>Cast in front of the shadow</strong> — hold to aim precisely</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span
-                                class="w-6 h-6 bg-cozy-coral text-white rounded-full flex items-center justify-center font-bold text-xs shrink-0">4</span>
-                            <span><strong>Reel in when fish bites</strong> — hold the reel icon</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span
-                                class="w-6 h-6 bg-amber-500 text-white rounded-full flex items-center justify-center font-bold text-xs shrink-0">!</span>
-                            <span><strong>If line turns RED</strong> — release immediately to prevent snap!</span>
-                        </li>
-                    </ol>
-                </div>
-
-                <div class="bg-cozy-mint/20 rounded-xl p-4 border border-cozy-mint">
-                    <h3 class="font-bold mb-2">💡 Rare Fish Signs</h3>
-                    <ul class="text-sm text-cozy-wood space-y-1">
-                        <li>• <strong>Larger shadows</strong> = higher chance of rare fish</li>
-                        <li>• <strong>Shimmering/sparkling</strong> shadows may indicate special fish</li>
-                        <li>• <strong>Blue flashing shadow</strong> = Mermaid Attractor exclusive</li>
-                    </ul>
+                <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">How To Catch Rare Fish Reliably</h2>
+                <div class="grid md:grid-cols-2 gap-4 text-sm text-cozy-wood">
+                    <div class="bg-white rounded-xl p-4 border border-cozy-peach/30"><h3 class="font-bold text-cozy-bark mb-2">Check conditions in order</h3><p>Confirm the exact location, Fishing Level, weather, time window, shadow size, and whether the fish belongs to a special event category.</p></div>
+                    <div class="bg-white rounded-xl p-4 border border-cozy-peach/30"><h3 class="font-bold text-cozy-bark mb-2">Do not mix normal sea and event fish</h3><p>Bluefin Tuna and Swordfish are normal sea-zone fish, while Golden King Crab, Moonfish, and Shortfin Mako Shark are listed under Sea Fishing.</p></div>
                 </div>
             </section>
-        <div id="heartopia_in_content_2" class="heartopia-ad-slot max-w-6xl mx-auto px-4 my-6 text-center"></div>
-
-
-            <!-- TIPS -->
             <section id="tips" class="scroll-mt-20">
-                <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
-                    💡 Pro Tips for Rare Fish
-                </h2>
-
-                <div class="space-y-4">
-                    <div class="bg-white rounded-xl p-4 border border-cozy-peach/30">
-                        <h3 class="font-bold mb-2 text-cozy-sage">✅ Do</h3>
-                        <ul class="text-sm text-cozy-wood space-y-1">
-                            <li>• <strong>Check weather forecast daily</strong> — prepare for rainbow days!</li>
-                            <li>• <strong>Upgrade Rod Maintenance skill</strong> first to prevent rod breaking</li>
-                            <li>• <strong>Use Mermaid Perfume</strong> during rainbow weather for more spawns</li>
-                            <li>• <strong>Rent a boat</strong> for sea fishing — larger shadows spawn in deep water</li>
-                            <li>• <strong>Fish at night (6PM-6AM)</strong> for many rare fish</li>
-                            <li>• <strong>Play with friends</strong> for Mermaid Attractor exclusive fish</li>
-                        </ul>
-                    </div>
-
-                    <div class="bg-white rounded-xl p-4 border border-cozy-peach/30">
-                        <h3 class="font-bold mb-2 text-cozy-rose">❌ Don't</h3>
-                        <ul class="text-sm text-cozy-wood space-y-1">
-                            <li>• <strong>Miss rainbow weather</strong> — it only lasts a few hours!</li>
-                            <li>• <strong>Force the reel when line is red</strong> — instant snap</li>
-                            <li>• <strong>Sell all rare fish</strong> — keep one of each for encyclopedia</li>
-                            <li>• <strong>Ignore fishing level</strong> — some fish won't spawn until higher levels</li>
-                        </ul>
-                    </div>
-                </div>
+                <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">Priority Route</h2>
+                <p class="text-cozy-wood">During Rainbow weather, check your highest unlocked targets first: Golden King Crab or Shortfin Mako Shark in Sea Fishing, Swordfish in Whale Sea, Bluefin Tuna in Zephyr Sea, Smooth Hammerhead in Old Sea, and Wels Catfish in Meadow Lake at Dusk/Night.</p>
             </section>
-
-            <!-- SKILL PRIORITY -->
-            <section class="scroll-mt-20">
-                <h2 class="font-display text-2xl font-bold mb-4 flex items-center gap-2">
-                    📈 Skill Priority for Rare Fish
-                </h2>
-
-                <div class="bg-white rounded-xl p-6 border border-cozy-peach/30">
-                    <div class="space-y-3">
-                        <div class="flex items-center gap-3">
-                            <span
-                                class="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center font-bold text-amber-700">1</span>
-                            <div>
-                                <div class="font-bold">🔧 Rod Maintenance</div>
-                                <div class="text-sm text-cozy-wood">Prevents rod from breaking during long fights</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <span
-                                class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center font-bold text-gray-700">2</span>
-                            <div>
-                                <div class="font-bold">⭐ Fish Quality</div>
-                                <div class="text-sm text-cozy-wood">Higher star fish = more gold per catch</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <span
-                                class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center font-bold text-gray-700">3</span>
-                            <div>
-                                <div class="font-bold">🎯 Catch Rate</div>
-                                <div class="text-sm text-cozy-wood">Reduces fish escape chance</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        <div id="heartopia_in_content_3" class="heartopia-ad-slot max-w-6xl mx-auto px-4 my-6 text-center"></div>
-
-
+            <div id="heartopia_in_content_3" class="heartopia-ad-slot max-w-6xl mx-auto px-4 my-6 text-center"></div>
         </article>
 
-        <!-- Related Guides -->
+                <!-- Related Guides -->
         <section class="mt-12 pt-8 border-t border-cozy-peach/30">
             <h2 class="font-bold text-xl mb-6">📚 Related Guides</h2>
             <div class="grid md:grid-cols-2 gap-4">
