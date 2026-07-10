@@ -318,6 +318,23 @@
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>    <url>
+        <loc>https://heartopia.life/database/insects/scarce-morpho/</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/database/insects/purple-spotted-swallowtail/</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/database/insects/green-metalwing/</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>    <url>
         <loc>https://heartopia.life/database/items/black-truffle/</loc>
         <lastmod>2026-07-01</lastmod>
         <changefreq>weekly</changefreq>
