@@ -41,6 +41,16 @@
             color: 'mint'
         },
         {
+            id: 'crops',
+            title: 'Crops harvested',
+            icon: '🌾',
+            storageKey: 'heartopia.collection.crops',
+            total: 17,
+            url: '/database/crops/',
+            action: 'Open crops database',
+            color: 'gold'
+        },
+        {
             id: 'map',
             title: 'Map locations checked',
             icon: '🗺️',
@@ -57,7 +67,8 @@
         sage: 'bg-cozy-sage/20 border-cozy-sage/50 text-cozy-sage',
         coral: 'bg-cozy-coral/20 border-cozy-coral/50 text-cozy-coral',
         rose: 'bg-cozy-rose/20 border-cozy-rose/50 text-cozy-rose',
-        mint: 'bg-cozy-mint/30 border-cozy-mint text-cozy-sage'
+        mint: 'bg-cozy-mint/30 border-cozy-mint text-cozy-sage',
+        gold: 'bg-amber-100 border-amber-300 text-amber-600'
     };
 
     function readArray(key) {
