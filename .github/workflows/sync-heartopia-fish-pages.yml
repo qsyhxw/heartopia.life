@@ -1,0 +1,39 @@
+name: Sync Heartopia Fish Pages
+
+on:
+  push:
+    paths:
+      - 'database/fish/index.html'
+      - 'img/fish/**'
+      - 'scripts/sync-fish-pages.mjs'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-fish-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+
+      - name: Build shared fish data and page sections
+        run: node scripts/sync-fish-pages.mjs
+
+      - name: Commit generated updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/heartopia-fish.json database/fish-prices/index.html guides/fishing-locations/index.html guides/fishing-spots/index.html guides/rare-fish/index.html guides/fish-locations/index.html
+          if git diff --cached --quiet; then
+            echo "No fish page changes to commit."
+          else
+            git commit -m "chore: sync Heartopia fish pages"
+            git push
+          fi
