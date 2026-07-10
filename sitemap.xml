@@ -598,7 +598,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/guides/best-crops/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-10</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -946,7 +946,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/hobbies/gardening/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-10</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1120,7 +1120,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/tools/crop-planner/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-10</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1272,6 +1272,18 @@
         <loc>https://heartopia.life/database/wildlife/alpaca/</loc>
         <lastmod>2026-07-10</lastmod>
         <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/database/crops/wheat/</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/database/crops/grape/</loc>
+        <lastmod>2026-07-10</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
 </urlset>
