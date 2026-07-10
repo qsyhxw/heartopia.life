@@ -6,6 +6,7 @@ on:
       - 'data/heartopia-insects.json'
       - 'img/insects/**'
       - 'scripts/sync-insect-database.mjs'
+      - 'scripts/refresh-collection-legacy-pages.mjs'
   workflow_dispatch:
 
 permissions:
@@ -21,11 +22,13 @@ jobs:
           node-version: '24'
       - name: Build insect database
         run: node scripts/sync-insect-database.mjs
+      - name: Refresh legacy collection pages
+        run: node scripts/refresh-collection-legacy-pages.mjs
       - name: Commit generated updates
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add database/insects/index.html
+          git add database/insects/index.html scripts/refresh-collection-legacy-pages.mjs assets/js/my-progress-dashboard.js hobbies/insect-catching/index.html guides/index.html tools/index.html hobbies/index.html hobbies/fishing/index.html events/winter-2026/index.html database/fish/rainbow-fish/index.html database/fish/legendary-koi/index.html database/insects/bagworm-moth/index.html database/insects/beautiful-leopard/index.html database/insects/chrysochraon-dispar/index.html database/insects/common-brimstone/index.html database/insects/elegant-flower-beetle/index.html database/insects/fire-colored-beetle/index.html database/insects/golden-stag-beetle/index.html database/insects/hercules-beetle/index.html database/insects/purple-emperor/index.html database/insects/rajah-brookes-birdwing/index.html database/insects/sulkowskys-morpho/index.html
           if git diff --cached --quiet; then
             echo "No insect database changes to commit."
           else

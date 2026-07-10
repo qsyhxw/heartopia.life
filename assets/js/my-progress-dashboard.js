@@ -15,7 +15,7 @@
             title: 'Insects collected',
             icon: '🦋',
             storageKey: 'heartopia.collection.insects',
-            total: 45,
+            total: 91,
             url: '/database/insects/',
             action: 'Open insect database',
             color: 'sage'
