@@ -1,0 +1,363 @@
+{
+  "generatedAt": "2026-07-13",
+  "count": 17,
+  "crops": [
+    {
+      "name": "Avocado",
+      "id": "avocado",
+      "type": "Fruit",
+      "seedPrice": 180,
+      "growthTime": "13h",
+      "growthMinutes": 780,
+      "plantingWindow": "Long: 8 hours or more",
+      "recipeCount": 0,
+      "recipes": [],
+      "image": "/img/crops/Avocado.webp"
+    },
+    {
+      "name": "Cacao Bean",
+      "id": "cacao-bean",
+      "type": "Specialty",
+      "seedPrice": 110,
+      "growthTime": "5h",
+      "growthMinutes": 300,
+      "plantingWindow": "Medium: 2 to 6 hours",
+      "recipeCount": 5,
+      "recipes": [
+        "Chocolate Sauce",
+        "Milkshake",
+        "Cocoa Milkshake",
+        "Cocoa Milk Tea",
+        "Mellow Black Tea"
+      ],
+      "image": "/img/crops/Cacao-Bean.webp"
+    },
+    {
+      "name": "Carrot",
+      "id": "carrot",
+      "type": "Vegetable",
+      "seedPrice": 50,
+      "growthTime": "2h",
+      "growthMinutes": 120,
+      "plantingWindow": "Medium: 2 to 6 hours",
+      "recipeCount": 3,
+      "recipes": [
+        "House Salad",
+        "Smoked Fish Bagel",
+        "Carrot Cake"
+      ],
+      "image": "/img/crops/Carrot.webp"
+    },
+    {
+      "name": "Corn",
+      "id": "corn",
+      "type": "Grain",
+      "seedPrice": 170,
+      "growthTime": "12h",
+      "growthMinutes": 720,
+      "plantingWindow": "Long: 8 hours or more",
+      "recipeCount": 4,
+      "recipes": [
+        "Caramel Popcorn Bucket",
+        "Savory Popcorn Bucket",
+        "House Salad",
+        "Corn Soup"
+      ],
+      "image": "/img/crops/Corn.webp"
+    },
+    {
+      "name": "Eggplant",
+      "id": "eggplant",
+      "type": "Vegetable",
+      "seedPrice": 135,
+      "growthTime": "5h",
+      "growthMinutes": 300,
+      "plantingWindow": "Medium: 2 to 6 hours",
+      "recipeCount": 3,
+      "recipes": [
+        "House Salad",
+        "Smoked Fish Bagel",
+        "Baked Eggplant w/ Meat"
+      ],
+      "image": "/img/crops/Eggplant.webp"
+    },
+    {
+      "name": "Grape",
+      "id": "grape",
+      "type": "Fruit",
+      "seedPrice": 160,
+      "growthTime": "10h",
+      "growthMinutes": 600,
+      "plantingWindow": "Long: 8 hours or more",
+      "recipeCount": 15,
+      "recipes": [
+        "Rainbow Heart",
+        "Rainbow Spark",
+        "Brick Bowl Fruit Shaved Ice",
+        "Brick Bowl Grape Shaved Ice",
+        "Purple Egg",
+        "Grape Jam",
+        "Mixed Jam",
+        "Original Frosted Pancake",
+        "Fruit Verbena Pie",
+        "Grape Verbena Pie",
+        "Springday Grape Black Tea",
+        "Springday Fruit Black Tea",
+        "Afternoon Tea",
+        "Milkshake",
+        "Grape Milkshake"
+      ],
+      "image": "/img/crops/Grape.webp"
+    },
+    {
+      "name": "Lemon Verbena",
+      "id": "lemon-verbena",
+      "type": "Herb",
+      "seedPrice": 10,
+      "growthTime": "15m",
+      "growthMinutes": 15,
+      "plantingWindow": "Quick: up to 1 hour",
+      "recipeCount": 8,
+      "recipes": [
+        "Blueberry Verbena Pie",
+        "Raspberry Verbena Pie",
+        "Strawberry Verbena Pie",
+        "Fruit Verbena Pie",
+        "Mandarin Verbena Pie",
+        "Apple Verbena Pie",
+        "Pineapple Verbena Pie",
+        "Grape Verbena Pie"
+      ],
+      "image": "/img/crops/Lemon-Verbena.webp"
+    },
+    {
+      "name": "Lettuce",
+      "id": "lettuce",
+      "type": "Vegetable",
+      "seedPrice": 145,
+      "growthTime": "8h",
+      "growthMinutes": 480,
+      "plantingWindow": "Long: 8 hours or more",
+      "recipeCount": 7,
+      "recipes": [
+        "House Salad",
+        "Green Egg",
+        "Smoked Fish Bagel",
+        "Rustic Ratatouille",
+        "Meat Burger",
+        "Crayfish Sashimi",
+        "Blue European Crayfish Sashimi"
+      ],
+      "image": "/img/crops/Lettuce.webp"
+    },
+    {
+      "name": "Paddy",
+      "id": "paddy",
+      "type": "Grain",
+      "seedPrice": 12,
+      "growthTime": "20m",
+      "growthMinutes": 20,
+      "plantingWindow": "Quick: up to 1 hour",
+      "recipeCount": 7,
+      "recipes": [
+        "Glasswort & Shrimp Fried Rice",
+        "Pillow-Shaped Red Bean Zongzi",
+        "Pillow-Shaped Plain Rice Zongzi",
+        "Pillow-Shaped Egg Yolk & Pork Zongzi",
+        "Triangle Plain Rice Zongzi",
+        "Triangle Egg Yolk & Pork Zongzi",
+        "Triangle Red Bean Zongzi"
+      ],
+      "image": "/img/crops/Paddy.webp"
+    },
+    {
+      "name": "Pineapple",
+      "id": "pineapple",
+      "type": "Fruit",
+      "seedPrice": 15,
+      "growthTime": "30m",
+      "growthMinutes": 30,
+      "plantingWindow": "Quick: up to 1 hour",
+      "recipeCount": 14,
+      "recipes": [
+        "Rainbow Heart",
+        "Rainbow Spark",
+        "Brick Bowl Fruit Shaved Ice",
+        "Brick Bowl Pineapple Shaved Ice",
+        "Pineapple Jam",
+        "Mixed Jam",
+        "Original Frosted Pancake",
+        "Fruit Verbena Pie",
+        "Pineapple Verbena Pie",
+        "Springday Pineapple Black Tea",
+        "Springday Fruit Black Tea",
+        "Afternoon Tea",
+        "Milkshake",
+        "Pineapple Milkshake"
+      ],
+      "image": "/img/crops/Pineapple.webp"
+    },
+    {
+      "name": "Potatoes",
+      "id": "potatoes",
+      "type": "Vegetable",
+      "seedPrice": 30,
+      "growthTime": "1h",
+      "growthMinutes": 60,
+      "plantingWindow": "Quick: up to 1 hour",
+      "recipeCount": 5,
+      "recipes": [
+        "House Salad",
+        "Salsa Wavy Potato Chips",
+        "Smoked Fish Bagel",
+        "Fish and Chips",
+        "Rustic Ratatouille"
+      ],
+      "image": "/img/crops/Potatoes.webp"
+    },
+    {
+      "name": "Romaine Lettuce",
+      "id": "romaine-lettuce",
+      "type": "Vegetable",
+      "seedPrice": 10,
+      "growthTime": "15m",
+      "growthMinutes": 15,
+      "plantingWindow": "Quick: up to 1 hour",
+      "recipeCount": 1,
+      "recipes": [
+        "Romaine Lettuce Taco"
+      ],
+      "image": "/img/crops/Romaine-Lettuce.webp"
+    },
+    {
+      "name": "Strawberry",
+      "id": "strawberry",
+      "type": "Fruit",
+      "seedPrice": 125,
+      "growthTime": "6h",
+      "growthMinutes": 360,
+      "plantingWindow": "Medium: 2 to 6 hours",
+      "recipeCount": 15,
+      "recipes": [
+        "Maltese Canelé",
+        "Rainbow Heart",
+        "Rainbow Spark",
+        "Brick Bowl Strawberry Shaved Ice",
+        "Brick Bowl Fruit Shaved Ice",
+        "Strawberry Jam",
+        "Mixed Jam",
+        "Original Frosted Pancake",
+        "Strawberry Verbena Pie",
+        "Fruit Verbena Pie",
+        "Springday Strawberry Black Tea",
+        "Springday Fruit Black Tea",
+        "Afternoon Tea",
+        "Milkshake",
+        "Strawberry Milkshake"
+      ],
+      "image": "/img/crops/Strawberry.webp"
+    },
+    {
+      "name": "Tea Leaf",
+      "id": "tea-leaf",
+      "type": "Herb",
+      "seedPrice": 25,
+      "growthTime": "45m",
+      "growthMinutes": 45,
+      "plantingWindow": "Quick: up to 1 hour",
+      "recipeCount": 5,
+      "recipes": [
+        "Green Tea",
+        "Matcha Green Milk Tea",
+        "Green Milk Tea",
+        "Daisy Tea",
+        "Rose Tea"
+      ],
+      "image": "/img/crops/Tea-Leaf.webp"
+    },
+    {
+      "name": "Tomato",
+      "id": "tomato",
+      "type": "Vegetable",
+      "seedPrice": 10,
+      "growthTime": "15m",
+      "growthMinutes": 15,
+      "plantingWindow": "Quick: up to 1 hour",
+      "recipeCount": 9,
+      "recipes": [
+        "House Salad",
+        "Mixed Jam",
+        "Tomato Sauce",
+        "Tomato Seafood Soup",
+        "Smoked Fish Bagel",
+        "Rustic Ratatouille",
+        "Seafood Risotto",
+        "Meat Sauce Pasta",
+        "Afternoon Tea"
+      ],
+      "image": "/img/crops/Tomato.webp"
+    },
+    {
+      "name": "Wheat",
+      "id": "wheat",
+      "type": "Grain",
+      "seedPrice": 95,
+      "growthTime": "4h",
+      "growthMinutes": 240,
+      "plantingWindow": "Medium: 2 to 6 hours",
+      "recipeCount": 32,
+      "recipes": [
+        "Retriever Canelé",
+        "Maltese Canelé",
+        "House Salad",
+        "Brick Penny Bun Patty Burger",
+        "Brick Button Mushroom Patty Burger",
+        "Brick Mushroom Patty Burger",
+        "Brick Oyster Mushroom Patty Burger",
+        "Brick Shiitake Patty Burger",
+        "Brick Black Truffle Patty Burger",
+        "Penny Bun Pie",
+        "Button Mushroom Pie",
+        "Grass Cake",
+        "Mushroom Pie",
+        "Oyster Mushroom Pie",
+        "Shiitake Pie",
+        "Black Truffle Pie",
+        "Blueberry Pearl Cake",
+        "Seashell Pearl Cake",
+        "Starfruit Pearl Cake",
+        "Raspberry Pearl Cake",
+        "Apple Pearl Cake",
+        "Mandarin Pearl Cake",
+        "Tomato Seafood Soup",
+        "Smoked Fish Bagel",
+        "Cheese Cake",
+        "Black Truffle Cream Pasta",
+        "Seafood Risotto",
+        "Meat Sauce Pasta",
+        "Seafood Pizza",
+        "Carrot Cake",
+        "Apple Pie",
+        "Meat Burger"
+      ],
+      "image": "/img/crops/Wheat.webp"
+    },
+    {
+      "name": "White Radish",
+      "id": "white-radish",
+      "type": "Vegetable",
+      "seedPrice": 10,
+      "growthTime": "15m",
+      "growthMinutes": 15,
+      "plantingWindow": "Quick: up to 1 hour",
+      "recipeCount": 4,
+      "recipes": [
+        "Steak w/ Mashed White Radish",
+        "Creamy White Radish Soup",
+        "House Salad",
+        "Smoked Fish Bagel"
+      ],
+      "image": "/img/crops/White-Radish.webp"
+    }
+  ]
+}

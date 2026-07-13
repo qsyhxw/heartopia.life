@@ -44,6 +44,9 @@ jobs:
       - name: Sync Wildlife details and database
         run: node scripts/sync-heartodex-wildlife.mjs
 
+      - name: Sync Crop details and planning pages
+        run: node scripts/sync-heartodex-crops.mjs
+
       - name: Commit automatic collection updates
         run: |
           if git diff --quiet; then
@@ -53,6 +56,6 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add database/fish/index.html database/birds/index.html database/insects/index.html database/wildlife/index.html data/heartopia-fish.json data/heartopia-insects.json data/heartopia-wildlife.json data/monitor/heartodex-collections.json data/monitor/heartodex-sync-readiness.json img/fish img/birds img/insects img/wildlife assets/js/my-progress-dashboard.js tools/my-progress/index.html guides/fishing-locations/index.html guides/fishing-spots/index.html guides/rare-fish/index.html guides/fish-locations/index.html database/fish-prices/index.html
+          git add database/fish/index.html database/birds/index.html database/insects/index.html database/wildlife/index.html database/crops/index.html guides/best-crops/index.html tools/crop-planner/index.html hobbies/gardening/index.html data/heartopia-fish.json data/heartopia-insects.json data/heartopia-wildlife.json data/heartopia-crops.json data/monitor/heartodex-collections.json data/monitor/heartodex-sync-readiness.json img/fish img/birds img/insects img/wildlife img/crops assets/js/my-progress-dashboard.js tools/my-progress/index.html guides/fishing-locations/index.html guides/fishing-spots/index.html guides/rare-fish/index.html guides/fish-locations/index.html database/fish-prices/index.html
           git commit -m "chore: auto-sync Heartodex collections"
           git push
