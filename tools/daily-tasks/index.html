@@ -16,7 +16,7 @@
 
     <!-- Meta Tags -->
     <title>Heartopia Daily Tasks Tracker: Reset Time & Checklist</title>
-    <meta name="description" content="Track Heartopia daily tasks with a browser-saved checklist, server reset countdown, custom tasks, and quick links to codes, map, events, and collection pages.">
+    <meta name="description" content="Track Heartopia daily tasks with a browser-saved priority checklist, fixed server-offset reset countdown, custom tasks, and route links.">
     <meta name="keywords" content="heartopia daily tasks, heartopia daily checklist, heartopia reset time, heartopia server reset, heartopia daily routine">
     <meta name="author" content="Heartopia.Life">
     <meta name="robots" content="index, follow">
@@ -27,7 +27,7 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Heartopia Daily Tasks Tracker">
-    <meta property="og:description" content="Use a daily Heartopia checklist with local progress saving and a server reset countdown.">
+    <meta property="og:description" content="Use a priority daily Heartopia checklist with local progress saving and a server reset countdown.">
     <meta property="og:url" content="https://heartopia.life/tools/daily-tasks/">
     <meta property="og:site_name" content="Heartopia.Life">
 
@@ -83,7 +83,7 @@
       "applicationCategory": "GameApplication",
       "operatingSystem": "Web browser",
       "datePublished": "2026-07-09",
-      "dateModified": "2026-07-09",
+      "dateModified": "2026-07-13",
       "description": "A browser-saved Heartopia daily checklist with server reset countdown, custom tasks, and quick links.",
       "isPartOf": {
         "@type": "WebSite",
@@ -151,7 +151,7 @@
                     <p class="text-sm font-bold uppercase tracking-wide text-cozy-coral mb-2">Daily checklist</p>
                     <h1 class="font-display text-3xl md:text-4xl font-bold text-cozy-bark mb-4">Heartopia Daily Tasks Tracker</h1>
                     <p class="text-cozy-wood text-lg max-w-3xl">
-                        Tick off your daily Heartopia routine, save progress in this browser, and watch the estimated server reset countdown.
+                        Work through the core daily routine first, then use optional checks for social, pets, collections, and active events. Progress is saved only in this browser.
                     </p>
                     <div class="flex flex-wrap gap-2 mt-5 text-sm">
                         <a href="#checklist" class="bg-white px-3 py-1.5 rounded-full border border-cozy-peach/60 hover:text-cozy-coral">Checklist</a>
@@ -169,17 +169,17 @@
                     </div>
                     <label for="server-region" class="block text-sm font-bold mb-2">Server region</label>
                     <select id="server-region" class="w-full rounded-xl border border-cozy-peach/70 bg-cozy-cream px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-cozy-coral/40">
-                        <option value="america">America</option>
-                        <option value="global">Global</option>
-                        <option value="sea">SEA</option>
-                        <option value="tw-hk-mo">TW / HK / MO</option>
-                        <option value="asia">Asia</option>
+                        <option value="america">America (UTC-5)</option>
+                        <option value="global">Global (UTC+1)</option>
+                        <option value="sea">SEA (UTC+7)</option>
+                        <option value="tw-hk-mo">TW / HK / MO (UTC+8)</option>
+                        <option value="asia">Asia (UTC+9)</option>
                     </select>
                     <div class="mt-4 rounded-xl bg-cozy-cream p-4">
                         <div class="text-3xl font-bold text-cozy-bark" id="reset-countdown">--:--:--</div>
                         <p class="text-sm text-cozy-wood mt-1" id="reset-summary">Choose your server region.</p>
                     </div>
-                    <p class="text-xs text-cozy-wood mt-3">This tool estimates daily reset at 6:00 AM server time. Use the in-game clock as the final check.</p>
+                    <p class="text-xs text-cozy-wood mt-3">The countdown uses the selected server offset and a 6:00 AM reset. Use the in-game clock as the final check after a server or patch change.</p>
                 </aside>
             </div>
         </section>
@@ -234,17 +234,17 @@
             <article class="bg-white rounded-2xl p-5 border border-cozy-peach/30">
                 <span class="text-3xl block mb-3">🌅</span>
                 <h2 class="font-display text-xl font-bold mb-2">Start With Claims</h2>
-                <p class="text-cozy-wood text-sm">Open mail, claim login rewards, check codes, and scan event notices before spending stamina or resources.</p>
+                <p class="text-cozy-wood text-sm">Start with NPC missions, daily resources, shop checks, and the active check-in reward.</p>
             </article>
             <article class="bg-white rounded-2xl p-5 border border-cozy-peach/30">
                 <span class="text-3xl block mb-3">🗺️</span>
-                <h2 class="font-display text-xl font-bold mb-2">Run A Route</h2>
-                <p class="text-cozy-wood text-sm">Use map, fish, insect, bird, and material pages to plan a short resource route while your daily checklist is open.</p>
+                <h2 class="font-display text-xl font-bold mb-2">Use Conditional Checks</h2>
+                <p class="text-cozy-wood text-sm">Weather and seasonal entries only matter when the matching condition is active. Leave them unchecked when they are unavailable.</p>
             </article>
             <article class="bg-white rounded-2xl p-5 border border-cozy-peach/30">
                 <span class="text-3xl block mb-3">📊</span>
-                <h2 class="font-display text-xl font-bold mb-2">Save Progress</h2>
-                <p class="text-cozy-wood text-sm">Your checklist resets by server day, while collection progress remains available in My Progress.</p>
+                <h2 class="font-display text-xl font-bold mb-2">Finish With Optional Goals</h2>
+                <p class="text-cozy-wood text-sm">Optional social, pet, and collection tasks make a flexible route after the daily core is complete.</p>
             </article>
         </section>
 
@@ -258,7 +258,7 @@
                 </div>
                 <div>
                     <h3 class="font-bold text-cozy-bark mb-1">When does Heartopia daily reset happen?</h3>
-                    <p>Players commonly refer to 6:00 AM server time. Your local time depends on your server region and daylight-saving rules, so confirm with the in-game clock when timing matters.</p>
+                    <p>This tool uses a 6:00 AM reset with the selected server offset: America UTC-5, Global UTC+1, SEA UTC+7, TW/HK/MO UTC+8, and Asia UTC+9. Confirm with the in-game clock if timing matters.</p>
                 </div>
                 <div>
                     <h3 class="font-bold text-cozy-bark mb-1">Will my tasks clear automatically?</h3>
