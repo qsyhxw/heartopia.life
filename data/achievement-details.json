@@ -1,0 +1,443 @@
+[
+  {
+    "name": "Puzzle Artist",
+    "group": "Collections",
+    "slug": "puzzle-artist",
+    "objective": "Become a Puzzle Artist.",
+    "reward": "Puzzle"
+  },
+  {
+    "name": "Collector",
+    "group": "Collections",
+    "slug": "collector",
+    "objective": "Become an Expert Collector.",
+    "reward": "Collector"
+  },
+  {
+    "name": "Stardust Collector",
+    "group": "Collections",
+    "slug": "stardust-collector",
+    "objective": "Collect 60 Starfall Shards.",
+    "reward": "Star Picker"
+  },
+  {
+    "name": "Animal Keeper",
+    "group": "Collections",
+    "slug": "animal-keeper",
+    "objective": "Discover the favorite foods for 8 animal groups.",
+    "reward": "Delicious"
+  },
+  {
+    "name": "D.G. Member",
+    "group": "Collections",
+    "slug": "d-g-member",
+    "objective": "",
+    "reward": ""
+  },
+  {
+    "name": "Pop Star",
+    "group": "Collections",
+    "slug": "pop-star",
+    "objective": "Receive 100 Home Likes in total.",
+    "reward": "Rising Star"
+  },
+  {
+    "name": "Rocket Sponsor",
+    "group": "Collections",
+    "slug": "rocket-sponsor",
+    "objective": "Earn a total of 500,000 Gold by selling items to Gold Merchant Albert Jr.",
+    "reward": "Rocket"
+  },
+  {
+    "name": "Animal Neighbor",
+    "group": "Collections",
+    "slug": "animal-neighbor",
+    "objective": "Reach Bond Level 10 with 8 animal groups.",
+    "reward": "New Neighbor"
+  },
+  {
+    "name": "Shoal's Blessing",
+    "group": "Fishing",
+    "slug": "shoal-s-blessing",
+    "objective": "",
+    "reward": ""
+  },
+  {
+    "name": "Fishing Machine",
+    "group": "Fishing",
+    "slug": "fishing-machine",
+    "objective": "Catch a total of 50 fish over 100kg each.",
+    "reward": "Fish Basket"
+  },
+  {
+    "name": "Twin Fish Fortune",
+    "group": "Fishing",
+    "slug": "twin-fish-fortune",
+    "objective": "Catch 2 5-Star fish within 1 min.",
+    "reward": "Osprey"
+  },
+  {
+    "name": "Sea Fishing Master",
+    "group": "Fishing",
+    "slug": "sea-fishing-master",
+    "objective": "Obtain all titles in Daily Sea Fishing Events.",
+    "reward": "Sea Fisher"
+  },
+  {
+    "name": "Shoal Caller",
+    "group": "Fishing",
+    "slug": "shoal-caller",
+    "objective": "Trigger 3 Shoals in a single Fishing Event.",
+    "reward": "Shoal Caller"
+  },
+  {
+    "name": "Shark Frenzy",
+    "group": "Fishing",
+    "slug": "shark-frenzy",
+    "objective": "Catch 3 sharks from gold-glowing fish shadows during a single Sea Fishing event.",
+    "reward": "Shark Cage"
+  },
+  {
+    "name": "Mystic Fisher",
+    "group": "Fishing",
+    "slug": "mystic-fisher",
+    "objective": "Trigger the hidden phase of Fishing Event 10 times in total.",
+    "reward": "Fisher"
+  },
+  {
+    "name": "Starlight Fisher",
+    "group": "Fishing",
+    "slug": "starlight-fisher",
+    "objective": "Catch 4 5-Star fish in a single Fishing Event.",
+    "reward": "Fishing Maniac"
+  },
+  {
+    "name": "Never Empty-Handed",
+    "group": "Fishing",
+    "slug": "never-empty-handed",
+    "objective": "Fishing Hobby reaches Lv.10.",
+    "reward": "Skilled Angler"
+  },
+  {
+    "name": "Strong Sailor",
+    "group": "Fishing",
+    "slug": "strong-sailor",
+    "objective": "Catch fish over 100kg for 2 consecutive times.",
+    "reward": "Fishing Line"
+  },
+  {
+    "name": "Town Cooking Legend",
+    "group": "Cooking",
+    "slug": "town-cooking-legend",
+    "objective": "Cooking Hobby reaches Lv.10.",
+    "reward": "Chef"
+  },
+  {
+    "name": "Gourmet Diplomat",
+    "group": "Cooking",
+    "slug": "gourmet-diplomat",
+    "objective": "Share food 100 times in total.",
+    "reward": "Savior"
+  },
+  {
+    "name": "Fast & Flawless",
+    "group": "Cooking",
+    "slug": "fast-flawless",
+    "objective": "Cook 2 5-Star dishes within 60s.",
+    "reward": "Kitchen Clock"
+  },
+  {
+    "name": "Green Touch",
+    "group": "Gardening",
+    "slug": "green-touch",
+    "objective": "Gardening Hobby reaches Lv.10.",
+    "reward": "Horticulturist"
+  },
+  {
+    "name": "Rainbow Luck",
+    "group": "Gardening",
+    "slug": "rainbow-luck",
+    "objective": "Trigger 2 Rainbow Hybrid Blessings in a single multi-area watering.",
+    "reward": "Rainbow Luck"
+  },
+  {
+    "name": "Plentiful Harvest",
+    "group": "Gardening",
+    "slug": "plentiful-harvest",
+    "objective": "Harvest a 5-star crop during Bountiful Harvest.",
+    "reward": "Harvest"
+  },
+  {
+    "name": "Meow-Meow Canteen",
+    "group": "Pet Hobby",
+    "slug": "meow-meow-canteen",
+    "objective": "Feed 5 cats their favorite food.",
+    "reward": "Cat Food"
+  },
+  {
+    "name": "Doggie Canteen",
+    "group": "Pet Hobby",
+    "slug": "doggie-canteen",
+    "objective": "Feed 3 dogs their favorite food.",
+    "reward": "Dog Food"
+  },
+  {
+    "name": "Ace Cat Servant",
+    "group": "Pet Hobby",
+    "slug": "ace-cat-servant",
+    "objective": "Cat Caring Hobby reaches Lv.10.",
+    "reward": "Cat Lover"
+  },
+  {
+    "name": "Ace Dog Trainer",
+    "group": "Pet Hobby",
+    "slug": "ace-dog-trainer",
+    "objective": "Dog Caring Hobby reaches Lv.10.",
+    "reward": "Dog Pal"
+  },
+  {
+    "name": "Human Insect Attractor",
+    "group": "Insect Catching",
+    "slug": "human-insect-attractor",
+    "objective": "Trigger 4 Swarms in a single Insect Catching event.",
+    "reward": "Insect Attractor"
+  },
+  {
+    "name": "Five Insects Blessing",
+    "group": "Insect Catching",
+    "slug": "five-insects-blessing",
+    "objective": "Catch 5 5-Star insects during a single Insect Catching Event.",
+    "reward": "Insect Lord"
+  },
+  {
+    "name": "Insect Commander",
+    "group": "Insect Catching",
+    "slug": "insect-commander",
+    "objective": "Insect Catching Hobby reaches Lv.10.",
+    "reward": "Insect Master"
+  },
+  {
+    "name": "Swarm Commander",
+    "group": "Insect Catching",
+    "slug": "swarm-commander",
+    "objective": "Trigger 100 Swarms in total during Insect Catching Events.",
+    "reward": "Swarm"
+  },
+  {
+    "name": "Insect Harvester",
+    "group": "Insect Catching",
+    "slug": "insect-harvester",
+    "objective": "Catch 3 insects with a single insect-catching bubble.",
+    "reward": "Triple Catch"
+  },
+  {
+    "name": "Insect Catching Party",
+    "group": "Insect Catching",
+    "slug": "insect-catching-party",
+    "objective": "Share Inflatable Insect Attractor with 100 D.G. Members in total.",
+    "reward": "Insect Attractor"
+  },
+  {
+    "name": "Mystic Tracker",
+    "group": "Insect Catching",
+    "slug": "mystic-tracker",
+    "objective": "Trigger the hidden phase in Insect Catching Event 10 times in total.",
+    "reward": "Exploration"
+  },
+  {
+    "name": "Onsen Mountain Insect King",
+    "group": "Insect Catching",
+    "slug": "onsen-mountain-insect-king",
+    "objective": "Obtain all titles in Bait the Insects Events.",
+    "reward": "Insect Catcher"
+  },
+  {
+    "name": "Joyful Chorus",
+    "group": "Birdwatching",
+    "slug": "joyful-chorus",
+    "objective": "Trigger 3 Bird Waves in a single Birdwatching Event.",
+    "reward": "Feather"
+  },
+  {
+    "name": "Bush Wholesaler",
+    "group": "Birdwatching",
+    "slug": "bush-wholesaler",
+    "objective": "Share Camouflage Bush with 100 D.G. Members in total.",
+    "reward": "Recommends"
+  },
+  {
+    "name": "Decisive Moment",
+    "group": "Birdwatching",
+    "slug": "decisive-moment",
+    "objective": "Obtain 10 5-Star Info Cards in a single Birdwatching Event.",
+    "reward": "Moment"
+  },
+  {
+    "name": "Harmony with Breeze",
+    "group": "Birdwatching",
+    "slug": "harmony-with-breeze",
+    "objective": "Trigger 100 Bird Waves in total during Birdwatching Events.",
+    "reward": "Resonance"
+  },
+  {
+    "name": "Bird Whisperer",
+    "group": "Birdwatching",
+    "slug": "bird-whisperer",
+    "objective": "Birdwatching Hobby reaches Lv.10.",
+    "reward": "Bird Whisperer"
+  },
+  {
+    "name": "Cloud Walker",
+    "group": "Birdwatching",
+    "slug": "cloud-walker",
+    "objective": "Trigger the hidden phase of Birdwatching Event 10 times in total.",
+    "reward": "Sky"
+  },
+  {
+    "name": "Party Animal",
+    "group": "Special Hobbies",
+    "slug": "party-animal",
+    "objective": "Party Player Dream reaches Party Animal",
+    "reward": "Player"
+  },
+  {
+    "name": "Sand Sculpture Artist",
+    "group": "Special Hobbies",
+    "slug": "sand-sculpture-artist",
+    "objective": "Sand Sculpting Hobby reaches Lv.5.",
+    "reward": "Sand Sculptor"
+  },
+  {
+    "name": "Pumpkinarchy",
+    "group": "Special Hobbies",
+    "slug": "pumpkinarchy",
+    "objective": "Pumpkin Carving Hobby reaches Lv.5.",
+    "reward": "Pumpkin Head"
+  },
+  {
+    "name": "Idea Hamster",
+    "group": "Special Hobbies",
+    "slug": "idea-hamster",
+    "objective": "Party Artisan Dream reaches Idea Hamster",
+    "reward": "Idea Hamster"
+  },
+  {
+    "name": "Snow King",
+    "group": "Special Hobbies",
+    "slug": "snow-king",
+    "objective": "Snow Sculpting Hobby reaches Lv.5.",
+    "reward": "Snow King"
+  },
+  {
+    "name": "Bestselling Author",
+    "group": "Dreams",
+    "slug": "bestselling-author",
+    "objective": "Reach a cumulative total of 1000 unique purchases for the books you created",
+    "reward": "Bestseller"
+  },
+  {
+    "name": "Golden Music CD",
+    "group": "Dreams",
+    "slug": "golden-music-cd",
+    "objective": "Music Dream reaches Golden Music CD.",
+    "reward": "Music"
+  },
+  {
+    "name": "Ice Elf",
+    "group": "Dreams",
+    "slug": "ice-elf",
+    "objective": "Figure Skating Dream reaches Ice Elf.",
+    "reward": "Ice Skating"
+  },
+  {
+    "name": "Hidden Achievement 1",
+    "group": "Dreams",
+    "slug": "hidden-achievement-1",
+    "objective": "Sell a total of 10 books; each book must be purchased by 200 DIFFERENT players.",
+    "reward": "?"
+  },
+  {
+    "name": "Persistent Quill",
+    "group": "Dreams",
+    "slug": "persistent-quill",
+    "objective": "Writing Dream reaches Master.",
+    "reward": "Writing"
+  },
+  {
+    "name": "Onsen Buddy",
+    "group": "Social",
+    "slug": "onsen-buddy",
+    "objective": "Take an Onsen with friends.",
+    "reward": "Onsen"
+  },
+  {
+    "name": "Romantic Skater",
+    "group": "Social",
+    "slug": "romantic-skater",
+    "objective": "Skate hand-in-hand with a friend under a meteor shower.",
+    "reward": "Pair Skating"
+  },
+  {
+    "name": "Beneath the Meteor Shower",
+    "group": "Social",
+    "slug": "beneath-the-meteor-shower",
+    "objective": "Make a wish under the meteor with friends.",
+    "reward": "Gemini"
+  },
+  {
+    "name": "Logistics Beaver",
+    "group": "Social",
+    "slug": "logistics-beaver",
+    "objective": "Accumulate 5,000 Fresh Sprouts for a team during the Build Challenge.",
+    "reward": "Logistics"
+  },
+  {
+    "name": "Foreman Beaver",
+    "group": "Social",
+    "slug": "foreman-beaver",
+    "objective": "Participated in 4 Build Challenges with works succesfully entering the Exhibition Phase",
+    "reward": "Build"
+  },
+  {
+    "name": "Merge into One",
+    "group": "Social",
+    "slug": "merge-into-one",
+    "objective": "In a Hide & Seek party, stayed possessed as a Mysterious Grimkin for 4 minutes without being found by the Investigative Journalist",
+    "reward": "Hide"
+  },
+  {
+    "name": "Repair Expert",
+    "group": "Social",
+    "slug": "repair-expert",
+    "objective": "Share Repair Kit with 100 D.G. Members in total.",
+    "reward": "Repairs"
+  },
+  {
+    "name": "Bold Grimkin",
+    "group": "Social",
+    "slug": "bold-grimkin",
+    "objective": "In a Hide & Seek Party, while possessing a Mysterious Grimkin, pop 20 Psionic Bubbles",
+    "reward": "Thrilling"
+  },
+  {
+    "name": "Sharpshooter Basics",
+    "group": "Social",
+    "slug": "sharpshooter-basics",
+    "objective": "In a Hide & Seek Party, as an Investigative Journalist, successfully captured Special Photos 2 times in a row",
+    "reward": "Sharpshooter"
+  },
+  {
+    "name": "Quick Draw Starter",
+    "group": "Social",
+    "slug": "quick-draw-starter",
+    "objective": "As a Investigative Journalist in a Hide & Seek Party, discovered 3 Mysterious Grimkins within 60 seconds",
+    "reward": "Quick Draw"
+  },
+  {
+    "name": "Rainbow Messenger",
+    "group": "Social",
+    "slug": "rainbow-messenger",
+    "objective": "Share Rainbow Bouquet with 50 D.G. Members in total.",
+    "reward": "Rainbow Flower"
+  }
+]
