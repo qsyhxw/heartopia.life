@@ -60,6 +60,17 @@
             action: 'Open collectibles',
             color: 'forest'
         },
+        {
+            id: 'items',
+            title: 'Items owned',
+            icon: '🎒',
+            storageKey: 'heartopia.collection.items',
+            total: 23,
+            url: '/database/items/',
+            action: 'Open items database',
+            color: 'violet'
+        },
+
 
         {
             id: 'map',
@@ -80,7 +91,8 @@
         rose: 'bg-cozy-rose/20 border-cozy-rose/50 text-cozy-rose',
         mint: 'bg-cozy-mint/30 border-cozy-mint text-cozy-sage',
         gold: 'bg-amber-100 border-amber-300 text-amber-600',
-        forest: 'bg-emerald-100 border-emerald-300 text-emerald-700'
+        forest: 'bg-emerald-100 border-emerald-300 text-emerald-700',
+        violet: 'bg-violet-100 border-violet-300 text-violet-700'
     };
 
     function readArray(key) {
