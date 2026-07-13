@@ -1,0 +1,1110 @@
+{
+  "schemaVersion": 1,
+  "source": "https://www.heartodex.com/en/",
+  "collections": {
+    "fish": {
+      "registered": 119,
+      "entries": [
+        {
+          "slug": "angelfish",
+          "name": "Angelfish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783727978267-pez-pezangel_2qbiV2.webp"
+        },
+        {
+          "slug": "anglerfish",
+          "name": "Anglerfish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634651534-pez-pez_rape_Z2bqBfF.webp"
+        },
+        {
+          "slug": "arctic-char",
+          "name": "Arctic Char",
+          "imageUrl": "https://www.heartodex.com/_astro/1783689245026-pez-arcticchar_iYrXT.webp"
+        },
+        {
+          "slug": "asian-arowana",
+          "name": "Asian Arowana",
+          "imageUrl": "https://www.heartodex.com/_astro/1783727820420-pez-arowanadorada_Z18H7oO.webp"
+        },
+        {
+          "slug": "atlantic-mackerel",
+          "name": "Atlantic Mackerel",
+          "imageUrl": "https://www.heartodex.com/_astro/1783727251418-pez-atlanticmeckerel_Z1APmnv.webp"
+        },
+        {
+          "slug": "atlantic-pygmy-octopus",
+          "name": "Atlantic Pygmy Octopus",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634954485-pez-pulpopigmeodelatlantico_Z1H7uQD.webp"
+        },
+        {
+          "slug": "atlantic-salmon",
+          "name": "Atlantic Salmon",
+          "imageUrl": "https://www.heartodex.com/_astro/1783726830657-pez-atlanticsalmon_FLOQb.webp"
+        },
+        {
+          "slug": "azure-demoiselle",
+          "name": "Azure Demoiselle",
+          "imageUrl": "https://www.heartodex.com/_astro/1783728115227-pez-pezdamiselaazul_Z9O9AP.webp"
+        },
+        {
+          "slug": "barbel",
+          "name": "Barbel",
+          "imageUrl": "https://www.heartodex.com/_astro/1783726955389-pez-barbel_Z13l0vn.webp"
+        },
+        {
+          "slug": "beltfish",
+          "name": "Beltfish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634223831-pez-pezsable_1zqx5f.webp"
+        },
+        {
+          "slug": "blackspot-seabream",
+          "name": "Blackspot Seabream",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634903006-pez-blackspotseabream_21Ybbc.webp"
+        },
+        {
+          "slug": "blackspot-sergeant",
+          "name": "Blackspot Sergeant",
+          "imageUrl": "https://www.heartodex.com/_astro/1783727949644-pez-pezdamisela_ZkbVms.webp"
+        },
+        {
+          "slug": "blue-and-yellow-wrasse",
+          "name": "Blue-and-Yellow Wrasse",
+          "imageUrl": "https://www.heartodex.com/_astro/1783728127379-pez-lennardi_wrasse_Z1zEs2m.webp"
+        },
+        {
+          "slug": "blue-brick-clownfish",
+          "name": "Blue Brick Clownfish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783727335319-pez-pezpayasodebloquesazules_2hv25s.webp"
+        },
+        {
+          "slug": "blue-european-crayfish",
+          "name": "Blue European Crayfish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783688864423-pez-europeancrayfisblue_boAFK.webp"
+        },
+        {
+          "slug": "bluefin-tuna",
+          "name": "Bluefin Tuna",
+          "imageUrl": "https://www.heartodex.com/_astro/1783689065592-pez-bluefintuna_ZG2gDR.webp"
+        },
+        {
+          "slug": "bluegill",
+          "name": "Bluegill",
+          "imageUrl": "https://www.heartodex.com/_astro/1783726540371-pez-bluegill_PQOvS.webp"
+        },
+        {
+          "slug": "burbot",
+          "name": "Burbot",
+          "imageUrl": "https://www.heartodex.com/_astro/1783727223567-pez-lota_j2rfX.webp"
+        },
+        {
+          "slug": "butterfly-koi",
+          "name": "Butterfly Koi",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634799952-pez-carpa_mariposa_Z25smnb.webp"
+        },
+        {
+          "slug": "chum-salmon",
+          "name": "Chum Salmon",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634851298-pez-chumsalmon_28UXit.webp"
+        },
+        {
+          "slug": "clownfish",
+          "name": "Clownfish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634808787-pez-pezpayaso_Z2qjETy.webp"
+        },
+        {
+          "slug": "colorful-brick-clownfish",
+          "name": "Colorful Brick Clownfish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783727750119-pez-pespayasodebloquescolorados_1cp4Sj.webp"
+        },
+        {
+          "slug": "common-bleak",
+          "name": "Common Bleak",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634160714-pez-alburno_com%C3%A3%C2%BAn_ZqmMjG.webp"
+        },
+        {
+          "slug": "common-carp",
+          "name": "Common Carp",
+          "imageUrl": "https://www.heartodex.com/_astro/1783726868510-pez-common_carp_ZdLuxD.webp"
+        },
+        {
+          "slug": "common-chub",
+          "name": "Common Chub",
+          "imageUrl": "https://www.heartodex.com/_astro/1783633690088-pez-cachoeuropeo_ZFKR6N.webp"
+        },
+        {
+          "slug": "common-octopus",
+          "name": "Common Octopus",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634706841-pez-pulpocomun_Z1HHq5A.webp"
+        },
+        {
+          "slug": "common-prawn",
+          "name": "Common Prawn",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634238218-pez-camaronmarino_Z1jkAGx.webp"
+        },
+        {
+          "slug": "common-rudd",
+          "name": "Common Rudd",
+          "imageUrl": "https://www.heartodex.com/_astro/1783727242468-pez-rutilo_1S2A1E.webp"
+        },
+        {
+          "slug": "common-whitefish",
+          "name": "Common Whitefish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634104996-pez-coregono_blanco_Z1ORayN.webp"
+        },
+        {
+          "slug": "crucian-carp",
+          "name": "Crucian Carp",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634117884-pez-carpa_cruciana_ZNNFwe.webp"
+        },
+        {
+          "slug": "director-common-octopus-w-cinnamon-hat",
+          "name": "Director Common Octopus w/ Cinnamon Hat",
+          "imageUrl": "https://www.heartodex.com/_astro/1783727268562-pez-pulposombrerodirmarron_ZEUlzL.webp"
+        },
+        {
+          "slug": "director-common-octopus-w-patterned-hat",
+          "name": "Director Common Octopus w/ Patterned Hat",
+          "imageUrl": "https://www.heartodex.com/_astro/1783727328428-pez-pulpoconsobrerodirector_1AK5U8.webp"
+        },
+        {
+          "slug": "director-pygmy-octopus-w-brown-hat",
+          "name": "Director Pygmy Octopus w/ Brown Hat",
+          "imageUrl": "https://www.heartodex.com/_astro/1783727282290-pez-pigmeo2_ZyMVWo.webp"
+        },
+        {
+          "slug": "director-pygmy-octopus-w-cyan-hat",
+          "name": "Director Pygmy Octopus w/ Cyan Hat",
+          "imageUrl": "https://www.heartodex.com/_astro/1783727275437-pez-pigmeo3_Z1vgoWr.webp"
+        },
+        {
+          "slug": "director-pygmy-octopus-w-navy-hat",
+          "name": "Director Pygmy Octopus w/ Navy Hat",
+          "imageUrl": "https://www.heartodex.com/_astro/1783727288533-pez-pigmeo1_Z1qraX1.webp"
+        },
+        {
+          "slug": "edible-frog",
+          "name": "Edible Frog",
+          "imageUrl": "https://www.heartodex.com/_astro/1783633678615-pez-rana_europea_Z1qB9KP.webp"
+        },
+        {
+          "slug": "european-crayfish",
+          "name": "European Crayfish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634695329-pez-cigala_noruega_Z2cPHTK.webp"
+        },
+        {
+          "slug": "european-eel",
+          "name": "European Eel",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634911392-pez-europeaneel_22mOJz.webp"
+        },
+        {
+          "slug": "european-flying-squid",
+          "name": "European Flying Squid",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634772678-pez-calamarvolador_Z1Kt1Ek.webp"
+        },
+        {
+          "slug": "european-lobster",
+          "name": "European Lobster",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634763272-pez-langosta_europea_Z2dXf7A.webp"
+        },
+        {
+          "slug": "european-mudminnow",
+          "name": "European Mudminnow",
+          "imageUrl": "https://www.heartodex.com/_astro/1783688990000-pez-europeanmudminnow_Z2uNVrX.webp"
+        },
+        {
+          "slug": "european-perch",
+          "name": "European Perch",
+          "imageUrl": "https://www.heartodex.com/_astro/1783633666702-pez-percaderio_Z2i7bOA.webp"
+        },
+        {
+          "slug": "european-plaice",
+          "name": "European Plaice",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634748402-pez-platijaeuropea_ZjSTMn.webp"
+        },
+        {
+          "slug": "european-smelt",
+          "name": "European Smelt",
+          "imageUrl": "https://www.heartodex.com/_astro/1783635029094-pez-eperlano_ZOgL0o.webp"
+        },
+        {
+          "slug": "false-scad",
+          "name": "False Scad",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634393790-pez-jurel_real_ZK9LAS.webp"
+        },
+        {
+          "slug": "firefly-squid",
+          "name": "Firefly Squid",
+          "imageUrl": "https://www.heartodex.com/_astro/1783796954861-pez-calamarluciernaga_294B1P.webp"
+        },
+        {
+          "slug": "flatback-turtle",
+          "name": "Flatback Turtle",
+          "imageUrl": "https://www.heartodex.com/_astro/1783796981664-pez-tortugaplana_ZJrjvx.webp"
+        },
+        {
+          "slug": "freshwater-blenny",
+          "name": "Freshwater Blenny",
+          "imageUrl": "https://www.heartodex.com/_astro/1783727232586-pez-blenidoderio_22L5NQ.webp"
+        },
+        {
+          "slug": "frostspore-king-crab",
+          "name": "Frostspore King Crab",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634982183-pez-frostkingcrab_q4zFe.webp"
+        },
+        {
+          "slug": "frostspore-ocean-sunfish",
+          "name": "Frostspore Ocean Sunfish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783726602394-pez-forstspore_Z1mOEGO.webp"
+        },
+        {
+          "slug": "frostspore-puffer-fish",
+          "name": "Frostspore Puffer Fish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783726618862-pez-frostsporepufferfish_ZW6FfK.webp"
+        },
+        {
+          "slug": "frostspore-seahorse",
+          "name": "Frostspore Seahorse",
+          "imageUrl": "https://www.heartodex.com/_astro/1783726631856-pez-frostsporeseahorse_17cBBe.webp"
+        },
+        {
+          "slug": "frostspore-whale-shark",
+          "name": "Frostspore Whale Shark",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634825740-pez-frostwhaleshark_Z28frvd.webp"
+        },
+        {
+          "slug": "giant-oarfish",
+          "name": "Giant Oarfish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783688776947-pez-giant_oarfish_13brPG.webp"
+        },
+        {
+          "slug": "goby",
+          "name": "Goby",
+          "imageUrl": "https://www.heartodex.com/_astro/1783726847255-pez-goby_ZUG1qh.webp"
+        },
+        {
+          "slug": "golden-king-crab",
+          "name": "Golden King Crab",
+          "imageUrl": "https://www.heartodex.com/_astro/1783689009820-pez-golden_king_crab_Z2fIraH.webp"
+        },
+        {
+          "slug": "goldfish",
+          "name": "Goldfish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783689023360-pez-goldfish_joNqY.webp"
+        },
+        {
+          "slug": "grayling",
+          "name": "Grayling",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634858873-pez-grayling_Z2fw88h.webp"
+        },
+        {
+          "slug": "green-brick-clownfish",
+          "name": "Green Brick Clownfish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783727346164-pez-pezpayasodebloquesverdes_2toIa5.webp"
+        },
+        {
+          "slug": "green-sea-turtle",
+          "name": "Green Sea Turtle",
+          "imageUrl": "https://www.heartodex.com/_astro/1783728027408-pez-tortugamarinaverde_uQQbU.webp"
+        },
+        {
+          "slug": "haddock",
+          "name": "Haddock",
+          "imageUrl": "https://www.heartodex.com/_astro/1783689052572-pez-haddock_Z1MEXdS.webp"
+        },
+        {
+          "slug": "hermit-crab",
+          "name": "Hermit Crab",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634790807-pez-cangrejoerminato_L4QB3.webp"
+        },
+        {
+          "slug": "huchen",
+          "name": "Huchen",
+          "imageUrl": "https://www.heartodex.com/_astro/1783689169654-pez-huchen_Z1nUYsI.webp"
+        },
+        {
+          "slug": "japanese-flying-squid",
+          "name": "Japanese Flying Squid",
+          "imageUrl": "https://www.heartodex.com/_astro/1783796835646-pez-calamardelpacifico_Z1Pz3tc.webp"
+        },
+        {
+          "slug": "king-crab",
+          "name": "King Crab",
+          "imageUrl": "https://www.heartodex.com/_astro/1783726582012-pez-king_crab_Z1RTHUG.webp"
+        },
+        {
+          "slug": "large-pearl-mussel",
+          "name": "Large Pearl Mussel",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634874027-pez-large_pearl_mussel_1XrvSu.webp"
+        },
+        {
+          "slug": "largemouth-bass",
+          "name": "Largemouth Bass",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634730324-pez-lobina_de_florida_Z1SSVco.webp"
+        },
+        {
+          "slug": "lionfish",
+          "name": "Lionfish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783728196162-pez-pezleon_Z3g3H9.webp"
+        },
+        {
+          "slug": "lionhead",
+          "name": "Lionhead",
+          "imageUrl": "https://www.heartodex.com/_astro/1783727366869-pez-pezdoradodecabeza_91fli.webp"
+        },
+        {
+          "slug": "mahi-mahi",
+          "name": "Mahi-Mahi",
+          "imageUrl": "https://www.heartodex.com/_astro/1783728042946-pez-dorado_23y7tV.webp"
+        },
+        {
+          "slug": "mandarin-fish",
+          "name": "Mandarin Fish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783796758378-pez-pezmandarin_Z1w1ORT.webp"
+        },
+        {
+          "slug": "mediterranean-killifish",
+          "name": "Mediterranean Killifish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783688805128-pez-mediterranean_killifish_bvmP9.webp"
+        },
+        {
+          "slug": "minnow",
+          "name": "Minnow",
+          "imageUrl": "https://www.heartodex.com/_astro/1783726706957-pez-minnow_ZpY1Go.webp"
+        },
+        {
+          "slug": "moon-jelly",
+          "name": "Moon Jelly",
+          "imageUrl": "https://www.heartodex.com/_astro/1783728007920-pez-medusa_aurita_ZvnWh9.webp"
+        },
+        {
+          "slug": "moonfish",
+          "name": "Moonfish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783689191562-pez-moonfish_1B4MQJ.webp"
+        },
+        {
+          "slug": "mottled-sculpin",
+          "name": "Mottled Sculpin",
+          "imageUrl": "https://www.heartodex.com/_astro/1783688832381-pez-mottled_sculpin_Z1H7tQ8.webp"
+        },
+        {
+          "slug": "mud-sunfish",
+          "name": "Mud Sunfish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783635019254-pez-pezlunadelodo_1LWYKy.webp"
+        },
+        {
+          "slug": "mussel",
+          "name": "Mussel",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634666653-pez-mejillon_1zcQ4q.webp"
+        },
+        {
+          "slug": "northern-pike",
+          "name": "Northern Pike",
+          "imageUrl": "https://www.heartodex.com/_astro/1783689202353-pez-northernpike_2uxBUm.webp"
+        },
+        {
+          "slug": "nursehound",
+          "name": "Nursehound",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634815580-pez-tiburongato_1HPV6h.webp"
+        },
+        {
+          "slug": "ocean-sunfish",
+          "name": "Ocean Sunfish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783689214208-pez-oceansunfish_jiKxL.webp"
+        },
+        {
+          "slug": "oliver-ridley-turtle",
+          "name": "Oliver Ridley Turtle",
+          "imageUrl": "https://www.heartodex.com/_astro/1783797002978-pez-turtugacareydelpacifico_ZBosw4.webp"
+        },
+        {
+          "slug": "oriental-shrimp",
+          "name": "Oriental Shrimp",
+          "imageUrl": "https://www.heartodex.com/_astro/1783633708023-pez-camaronazul_1n3xaa.webp"
+        },
+        {
+          "slug": "pink-betta",
+          "name": "Pink Betta",
+          "imageUrl": "https://www.heartodex.com/_astro/1783727967130-pez-pezluchador_1k74tV.webp"
+        },
+        {
+          "slug": "puffer-fish",
+          "name": "Puffer Fish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634883778-pez-pufferfish_Z27ahe3.webp"
+        },
+        {
+          "slug": "pumpkinseed",
+          "name": "Pumpkinseed",
+          "imageUrl": "https://www.heartodex.com/_astro/1783689232933-pez-pumpkinseed_1cBBUy.webp"
+        },
+        {
+          "slug": "purple-brick-clownfish",
+          "name": "Purple Brick Clownfish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783727354870-pez-pezpayasodebloquesmorado_1U3m6i.webp"
+        },
+        {
+          "slug": "rabbit-fish",
+          "name": "Rabbit Fish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634321868-pez-quimeradelatlantico_2tOjI0.webp"
+        },
+        {
+          "slug": "red-bellied-piranha",
+          "name": "Red-Bellied Piranha",
+          "imageUrl": "https://www.heartodex.com/_astro/1783726855783-pez-redbelliedpirana_ZjbRMy.webp"
+        },
+        {
+          "slug": "red-brick-clownfish",
+          "name": "Red Brick Clownfish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783727340980-pez-pezpayasodebloquesrojos_Z1K2ekB.webp"
+        },
+        {
+          "slug": "river-crab",
+          "name": "River Crab",
+          "imageUrl": "https://www.heartodex.com/_astro/1783727215156-pez-cangrjeodearroyo_Znwsyw.webp"
+        },
+        {
+          "slug": "ruffe",
+          "name": "Ruffe",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634384785-pez-percaruffe_el4fq.webp"
+        },
+        {
+          "slug": "sardine",
+          "name": "Sardine",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634185333-pez-sardina_Z18FchI.webp"
+        },
+        {
+          "slug": "scad",
+          "name": "Scad",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634258987-pez-jureljapones_1Xw8Dg.webp"
+        },
+        {
+          "slug": "scallop",
+          "name": "Scallop",
+          "imageUrl": "https://www.heartodex.com/_astro/1783795703440-pez-vieira_Z1iof7t.webp"
+        },
+        {
+          "slug": "schneider",
+          "name": "Schneider",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634171828-pez-albuerno_binoculado_Z2dCWu3.webp"
+        },
+        {
+          "slug": "sea-bass",
+          "name": "Sea Bass",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634200292-pez-lubina_marina_Z1BBBVo.webp"
+        },
+        {
+          "slug": "sea-slug",
+          "name": "Sea Slug",
+          "imageUrl": "https://www.heartodex.com/_astro/1783796787211-pez-nudibranquio_Z1noaW8.webp"
+        },
+        {
+          "slug": "sea-stickleback",
+          "name": "Sea Stickleback",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634296080-pez-espinosodemar_2wKCX5.webp"
+        },
+        {
+          "slug": "seahorse",
+          "name": "Seahorse",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634468425-pez-caballitodemar_2vEkvP.webp"
+        },
+        {
+          "slug": "shortfin-mako-shark",
+          "name": "Shortfin Mako Shark",
+          "imageUrl": "https://www.heartodex.com/_astro/1783726549671-pez-tiburonmako_Z1tGgIl.webp"
+        },
+        {
+          "slug": "skipjack-tuna",
+          "name": "Skipjack Tuna",
+          "imageUrl": "https://www.heartodex.com/_astro/1783632293216-pez-listado_Z23RocD.webp"
+        },
+        {
+          "slug": "smooth-hammerhead",
+          "name": "Smooth Hammerhead",
+          "imageUrl": "https://www.heartodex.com/_astro/1783726591973-pez-tiburonmartillo_2kvmdx.webp"
+        },
+        {
+          "slug": "spined-loach",
+          "name": "Spined Loach",
+          "imageUrl": "https://www.heartodex.com/_astro/1783632543940-pez-locha_moteada_xDD7u.webp"
+        },
+        {
+          "slug": "stone-loach",
+          "name": "Stone Loach",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634350391-pez-locha_china_NxO8S.webp"
+        },
+        {
+          "slug": "streber",
+          "name": "Streber",
+          "imageUrl": "https://www.heartodex.com/_astro/1783726924428-pez-percadoradamanchada_1eky0X.webp"
+        },
+        {
+          "slug": "striped-red-mullet",
+          "name": "Striped Red Mullet",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634310308-pez-salmon_listado_Z2qF91n.webp"
+        },
+        {
+          "slug": "swordfish",
+          "name": "Swordfish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783726560250-pez-pez_espada_lyuLG.webp"
+        },
+        {
+          "slug": "tadpole",
+          "name": "Tadpole",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634673378-pez-renacuajo_ZQUOBV.webp"
+        },
+        {
+          "slug": "tench",
+          "name": "Tench",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634088717-pez-tenca_1Pf6FG.webp"
+        },
+        {
+          "slug": "three-spined-stickleback",
+          "name": "Three-Spined Stickleback",
+          "imageUrl": "https://www.heartodex.com/_astro/1783688855371-pez-threespinded_ZuMYzG.webp"
+        },
+        {
+          "slug": "tilapia",
+          "name": "Tilapia",
+          "imageUrl": "https://www.heartodex.com/_astro/1783726992219-pez-tilapia_Zmxsit.webp"
+        },
+        {
+          "slug": "trout",
+          "name": "Trout",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634755201-pez-trucha_1CKjSJ.webp"
+        },
+        {
+          "slug": "tub-gurnard",
+          "name": "Tub Gurnard",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634894433-pez-pezrubio_Z1S3klQ.webp"
+        },
+        {
+          "slug": "turbot",
+          "name": "Turbot",
+          "imageUrl": "https://www.heartodex.com/_astro/1783634973771-pez-rodaballo_ZTQUi9.webp"
+        },
+        {
+          "slug": "wels-catfish",
+          "name": "Wels Catfish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783726574870-pez-welscatfish_25NjDW.webp"
+        },
+        {
+          "slug": "whale-shark",
+          "name": "Whale Shark",
+          "imageUrl": "https://www.heartodex.com/_astro/1783727958692-pez-tiburonballena_Z8joDU.webp"
+        },
+        {
+          "slug": "white-faced-surgeonfish",
+          "name": "White-Faced Surgeonfish",
+          "imageUrl": "https://www.heartodex.com/_astro/1783728051042-pez-cirujano_aleta_amarilla_WLKLR.webp"
+        },
+        {
+          "slug": "zander",
+          "name": "Zander",
+          "imageUrl": "https://www.heartodex.com/_astro/1783726947168-pez-zander_Z2wKVzj.webp"
+        }
+      ],
+      "localCount": 119,
+      "pendingReview": {
+        "remoteAdded": [],
+        "localOnly": []
+      }
+    },
+    "birds": {
+      "registered": 97,
+      "entries": [
+        {
+          "slug": "african-olive-pigeon",
+          "name": "African Olive Pigeon",
+          "imageUrl": "https://www.heartodex.com/_astro/1771629662877-pigeon-a-yeux-jaunes_Z22RayK.webp"
+        },
+        {
+          "slug": "american-flamingo",
+          "name": "American Flamingo",
+          "imageUrl": "https://www.heartodex.com/_astro/1772155756327-american_flamingo_1YBrjJ.webp"
+        },
+        {
+          "slug": "amur-falcon",
+          "name": "Amur Falcon",
+          "imageUrl": "https://www.heartodex.com/_astro/1772157838888-amur_falcon_23Hl0K.webp"
+        },
+        {
+          "slug": "atlantic-puffin",
+          "name": "Atlantic Puffin",
+          "imageUrl": "https://www.heartodex.com/_astro/1778894168121-ave-frailecillo_%C3%A3%C2%A1rtico_ZzkOld.webp"
+        },
+        {
+          "slug": "audouins-gull",
+          "name": "Audouin’s Gull",
+          "imageUrl": "https://www.heartodex.com/_astro/1770760428846-goeland-d-audouin_ZoMi6K.webp"
+        },
+        {
+          "slug": "azores-bullfinch",
+          "name": "Azores Bullfinch",
+          "imageUrl": "https://www.heartodex.com/_astro/1772157985429-2026-02-15_02_53_19-azores_bullfinch.png_ZGxiC.webp"
+        },
+        {
+          "slug": "azure-tit",
+          "name": "Azure Tit",
+          "imageUrl": "https://www.heartodex.com/_astro/1773076791765-azure_tit_1hYYWS.webp"
+        },
+        {
+          "slug": "baikal-teal",
+          "name": "Baikal Teal",
+          "imageUrl": "https://www.heartodex.com/_astro/1778893162962-ave-cerceta_del_baikal_Z2aGJ2K.webp"
+        },
+        {
+          "slug": "bearded-reedling",
+          "name": "Bearded Reedling",
+          "imageUrl": "https://www.heartodex.com/_astro/1770758269623-panure-a-moustaches_sAvP.webp"
+        },
+        {
+          "slug": "black-peafowl",
+          "name": "Black Peafowl",
+          "imageUrl": "https://www.heartodex.com/_astro/1778894748150-ave-pavo_real_negro_nIcpU.webp"
+        },
+        {
+          "slug": "black-stork",
+          "name": "Black Stork",
+          "imageUrl": "https://www.heartodex.com/_astro/1778894811237-ave-cig%C3%A3%C2%BCe%C3%A3%C2%B1a_negra_Z1FQ5sd.webp"
+        },
+        {
+          "slug": "black-swan",
+          "name": "Black Swan",
+          "imageUrl": "https://www.heartodex.com/_astro/1778894656640-ave-cisne_negro_Z2w2z0a.webp"
+        },
+        {
+          "slug": "blue-and-yellow-macaw",
+          "name": "Blue-and-yellow Macaw",
+          "imageUrl": "https://www.heartodex.com/_astro/1770755076990-ara-bleu-et-jaune_Z1MseRn.webp"
+        },
+        {
+          "slug": "blue-brick-sparrow",
+          "name": "Blue Brick Sparrow",
+          "imageUrl": "https://www.heartodex.com/_astro/1778943996654-ave-2026-05-16_10_51_24-heartopia_1nc7QL.webp"
+        },
+        {
+          "slug": "blue-footed-booby",
+          "name": "Blue-Footed Booby",
+          "imageUrl": "https://www.heartodex.com/_astro/1778894334026-ave-piquero_patiazul_Z2qI4Xp.webp"
+        },
+        {
+          "slug": "blue-headed-quail-dove",
+          "name": "Blue-Headed Quail-Dove",
+          "imageUrl": "https://www.heartodex.com/_astro/1778893338536-ave-paloma_perdiz_Z1ingzL.webp"
+        },
+        {
+          "slug": "blue-peafowl",
+          "name": "Blue Peafowl",
+          "imageUrl": "https://www.heartodex.com/_astro/1770756268377-paon-bleu_Z13UOAE.webp"
+        },
+        {
+          "slug": "blue-suit-dove",
+          "name": "Blue Suit Dove",
+          "imageUrl": "https://www.heartodex.com/_astro/1774722797717-palomacaballeroazul_VU6Jk.webp"
+        },
+        {
+          "slug": "brown-noddy",
+          "name": "Brown Noddy",
+          "imageUrl": "https://www.heartodex.com/_astro/1772150323313-sterne-blanche_Zj9ghX.webp"
+        },
+        {
+          "slug": "chestnut-cheeked-starling",
+          "name": "Chestnut-Cheeked Starling",
+          "imageUrl": "https://www.heartodex.com/_astro/1778893179822-ave-estornino_carirrojo_ThaV8.webp"
+        },
+        {
+          "slug": "cinnamon-ground-dove",
+          "name": "Cinnamon Ground Dove",
+          "imageUrl": "https://www.heartodex.com/_astro/1773077287237-cinnamon_ground_dove_1iS1Me.webp"
+        },
+        {
+          "slug": "colorful-brick-sparrow",
+          "name": "Colorful Brick Sparrow",
+          "imageUrl": "https://www.heartodex.com/_astro/1778943981169-ave-2026-05-16_10_51_42-heartopia_1cDemF.webp"
+        },
+        {
+          "slug": "common-kestrel",
+          "name": "Common Kestrel",
+          "imageUrl": "https://www.heartodex.com/_astro/1773077299521-coomon_kestrel_1mLTsO.webp"
+        },
+        {
+          "slug": "double-barred-finch",
+          "name": "Double-Barred Finch",
+          "imageUrl": "https://www.heartodex.com/_astro/1772163166507-diamant-mandarin_Zb6Mlk.webp"
+        },
+        {
+          "slug": "eagle-owl",
+          "name": "Eagle-Owl",
+          "imageUrl": "https://www.heartodex.com/_astro/1771133134752-eagle-owl_Zq6HOO.webp"
+        },
+        {
+          "slug": "eastern-bluebird",
+          "name": "Eastern Bluebird",
+          "imageUrl": "https://www.heartodex.com/_astro/1773504893824-eastern_bluebird_ZFON02.webp"
+        },
+        {
+          "slug": "eurasian-bullfinch",
+          "name": "Eurasian Bullfinch",
+          "imageUrl": "https://www.heartodex.com/_astro/1770752907021-camachuelodevientreroojo_b9szX.webp"
+        },
+        {
+          "slug": "eurasian-chaffinch",
+          "name": "Eurasian Chaffinch",
+          "imageUrl": "https://www.heartodex.com/_astro/1770754855137-fringilla-coelebs_Z1d3XAJ.webp"
+        },
+        {
+          "slug": "eurasian-collared-dove",
+          "name": "Eurasian Collared Dove",
+          "imageUrl": "https://www.heartodex.com/_astro/1770755599752-tourterelle-grise_Z1AkFgc.webp"
+        },
+        {
+          "slug": "eurasian-golden-oriole",
+          "name": "Eurasian Golden Oriole",
+          "imageUrl": "https://www.heartodex.com/_astro/1770759965616-golden-oriole_D2B51.webp"
+        },
+        {
+          "slug": "eurasian-nuthatch",
+          "name": "Eurasian Nuthatch",
+          "imageUrl": "https://www.heartodex.com/_astro/1770758103120-stitelle_Z1TQkn0.webp"
+        },
+        {
+          "slug": "eurasian-wigeon",
+          "name": "Eurasian Wigeon",
+          "imageUrl": "https://www.heartodex.com/_astro/1770759521081-canard-siffleur_8uSy4.webp"
+        },
+        {
+          "slug": "eurasian-wren",
+          "name": "Eurasian Wren",
+          "imageUrl": "https://www.heartodex.com/_astro/1770696612030-troglodita_2l1yLr.webp"
+        },
+        {
+          "slug": "european-bee-eater",
+          "name": "European Bee-Eater",
+          "imageUrl": "https://www.heartodex.com/_astro/1771630147919-2026-02-15_02_54_34-european_bee-eater.png_1pUvCz.webp"
+        },
+        {
+          "slug": "european-robin",
+          "name": "European Robin",
+          "imageUrl": "https://www.heartodex.com/_astro/1770696185062-europeanrobin_Z2i4yJd.webp"
+        },
+        {
+          "slug": "european-shag",
+          "name": "European Shag",
+          "imageUrl": "https://www.heartodex.com/_astro/1770760524252-cormoran-vert-europeen_lYVuO.webp"
+        },
+        {
+          "slug": "gray-suit-dove",
+          "name": "Gray Suit Dove",
+          "imageUrl": "https://www.heartodex.com/_astro/1774722987431-palomacaballerogris_Zti6HF.webp"
+        },
+        {
+          "slug": "great-green-macaw",
+          "name": "Great Green Macaw",
+          "imageUrl": "https://www.heartodex.com/_astro/1771630843404-grand-ara-vert_Z117CqV.webp"
+        },
+        {
+          "slug": "great-tit",
+          "name": "Great Tit",
+          "imageUrl": "https://www.heartodex.com/_astro/1770696399726-gran_foto_Z1sBxNC.webp"
+        },
+        {
+          "slug": "greater-flamingo",
+          "name": "Greater Flamingo",
+          "imageUrl": "https://www.heartodex.com/_astro/1770756130899-grand-flamant_BmBpd.webp"
+        },
+        {
+          "slug": "green-brick-sparrow",
+          "name": "Green Brick Sparrow",
+          "imageUrl": "https://www.heartodex.com/_astro/1778943987062-ave-2026-05-16_10_51_31-heartopia_Z1F7RS9.webp"
+        },
+        {
+          "slug": "green-peafowl",
+          "name": "Green Peafowl",
+          "imageUrl": "https://www.heartodex.com/_astro/1773770536813-green_peafowl_Z1HpaVj.webp"
+        },
+        {
+          "slug": "green-suit-dove",
+          "name": "Green Suit Dove",
+          "imageUrl": "https://www.heartodex.com/_astro/1774722673705-palomacaballeroverde_1zfyon.webp"
+        },
+        {
+          "slug": "grey-mantled-albatross",
+          "name": "Grey-mantled Albatross",
+          "imageUrl": "https://www.heartodex.com/_astro/1783799896564-ave-albatrostiznado_a8pfz.webp"
+        },
+        {
+          "slug": "hawfinch",
+          "name": "Hawfinch",
+          "imageUrl": "https://www.heartodex.com/_astro/1772150193509-hawfinch_QQIIT.webp"
+        },
+        {
+          "slug": "imperial-shag",
+          "name": "Imperial Shag",
+          "imageUrl": "https://www.heartodex.com/_astro/1772156859501-2026-02-15_02_55_00-imperial_shag.png_Z1e8iBq.webp"
+        },
+        {
+          "slug": "inca-tern",
+          "name": "Inca Tern",
+          "imageUrl": "https://www.heartodex.com/_astro/1778893527110-ave-charr%C3%A3%C2%A1n_inca_9HrFB.webp"
+        },
+        {
+          "slug": "jambu-fruit-dove",
+          "name": "Jambu Fruit Dove",
+          "imageUrl": "https://www.heartodex.com/_astro/1772151765838-jambu_fruit_dove_2tpIIv.webp"
+        },
+        {
+          "slug": "king-eider",
+          "name": "King Eider",
+          "imageUrl": "https://www.heartodex.com/_astro/1770760336123-eider-royal_18Rq5T.webp"
+        },
+        {
+          "slug": "lady-amherst-pheasant",
+          "name": "Lady Amherst Pheasant",
+          "imageUrl": "https://www.heartodex.com/_astro/1771132378827-faisa_de_amherst_Adf3m.webp"
+        },
+        {
+          "slug": "lears-macaw",
+          "name": "Lear's Macaw",
+          "imageUrl": "https://www.heartodex.com/_astro/1773076797955-2026-02-15_02_59_26-lears_macaw.png_Z1KTFf.webp"
+        },
+        {
+          "slug": "lesser-flamingo",
+          "name": "Lesser Flamingo",
+          "imageUrl": "https://www.heartodex.com/_astro/1771630938451-petit-flamand_DwpQC.webp"
+        },
+        {
+          "slug": "long-eared-owl",
+          "name": "Long Eared Owl",
+          "imageUrl": "https://www.heartodex.com/_astro/1772759933040-buho_chico_EpREn.webp"
+        },
+        {
+          "slug": "long-tailed-tit",
+          "name": "Long-Tailed Tit",
+          "imageUrl": "https://www.heartodex.com/_astro/1770757909608-aegithalos-caudatus_1f70qO.webp"
+        },
+        {
+          "slug": "mallard",
+          "name": "Mallard",
+          "imageUrl": "https://www.heartodex.com/_astro/1770757638029-canard-colvert_Z1e1Tgd.webp"
+        },
+        {
+          "slug": "paradise-tanager",
+          "name": "Paradise Tanager",
+          "imageUrl": "https://www.heartodex.com/_astro/1772157378777-paradise_tanager_Z1f5o4R.webp"
+        },
+        {
+          "slug": "peregrine-falcon",
+          "name": "Peregrine Falcon",
+          "imageUrl": "https://www.heartodex.com/_astro/1773503283802-peregrine_falcon_ZXJfl9.webp"
+        },
+        {
+          "slug": "pied-imperial-pigeon",
+          "name": "Pied Imperial Pigeon",
+          "imageUrl": "https://www.heartodex.com/_astro/1770755859180-tourterelle-tigrine_Z1K0wv6.webp"
+        },
+        {
+          "slug": "pine-grosbeak",
+          "name": "Pine Grosbeak",
+          "imageUrl": "https://www.heartodex.com/_astro/1771624519485-pinson_Z1lzp5p.webp"
+        },
+        {
+          "slug": "pink-brick-sparrow",
+          "name": "Pink Brick Sparrow",
+          "imageUrl": "https://www.heartodex.com/_astro/1778944004062-ave-2026-05-16_10_51_16-heartopia_1qVmTq.webp"
+        },
+        {
+          "slug": "pink-necked-green-pigeon",
+          "name": "Pink-Necked Green Pigeon",
+          "imageUrl": "https://www.heartodex.com/_astro/1770759327099-colombar-a-cou-rose_ZnubtN.webp"
+        },
+        {
+          "slug": "pink-pigeon",
+          "name": "Pink Pigeon",
+          "imageUrl": "https://www.heartodex.com/_astro/1773502609254-pink_pigeon_Z1uxIsT.webp"
+        },
+        {
+          "slug": "pomarine-skua",
+          "name": "Pomarine Skua",
+          "imageUrl": "https://www.heartodex.com/_astro/1783799817402-ave-pagalo_pomarino_cLSpm.webp"
+        },
+        {
+          "slug": "przevalskis-parrotbill",
+          "name": "Przevalski's Parrotbill",
+          "imageUrl": "https://www.heartodex.com/_astro/1771624581634-cardinal-a-couronne-grise_25PhO6.webp"
+        },
+        {
+          "slug": "purple-brick-sparrow",
+          "name": "Purple Brick Sparrow",
+          "imageUrl": "https://www.heartodex.com/_astro/1778943983835-ave-2026-05-16_10_51_36-heartopia_1AOtth.webp"
+        },
+        {
+          "slug": "red-and-green-macaw",
+          "name": "Red-and-green Macaw",
+          "imageUrl": "https://www.heartodex.com/_astro/1772162868165-ara-rouge-et-vert_1WefQ.webp"
+        },
+        {
+          "slug": "red-browed-finch",
+          "name": "Red-Browed Finch",
+          "imageUrl": "https://www.heartodex.com/_astro/1778894267606-ave-diamante_cejirrojo_Z1soUA5.webp"
+        },
+        {
+          "slug": "red-faced-cormorant",
+          "name": "Red Faced Cormorant",
+          "imageUrl": "https://www.heartodex.com/_astro/1772158785645-red_faced_ZDwT62.webp"
+        },
+        {
+          "slug": "red-suit-dove",
+          "name": "Red Suit Dove",
+          "imageUrl": "https://www.heartodex.com/_astro/1774723157882-palomacaballeroroja_mM8IS.webp"
+        },
+        {
+          "slug": "redpoll",
+          "name": "Redpoll",
+          "imageUrl": "https://www.heartodex.com/_astro/1773505154790-redpolis_10f2IJ.webp"
+        },
+        {
+          "slug": "regent-bowerbird",
+          "name": "Regent Bowerbird",
+          "imageUrl": "https://www.heartodex.com/_astro/1771624643332-jardinier-a-tete-jaune_Z21F551.webp"
+        },
+        {
+          "slug": "ruddy-shelduck",
+          "name": "Ruddy Shelduck",
+          "imageUrl": "https://www.heartodex.com/_astro/1770760249148-tadorne-casarca_Z1kj39J.webp"
+        },
+        {
+          "slug": "seagull",
+          "name": "Seagull",
+          "imageUrl": "https://www.heartodex.com/_astro/1770759789107-mouette_ZhDnRy.webp"
+        },
+        {
+          "slug": "silver-throated-tit",
+          "name": "Silver-Throated Tit",
+          "imageUrl": "https://www.heartodex.com/_astro/1770760120242-mesange-a-menton-argent_1nVpuE.webp"
+        },
+        {
+          "slug": "smew",
+          "name": "Smew",
+          "imageUrl": "https://www.heartodex.com/_astro/1773503237751-smew_JYbrx.webp"
+        },
+        {
+          "slug": "snowy-owl",
+          "name": "Snowy Owl",
+          "imageUrl": "https://www.heartodex.com/_astro/1778894500559-ave-b%C3%A3%C2%BAho_nival_Z8WV8o.webp"
+        },
+        {
+          "slug": "spectacled-owl",
+          "name": "Spectacled Owl",
+          "imageUrl": "https://www.heartodex.com/_astro/1778894979267-ave-lechuz%C3%A3%C2%B3n_de_anteojos_E3V14.webp"
+        },
+        {
+          "slug": "stock-dove",
+          "name": "Stock Dove",
+          "imageUrl": "https://www.heartodex.com/_astro/1770755425193-pigeon-colombin_ZX8DcH.webp"
+        },
+        {
+          "slug": "striped-suit-dove",
+          "name": "Striped Suit Dove",
+          "imageUrl": "https://www.heartodex.com/_astro/1774723331302-palomacaballeromulticolor_ZzS2PH.webp"
+        },
+        {
+          "slug": "tern",
+          "name": "Tern",
+          "imageUrl": "https://www.heartodex.com/_astro/1773077320789-tern_VwIXT.webp"
+        },
+        {
+          "slug": "verditer-flycatcher",
+          "name": "Verditer Flycatcher",
+          "imageUrl": "https://www.heartodex.com/_astro/1773590431084-2026-02-15_02_53_28-verditer_flycatcher.png_Z1HjKN1.webp"
+        },
+        {
+          "slug": "wallaces-fruit-dove",
+          "name": "Wallace's Fruit Dove",
+          "imageUrl": "https://www.heartodex.com/_astro/1771625641870-pigeon-aux-fruits-d-or_2ktcVC.webp"
+        },
+        {
+          "slug": "wandering-albatross",
+          "name": "Wandering Albatross",
+          "imageUrl": "https://www.heartodex.com/_astro/1783799860360-ave-albatroserrante_2ugTHM.webp"
+        },
+        {
+          "slug": "white-headed-duck",
+          "name": "White-Headed Duck",
+          "imageUrl": "https://www.heartodex.com/_astro/1772157578409-2026-02-15_02_55_09-white-headed_duck.png_2tPtlh.webp"
+        },
+        {
+          "slug": "white-peafowl",
+          "name": "White Peafowl",
+          "imageUrl": "https://www.heartodex.com/_astro/1778893693596-ave-pavo_real_blanco_eEFoz.webp"
+        },
+        {
+          "slug": "white-spoonbill",
+          "name": "White Spoonbill",
+          "imageUrl": "https://www.heartodex.com/_astro/1783799844849-ave-espatula_comun_3v3nN.webp"
+        },
+        {
+          "slug": "white-wagtail",
+          "name": "White Wagtail",
+          "imageUrl": "https://www.heartodex.com/_astro/1773076806024-bergeronnette-grise_ZVA5en.webp"
+        },
+        {
+          "slug": "white-winged-tern",
+          "name": "White-winged Tern",
+          "imageUrl": "https://www.heartodex.com/_astro/1783799341837-ave-fumeral_aliblanco_28hbNN.webp"
+        },
+        {
+          "slug": "whooper-swan",
+          "name": "Whooper Swan",
+          "imageUrl": "https://www.heartodex.com/_astro/1778894599980-ave-cisne_grande_ZJBtEh.webp"
+        },
+        {
+          "slug": "winter-eurasian-wigeon",
+          "name": "Winter Eurasian Wigeon",
+          "imageUrl": "https://www.heartodex.com/_astro/1772164790163-winter_wigon_Z1nQQHC.webp"
+        },
+        {
+          "slug": "winter-greater-flamingo",
+          "name": "Winter Greater Flamingo",
+          "imageUrl": "https://www.heartodex.com/_astro/1772164400353-winter_greater_flamingo_ufuh0.webp"
+        },
+        {
+          "slug": "winter-mallard",
+          "name": "Winter Mallard",
+          "imageUrl": "https://www.heartodex.com/_astro/1772164514788-winter_mallard_Z28Sb4u.webp"
+        },
+        {
+          "slug": "winter-mandarin-duck",
+          "name": "Winter Mandarin Duck",
+          "imageUrl": "https://www.heartodex.com/_astro/1772165256441-pato_mandarin_ropa_invierno_6nze9.webp"
+        },
+        {
+          "slug": "winter-smew",
+          "name": "Winter Smew",
+          "imageUrl": "https://www.heartodex.com/_astro/1772164665580-winter_smew_UWwnO.webp"
+        },
+        {
+          "slug": "wonga-pigeon",
+          "name": "Wonga Pigeon",
+          "imageUrl": "https://www.heartodex.com/_astro/1770758551764-pigeon-de-wonga_Y8Ix8.webp"
+        },
+        {
+          "slug": "woodchat-shrike",
+          "name": "Woodchat Shrike",
+          "imageUrl": "https://www.heartodex.com/_astro/1770758370295-pie-grieche-a-tete-rousse_Z29KR0r.webp"
+        },
+        {
+          "slug": "yellow-bellied-flycatcher",
+          "name": "Yellow Bellied Flycatcher",
+          "imageUrl": "https://www.heartodex.com/_astro/1772150454522-moucherolle-a-ventre-jaune_Zq5fvv.webp"
+        }
+      ],
+      "localCount": 97,
+      "pendingReview": {
+        "remoteAdded": [],
+        "localOnly": []
+      }
+    }
+  },
+  "policy": {
+    "mode": "review-before-publish",
+    "note": "This monitor records public listing changes only. Review game conditions, availability, and image rights before publishing any update."
+  }
+}

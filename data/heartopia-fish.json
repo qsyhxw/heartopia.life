@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-10",
-  "count": 112,
+  "generatedAt": "2026-07-13",
+  "count": 119,
   "fish": [
     {
       "name": "Barbel",
@@ -1122,6 +1122,83 @@
       "schedule": "Rainbow, Rainy; Day, Dusk, Night",
       "value": "Check in game",
       "image": "/img/fish/Moon-Jelly.webp",
+      "maxValue": 0
+    },
+    {
+      "name": "Japanese Flying Squid",
+      "location": "[EVENT] Call of Whales, Whale Sea",
+      "level": 1,
+      "shadow": "&mdash;",
+      "category": "Call of Whales",
+      "schedule": "Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night",
+      "value": "&mdash;",
+      "image": "/img/fish/Japanese-Flying-Squid.webp",
+      "maxValue": 0
+    },
+    {
+      "name": "Firefly Squid",
+      "location": "[EVENT] Call of Whales, Whale Sea",
+      "level": 1,
+      "shadow": "&mdash;",
+      "category": "Call of Whales",
+      "schedule": "Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night",
+      "value": "&mdash;",
+      "image": "/img/fish/Firefly-Squid.webp",
+      "maxValue": 0
+    },
+    {
+      "name": "Sea Slug",
+      "location": "[EVENT] Call of Whales, Neritic Shoal Event",
+      "level": 1,
+      "shadow": "&mdash;",
+      "category": "Call of Whales",
+      "schedule": "Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night",
+      "value": "&mdash;",
+      "image": "/img/fish/Sea-Slug.webp",
+      "maxValue": 0
+    },
+    {
+      "name": "Mandarin Fish",
+      "location": "[EVENT] Call of Whales, Whale Sea",
+      "level": 1,
+      "shadow": "&mdash;",
+      "category": "Call of Whales",
+      "schedule": "Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night",
+      "value": "&mdash;",
+      "image": "/img/fish/Mandarin-Fish.webp",
+      "maxValue": 0
+    },
+    {
+      "name": "Oliver Ridley Turtle",
+      "location": "[EVENT] Call of Whales, Whale Sea",
+      "level": 1,
+      "shadow": "&mdash;",
+      "category": "Call of Whales",
+      "schedule": "Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night",
+      "value": "&mdash;",
+      "image": "/img/fish/Oliver-Ridley-Turtle.webp",
+      "maxValue": 0
+    },
+    {
+      "name": "Flatback Turtle",
+      "location": "[EVENT] Call of Whales, Whale Sea",
+      "level": 1,
+      "shadow": "&mdash;",
+      "category": "Call of Whales",
+      "schedule": "Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night",
+      "value": "&mdash;",
+      "image": "/img/fish/Flatback-Turtle.webp",
+      "maxValue": 0
+    },
+    {
+      "name": "Scallop",
+      "location": "[EVENT] Call of Whales, Whale Sea",
+      "level": 1,
+      "shadow": "&mdash;",
+      "category": "Call of Whales",
+      "schedule": "Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night",
+      "value": "&mdash;",
+      "image": "/img/fish/Scallop.webp",
       "maxValue": 0
     },
     {

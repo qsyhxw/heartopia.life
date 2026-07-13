@@ -1,0 +1,56 @@
+name: Monitor Heartodex Collections
+
+on:
+  schedule:
+    - cron: '30 1 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: heartodex-collection-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+
+      - name: Read public collection listings
+        run: node scripts/monitor-heartodex-collections.mjs
+
+      - name: Open or refresh review draft
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- data/monitor/heartodex-collections.json; then
+            echo "No collection change detected."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -C automation/heartodex-collections
+          git add data/monitor/heartodex-collections.json
+          git commit -m "chore: monitor Heartodex collections"
+          git push --force origin HEAD:automation/heartodex-collections
+
+          pr_number="$(gh pr list --head automation/heartodex-collections --state open --json number --jq '.[0].number')"
+          title="Review Heartodex fish and bird collection changes"
+          body="A public-listing change was detected. Review the pending entries, game conditions, availability, and image usage before applying any update to public Heartopia.Life pages."
+          if [ -n "$pr_number" ]; then
+            gh pr edit "$pr_number" --title "$title" --body "$body"
+          else
+            gh pr create --base main --head automation/heartodex-collections --draft --title "$title" --body "$body"
+          fi

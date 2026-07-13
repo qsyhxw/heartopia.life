@@ -8,6 +8,7 @@ on:
       - 'scripts/sync-fish-pages.mjs'
       - 'scripts/generate-fish-detail-pages.mjs'
       - 'scripts/refresh-legacy-fish-references.mjs'
+      - 'scripts/refresh-collection-legacy-pages.mjs'
   workflow_dispatch:
 
 permissions:
