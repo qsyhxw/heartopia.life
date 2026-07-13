@@ -1,4 +1,4 @@
-name: Monitor Heartodex Collections
+name: Auto Sync Heartodex Collections
 
 on:
   schedule:
@@ -7,14 +7,13 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 concurrency:
-  group: heartodex-collection-monitor
+  group: heartodex-collection-sync
   cancel-in-progress: false
 
 jobs:
-  monitor:
+  sync:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -30,27 +29,24 @@ jobs:
       - name: Read public collection listings
         run: node scripts/monitor-heartodex-collections.mjs
 
-      - name: Open or refresh review draft
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - name: Validate details and download new images
+        run: node scripts/prepare-heartodex-fish-bird-sync.mjs
+
+      - name: Apply verified additions
+        run: node scripts/apply-heartodex-fish-bird-sync.mjs
+
+      - name: Refresh Fish shared pages
+        run: node scripts/sync-fish-pages.mjs
+
+      - name: Commit automatic collection updates
         run: |
-          if git diff --quiet -- data/monitor/heartodex-collections.json; then
+          if git diff --quiet; then
             echo "No collection change detected."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git switch -C automation/heartodex-collections
-          git add data/monitor/heartodex-collections.json
-          git commit -m "chore: monitor Heartodex collections"
-          git push --force origin HEAD:automation/heartodex-collections
-
-          pr_number="$(gh pr list --head automation/heartodex-collections --state open --json number --jq '.[0].number')"
-          title="Review Heartodex fish and bird collection changes"
-          body="A public-listing change was detected. Review the pending entries, game conditions, availability, and image usage before applying any update to public Heartopia.Life pages."
-          if [ -n "$pr_number" ]; then
-            gh pr edit "$pr_number" --title "$title" --body "$body"
-          else
-            gh pr create --base main --head automation/heartodex-collections --draft --title "$title" --body "$body"
-          fi
+          git add database/fish/index.html database/birds/index.html data/heartopia-fish.json data/monitor/heartodex-collections.json data/monitor/heartodex-sync-readiness.json img/fish img/birds guides/fishing-locations/index.html guides/fishing-spots/index.html guides/rare-fish/index.html guides/fish-locations/index.html database/fish-prices/index.html
+          git commit -m "chore: auto-sync Heartodex collections"
+          git push
