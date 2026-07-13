@@ -2,10 +2,12 @@
   "source": "https://www.heartodex.com/en/",
   "ready": {
     "fish": [],
-    "birds": []
+    "birds": [],
+    "insects": []
   },
   "blocked": {
     "fish": [],
-    "birds": []
+    "birds": [],
+    "insects": []
   }
 }

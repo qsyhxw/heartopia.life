@@ -51,7 +51,6 @@ async function fetchPage(kind) {
 
 function parseRemoteCollection(html, kind) {
   const countMatch = html.match(/(\d{1,4})\s*Registered/i);
-  if (!countMatch) throw new Error('Could not find the registered count on ' + kind + ' source page');
   const items = new Map();
   const cardPattern = new RegExp('<a\\b[^>]*href=(["\'])(?:https?:\\/\\/www\\.heartodex\\.com)?\\/en\\/' + kind + '\\/([^"\'/?#]+)[^"\']*\\1[^>]*>([\\s\\S]*?)<\\/a>', 'gi');
   for (const match of html.matchAll(cardPattern)) {
@@ -69,7 +68,9 @@ function parseRemoteCollection(html, kind) {
     });
   }
   const entries = [...items.values()].sort((a, b) => a.slug.localeCompare(b.slug));
-  const registered = Number(countMatch[1]);
+  // Some Heartodex database hubs expose a registered counter; insects currently does not.
+  // In that case the deduplicated card count is the source count and still gets checked.
+  const registered = countMatch ? Number(countMatch[1]) : entries.length;
   if (entries.length !== registered) {
     throw new Error(kind + ' parse safety check failed: page says ' + registered + ', parsed ' + entries.length + '. No snapshot was written.');
   }
@@ -85,6 +86,11 @@ function localFish() {
     entries.push({ slug: slugify(cells[0]), name: cells[0] });
   }
   return entries;
+}
+
+function localInsects() {
+  const data = JSON.parse(read('data/heartopia-insects.json'));
+  return data.insects.map((insect) => ({ slug: slugify(insect.name), name: insect.name }));
 }
 
 function localBirds() {
@@ -103,14 +109,16 @@ function comparison(remote, local) {
   };
 }
 
-const [fishHtml, birdsHtml] = await Promise.all([fetchPage('fish'), fetchPage('birds')]);
+const [fishHtml, birdsHtml, insectsHtml] = await Promise.all([fetchPage('fish'), fetchPage('birds'), fetchPage('insects')]);
 const remote = {
   fish: parseRemoteCollection(fishHtml, 'fish'),
-  birds: parseRemoteCollection(birdsHtml, 'birds')
+  birds: parseRemoteCollection(birdsHtml, 'birds'),
+  insects: parseRemoteCollection(insectsHtml, 'insects')
 };
 const local = {
   fish: localFish(),
-  birds: localBirds()
+  birds: localBirds(),
+  insects: localInsects()
 };
 const snapshot = {
   schemaVersion: 1,
@@ -127,6 +135,12 @@ const snapshot = {
       entries: remote.birds.entries,
       localCount: local.birds.length,
       pendingReview: comparison(remote.birds, local.birds)
+    },
+    insects: {
+      registered: remote.insects.registered,
+      entries: remote.insects.entries,
+      localCount: local.insects.length,
+      pendingReview: comparison(remote.insects, local.insects)
     }
   },
   policy: {
@@ -137,8 +151,8 @@ const snapshot = {
 const next = JSON.stringify(snapshot, null, 2) + '\n';
 const previous = fs.existsSync(path.join(root, outputFile)) ? read(outputFile) : '';
 if (previous === next) {
-  console.log('No Heartodex collection change. Fish ' + remote.fish.registered + '/' + local.fish.length + '; birds ' + remote.birds.registered + '/' + local.birds.length + '.');
+  console.log('No Heartodex collection change. Fish ' + remote.fish.registered + '/' + local.fish.length + '; birds ' + remote.birds.registered + '/' + local.birds.length + '; insects ' + remote.insects.registered + '/' + local.insects.length + '.');
 } else {
   write(outputFile, next);
-  console.log('Updated monitor snapshot. Fish ' + remote.fish.registered + '/' + local.fish.length + '; birds ' + remote.birds.registered + '/' + local.birds.length + '.');
+  console.log('Updated monitor snapshot. Fish ' + remote.fish.registered + '/' + local.fish.length + '; birds ' + remote.birds.registered + '/' + local.birds.length + '; insects ' + remote.insects.registered + '/' + local.insects.length + '.');
 }

@@ -22,15 +22,15 @@ async function detail(kind,item){
 }
 
 const snapshot=JSON.parse(read('data/monitor/heartodex-collections.json'));
-const output={source,ready:{fish:[],birds:[]},blocked:{fish:[],birds:[]}};
-for(const kind of ['fish','birds']){
+const output={source,ready:{fish:[],birds:[],insects:[]},blocked:{fish:[],birds:[],insects:[]}};
+for(const kind of ['fish','birds','insects']){
   for(const item of snapshot.collections[kind].pendingReview.remoteAdded){
     try{const parsed=await detail(kind,item);parsed.image=await downloadImage(kind,parsed);output.ready[kind].push(parsed);}
     catch(error){output.blocked[kind].push({slug:item.slug,name:item.name,error:error.message});}
   }
 }
 write('data/monitor/heartodex-sync-readiness.json',JSON.stringify(output,null,2)+'\n');
-const blocked=output.blocked.fish.length+output.blocked.birds.length;
-const ready=output.ready.fish.length+output.ready.birds.length;
+const blocked=output.blocked.fish.length+output.blocked.birds.length+output.blocked.insects.length;
+const ready=output.ready.fish.length+output.ready.birds.length+output.ready.insects.length;
 console.log('Prepared '+ready+' additions; '+blocked+' additions blocked by required-field validation.');
 if(blocked) process.exitCode=2;

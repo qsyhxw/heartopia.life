@@ -39,4 +39,29 @@ if (readiness.ready.birds.length) {
   changes += readiness.ready.birds.length;
 }
 
+if (readiness.ready.insects?.length) {
+  const file = 'data/heartopia-insects.json';
+  const data = JSON.parse(read(file));
+  const known = new Set(data.insects.map((insect) => insect.name.toLowerCase()));
+  for (const insect of readiness.ready.insects) {
+    if (known.has(insect.name.toLowerCase())) continue;
+    data.insects.push({
+      slug: insect.name.toLowerCase(),
+      name: insect.name,
+      level: insect.level,
+      weather: insect.weather.join(', '),
+      schedule: 'Check in game',
+      location: 'Check in game',
+      category: 'Auto-synced (location pending)',
+      image: insect.image,
+      imageSourceName: insect.name
+    });
+    known.add(insect.name.toLowerCase());
+    changes += 1;
+  }
+  data.count = data.insects.length;
+  data.generatedAt = new Date().toISOString().slice(0, 10);
+  write(file, JSON.stringify(data, null, 2) + '\n');
+}
+
 console.log(`Applied ${changes} auto-synced entries.`);

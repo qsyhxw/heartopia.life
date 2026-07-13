@@ -1101,6 +1101,471 @@
         "remoteAdded": [],
         "localOnly": []
       }
+    },
+    "insects": {
+      "registered": 91,
+      "entries": [
+        {
+          "slug": "alpine-longhorn-beetle",
+          "name": "Alpine Longhorn Beetle",
+          "imageUrl": "https://www.heartodex.com/_astro/1783510085498-insecto-escarabajo_longicornio_fygyf.webp"
+        },
+        {
+          "slug": "amethyst-flower-beetle",
+          "name": "Amethyst Flower Beetle",
+          "imageUrl": "https://www.heartodex.com/_astro/1770848321349-cetoile-etoilee-bleue_Z1r14wv.webp"
+        },
+        {
+          "slug": "ant",
+          "name": "Ant",
+          "imageUrl": "https://www.heartodex.com/_astro/1770849211125-fourmi_8zl1b.webp"
+        },
+        {
+          "slug": "apollo",
+          "name": "Apollo",
+          "imageUrl": "https://www.heartodex.com/_astro/1770847191092-parnassien_ZU8CMu.webp"
+        },
+        {
+          "slug": "asian-lady-beetle",
+          "name": "Asian Lady Beetle",
+          "imageUrl": "https://www.heartodex.com/_astro/1771112235256-captura_de_pantalla_2026-02-14_203505_2dkky6.webp"
+        },
+        {
+          "slug": "asparagus-beetle",
+          "name": "Asparagus Beetle",
+          "imageUrl": "https://www.heartodex.com/_astro/1770847457967-criocere-de-l-asperge_ZQGmyn.webp"
+        },
+        {
+          "slug": "atlas-beetle",
+          "name": "Atlas Beetle",
+          "imageUrl": "https://www.heartodex.com/_astro/1778898095603-insecto-escarabajo_atlas_gw41t.webp"
+        },
+        {
+          "slug": "bagworm-moth",
+          "name": "Bagworm Moth",
+          "imageUrl": "https://www.heartodex.com/_astro/1772777785462-bagworm_moth_Z1Qe4N6.webp"
+        },
+        {
+          "slug": "beautiful-demoiselle",
+          "name": "Beautiful Demoiselle",
+          "imageUrl": "https://www.heartodex.com/_astro/1771112425567-captura_de_pantalla_2026-02-14_203808_1TU2FO.webp"
+        },
+        {
+          "slug": "beautiful-leopard",
+          "name": "Beautiful Leopard",
+          "imageUrl": "https://www.heartodex.com/_astro/1771112687159-captura_de_pantalla_2026-02-14_204115_Z20vzrn.webp"
+        },
+        {
+          "slug": "blue-brick-large-red-damselfly",
+          "name": "Blue Brick Large Red Damselfly",
+          "imageUrl": "https://www.heartodex.com/_astro/1778342155151-insecto-2026-05-09_11_34_59-2026-05-09_11_29_03-heartopia.png_12QY2c.webp"
+        },
+        {
+          "slug": "blue-morpho",
+          "name": "Blue Morpho",
+          "imageUrl": "https://www.heartodex.com/_astro/1771112856837-captura_de_pantalla_2026-02-14_204535_Z5j2ng.webp"
+        },
+        {
+          "slug": "blue-shieldbug",
+          "name": "Blue Shieldbug",
+          "imageUrl": "https://www.heartodex.com/_astro/1771113004551-captura_de_pantalla_2026-02-14_204808_2rB0XC.webp"
+        },
+        {
+          "slug": "bumblebee",
+          "name": "Bumblebee",
+          "imageUrl": "https://www.heartodex.com/_astro/1770848622266-bourdon_Z2V4R6.webp"
+        },
+        {
+          "slug": "cabbage-white",
+          "name": "Cabbage White",
+          "imageUrl": "https://www.heartodex.com/_astro/1770847110254-papillon-blanc_14tb6i.webp"
+        },
+        {
+          "slug": "cerulean-carpenter",
+          "name": "Cerulean Carpenter",
+          "imageUrl": "https://www.heartodex.com/_astro/1771131568527-cerulean_carpenter_Z1NLzo4.webp"
+        },
+        {
+          "slug": "chestnut-tiger",
+          "name": "Chestnut Tiger",
+          "imageUrl": "https://www.heartodex.com/_astro/1772071624087-chestnut_tiger_ZOus2Y.webp"
+        },
+        {
+          "slug": "cicada",
+          "name": "Cicada",
+          "imageUrl": "https://www.heartodex.com/_astro/1770849493789-cigale_vR2dE.webp"
+        },
+        {
+          "slug": "colorful-brick-large-red-damselfly",
+          "name": "Colorful Brick Large Red Damselfly",
+          "imageUrl": "https://www.heartodex.com/_astro/1778342163445-insecto-2026-05-09_11_35_18-2026-05-09_11_29_14-heartopia.png_OcBJK.webp"
+        },
+        {
+          "slug": "comet-moth",
+          "name": "Comet Moth",
+          "imageUrl": "https://www.heartodex.com/_astro/1771114010477-captura_de_pantalla_2026-02-14_210448_Z2i8pr3.webp"
+        },
+        {
+          "slug": "common-blue-butterfly",
+          "name": "Common Blue Butterfly",
+          "imageUrl": "https://www.heartodex.com/_astro/1770847823982-azure-de-porcelaine_1wC2Dm.webp"
+        },
+        {
+          "slug": "common-brimstone",
+          "name": "Common Brimstone",
+          "imageUrl": "https://www.heartodex.com/_astro/1770846982066-citron-aspasia_1w1Gia.webp"
+        },
+        {
+          "slug": "common-whitetail",
+          "name": "Common Whitetail",
+          "imageUrl": "https://www.heartodex.com/_astro/1770849582969-libellule-a-queue-blanche_Z1s1RmC.webp"
+        },
+        {
+          "slug": "conehead-mantis",
+          "name": "Conehead Mantis",
+          "imageUrl": "https://www.heartodex.com/_astro/1783514736303-insecto-mantisaguja_20pvpg.webp"
+        },
+        {
+          "slug": "crimson-marsh-glider",
+          "name": "Crimson Marsh Glider",
+          "imageUrl": "https://www.heartodex.com/_astro/1772071518849-crimson_marsh_glider_17ba8c.webp"
+        },
+        {
+          "slug": "elegant-flower-beetle",
+          "name": "Elegant Flower Beetle",
+          "imageUrl": "https://www.heartodex.com/_astro/1772071893836-elegant_flower_beetle_ZgrfT3.webp"
+        },
+        {
+          "slug": "european-firebug",
+          "name": "European Firebug",
+          "imageUrl": "https://www.heartodex.com/_astro/1770847641249-pyrrhocoris-apterus_1lpHqz.webp"
+        },
+        {
+          "slug": "fire-colored-beetle",
+          "name": "Fire-Colored Beetle",
+          "imageUrl": "https://www.heartodex.com/_astro/1770848897408-pyrochroa_Z1hMSV7.webp"
+        },
+        {
+          "slug": "flamer-skimmer",
+          "name": "Flamer Skimmer",
+          "imageUrl": "https://www.heartodex.com/_astro/1778898518326-insecto-lib%C3%A3%C2%A9lula_de_fuego_VuGaM.webp"
+        },
+        {
+          "slug": "four-spotted-ladybug",
+          "name": "Four-Spotted Ladybug",
+          "imageUrl": "https://www.heartodex.com/_astro/1770849288941-coccinelle-a-quatre-etoiles_1ImTdJ.webp"
+        },
+        {
+          "slug": "four-spotted-skimmer",
+          "name": "Four-Spotted Skimmer",
+          "imageUrl": "https://www.heartodex.com/_astro/1770848557459-libellule-tachetee_1rBW5g.webp"
+        },
+        {
+          "slug": "frostspore-mother-of-pearl",
+          "name": "Frostspore Mother-of-Pearl",
+          "imageUrl": "https://www.heartodex.com/_astro/1770691784384-2026-02-07_11_53_23-heartopia_Z3Pw9d.webp"
+        },
+        {
+          "slug": "frostspore-postman-butterfly",
+          "name": "Frostspore Postman Butterfly",
+          "imageUrl": "https://www.heartodex.com/_astro/1771205205887-mariposa_cartero_de_cristal_nevado_1lvGUA.webp"
+        },
+        {
+          "slug": "frostspore-purple-spotted-swallowtail",
+          "name": "Frostspore Purple Spotted Swallowtail",
+          "imageUrl": "https://www.heartodex.com/_astro/1770691908812-2026-02-07_11_53_15-heartopia_2f0LCd.webp"
+        },
+        {
+          "slug": "frostspore-queen-alexandras-birdwing",
+          "name": "Frostspore Queen Alexandra's Birdwing",
+          "imageUrl": "https://www.heartodex.com/_astro/1770691978177-2026-02-07_11_53_05-heartopia_1hm3UI.webp"
+        },
+        {
+          "slug": "frostspore-sulkowskys-morpho",
+          "name": "Frostspore Sulkowsky's Morpho",
+          "imageUrl": "https://www.heartodex.com/_astro/1770692052040-2026-02-07_11_52_50-heartopia_ZmNiwU.webp"
+        },
+        {
+          "slug": "giant-asian-mantis",
+          "name": "Giant Asian Mantis",
+          "imageUrl": "https://www.heartodex.com/_astro/1771113827916-captura_de_pantalla_2026-02-14_210014_ZBINF2.webp"
+        },
+        {
+          "slug": "glasswing-butterfly",
+          "name": "Glasswing Butterfly",
+          "imageUrl": "https://www.heartodex.com/_astro/1778898697400-insecto-mariposa_de_alas_transparentes_2VNjC.webp"
+        },
+        {
+          "slug": "gold-grasshopper",
+          "name": "Gold Grasshopper",
+          "imageUrl": "https://www.heartodex.com/_astro/1770847575136-sauterelle-de-l-oasis_ZIv4Kd.webp"
+        },
+        {
+          "slug": "golden-jewel-scarab",
+          "name": "Golden Jewel Scarab",
+          "imageUrl": "https://www.heartodex.com/_astro/1771114244347-captura_de_pantalla_2026-02-14_210739_22leMa.webp"
+        },
+        {
+          "slug": "golden-script-supervisor-bumblebee",
+          "name": "Golden Script Supervisor Bumblebee",
+          "imageUrl": "https://www.heartodex.com/_astro/1774723486502-avispacontinuistadorada_Z3izUC.webp"
+        },
+        {
+          "slug": "golden-stag-beetle",
+          "name": "Golden Stag Beetle",
+          "imageUrl": "https://www.heartodex.com/_astro/1771115378608-captura_de_pantalla_2026-02-14_212506_ZiHzsM.webp"
+        },
+        {
+          "slug": "goliath-beetle",
+          "name": "Goliath Beetle",
+          "imageUrl": "https://www.heartodex.com/_astro/1778898332662-insecto-escarabajo_goliat_2t14Uu.webp"
+        },
+        {
+          "slug": "greater-asian-lady-beetle",
+          "name": "Greater Asian Lady Beetle",
+          "imageUrl": "https://www.heartodex.com/_astro/1778898162634-insecto-mariquita_de_trece_puntos_252hQd.webp"
+        },
+        {
+          "slug": "green-birdwing",
+          "name": "Green Birdwing",
+          "imageUrl": "https://www.heartodex.com/_astro/1771114420458-captura_de_pantalla_2026-02-14_211148_q2ugP.webp"
+        },
+        {
+          "slug": "green-metalwing",
+          "name": "Green Metalwing",
+          "imageUrl": "https://www.heartodex.com/_astro/1778898635981-insecto-stream_glory_Z1hikaq.webp"
+        },
+        {
+          "slug": "green-script-supervisor-bumblebee",
+          "name": "Green Script Supervisor Bumblebee",
+          "imageUrl": "https://www.heartodex.com/_astro/1774123050176-avispacontinuistaverde_Z9K97w.webp"
+        },
+        {
+          "slug": "green-snail",
+          "name": "Green Snail",
+          "imageUrl": "https://www.heartodex.com/_astro/1778898743934-insecto-caracol_verde_Z6rAVM.webp"
+        },
+        {
+          "slug": "green-tiger-beetle",
+          "name": "Green Tiger Beetle",
+          "imageUrl": "https://www.heartodex.com/_astro/1770847919900-cicindele-verte_1R1fvW.webp"
+        },
+        {
+          "slug": "hercules-beetle",
+          "name": "Hercules Beetle",
+          "imageUrl": "https://www.heartodex.com/_astro/1771130928899-hercules_beetle_Z1Xneje.webp"
+        },
+        {
+          "slug": "horned-beetle",
+          "name": "Horned Beetle",
+          "imageUrl": "https://www.heartodex.com/_astro/1783446935659-insecto-escarabajo_rinoceronte_Qdr2O.webp"
+        },
+        {
+          "slug": "katydid",
+          "name": "Katydid",
+          "imageUrl": "https://www.heartodex.com/_astro/1770849060861-grillon_2oIXBm.webp"
+        },
+        {
+          "slug": "large-banded-grasshopper",
+          "name": "Large Banded Grasshopper",
+          "imageUrl": "https://www.heartodex.com/_astro/1771115815186-captura_de_pantalla_2026-02-14_213413_1wYdlk.webp"
+        },
+        {
+          "slug": "large-red-damselfly",
+          "name": "Large Red Damselfly",
+          "imageUrl": "https://www.heartodex.com/_astro/1770847731499-grand-agrion_Z1j3xQo.webp"
+        },
+        {
+          "slug": "mediterranean-mantis",
+          "name": "Mediterranean Mantis",
+          "imageUrl": "https://www.heartodex.com/_astro/1771116128926-captura_de_pantalla_2026-02-14_213749_1FpPkH.webp"
+        },
+        {
+          "slug": "mini-moon-moth",
+          "name": "Mini Moon Moth",
+          "imageUrl": "https://www.heartodex.com/_astro/1770848840860-actias-neidhoederi_Z2bcDaL.webp"
+        },
+        {
+          "slug": "minotaur-beetle",
+          "name": "Minotaur Beetle",
+          "imageUrl": "https://www.heartodex.com/_astro/1772778205243-escarabajo_pelotero_tifi_10jlGf.webp"
+        },
+        {
+          "slug": "morpho-helena",
+          "name": "Morpho Helena",
+          "imageUrl": "https://www.heartodex.com/_astro/1771131225390-morpho_helena_ZDpKAN.webp"
+        },
+        {
+          "slug": "mother-of-pearl",
+          "name": "Mother-Of-Pearl",
+          "imageUrl": "https://www.heartodex.com/_astro/1771116575868-captura_de_pantalla_2026-02-14_214651_Z3obQr.webp"
+        },
+        {
+          "slug": "mourning-cloak",
+          "name": "Mourning Cloak",
+          "imageUrl": "https://www.heartodex.com/_astro/1771116857297-captura_de_pantalla_2026-02-14_215131_2hiUXy.webp"
+        },
+        {
+          "slug": "old-world-swallowtail",
+          "name": "Old World Swallowtail",
+          "imageUrl": "https://www.heartodex.com/_astro/1770771910680-papillon-dore_Z1e3GXv.webp"
+        },
+        {
+          "slug": "orange-tip",
+          "name": "Orange-Tip",
+          "imageUrl": "https://www.heartodex.com/_astro/1771117050435-captura_de_pantalla_2026-02-14_215518_ZOemsR.webp"
+        },
+        {
+          "slug": "orchid-mantis",
+          "name": "Orchid Mantis",
+          "imageUrl": "https://www.heartodex.com/_astro/1778898214030-insecto-mantis_orqu%C3%A3%C2%ADdea_2ilQ0z.webp"
+        },
+        {
+          "slug": "peacock-butterfly",
+          "name": "Peacock Butterfly",
+          "imageUrl": "https://www.heartodex.com/_astro/1771114660103-captura_de_pantalla_2026-02-14_211442_SOBos.webp"
+        },
+        {
+          "slug": "picasso-bug",
+          "name": "Picasso Bug",
+          "imageUrl": "https://www.heartodex.com/_astro/1771114902768-captura_de_pantalla_2026-02-14_211834_KV3me.webp"
+        },
+        {
+          "slug": "pink-brick-large-red-damselfly",
+          "name": "Pink Brick Large Red Damselfly",
+          "imageUrl": "https://www.heartodex.com/_astro/1778342146201-insecto-2026-05-09_11_34_31-2026-05-09_11_28_47-heartopia.png_Z2jCJd3.webp"
+        },
+        {
+          "slug": "pink-katydid",
+          "name": "Pink Katydid",
+          "imageUrl": "https://www.heartodex.com/_astro/1770848967531-sauterelle-rose_2uASFB.webp"
+        },
+        {
+          "slug": "pink-script-supervisor-bumblebee",
+          "name": "Pink Script Supervisor Bumblebee",
+          "imageUrl": "https://www.heartodex.com/_astro/1774119272766-avispacontinuisterosada_rFPIS.webp"
+        },
+        {
+          "slug": "postman-butterfly",
+          "name": "Postman Butterfly",
+          "imageUrl": "https://www.heartodex.com/_astro/1770847253989-papillon-a-anneaux-rouges_Z1HKQEO.webp"
+        },
+        {
+          "slug": "purple-brick-large-red-damselfly",
+          "name": "Purple Brick Large Red Damselfly",
+          "imageUrl": "https://www.heartodex.com/_astro/1778342159372-insecto-2026-05-09_11_35_10-2026-05-09_11_29_09-heartopia.png_Z1ta6qW.webp"
+        },
+        {
+          "slug": "purple-emperor",
+          "name": "Purple Emperor",
+          "imageUrl": "https://www.heartodex.com/_astro/1770848691811-vanesse-violette_1Pa0bI.webp"
+        },
+        {
+          "slug": "purple-script-supervisor-bumblebee",
+          "name": "Purple Script Supervisor Bumblebee",
+          "imageUrl": "https://www.heartodex.com/_astro/1774121161037-avispacontinuistamorada_2BMBM.webp"
+        },
+        {
+          "slug": "purple-spotted-swallowtail",
+          "name": "Purple Spotted Swallowtail",
+          "imageUrl": "https://www.heartodex.com/_astro/1778898274648-insecto-mariposa_graphium_weiskei_ZHQnTc.webp"
+        },
+        {
+          "slug": "queen-alexandras-birdwing",
+          "name": "Queen Alexandra's Birdwing",
+          "imageUrl": "https://www.heartodex.com/_astro/1778897908880-insecto-mariposa_alas_de_p%C3%A3%C2%A1jaro_ZeGgLs.webp"
+        },
+        {
+          "slug": "rainbow-stag-beetle",
+          "name": "Rainbow Stag Beetle",
+          "imageUrl": "https://www.heartodex.com/_astro/1771130728848-rainbow_stag_beetle_nPIuj.webp"
+        },
+        {
+          "slug": "rajah-brookes-birdwing",
+          "name": "Rajah Brooke’s Birdwing",
+          "imageUrl": "https://www.heartodex.com/_astro/1770848744591-papillon-a-col-rouge_ZnlEP1.webp"
+        },
+        {
+          "slug": "red-milkweed-locust",
+          "name": "Red Milkweed Locust",
+          "imageUrl": "https://www.heartodex.com/_astro/1778898430300-insecto-langosta_del_algondoncillo_DLnyg.webp"
+        },
+        {
+          "slug": "red-script-supervisor-bumblebee",
+          "name": "Red Script Supervisor Bumblebee",
+          "imageUrl": "https://www.heartodex.com/_astro/1774119580105-avispacontinuistaroja_Z1FfQiR.webp"
+        },
+        {
+          "slug": "scarce-morpho",
+          "name": "Scarce Morpho",
+          "imageUrl": "https://www.heartodex.com/_astro/1778898580746-insecto-mariposa_morpho_de_ensue%C3%A3%C2%B1o_2niGBE.webp"
+        },
+        {
+          "slug": "seven-spotted-ladybug",
+          "name": "Seven-Spotted Ladybug",
+          "imageUrl": "https://www.heartodex.com/_astro/1770848461800-coccinelle-a-sept-points_Z23zzWN.webp"
+        },
+        {
+          "slug": "siberian-grasshopper",
+          "name": "Siberian Grasshopper",
+          "imageUrl": "https://www.heartodex.com/_astro/1770848396598-criquet-aux-pattes-massives_18bbuA.webp"
+        },
+        {
+          "slug": "silver-jewel-scarab",
+          "name": "Silver Jewel Scarab",
+          "imageUrl": "https://www.heartodex.com/_astro/1771117241697-captura_de_pantalla_2026-02-14_215834_Z1t88Pn.webp"
+        },
+        {
+          "slug": "spanish-moon-moth",
+          "name": "Spanish Moon Moth",
+          "imageUrl": "https://www.heartodex.com/_astro/1771117407284-captura_de_pantalla_2026-02-14_220134_1Az0fO.webp"
+        },
+        {
+          "slug": "splay-footed-carpenter",
+          "name": "Splay-Footed Carpenter",
+          "imageUrl": "https://www.heartodex.com/_astro/1771117593838-captura_de_pantalla_2026-02-14_220426_ZKQpG5.webp"
+        },
+        {
+          "slug": "stag-beetle",
+          "name": "Stag Beetle",
+          "imageUrl": "https://www.heartodex.com/_astro/1783446623658-insecto-lucanociervo_Z2lqNAR.webp"
+        },
+        {
+          "slug": "sulkowskys-morpho",
+          "name": "Sulkowsky’s Morpho",
+          "imageUrl": "https://www.heartodex.com/_astro/1771118016020-captura_de_pantalla_2026-02-14_221105_1Bjz1S.webp"
+        },
+        {
+          "slug": "sunset-morpho",
+          "name": "Sunset Morpho",
+          "imageUrl": "https://www.heartodex.com/_astro/1771131375374-sunset_morpho_Z8QxF4.webp"
+        },
+        {
+          "slug": "waroona-cuckoo-bee",
+          "name": "Waroona Cuckoo Bee",
+          "imageUrl": "https://www.heartodex.com/_astro/1770849137537-abeille-a-queue-blanche_Z1um5JD.webp"
+        },
+        {
+          "slug": "wasp-beetle",
+          "name": "Wasp Beetle",
+          "imageUrl": "https://www.heartodex.com/_astro/1770848261617-capricorne-tigre_1Fq6A.webp"
+        },
+        {
+          "slug": "white-witch",
+          "name": "White Witch",
+          "imageUrl": "https://www.heartodex.com/_astro/1771118181840-captura_de_pantalla_2026-02-14_221426_2rEj6Y.webp"
+        },
+        {
+          "slug": "yellow-brick-large-red-damselfly",
+          "name": "Yellow Brick Large Red Damselfly",
+          "imageUrl": "https://www.heartodex.com/_astro/1778342150811-insecto-2026-05-09_11_34_48-2026-05-09_11_28_56-heartopia.png_ZyNyEb.webp"
+        }
+      ],
+      "localCount": 91,
+      "pendingReview": {
+        "remoteAdded": [],
+        "localOnly": []
+      }
     }
   },
   "policy": {
