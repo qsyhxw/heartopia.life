@@ -1,0 +1,71 @@
+import fs from 'node:fs';
+import path from 'node:path';
+
+const root = path.resolve(import.meta.dirname, '..');
+const base = 'https://www.heartodex.com';
+const read = (file) => fs.readFileSync(path.join(root, file), 'utf8');
+const write = (file, value) => { const target = path.join(root, file); fs.mkdirSync(path.dirname(target), { recursive: true }); fs.writeFileSync(target, value); };
+const clean = (value) => String(value || '').replace(/<[^>]*>/g, ' ').replace(/&amp;/g, '&').replace(/&#38;/g, '&').replace(/&#39;/g, "'").replace(/\s+/g, ' ').trim();
+const esc = (value) => String(value || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const today = () => new Date().toISOString().slice(0, 10);
+
+async function request(url) { let error; for (let attempt = 1; attempt <= 3; attempt += 1) { try { const controller = new AbortController(); const timer = setTimeout(() => controller.abort(), 15000); try { const response = await fetch(url, { headers: { "user-agent": "HeartopiaLifeRecipeSync/1.0 (+https://heartopia.life/)" }, signal: controller.signal }); if (!response.ok) throw new Error(response.status + " " + url); return response; } finally { clearTimeout(timer); } } catch (caught) { error = caught; await new Promise((done) => setTimeout(done, attempt * 500)); } } throw error; }
+const fromPage = (html, name) => JSON.parse(html.match(new RegExp(`const ${name}=(\\[.*?\\]|\\{.*?\\});const`, 's'))?.[1] || 'null');
+const cardNames = (html) => [...html.matchAll(/<a href="\/en\/recipes\/([^"?#]+)"\s+data-name="([^"]+)"/gi)].map((match) => ({ slug: match[1], name: clean(match[2]) }));
+const numberList = (block, matcher) => [...block.matchAll(matcher)].map((match) => Number(match[1].replace(/\./g, ''))).filter(Number.isFinite);
+const equal = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+const imageName = (slug) => `${slug.replace(/[^a-z0-9-]+/gi, '-').replace(/^-|-$/g, '')}.webp`;
+
+function section(html, start, end) { const a = html.indexOf(start); if (a < 0) return ''; const b = html.indexOf(end, a + start.length); return html.slice(a, b < 0 ? a + 75000 : b); }
+async function detail(recipe) {
+  const html = await (await request(`${base}/en/recipes/${recipe.slug}`)).text();
+  const ingredientsBlock = section(html, 'Required Ingredients', '</main>');
+  const ingredients = [...ingredientsBlock.matchAll(/<a href="\/en\/(?:crops|ingredients|collectibles|items|fish|wild-animals)\/[^"?#]+"[\s\S]{0,2500}?<h4[^>]*>\s*([^<]+?)\s*<\/h4>[\s\S]{0,1000}?>\s*x(\d+)\s*</gi)].map((match) => ({ name: clean(match[1]), amount: Number(match[2]) }));
+  const marketBlock = section(html, 'Module: Market', 'Module:');
+  const energyBlock = section(html, 'Energy &amp; Buffs', 'Module: Market');
+  const market = numberList(marketBlock, /class="text-sm text-\[var\(--dark\)\]">\s*([\d.]+)\s*<\/span>/gi);
+  const energy = numberList(energyBlock, /<span class="text-sm text-\[var\(--dark\)\]">\s*\+\s*(\d+)\s*<\/span>/gi);
+  const imageUrl = [...html.matchAll(/<img[^>]+src=\"([^\"]+)\"[^>]+alt=\"([^\"]+)\"/gi)].find((match) => clean(match[2]) === recipe.name)?.[1];
+  if (!imageUrl) throw new Error(`Missing recipe image for ${recipe.name}`);
+  const localFile = recipe.image ? recipe.image.slice(1) : `img/recipes/${imageName(recipe.slug)}`;
+  const absolute = path.join(root, localFile);
+  if (!fs.existsSync(absolute) || fs.statSync(absolute).size < 100) { const body = Buffer.from(await (await request(new URL(imageUrl, base).href)).arrayBuffer()); if (body.subarray(0, 4).toString() !== 'RIFF' || body.subarray(8, 12).toString() !== 'WEBP') throw new Error(`Bad recipe image for ${recipe.name}`); write(localFile, body); }
+  return { ...recipe, image: `/${localFile}`, ingredients: [...new Map(ingredients.map((item) => [item.name, item])).values()], market, energy, eventTokens: [], availability: /event ended|unavailable/i.test(html) ? 'Finished Event' : recipe.availability || 'Permanent' };
+}
+
+function replaceData(html, list, details, count, date) {
+  html = html.replace(/const recipes=\[.*?\];const detailMap=/s, `const recipes=${JSON.stringify(list)};const detailMap=`);
+  html = html.replace(/const detailMap=\{.*?\};const order=/s, `const detailMap=${JSON.stringify(details)};const order=`);
+  html = html.replace(/All \d+ Cooking Recipes/g, `All ${count} Cooking Recipes`).replace(/Browse all \d+ Heartopia cooking recipes/g, `Browse all ${count} Heartopia cooking recipes`).replace(/\b\d+ Recipe entries/g, `${count} Recipe entries`).replace(/id="visible-count">\d+/g, `id="visible-count">${count}`).replace(/There are \d+ entries/g, `There are ${count} entries`).replace(/lists \d+ recipes/g, `lists ${count} recipes`).replace(/Updated July \d+, \d{4}/g, `Updated ${new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${date}T00:00:00Z`))}`).replace(/dateModified":"\d{4}-\d{2}-\d{2}/g, `dateModified":"${date}`);
+  return html;
+}
+function adScript() { return `<script>if(window.nitroAds){window.nitroAds.createAd('heartopia_anchor',{format:'anchor-v2',anchor:'bottom',mediaQuery:'(max-width:1024px)'});window.nitroAds.createAd('heartopia_side_rail',{format:'rail',rail:'right',railStickyTop:70,mediaQuery:'(min-width:1025px)'});window.nitroAds.createAd('heartopia_floating_video',{format:'floating',mediaQuery:'(min-width:1025px)'});['heartopia_in_content','heartopia_in_content_2'].forEach(id=>window.nitroAds.createAd(id,{format:'display',sizes:[[970,90],[970,250],[728,90],[300,250],[320,100],[320,50]],collapseEmpty:true,renderVisibleOnly:true,visibleMargin:800}))}</script>`; }
+function foodCards(recipes) { return recipes.map((r) => `<section class="bg-white rounded-2xl p-6 border border-cozy-peach/30"><div class="flex flex-col sm:flex-row gap-5"><img src="${r.image}" alt="${esc(r.name)} in Heartopia" class="w-28 h-28 object-contain rounded-xl bg-cozy-cream p-2"><div class="min-w-0 flex-1"><p class="text-xs font-bold text-cozy-sage">${esc(r.category)} · Cooking Level ${r.level}</p><h2 class="font-display text-2xl font-bold mt-1">${esc(r.name)}</h2><p class="text-sm text-cozy-wood mt-2"><strong>Ingredients:</strong> ${r.ingredients.map(x => `${esc(x.name)} x${x.amount}`).join(' · ') || 'Not listed'}</p><div class="grid grid-cols-2 md:grid-cols-4 gap-2 mt-4">${r.market.map((value, i) => `<div class="bg-cozy-cream rounded-lg p-2 text-center text-sm"><span class="block text-xs text-cozy-wood">Tier ${i + 1}</span><strong>${value.toLocaleString()} G</strong></div>`).join('')}</div><p class="text-sm text-cozy-wood mt-3">Energy: ${r.energy.length ? r.energy.map((x, i) => `T${i + 1} +${x}`).join(' · ') : 'Not listed'}</p></div></div></section>`).join(''); }
+function pricePage(recipes, date) { const selected = [...recipes].filter(r => r.market.length).sort((a,b) => (b.market.at(-1) || 0) - (a.market.at(-1) || 0)).slice(0, 16); return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><script async src="https://www.googletagmanager.com/gtag/js?id=G-FRJ91G3VRR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-FRJ91G3VRR')</script><script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(['createAd',arguments,e])})},queue:[]};</script><script data-cfasync="false" async src="https://s.nitropay.com/ads-2368.js"></script><script src="https://cdn.tailwindcss.com"></script><script>tailwind.config={theme:{extend:{colors:{cozy:{cream:'#FFF8F0',peach:'#FFE5D9',coral:'#FF9B85',sage:'#A8C686',mint:'#B8E0D2',wood:'#8B7355',bark:'#5D4E37'}},fontFamily:{display:['Georgia','serif'],body:['system-ui','sans-serif']}}}}</script><title>Heartopia Recipe Prices: Market Values by Tier</title><meta name="description" content="Compare verified Heartopia recipe market values, ingredients and energy tiers."><link rel="canonical" href="https://heartopia.life/database/recipe-prices/"></head><body class="bg-cozy-cream text-cozy-bark"><main class="max-w-6xl mx-auto px-4 py-8"><a href="/database/recipes/" class="text-cozy-coral font-bold">Recipes</a><section class="bg-gradient-to-br from-amber-100 to-cozy-peach rounded-2xl p-7 mt-5 mb-8"><p class="text-sm font-bold text-cozy-sage">Updated: ${date}</p><h1 class="font-display text-3xl font-bold mt-2">Heartopia Recipe Price List</h1><p class="text-cozy-wood mt-3">Top listed Tier 4 market values. Use ingredient costs you actually paid before treating a high value as profit.</p></section><div id="heartopia_in_content" class="my-6"></div><div class="space-y-4">${foodCards(selected)}</div><div id="heartopia_in_content_2" class="my-6"></div></main>${adScript()}</body></html>`; }
+function bestPage(recipes, date) { const selected = [...recipes].filter(r => r.market.length && r.availability !== 'Finished Event').sort((a,b) => (b.market.at(-1)||0)-(a.market.at(-1)||0)).slice(0, 12); return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><script async src="https://www.googletagmanager.com/gtag/js?id=G-FRJ91G3VRR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-FRJ91G3VRR')</script><script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(['createAd',arguments,e])})},queue:[]};</script><script data-cfasync="false" async src="https://s.nitropay.com/ads-2368.js"></script><script src="https://cdn.tailwindcss.com"></script><script>tailwind.config={theme:{extend:{colors:{cozy:{cream:'#FFF8F0',peach:'#FFE5D9',coral:'#FF9B85',sage:'#A8C686',mint:'#B8E0D2',wood:'#8B7355',bark:'#5D4E37'}},fontFamily:{display:['Georgia','serif'],body:['system-ui','sans-serif']}}}}</script><title>Heartopia Best Food to Sell: Market Value Guide</title><meta name="description" content="Compare current Heartopia recipe market values, ingredients and energy without assuming a guaranteed profit."><link rel="canonical" href="https://heartopia.life/guides/best-food-to-sell/"></head><body class="bg-cozy-cream text-cozy-bark"><main class="max-w-6xl mx-auto px-4 py-8"><a href="/database/recipes/" class="text-cozy-coral font-bold">Recipes</a><section class="bg-gradient-to-br from-cozy-peach to-cozy-mint rounded-2xl p-7 mt-5 mb-8"><p class="text-sm font-bold text-cozy-sage">Updated: ${date}</p><h1 class="font-display text-3xl font-bold mt-2">Heartopia Best Food to Sell</h1><p class="text-cozy-wood mt-3">Recipes with high listed market values, excluding entries currently marked as finished events. Ingredient availability and your own costs still matter.</p></section><div id="heartopia_in_content" class="my-6"></div><div class="space-y-4">${foodCards(selected)}</div><div id="heartopia_in_content_2" class="my-6"></div></main>${adScript()}</body></html>`; }
+function calculatorPage(recipes, date) { const data = recipes.filter(r => r.market.length && r.ingredients.length).map(r => ({name:r.name,ingredients:r.ingredients,market:r.market})); let html = read('tools/recipe-calculator/index.html'); html = html.replace(/const recipes=\[.*?\];const select=/s, `const recipes=${JSON.stringify(data)};const select=`).replace(/Updated July \d+, \d{4}/g, `Updated ${new Intl.DateTimeFormat('en-US',{month:'long',day:'numeric',year:'numeric',timeZone:'UTC'}).format(new Date(`${date}T00:00:00Z`))}`); return html; }
+
+const existingHtml = read('database/recipes/index.html');
+const listed = fromPage(existingHtml, 'recipes');
+const oldDetails = fromPage(existingHtml, 'detailMap');
+const sourceCards = cardNames(await (await request(`${base}/en/recipes/`)).text());
+if (!Array.isArray(listed) || listed.length !== 168 || sourceCards.length !== 168) throw new Error(`Recipe safety check failed: local ${listed?.length}, source ${sourceCards.length}`);
+const sourceByName = new Map(sourceCards.map((x) => [x.name.toLowerCase(), x.slug]));
+const tasks = listed.map((item) => ({ ...item, slug: sourceByName.get(item.name.toLowerCase()) || oldDetails[item.name]?.slug }));
+if (tasks.some((item) => !item.slug)) throw new Error(`Missing source slug for ${tasks.filter((item) => !item.slug).map((item) => item.name).join(', ')}`);
+const entries = [];
+for (let index = 0; index < tasks.length; index += 8) entries.push(...await Promise.all(tasks.slice(index, index + 8).map(detail)));
+entries.sort((a, b) => a.name.localeCompare(b.name));
+if (entries.length !== 168) throw new Error(`Recipe detail safety check failed: ${entries.length}`);
+const list = entries.map(({ ingredients, market, energy, eventTokens, slug, ...item }) => item);
+const detailMap = Object.fromEntries(entries.map(({ name, slug, ingredients, market, energy, eventTokens }) => [name, { name, slug, ingredients, market, energy, eventTokens }]));
+const prior = fs.existsSync(path.join(root, 'data/heartopia-recipes.json')) ? JSON.parse(read('data/heartopia-recipes.json')) : null;
+const generatedAt = prior && equal(prior.recipes, entries) ? prior.generatedAt : today();
+write('data/heartopia-recipes.json', JSON.stringify({ generatedAt, count: entries.length, recipes: entries }, null, 2) + '\n');
+write('database/recipes/index.html', replaceData(existingHtml, list, detailMap, entries.length, generatedAt));
+write('database/recipe-prices/index.html', pricePage(entries, generatedAt));
+write('guides/best-food-to-sell/index.html', bestPage(entries, generatedAt));
+write('tools/recipe-calculator/index.html', calculatorPage(entries, generatedAt));
+let progress = read('assets/js/my-progress-dashboard.js'); write('assets/js/my-progress-dashboard.js', progress.replace(/(id: 'recipes'[\s\S]*?total: )\d+/, '$1' + entries.length));
+let myProgress = read('tools/my-progress/index.html'); write('tools/my-progress/index.html', myProgress.replace(/Mark learned recipes by cooking level and collection\./, `Mark learned recipes by level, ingredients, market value, and availability.`));
+console.log(`Synced ${entries.length} recipe details.`);

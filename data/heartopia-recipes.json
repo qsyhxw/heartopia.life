@@ -1,0 +1,5028 @@
+{
+  "generatedAt": "2026-07-13",
+  "count": 168,
+  "recipes": [
+    {
+      "name": "Afternoon Tea",
+      "level": 7,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Afternoon-Tea.webp",
+      "slug": "afternoon-tea",
+      "ingredients": [],
+      "market": [
+        710,
+        1065,
+        1420,
+        2840
+      ],
+      "energy": [
+        20,
+        30,
+        35,
+        40
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Apple Frosted Pancake",
+      "level": 1,
+      "category": "Winter Frost Season",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Apple-Frosted-Pancake.webp",
+      "slug": "apple-frosted-pancake",
+      "ingredients": [
+        {
+          "name": "Frosted",
+          "amount": 1
+        },
+        {
+          "name": "Apple",
+          "amount": 1
+        },
+        {
+          "name": "Milk",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        }
+      ],
+      "market": [
+        360,
+        540,
+        720,
+        1440
+      ],
+      "energy": [
+        25,
+        30,
+        35,
+        40
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Apple Jam",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Apple-Jam.webp",
+      "slug": "apple-jam",
+      "ingredients": [
+        {
+          "name": "Apple",
+          "amount": 4
+        }
+      ],
+      "market": [
+        270,
+        405,
+        540,
+        1080
+      ],
+      "energy": [
+        35,
+        42,
+        49,
+        56
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Apple Milkshake",
+      "level": 11,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Apple-Milkshake.webp",
+      "slug": "apple-milkshake",
+      "ingredients": [
+        {
+          "name": "Milk",
+          "amount": 2
+        },
+        {
+          "name": "Apple",
+          "amount": 2
+        }
+      ],
+      "market": [
+        450,
+        675,
+        900,
+        1800
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Apple Pearl Cake",
+      "level": 1,
+      "category": "Call of Whales",
+      "availability": "Active Event",
+      "image": "/img/recipes/apple-pearl-cake.webp",
+      "slug": "apple-pearl-cake",
+      "ingredients": [
+        {
+          "name": "Scallop",
+          "amount": 1
+        },
+        {
+          "name": "Milk",
+          "amount": 1
+        },
+        {
+          "name": "Apple",
+          "amount": 1
+        },
+        {
+          "name": "Wheat",
+          "amount": 1
+        }
+      ],
+      "market": [
+        590,
+        885,
+        1180,
+        2360
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Apple Pie",
+      "level": 5,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Apple-Pie.webp",
+      "slug": "apple-pie",
+      "ingredients": [
+        {
+          "name": "Wheat",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Butter",
+          "amount": 1
+        },
+        {
+          "name": "Apple",
+          "amount": 1
+        }
+      ],
+      "market": [
+        730,
+        1095,
+        1460,
+        2920
+      ],
+      "energy": [
+        70,
+        84,
+        98,
+        112
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Apple Verbena Pie",
+      "level": 1,
+      "category": "Modular Streets",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Apple-Verbena-Pie.webp",
+      "slug": "apple-verbena-pie",
+      "ingredients": [
+        {
+          "name": "Lemon Verbena",
+          "amount": 1
+        },
+        {
+          "name": "Apple",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Butter",
+          "amount": 1
+        }
+      ],
+      "market": [
+        390,
+        585,
+        780,
+        1560
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Aurora Banquet",
+      "level": 1,
+      "category": "Winter Frost Season",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Aurora-Banquet.webp",
+      "slug": "aurora-banquet",
+      "ingredients": [],
+      "market": [
+        1630,
+        2445,
+        3260,
+        6520
+      ],
+      "energy": [
+        40,
+        48,
+        56,
+        64
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Baked Eggplant w/ Meat",
+      "level": 9,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Baked-Eggplant-w-Meat.webp",
+      "slug": "baked-eggplant-w-meat",
+      "ingredients": [
+        {
+          "name": "Meat",
+          "amount": 1
+        },
+        {
+          "name": "Eggplant",
+          "amount": 1
+        },
+        {
+          "name": "Cooking Oil",
+          "amount": 1
+        }
+      ],
+      "market": [
+        1230,
+        1845,
+        2460,
+        4920
+      ],
+      "energy": [
+        75,
+        90,
+        105,
+        120
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Bizarre Food",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Bizarre-Food.webp",
+      "slug": "bizarre-food",
+      "ingredients": [],
+      "market": [
+        30
+      ],
+      "energy": [
+        10
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Bizzare Drink",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Bizzare-Drink.webp",
+      "slug": "bizzare-drink",
+      "ingredients": [],
+      "market": [
+        30
+      ],
+      "energy": [
+        10
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Black Truffle Cream Pasta",
+      "level": 3,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Black-Truffle-Cream-Pasta.webp",
+      "slug": "black-truffle-cream-pasta",
+      "ingredients": [
+        {
+          "name": "Black Truffle",
+          "amount": 1
+        },
+        {
+          "name": "Milk",
+          "amount": 1
+        },
+        {
+          "name": "Wheat",
+          "amount": 2
+        }
+      ],
+      "market": [
+        900,
+        1350,
+        1800,
+        3600
+      ],
+      "energy": [
+        90,
+        108,
+        126,
+        144
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Black Truffle Pie",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Black-Truffle-Pie.webp",
+      "slug": "black-truffle-pie",
+      "ingredients": [
+        {
+          "name": "Black Truffle",
+          "amount": 2
+        },
+        {
+          "name": "Wheat",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        }
+      ],
+      "market": [
+        830,
+        1245,
+        1660,
+        3320
+      ],
+      "energy": [
+        80,
+        96,
+        112,
+        128
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Blue European Crayfish Sashimi",
+      "level": 8,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Blue-European-Crayfish-Sashimi.webp",
+      "slug": "blue-european-crayfish-sashimi",
+      "ingredients": [
+        {
+          "name": "Blue European Crayfish",
+          "amount": 3
+        },
+        {
+          "name": "Lettuce",
+          "amount": 1
+        }
+      ],
+      "market": [
+        1310,
+        1965,
+        2620,
+        5240
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Blue Roll Cake",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Blue-Roll-Cake.webp",
+      "slug": "blue-roll-cake",
+      "ingredients": [
+        {
+          "name": "Blue Sugar",
+          "amount": 2
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Milk",
+          "amount": 1
+        }
+      ],
+      "market": [
+        570,
+        855,
+        1140,
+        2280
+      ],
+      "energy": [
+        48,
+        58,
+        67,
+        77
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Blueberry Frosted Pancake",
+      "level": 1,
+      "category": "Winter Frost Season",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Blueberry-Frosted-Pancake.webp",
+      "slug": "blueberry-frosted-pancake",
+      "ingredients": [
+        {
+          "name": "Frosted",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Milk",
+          "amount": 1
+        },
+        {
+          "name": "Blueberry",
+          "amount": 1
+        }
+      ],
+      "market": [
+        330,
+        495,
+        660,
+        1320
+      ],
+      "energy": [
+        25,
+        30,
+        35,
+        40
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Blueberry Jam",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Blueberry-Jam.webp",
+      "slug": "blueberry-jam",
+      "ingredients": [
+        {
+          "name": "Blueberry",
+          "amount": 4
+        }
+      ],
+      "market": [
+        170,
+        255,
+        340,
+        680
+      ],
+      "energy": [
+        22,
+        26,
+        31,
+        35
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Blueberry Milkshake",
+      "level": 11,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Blueberry-Milkshake.webp",
+      "slug": "blueberry-milkshake",
+      "ingredients": [
+        {
+          "name": "Milk",
+          "amount": 2
+        },
+        {
+          "name": "Blueberry",
+          "amount": 2
+        }
+      ],
+      "market": [
+        400,
+        600,
+        800,
+        1600
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Blueberry Pearl Cake",
+      "level": 1,
+      "category": "Call of Whales",
+      "availability": "Active Event",
+      "image": "/img/recipes/blueberry-pearl-cake.webp",
+      "slug": "blueberry-pearl-cake",
+      "ingredients": [
+        {
+          "name": "Wheat",
+          "amount": 1
+        },
+        {
+          "name": "Milk",
+          "amount": 1
+        },
+        {
+          "name": "Scallop",
+          "amount": 1
+        },
+        {
+          "name": "Blueberry",
+          "amount": 1
+        }
+      ],
+      "market": [
+        570,
+        855,
+        1140,
+        2280
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Blueberry Verbena Pie",
+      "level": 1,
+      "category": "Modular Streets",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Blueberry-Verbena-Pie.webp",
+      "slug": "blueberry-verbena-pie",
+      "ingredients": [
+        {
+          "name": "Blueberry",
+          "amount": 1
+        },
+        {
+          "name": "Butter",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Lemon Verbena",
+          "amount": 1
+        }
+      ],
+      "market": [
+        360,
+        540,
+        720,
+        1440
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Brick Black Truffle Patty Burger",
+      "level": 1,
+      "category": "Modular Streets",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Brick-Black-Truffle-Patty-Burger.webp",
+      "slug": "brick-black-truffle-patty-burger",
+      "ingredients": [
+        {
+          "name": "Black Truffle",
+          "amount": 1
+        },
+        {
+          "name": "Wheat",
+          "amount": 1
+        },
+        {
+          "name": "Brick Meat Patty",
+          "amount": 1
+        }
+      ],
+      "market": [
+        780,
+        1170,
+        1560,
+        3120
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Brick Bowl Apple Shaved Ice",
+      "level": 1,
+      "category": "Modular Streets",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Brick-Bowl-Apple-Shaved-Ice.webp",
+      "slug": "brick-bowl-apple-shaved-ice",
+      "ingredients": [
+        {
+          "name": "Condensed Milk",
+          "amount": 1
+        },
+        {
+          "name": "Apple",
+          "amount": 2
+        },
+        {
+          "name": "Brick Ice",
+          "amount": 1
+        }
+      ],
+      "market": [
+        260,
+        390,
+        520,
+        1040
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Brick Bowl Blueberry Shaved Ice",
+      "level": 1,
+      "category": "Modular Streets",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Brick-Bowl-Blueberry-Shaved-Ice.webp",
+      "slug": "brick-bowl-blueberry-shaved-ice",
+      "ingredients": [
+        {
+          "name": "Condensed Milk",
+          "amount": 1
+        },
+        {
+          "name": "Blueberry",
+          "amount": 2
+        },
+        {
+          "name": "Brick Ice",
+          "amount": 1
+        }
+      ],
+      "market": [
+        220,
+        330,
+        440,
+        880
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Brick Bowl Fruit Shaved Ice",
+      "level": 1,
+      "category": "Modular Streets",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Brick-Bowl-Fruit-Shaved-Ice.webp",
+      "slug": "brick-bowl-fruit-shaved-ice",
+      "ingredients": [
+        {
+          "name": "Condensed Milk",
+          "amount": 1
+        },
+        {
+          "name": "Brick Ice",
+          "amount": 1
+        }
+      ],
+      "market": [
+        210,
+        315,
+        420,
+        840
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Brick Bowl Grape Shaved Ice",
+      "level": 1,
+      "category": "Modular Streets",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Brick-Bowl-Grape-Shaved-Ice.webp",
+      "slug": "brick-bowl-grape-shaved-ice",
+      "ingredients": [
+        {
+          "name": "Condensed Milk",
+          "amount": 1
+        },
+        {
+          "name": "Brick Ice",
+          "amount": 1
+        },
+        {
+          "name": "Grape",
+          "amount": 2
+        }
+      ],
+      "market": [
+        1110,
+        1665,
+        2220,
+        4440
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Brick Bowl Mandarin Shaved Ice",
+      "level": 1,
+      "category": "Modular Streets",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Brick-Bowl-Mandarin-Shaved-Ice.webp",
+      "slug": "brick-bowl-mandarin-shaved-ice",
+      "ingredients": [
+        {
+          "name": "Mandarin",
+          "amount": 2
+        },
+        {
+          "name": "Condensed Milk",
+          "amount": 1
+        },
+        {
+          "name": "Brick Ice",
+          "amount": 1
+        }
+      ],
+      "market": [
+        260,
+        390,
+        520,
+        1040
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Brick Bowl Pineapple Shaved Ice",
+      "level": 1,
+      "category": "Modular Streets",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Brick-Bowl-Pineapple-Shaved-Ice.webp",
+      "slug": "brick-bowl-pineapple-shaved-ice",
+      "ingredients": [
+        {
+          "name": "Pineapple",
+          "amount": 2
+        },
+        {
+          "name": "Brick Ice",
+          "amount": 1
+        },
+        {
+          "name": "Condensed Milk",
+          "amount": 1
+        }
+      ],
+      "market": [
+        260,
+        390,
+        520,
+        1040
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Brick Bowl Raspberry Shaved Ice",
+      "level": 1,
+      "category": "Modular Streets",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Brick-Bowl-Raspberry-Shaved-Ice.webp",
+      "slug": "brick-bowl-raspberry-shaved-ice",
+      "ingredients": [
+        {
+          "name": "Condensed Milk",
+          "amount": 1
+        },
+        {
+          "name": "Raspberry",
+          "amount": 2
+        },
+        {
+          "name": "Brick Ice",
+          "amount": 1
+        }
+      ],
+      "market": [
+        260,
+        390,
+        520,
+        1040
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Brick Bowl Strawberry Shaved Ice",
+      "level": 1,
+      "category": "Modular Streets",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Brick-Bowl-Strawberry-Shaved-Ice.webp",
+      "slug": "brick-bowl-strawberry-shaved-ice",
+      "ingredients": [
+        {
+          "name": "Condensed Milk",
+          "amount": 1
+        },
+        {
+          "name": "Brick Ice",
+          "amount": 1
+        },
+        {
+          "name": "Strawberry",
+          "amount": 2
+        }
+      ],
+      "market": [
+        900,
+        1350,
+        1800,
+        3600
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Brick Button Mushroom Patty Burger",
+      "level": 1,
+      "category": "Modular Streets",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Brick-Button-Mushroom-Patty-Burger.webp",
+      "slug": "brick-button-mushroom-patty-burger",
+      "ingredients": [
+        {
+          "name": "Button Mushroom",
+          "amount": 2
+        },
+        {
+          "name": "Wheat",
+          "amount": 1
+        },
+        {
+          "name": "Brick Meat Patty",
+          "amount": 1
+        }
+      ],
+      "market": [
+        450,
+        675,
+        900,
+        1800
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Brick Fun Combo Set",
+      "level": 1,
+      "category": "Modular Streets",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Brick-Fun-Combo-Set.webp",
+      "slug": "brick-fun-combo-set",
+      "ingredients": [],
+      "market": [
+        1070,
+        1605,
+        2140,
+        4280
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Brick Mushroom Patty Burger",
+      "level": 1,
+      "category": "Modular Streets",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Brick-Mushroom-Patty-Burger.webp",
+      "slug": "brick-mushroom-patty-burger",
+      "ingredients": [
+        {
+          "name": "Wheat",
+          "amount": 1
+        },
+        {
+          "name": "Brick Meat Patty",
+          "amount": 1
+        }
+      ],
+      "market": [
+        450,
+        675,
+        900,
+        1800
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Brick Oyster Mushroom Patty Burger",
+      "level": 1,
+      "category": "Modular Streets",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Brick-Oyster-Mushroom-Patty-Burger.webp",
+      "slug": "brick-oyster-mushroom-patty-burger",
+      "ingredients": [
+        {
+          "name": "Brick Meat Patty",
+          "amount": 1
+        },
+        {
+          "name": "Wheat",
+          "amount": 1
+        },
+        {
+          "name": "Oyster Mushroom",
+          "amount": 2
+        }
+      ],
+      "market": [
+        450,
+        675,
+        900,
+        1800
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Brick Penny Bun Patty Burger",
+      "level": 1,
+      "category": "Modular Streets",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Brick-Penny-Bun-Patty-Burger.webp",
+      "slug": "brick-penny-bun-patty-burger",
+      "ingredients": [
+        {
+          "name": "Penny Bun",
+          "amount": 2
+        },
+        {
+          "name": "Wheat",
+          "amount": 1
+        },
+        {
+          "name": "Brick Meat Patty",
+          "amount": 1
+        }
+      ],
+      "market": [
+        450,
+        675,
+        900,
+        1800
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Brick Shiitake Patty Burger",
+      "level": 1,
+      "category": "Modular Streets",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Brick-Shiitake-Patty-Burger.webp",
+      "slug": "brick-shiitake-patty-burger",
+      "ingredients": [
+        {
+          "name": "Shiitake",
+          "amount": 2
+        },
+        {
+          "name": "Wheat",
+          "amount": 1
+        },
+        {
+          "name": "Brick Meat Patty",
+          "amount": 1
+        }
+      ],
+      "market": [
+        450,
+        675,
+        900,
+        1800
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Button Mushroom Pie",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Button-Mushroom-Pie.webp",
+      "slug": "button-mushroom-pie",
+      "ingredients": [
+        {
+          "name": "Wheat",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Button Mushroom",
+          "amount": 2
+        }
+      ],
+      "market": [
+        500,
+        750,
+        1000,
+        2000
+      ],
+      "energy": [
+        35,
+        42,
+        49,
+        56
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Candlelight Dinner",
+      "level": 9,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Candlelight-Dinner.webp",
+      "slug": "candlelight-dinner",
+      "ingredients": [],
+      "market": [
+        1760,
+        2640,
+        3520,
+        7040
+      ],
+      "energy": [
+        75,
+        90,
+        105,
+        120
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Caramel Popcorn Bucket",
+      "level": 1,
+      "category": "Dreamlight Cinematics",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Caramel-Popcorn-Bucket.webp",
+      "slug": "caramel-popcorn-bucket",
+      "ingredients": [
+        {
+          "name": "Butter",
+          "amount": 1
+        },
+        {
+          "name": "Springday Brown Sugar",
+          "amount": 2
+        },
+        {
+          "name": "Corn",
+          "amount": 1
+        }
+      ],
+      "market": [
+        820,
+        1230,
+        1640,
+        3280
+      ],
+      "energy": [
+        50,
+        60,
+        70,
+        80
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Carrot Cake",
+      "level": 5,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Carrot-Cake.webp",
+      "slug": "carrot-cake",
+      "ingredients": [
+        {
+          "name": "Carrot",
+          "amount": 2
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Wheat",
+          "amount": 1
+        }
+      ],
+      "market": [
+        840,
+        1260,
+        1680,
+        3360
+      ],
+      "energy": [
+        55,
+        66,
+        77,
+        88
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Cheese Cake",
+      "level": 2,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Cheese-Cake.webp",
+      "slug": "cheese-cake",
+      "ingredients": [
+        {
+          "name": "Milk",
+          "amount": 1
+        },
+        {
+          "name": "Wheat",
+          "amount": 1
+        },
+        {
+          "name": "Cheese",
+          "amount": 1
+        }
+      ],
+      "market": [
+        480,
+        720,
+        960,
+        1920
+      ],
+      "energy": [
+        50,
+        60,
+        70,
+        80
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Chocolate Sauce",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Chocolate-Sauce.webp",
+      "slug": "chocolate-sauce",
+      "ingredients": [
+        {
+          "name": "Cacao Bean",
+          "amount": 4
+        }
+      ],
+      "market": [
+        1400,
+        2100,
+        2800,
+        5600
+      ],
+      "energy": [
+        80,
+        96,
+        112,
+        128
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Cocoa Milk Tea",
+      "level": 11,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Cocoa-Milk-Tea.webp",
+      "slug": "cocoa-milk-tea",
+      "ingredients": [
+        {
+          "name": "Tea Leaves",
+          "amount": 2
+        },
+        {
+          "name": "Cacao Bean",
+          "amount": 1
+        },
+        {
+          "name": "Milk",
+          "amount": 1
+        }
+      ],
+      "market": [
+        1120,
+        1680,
+        2240,
+        4480
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Cocoa Milkshake",
+      "level": 11,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Cocoa-Milkshake.webp",
+      "slug": "cocoa-milkshake",
+      "ingredients": [
+        {
+          "name": "Milk",
+          "amount": 2
+        },
+        {
+          "name": "Cacao Bean",
+          "amount": 2
+        }
+      ],
+      "market": [
+        1000,
+        1500,
+        2000,
+        4000
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Coffee",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Coffee.webp",
+      "slug": "coffee",
+      "ingredients": [
+        {
+          "name": "Coffee Beans",
+          "amount": 4
+        }
+      ],
+      "market": [
+        290,
+        435,
+        580,
+        1160
+      ],
+      "energy": [
+        40,
+        48,
+        56,
+        64
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Coffee Latte",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Coffee-Latte.webp",
+      "slug": "coffee-latte",
+      "ingredients": [
+        {
+          "name": "Milk",
+          "amount": 2
+        },
+        {
+          "name": "Coffee Beans",
+          "amount": 2
+        }
+      ],
+      "market": [
+        300,
+        450,
+        600,
+        1200
+      ],
+      "energy": [
+        40,
+        48,
+        56,
+        64
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Colorful Egg Feast",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Colorful-Egg-Feast.webp",
+      "slug": "colorful-egg-feast",
+      "ingredients": [],
+      "market": [
+        1650,
+        2475,
+        3300,
+        6600
+      ],
+      "energy": [
+        55,
+        66,
+        77,
+        88
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Colorful Movie Combo",
+      "level": 1,
+      "category": "Dreamlight Cinematics",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Colorful-Movie-Combo.webp",
+      "slug": "colorful-movie-combo",
+      "ingredients": [],
+      "market": [
+        1960,
+        2940,
+        3920,
+        7840
+      ],
+      "energy": [
+        60,
+        72,
+        84,
+        96
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Corn Soup",
+      "level": 5,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Corn-Soup.webp",
+      "slug": "corn-soup",
+      "ingredients": [
+        {
+          "name": "Butter",
+          "amount": 1
+        },
+        {
+          "name": "Corn",
+          "amount": 2
+        },
+        {
+          "name": "Milk",
+          "amount": 1
+        }
+      ],
+      "market": [
+        1340,
+        2010,
+        2680,
+        5360
+      ],
+      "energy": [
+        80,
+        96,
+        112,
+        128
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Crayfish Sashimi",
+      "level": 8,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Crayfish-Sashimi.webp",
+      "slug": "crayfish-sashimi",
+      "ingredients": [
+        {
+          "name": "European Crayfish",
+          "amount": 3
+        },
+        {
+          "name": "Lettuce",
+          "amount": 1
+        }
+      ],
+      "market": [
+        850,
+        1275,
+        1700,
+        3400
+      ],
+      "energy": [
+        30,
+        36,
+        42,
+        48
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Creamy White Radish Soup",
+      "level": 1,
+      "category": "Winter Frost Season",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Creamy-White-Radish-Soup.webp",
+      "slug": "creamy-white-radish-soup",
+      "ingredients": [
+        {
+          "name": "White Radish",
+          "amount": 2
+        },
+        {
+          "name": "Butter",
+          "amount": 1
+        },
+        {
+          "name": "Milk",
+          "amount": 1
+        }
+      ],
+      "market": [
+        340,
+        510,
+        680,
+        1360
+      ],
+      "energy": [
+        25,
+        30,
+        35,
+        40
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Daisy Tea",
+      "level": 12,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Daisy-Tea.webp",
+      "slug": "daisy-tea",
+      "ingredients": [
+        {
+          "name": "Tea Leaf",
+          "amount": 2
+        }
+      ],
+      "market": [
+        600,
+        900,
+        1200,
+        2400
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Deluxe Seafood Platter",
+      "level": 6,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Deluxe-Seafood-Platter.webp",
+      "slug": "deluxe-seafood-platter",
+      "ingredients": [
+        {
+          "name": "European Crayfish",
+          "amount": 2
+        },
+        {
+          "name": "Sea Bass",
+          "amount": 2
+        }
+      ],
+      "market": [
+        410,
+        615,
+        820,
+        1640
+      ],
+      "energy": [
+        65,
+        78,
+        91,
+        104
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Egg",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Egg.webp",
+      "slug": "egg",
+      "ingredients": [
+        {
+          "name": "Milk",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        }
+      ],
+      "market": [
+        190,
+        285,
+        380,
+        760
+      ],
+      "energy": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Exquisite Afternoon Tea",
+      "level": 12,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Exquisite-Afternoon-Tea.webp",
+      "slug": "exquisite-afternoon-tea",
+      "ingredients": [],
+      "market": [
+        2970,
+        4455,
+        5940,
+        11880
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Fish and Chips",
+      "level": 2,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Fish-and-Chips.webp",
+      "slug": "fish-and-chips",
+      "ingredients": [
+        {
+          "name": "Potatoes",
+          "amount": 2
+        }
+      ],
+      "market": [
+        250,
+        290,
+        330,
+        370
+      ],
+      "energy": [
+        40,
+        48,
+        56,
+        64
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Fruit Verbena Pie",
+      "level": 1,
+      "category": "Modular Streets",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Fruit-Verbena-Pie.webp",
+      "slug": "fruit-verbena-pie",
+      "ingredients": [
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Lemon Verbena",
+          "amount": 1
+        },
+        {
+          "name": "Butter",
+          "amount": 1
+        }
+      ],
+      "market": [
+        360,
+        540,
+        720,
+        1440
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Glasswort & Shrimp Fried Rice",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/glasswort-shrimp-fried-rice.webp",
+      "slug": "glasswort-shrimp-fried-rice",
+      "ingredients": [
+        {
+          "name": "Common Prawn",
+          "amount": 1
+        },
+        {
+          "name": "Paddy",
+          "amount": 1
+        },
+        {
+          "name": "Glasswort",
+          "amount": 2
+        }
+      ],
+      "market": [
+        160,
+        240,
+        320,
+        640
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Grape Jam",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Grape-Jam.webp",
+      "slug": "grape-jam",
+      "ingredients": [
+        {
+          "name": "Grape",
+          "amount": 4
+        }
+      ],
+      "market": [
+        2020,
+        3030,
+        4040,
+        8080
+      ],
+      "energy": [
+        40,
+        48,
+        56,
+        64
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Grape Milkshake",
+      "level": 11,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Grape-Milkshake.webp",
+      "slug": "grape-milkshake",
+      "ingredients": [
+        {
+          "name": "Milk",
+          "amount": 2
+        },
+        {
+          "name": "Grape",
+          "amount": 2
+        }
+      ],
+      "market": [
+        1300,
+        1950,
+        2600,
+        5200
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Grape Verbena Pie",
+      "level": 1,
+      "category": "Modular Streets",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Grape-Verbena-Pie.webp",
+      "slug": "grape-verbena-pie",
+      "ingredients": [
+        {
+          "name": "Lemon Verbena",
+          "amount": 1
+        },
+        {
+          "name": "Grape",
+          "amount": 1
+        },
+        {
+          "name": "Butter",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        }
+      ],
+      "market": [
+        810,
+        1215,
+        1620,
+        3240
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Grass Cake",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Grass-Cake.webp",
+      "slug": "grass-cake",
+      "ingredients": [
+        {
+          "name": "Wheat",
+          "amount": 1
+        },
+        {
+          "name": "Weed",
+          "amount": 1
+        },
+        {
+          "name": "Matcha Powder",
+          "amount": 1
+        },
+        {
+          "name": "Milk",
+          "amount": 1
+        }
+      ],
+      "market": [
+        690,
+        1035,
+        1380,
+        2760
+      ],
+      "energy": [
+        50,
+        60,
+        70,
+        80
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Green Egg",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/1775587274390-huevoverde_ZEFoUk.webp",
+      "slug": "green-egg",
+      "ingredients": [
+        {
+          "name": "Lettuce",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        }
+      ],
+      "market": [
+        570,
+        855,
+        1140,
+        2280
+      ],
+      "energy": [
+        50,
+        60,
+        70,
+        80
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Green Milk Tea",
+      "level": 12,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Green-Milk-Tea.webp",
+      "slug": "green-milk-tea",
+      "ingredients": [
+        {
+          "name": "Tea Leaf",
+          "amount": 2
+        },
+        {
+          "name": "Milk",
+          "amount": 2
+        }
+      ],
+      "market": [
+        500,
+        750,
+        1000,
+        2000
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Green Roll Cake",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/1783442117549-receta-captura_de_pantalla_2026-07-07_122330_Z1QbG8h.webp",
+      "slug": "green-roll-cake",
+      "ingredients": [
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Milk",
+          "amount": 1
+        },
+        {
+          "name": "Green Sugar",
+          "amount": 2
+        }
+      ],
+      "market": [
+        670,
+        1005,
+        1340,
+        2680
+      ],
+      "energy": [
+        48,
+        58,
+        67,
+        77
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Green Tea",
+      "level": 12,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Green-Tea.webp",
+      "slug": "green-tea",
+      "ingredients": [
+        {
+          "name": "Tea Leaf",
+          "amount": 2
+        }
+      ],
+      "market": [
+        500,
+        750,
+        1000,
+        2000
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Grilled Button Mushroom",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/1771373075729-mousserons_rotis_1fjNVt.webp",
+      "slug": "grilled-button-mushroom",
+      "ingredients": [
+        {
+          "name": "Button Mushroom",
+          "amount": 4
+        }
+      ],
+      "market": [
+        180,
+        270,
+        360,
+        720
+      ],
+      "energy": [
+        15,
+        18,
+        21,
+        24
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Grilled Mushrooms",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/1771372828048-champiã±on_rostisado_2nQlbS.webp",
+      "slug": "grilled-mushrooms",
+      "ingredients": [],
+      "market": [
+        180,
+        270,
+        360,
+        720
+      ],
+      "energy": [
+        15,
+        18,
+        21,
+        24
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Grilled Oyster Mushroom",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/1771372982138-pleurotes_rotis_Z1KLzND.webp",
+      "slug": "grilled-oyster-mushroom",
+      "ingredients": [
+        {
+          "name": "Oyster Mushroom",
+          "amount": 4
+        }
+      ],
+      "market": [
+        180,
+        270,
+        360,
+        720
+      ],
+      "energy": [
+        15,
+        18,
+        21,
+        24
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Grilled Penny Bun",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/1771373106544-cã¨pes_de_bordeaux_rotis_2nkWHV.webp",
+      "slug": "grilled-penny-bun",
+      "ingredients": [
+        {
+          "name": "Penny Bun",
+          "amount": 4
+        }
+      ],
+      "market": [
+        180,
+        270,
+        360,
+        720
+      ],
+      "energy": [
+        15,
+        18,
+        21,
+        24
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Grilled Shiitake Mushroom",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/1771373010116-lentins_du_chãªne_rotis_1ulAFX.webp",
+      "slug": "grilled-shiitake-mushroom",
+      "ingredients": [
+        {
+          "name": "Shiitake",
+          "amount": 4
+        }
+      ],
+      "market": [
+        180,
+        270,
+        360,
+        720
+      ],
+      "energy": [
+        15,
+        18,
+        21,
+        24
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Grilled Squid w/ Apple Jam",
+      "level": 1,
+      "category": "Call of Whales",
+      "availability": "Active Event",
+      "image": "/img/recipes/grilled-squid-w-apple-jam.webp",
+      "slug": "grilled-squid-w-apple-jam",
+      "ingredients": [
+        {
+          "name": "Japanese Flying Squid",
+          "amount": 1
+        },
+        {
+          "name": "Wakame",
+          "amount": 1
+        },
+        {
+          "name": "Sea Grape",
+          "amount": 1
+        }
+      ],
+      "market": [
+        550,
+        825,
+        1100,
+        2200
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Grilled Squid w/ Blueberry Jam",
+      "level": 1,
+      "category": "Call of Whales",
+      "availability": "Active Event",
+      "image": "/img/recipes/grilled-squid-w-blueberry-jam.webp",
+      "slug": "grilled-squid-w-blueberry-jam",
+      "ingredients": [
+        {
+          "name": "Japanese Flying Squid",
+          "amount": 1
+        },
+        {
+          "name": "Sea Grape",
+          "amount": 1
+        },
+        {
+          "name": "Wakame",
+          "amount": 1
+        }
+      ],
+      "market": [
+        450,
+        675,
+        900,
+        1800
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Grilled Squid w/ Fruit Jam",
+      "level": 1,
+      "category": "Call of Whales",
+      "availability": "Active Event",
+      "image": "/img/recipes/grilled-squid-w-fruit-jam.webp",
+      "slug": "grilled-squid-w-fruit-jam",
+      "ingredients": [
+        {
+          "name": "Wakame",
+          "amount": 1
+        },
+        {
+          "name": "Japanese Flying Squid",
+          "amount": 1
+        },
+        {
+          "name": "Sea Grape",
+          "amount": 1
+        }
+      ],
+      "market": [
+        440,
+        660,
+        880,
+        1760
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Grilled Squid w/ Pineapple Jam",
+      "level": 1,
+      "category": "Call of Whales",
+      "availability": "Active Event",
+      "image": "/img/recipes/grilled-squid-w-pineapple-jam.webp",
+      "slug": "grilled-squid-w-pineapple-jam",
+      "ingredients": [
+        {
+          "name": "Wakame",
+          "amount": 1
+        },
+        {
+          "name": "Sea Grape",
+          "amount": 1
+        },
+        {
+          "name": "Japanese Flying Squid",
+          "amount": 1
+        }
+      ],
+      "market": [
+        560,
+        840,
+        1120,
+        2240
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Grilled Squid w/ Starfruit Jam",
+      "level": 1,
+      "category": "Call of Whales",
+      "availability": "Active Event",
+      "image": "/img/recipes/grilled-squid-w-starfruit-jam.webp",
+      "slug": "grilled-squid-w-starfruit-jam",
+      "ingredients": [
+        {
+          "name": "Wakame",
+          "amount": 1
+        },
+        {
+          "name": "Sea Grape",
+          "amount": 1
+        },
+        {
+          "name": "Japanese Flying Squid",
+          "amount": 1
+        }
+      ],
+      "market": [
+        480,
+        720,
+        960,
+        1920
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Grilled Squid w/ Strawberry Jam",
+      "level": 1,
+      "category": "Call of Whales",
+      "availability": "Active Event",
+      "image": "/img/recipes/grilled-squid-w-strawberry-jam.webp",
+      "slug": "grilled-squid-w-strawberry-jam",
+      "ingredients": [
+        {
+          "name": "Japanese Flying Squid",
+          "amount": 1
+        },
+        {
+          "name": "Wakame",
+          "amount": 1
+        },
+        {
+          "name": "Sea Grape",
+          "amount": 1
+        }
+      ],
+      "market": [
+        1860,
+        2790,
+        3720,
+        7440
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Heart Puppies Con Panna",
+      "level": 1,
+      "category": "Maltese",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Heart-Puppies-Con-Panna.webp",
+      "slug": "heart-puppies-con-panna",
+      "ingredients": [
+        {
+          "name": "Milk",
+          "amount": 2
+        }
+      ],
+      "market": [
+        1220,
+        1830,
+        2440,
+        4880
+      ],
+      "energy": [
+        85,
+        102,
+        119,
+        136
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "House Salad",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/House-Salad.webp",
+      "slug": "house-salad",
+      "ingredients": [],
+      "market": [
+        90,
+        135,
+        180,
+        360
+      ],
+      "energy": [
+        15,
+        18,
+        21,
+        24
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Iced-Cup Coffee",
+      "level": 1,
+      "category": "Winter Frost Season",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Iced-Cup-Coffee.webp",
+      "slug": "iced-cup-coffee",
+      "ingredients": [
+        {
+          "name": "Coffee Beans",
+          "amount": 3
+        },
+        {
+          "name": "Frosted",
+          "amount": 1
+        }
+      ],
+      "market": [
+        280,
+        420,
+        560,
+        1120
+      ],
+      "energy": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "iced-Cup Latte",
+      "level": 1,
+      "category": "Winter Frost Season",
+      "availability": "Finished Event",
+      "image": "/img/recipes/iced-Cup-Latte.webp",
+      "slug": "iced-cup-latte",
+      "ingredients": [
+        {
+          "name": "Milk",
+          "amount": 2
+        },
+        {
+          "name": "Coffee Beans",
+          "amount": 1
+        },
+        {
+          "name": "Frosted",
+          "amount": 1
+        }
+      ],
+      "market": [
+        280,
+        420,
+        560,
+        1120
+      ],
+      "energy": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Indigo Roll Cake",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Indigo-Roll-Cake.webp",
+      "slug": "indigo-roll-cake",
+      "ingredients": [
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Indigo Sugar",
+          "amount": 2
+        },
+        {
+          "name": "Milk",
+          "amount": 1
+        }
+      ],
+      "market": [
+        570,
+        855,
+        1140,
+        2280
+      ],
+      "energy": [
+        48,
+        58,
+        67,
+        77
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Maltese Canelé",
+      "level": 1,
+      "category": "Maltese",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Maltese-Canelé.webp",
+      "slug": "maltese-canele",
+      "ingredients": [
+        {
+          "name": "Strawberry",
+          "amount": 1
+        },
+        {
+          "name": "Milk",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Wheat",
+          "amount": 1
+        }
+      ],
+      "market": [
+        910,
+        1365,
+        1820,
+        3640
+      ],
+      "energy": [
+        45,
+        54,
+        63,
+        72
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Maltese Con Panna",
+      "level": 1,
+      "category": "Maltese",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Maltese-Con-Panna.webp",
+      "slug": "maltese-con-panna",
+      "ingredients": [
+        {
+          "name": "Milk",
+          "amount": 3
+        }
+      ],
+      "market": [
+        520,
+        780,
+        1040,
+        2080
+      ],
+      "energy": [
+        45,
+        54,
+        63,
+        72
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Mandarin Frosted Pancake",
+      "level": 1,
+      "category": "Winter Frost Season",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Mandarin-Frosted-Pancake.webp",
+      "slug": "mandarin-frosted-pancake",
+      "ingredients": [
+        {
+          "name": "Milk",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Mandarin",
+          "amount": 1
+        },
+        {
+          "name": "Frosted",
+          "amount": 1
+        }
+      ],
+      "market": [
+        360,
+        540,
+        720,
+        1440
+      ],
+      "energy": [
+        25,
+        30,
+        35,
+        40
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Mandarin Jam",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Mandarin-Jam.webp",
+      "slug": "mandarin-jam",
+      "ingredients": [
+        {
+          "name": "Mandarin",
+          "amount": 4
+        }
+      ],
+      "market": [
+        270,
+        405,
+        540,
+        1080
+      ],
+      "energy": [
+        35,
+        42,
+        49,
+        56
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Mandarin Milkshake",
+      "level": 11,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Mandarin-Milkshake.webp",
+      "slug": "mandarin-milkshake",
+      "ingredients": [
+        {
+          "name": "Mandarin",
+          "amount": 2
+        },
+        {
+          "name": "Milk",
+          "amount": 2
+        }
+      ],
+      "market": [
+        450,
+        675,
+        900,
+        1800
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Mandarin Pearl Cake",
+      "level": 1,
+      "category": "Call of Whales",
+      "availability": "Active Event",
+      "image": "/img/recipes/mandarin-pearl-cake.webp",
+      "slug": "mandarin-pearl-cake",
+      "ingredients": [
+        {
+          "name": "Scallop",
+          "amount": 1
+        },
+        {
+          "name": "Wheat",
+          "amount": 1
+        },
+        {
+          "name": "Milk",
+          "amount": 1
+        },
+        {
+          "name": "Mandarin",
+          "amount": 1
+        }
+      ],
+      "market": [
+        590,
+        885,
+        1180,
+        2360
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Mandarin Verbena Pie",
+      "level": 1,
+      "category": "Modular Streets",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Mandarin-Verbena-Pie.webp",
+      "slug": "mandarin-verbena-pie",
+      "ingredients": [
+        {
+          "name": "Lemon Verbena",
+          "amount": 1
+        },
+        {
+          "name": "Butter",
+          "amount": 1
+        },
+        {
+          "name": "Mandarin",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        }
+      ],
+      "market": [
+        360,
+        540,
+        720,
+        1440
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Matcha Green Milk Tea",
+      "level": 12,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Matcha-Green-Milk-Tea.webp",
+      "slug": "matcha-green-milk-tea",
+      "ingredients": [
+        {
+          "name": "Tea Leaf",
+          "amount": 2
+        },
+        {
+          "name": "Matcha Powder",
+          "amount": 1
+        },
+        {
+          "name": "Milk",
+          "amount": 1
+        }
+      ],
+      "market": [
+        700,
+        1050,
+        1400,
+        2800
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Matcha Milkshake",
+      "level": 11,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Matcha-Milkshake.webp",
+      "slug": "matcha-milkshake",
+      "ingredients": [
+        {
+          "name": "Matcha Powder",
+          "amount": 2
+        },
+        {
+          "name": "Milk",
+          "amount": 2
+        }
+      ],
+      "market": [
+        840,
+        1260,
+        1680,
+        3360
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Meat Burger",
+      "level": 8,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Meat-Burger.webp",
+      "slug": "meat-burger",
+      "ingredients": [
+        {
+          "name": "Wheat",
+          "amount": 1
+        },
+        {
+          "name": "Lettuce",
+          "amount": 1
+        },
+        {
+          "name": "Meat",
+          "amount": 1
+        }
+      ],
+      "market": [
+        1350,
+        2025,
+        2700,
+        5400
+      ],
+      "energy": [
+        75,
+        90,
+        105,
+        120
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Meat Sauce Pasta",
+      "level": 4,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Meat-Sauce-Pasta.webp",
+      "slug": "meat-sauce-pasta",
+      "ingredients": [
+        {
+          "name": "Meat",
+          "amount": 1
+        },
+        {
+          "name": "Tomato",
+          "amount": 1
+        },
+        {
+          "name": "Wheat",
+          "amount": 1
+        },
+        {
+          "name": "Cheese",
+          "amount": 1
+        }
+      ],
+      "market": [
+        670,
+        1005,
+        1340,
+        2680
+      ],
+      "energy": [
+        80,
+        96,
+        112,
+        128
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Mellow Black Tea",
+      "level": 11,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Mellow-Black-Tea.webp",
+      "slug": "mellow-black-tea",
+      "ingredients": [
+        {
+          "name": "Tea Leaves",
+          "amount": 2
+        }
+      ],
+      "market": [
+        840,
+        1260,
+        1680,
+        3360
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Mellow Milk Tea",
+      "level": 11,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Mellow-Milk-Tea.webp",
+      "slug": "mellow-milk-tea",
+      "ingredients": [
+        {
+          "name": "Tea Leaves",
+          "amount": 2
+        },
+        {
+          "name": "Milk",
+          "amount": 2
+        }
+      ],
+      "market": [
+        840,
+        1260,
+        1680,
+        3360
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Milkshake",
+      "level": 11,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Milkshake.webp",
+      "slug": "milkshake",
+      "ingredients": [
+        {
+          "name": "Milk",
+          "amount": 2
+        }
+      ],
+      "market": [
+        400,
+        600,
+        800,
+        1600
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Mixed Jam",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Mixed-Jam.webp",
+      "slug": "mixed-jam",
+      "ingredients": [],
+      "market": [
+        160,
+        240,
+        320,
+        640
+      ],
+      "energy": [
+        22,
+        26,
+        31,
+        35
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Mushroom Pie",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Mushroom-Pie.webp",
+      "slug": "mushroom-pie",
+      "ingredients": [
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Wheat",
+          "amount": 1
+        }
+      ],
+      "market": [
+        500,
+        750,
+        1000,
+        2000
+      ],
+      "energy": [
+        35,
+        42,
+        49,
+        56
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Ocean Feast",
+      "level": 1,
+      "category": "Call of Whales",
+      "availability": "Active Event",
+      "image": "/img/recipes/ocean-feast.webp",
+      "slug": "ocean-feast",
+      "ingredients": [],
+      "market": [
+        1700,
+        2550,
+        3400,
+        6800
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Ocean Iced Drink",
+      "level": 1,
+      "category": "Call of Whales",
+      "availability": "Active Event",
+      "image": "/img/recipes/ocean-iced-drink.webp",
+      "slug": "ocean-iced-drink",
+      "ingredients": [
+        {
+          "name": "Spirulina Powder",
+          "amount": 2
+        },
+        {
+          "name": "Starfruit",
+          "amount": 2
+        }
+      ],
+      "market": [
+        190,
+        285,
+        380,
+        760
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Onsen Egg",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Onsen-Egg.webp",
+      "slug": "onsen-egg",
+      "ingredients": [
+        {
+          "name": "Pasteurized Egg",
+          "amount": 1
+        }
+      ],
+      "market": [
+        130,
+        195,
+        260,
+        520
+      ],
+      "energy": [
+        15,
+        18,
+        21,
+        24
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Orange Egg",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Orange-Egg.webp",
+      "slug": "orange-egg",
+      "ingredients": [
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Apple",
+          "amount": 1
+        }
+      ],
+      "market": [
+        190,
+        285,
+        380,
+        760
+      ],
+      "energy": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Orange Roll Cake",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Orange-Roll-Cake.webp",
+      "slug": "orange-roll-cake",
+      "ingredients": [
+        {
+          "name": "Milk",
+          "amount": 1
+        },
+        {
+          "name": "Orange Sugar",
+          "amount": 2
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        }
+      ],
+      "market": [
+        670,
+        1005,
+        1340,
+        2680
+      ],
+      "energy": [
+        48,
+        58,
+        67,
+        77
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Original Frosted Pancake",
+      "level": 1,
+      "category": "Winter Frost Season",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Original-Frosted-Pancake.webp",
+      "slug": "original-frosted-pancake",
+      "ingredients": [
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Frosted",
+          "amount": 1
+        },
+        {
+          "name": "Milk",
+          "amount": 1
+        }
+      ],
+      "market": [
+        330,
+        495,
+        660,
+        1320
+      ],
+      "energy": [
+        25,
+        30,
+        35,
+        40
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Original Roll Cake",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Original-Roll-Cake.webp",
+      "slug": "original-roll-cake",
+      "ingredients": [
+        {
+          "name": "Milk",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        }
+      ],
+      "market": [
+        550,
+        825,
+        1100,
+        2200
+      ],
+      "energy": [
+        35,
+        42,
+        49,
+        56
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Oyster Mushroom Pie",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Oyster-Mushroom-Pie.webp",
+      "slug": "oyster-mushroom-pie",
+      "ingredients": [
+        {
+          "name": "Oyster Mushroom",
+          "amount": 2
+        },
+        {
+          "name": "Wheat",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        }
+      ],
+      "market": [
+        500,
+        750,
+        1000,
+        2000
+      ],
+      "energy": [
+        35,
+        42,
+        49,
+        56
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Penny Bun Pie",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Penny-Bun-Pie.webp",
+      "slug": "penny-bun-pie",
+      "ingredients": [
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Penny Bun",
+          "amount": 2
+        },
+        {
+          "name": "Wheat",
+          "amount": 1
+        }
+      ],
+      "market": [
+        500,
+        750,
+        1000,
+        2000
+      ],
+      "energy": [
+        35,
+        42,
+        49,
+        56
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Picnic Set",
+      "level": 7,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Picnic-Set.webp",
+      "slug": "picnic-set",
+      "ingredients": [],
+      "market": [
+        2260,
+        3390,
+        4520,
+        9040
+      ],
+      "energy": [
+        100,
+        120,
+        140,
+        160
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Pillow-Shaped Egg Yolk & Pork Zongzi",
+      "level": 1,
+      "category": "Midsummer Rhyme",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Pillow-Shaped-Egg-Yolk-&-Pork-Zongzi.webp",
+      "slug": "pillow-shaped-egg-yolk-pork-zongzi",
+      "ingredients": [
+        {
+          "name": "Paddy",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Bamboo Leaf",
+          "amount": 1
+        },
+        {
+          "name": "Meat",
+          "amount": 1
+        }
+      ],
+      "market": [
+        460,
+        690,
+        920,
+        1840
+      ],
+      "energy": [
+        40,
+        48,
+        56,
+        64
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Pillow-Shaped Plain Rice Zongzi",
+      "level": 1,
+      "category": "Midsummer Rhyme",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Pillow-Shaped-Plain-Rice-Zongzi.webp",
+      "slug": "pillow-shaped-plain-rice-zongzi",
+      "ingredients": [
+        {
+          "name": "Bamboo Leaf",
+          "amount": 1
+        },
+        {
+          "name": "Paddy",
+          "amount": 1
+        }
+      ],
+      "market": [
+        240,
+        360,
+        480,
+        960
+      ],
+      "energy": [
+        25,
+        30,
+        35,
+        40
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Pillow-Shaped Red Bean Zongzi",
+      "level": 1,
+      "category": "Midsummer Rhyme",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Pillow-Shaped-Red-Bean-Zongzi.webp",
+      "slug": "pillow-shaped-red-bean-zongzi",
+      "ingredients": [
+        {
+          "name": "Bamboo Leaf",
+          "amount": 1
+        },
+        {
+          "name": "Red Bean",
+          "amount": 2
+        },
+        {
+          "name": "Paddy",
+          "amount": 1
+        }
+      ],
+      "market": [
+        260,
+        390,
+        520,
+        1040
+      ],
+      "energy": [
+        25,
+        30,
+        35,
+        40
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Pineapple Jam",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Pineapple-Jam.webp",
+      "slug": "pineapple-jam",
+      "ingredients": [
+        {
+          "name": "Pineapple",
+          "amount": 4
+        }
+      ],
+      "market": [
+        280,
+        420,
+        560,
+        1120
+      ],
+      "energy": [
+        40,
+        48,
+        56,
+        64
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Pineapple Milkshake",
+      "level": 11,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Pineapple-Milkshake.webp",
+      "slug": "pineapple-milkshake",
+      "ingredients": [
+        {
+          "name": "Pineapple",
+          "amount": 2
+        },
+        {
+          "name": "Milk",
+          "amount": 2
+        }
+      ],
+      "market": [
+        440,
+        660,
+        880,
+        1760
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Pineapple Verbena Pie",
+      "level": 1,
+      "category": "Modular Streets",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Pineapple-Verbena-Pie.webp",
+      "slug": "pineapple-verbena-pie",
+      "ingredients": [
+        {
+          "name": "Pineapple",
+          "amount": 1
+        },
+        {
+          "name": "Butter",
+          "amount": 1
+        },
+        {
+          "name": "Lemon Verbena",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        }
+      ],
+      "market": [
+        380,
+        570,
+        760,
+        1520
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Purple Egg",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Purple-Egg.webp",
+      "slug": "purple-egg",
+      "ingredients": [
+        {
+          "name": "Grape",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        }
+      ],
+      "market": [
+        620,
+        930,
+        1240,
+        2480
+      ],
+      "energy": [
+        50,
+        60,
+        70,
+        80
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Rainbow Heart",
+      "level": 1,
+      "category": "Rainbow Verse",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Rainbow-Heart.webp",
+      "slug": "rainbow-heart",
+      "ingredients": [],
+      "market": [
+        170,
+        255,
+        340,
+        680
+      ],
+      "energy": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Rainbow Spark",
+      "level": 1,
+      "category": "Rainbow Verse",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Rainbow-Spark.webp",
+      "slug": "rainbow-spark",
+      "ingredients": [],
+      "market": [
+        170,
+        255,
+        340,
+        680
+      ],
+      "energy": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Raspberry Frosted Pancake",
+      "level": 1,
+      "category": "Winter Frost Season",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Raspberry-Frosted-Pancake.webp",
+      "slug": "raspberry-frosted-pancake",
+      "ingredients": [
+        {
+          "name": "Frosted",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Raspberry",
+          "amount": 1
+        }
+      ],
+      "market": [
+        350,
+        525,
+        700,
+        1400
+      ],
+      "energy": [
+        25,
+        30,
+        35,
+        40
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Raspberry Jam",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Raspberry-Jam.webp",
+      "slug": "raspberry-jam",
+      "ingredients": [
+        {
+          "name": "Raspberry",
+          "amount": 4
+        }
+      ],
+      "market": [
+        250,
+        375,
+        500,
+        1000
+      ],
+      "energy": [
+        30,
+        36,
+        42,
+        48
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Raspberry Milkshake",
+      "level": 11,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Raspberry-Milkshake.webp",
+      "slug": "raspberry-milkshake",
+      "ingredients": [
+        {
+          "name": "Raspberry",
+          "amount": 2
+        },
+        {
+          "name": "Milk",
+          "amount": 2
+        }
+      ],
+      "market": [
+        440,
+        660,
+        880,
+        1760
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Raspberry Pearl Cake",
+      "level": 1,
+      "category": "Call of Whales",
+      "availability": "Active Event",
+      "image": "/img/recipes/raspberry-pearl-cake.webp",
+      "slug": "raspberry-pearl-cake",
+      "ingredients": [
+        {
+          "name": "Milk",
+          "amount": 1
+        },
+        {
+          "name": "Scallop",
+          "amount": 1
+        },
+        {
+          "name": "Raspberry",
+          "amount": 1
+        },
+        {
+          "name": "Wheat",
+          "amount": 1
+        }
+      ],
+      "market": [
+        590,
+        885,
+        1180,
+        2360
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Raspberry Verbena Pie",
+      "level": 1,
+      "category": "Modular Streets",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Raspberry-Verbena-Pie.webp",
+      "slug": "raspberry-verbena-pie",
+      "ingredients": [
+        {
+          "name": "Raspberry",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Lemon Verbena",
+          "amount": 1
+        },
+        {
+          "name": "Butter",
+          "amount": 1
+        }
+      ],
+      "market": [
+        380,
+        570,
+        760,
+        1520
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Red Roll Cake",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Red-Roll-Cake.webp",
+      "slug": "red-roll-cake",
+      "ingredients": [
+        {
+          "name": "Red Sugar",
+          "amount": 2
+        },
+        {
+          "name": "Milk",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        }
+      ],
+      "market": [
+        670,
+        1005,
+        1340,
+        2680
+      ],
+      "energy": [
+        48,
+        58,
+        67,
+        77
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Retriever Canelé",
+      "level": 1,
+      "category": "Maltese",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Retriever-Canelé.webp",
+      "slug": "retriever-canele",
+      "ingredients": [
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Milk",
+          "amount": 1
+        },
+        {
+          "name": "Wheat",
+          "amount": 1
+        },
+        {
+          "name": "Coffee Beans",
+          "amount": 1
+        }
+      ],
+      "market": [
+        590,
+        885,
+        1180,
+        2360
+      ],
+      "energy": [
+        35,
+        42,
+        49,
+        56
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Retriever Con Panna",
+      "level": 1,
+      "category": "Maltese",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Retriever-Con-Panna.webp",
+      "slug": "retriever-con-panna",
+      "ingredients": [
+        {
+          "name": "Coffee Beans",
+          "amount": 1
+        },
+        {
+          "name": "Milk",
+          "amount": 2
+        }
+      ],
+      "market": [
+        520,
+        780,
+        1040,
+        2080
+      ],
+      "energy": [
+        45,
+        54,
+        63,
+        72
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Romaine Lettuce Taco",
+      "level": 1,
+      "category": "Dreamlight Cinematics",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Romaine-Lettuce-Taco.webp",
+      "slug": "romaine-lettuce-taco",
+      "ingredients": [
+        {
+          "name": "Salsa Sauce",
+          "amount": 1
+        },
+        {
+          "name": "Romaine Lettuce",
+          "amount": 2
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        }
+      ],
+      "market": [
+        260,
+        390,
+        520,
+        1040
+      ],
+      "energy": [
+        30,
+        36,
+        42,
+        48
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Rose Tea",
+      "level": 12,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Rose-Tea.webp",
+      "slug": "rose-tea",
+      "ingredients": [
+        {
+          "name": "Tea Leaf",
+          "amount": 2
+        }
+      ],
+      "market": [
+        1930,
+        2895,
+        3860,
+        7720
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Rustic Ratatouille",
+      "level": 3,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Rustic-Ratatouille.webp",
+      "slug": "rustic-ratatouille",
+      "ingredients": [
+        {
+          "name": "Potatoes",
+          "amount": 1
+        },
+        {
+          "name": "Lettuce",
+          "amount": 1
+        },
+        {
+          "name": "Tomato",
+          "amount": 1
+        }
+      ],
+      "market": [
+        640,
+        960,
+        1280,
+        2560
+      ],
+      "energy": [
+        60,
+        72,
+        84,
+        96
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Salsa Wavy Potato Chips",
+      "level": 1,
+      "category": "Dreamlight Cinematics",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Salsa-Wavy-Potato-Chips.webp",
+      "slug": "salsa-wavy-potato-chips",
+      "ingredients": [
+        {
+          "name": "Potatoes",
+          "amount": 2
+        },
+        {
+          "name": "Salsa Sauce",
+          "amount": 1
+        }
+      ],
+      "market": [
+        280,
+        420,
+        560,
+        1120
+      ],
+      "energy": [
+        26,
+        31,
+        36,
+        41
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Savory Double Combo Bucket",
+      "level": 1,
+      "category": "Dreamlight Cinematics",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Savory-Double-Combo-Bucket.webp",
+      "slug": "savory-double-combo-bucket",
+      "ingredients": [],
+      "market": [
+        1230,
+        1845,
+        2460,
+        4920
+      ],
+      "energy": [
+        95,
+        114,
+        133,
+        152
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Savory Popcorn Bucket",
+      "level": 1,
+      "category": "Dreamlight Cinematics",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Savory-Popcorn-Bucket.webp",
+      "slug": "savory-popcorn-bucket",
+      "ingredients": [
+        {
+          "name": "Corn",
+          "amount": 1
+        },
+        {
+          "name": "Butter",
+          "amount": 2
+        }
+      ],
+      "market": [
+        900,
+        1350,
+        1800,
+        3600
+      ],
+      "energy": [
+        60,
+        72,
+        84,
+        96
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Sea Grape & Shiitake Chawanmushi",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/sea-grape-shiitake-chawanmushi.webp",
+      "slug": "sea-grape-shiitake-chawanmushi",
+      "ingredients": [
+        {
+          "name": "Pasteurized Egg",
+          "amount": 1
+        },
+        {
+          "name": "Shiitake",
+          "amount": 1
+        },
+        {
+          "name": "Sea Grape",
+          "amount": 2
+        }
+      ],
+      "market": [
+        230,
+        345,
+        460,
+        920
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Seafood Pizza",
+      "level": 4,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Seafood-Pizza.webp",
+      "slug": "seafood-pizza",
+      "ingredients": [
+        {
+          "name": "Cheese",
+          "amount": 1
+        },
+        {
+          "name": "Wheat",
+          "amount": 1
+        }
+      ],
+      "market": [
+        780,
+        1170,
+        1560,
+        3120
+      ],
+      "energy": [
+        70,
+        84,
+        98,
+        112
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Seafood Risotto",
+      "level": 3,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Seafood-Risotto.webp",
+      "slug": "seafood-risotto",
+      "ingredients": [
+        {
+          "name": "Tomato",
+          "amount": 1
+        },
+        {
+          "name": "Wheat",
+          "amount": 1
+        }
+      ],
+      "market": [
+        490,
+        735,
+        980,
+        1960
+      ],
+      "energy": [
+        40,
+        48,
+        56,
+        64
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Seashell Pearl Cake",
+      "level": 1,
+      "category": "Call of Whales",
+      "availability": "Active Event",
+      "image": "/img/recipes/seashell-pearl-cake.webp",
+      "slug": "seashell-pearl-cake",
+      "ingredients": [
+        {
+          "name": "Scallop",
+          "amount": 1
+        },
+        {
+          "name": "Milk",
+          "amount": 1
+        },
+        {
+          "name": "Wheat",
+          "amount": 1
+        }
+      ],
+      "market": [
+        570,
+        855,
+        1140,
+        2280
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Shiitake Pie",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Shiitake-Pie.webp",
+      "slug": "shiitake-pie",
+      "ingredients": [
+        {
+          "name": "Wheat",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Shiitake",
+          "amount": 2
+        }
+      ],
+      "market": [
+        500,
+        750,
+        1000,
+        2000
+      ],
+      "energy": [
+        35,
+        42,
+        49,
+        56
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Smoked Fish Bagel",
+      "level": 2,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Smoked-Fish-Bagel.webp",
+      "slug": "smoked-fish-bagel",
+      "ingredients": [
+        {
+          "name": "Wheat",
+          "amount": 1
+        },
+        {
+          "name": "Cheese",
+          "amount": 1
+        }
+      ],
+      "market": [
+        520,
+        780,
+        1040,
+        2080
+      ],
+      "energy": [
+        50,
+        60,
+        70,
+        80
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Springdag Raspberry Black Tea",
+      "level": 1,
+      "category": "Dreamlight Cinematics",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Springdag-Raspberry-Black-Tea.webp",
+      "slug": "springdag-raspberry-black-tea",
+      "ingredients": [
+        {
+          "name": "Tea Leaves",
+          "amount": 1
+        },
+        {
+          "name": "Springday Brown Sugar",
+          "amount": 2
+        },
+        {
+          "name": "Raspberry",
+          "amount": 1
+        }
+      ],
+      "market": [
+        460,
+        690,
+        920,
+        1840
+      ],
+      "energy": [
+        45,
+        54,
+        63,
+        72
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Springday Apple Black Tea",
+      "level": 1,
+      "category": "Dreamlight Cinematics",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Springday-Apple-Black-Tea.webp",
+      "slug": "springday-apple-black-tea",
+      "ingredients": [
+        {
+          "name": "Tea Leaves",
+          "amount": 1
+        },
+        {
+          "name": "Springday Brown Sugar",
+          "amount": 2
+        },
+        {
+          "name": "Apple",
+          "amount": 1
+        }
+      ],
+      "market": [
+        480,
+        720,
+        960,
+        1920
+      ],
+      "energy": [
+        45,
+        54,
+        63,
+        72
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Springday Blueberry Black Tea",
+      "level": 1,
+      "category": "Dreamlight Cinematics",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Springday-Blueberry-Black-Tea.webp",
+      "slug": "springday-blueberry-black-tea",
+      "ingredients": [
+        {
+          "name": "Tea Leaves",
+          "amount": 1
+        },
+        {
+          "name": "Springday Brown Sugar",
+          "amount": 2
+        },
+        {
+          "name": "Blueberry",
+          "amount": 1
+        }
+      ],
+      "market": [
+        460,
+        690,
+        920,
+        1840
+      ],
+      "energy": [
+        45,
+        54,
+        63,
+        72
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Springday Fruit Black Tea",
+      "level": 1,
+      "category": "Dreamlight Cinematics",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Springday-Fruit-Black-Tea.webp",
+      "slug": "springday-fruit-black-tea",
+      "ingredients": [
+        {
+          "name": "Tea Leaves",
+          "amount": 1
+        },
+        {
+          "name": "Springday Brown Sugar",
+          "amount": 2
+        }
+      ],
+      "market": [
+        460,
+        690,
+        920,
+        1840
+      ],
+      "energy": [
+        45,
+        54,
+        63,
+        72
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Springday Grape Black Tea",
+      "level": 1,
+      "category": "Dreamlight Cinematics",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Springday-Grape-Black-Tea.webp",
+      "slug": "springday-grape-black-tea",
+      "ingredients": [
+        {
+          "name": "Tea Leaves",
+          "amount": 1
+        },
+        {
+          "name": "Grape",
+          "amount": 1
+        },
+        {
+          "name": "Springday Brown Sugar",
+          "amount": 2
+        }
+      ],
+      "market": [
+        910,
+        1365,
+        1820,
+        3640
+      ],
+      "energy": [
+        65,
+        78,
+        91,
+        104
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Springday Mandarin Black Tea",
+      "level": 1,
+      "category": "Dreamlight Cinematics",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Springday-Mandarin-Black-Tea.webp",
+      "slug": "springday-mandarin-black-tea",
+      "ingredients": [
+        {
+          "name": "Springday Brown Sugar",
+          "amount": 2
+        },
+        {
+          "name": "Tea Leaves",
+          "amount": 1
+        },
+        {
+          "name": "Mandarin",
+          "amount": 1
+        }
+      ],
+      "market": [
+        480,
+        720,
+        960,
+        1920
+      ],
+      "energy": [
+        45,
+        54,
+        63,
+        72
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Springday Pineapple Black Tea",
+      "level": 1,
+      "category": "Dreamlight Cinematics",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Springday-Pineapple-Black-Tea.webp",
+      "slug": "springday-pineapple-black-tea",
+      "ingredients": [
+        {
+          "name": "Tea Leaves",
+          "amount": 1
+        },
+        {
+          "name": "Pineapple",
+          "amount": 1
+        },
+        {
+          "name": "Springday Brown Sugar",
+          "amount": 2
+        }
+      ],
+      "market": [
+        480,
+        720,
+        960,
+        1920
+      ],
+      "energy": [
+        45,
+        54,
+        63,
+        72
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Springday Strawberry Black Tea",
+      "level": 1,
+      "category": "Dreamlight Cinematics",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Springday-Strawberry-Black-Tea.webp",
+      "slug": "springday-strawberry-black-tea",
+      "ingredients": [
+        {
+          "name": "Tea Leaves",
+          "amount": 1
+        },
+        {
+          "name": "Springday Brown Sugar",
+          "amount": 2
+        },
+        {
+          "name": "Strawberry",
+          "amount": 1
+        }
+      ],
+      "market": [
+        800,
+        1200,
+        1600,
+        3200
+      ],
+      "energy": [
+        60,
+        72,
+        84,
+        96
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Starfruit Jam",
+      "level": 1,
+      "category": "Call of Whales",
+      "availability": "Active Event",
+      "image": "/img/recipes/starfruit-jam.webp",
+      "slug": "starfruit-jam",
+      "ingredients": [
+        {
+          "name": "Starfruit",
+          "amount": 4
+        }
+      ],
+      "market": [
+        200,
+        300,
+        400,
+        800
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Starfruit Pearl Cake",
+      "level": 1,
+      "category": "Call of Whales",
+      "availability": "Active Event",
+      "image": "/img/recipes/starfruit-pearl-cake.webp",
+      "slug": "starfruit-pearl-cake",
+      "ingredients": [
+        {
+          "name": "Scallop",
+          "amount": 1
+        },
+        {
+          "name": "Milk",
+          "amount": 1
+        },
+        {
+          "name": "Wheat",
+          "amount": 1
+        },
+        {
+          "name": "Starfruit",
+          "amount": 1
+        }
+      ],
+      "market": [
+        570,
+        855,
+        1140,
+        2280
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Steak w/ Mashed White Radish",
+      "level": 1,
+      "category": "Winter Frost Season",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Steak-w-Mashed-White-Radish.webp",
+      "slug": "steak-w-mashed-white-radish",
+      "ingredients": [
+        {
+          "name": "Butter",
+          "amount": 1
+        },
+        {
+          "name": "White Radish",
+          "amount": 1
+        },
+        {
+          "name": "Meat",
+          "amount": 2
+        }
+      ],
+      "market": [
+        630,
+        945,
+        1260,
+        2520
+      ],
+      "energy": [
+        40,
+        48,
+        56,
+        64
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Steamed Golden King Crab",
+      "level": 10,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Steamed-Golden-King-Crab.webp",
+      "slug": "steamed-golden-king-crab",
+      "ingredients": [
+        {
+          "name": "Butter",
+          "amount": 1
+        },
+        {
+          "name": "Golden King Crab",
+          "amount": 3
+        }
+      ],
+      "market": [
+        2980,
+        4470,
+        5960,
+        11920
+      ],
+      "energy": [
+        100,
+        120,
+        140,
+        160
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Steamed King Crab",
+      "level": 10,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Steamed-King-Crab.webp",
+      "slug": "steamed-king-crab",
+      "ingredients": [
+        {
+          "name": "King Crab",
+          "amount": 3
+        },
+        {
+          "name": "Butter",
+          "amount": 1
+        }
+      ],
+      "market": [
+        1990,
+        2985,
+        3980,
+        7960
+      ],
+      "energy": [
+        90,
+        108,
+        126,
+        144
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Strawberry Jam",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Strawberry-Jam.webp",
+      "slug": "strawberry-jam",
+      "ingredients": [
+        {
+          "name": "Strawberry",
+          "amount": 4
+        }
+      ],
+      "market": [
+        1580,
+        2370,
+        3160,
+        6320
+      ],
+      "energy": [
+        40,
+        48,
+        56,
+        64
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Strawberry Milkshake",
+      "level": 11,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Strawberry-Milkshake.webp",
+      "slug": "strawberry-milkshake",
+      "ingredients": [
+        {
+          "name": "Milk",
+          "amount": 2
+        },
+        {
+          "name": "Strawberry",
+          "amount": 2
+        }
+      ],
+      "market": [
+        1090,
+        1635,
+        2180,
+        4360
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Strawberry Verbena Pie",
+      "level": 1,
+      "category": "Modular Streets",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Strawberry-Verbena-Pie.webp",
+      "slug": "strawberry-verbena-pie",
+      "ingredients": [
+        {
+          "name": "Lemon Verbena",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Butter",
+          "amount": 1
+        },
+        {
+          "name": "Strawberry",
+          "amount": 1
+        }
+      ],
+      "market": [
+        710,
+        1065,
+        1420,
+        2840
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Supreme Movie Meal",
+      "level": 1,
+      "category": "Dreamlight Cinematics",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Supreme-Movie-Meal.webp",
+      "slug": "supreme-movie-meal",
+      "ingredients": [],
+      "market": [
+        2370,
+        3555,
+        4740,
+        9480
+      ],
+      "energy": [
+        60,
+        72,
+        84,
+        96
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Sweet Duo Bucket",
+      "level": 1,
+      "category": "Dreamlight Cinematics",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Sweet-Duo-Bucket.webp",
+      "slug": "sweet-duo-bucket",
+      "ingredients": [],
+      "market": [
+        1150,
+        1725,
+        2300,
+        4600
+      ],
+      "energy": [
+        90,
+        108,
+        126,
+        144
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Tiramisu",
+      "level": 6,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Tiramisu.webp",
+      "slug": "tiramisu",
+      "ingredients": [
+        {
+          "name": "Coffee Beans",
+          "amount": 1
+        },
+        {
+          "name": "Cheese",
+          "amount": 1
+        },
+        {
+          "name": "Milk",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        }
+      ],
+      "market": [
+        530,
+        795,
+        1060,
+        2120
+      ],
+      "energy": [
+        65,
+        78,
+        91,
+        104
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Tomato Sauce",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Tomato-Sauce.webp",
+      "slug": "tomato-sauce",
+      "ingredients": [
+        {
+          "name": "Tomato",
+          "amount": 4
+        }
+      ],
+      "market": [
+        180,
+        270,
+        360,
+        720
+      ],
+      "energy": [
+        35,
+        42,
+        49,
+        56
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Tomato Seafood Soup",
+      "level": 1,
+      "category": "Call of Whales",
+      "availability": "Active Event",
+      "image": "/img/recipes/tomato-seafood-soup.webp",
+      "slug": "tomato-seafood-soup",
+      "ingredients": [
+        {
+          "name": "Glasswort",
+          "amount": 1
+        },
+        {
+          "name": "Common Prawn",
+          "amount": 1
+        },
+        {
+          "name": "Tomato",
+          "amount": 1
+        },
+        {
+          "name": "Wheat",
+          "amount": 1
+        }
+      ],
+      "market": [
+        450,
+        675,
+        900,
+        1800
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Triangle Egg Yolk & Pork Zongzi",
+      "level": 1,
+      "category": "Midsummer Rhyme",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Triangle-Egg-Yolk-&-Pork-Zongzi.webp",
+      "slug": "triangle-egg-yolk-pork-zongzi",
+      "ingredients": [
+        {
+          "name": "Bamboo Leaf",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Paddy",
+          "amount": 1
+        },
+        {
+          "name": "Meat",
+          "amount": 1
+        }
+      ],
+      "market": [
+        460,
+        690,
+        920,
+        1840
+      ],
+      "energy": [
+        40,
+        48,
+        56,
+        64
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Triangle Plain Rice Zongzi",
+      "level": 1,
+      "category": "Midsummer Rhyme",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Triangle-Plain-Rice-Zongzi.webp",
+      "slug": "triangle-plain-rice-zongzi",
+      "ingredients": [
+        {
+          "name": "Bamboo Leaf",
+          "amount": 1
+        },
+        {
+          "name": "Paddy",
+          "amount": 1
+        }
+      ],
+      "market": [
+        240,
+        360,
+        480,
+        960
+      ],
+      "energy": [
+        25,
+        30,
+        35,
+        40
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Triangle Red Bean Zongzi",
+      "level": 1,
+      "category": "Midsummer Rhyme",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Triangle-Red-Bean-Zongzi.webp",
+      "slug": "triangle-red-bean-zongzi",
+      "ingredients": [
+        {
+          "name": "Bamboo Leaf",
+          "amount": 1
+        },
+        {
+          "name": "Red Bean",
+          "amount": 2
+        },
+        {
+          "name": "Paddy",
+          "amount": 1
+        }
+      ],
+      "market": [
+        260,
+        390,
+        520,
+        1040
+      ],
+      "energy": [
+        25,
+        30,
+        35,
+        40
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Violet Roll Cake",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Violet-Roll-Cake.webp",
+      "slug": "violet-roll-cake",
+      "ingredients": [
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Violet Sugar",
+          "amount": 2
+        },
+        {
+          "name": "Milk",
+          "amount": 1
+        }
+      ],
+      "market": [
+        570,
+        855,
+        1140,
+        2280
+      ],
+      "energy": [
+        48,
+        58,
+        67,
+        77
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Wakame Meatball Soup",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/wakame-meatball-soup.webp",
+      "slug": "wakame-meatball-soup",
+      "ingredients": [
+        {
+          "name": "Meat",
+          "amount": 2
+        },
+        {
+          "name": "Wakame",
+          "amount": 2
+        }
+      ],
+      "market": [
+        500,
+        750,
+        1000,
+        2000
+      ],
+      "energy": [],
+      "eventTokens": []
+    },
+    {
+      "name": "Wild Bracken Celtuce Taco",
+      "level": 1,
+      "category": "Dreamlight Cinematics",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Wild-Bracken-Celtuce-Taco.webp",
+      "slug": "wild-bracken-celtuce-taco",
+      "ingredients": [
+        {
+          "name": "Fiddlehead",
+          "amount": 2
+        }
+      ],
+      "market": [
+        330,
+        495,
+        660,
+        1320
+      ],
+      "energy": [
+        35,
+        42,
+        49,
+        56
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Wild Burdock Celtuce Taco",
+      "level": 1,
+      "category": "Dreamlight Cinematics",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Wild-Burdock-Celtuce-Taco.webp",
+      "slug": "wild-burdock-celtuce-taco",
+      "ingredients": [
+        {
+          "name": "Burdock",
+          "amount": 2
+        }
+      ],
+      "market": [
+        330,
+        495,
+        660,
+        1320
+      ],
+      "energy": [
+        35,
+        42,
+        49,
+        56
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Wild Garlic Mustard Celtuce Taco",
+      "level": 1,
+      "category": "Dreamlight Cinematics",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Wild-Garlic-Mustard-Celtuce-Taco.webp",
+      "slug": "wild-garlic-mustard-celtuce-taco",
+      "ingredients": [
+        {
+          "name": "Tall Mustard",
+          "amount": 2
+        }
+      ],
+      "market": [
+        330,
+        495,
+        660,
+        1320
+      ],
+      "energy": [
+        35,
+        42,
+        49,
+        56
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Wild Mustard Greens Celtuce Taco",
+      "level": 1,
+      "category": "Dreamlight Cinematics",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Wild-Mustard-Greens-Celtuce-Taco.webp",
+      "slug": "wild-mustard-greens-celtuce-taco",
+      "ingredients": [
+        {
+          "name": "Mustard Greens",
+          "amount": 2
+        }
+      ],
+      "market": [
+        330,
+        495,
+        660,
+        1320
+      ],
+      "energy": [
+        35,
+        42,
+        49,
+        56
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Wild Vegetable Celtuce Taco",
+      "level": 1,
+      "category": "Dreamlight Cinematics",
+      "availability": "Finished Event",
+      "image": "/img/recipes/Wild-Vegetable-Celtuce-Taco.webp",
+      "slug": "wild-vegetable-celtuce-taco",
+      "ingredients": [],
+      "market": [
+        330,
+        495,
+        660,
+        1320
+      ],
+      "energy": [
+        35,
+        42,
+        49,
+        56
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Yellow Roll Cake",
+      "level": 1,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/Yellow-Roll-Cake.webp",
+      "slug": "yellow-roll-cake",
+      "ingredients": [
+        {
+          "name": "Yellow Sugar",
+          "amount": 2
+        },
+        {
+          "name": "Milk",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        }
+      ],
+      "market": [
+        670,
+        1005,
+        1340,
+        2680
+      ],
+      "energy": [
+        48,
+        58,
+        67,
+        77
+      ],
+      "eventTokens": []
+    }
+  ]
+}
