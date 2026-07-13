@@ -4,223 +4,408 @@
       "name": "Tall Mustard",
       "image": "/img/collectibles/Tall-Mustard.webp",
       "location": "Ruins",
-      "category": "Dreamlight Cinematics"
+      "category": "Dreamlight Cinematics",
+      "sellValue": 5,
+      "energy": null,
+      "availability": "Event ended",
+      "about": "Unrelated to garlic. get it carries the pungent, spicg kick of both garlic and mustard greens.",
+      "sourceSlug": "tall-mustard"
     },
     {
       "name": "Blueberry",
       "image": "/img/collectibles/Blueberry.webp",
       "location": "Residential Area",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 16,
+      "energy": 5,
+      "availability": "Available",
+      "about": "Good for eyes.",
+      "sourceSlug": "blueberry"
     },
     {
       "name": "Bamboo",
       "image": "/img/collectibles/Bamboo.webp",
       "location": "Forest Jump Puzzle",
-      "category": "Dreamlight Cinematics"
+      "category": "Dreamlight Cinematics",
+      "sellValue": 7,
+      "energy": null,
+      "availability": "Available",
+      "about": "A hardy and versatile plant that grows in moist areas.",
+      "sourceSlug": "bamboo"
     },
     {
       "name": "Burdock",
       "image": "/img/collectibles/Burdock.webp",
       "location": "Whale Mountain",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 5,
+      "energy": null,
+      "availability": "Event ended",
+      "about": "Yam? Twig? Nah, it's burdock.",
+      "sourceSlug": "burdock"
     },
     {
       "name": "Penny Bun",
       "image": "/img/collectibles/Penny-Bun.webp",
       "location": "Spirit-Oak Pine Forest",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 16,
+      "energy": 5,
+      "availability": "Available",
+      "about": "True to its name, this mushroom earns its title from its thick, meaty body resembling a bread bun.",
+      "sourceSlug": "penny-bun"
     },
     {
       "name": "Bizarre Penny Bun (Purple)",
       "image": "/img/collectibles/Bizarre-Penny-Bun-(Purple).webp",
       "location": "Spirit-Oak Pine Forest",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 16,
+      "energy": null,
+      "availability": "Available",
+      "about": "Warning: This mushroom's threat level has reached purple alert! Do not eat!!!",
+      "sourceSlug": "bizarre-penny-bun-purple"
     },
     {
       "name": "Bizarre Penny Bun (Red)",
       "image": "/img/collectibles/Bizarre-Penny-Bun-(Red).webp",
       "location": "Spirit-Oak Pine Forest",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 16,
+      "energy": null,
+      "availability": "Available",
+      "about": "Warning: This mushroom's threat level has reached red alert! Do not eat!!!",
+      "sourceSlug": "bizarre-penny-bun-red"
     },
     {
       "name": "Bizarre Penny Bun (Pink)",
       "image": "/img/collectibles/Bizarre-Penny-Bun-(Pink).webp",
       "location": "Spirit-Oak Pine Forest",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 16,
+      "energy": null,
+      "availability": "Available",
+      "about": "Warning: This mushroom's threat level has reached pink alert! Do not eat!!!",
+      "sourceSlug": "bizarre-penny-bun-pink"
     },
     {
       "name": "Button Mushroom",
       "image": "/img/collectibles/Button-Mushroom.webp",
       "location": "Windmill Flower Field",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 16,
+      "energy": 5,
+      "availability": "Available",
+      "about": "It really does look like a perfect button.",
+      "sourceSlug": "button-mushroom"
     },
     {
       "name": "Bizarre Button Mushroom Blue",
       "image": "/img/collectibles/Bizarre-Button-Mushroom-Blue.webp",
       "location": "Windmill Flower Field",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 16,
+      "energy": null,
+      "availability": "Available",
+      "about": "A blue mushroom straight out of a fairytale—beautiful but dangerous. Do not eat!!!",
+      "sourceSlug": "bizarre-button-mushroom-blue"
     },
     {
       "name": "Bizarre Button Mushroom Red",
       "image": "/img/collectibles/Bizarre-Button-Mushroom-Red.webp",
       "location": "Windmill Flower Field",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 16,
+      "energy": null,
+      "availability": "Available",
+      "about": "A red mushroom straight out of a fairytale—beautiful but dangerous. Do not eat!!!",
+      "sourceSlug": "bizarre-button-mushroom-red"
     },
     {
       "name": "Bizarre Button Mushroom Green",
       "image": "/img/collectibles/Bizarre-Button-Mushroom-Green.webp",
       "location": "Windmill Flower Field",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 16,
+      "energy": null,
+      "availability": "Available",
+      "about": "A green mushroom straight out of a fairytale—beautiful but dangerous. Do not eat!!!",
+      "sourceSlug": "bizarre-button-mushroom-green"
     },
     {
       "name": "Flawless Fluorite",
       "image": "/img/collectibles/Flawless-Fluorite.webp",
       "location": "Residential Area",
-      "category": "Meteor Shower"
+      "category": "Meteor Shower",
+      "sellValue": 150,
+      "energy": null,
+      "availability": "Available",
+      "about": "A rare ore, often Used by Moabit's little moles for disguise.",
+      "sourceSlug": "flawless-fluorite"
     },
     {
       "name": "Starfall Shard",
       "image": "/img/collectibles/Starfall-Shard.webp",
       "location": "Fishing Village Square",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 150,
+      "energy": null,
+      "availability": "Available",
+      "about": "Obtained by mining Starfall Ore during a meteor shower. Can be redeemed for various souvenirs at Doris's Fortune Store.",
+      "sourceSlug": "starfall-shard"
     },
     {
       "name": "Raspberry",
       "image": "/img/collectibles/Raspberry.webp",
       "location": "Windmill Flower Field",
-      "category": "Dreamlight Cinematics"
+      "category": "Dreamlight Cinematics",
+      "sellValue": 26,
+      "energy": 7,
+      "availability": "Available",
+      "about": "Some call it \"golden fruit\" for its heart benefits.",
+      "sourceSlug": "raspberry"
     },
     {
       "name": "Fiddlehead",
       "image": "/img/collectibles/Fiddlehead.webp",
       "location": "Deer Tower",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 5,
+      "energy": null,
+      "availability": "Event ended",
+      "about": "The \"King of Wild Greens.'i Blanching in boiling water before cooking removes harmful substances.",
+      "sourceSlug": "fiddlehead"
     },
     {
       "name": "Timber",
       "image": "/img/collectibles/Timber.webp",
       "location": "Residential Area",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 6,
+      "energy": null,
+      "availability": "Available",
+      "about": "A common tupe of timber, gathered from trees near homes.",
+      "sourceSlug": "timber"
     },
     {
       "name": "Quality Timber",
       "image": "/img/collectibles/Quality-Timber.webp",
       "location": "Residential Area",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 12,
+      "energy": null,
+      "availability": "Available",
+      "about": "High-quality timber. Head to the forest on the island's east for quick collection.",
+      "sourceSlug": "quality-timber"
     },
     {
       "name": "Roaming Oak Timber",
       "image": "/img/collectibles/Roaming-Oak-Timber.webp",
       "location": "Residential Area",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 150,
+      "energy": null,
+      "availability": "Available",
+      "about": "Extremely rare timber, gathered by rescuing a lively friend in trouble.",
+      "sourceSlug": "roaming-oak-timber"
     },
     {
       "name": "Rare Timber",
       "image": "/img/collectibles/Rare-Timber.webp",
       "location": "Residential Area",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 50,
+      "energy": null,
+      "availability": "Available",
+      "about": "Valuable timber, gathered from trees with thick trunks.",
+      "sourceSlug": "rare-timber"
     },
     {
       "name": "Weed",
       "image": "/img/collectibles/Weed.webp",
       "location": "Residential Area",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": null,
+      "energy": null,
+      "availability": "Available",
+      "about": "You can get it from your crops.",
+      "sourceSlug": "weed"
     },
     {
       "name": "Mandarin",
       "image": "/img/collectibles/Mandarin.webp",
       "location": "Residential Area",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 28,
+      "energy": 8,
+      "availability": "Available",
+      "about": "Sweet and tart, a simple way to replenish vitamins.",
+      "sourceSlug": "mandarin"
     },
     {
       "name": "Apple",
       "image": "/img/collectibles/Apple.webp",
       "location": "Residential Area",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 28,
+      "energy": 8,
+      "availability": "Available",
+      "about": "An apple a day keeps the doctor away.",
+      "sourceSlug": "apple"
     },
     {
       "name": "Matsutake",
       "image": "/img/collectibles/Matsutake.webp",
       "location": "Spirit-Oak Pine Forest",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 16,
+      "energy": 5,
+      "availability": "Available",
+      "about": "Though matsutakes often appear in groups, they're not easy to find—a true delicacy.",
+      "sourceSlug": "matsutake"
     },
     {
       "name": "Ore",
       "image": "/img/collectibles/Ore.webp",
       "location": "Residential Area",
-      "category": "Dreamlight Cinematics"
+      "category": "Dreamlight Cinematics",
+      "sellValue": 14,
+      "energy": null,
+      "availability": "Available",
+      "about": "A widely distributed ore, gathered from black rocks near the sea.",
+      "sourceSlug": "ore"
     },
     {
       "name": "Mustard Greens",
       "image": "/img/collectibles/Mustard-Greens.webp",
       "location": "Lighthouse",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 5,
+      "energy": null,
+      "availability": "Event ended",
+      "about": "Looks green and harmless, but carries a sharp, pungent aroma.",
+      "sourceSlug": "mustard-greens"
     },
     {
       "name": "Stone",
       "image": "/img/collectibles/Stone.webp",
       "location": "Residential Area",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 8,
+      "energy": null,
+      "availability": "Available",
+      "about": "A frequently found ore, gathered from rocks near homes.",
+      "sourceSlug": "stone"
     },
     {
       "name": "Branch",
       "image": "/img/collectibles/Branch.webp",
       "location": "Residential Area",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 5,
+      "energy": null,
+      "availability": "Available",
+      "about": "A verg common material that can be gathered from bushes.",
+      "sourceSlug": "branch"
     },
     {
       "name": "Oyster Mushroom",
       "image": "/img/collectibles/Oyster-Mushroom.webp",
       "location": "Onsen Mountain Lake",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 16,
+      "energy": 5,
+      "availability": "Available",
+      "about": "With its flat cap, it loves playing stacking games with other mushrooms.",
+      "sourceSlug": "oyster-mushroom"
     },
     {
       "name": "Bizarre Oyster Mushroom Purple",
       "image": "/img/collectibles/Bizarre-Oyster-Mushroom-Purple.webp",
       "location": "Onsen Mountain Lake",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 16,
+      "energy": null,
+      "availability": "Available",
+      "about": "Stag away from this purple bizarre oyster mushroom. Do not eat!!!",
+      "sourceSlug": "bizarre-oyster-mushroom-purple"
     },
     {
       "name": "Bizarre Oyster Mushroom Orange",
       "image": "/img/collectibles/Bizarre-Oyster-Mushroom-Orange.webp",
       "location": "Onsen Mountain Lake",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 16,
+      "energy": null,
+      "availability": "Available",
+      "about": "Stag away from this orange bizarre oyster mushroom. Do not eat!!!",
+      "sourceSlug": "bizarre-oyster-mushroom-orange"
     },
     {
       "name": "Bizarre Oyster Mushroom Pink",
       "image": "/img/collectibles/Bizarre-Oyster-Mushroom-Pink.webp",
       "location": "Onsen Mountain Lake",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 16,
+      "energy": null,
+      "availability": "Available",
+      "about": "Stag away from this pink bizarre oyster mushroom. Do not eat!!!",
+      "sourceSlug": "bizarre-oyster-mushroom-pink"
     },
     {
       "name": "Shiitake",
       "image": "/img/collectibles/Shiitake.webp",
       "location": "Fishing Village Square",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 16,
+      "energy": 5,
+      "availability": "Available",
+      "about": "When the air is damp, shiitake mushrooms pop up everywhere holding up their little umbrellas.",
+      "sourceSlug": "shiitake"
     },
     {
       "name": "Bizarre Shiitake Blue",
       "image": "/img/collectibles/Bizarre-Shiitake-Blue.webp",
       "location": "Fishing Village Square",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 16,
+      "energy": null,
+      "availability": "Available",
+      "about": "Blue top, white base—one taste, and it's your final place.",
+      "sourceSlug": "bizarre-shiitake-blue"
     },
     {
       "name": "Bizarre Shiitak Black",
       "image": "/img/collectibles/Bizarre-Shiitak-Black.webp",
       "location": "Fishing Village Square",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 16,
+      "energy": null,
+      "availability": "Available",
+      "about": "Black top, white base—one taste, and it's your final place.",
+      "sourceSlug": "bizarre-shiitak-black"
     },
     {
       "name": "Bizarre Shiitake Red",
       "image": "/img/collectibles/Bizarre-Shiitake-Red.webp",
       "location": "Fishing Village Square",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 16,
+      "energy": null,
+      "availability": "Available",
+      "about": "Red top, white base—one taste, and it's your final place.",
+      "sourceSlug": "bizarre-shiitake-red"
     },
     {
       "name": "Black Truffle",
       "image": "/img/collectibles/Black-Truffle.webp",
       "location": "Forest Island",
-      "category": "Common"
+      "category": "Common",
+      "sellValue": 99,
+      "energy": 25,
+      "availability": "Available",
+      "about": "Known as the \"diamond of the fungi,\" it loves hiding in small pits.",
+      "sourceSlug": "black-truffle"
     }
   ]
 }
