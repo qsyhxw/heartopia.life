@@ -1,0 +1,4400 @@
+[
+  {
+    "name": "Apple Jam",
+    "slug": "apple-jam",
+    "ingredients": [
+      {
+        "name": "Apple",
+        "amount": 4
+      }
+    ],
+    "energy": [
+      35,
+      42,
+      49,
+      56
+    ],
+    "market": [
+      270,
+      405,
+      540,
+      1080
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Bizarre Food",
+    "slug": "bizarre-food",
+    "ingredients": [],
+    "energy": [
+      10
+    ],
+    "market": [
+      30
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Bizzare Drink",
+    "slug": "bizzare-drink",
+    "ingredients": [],
+    "energy": [
+      10
+    ],
+    "market": [
+      30
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Black Truffle Pie",
+    "slug": "black-truffle-pie",
+    "ingredients": [
+      {
+        "name": "Black Truffle",
+        "amount": 2
+      },
+      {
+        "name": "Wheat",
+        "amount": 1
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      80,
+      96,
+      112,
+      128
+    ],
+    "market": [
+      830,
+      1245,
+      1660,
+      3320
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Blue Roll Cake",
+    "slug": "blue-roll-cake",
+    "ingredients": [
+      {
+        "name": "Blue Sugar",
+        "amount": 2
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      },
+      {
+        "name": "Milk",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      48,
+      58,
+      67,
+      77
+    ],
+    "market": [
+      570,
+      855,
+      1140,
+      2280
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Blueberry Jam",
+    "slug": "blueberry-jam",
+    "ingredients": [
+      {
+        "name": "Blueberry",
+        "amount": 4
+      }
+    ],
+    "energy": [
+      22,
+      26,
+      31,
+      35
+    ],
+    "market": [
+      170,
+      255,
+      340,
+      680
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Button Mushroom Pie",
+    "slug": "button-mushroom-pie",
+    "ingredients": [
+      {
+        "name": "Wheat",
+        "amount": 1
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      },
+      {
+        "name": "Button Mushroom",
+        "amount": 2
+      }
+    ],
+    "energy": [
+      35,
+      42,
+      49,
+      56
+    ],
+    "market": [
+      500,
+      750,
+      1000,
+      2000
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Chocolate Sauce",
+    "slug": "chocolate-sauce",
+    "ingredients": [
+      {
+        "name": "Cacao Bean",
+        "amount": 4
+      }
+    ],
+    "energy": [
+      80,
+      96,
+      112,
+      128
+    ],
+    "market": [
+      1400,
+      2100,
+      2800,
+      5600
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Coffee",
+    "slug": "coffee",
+    "ingredients": [
+      {
+        "name": "Coffee Beans",
+        "amount": 4
+      }
+    ],
+    "energy": [
+      40,
+      48,
+      56,
+      64
+    ],
+    "market": [
+      290,
+      435,
+      580,
+      1160
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Coffee Latte",
+    "slug": "coffee-latte",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "amount": 2
+      },
+      {
+        "name": "Coffee Beans",
+        "amount": 2
+      }
+    ],
+    "energy": [
+      40,
+      48,
+      56,
+      64
+    ],
+    "market": [
+      300,
+      450,
+      600,
+      1200
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Colorful Egg Feast",
+    "slug": "colorful-egg-feast",
+    "ingredients": [
+      {
+        "name": "Egg",
+        "amount": 1
+      },
+      {
+        "name": "Purple Egg",
+        "amount": 1
+      },
+      {
+        "name": "Orange Egg",
+        "amount": 1
+      },
+      {
+        "name": "Green Egg",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      55,
+      66,
+      77,
+      88
+    ],
+    "market": [
+      1650,
+      2475,
+      3300,
+      6600
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Egg",
+    "slug": "egg",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "amount": 1
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      20,
+      24,
+      28,
+      32
+    ],
+    "market": [
+      190,
+      285,
+      380,
+      760
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Glasswort & Shrimp Fried Rice",
+    "slug": "glasswort-and-shrimp-fried-rice",
+    "ingredients": [],
+    "energy": [],
+    "market": [],
+    "eventTokens": []
+  },
+  {
+    "name": "Grape Jam",
+    "slug": "grape-jam",
+    "ingredients": [
+      {
+        "name": "Grape",
+        "amount": 4
+      }
+    ],
+    "energy": [
+      40,
+      48,
+      56,
+      64
+    ],
+    "market": [
+      2020,
+      3030,
+      4040,
+      8080
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Grass Cake",
+    "slug": "grass-cake",
+    "ingredients": [
+      {
+        "name": "Wheat",
+        "amount": 1
+      },
+      {
+        "name": "Weed",
+        "amount": 1
+      },
+      {
+        "name": "Matcha Powder",
+        "amount": 1
+      },
+      {
+        "name": "Milk",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      50,
+      60,
+      70,
+      80
+    ],
+    "market": [
+      690,
+      1035,
+      1380,
+      2760
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Green Egg",
+    "slug": "green-egg",
+    "ingredients": [
+      {
+        "name": "Lettuce",
+        "amount": 1
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      50,
+      60,
+      70,
+      80
+    ],
+    "market": [
+      570,
+      855,
+      1140,
+      2280
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Green Roll Cake",
+    "slug": "green-roll-cake",
+    "ingredients": [
+      {
+        "name": "Egg",
+        "amount": 1
+      },
+      {
+        "name": "Milk",
+        "amount": 1
+      },
+      {
+        "name": "Green Sugar",
+        "amount": 2
+      }
+    ],
+    "energy": [
+      48,
+      58,
+      67,
+      77
+    ],
+    "market": [
+      670,
+      1005,
+      1340,
+      2680
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Grilled Button Mushroom",
+    "slug": "grilled-button-mushroom",
+    "ingredients": [
+      {
+        "name": "Button Mushroom",
+        "amount": 4
+      }
+    ],
+    "energy": [
+      15,
+      18,
+      21,
+      24
+    ],
+    "market": [
+      180,
+      270,
+      360,
+      720
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Grilled Mushrooms",
+    "slug": "grilled-mushrooms",
+    "ingredients": [],
+    "energy": [
+      15,
+      18,
+      21,
+      24
+    ],
+    "market": [
+      180,
+      270,
+      360,
+      720
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Grilled Oyster Mushroom",
+    "slug": "grilled-oyster-mushroom",
+    "ingredients": [
+      {
+        "name": "Oyster Mushroom",
+        "amount": 4
+      }
+    ],
+    "energy": [
+      15,
+      18,
+      21,
+      24
+    ],
+    "market": [
+      180,
+      270,
+      360,
+      720
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Grilled Penny Bun",
+    "slug": "grilled-penny-bun",
+    "ingredients": [
+      {
+        "name": "Penny Bun",
+        "amount": 4
+      }
+    ],
+    "energy": [
+      15,
+      18,
+      21,
+      24
+    ],
+    "market": [
+      180,
+      270,
+      360,
+      720
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Grilled Shiitake Mushroom",
+    "slug": "grilled-shiitake-mushroom",
+    "ingredients": [
+      {
+        "name": "Shiitake",
+        "amount": 4
+      }
+    ],
+    "energy": [
+      15,
+      18,
+      21,
+      24
+    ],
+    "market": [
+      180,
+      270,
+      360,
+      720
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "House Salad",
+    "slug": "house-salad",
+    "ingredients": [],
+    "energy": [
+      15,
+      18,
+      21,
+      24
+    ],
+    "market": [
+      90,
+      135,
+      180,
+      360
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Indigo Roll Cake",
+    "slug": "indigo-roll-cake",
+    "ingredients": [
+      {
+        "name": "Egg",
+        "amount": 1
+      },
+      {
+        "name": "Indigo Sugar",
+        "amount": 2
+      },
+      {
+        "name": "Milk",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      48,
+      58,
+      67,
+      77
+    ],
+    "market": [
+      570,
+      855,
+      1140,
+      2280
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Mandarin Jam",
+    "slug": "mandarin-jam",
+    "ingredients": [
+      {
+        "name": "Mandarin",
+        "amount": 4
+      }
+    ],
+    "energy": [
+      35,
+      42,
+      49,
+      56
+    ],
+    "market": [
+      270,
+      405,
+      540,
+      1080
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Mixed Jam",
+    "slug": "mixed-jam",
+    "ingredients": [],
+    "energy": [
+      22,
+      26,
+      31,
+      35
+    ],
+    "market": [
+      160,
+      240,
+      320,
+      640
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Mushroom Pie",
+    "slug": "mushroom-pie",
+    "ingredients": [
+      {
+        "name": "Egg",
+        "amount": 1
+      },
+      {
+        "name": "Wheat",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      35,
+      42,
+      49,
+      56
+    ],
+    "market": [
+      500,
+      750,
+      1000,
+      2000
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Onsen Egg",
+    "slug": "onsen-egg",
+    "ingredients": [
+      {
+        "name": "Pasteurized Egg",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      15,
+      18,
+      21,
+      24
+    ],
+    "market": [
+      130,
+      195,
+      260,
+      520
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Orange Egg",
+    "slug": "orange-egg",
+    "ingredients": [
+      {
+        "name": "Egg",
+        "amount": 1
+      },
+      {
+        "name": "Apple",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      20,
+      24,
+      28,
+      32
+    ],
+    "market": [
+      190,
+      285,
+      380,
+      760
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Orange Roll Cake",
+    "slug": "orange-roll-cake",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "amount": 1
+      },
+      {
+        "name": "Orange Sugar",
+        "amount": 2
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      48,
+      58,
+      67,
+      77
+    ],
+    "market": [
+      670,
+      1005,
+      1340,
+      2680
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Original Roll Cake",
+    "slug": "original-roll-cake",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "amount": 1
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      35,
+      42,
+      49,
+      56
+    ],
+    "market": [
+      550,
+      825,
+      1100,
+      2200
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Oyster Mushroom Pie",
+    "slug": "oyster-mushroom-pie",
+    "ingredients": [
+      {
+        "name": "Oyster Mushroom",
+        "amount": 2
+      },
+      {
+        "name": "Wheat",
+        "amount": 1
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      35,
+      42,
+      49,
+      56
+    ],
+    "market": [
+      500,
+      750,
+      1000,
+      2000
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Penny Bun Pie",
+    "slug": "penny-bun-pie",
+    "ingredients": [
+      {
+        "name": "Egg",
+        "amount": 1
+      },
+      {
+        "name": "Penny Bun",
+        "amount": 2
+      },
+      {
+        "name": "Wheat",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      35,
+      42,
+      49,
+      56
+    ],
+    "market": [
+      500,
+      750,
+      1000,
+      2000
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Pineapple Jam",
+    "slug": "pineapple-jam",
+    "ingredients": [
+      {
+        "name": "Pineapple",
+        "amount": 4
+      }
+    ],
+    "energy": [
+      40,
+      48,
+      56,
+      64
+    ],
+    "market": [
+      280,
+      420,
+      560,
+      1120
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Purple Egg",
+    "slug": "purple-egg",
+    "ingredients": [
+      {
+        "name": "Grape",
+        "amount": 1
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      50,
+      60,
+      70,
+      80
+    ],
+    "market": [
+      620,
+      930,
+      1240,
+      2480
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Raspberry Jam",
+    "slug": "raspberry-jam",
+    "ingredients": [
+      {
+        "name": "Raspberry",
+        "amount": 4
+      }
+    ],
+    "energy": [
+      30,
+      36,
+      42,
+      48
+    ],
+    "market": [
+      250,
+      375,
+      500,
+      1000
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Red Roll Cake",
+    "slug": "red-roll-cake",
+    "ingredients": [
+      {
+        "name": "Red Sugar",
+        "amount": 2
+      },
+      {
+        "name": "Milk",
+        "amount": 1
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      48,
+      58,
+      67,
+      77
+    ],
+    "market": [
+      670,
+      1005,
+      1340,
+      2680
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Sea Grape & Shiitake Chawanmushi",
+    "slug": "sea-grape-and-shiitake-chawanmushi",
+    "ingredients": [],
+    "energy": [],
+    "market": [],
+    "eventTokens": []
+  },
+  {
+    "name": "Shiitake Pie",
+    "slug": "shiitake-pie",
+    "ingredients": [
+      {
+        "name": "Wheat",
+        "amount": 1
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      },
+      {
+        "name": "Shiitake",
+        "amount": 2
+      }
+    ],
+    "energy": [
+      35,
+      42,
+      49,
+      56
+    ],
+    "market": [
+      500,
+      750,
+      1000,
+      2000
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Strawberry Jam",
+    "slug": "strawberry-jam",
+    "ingredients": [
+      {
+        "name": "Strawberry",
+        "amount": 4
+      }
+    ],
+    "energy": [
+      40,
+      48,
+      56,
+      64
+    ],
+    "market": [
+      1580,
+      2370,
+      3160,
+      6320
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Tomato Sauce",
+    "slug": "tomato-sauce",
+    "ingredients": [
+      {
+        "name": "Tomato",
+        "amount": 4
+      }
+    ],
+    "energy": [
+      35,
+      42,
+      49,
+      56
+    ],
+    "market": [
+      180,
+      270,
+      360,
+      720
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Violet Roll Cake",
+    "slug": "violet-roll-cake",
+    "ingredients": [
+      {
+        "name": "Egg",
+        "amount": 1
+      },
+      {
+        "name": "Violet Sugar",
+        "amount": 2
+      },
+      {
+        "name": "Milk",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      48,
+      58,
+      67,
+      77
+    ],
+    "market": [
+      570,
+      855,
+      1140,
+      2280
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Wakame Meatball Soup",
+    "slug": "wakame-meatball-soup",
+    "ingredients": [
+      {
+        "name": "Meat",
+        "amount": 2
+      },
+      {
+        "name": "Wakame",
+        "amount": 2
+      }
+    ],
+    "energy": [],
+    "market": [
+      500,
+      750,
+      1000,
+      2000
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Yellow Roll Cake",
+    "slug": "yellow-roll-cake",
+    "ingredients": [
+      {
+        "name": "Yellow Sugar",
+        "amount": 2
+      },
+      {
+        "name": "Milk",
+        "amount": 1
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      48,
+      58,
+      67,
+      77
+    ],
+    "market": [
+      670,
+      1005,
+      1340,
+      2680
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Cheese Cake",
+    "slug": "cheese-cake",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "amount": 1
+      },
+      {
+        "name": "Wheat",
+        "amount": 1
+      },
+      {
+        "name": "Cheese",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      50,
+      60,
+      70,
+      80
+    ],
+    "market": [
+      480,
+      720,
+      960,
+      1920
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Fish and Chips",
+    "slug": "fish-and-chips",
+    "ingredients": [
+      {
+        "name": "Potatoes",
+        "amount": 2
+      },
+      {
+        "name": "Any Fish",
+        "amount": 2
+      }
+    ],
+    "energy": [
+      40,
+      48,
+      56,
+      64
+    ],
+    "market": [
+      250,
+      290,
+      330,
+      370
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Smoked Fish Bagel",
+    "slug": "smoked-fish-bagel",
+    "ingredients": [
+      {
+        "name": "Any Fish",
+        "amount": 1
+      },
+      {
+        "name": "Wheat",
+        "amount": 1
+      },
+      {
+        "name": "Cheese",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      50,
+      60,
+      70,
+      80
+    ],
+    "market": [
+      520,
+      780,
+      1040,
+      2080
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Black Truffle Cream Pasta",
+    "slug": "black-truffle-cream-pasta",
+    "ingredients": [
+      {
+        "name": "Black Truffle",
+        "amount": 1
+      },
+      {
+        "name": "Milk",
+        "amount": 1
+      },
+      {
+        "name": "Wheat",
+        "amount": 2
+      }
+    ],
+    "energy": [
+      90,
+      108,
+      126,
+      144
+    ],
+    "market": [
+      900,
+      1350,
+      1800,
+      3600
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Rustic Ratatouille",
+    "slug": "rustic-ratatouille",
+    "ingredients": [
+      {
+        "name": "Potatoes",
+        "amount": 1
+      },
+      {
+        "name": "Lettuce",
+        "amount": 1
+      },
+      {
+        "name": "Tomato",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      60,
+      72,
+      84,
+      96
+    ],
+    "market": [
+      640,
+      960,
+      1280,
+      2560
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Seafood Risotto",
+    "slug": "seafood-risotto",
+    "ingredients": [
+      {
+        "name": "Tomato",
+        "amount": 1
+      },
+      {
+        "name": "Wheat",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      40,
+      48,
+      56,
+      64
+    ],
+    "market": [
+      490,
+      735,
+      980,
+      1960
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Meat Sauce Pasta",
+    "slug": "meat-sauce-pasta",
+    "ingredients": [
+      {
+        "name": "Meat",
+        "amount": 1
+      },
+      {
+        "name": "Tomato",
+        "amount": 1
+      },
+      {
+        "name": "Wheat",
+        "amount": 1
+      },
+      {
+        "name": "Cheese",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      80,
+      96,
+      112,
+      128
+    ],
+    "market": [
+      670,
+      1005,
+      1340,
+      2680
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Seafood Pizza",
+    "slug": "seafood-pizza",
+    "ingredients": [
+      {
+        "name": "Cheese",
+        "amount": 1
+      },
+      {
+        "name": "Any Fish",
+        "amount": 1
+      },
+      {
+        "name": "Wheat",
+        "amount": 1
+      },
+      {
+        "name": "Tomato Sauce",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      70,
+      84,
+      98,
+      112
+    ],
+    "market": [
+      780,
+      1170,
+      1560,
+      3120
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Apple Pie",
+    "slug": "apple-pie",
+    "ingredients": [
+      {
+        "name": "Wheat",
+        "amount": 1
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      },
+      {
+        "name": "Butter",
+        "amount": 1
+      },
+      {
+        "name": "Apple",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      70,
+      84,
+      98,
+      112
+    ],
+    "market": [
+      730,
+      1095,
+      1460,
+      2920
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Carrot Cake",
+    "slug": "carrot-cake",
+    "ingredients": [
+      {
+        "name": "Carrot",
+        "amount": 2
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      },
+      {
+        "name": "Wheat",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      55,
+      66,
+      77,
+      88
+    ],
+    "market": [
+      840,
+      1260,
+      1680,
+      3360
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Corn Soup",
+    "slug": "corn-soup",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "amount": 1
+      },
+      {
+        "name": "Corn",
+        "amount": 2
+      },
+      {
+        "name": "Milk",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      80,
+      96,
+      112,
+      128
+    ],
+    "market": [
+      1340,
+      2010,
+      2680,
+      5360
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Deluxe Seafood Platter",
+    "slug": "deluxe-seafood-platter",
+    "ingredients": [
+      {
+        "name": "European Crayfish",
+        "amount": 2
+      },
+      {
+        "name": "Sea Bass",
+        "amount": 2
+      }
+    ],
+    "energy": [
+      65,
+      78,
+      91,
+      104
+    ],
+    "market": [
+      410,
+      615,
+      820,
+      1640
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Tiramisu",
+    "slug": "tiramisu",
+    "ingredients": [
+      {
+        "name": "Coffee Beans",
+        "amount": 1
+      },
+      {
+        "name": "Cheese",
+        "amount": 1
+      },
+      {
+        "name": "Milk",
+        "amount": 1
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      65,
+      78,
+      91,
+      104
+    ],
+    "market": [
+      530,
+      795,
+      1060,
+      2120
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Afternoon Tea",
+    "slug": "afternoon-tea",
+    "ingredients": [
+      {
+        "name": "Tiramisu",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      20,
+      30,
+      35,
+      40
+    ],
+    "market": [
+      710,
+      1065,
+      1420,
+      2840
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Picnic Set",
+    "slug": "picnic-set",
+    "ingredients": [
+      {
+        "name": "Fish and Chips",
+        "amount": 1
+      },
+      {
+        "name": "Apple Pie",
+        "amount": 1
+      },
+      {
+        "name": "Seafood Pizza",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      100,
+      120,
+      140,
+      160
+    ],
+    "market": [
+      2260,
+      3390,
+      4520,
+      9040
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Blue European Crayfish Sashimi",
+    "slug": "blue-european-crayfish-sashimi",
+    "ingredients": [
+      {
+        "name": "Blue European Crayfish",
+        "amount": 3
+      },
+      {
+        "name": "Lettuce",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      1310,
+      1965,
+      2620,
+      5240
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Crayfish Sashimi",
+    "slug": "crayfish-sashimi",
+    "ingredients": [
+      {
+        "name": "European Crayfish",
+        "amount": 3
+      },
+      {
+        "name": "Lettuce",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      30,
+      36,
+      42,
+      48
+    ],
+    "market": [
+      850,
+      1275,
+      1700,
+      3400
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Meat Burger",
+    "slug": "meat-burger",
+    "ingredients": [
+      {
+        "name": "Tomato Sauce",
+        "amount": 1
+      },
+      {
+        "name": "Wheat",
+        "amount": 1
+      },
+      {
+        "name": "Lettuce",
+        "amount": 1
+      },
+      {
+        "name": "Meat",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      75,
+      90,
+      105,
+      120
+    ],
+    "market": [
+      1350,
+      2025,
+      2700,
+      5400
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Baked Eggplant w/ Meat",
+    "slug": "baked-eggplant-w-meat",
+    "ingredients": [
+      {
+        "name": "Meat",
+        "amount": 1
+      },
+      {
+        "name": "Tomato Sauce",
+        "amount": 1
+      },
+      {
+        "name": "Eggplant",
+        "amount": 1
+      },
+      {
+        "name": "Cooking Oil",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      75,
+      90,
+      105,
+      120
+    ],
+    "market": [
+      1230,
+      1845,
+      2460,
+      4920
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Candlelight Dinner",
+    "slug": "candlelight-dinner",
+    "ingredients": [
+      {
+        "name": "House Salad",
+        "amount": 1
+      },
+      {
+        "name": "Tiramisu",
+        "amount": 1
+      },
+      {
+        "name": "Seafood Risotto",
+        "amount": 1
+      },
+      {
+        "name": "Smoked Fish Bagel",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      75,
+      90,
+      105,
+      120
+    ],
+    "market": [
+      1760,
+      2640,
+      3520,
+      7040
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Steamed Golden King Crab",
+    "slug": "steamed-golden-king-crab",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "amount": 1
+      },
+      {
+        "name": "Golden King Crab",
+        "amount": 3
+      }
+    ],
+    "energy": [
+      100,
+      120,
+      140,
+      160
+    ],
+    "market": [
+      2980,
+      4470,
+      5960,
+      11920
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Steamed King Crab",
+    "slug": "steamed-king-crab",
+    "ingredients": [
+      {
+        "name": "King Crab",
+        "amount": 3
+      },
+      {
+        "name": "Butter",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      90,
+      108,
+      126,
+      144
+    ],
+    "market": [
+      1990,
+      2985,
+      3980,
+      7960
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Apple Milkshake",
+    "slug": "apple-milkshake",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "amount": 2
+      },
+      {
+        "name": "Apple",
+        "amount": 2
+      }
+    ],
+    "energy": [],
+    "market": [
+      450,
+      675,
+      900,
+      1800
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Blueberry Milkshake",
+    "slug": "blueberry-milkshake",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "amount": 2
+      },
+      {
+        "name": "Blueberry",
+        "amount": 2
+      }
+    ],
+    "energy": [],
+    "market": [
+      400,
+      600,
+      800,
+      1600
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Cocoa Milk Tea",
+    "slug": "cocoa-milk-tea",
+    "ingredients": [
+      {
+        "name": "Tea Leaves",
+        "amount": 2
+      },
+      {
+        "name": "Cacao Bean",
+        "amount": 1
+      },
+      {
+        "name": "Milk",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      1120,
+      1680,
+      2240,
+      4480
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Cocoa Milkshake",
+    "slug": "cocoa-milkshake",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "amount": 2
+      },
+      {
+        "name": "Cacao Bean",
+        "amount": 2
+      }
+    ],
+    "energy": [],
+    "market": [
+      1000,
+      1500,
+      2000,
+      4000
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Grape Milkshake",
+    "slug": "grape-milkshake",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "amount": 2
+      },
+      {
+        "name": "Grape",
+        "amount": 2
+      }
+    ],
+    "energy": [],
+    "market": [
+      1300,
+      1950,
+      2600,
+      5200
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Mandarin Milkshake",
+    "slug": "mandarin-milkshake",
+    "ingredients": [
+      {
+        "name": "Mandarin",
+        "amount": 2
+      },
+      {
+        "name": "Milk",
+        "amount": 2
+      }
+    ],
+    "energy": [],
+    "market": [
+      450,
+      675,
+      900,
+      1800
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Matcha Milkshake",
+    "slug": "matcha-milkshake",
+    "ingredients": [
+      {
+        "name": "Matcha Powder",
+        "amount": 2
+      },
+      {
+        "name": "Milk",
+        "amount": 2
+      }
+    ],
+    "energy": [],
+    "market": [
+      840,
+      1260,
+      1680,
+      3360
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Mellow Black Tea",
+    "slug": "mellow-black-tea",
+    "ingredients": [
+      {
+        "name": "Tea Leaves",
+        "amount": 2
+      }
+    ],
+    "energy": [],
+    "market": [
+      840,
+      1260,
+      1680,
+      3360
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Mellow Milk Tea",
+    "slug": "mellow-milk-tea",
+    "ingredients": [
+      {
+        "name": "Tea Leaves",
+        "amount": 2
+      },
+      {
+        "name": "Milk",
+        "amount": 2
+      }
+    ],
+    "energy": [],
+    "market": [
+      840,
+      1260,
+      1680,
+      3360
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Milkshake",
+    "slug": "milkshake",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "amount": 2
+      }
+    ],
+    "energy": [],
+    "market": [
+      400,
+      600,
+      800,
+      1600
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Pineapple Milkshake",
+    "slug": "pineapple-milkshake",
+    "ingredients": [
+      {
+        "name": "Pineapple",
+        "amount": 2
+      },
+      {
+        "name": "Milk",
+        "amount": 2
+      }
+    ],
+    "energy": [],
+    "market": [
+      440,
+      660,
+      880,
+      1760
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Raspberry Milkshake",
+    "slug": "raspberry-milkshake",
+    "ingredients": [
+      {
+        "name": "Raspberry",
+        "amount": 2
+      },
+      {
+        "name": "Milk",
+        "amount": 2
+      }
+    ],
+    "energy": [],
+    "market": [
+      440,
+      660,
+      880,
+      1760
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Strawberry Milkshake",
+    "slug": "strawberry-milkshake",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "amount": 2
+      },
+      {
+        "name": "Strawberry",
+        "amount": 2
+      }
+    ],
+    "energy": [],
+    "market": [
+      1090,
+      1635,
+      2180,
+      4360
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Daisy Tea",
+    "slug": "daisy-tea",
+    "ingredients": [
+      {
+        "name": "Tea Leaf",
+        "amount": 2
+      }
+    ],
+    "energy": [],
+    "market": [
+      600,
+      900,
+      1200,
+      2400
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Exquisite Afternoon Tea",
+    "slug": "exquisite-afternoon-tea",
+    "ingredients": [
+      {
+        "name": "Cheese Cake",
+        "amount": 2
+      },
+      {
+        "name": "Mellow Black Tea",
+        "amount": 2
+      }
+    ],
+    "energy": [],
+    "market": [
+      2970,
+      4455,
+      5940,
+      11880
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Green Milk Tea",
+    "slug": "green-milk-tea",
+    "ingredients": [
+      {
+        "name": "Tea Leaf",
+        "amount": 2
+      },
+      {
+        "name": "Milk",
+        "amount": 2
+      }
+    ],
+    "energy": [],
+    "market": [
+      500,
+      750,
+      1000,
+      2000
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Green Tea",
+    "slug": "green-tea",
+    "ingredients": [
+      {
+        "name": "Tea Leaf",
+        "amount": 2
+      }
+    ],
+    "energy": [],
+    "market": [
+      500,
+      750,
+      1000,
+      2000
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Matcha Green Milk Tea",
+    "slug": "matcha-green-milk-tea",
+    "ingredients": [
+      {
+        "name": "Tea Leaf",
+        "amount": 2
+      },
+      {
+        "name": "Matcha Powder",
+        "amount": 1
+      },
+      {
+        "name": "Milk",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      700,
+      1050,
+      1400,
+      2800
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Rose Tea",
+    "slug": "rose-tea",
+    "ingredients": [
+      {
+        "name": "Tea Leaf",
+        "amount": 2
+      }
+    ],
+    "energy": [],
+    "market": [
+      1930,
+      2895,
+      3860,
+      7720
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Apple Pearl Cake",
+    "slug": "apple-pearl-cake",
+    "ingredients": [
+      {
+        "name": "Scallop",
+        "amount": 1
+      },
+      {
+        "name": "Milk",
+        "amount": 1
+      },
+      {
+        "name": "Apple",
+        "amount": 1
+      },
+      {
+        "name": "Wheat",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      590,
+      885,
+      1180,
+      2360
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Blueberry Pearl Cake",
+    "slug": "blueberry-pearl-cake",
+    "ingredients": [
+      {
+        "name": "Wheat",
+        "amount": 1
+      },
+      {
+        "name": "Milk",
+        "amount": 1
+      },
+      {
+        "name": "Scallop",
+        "amount": 1
+      },
+      {
+        "name": "Blueberry",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      570,
+      855,
+      1140,
+      2280
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Grilled Squid w/ Apple Jam",
+    "slug": "grilled-squid-w-apple-jam",
+    "ingredients": [
+      {
+        "name": "Japanese Flying Squid",
+        "amount": 1
+      },
+      {
+        "name": "Wakame",
+        "amount": 1
+      },
+      {
+        "name": "Sea Grape",
+        "amount": 1
+      },
+      {
+        "name": "Apple Jam",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      550,
+      825,
+      1100,
+      2200
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Grilled Squid w/ Blueberry Jam",
+    "slug": "grilled-squid-w-blueberry-jam",
+    "ingredients": [
+      {
+        "name": "Blueberry Jam",
+        "amount": 1
+      },
+      {
+        "name": "Japanese Flying Squid",
+        "amount": 1
+      },
+      {
+        "name": "Sea Grape",
+        "amount": 1
+      },
+      {
+        "name": "Wakame",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      450,
+      675,
+      900,
+      1800
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Grilled Squid w/ Fruit Jam",
+    "slug": "grilled-squid-w-fruit-jam",
+    "ingredients": [
+      {
+        "name": "Wakame",
+        "amount": 1
+      },
+      {
+        "name": "Japanese Flying Squid",
+        "amount": 1
+      },
+      {
+        "name": "Sea Grape",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      440,
+      660,
+      880,
+      1760
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Grilled Squid w/ Pineapple Jam",
+    "slug": "grilled-squid-w-pineapple-jam",
+    "ingredients": [
+      {
+        "name": "Wakame",
+        "amount": 1
+      },
+      {
+        "name": "Sea Grape",
+        "amount": 1
+      },
+      {
+        "name": "Pineapple Jam",
+        "amount": 1
+      },
+      {
+        "name": "Japanese Flying Squid",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      560,
+      840,
+      1120,
+      2240
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Grilled Squid w/ Starfruit Jam",
+    "slug": "grilled-squid-w-starfruit-jam",
+    "ingredients": [
+      {
+        "name": "Wakame",
+        "amount": 1
+      },
+      {
+        "name": "Starfruit Jam",
+        "amount": 1
+      },
+      {
+        "name": "Sea Grape",
+        "amount": 1
+      },
+      {
+        "name": "Japanese Flying Squid",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      480,
+      720,
+      960,
+      1920
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Grilled Squid w/ Strawberry Jam",
+    "slug": "grilled-squid-w-strawberry-jam",
+    "ingredients": [
+      {
+        "name": "Strawberry Milkshake",
+        "amount": 1
+      },
+      {
+        "name": "Japanese Flying Squid",
+        "amount": 1
+      },
+      {
+        "name": "Wakame",
+        "amount": 1
+      },
+      {
+        "name": "Sea Grape",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      1860,
+      2790,
+      3720,
+      7440
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Mandarin Pearl Cake",
+    "slug": "mandarin-pearl-cake",
+    "ingredients": [
+      {
+        "name": "Scallop",
+        "amount": 1
+      },
+      {
+        "name": "Wheat",
+        "amount": 1
+      },
+      {
+        "name": "Milk",
+        "amount": 1
+      },
+      {
+        "name": "Mandarin",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      590,
+      885,
+      1180,
+      2360
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Ocean Feast",
+    "slug": "ocean-feast",
+    "ingredients": [
+      {
+        "name": "Corn Soup",
+        "amount": 1
+      },
+      {
+        "name": "Ocean Iced Drink",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      1700,
+      2550,
+      3400,
+      6800
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Ocean Iced Drink",
+    "slug": "ocean-iced-drink",
+    "ingredients": [
+      {
+        "name": "Spirulina Powder",
+        "amount": 2
+      },
+      {
+        "name": "Starfruit",
+        "amount": 2
+      }
+    ],
+    "energy": [],
+    "market": [
+      190,
+      285,
+      380,
+      760
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Raspberry Pearl Cake",
+    "slug": "raspberry-pearl-cake",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "amount": 1
+      },
+      {
+        "name": "Scallop",
+        "amount": 1
+      },
+      {
+        "name": "Raspberry",
+        "amount": 1
+      },
+      {
+        "name": "Wheat",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      590,
+      885,
+      1180,
+      2360
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Seashell Pearl Cake",
+    "slug": "seashell-pearl-cake",
+    "ingredients": [
+      {
+        "name": "Scallop",
+        "amount": 1
+      },
+      {
+        "name": "Milk",
+        "amount": 1
+      },
+      {
+        "name": "Wheat",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      570,
+      855,
+      1140,
+      2280
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Starfruit Jam",
+    "slug": "starfruit-jam",
+    "ingredients": [
+      {
+        "name": "Starfruit",
+        "amount": 4
+      }
+    ],
+    "energy": [],
+    "market": [
+      200,
+      300,
+      400,
+      800
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Starfruit Pearl Cake",
+    "slug": "starfruit-pearl-cake",
+    "ingredients": [
+      {
+        "name": "Scallop",
+        "amount": 1
+      },
+      {
+        "name": "Milk",
+        "amount": 1
+      },
+      {
+        "name": "Wheat",
+        "amount": 1
+      },
+      {
+        "name": "Starfruit",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      570,
+      855,
+      1140,
+      2280
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Tomato Seafood Soup",
+    "slug": "tomato-seafood-soup",
+    "ingredients": [
+      {
+        "name": "Glasswort",
+        "amount": 1
+      },
+      {
+        "name": "Common Prawn",
+        "amount": 1
+      },
+      {
+        "name": "Tomato",
+        "amount": 1
+      },
+      {
+        "name": "Wheat",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      450,
+      675,
+      900,
+      1800
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Caramel Popcorn Bucket",
+    "slug": "caramel-popcorn-bucket",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "amount": 1
+      },
+      {
+        "name": "Springday Brown Sugar",
+        "amount": 2
+      },
+      {
+        "name": "Corn",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      50,
+      60,
+      70,
+      80
+    ],
+    "market": [
+      820,
+      1230,
+      1640,
+      3280
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Colorful Movie Combo",
+    "slug": "colorful-movie-combo",
+    "ingredients": [
+      {
+        "name": "Sweet Duo Bucket",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      60,
+      72,
+      84,
+      96
+    ],
+    "market": [
+      1960,
+      2940,
+      3920,
+      7840
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Romaine Lettuce Taco",
+    "slug": "romaine-lettuce-taco",
+    "ingredients": [
+      {
+        "name": "Salsa Sauce",
+        "amount": 1
+      },
+      {
+        "name": "Romaine Lettuce",
+        "amount": 2
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      30,
+      36,
+      42,
+      48
+    ],
+    "market": [
+      260,
+      390,
+      520,
+      1040
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Salsa Wavy Potato Chips",
+    "slug": "salsa-wavy-potato-chips",
+    "ingredients": [
+      {
+        "name": "Potatoes",
+        "amount": 2
+      },
+      {
+        "name": "Salsa Sauce",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      26,
+      31,
+      36,
+      41
+    ],
+    "market": [
+      280,
+      420,
+      560,
+      1120
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Savory Double Combo Bucket",
+    "slug": "savory-double-combo-bucket",
+    "ingredients": [
+      {
+        "name": "Salsa Wavy Potato Chips",
+        "amount": 1
+      },
+      {
+        "name": "Savory Popcorn Bucket",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      95,
+      114,
+      133,
+      152
+    ],
+    "market": [
+      1230,
+      1845,
+      2460,
+      4920
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Savory Popcorn Bucket",
+    "slug": "savory-popcorn-bucket",
+    "ingredients": [
+      {
+        "name": "Corn",
+        "amount": 1
+      },
+      {
+        "name": "Butter",
+        "amount": 2
+      }
+    ],
+    "energy": [
+      60,
+      72,
+      84,
+      96
+    ],
+    "market": [
+      900,
+      1350,
+      1800,
+      3600
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Springdag Raspberry Black Tea",
+    "slug": "springdag-raspberry-black-tea",
+    "ingredients": [
+      {
+        "name": "Tea Leaves",
+        "amount": 1
+      },
+      {
+        "name": "Springday Brown Sugar",
+        "amount": 2
+      },
+      {
+        "name": "Raspberry",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      45,
+      54,
+      63,
+      72
+    ],
+    "market": [
+      460,
+      690,
+      920,
+      1840
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Springday Apple Black Tea",
+    "slug": "springday-apple-black-tea",
+    "ingredients": [
+      {
+        "name": "Tea Leaves",
+        "amount": 1
+      },
+      {
+        "name": "Springday Brown Sugar",
+        "amount": 2
+      },
+      {
+        "name": "Apple",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      45,
+      54,
+      63,
+      72
+    ],
+    "market": [
+      480,
+      720,
+      960,
+      1920
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Springday Blueberry Black Tea",
+    "slug": "springday-blueberry-black-tea",
+    "ingredients": [
+      {
+        "name": "Tea Leaves",
+        "amount": 1
+      },
+      {
+        "name": "Springday Brown Sugar",
+        "amount": 2
+      },
+      {
+        "name": "Blueberry",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      45,
+      54,
+      63,
+      72
+    ],
+    "market": [
+      460,
+      690,
+      920,
+      1840
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Springday Fruit Black Tea",
+    "slug": "springday-fruit-black-tea",
+    "ingredients": [
+      {
+        "name": "Tea Leaves",
+        "amount": 1
+      },
+      {
+        "name": "Springday Brown Sugar",
+        "amount": 2
+      }
+    ],
+    "energy": [
+      45,
+      54,
+      63,
+      72
+    ],
+    "market": [
+      460,
+      690,
+      920,
+      1840
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Springday Grape Black Tea",
+    "slug": "springday-grape-black-tea",
+    "ingredients": [
+      {
+        "name": "Tea Leaves",
+        "amount": 1
+      },
+      {
+        "name": "Grape",
+        "amount": 1
+      },
+      {
+        "name": "Springday Brown Sugar",
+        "amount": 2
+      }
+    ],
+    "energy": [
+      65,
+      78,
+      91,
+      104
+    ],
+    "market": [
+      910,
+      1365,
+      1820,
+      3640
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Springday Mandarin Black Tea",
+    "slug": "springday-mandarin-black-tea",
+    "ingredients": [
+      {
+        "name": "Springday Brown Sugar",
+        "amount": 2
+      },
+      {
+        "name": "Tea Leaves",
+        "amount": 1
+      },
+      {
+        "name": "Mandarin",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      45,
+      54,
+      63,
+      72
+    ],
+    "market": [
+      480,
+      720,
+      960,
+      1920
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Springday Pineapple Black Tea",
+    "slug": "springday-pineapple-black-tea",
+    "ingredients": [
+      {
+        "name": "Tea Leaves",
+        "amount": 1
+      },
+      {
+        "name": "Pineapple",
+        "amount": 1
+      },
+      {
+        "name": "Springday Brown Sugar",
+        "amount": 2
+      }
+    ],
+    "energy": [
+      45,
+      54,
+      63,
+      72
+    ],
+    "market": [
+      480,
+      720,
+      960,
+      1920
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Springday Strawberry Black Tea",
+    "slug": "springday-strawberry-black-tea",
+    "ingredients": [
+      {
+        "name": "Tea Leaves",
+        "amount": 1
+      },
+      {
+        "name": "Springday Brown Sugar",
+        "amount": 2
+      },
+      {
+        "name": "Strawberry",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      60,
+      72,
+      84,
+      96
+    ],
+    "market": [
+      800,
+      1200,
+      1600,
+      3200
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Supreme Movie Meal",
+    "slug": "supreme-movie-meal",
+    "ingredients": [
+      {
+        "name": "Savory Double Combo Bucket",
+        "amount": 1
+      },
+      {
+        "name": "Springday Blueberry Black Tea",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      60,
+      72,
+      84,
+      96
+    ],
+    "market": [
+      2370,
+      3555,
+      4740,
+      9480
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Sweet Duo Bucket",
+    "slug": "sweet-duo-bucket",
+    "ingredients": [
+      {
+        "name": "Salsa Wavy Potato Chips",
+        "amount": 1
+      },
+      {
+        "name": "Caramel Popcorn Bucket",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      90,
+      108,
+      126,
+      144
+    ],
+    "market": [
+      1150,
+      1725,
+      2300,
+      4600
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Wild Bracken Celtuce Taco",
+    "slug": "wild-bracken-celtuce-taco",
+    "ingredients": [
+      {
+        "name": "Romaine Lettuce Taco",
+        "amount": 1
+      },
+      {
+        "name": "Fiddlehead",
+        "amount": 2
+      }
+    ],
+    "energy": [
+      35,
+      42,
+      49,
+      56
+    ],
+    "market": [
+      330,
+      495,
+      660,
+      1320
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Wild Burdock Celtuce Taco",
+    "slug": "wild-burdock-celtuce-taco",
+    "ingredients": [
+      {
+        "name": "Burdock",
+        "amount": 2
+      },
+      {
+        "name": "Romaine Lettuce Taco",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      35,
+      42,
+      49,
+      56
+    ],
+    "market": [
+      330,
+      495,
+      660,
+      1320
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Wild Garlic Mustard Celtuce Taco",
+    "slug": "wild-garlic-mustard-celtuce-taco",
+    "ingredients": [
+      {
+        "name": "Romaine Lettuce Taco",
+        "amount": 1
+      },
+      {
+        "name": "Tall Mustard",
+        "amount": 2
+      }
+    ],
+    "energy": [
+      35,
+      42,
+      49,
+      56
+    ],
+    "market": [
+      330,
+      495,
+      660,
+      1320
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Wild Mustard Greens Celtuce Taco",
+    "slug": "wild-mustard-greens-celtuce-taco",
+    "ingredients": [
+      {
+        "name": "Mustard Greens",
+        "amount": 2
+      },
+      {
+        "name": "Romaine Lettuce Taco",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      35,
+      42,
+      49,
+      56
+    ],
+    "market": [
+      330,
+      495,
+      660,
+      1320
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Wild Vegetable Celtuce Taco",
+    "slug": "wild-vegetable-celtuce-taco",
+    "ingredients": [
+      {
+        "name": "Romaine Lettuce Taco",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      35,
+      42,
+      49,
+      56
+    ],
+    "market": [
+      330,
+      495,
+      660,
+      1320
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Heart Puppies Con Panna",
+    "slug": "heart-puppies-con-panna",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "amount": 2
+      },
+      {
+        "name": "Coffee",
+        "amount": 2
+      }
+    ],
+    "energy": [
+      85,
+      102,
+      119,
+      136
+    ],
+    "market": [
+      1220,
+      1830,
+      2440,
+      4880
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Maltese Canelé",
+    "slug": "maltese-canel",
+    "ingredients": [],
+    "energy": [],
+    "market": [],
+    "eventTokens": []
+  },
+  {
+    "name": "Maltese Con Panna",
+    "slug": "maltese-con-panna",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "amount": 3
+      },
+      {
+        "name": "Coffee",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      45,
+      54,
+      63,
+      72
+    ],
+    "market": [
+      520,
+      780,
+      1040,
+      2080
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Retriever Canelé",
+    "slug": "retriever-canel",
+    "ingredients": [],
+    "energy": [],
+    "market": [],
+    "eventTokens": []
+  },
+  {
+    "name": "Retriever Con Panna",
+    "slug": "retriever-con-panna",
+    "ingredients": [
+      {
+        "name": "Coffee Beans",
+        "amount": 1
+      },
+      {
+        "name": "Coffee",
+        "amount": 1
+      },
+      {
+        "name": "Milk",
+        "amount": 2
+      }
+    ],
+    "energy": [
+      45,
+      54,
+      63,
+      72
+    ],
+    "market": [
+      520,
+      780,
+      1040,
+      2080
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Pillow-Shaped Egg Yolk & Pork Zongzi",
+    "slug": "pillow-shaped-egg-yolk-and-pork-zongzi",
+    "ingredients": [],
+    "energy": [],
+    "market": [],
+    "eventTokens": []
+  },
+  {
+    "name": "Pillow-Shaped Plain Rice Zongzi",
+    "slug": "pillow-shaped-plain-rice-zongzi",
+    "ingredients": [
+      {
+        "name": "Bamboo Leaf",
+        "amount": 1
+      },
+      {
+        "name": "Paddy",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      25,
+      30,
+      35,
+      40
+    ],
+    "market": [
+      240,
+      360,
+      480,
+      960
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Pillow-Shaped Red Bean Zongzi",
+    "slug": "pillow-shaped-red-bean-zongzi",
+    "ingredients": [
+      {
+        "name": "Bamboo Leaf",
+        "amount": 1
+      },
+      {
+        "name": "Red Bean",
+        "amount": 2
+      },
+      {
+        "name": "Paddy",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      25,
+      30,
+      35,
+      40
+    ],
+    "market": [
+      260,
+      390,
+      520,
+      1040
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Triangle Egg Yolk & Pork Zongzi",
+    "slug": "triangle-egg-yolk-and-pork-zongzi",
+    "ingredients": [],
+    "energy": [],
+    "market": [],
+    "eventTokens": []
+  },
+  {
+    "name": "Triangle Plain Rice Zongzi",
+    "slug": "triangle-plain-rice-zongzi",
+    "ingredients": [
+      {
+        "name": "Bamboo Leaf",
+        "amount": 1
+      },
+      {
+        "name": "Paddy",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      25,
+      30,
+      35,
+      40
+    ],
+    "market": [
+      240,
+      360,
+      480,
+      960
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Triangle Red Bean Zongzi",
+    "slug": "triangle-red-bean-zongzi",
+    "ingredients": [
+      {
+        "name": "Bamboo Leaf",
+        "amount": 1
+      },
+      {
+        "name": "Red Bean",
+        "amount": 2
+      },
+      {
+        "name": "Paddy",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      25,
+      30,
+      35,
+      40
+    ],
+    "market": [
+      260,
+      390,
+      520,
+      1040
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Apple Verbena Pie",
+    "slug": "apple-verbena-pie",
+    "ingredients": [
+      {
+        "name": "Lemon Verbena",
+        "amount": 1
+      },
+      {
+        "name": "Apple",
+        "amount": 1
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      },
+      {
+        "name": "Butter",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      390,
+      585,
+      780,
+      1560
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Blueberry Verbena Pie",
+    "slug": "blueberry-verbena-pie",
+    "ingredients": [
+      {
+        "name": "Blueberry",
+        "amount": 1
+      },
+      {
+        "name": "Butter",
+        "amount": 1
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      },
+      {
+        "name": "Lemon Verbena",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      360,
+      540,
+      720,
+      1440
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Brick Black Truffle Patty Burger",
+    "slug": "brick-black-truffle-patty-burger",
+    "ingredients": [
+      {
+        "name": "Black Truffle",
+        "amount": 1
+      },
+      {
+        "name": "Wheat",
+        "amount": 1
+      },
+      {
+        "name": "Brick Meat Patty",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      780,
+      1170,
+      1560,
+      3120
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Brick Bowl Apple Shaved Ice",
+    "slug": "brick-bowl-apple-shaved-ice",
+    "ingredients": [
+      {
+        "name": "Condensed Milk",
+        "amount": 1
+      },
+      {
+        "name": "Apple",
+        "amount": 2
+      },
+      {
+        "name": "Brick Ice",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      260,
+      390,
+      520,
+      1040
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Brick Bowl Blueberry Shaved Ice",
+    "slug": "brick-bowl-blueberry-shaved-ice",
+    "ingredients": [
+      {
+        "name": "Condensed Milk",
+        "amount": 1
+      },
+      {
+        "name": "Blueberry",
+        "amount": 2
+      },
+      {
+        "name": "Brick Ice",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      220,
+      330,
+      440,
+      880
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Brick Bowl Fruit Shaved Ice",
+    "slug": "brick-bowl-fruit-shaved-ice",
+    "ingredients": [
+      {
+        "name": "Condensed Milk",
+        "amount": 1
+      },
+      {
+        "name": "Brick Ice",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      210,
+      315,
+      420,
+      840
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Brick Bowl Grape Shaved Ice",
+    "slug": "brick-bowl-grape-shaved-ice",
+    "ingredients": [
+      {
+        "name": "Condensed Milk",
+        "amount": 1
+      },
+      {
+        "name": "Brick Ice",
+        "amount": 1
+      },
+      {
+        "name": "Grape",
+        "amount": 2
+      }
+    ],
+    "energy": [],
+    "market": [
+      1110,
+      1665,
+      2220,
+      4440
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Brick Bowl Mandarin Shaved Ice",
+    "slug": "brick-bowl-mandarin-shaved-ice",
+    "ingredients": [
+      {
+        "name": "Mandarin",
+        "amount": 2
+      },
+      {
+        "name": "Condensed Milk",
+        "amount": 1
+      },
+      {
+        "name": "Brick Ice",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      260,
+      390,
+      520,
+      1040
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Brick Bowl Pineapple Shaved Ice",
+    "slug": "brick-bowl-pineapple-shaved-ice",
+    "ingredients": [
+      {
+        "name": "Pineapple",
+        "amount": 2
+      },
+      {
+        "name": "Brick Ice",
+        "amount": 1
+      },
+      {
+        "name": "Condensed Milk",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      260,
+      390,
+      520,
+      1040
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Brick Bowl Raspberry Shaved Ice",
+    "slug": "brick-bowl-raspberry-shaved-ice",
+    "ingredients": [
+      {
+        "name": "Condensed Milk",
+        "amount": 1
+      },
+      {
+        "name": "Raspberry",
+        "amount": 2
+      },
+      {
+        "name": "Brick Ice",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      260,
+      390,
+      520,
+      1040
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Brick Bowl Strawberry Shaved Ice",
+    "slug": "brick-bowl-strawberry-shaved-ice",
+    "ingredients": [
+      {
+        "name": "Condensed Milk",
+        "amount": 1
+      },
+      {
+        "name": "Brick Ice",
+        "amount": 1
+      },
+      {
+        "name": "Strawberry",
+        "amount": 2
+      }
+    ],
+    "energy": [],
+    "market": [
+      900,
+      1350,
+      1800,
+      3600
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Brick Button Mushroom Patty Burger",
+    "slug": "brick-button-mushroom-patty-burger",
+    "ingredients": [
+      {
+        "name": "Button Mushroom",
+        "amount": 2
+      },
+      {
+        "name": "Wheat",
+        "amount": 1
+      },
+      {
+        "name": "Brick Meat Patty",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      450,
+      675,
+      900,
+      1800
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Brick Fun Combo Set",
+    "slug": "brick-fun-combo-set",
+    "ingredients": [],
+    "energy": [],
+    "market": [
+      1070,
+      1605,
+      2140,
+      4280
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Brick Mushroom Patty Burger",
+    "slug": "brick-mushroom-patty-burger",
+    "ingredients": [
+      {
+        "name": "Wheat",
+        "amount": 1
+      },
+      {
+        "name": "Brick Meat Patty",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      450,
+      675,
+      900,
+      1800
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Brick Oyster Mushroom Patty Burger",
+    "slug": "brick-oyster-mushroom-patty-burger",
+    "ingredients": [
+      {
+        "name": "Brick Meat Patty",
+        "amount": 1
+      },
+      {
+        "name": "Wheat",
+        "amount": 1
+      },
+      {
+        "name": "Oyster Mushroom",
+        "amount": 2
+      }
+    ],
+    "energy": [],
+    "market": [
+      450,
+      675,
+      900,
+      1800
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Brick Penny Bun Patty Burger",
+    "slug": "brick-penny-bun-patty-burger",
+    "ingredients": [
+      {
+        "name": "Penny Bun",
+        "amount": 2
+      },
+      {
+        "name": "Wheat",
+        "amount": 1
+      },
+      {
+        "name": "Brick Meat Patty",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      450,
+      675,
+      900,
+      1800
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Brick Shiitake Patty Burger",
+    "slug": "brick-shiitake-patty-burger",
+    "ingredients": [
+      {
+        "name": "Shiitake",
+        "amount": 2
+      },
+      {
+        "name": "Wheat",
+        "amount": 1
+      },
+      {
+        "name": "Brick Meat Patty",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      450,
+      675,
+      900,
+      1800
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Fruit Verbena Pie",
+    "slug": "fruit-verbena-pie",
+    "ingredients": [
+      {
+        "name": "Egg",
+        "amount": 1
+      },
+      {
+        "name": "Lemon Verbena",
+        "amount": 1
+      },
+      {
+        "name": "Butter",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      360,
+      540,
+      720,
+      1440
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Grape Verbena Pie",
+    "slug": "grape-verbena-pie",
+    "ingredients": [
+      {
+        "name": "Lemon Verbena",
+        "amount": 1
+      },
+      {
+        "name": "Grape",
+        "amount": 1
+      },
+      {
+        "name": "Butter",
+        "amount": 1
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      810,
+      1215,
+      1620,
+      3240
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Mandarin Verbena Pie",
+    "slug": "mandarin-verbena-pie",
+    "ingredients": [
+      {
+        "name": "Lemon Verbena",
+        "amount": 1
+      },
+      {
+        "name": "Butter",
+        "amount": 1
+      },
+      {
+        "name": "Mandarin",
+        "amount": 1
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      360,
+      540,
+      720,
+      1440
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Pineapple Verbena Pie",
+    "slug": "pineapple-verbena-pie",
+    "ingredients": [
+      {
+        "name": "Pineapple",
+        "amount": 1
+      },
+      {
+        "name": "Butter",
+        "amount": 1
+      },
+      {
+        "name": "Lemon Verbena",
+        "amount": 1
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      380,
+      570,
+      760,
+      1520
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Raspberry Verbena Pie",
+    "slug": "raspberry-verbena-pie",
+    "ingredients": [
+      {
+        "name": "Raspberry",
+        "amount": 1
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      },
+      {
+        "name": "Lemon Verbena",
+        "amount": 1
+      },
+      {
+        "name": "Butter",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      380,
+      570,
+      760,
+      1520
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Strawberry Verbena Pie",
+    "slug": "strawberry-verbena-pie",
+    "ingredients": [
+      {
+        "name": "Lemon Verbena",
+        "amount": 1
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      },
+      {
+        "name": "Butter",
+        "amount": 1
+      },
+      {
+        "name": "Strawberry",
+        "amount": 1
+      }
+    ],
+    "energy": [],
+    "market": [
+      710,
+      1065,
+      1420,
+      2840
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Rainbow Heart",
+    "slug": "rainbow-heart",
+    "ingredients": [],
+    "energy": [
+      20,
+      24,
+      28,
+      32
+    ],
+    "market": [
+      170,
+      255,
+      340,
+      680
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Rainbow Spark",
+    "slug": "rainbow-spark",
+    "ingredients": [],
+    "energy": [
+      20,
+      24,
+      28,
+      32
+    ],
+    "market": [
+      170,
+      255,
+      340,
+      680
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Apple Frosted Pancake",
+    "slug": "apple-frosted-pancake",
+    "ingredients": [
+      {
+        "name": "Frosted",
+        "amount": 1
+      },
+      {
+        "name": "Apple",
+        "amount": 1
+      },
+      {
+        "name": "Milk",
+        "amount": 1
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      25,
+      30,
+      35,
+      40
+    ],
+    "market": [
+      360,
+      540,
+      720,
+      1440
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Aurora Banquet",
+    "slug": "aurora-banquet",
+    "ingredients": [
+      {
+        "name": "Creamy White Radish Soup",
+        "amount": 1
+      },
+      {
+        "name": "Steak w/ Mashed White Radish",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      40,
+      48,
+      56,
+      64
+    ],
+    "market": [
+      1630,
+      2445,
+      3260,
+      6520
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Blueberry Frosted Pancake",
+    "slug": "blueberry-frosted-pancake",
+    "ingredients": [
+      {
+        "name": "Frosted",
+        "amount": 1
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      },
+      {
+        "name": "Milk",
+        "amount": 1
+      },
+      {
+        "name": "Blueberry",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      25,
+      30,
+      35,
+      40
+    ],
+    "market": [
+      330,
+      495,
+      660,
+      1320
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Creamy White Radish Soup",
+    "slug": "creamy-white-radish-soup",
+    "ingredients": [
+      {
+        "name": "White Radish",
+        "amount": 2
+      },
+      {
+        "name": "Butter",
+        "amount": 1
+      },
+      {
+        "name": "Milk",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      25,
+      30,
+      35,
+      40
+    ],
+    "market": [
+      340,
+      510,
+      680,
+      1360
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Iced-Cup Coffee",
+    "slug": "iced-cup-coffee",
+    "ingredients": [
+      {
+        "name": "Coffee Beans",
+        "amount": 3
+      },
+      {
+        "name": "Frosted",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      20,
+      24,
+      28,
+      32
+    ],
+    "market": [
+      280,
+      420,
+      560,
+      1120
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "iced-Cup Latte",
+    "slug": "iced-cup-latte",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "amount": 2
+      },
+      {
+        "name": "Coffee Beans",
+        "amount": 1
+      },
+      {
+        "name": "Frosted",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      20,
+      24,
+      28,
+      32
+    ],
+    "market": [
+      280,
+      420,
+      560,
+      1120
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Mandarin Frosted Pancake",
+    "slug": "mandarin-frosted-pancake",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "amount": 1
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      },
+      {
+        "name": "Mandarin",
+        "amount": 1
+      },
+      {
+        "name": "Frosted",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      25,
+      30,
+      35,
+      40
+    ],
+    "market": [
+      360,
+      540,
+      720,
+      1440
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Original Frosted Pancake",
+    "slug": "original-frosted-pancake",
+    "ingredients": [
+      {
+        "name": "Egg",
+        "amount": 1
+      },
+      {
+        "name": "Frosted",
+        "amount": 1
+      },
+      {
+        "name": "Milk",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      25,
+      30,
+      35,
+      40
+    ],
+    "market": [
+      330,
+      495,
+      660,
+      1320
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Raspberry Frosted Pancake",
+    "slug": "raspberry-frosted-pancake",
+    "ingredients": [
+      {
+        "name": "Frosted",
+        "amount": 1
+      },
+      {
+        "name": "Frosted",
+        "amount": 1
+      },
+      {
+        "name": "Egg",
+        "amount": 1
+      },
+      {
+        "name": "Raspberry",
+        "amount": 1
+      }
+    ],
+    "energy": [
+      25,
+      30,
+      35,
+      40
+    ],
+    "market": [
+      350,
+      525,
+      700,
+      1400
+    ],
+    "eventTokens": []
+  },
+  {
+    "name": "Steak w/ Mashed White Radish",
+    "slug": "steak-w-mashed-white-radish",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "amount": 1
+      },
+      {
+        "name": "White Radish",
+        "amount": 1
+      },
+      {
+        "name": "Meat",
+        "amount": 2
+      }
+    ],
+    "energy": [
+      40,
+      48,
+      56,
+      64
+    ],
+    "market": [
+      630,
+      945,
+      1260,
+      2520
+    ],
+    "eventTokens": []
+  }
+]
