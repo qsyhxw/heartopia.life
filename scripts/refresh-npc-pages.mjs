@@ -77,7 +77,79 @@ const people = {
       ['Useful route', 'Visit Vanya before a fishing session, then use the fish database to check target conditions and track catches.']
     ],
     links: [['/database/fish/', 'Fish database'], ['/guides/fish-locations/', 'Fish locations'], ['/tools/fish-tracker/', 'Fish tracker']]
-  }
+  },
+  massimo: {
+    name: 'Massimo', image: 'Massimo.webp', location: 'Central Square', role: 'Cooking mentor',
+    summary: 'Massimo is the restaurant chef and cooking mentor in Central Square.',
+    gifts: 'Prepared meals and rare ingredients are listed as favorites.',
+    function: 'Cooking supplies',
+    details: [
+      ['Where to look', 'Central Square. Use the in-game map NPC icon when you need the exact restaurant position.'],
+      ['Shop focus', 'The current NPC listing includes Amazing Seasoning and Universal Ingredient. Check the in-game shop for the current stock and price.'],
+      ['Useful route', 'Visit Massimo when a recipe or cooking step needs a special ingredient, then compare recipes and ingredients in the databases.']
+    ],
+    links: [['/database/recipes/', 'Recipe database'], ['/database/ingredients/', 'Ingredients database'], ['/guides/cooking/', 'Cooking guide']]
+  },
+  naniwa: {
+    name: 'Naniwa', image: 'Naniwa.webp', location: 'Deer Tower', role: 'Entomologist',
+    summary: 'Naniwa is the entomologist who supports insect catching and related equipment.',
+    gifts: 'Rare insects are listed as favorites.',
+    function: 'Insect-catching supplies',
+    details: [
+      ['Where to look', 'Deer Tower. Use the in-game map NPC icon for the exact position.'],
+      ['Shop focus', 'The current NPC listing includes Inflatable Insect Attractor and Sense Booster. His hobby shop is also associated with terrariums.'],
+      ['Useful route', 'Visit Naniwa before targeting a difficult bug, then check the insect database for the target location and conditions.']
+    ],
+    links: [['/database/insects/', 'Insect database'], ['/guides/insects/', 'Insect locations guide'], ['/hobbies/insect-catching/', 'Insect catching']]
+  },
+  'ka-ching': {
+    name: 'Ka Ching', image: 'Ka-Ching.webp', location: 'Residential Street', role: 'General store owner',
+    summary: 'Ka Ching owns the general store in Residential Street.',
+    gifts: 'No favorite gifts are currently listed in the NPC database.',
+    function: 'General store',
+    details: [
+      ['Where to look', 'Residential Street. Use the in-game map NPC icon for the exact general-store position.'],
+      ['Shop focus', 'The current NPC listing includes a Drawing Board. Check the in-game shop for current availability and price.'],
+      ['Useful route', 'Use Ka Ching for general-store needs, then open the Drawing Board guide if you are making a design.']
+    ],
+    links: [['/guides/painting-tools/', 'Drawing Board guide'], ['/guides/gallery/', 'Gallery guide'], ['/guides/npc-locations/', 'All NPC locations']]
+  },
+  'mrs-joan': {
+    name: 'Mrs. Joan', image: 'Mrs.-Joan.webp', location: 'Central Square', role: 'Pet store owner',
+    summary: 'Mrs. Joan runs the pet store in Central Square and carries animal food items.',
+    gifts: 'No favorite gifts are currently listed in the NPC database.',
+    function: 'Pet supplies',
+    details: [
+      ['Where to look', 'Central Square. Use the in-game map NPC icon when you need the exact pet-store position.'],
+      ['Shop focus', 'The current listing includes Universal Animal Food, Dog Food, Energy Dog Food, Cat Food, and Energy Fish Jerky.'],
+      ['Useful route', 'Check pet food needs before buying, then open the pet-food guide for species and favorite-food context.']
+    ],
+    links: [['/guides/pet-favorite-food/', 'Pet favorite food guide'], ['/hobbies/cat-care/favorite-food/', 'Cat favorite food'], ['/hobbies/dog-care/breeds/', 'Dog breeds']]
+  },
+  'bailey-j': {
+    name: 'Bailey J', image: 'Bailey-J.webp', location: 'Central Square', role: 'Bird expert',
+    summary: 'Bailey J is the bird expert who supports observations and bird-related supplies.',
+    gifts: 'Bird photographs are listed as favorites.',
+    function: 'Bird-observation supplies',
+    details: [
+      ['Where to look', 'Central Square. Use the in-game map NPC icon for the exact position.'],
+      ['Shop focus', 'The current listing includes Camouflage Bush, Bird Food, and Auto Bird Whistle.'],
+      ['Useful route', 'Visit Bailey J before a bird-observation session, then use the bird database to track the species you still need.']
+    ],
+    links: [['/database/birds/', 'Bird database'], ['/guides/bird-locations/', 'Bird locations'], ['/tools/my-progress/', 'My Progress']]
+  },
+  bill: {
+    name: 'Bill', image: 'Bill.webp', location: 'Fishing Village Square', role: 'Advanced fishing mentor',
+    summary: 'Bill is the advanced fishing mentor at Fishing Village Square and focuses on sea fishing.',
+    gifts: 'Fish and seafood are listed as favorites.',
+    function: 'Sea-fishing guidance',
+    details: [
+      ['Where to look', 'Fishing Village Square. Use the in-game map NPC icon for the exact position.'],
+      ['What he does', 'The current NPC listing identifies Bill as the advanced fishing mentor and an expert in sea fishing.'],
+      ['Useful route', 'Use Bill as the sea-fishing reference point, then check the fish database and sea-fishing event guide for your target.']
+    ],
+    links: [['/events/sea-fishing/', 'Sea fishing event'], ['/database/fish/', 'Fish database'], ['/guides/fish-locations/', 'Fish locations']]
+  },
 };
 
 const legacy = {
@@ -94,6 +166,7 @@ function pageShell({ title, description, canonical, jsonLd, body }) {
 }
 
 function buildPerson(slug, person) {
+  fs.mkdirSync(path.join(root, 'npcs', slug), { recursive: true });
   const canonical = `https://heartopia.life/npcs/${slug}/`;
   const title = `Heartopia ${person.name}: ${person.location} ${person.role} Guide`;
   const description = `Find ${person.name} in Heartopia: ${person.location} location, ${person.role.toLowerCase()} role, confirmed function, favorite-gift note, and related guides.`;
@@ -127,7 +200,7 @@ function buildKaChingGuide() {
 
 function buildGuide() {
   const npcs = [
-    ['Albert Jr.', 'Albert-Jr.webp', 'Suburbs', 'Merchant'], ['Andrew', 'Andrew.webp', 'Suburbs', 'Driving mentor'], ['Annie', 'Annie.webp', 'Central Square', 'Town guide'], ['Atara', 'Atara.webp', 'Central Square', 'Mayor', '/npcs/atara/'], ['Azure', 'Azure.webp', 'Central Square', 'Winter saleswoman'], ['Bailey J', 'Bailey-J.webp', 'Central Square', 'Bird expert'], ['Bill', 'Bill.webp', 'Fishing Village Square', 'Advanced fishing mentor'], ['Blanc', 'Blanc.webp', 'Central Square', 'Gardening mentor', '/npcs/blanc/'], ['Bob', 'Bob.webp', 'Central Square', 'Artisan'], ['Cassie', 'Cassie.webp', 'Forest Jump Puzzle', 'Park ranger'], ['Doris', 'Doris.webp', 'Suburbs', 'Secret Merchant', '/npcs/doris/'], ['Dorothee', 'Dorothee.webp', 'Central Square', 'Fashion designer', '/npcs/dorothee/'], ['Eric', 'Eric.webp', 'Onsen', 'Park manager', '/npcs/eric/'], ['Ka Ching', 'Ka-Ching.webp', 'Residential Street', 'General store owner'], ['Massimo', 'Massimo.webp', 'Central Square', 'Cooking mentor'], ['Mrs. Joan', 'Mrs.-Joan.webp', 'Central Square', 'Pet store owner'], ['Naniwa', 'Naniwa.webp', 'Deer Tower', 'Entomologist'], ['Patti', 'Patti.webp', 'Deer Tower', 'Ranger'], ['Vanya', 'Vanya.webp', 'Residential Street', 'Fishing mentor', '/npcs/vanya/']
+    ['Albert Jr.', 'Albert-Jr.webp', 'Suburbs', 'Merchant'], ['Andrew', 'Andrew.webp', 'Suburbs', 'Driving mentor'], ['Annie', 'Annie.webp', 'Central Square', 'Town guide'], ['Atara', 'Atara.webp', 'Central Square', 'Mayor', '/npcs/atara/'], ['Azure', 'Azure.webp', 'Central Square', 'Winter saleswoman'], ['Bailey J', 'Bailey-J.webp', 'Central Square', 'Bird expert', '/npcs/bailey-j/'], ['Bill', 'Bill.webp', 'Fishing Village Square', 'Advanced fishing mentor', '/npcs/bill/'], ['Blanc', 'Blanc.webp', 'Central Square', 'Gardening mentor', '/npcs/blanc/'], ['Bob', 'Bob.webp', 'Central Square', 'Artisan'], ['Cassie', 'Cassie.webp', 'Forest Jump Puzzle', 'Park ranger'], ['Doris', 'Doris.webp', 'Suburbs', 'Secret Merchant', '/npcs/doris/'], ['Dorothee', 'Dorothee.webp', 'Central Square', 'Fashion designer', '/npcs/dorothee/'], ['Eric', 'Eric.webp', 'Onsen', 'Park manager', '/npcs/eric/'], ['Ka Ching', 'Ka-Ching.webp', 'Residential Street', 'General store owner', '/npcs/ka-ching/'], ['Massimo', 'Massimo.webp', 'Central Square', 'Cooking mentor', '/npcs/massimo/'], ['Mrs. Joan', 'Mrs.-Joan.webp', 'Central Square', 'Pet store owner', '/npcs/mrs-joan/'], ['Naniwa', 'Naniwa.webp', 'Deer Tower', 'Entomologist', '/npcs/naniwa/'], ['Patti', 'Patti.webp', 'Deer Tower', 'Ranger'], ['Vanya', 'Vanya.webp', 'Residential Street', 'Fishing mentor', '/npcs/vanya/']
   ];
   const cards = npcs.map(([name, image, location, role, page]) => `<article class="bg-white rounded-xl p-4 border border-cozy-peach/40 flex gap-4"><img src="/img/npcs/${image}" alt="${name} NPC portrait" class="w-20 h-20 object-contain rounded-lg bg-cozy-cream p-1 shrink-0" loading="lazy"><div class="min-w-0"><p class="text-xs font-bold text-cozy-sage">${location}</p><h2 class="font-bold text-lg mt-1">${name}</h2><p class="text-sm text-cozy-wood mt-1">${role}</p>${page ? `<a href="${page}" class="inline-block mt-3 text-sm font-bold text-cozy-coral hover:underline">Open ${name} guide</a>` : '<p class="mt-3 text-xs text-cozy-wood">Use the in-game map for the exact position.</p>'}</div></article>`).join('');
   const canonical = 'https://heartopia.life/guides/npc-locations/';
