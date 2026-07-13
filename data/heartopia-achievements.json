@@ -1,0 +1,636 @@
+{
+  "generatedAt": "2026-07-13",
+  "count": 63,
+  "achievements": [
+    {
+      "name": "Bird Whisperer",
+      "group": "Birdwatching",
+      "slug": "bird-whisperer",
+      "objective": "Birdwatching Hobby reaches Lv.10.",
+      "reward": "Bird Whisperer",
+      "image": "/img/achievements/Bird-Whisperer.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Bush Wholesaler",
+      "group": "Birdwatching",
+      "slug": "bush-wholesaler",
+      "objective": "Share Camouflage Bush with 100 D.G. Members in total.",
+      "reward": "Recommends",
+      "image": "/img/achievements/Bush-Wholesaler.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Cloud Walker",
+      "group": "Birdwatching",
+      "slug": "cloud-walker",
+      "objective": "Trigger the hidden phase of Birdwatching Event 10 times in total.",
+      "reward": "Sky",
+      "image": "/img/achievements/Cloud-Walker.webp",
+      "status": "Activity-dependent",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Decisive Moment",
+      "group": "Birdwatching",
+      "slug": "decisive-moment",
+      "objective": "Obtain 10 5-Star Info Cards in a single Birdwatching Event.",
+      "reward": "Moment",
+      "image": "/img/achievements/Decisive-Moment.webp",
+      "status": "Activity-dependent",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Harmony with Breeze",
+      "group": "Birdwatching",
+      "slug": "harmony-with-breeze",
+      "objective": "Trigger 100 Bird Waves in total during Birdwatching Events.",
+      "reward": "Resonance",
+      "image": "/img/achievements/Harmony-with-Breeze.webp",
+      "status": "Activity-dependent",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Joyful Chorus",
+      "group": "Birdwatching",
+      "slug": "joyful-chorus",
+      "objective": "Trigger 3 Bird Waves in a single Birdwatching Event.",
+      "reward": "Feather",
+      "image": "/img/achievements/Joyful-Chorus.webp",
+      "status": "Activity-dependent",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Animal Keeper",
+      "group": "Collections",
+      "slug": "animal-keeper",
+      "objective": "Discover the favorite foods for 8 animal groups.",
+      "reward": "Delicious",
+      "image": "/img/achievements/Animal-Keeper.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Animal Neighbor",
+      "group": "Collections",
+      "slug": "animal-neighbor",
+      "objective": "Reach Bond Level 10 with 8 animal groups.",
+      "reward": "New Neighbor",
+      "image": "/img/achievements/Animal-Neighbor.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Collector",
+      "group": "Collections",
+      "slug": "collector",
+      "objective": "Become an Expert Collector.",
+      "reward": "Collector",
+      "image": "/img/achievements/Collector.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "D.G. Member",
+      "group": "Collections",
+      "slug": "dg-member",
+      "objective": "D.G. Member Level reaches Lv.30.",
+      "reward": "D.G. Member",
+      "image": "/img/achievements/D.G.-Member.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Pop Star",
+      "group": "Collections",
+      "slug": "pop-star",
+      "objective": "Receive 100 Home Likes in total.",
+      "reward": "Rising Star",
+      "image": "/img/achievements/Pop-Star.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Puzzle Artist",
+      "group": "Collections",
+      "slug": "puzzle-artist",
+      "objective": "Become a Puzzle Artist.",
+      "reward": "Puzzle",
+      "image": "/img/achievements/Puzzle-Artist.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Rocket Sponsor",
+      "group": "Collections",
+      "slug": "rocket-sponsor",
+      "objective": "Earn a total of 500,000 Gold by selling items to Gold Merchant Albert Jr.",
+      "reward": "Rocket",
+      "image": "/img/achievements/Rocket-Sponsor.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Stardust Collector",
+      "group": "Collections",
+      "slug": "stardust-collector",
+      "objective": "Collect 60 Starfall Shards.",
+      "reward": "Star Picker",
+      "image": "/img/achievements/Stardust-Collector.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Fast & Flawless",
+      "group": "Cooking",
+      "slug": "fast-flawless",
+      "objective": "Cook 2 5-Star dishes within 60s.",
+      "reward": "Kitchen Clock",
+      "image": "/img/achievements/Fast-&-Flawless.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Gourmet Diplomat",
+      "group": "Cooking",
+      "slug": "gourmet-diplomat",
+      "objective": "Share food 100 times in total.",
+      "reward": "Savior",
+      "image": "/img/achievements/Gourmet-Diplomat.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Town Cooking Legend",
+      "group": "Cooking",
+      "slug": "town-cooking-legend",
+      "objective": "Cooking Hobby reaches Lv.10.",
+      "reward": "Chef",
+      "image": "/img/achievements/Town-Cooking-Legend.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Bestselling Author",
+      "group": "Dreams",
+      "slug": "bestselling-author",
+      "objective": "Reach a cumulative total of 1000 unique purchases for the books you created",
+      "reward": "Bestseller",
+      "image": "/img/achievements/Bestselling-Author.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Golden Music CD",
+      "group": "Dreams",
+      "slug": "golden-music-cd",
+      "objective": "Music Dream reaches Golden Music CD.",
+      "reward": "Music",
+      "image": "/img/achievements/Golden-Music-CD.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Hidden Achievement 1",
+      "group": "Dreams",
+      "slug": "hidden-achievement-1",
+      "objective": "Sell a total of 10 books; each book must be purchased by 200 DIFFERENT players.",
+      "reward": "?",
+      "image": "/img/achievements/Hidden-Achievement-1.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Ice Elf",
+      "group": "Dreams",
+      "slug": "ice-elf",
+      "objective": "Figure Skating Dream reaches Ice Elf.",
+      "reward": "Ice Skating",
+      "image": "/img/achievements/Ice-Elf.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Persistent Quill",
+      "group": "Dreams",
+      "slug": "persistent-quill",
+      "objective": "Writing Dream reaches Master.",
+      "reward": "Writing",
+      "image": "/img/achievements/Persistent-Quill.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Fishing Machine",
+      "group": "Fishing",
+      "slug": "fishing-machine",
+      "objective": "Catch a total of 50 fish over 100kg each.",
+      "reward": "Fish Basket",
+      "image": "/img/achievements/Fishing-Machine.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Mystic Fisher",
+      "group": "Fishing",
+      "slug": "mystic-fisher",
+      "objective": "Trigger the hidden phase of Fishing Event 10 times in total.",
+      "reward": "Fisher",
+      "image": "/img/achievements/Mystic-Fisher.webp",
+      "status": "Activity-dependent",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Never Empty-Handed",
+      "group": "Fishing",
+      "slug": "never-empty-handed",
+      "objective": "Fishing Hobby reaches Lv.10.",
+      "reward": "Skilled Angler",
+      "image": "/img/achievements/Never-Empty-Handed.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Sea Fishing Master",
+      "group": "Fishing",
+      "slug": "sea-fishing-master",
+      "objective": "Obtain all titles in Daily Sea Fishing Events.",
+      "reward": "Sea Fisher",
+      "image": "/img/achievements/Sea-Fishing-Master.webp",
+      "status": "Activity-dependent",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Shark Frenzy",
+      "group": "Fishing",
+      "slug": "shark-frenzy",
+      "objective": "Catch 3 sharks from gold-glowing fish shadows during a single Sea Fishing event.",
+      "reward": "Shark Cage",
+      "image": "/img/achievements/Shark-Frenzy.webp",
+      "status": "Activity-dependent",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Shoal Caller",
+      "group": "Fishing",
+      "slug": "shoal-caller",
+      "objective": "Trigger 3 Shoals in a single Fishing Event.",
+      "reward": "Shoal Caller",
+      "image": "/img/achievements/Shoal-Caller.webp",
+      "status": "Activity-dependent",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Shoal's Blessing",
+      "group": "Fishing",
+      "slug": "shoals-blessing",
+      "objective": "Trigger 100 Shoals in total during Fishing Events.",
+      "reward": "Blessing",
+      "image": "/img/achievements/Shoal's-Blessing.webp",
+      "status": "Activity-dependent",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Starlight Fisher",
+      "group": "Fishing",
+      "slug": "starlight-fisher",
+      "objective": "Catch 4 5-Star fish in a single Fishing Event.",
+      "reward": "Fishing Maniac",
+      "image": "/img/achievements/Starlight-Fisher.webp",
+      "status": "Activity-dependent",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Strong Sailor",
+      "group": "Fishing",
+      "slug": "strong-sailor",
+      "objective": "Catch fish over 100kg for 2 consecutive times.",
+      "reward": "Fishing Line",
+      "image": "/img/achievements/Strong-Sailor.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Twin Fish Fortune",
+      "group": "Fishing",
+      "slug": "twin-fish-fortune",
+      "objective": "Catch 2 5-Star fish within 1 min.",
+      "reward": "Osprey",
+      "image": "/img/achievements/Twin-Fish-Fortune.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Green Touch",
+      "group": "Gardening Hobby",
+      "slug": "green-touch",
+      "objective": "Gardening Hobby reaches Lv.10.",
+      "reward": "Horticulturist",
+      "image": "/img/achievements/Green-Touch.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Plentiful Harvest",
+      "group": "Gardening Hobby",
+      "slug": "plentiful-harvest",
+      "objective": "Harvest a 5-star crop during Bountiful Harvest.",
+      "reward": "Harvest",
+      "image": "/img/achievements/Plentiful-Harvest.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Rainbow Luck",
+      "group": "Gardening Hobby",
+      "slug": "rainbow-luck",
+      "objective": "Trigger 2 Rainbow Hybrid Blessings in a single multi-area watering.",
+      "reward": "Rainbow Luck",
+      "image": "/img/achievements/Rainbow-Luck.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Five Insects Blessing",
+      "group": "Insect Catching Hobby",
+      "slug": "five-insects-blessing",
+      "objective": "Catch 5 5-Star insects during a single Insect Catching Event.",
+      "reward": "Insect Lord",
+      "image": "/img/achievements/Five-Insects-Blessing.webp",
+      "status": "Activity-dependent",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Human Insect Attractor",
+      "group": "Insect Catching Hobby",
+      "slug": "human-insect-attractor",
+      "objective": "Trigger 4 Swarms in a single Insect Catching event.",
+      "reward": "Insect Attractor",
+      "image": "/img/achievements/Human-Insect-Attractor.webp",
+      "status": "Activity-dependent",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Insect Catching Party",
+      "group": "Insect Catching Hobby",
+      "slug": "insect-catching-party",
+      "objective": "Share Inflatable Insect Attractor with 100 D.G. Members in total.",
+      "reward": "Insect Attractor",
+      "image": "/img/achievements/Insect-Catching-Party.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Insect Commander",
+      "group": "Insect Catching Hobby",
+      "slug": "insect-commander",
+      "objective": "Insect Catching Hobby reaches Lv.10.",
+      "reward": "Insect Master",
+      "image": "/img/achievements/Insect-Commander.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Insect Harvester",
+      "group": "Insect Catching Hobby",
+      "slug": "insect-harvester",
+      "objective": "Catch 3 insects with a single insect-catching bubble.",
+      "reward": "Triple Catch",
+      "image": "/img/achievements/Insect-Harvester.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Mystic Tracker",
+      "group": "Insect Catching Hobby",
+      "slug": "mystic-tracker",
+      "objective": "Trigger the hidden phase in Insect Catching Event 10 times in total.",
+      "reward": "Exploration",
+      "image": "/img/achievements/Mystic-Tracker.webp",
+      "status": "Activity-dependent",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Onsen Mountain Insect King",
+      "group": "Insect Catching Hobby",
+      "slug": "onsen-mountain-insect-king",
+      "objective": "Obtain all titles in Bait the Insects Events.",
+      "reward": "Insect Catcher",
+      "image": "/img/achievements/Onsen-Mountain-Insect-King.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Swarm Commander",
+      "group": "Insect Catching Hobby",
+      "slug": "swarm-commander",
+      "objective": "Trigger 100 Swarms in total during Insect Catching Events.",
+      "reward": "Swarm",
+      "image": "/img/achievements/Swarm-Commander.webp",
+      "status": "Activity-dependent",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Ace Cat Servant",
+      "group": "Pet Hobby",
+      "slug": "ace-cat-servant",
+      "objective": "Cat Caring Hobby reaches Lv.10.",
+      "reward": "Cat Lover",
+      "image": "/img/achievements/Ace-Cat-Servant.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Ace Dog Trainer",
+      "group": "Pet Hobby",
+      "slug": "ace-dog-trainer",
+      "objective": "Dog Caring Hobby reaches Lv.10.",
+      "reward": "Dog Pal",
+      "image": "/img/achievements/Ace-Dog-Trainer.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Doggie Canteen",
+      "group": "Pet Hobby",
+      "slug": "doggie-canteen",
+      "objective": "Feed 3 dogs their favorite food.",
+      "reward": "Dog Food",
+      "image": "/img/achievements/Doggie-Canteen.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Meow-Meow Canteen",
+      "group": "Pet Hobby",
+      "slug": "meow-meow-canteen",
+      "objective": "Feed 5 cats their favorite food.",
+      "reward": "Cat Food",
+      "image": "/img/achievements/Meow-Meow-Canteen.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Beneath the Meteor Shower",
+      "group": "Social",
+      "slug": "beneath-the-meteor-shower",
+      "objective": "Make a wish under the meteor with friends.",
+      "reward": "Gemini",
+      "image": "/img/achievements/Beneath-the-Meteor-Shower.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Bold Grimkin",
+      "group": "Social",
+      "slug": "bold-grimkin",
+      "objective": "In a Hide & Seek Party, while possessing a Mysterious Grimkin, pop 20 Psionic Bubbles",
+      "reward": "Thrilling",
+      "image": "/img/achievements/Bold-Grimkin.webp",
+      "status": "Activity-dependent",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Foreman Beaver",
+      "group": "Social",
+      "slug": "foreman-beaver",
+      "objective": "Participated in 4 Build Challenges with works succesfully entering the Exhibition Phase",
+      "reward": "Build",
+      "image": "/img/achievements/Foreman-Beaver.webp",
+      "status": "Activity-dependent",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Logistics Beaver",
+      "group": "Social",
+      "slug": "logistics-beaver",
+      "objective": "Accumulate 5,000 Fresh Sprouts for a team during the Build Challenge.",
+      "reward": "Logistics",
+      "image": "/img/achievements/Logistics-Beaver.webp",
+      "status": "Activity-dependent",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Merge into One",
+      "group": "Social",
+      "slug": "merge-into-one",
+      "objective": "In a Hide & Seek party, stayed possessed as a Mysterious Grimkin for 4 minutes without being found by the Investigative Journalist",
+      "reward": "Hide",
+      "image": "/img/achievements/Merge-into-One.webp",
+      "status": "Activity-dependent",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Onsen Buddy",
+      "group": "Social",
+      "slug": "onsen-buddy",
+      "objective": "Take an Onsen with friends.",
+      "reward": "Onsen",
+      "image": "/img/achievements/Onsen-Buddy.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Quick Draw Starter",
+      "group": "Social",
+      "slug": "quick-draw-starter",
+      "objective": "As a Investigative Journalist in a Hide & Seek Party, discovered 3 Mysterious Grimkins within 60 seconds",
+      "reward": "Quick Draw",
+      "image": "/img/achievements/Quick-Draw-Starter.webp",
+      "status": "Activity-dependent",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Rainbow Messenger",
+      "group": "Social",
+      "slug": "rainbow-messenger",
+      "objective": "Share Rainbow Bouquet with 50 D.G. Members in total.",
+      "reward": "Rainbow Flower",
+      "image": "/img/achievements/Rainbow-Messenger.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Repair Expert",
+      "group": "Social",
+      "slug": "repair-expert",
+      "objective": "Share Repair Kit with 100 D.G. Members in total.",
+      "reward": "Repairs",
+      "image": "/img/achievements/Repair-Expert.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Romantic Skater",
+      "group": "Social",
+      "slug": "romantic-skater",
+      "objective": "Skate hand-in-hand with a friend under a meteor shower.",
+      "reward": "Pair Skating",
+      "image": "/img/achievements/Romantic-Skater.webp",
+      "status": "Activity-dependent",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Sharpshooter Basics",
+      "group": "Social",
+      "slug": "sharpshooter-basics",
+      "objective": "In a Hide & Seek Party, as an Investigative Journalist, successfully captured Special Photos 2 times in a row",
+      "reward": "Sharpshooter",
+      "image": "/img/achievements/Sharpshooter-Basics.webp",
+      "status": "Activity-dependent",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Idea Hamster",
+      "group": "Special Hobbies",
+      "slug": "idea-hamster",
+      "objective": "Party Artisan Dream reaches Idea Hamster",
+      "reward": "Idea Hamster",
+      "image": "/img/achievements/Idea-Hamster.webp",
+      "status": "Activity-dependent",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Party Animal",
+      "group": "Special Hobbies",
+      "slug": "party-animal",
+      "objective": "Party Player Dream reaches Party Animal",
+      "reward": "Player",
+      "image": "/img/achievements/Party-Animal.webp",
+      "status": "Activity-dependent",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Pumpkinarchy",
+      "group": "Special Hobbies",
+      "slug": "pumpkinarchy",
+      "objective": "Pumpkin Carving Hobby reaches Lv.5.",
+      "reward": "Pumpkin Head",
+      "image": "/img/achievements/Pumpkinarchy.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Sand Sculpture Artist",
+      "group": "Special Hobbies",
+      "slug": "sand-sculpture-artist",
+      "objective": "Sand Sculpting Hobby reaches Lv.5.",
+      "reward": "Sand Sculptor",
+      "image": "/img/achievements/Sand-Sculpture-Artist.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Snow King",
+      "group": "Special Hobbies",
+      "slug": "snow-king",
+      "objective": "Snow Sculpting Hobby reaches Lv.5.",
+      "reward": "Snow King",
+      "image": "/img/achievements/Snow-King.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    }
+  ]
+}
