@@ -80,6 +80,17 @@
             action: 'Open ingredients database',
             color: 'cream'
         },
+        {
+            id: 'npcs',
+            title: 'NPCs met',
+            icon: '👥',
+            storageKey: 'heartopia.collection.npcs',
+            total: 19,
+            url: '/npcs/',
+            action: 'Open NPC directory',
+            color: 'npc'
+        },
+
 
 
 
@@ -104,7 +115,8 @@
         gold: 'bg-amber-100 border-amber-300 text-amber-600',
         forest: 'bg-emerald-100 border-emerald-300 text-emerald-700',
         violet: 'bg-violet-100 border-violet-300 text-violet-700',
-        cream: 'bg-amber-50 border-amber-200 text-amber-700'
+        cream: 'bg-amber-50 border-amber-200 text-amber-700',
+        npc: 'bg-violet-100 border-violet-300 text-violet-700'
     };
 
     function readArray(key) {

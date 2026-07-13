@@ -1,0 +1,194 @@
+{
+  "npcs": [
+    {
+      "name": "Albert Jr.",
+      "image": "/img/npcs/Albert-Jr.webp",
+      "location": "Suburbs",
+      "role": "Merchant",
+      "about": "Wandering merchant who buys your items. Always on the move!",
+      "gifts": "None",
+      "saleCount": 0,
+      "sourceSlug": "albert-jr"
+    },
+    {
+      "name": "Andrew",
+      "image": "/img/npcs/Andrew.webp",
+      "location": "Suburbs",
+      "role": "Driving mentor",
+      "about": "Sells motorcycles (green, black, white, red, pink), sedans (pink, yellow, blue, black), and mountain bikes. Provides a free starter vehicle.",
+      "gifts": "None",
+      "saleCount": 0,
+      "sourceSlug": "andrew"
+    },
+    {
+      "name": "Annie",
+      "image": "/img/npcs/Annie.webp",
+      "location": "Central Square",
+      "role": "Town guide",
+      "about": "Music and friendship speak to them! Their shop offers instruments, emojis, and animations. Tip: New deals every day—don’t miss out!",
+      "gifts": "None",
+      "saleCount": 0,
+      "sourceSlug": "annie"
+    },
+    {
+      "name": "Atara",
+      "image": "/img/npcs/Atara.webp",
+      "location": "Central Square",
+      "role": "Mayor",
+      "about": "Mayor of the city, guide to the main story, and great visionary.",
+      "gifts": "None",
+      "saleCount": 0,
+      "sourceSlug": "atara"
+    },
+    {
+      "name": "Azure",
+      "image": "/img/npcs/Azure.webp",
+      "location": "Central Square",
+      "role": "Winter saleswoman",
+      "about": "Sells event tokens by selling specific items",
+      "gifts": "None",
+      "saleCount": 0,
+      "sourceSlug": "azure"
+    },
+    {
+      "name": "Bailey J",
+      "image": "/img/npcs/Bailey-J.webp",
+      "location": "Central Square",
+      "role": "Bird expert",
+      "about": "The local bird expert! She will support you with rewards for your observations. She also has a shop where you can buy binoculars and bird food.",
+      "gifts": "Bird photographs",
+      "saleCount": 3,
+      "sourceSlug": "bailey-j"
+    },
+    {
+      "name": "Bill",
+      "image": "/img/npcs/Bill.webp",
+      "location": "Fishing Village Square",
+      "role": "Advanced fishing mentor",
+      "about": "Expert in sea fishing. The sea holds no secrets for him.",
+      "gifts": "Fish Seafood",
+      "saleCount": 0,
+      "sourceSlug": "bill"
+    },
+    {
+      "name": "Blanc",
+      "image": "/img/npcs/Blanc.webp",
+      "location": "Central Square",
+      "role": "Gardening mentor",
+      "about": "Teaches you gardening and sells starter equipment.",
+      "gifts": "Rare flowers Seeds",
+      "saleCount": 7,
+      "sourceSlug": "blanc"
+    },
+    {
+      "name": "Bob",
+      "image": "/img/npcs/Bob.webp",
+      "location": "Central Square",
+      "role": "The artisan",
+      "about": "Our grandfather has a great talent for building. Every Saturday at 6:00 a.m., he renews the furniture display, which will be available for a week. Talk to him if you want to get natural building materials for your land.",
+      "gifts": "Tools Building Materials",
+      "saleCount": 0,
+      "sourceSlug": "bob"
+    },
+    {
+      "name": "Cassie",
+      "image": "/img/npcs/Cassie.webp",
+      "location": "Forest Jump Puzzle",
+      "role": "Park ranger",
+      "about": "A mysterious character who roams the forest under the moonlight.",
+      "gifts": "None",
+      "saleCount": 0,
+      "sourceSlug": "cassie"
+    },
+    {
+      "name": "Doris",
+      "image": "/img/npcs/Doris.webp",
+      "location": "Suburbs",
+      "role": "Secret Merchant",
+      "about": "Unique NPC who appears only during special weather events (rain, snowfall, rainbow, meteor shower). Sells exclusive recipes like Roll Cake, rare ingredients, emotes, and meteorite furniture. Uses Star Fragments as currency for meteor items",
+      "gifts": "None",
+      "saleCount": 0,
+      "sourceSlug": "doris"
+    },
+    {
+      "name": "Dorothee",
+      "image": "/img/npcs/Dorothee.webp",
+      "location": "Central Square",
+      "role": "Fashion designer",
+      "about": "A true style icon! You'll find the perfect pair of shoes in their store. The clothing selection is updated daily, so don't forget to stop by and check it out.",
+      "gifts": "None",
+      "saleCount": 0,
+      "sourceSlug": "dorothee"
+    },
+    {
+      "name": "Eric",
+      "image": "/img/npcs/Eric.webp",
+      "location": "Onsen",
+      "role": "Park manager",
+      "about": "Friendly resident, manages daily delegations to assist the community.",
+      "gifts": "None",
+      "saleCount": 0,
+      "sourceSlug": "eric"
+    },
+    {
+      "name": "Ka Ching",
+      "image": "/img/npcs/Ka-Ching.webp",
+      "location": "Residential Street",
+      "role": "Owner of the general store",
+      "about": "Owner of the general store. If you need it, she has it!",
+      "gifts": "None",
+      "saleCount": 1,
+      "sourceSlug": "ka-ching"
+    },
+    {
+      "name": "Massimo",
+      "image": "/img/npcs/Massimo.webp",
+      "location": "Central Square",
+      "role": "Cooking mentor",
+      "about": "Restaurant chef and culinary mentor. Passion in every dish.",
+      "gifts": "Prepared meals Rare ingredients",
+      "saleCount": 2,
+      "sourceSlug": "massimo"
+    },
+    {
+      "name": "Mrs. Joan",
+      "image": "/img/npcs/Mrs.-Joan.webp",
+      "location": "Central Square",
+      "role": "Proud Pet Parent",
+      "about": "Owner of the pet store. Lover of all animals.",
+      "gifts": "None",
+      "saleCount": 5,
+      "sourceSlug": "mrs-joan"
+    },
+    {
+      "name": "Naniwa",
+      "image": "/img/npcs/Naniwa.webp",
+      "location": "Deer Tower",
+      "role": "The entomologist",
+      "about": "The entomologist at Heartopia will show you how to create delicate bubbles to capture insects. In his shop, you'll find everything you need for this hobby, including terrariums.",
+      "gifts": "Rare insects",
+      "saleCount": 2,
+      "sourceSlug": "naniwa"
+    },
+    {
+      "name": "Patti",
+      "image": "/img/npcs/Patti.webp",
+      "location": "Deer Tower",
+      "role": "Ranger",
+      "about": "Expert guardian of the forests, knowledgeable about hidden trails, creatures, and changes in the environment.",
+      "gifts": "None",
+      "saleCount": 0,
+      "sourceSlug": "patti"
+    },
+    {
+      "name": "Vanya",
+      "image": "/img/npcs/Vanya.webp",
+      "location": "Residential Street",
+      "role": "Fishing mentor",
+      "about": "Fishing mentor. Find peace by the river.",
+      "gifts": "Any fish Seafood Fishing supplies",
+      "saleCount": 3,
+      "sourceSlug": "vanya"
+    }
+  ]
+}
