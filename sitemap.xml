@@ -389,7 +389,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/database/recipe-prices/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -401,19 +401,19 @@
     </url>
     <url>
         <loc>https://heartopia.life/database/recipes/grass-cake/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/database/recipes/onsen-egg/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/database/recipes/pancake/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -604,7 +604,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/guides/best-food-to-sell/</loc>
-        <lastmod>2026-07-06</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -652,7 +652,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/guides/cooking-profits/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -664,7 +664,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/guides/cooking/green-roll-cake/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -922,7 +922,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/hobbies/cooking/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1150,7 +1150,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/tools/recipe-calculator/</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1283,6 +1283,12 @@
     <url>
         <loc>https://heartopia.life/database/crops/grape/</loc>
         <lastmod>2026-07-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/database/recipes/steamed-king-crab/</loc>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>

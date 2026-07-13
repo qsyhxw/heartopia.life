@@ -41,8 +41,9 @@ const imageAliases = new Map([["Grilled Mushrooms", "1771372828048-champiã±on_
 const recipeLinks = new Map([
   ['Grass Cake', '/database/recipes/grass-cake/'],
   ['Onsen Egg', '/database/recipes/onsen-egg/'],
-  ['Black Truffle Pie', '/database/items/black-truffle/'],
-  ['Pancakes', '/database/recipes/pancake/']
+  ['Green Roll Cake', '/guides/cooking/green-roll-cake/'],
+  ['Steamed King Crab', '/database/recipes/steamed-king-crab/'],
+  ['Black Truffle Pie', '/database/items/black-truffle/']
 ]);
 
 const categoryOrder = ['Base Game', ...collections.map(([name]) => name)];
