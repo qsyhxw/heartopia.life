@@ -28,7 +28,7 @@ function parse(html, achievement) {
   const objectiveEnd = html.indexOf('Achievement Reward', objectiveStart);
   const objective = objectiveStart >= 0 && objectiveEnd > objectiveStart ? clean(html.slice(objectiveStart + 'Objective </h2>'.length, objectiveEnd)) : '';
   const rewardStart = html.indexOf('unlocked title </span>');
-  const rewardMatch = rewardStart >= 0 ? html.slice(rewardStart, rewardStart + 500).match(/<span[^>]*>\s*[\"\u201c]?\s*([^<\"\u201d]+?)\s*[\"\u201d]?\s*<\/span>/i) : null;
+  const rewardMatch = rewardStart >= 0 ? html.slice(rewardStart, rewardStart + 500).match(/<span[^>]*>\s*["\u201c]?\s*([^<"\u201d]+?)\s*["\u201d]?\s*<\/span>/i) : null;
   return { ...achievement, objective, reward: rewardMatch ? clean(rewardMatch[1]) : '' };
 }
 
@@ -48,5 +48,7 @@ for (let index = 0; index < achievements.length; index += 3) {
   console.log(`Fetched ${Math.min(index + 3, achievements.length)} / ${achievements.length}`);
 }
 
+const overrides = { 'D.G. Member': { objective: "Reach Developer's Guild Level 30.", reward: 'D.G. Member' }, "Shoal's Blessing": { objective: 'Trigger 100 Shoals in total during Fishing Events.', reward: 'Blessing' } };
+for (const item of result) Object.assign(item, overrides[item.name] || {});
 fs.writeFileSync(path.join(root, 'data', 'achievement-details.json'), `${JSON.stringify(result, null, 2)}\n`);
 console.log(`Saved ${result.length} achievements; ${result.filter((item) => item.objective).length} with objectives; ${result.filter((item) => item.error).length} fetch failures.`);

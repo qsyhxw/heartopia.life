@@ -31,8 +31,8 @@
     "name": "D.G. Member",
     "group": "Collections",
     "slug": "d-g-member",
-    "objective": "",
-    "reward": ""
+    "objective": "Reach Developer's Guild Level 30.",
+    "reward": "D.G. Member"
   },
   {
     "name": "Pop Star",
@@ -59,8 +59,8 @@
     "name": "Shoal's Blessing",
     "group": "Fishing",
     "slug": "shoal-s-blessing",
-    "objective": "",
-    "reward": ""
+    "objective": "Trigger 100 Shoals in total during Fishing Events.",
+    "reward": "Blessing"
   },
   {
     "name": "Fishing Machine",
