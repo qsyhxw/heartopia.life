@@ -50,7 +50,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/database/</loc>
-        <lastmod>2026-07-09</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -1132,7 +1132,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/tools/my-progress/</loc>
-        <lastmod>2026-07-09</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -1291,5 +1291,11 @@
         <lastmod>2026-07-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/database/collectibles/</loc>
+        <lastmod>2026-07-13</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
 </urlset>

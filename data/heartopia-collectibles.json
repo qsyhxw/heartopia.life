@@ -1,0 +1,226 @@
+{
+  "collectibles": [
+    {
+      "name": "Tall Mustard",
+      "image": "/img/collectibles/Tall-Mustard.webp",
+      "location": "Ruins",
+      "category": "Dreamlight Cinematics"
+    },
+    {
+      "name": "Blueberry",
+      "image": "/img/collectibles/Blueberry.webp",
+      "location": "Residential Area",
+      "category": "Common"
+    },
+    {
+      "name": "Bamboo",
+      "image": "/img/collectibles/Bamboo.webp",
+      "location": "Forest Jump Puzzle",
+      "category": "Dreamlight Cinematics"
+    },
+    {
+      "name": "Burdock",
+      "image": "/img/collectibles/Burdock.webp",
+      "location": "Whale Mountain",
+      "category": "Common"
+    },
+    {
+      "name": "Penny Bun",
+      "image": "/img/collectibles/Penny-Bun.webp",
+      "location": "Spirit-Oak Pine Forest",
+      "category": "Common"
+    },
+    {
+      "name": "Bizarre Penny Bun (Purple)",
+      "image": "/img/collectibles/Bizarre-Penny-Bun-(Purple).webp",
+      "location": "Spirit-Oak Pine Forest",
+      "category": "Common"
+    },
+    {
+      "name": "Bizarre Penny Bun (Red)",
+      "image": "/img/collectibles/Bizarre-Penny-Bun-(Red).webp",
+      "location": "Spirit-Oak Pine Forest",
+      "category": "Common"
+    },
+    {
+      "name": "Bizarre Penny Bun (Pink)",
+      "image": "/img/collectibles/Bizarre-Penny-Bun-(Pink).webp",
+      "location": "Spirit-Oak Pine Forest",
+      "category": "Common"
+    },
+    {
+      "name": "Button Mushroom",
+      "image": "/img/collectibles/Button-Mushroom.webp",
+      "location": "Windmill Flower Field",
+      "category": "Common"
+    },
+    {
+      "name": "Bizarre Button Mushroom Blue",
+      "image": "/img/collectibles/Bizarre-Button-Mushroom-Blue.webp",
+      "location": "Windmill Flower Field",
+      "category": "Common"
+    },
+    {
+      "name": "Bizarre Button Mushroom Red",
+      "image": "/img/collectibles/Bizarre-Button-Mushroom-Red.webp",
+      "location": "Windmill Flower Field",
+      "category": "Common"
+    },
+    {
+      "name": "Bizarre Button Mushroom Green",
+      "image": "/img/collectibles/Bizarre-Button-Mushroom-Green.webp",
+      "location": "Windmill Flower Field",
+      "category": "Common"
+    },
+    {
+      "name": "Flawless Fluorite",
+      "image": "/img/collectibles/Flawless-Fluorite.webp",
+      "location": "Residential Area",
+      "category": "Meteor Shower"
+    },
+    {
+      "name": "Starfall Shard",
+      "image": "/img/collectibles/Starfall-Shard.webp",
+      "location": "Fishing Village Square",
+      "category": "Common"
+    },
+    {
+      "name": "Raspberry",
+      "image": "/img/collectibles/Raspberry.webp",
+      "location": "Windmill Flower Field",
+      "category": "Dreamlight Cinematics"
+    },
+    {
+      "name": "Fiddlehead",
+      "image": "/img/collectibles/Fiddlehead.webp",
+      "location": "Deer Tower",
+      "category": "Common"
+    },
+    {
+      "name": "Timber",
+      "image": "/img/collectibles/Timber.webp",
+      "location": "Residential Area",
+      "category": "Common"
+    },
+    {
+      "name": "Quality Timber",
+      "image": "/img/collectibles/Quality-Timber.webp",
+      "location": "Residential Area",
+      "category": "Common"
+    },
+    {
+      "name": "Roaming Oak Timber",
+      "image": "/img/collectibles/Roaming-Oak-Timber.webp",
+      "location": "Residential Area",
+      "category": "Common"
+    },
+    {
+      "name": "Rare Timber",
+      "image": "/img/collectibles/Rare-Timber.webp",
+      "location": "Residential Area",
+      "category": "Common"
+    },
+    {
+      "name": "Weed",
+      "image": "/img/collectibles/Weed.webp",
+      "location": "Residential Area",
+      "category": "Common"
+    },
+    {
+      "name": "Mandarin",
+      "image": "/img/collectibles/Mandarin.webp",
+      "location": "Residential Area",
+      "category": "Common"
+    },
+    {
+      "name": "Apple",
+      "image": "/img/collectibles/Apple.webp",
+      "location": "Residential Area",
+      "category": "Common"
+    },
+    {
+      "name": "Matsutake",
+      "image": "/img/collectibles/Matsutake.webp",
+      "location": "Spirit-Oak Pine Forest",
+      "category": "Common"
+    },
+    {
+      "name": "Ore",
+      "image": "/img/collectibles/Ore.webp",
+      "location": "Residential Area",
+      "category": "Dreamlight Cinematics"
+    },
+    {
+      "name": "Mustard Greens",
+      "image": "/img/collectibles/Mustard-Greens.webp",
+      "location": "Lighthouse",
+      "category": "Common"
+    },
+    {
+      "name": "Stone",
+      "image": "/img/collectibles/Stone.webp",
+      "location": "Residential Area",
+      "category": "Common"
+    },
+    {
+      "name": "Branch",
+      "image": "/img/collectibles/Branch.webp",
+      "location": "Residential Area",
+      "category": "Common"
+    },
+    {
+      "name": "Oyster Mushroom",
+      "image": "/img/collectibles/Oyster-Mushroom.webp",
+      "location": "Onsen Mountain Lake",
+      "category": "Common"
+    },
+    {
+      "name": "Bizarre Oyster Mushroom Purple",
+      "image": "/img/collectibles/Bizarre-Oyster-Mushroom-Purple.webp",
+      "location": "Onsen Mountain Lake",
+      "category": "Common"
+    },
+    {
+      "name": "Bizarre Oyster Mushroom Orange",
+      "image": "/img/collectibles/Bizarre-Oyster-Mushroom-Orange.webp",
+      "location": "Onsen Mountain Lake",
+      "category": "Common"
+    },
+    {
+      "name": "Bizarre Oyster Mushroom Pink",
+      "image": "/img/collectibles/Bizarre-Oyster-Mushroom-Pink.webp",
+      "location": "Onsen Mountain Lake",
+      "category": "Common"
+    },
+    {
+      "name": "Shiitake",
+      "image": "/img/collectibles/Shiitake.webp",
+      "location": "Fishing Village Square",
+      "category": "Common"
+    },
+    {
+      "name": "Bizarre Shiitake Blue",
+      "image": "/img/collectibles/Bizarre-Shiitake-Blue.webp",
+      "location": "Fishing Village Square",
+      "category": "Common"
+    },
+    {
+      "name": "Bizarre Shiitak Black",
+      "image": "/img/collectibles/Bizarre-Shiitak-Black.webp",
+      "location": "Fishing Village Square",
+      "category": "Common"
+    },
+    {
+      "name": "Bizarre Shiitake Red",
+      "image": "/img/collectibles/Bizarre-Shiitake-Red.webp",
+      "location": "Fishing Village Square",
+      "category": "Common"
+    },
+    {
+      "name": "Black Truffle",
+      "image": "/img/collectibles/Black-Truffle.webp",
+      "location": "Forest Island",
+      "category": "Common"
+    }
+  ]
+}

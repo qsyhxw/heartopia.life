@@ -51,6 +51,17 @@
             color: 'gold'
         },
         {
+            id: 'collectibles',
+            title: 'Collectibles found',
+            icon: '🧺',
+            storageKey: 'heartopia.collection.collectibles',
+            total: 37,
+            url: '/database/collectibles/',
+            action: 'Open collectibles',
+            color: 'forest'
+        },
+
+        {
             id: 'map',
             title: 'Map locations checked',
             icon: '🗺️',
@@ -68,7 +79,8 @@
         coral: 'bg-cozy-coral/20 border-cozy-coral/50 text-cozy-coral',
         rose: 'bg-cozy-rose/20 border-cozy-rose/50 text-cozy-rose',
         mint: 'bg-cozy-mint/30 border-cozy-mint text-cozy-sage',
-        gold: 'bg-amber-100 border-amber-300 text-amber-600'
+        gold: 'bg-amber-100 border-amber-300 text-amber-600',
+        forest: 'bg-emerald-100 border-emerald-300 text-emerald-700'
     };
 
     function readArray(key) {
