@@ -7,6 +7,9 @@ on:
       - 'img/insects/**'
       - 'scripts/sync-insect-database.mjs'
       - 'scripts/refresh-collection-legacy-pages.mjs'
+      - 'scripts/sync-heartopia-hubs.mjs'
+      - 'scripts/build-progress-catalog.mjs'
+      - 'scripts/build-heartopia-search-index.mjs'
   workflow_dispatch:
 
 permissions:
@@ -24,11 +27,17 @@ jobs:
         run: node scripts/sync-insect-database.mjs
       - name: Refresh legacy collection pages
         run: node scripts/refresh-collection-legacy-pages.mjs
+      - name: Refresh database and progress hub totals
+        run: node scripts/sync-heartopia-hubs.mjs
+      - name: Refresh My Progress catalog
+        run: node scripts/build-progress-catalog.mjs
+      - name: Build universal search index
+        run: node scripts/build-heartopia-search-index.mjs
       - name: Commit generated updates
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add database/insects/index.html scripts/refresh-collection-legacy-pages.mjs assets/js/my-progress-dashboard.js hobbies/insect-catching/index.html guides/index.html tools/index.html hobbies/index.html hobbies/fishing/index.html events/winter-2026/index.html database/fish/rainbow-fish/index.html database/fish/legendary-koi/index.html database/insects/bagworm-moth/index.html database/insects/beautiful-leopard/index.html database/insects/chrysochraon-dispar/index.html database/insects/common-brimstone/index.html database/insects/elegant-flower-beetle/index.html database/insects/fire-colored-beetle/index.html database/insects/golden-stag-beetle/index.html database/insects/hercules-beetle/index.html database/insects/purple-emperor/index.html database/insects/rajah-brookes-birdwing/index.html database/insects/sulkowskys-morpho/index.html
+          git add data/heartopia-hub-totals.json data/heartopia-search-index.json database/index.html database/insects scripts/refresh-collection-legacy-pages.mjs assets/js/my-progress-dashboard.js assets/js/my-progress-assistant.js assets/js/progress-catalog.js assets/js/universal-search.js tools/my-progress/index.html hobbies/insect-catching/index.html guides/index.html tools/index.html hobbies/index.html hobbies/fishing/index.html events/winter-2026/index.html database/fish/rainbow-fish/index.html database/fish/legendary-koi/index.html
           if git diff --cached --quiet; then
             echo "No insect database changes to commit."
           else

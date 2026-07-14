@@ -149,7 +149,7 @@
             <p class="text-sm font-bold uppercase tracking-wide text-cozy-coral mb-2">Collection dashboard</p>
             <h1 class="font-display text-3xl md:text-4xl font-bold text-cozy-bark mb-4">My Heartopia Progress</h1>
             <p class="text-cozy-wood text-lg max-w-3xl">
-                View your saved collection, flower, recipe, achievement, NPC, and map progress in one place. This tracker reads the marks you make on Heartopia.Life pages and keeps them only in this browser.
+                See what is closest to completion, pick up real uncollected targets, and bring your daily, map, and event checks into one browser-only dashboard.
             </p>
             <div class="flex flex-wrap gap-3 mt-5">
                 <button type="button" id="export-progress" class="inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2.5 font-bold text-sm border border-cozy-peach hover:border-cozy-coral">Export progress</button>
@@ -166,36 +166,48 @@
 
         <div id="heartopia_in_content" class="heartopia-ad-slot max-w-6xl mx-auto px-4 my-6 text-center"></div>
 
-        <!-- Continue Section -->
-        <section class="grid lg:grid-cols-[1.2fr_0.8fr] gap-6 mb-10">
-            <div class="bg-white rounded-2xl p-6 border border-cozy-peach/30">
-                <h2 class="font-display text-2xl font-bold mb-4">Continue Collecting</h2>
-                <div class="grid sm:grid-cols-2 gap-3 text-sm">
-                    <a href="/database/fish/" class="card-hover rounded-xl border border-cozy-peach/40 p-4 hover:border-cozy-coral"><strong>Fish database</strong><span class="block text-cozy-wood mt-1">Catch and mark fish by location, weather, and level.</span></a>
-                    <a href="/database/insects/" class="card-hover rounded-xl border border-cozy-peach/40 p-4 hover:border-cozy-coral"><strong>Insect database</strong><span class="block text-cozy-wood mt-1">Mark butterflies, beetles, moths, and rare species.</span></a>
-                    <a href="/database/birds/" class="card-hover rounded-xl border border-cozy-peach/40 p-4 hover:border-cozy-coral"><strong>Bird database</strong><span class="block text-cozy-wood mt-1">Track photographed birds and route pages.</span></a>
-                    <a href="/database/wildlife/" class="card-hover rounded-xl border border-cozy-peach/40 p-4 hover:border-cozy-coral"><strong>Wildlife database</strong><span class="block text-cozy-wood mt-1">Mark all 10 wildlife entries by location, food, and interaction.</span></a>
-                    <a href="/database/crops/" class="card-hover rounded-xl border border-cozy-peach/40 p-4 hover:border-cozy-coral"><strong>Crops database</strong><span class="block text-cozy-wood mt-1">Track all 17 crops by seed price, growth time, and recipe uses.</span></a>
-                    <a href="/database/flowers/" class="card-hover rounded-xl border border-cozy-peach/40 p-4 hover:border-cozy-coral"><strong>Flowers database</strong><span class="block text-cozy-wood mt-1">Track all 10 documented flower forms by color, star tier, and breeding route.</span></a>
-                    <a href="/database/recipes/" class="card-hover rounded-xl border border-cozy-peach/40 p-4 hover:border-cozy-coral"><strong>Recipe database</strong><span class="block text-cozy-wood mt-1">Mark learned recipes by level, ingredients, market value, and availability.</span></a>
-                    <a href="/guides/achievements/" class="card-hover rounded-xl border border-cozy-peach/40 p-4 hover:border-cozy-coral"><strong>Achievements</strong><span class="block text-cozy-wood mt-1">Track achievement objectives, title rewards, and activity-dependent goals.</span></a>
-                    <a href="/database/collectibles/" class="card-hover rounded-xl border border-cozy-peach/40 p-4 hover:border-cozy-coral"><strong>Collectibles database</strong><span class="block text-cozy-wood mt-1">Track all 37 registered collectibles by location and category.</span></a>
-                    <a href="/database/items/" class="card-hover rounded-xl border border-cozy-peach/40 p-4 hover:border-cozy-coral"><strong>Items database</strong><span class="block text-cozy-wood mt-1">Track all 23 registered utility items by seller and category.</span></a>
-                    <a href="/database/ingredients/" class="card-hover rounded-xl border border-cozy-peach/40 p-4 hover:border-cozy-coral"><strong>Ingredients database</strong><span class="block text-cozy-wood mt-1">Track all 26 ingredients by price and recipe use.</span></a>
-                    <a href="/npcs/" class="card-hover rounded-xl border border-cozy-peach/40 p-4 hover:border-cozy-coral"><strong>NPC directory</strong><span class="block text-cozy-wood mt-1">Track all 19 residents by location and role.</span></a>
-
-
-
-
-                    <a href="/guides/map/#location-tool" class="card-hover rounded-xl border border-cozy-peach/40 p-4 hover:border-cozy-coral"><strong>Map finder</strong><span class="block text-cozy-wood mt-1">Mark checked resources, NPCs, wildlife, and event locations.</span></a>
-                </div>
-            </div>
-
+        <!-- Next Steps -->
+        <section class="grid lg:grid-cols-[1.1fr_0.9fr] gap-6 mb-8">
+            <section class="bg-white rounded-2xl p-6 border border-cozy-peach/30">
+                <p class="text-sm font-bold uppercase tracking-wide text-cozy-coral mb-2">Next step</p>
+                <h2 class="font-display text-2xl font-bold mb-4">Closest to Complete</h2>
+                <div id="progress-closest"></div>
+            </section>
             <aside class="bg-cozy-bark text-white rounded-2xl p-6">
-                <h2 class="font-display text-2xl font-bold mb-4">Recent Saved Areas</h2>
-                <ul id="progress-activity" class="space-y-2 text-sm text-white/80"></ul>
-                <p class="text-xs text-white/50 mt-5">Progress is stored on this device. Clearing browser data may reset it.</p>
+                <p class="text-sm font-bold uppercase tracking-wide text-cozy-sage mb-2">Milestones</p>
+                <h2 class="font-display text-2xl font-bold mb-4">Collection Badges</h2>
+                <ul id="progress-milestones" class="grid sm:grid-cols-2 gap-2"></ul>
             </aside>
+        </section>
+
+        <section class="grid lg:grid-cols-[1.1fr_0.9fr] gap-6 mb-8">
+            <section class="bg-white rounded-2xl p-6 border border-cozy-peach/30">
+                <div class="flex flex-wrap items-baseline justify-between gap-3 mb-4">
+                    <div>
+                        <p class="text-sm font-bold uppercase tracking-wide text-cozy-coral mb-2">Today</p>
+                        <h2 class="font-display text-2xl font-bold">Today&apos;s Goals</h2>
+                    </div>
+                    <span id="progress-today-summary" class="text-sm font-bold text-cozy-wood"></span>
+                </div>
+                <ul id="progress-today-goals" class="grid sm:grid-cols-2 gap-3"></ul>
+            </section>
+            <aside class="bg-cozy-sky/15 rounded-2xl p-6 border border-cozy-sky/35">
+                <p class="text-sm font-bold uppercase tracking-wide text-cozy-coral mb-2">Saved areas</p>
+                <h2 class="font-display text-2xl font-bold mb-4">Current Progress</h2>
+                <ul id="progress-activity" class="space-y-2 text-sm text-cozy-wood"></ul>
+                <p class="text-xs text-cozy-wood mt-5">Daily goals and map routes keep using the same browser-only data as their original tools.</p>
+            </aside>
+        </section>
+
+        <section class="bg-white rounded-2xl p-6 border border-cozy-peach/30 mb-10">
+            <div class="flex flex-wrap items-baseline justify-between gap-3 mb-5">
+                <div>
+                    <p class="text-sm font-bold uppercase tracking-wide text-cozy-coral mb-2">Collection route</p>
+                    <h2 class="font-display text-2xl font-bold">Continue Where You Left Off</h2>
+                </div>
+                <a href="/database/" class="text-sm font-bold text-cozy-coral hover:underline">Browse all databases</a>
+            </div>
+            <div id="progress-continue" class="grid lg:grid-cols-3 gap-6"></div>
         </section>
 
         <!-- Notes -->
@@ -204,7 +216,7 @@
             <div class="grid md:grid-cols-3 gap-4 text-sm text-cozy-wood">
                 <div class="rounded-xl bg-cozy-cream p-4"><strong class="text-cozy-bark">No login needed</strong><p class="mt-2">Marks are saved in your browser storage.</p></div>
                 <div class="rounded-xl bg-cozy-cream p-4"><strong class="text-cozy-bark">Works across pages</strong><p class="mt-2">Use collection databases, Flowers, Recipes, Achievements, NPCs, and the Map Finder, then return here.</p></div>
-                <div class="rounded-xl bg-cozy-cream p-4"><strong class="text-cozy-bark">Move safely</strong><p class="mt-2">Export a backup before changing browsers or clearing site data.</p></div>
+                <div class="rounded-xl bg-cozy-cream p-4"><strong class="text-cozy-bark">Move safely</strong><p class="mt-2">Your backup includes collection marks, daily tasks, and your current map route.</p></div>
             </div>
         </section>
     </main>
@@ -221,7 +233,9 @@
         </div>
     </footer>
 
-    <script src="/assets/js/my-progress-dashboard.js"></script>
+    <script src="/assets/js/daily-tasks-data.js"></script>
+    <script src="/assets/js/progress-catalog.js"></script>
+    <script src="/assets/js/my-progress-assistant.js"></script>
     <!-- NitroPay Ad Units -->
     <script>
         if (window['nitroAds']) {

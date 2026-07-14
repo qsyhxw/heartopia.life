@@ -20,6 +20,7 @@ const koi=fishByName.get('Butterfly Koi');const high=fish.filter(x=>x.maxValue>=
 write('database/fish/legendary-koi/index.html',shell('Heartopia Koi and High-Value Fish: Current Locations','Current Heartopia Koi and high-value fish guide with Butterfly Koi and current location conditions.',koiBody,'https://heartopia.life/database/fish/legendary-koi/'));
 const replacements={
  'assets/js/my-progress-dashboard.js':[['total: 45','total: 91']],
+ 'assets/js/my-progress-assistant.js':[['total: 45','total: 91']],
  'hobbies/fishing/index.html':[['94 fish',`${fishCount} fish`],['94 Fish',`${fishCount} Fish`],['all 94',`all ${fishCount}`],['All 94',`All ${fishCount}`]],
  'hobbies/index.html':[['94 fish',`${fishCount} fish`]],
  'tools/index.html':[['94 fish',`${fishCount} fish`]],

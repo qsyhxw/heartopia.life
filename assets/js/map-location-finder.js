@@ -298,6 +298,31 @@
         renderLocations();
     }
 
+    function applyUncollectedDeepLink() {
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('progress') !== 'uncollected') return;
+        const toggle = document.getElementById('map-hide-visited');
+        const panel = toggle?.closest('section');
+        if (!toggle) return;
+        const query = params.get('search')?.trim();
+        const search = document.getElementById('map-location-search');
+        if (query && search) search.value = query;
+        toggle.checked = true;
+        if (!document.getElementById('map-progress-filter-notice')) {
+            const notice = document.createElement('div');
+            notice.id = 'map-progress-filter-notice';
+            notice.className = 'mb-4 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-cozy-sky/40 bg-cozy-sky/10 px-4 py-3 text-sm text-cozy-bark';
+            notice.innerHTML = '<span><strong>Uncollected only</strong> is active.</span><button type="button" class="font-bold text-cozy-coral hover:underline">Show all</button>';
+            notice.querySelector('button')?.addEventListener('click', function () {
+                const url = new URL(window.location.href);
+                url.searchParams.delete('progress');
+                url.searchParams.delete('search');
+                window.location.href = url.pathname + url.search + url.hash;
+            });
+            panel?.parentNode?.insertBefore(notice, panel.nextSibling);
+        }
+    }
+
     document.addEventListener('DOMContentLoaded', () => {
         setupAreaOptions();
         ['map-location-search', 'map-type-filter', 'map-area-filter', 'map-hide-visited'].forEach(id => {
@@ -355,6 +380,7 @@
             writeVisited(visited);
             renderLocations();
         });
+        applyUncollectedDeepLink();
         renderLocations();
         renderDailyRoutes();
     });

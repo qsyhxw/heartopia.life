@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import vm from 'node:vm';
 
 const root = path.resolve(import.meta.dirname, '..');
 const read = (file) => fs.readFileSync(path.join(root, file), 'utf8');
@@ -13,9 +14,22 @@ function collectionCount(file, property) {
   return data[property].length;
 }
 
+function mapLocationCount() {
+  const source = read('assets/js/map-location-finder.js');
+  const match = source.match(/const locations = (\[[\s\S]*?\]);\s*\n\s*const typeLabels/);
+  if (!match) throw new Error('Could not read map locations from map-location-finder.js');
+  const locations = vm.runInNewContext(`(${match[1]})`);
+  if (!Array.isArray(locations)) throw new Error('Map locations are not an array');
+  return locations.length;
+}
+
 function replaceOne(html, pattern, replacement, label) {
   if (!pattern.test(html)) throw new Error(`Could not update ${label}`);
   return html.replace(pattern, replacement);
+}
+
+function replaceIfPresent(html, pattern, replacement) {
+  return pattern.test(html) ? html.replace(pattern, replacement) : html;
 }
 
 function humanDate(value) {
@@ -37,7 +51,7 @@ const totals = {
   items: collectionCount('heartopia-items.json', 'items'),
   ingredients: collectionCount('heartopia-ingredients.json', 'ingredients'),
   npcs: collectionCount('heartopia-npcs.json', 'npcs'),
-  map: 36
+  map: mapLocationCount()
 };
 
 if (!Number.isInteger(totals.birds) || totals.birds < 1) throw new Error('Missing monitored bird count');
@@ -50,20 +64,24 @@ const totalsChanged = JSON.stringify(previous?.totals || {}) !== JSON.stringify(
 const updated = dateSources.sort().at(-1) || (totalsChanged ? today() : previous?.updated || today());
 write('data/heartopia-hub-totals.json', JSON.stringify({ updated, totals }, null, 2) + '\n');
 
-let dashboard = read('assets/js/my-progress-dashboard.js');
+for (const dashboardFile of ['assets/js/my-progress-dashboard.js', 'assets/js/my-progress-assistant.js']) {
+let dashboard = read(dashboardFile);
 for (const [id, total] of Object.entries(totals)) {
   dashboard = replaceOne(dashboard, new RegExp(`(id: '${id}'[\\s\\S]*?total: )\\d+`), `$1${total}`, `dashboard ${id} total`);
 }
-write('assets/js/my-progress-dashboard.js', dashboard);
+write(dashboardFile, dashboard);
+}
 
 let progress = read('tools/my-progress/index.html');
-progress = replaceOne(progress, /Mark all \d+ wildlife entries/, `Mark all ${totals.wildlife} wildlife entries`, 'wildlife progress copy');
-progress = replaceOne(progress, /Track all \d+ crops/, `Track all ${totals.crops} crops`, 'crop progress copy');
-progress = replaceOne(progress, /Track all \d+ documented flower forms/, `Track all ${totals.flowers} documented flower forms`, 'flower progress copy');
-progress = replaceOne(progress, /Track all \d+ registered collectibles/, `Track all ${totals.collectibles} registered collectibles`, 'collectible progress copy');
-progress = replaceOne(progress, /Track all \d+ registered utility items/, `Track all ${totals.items} registered utility items`, 'item progress copy');
-progress = replaceOne(progress, /Track all \d+ ingredients/, `Track all ${totals.ingredients} ingredients`, 'ingredient progress copy');
-progress = replaceOne(progress, /Track all \d+ residents/, `Track all ${totals.npcs} residents`, 'NPC progress copy');
+// Older progress templates used static total-copy. The assistant dashboard reads live totals
+// from its generated catalog, but keeping these optional replacements preserves old templates.
+progress = replaceIfPresent(progress, /Mark all \d+ wildlife entries/, `Mark all ${totals.wildlife} wildlife entries`);
+progress = replaceIfPresent(progress, /Track all \d+ crops/, `Track all ${totals.crops} crops`);
+progress = replaceIfPresent(progress, /Track all \d+ documented flower forms/, `Track all ${totals.flowers} documented flower forms`);
+progress = replaceIfPresent(progress, /Track all \d+ registered collectibles/, `Track all ${totals.collectibles} registered collectibles`);
+progress = replaceIfPresent(progress, /Track all \d+ registered utility items/, `Track all ${totals.items} registered utility items`);
+progress = replaceIfPresent(progress, /Track all \d+ ingredients/, `Track all ${totals.ingredients} ingredients`);
+progress = replaceIfPresent(progress, /Track all \d+ residents/, `Track all ${totals.npcs} residents`);
 write('tools/my-progress/index.html', progress);
 
 let hub = read('database/index.html');

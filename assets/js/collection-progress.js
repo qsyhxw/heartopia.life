@@ -32,6 +32,21 @@
         localStorage.setItem(STORAGE_PREFIX + key, JSON.stringify(Array.from(set).sort()));
     }
 
+    function hasUncollectedRequest() {
+        return new URLSearchParams(window.location.search).get('progress') === 'uncollected';
+    }
+
+    function applySearchRequest() {
+        const query = new URLSearchParams(window.location.search).get('search')?.trim();
+        if (!query) return;
+        const input = document.querySelector('input[type="search"]');
+        if (!input) return;
+        input.value = query;
+        input.dispatchEvent(new Event('input', { bubbles: true }));
+        input.dispatchEvent(new Event('change', { bubbles: true }));
+        input.closest('section')?.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    }
+
     function collectRows(tableSelector) {
         return Array.from(document.querySelectorAll(tableSelector))
             .flatMap(table => Array.from(table.querySelectorAll('tbody tr')))
@@ -98,6 +113,41 @@
         });
     }
 
+    function setupUncollectedView(panel, config, savedSet) {
+        if (!hasUncollectedRequest() || panel.dataset.uncollectedReady === 'true') return function () {};
+        panel.dataset.uncollectedReady = 'true';
+
+        const notice = document.createElement('div');
+        notice.className = 'mb-4 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-cozy-sky/40 bg-cozy-sky/10 px-4 py-3 text-sm text-cozy-bark';
+        notice.innerHTML = '<span><strong>Uncollected only</strong> <span data-uncollected-count></span></span><button type="button" class="font-bold text-cozy-coral hover:underline">Show all</button>';
+        panel.parentNode?.insertBefore(notice, panel);
+
+        const count = notice.querySelector('[data-uncollected-count]');
+        const clear = notice.querySelector('button');
+        const refresh = function () {
+            let visible = 0;
+            collectRows(config.tableSelector).forEach(function (row) {
+                const id = row.dataset.collectionId || normalizeItemName(row.cells[0]?.textContent || '');
+                const missing = Boolean(id) && !savedSet.has(id);
+                row.hidden = !missing;
+                if (missing) visible += 1;
+            });
+            if (count) count.textContent = '(' + visible + ' remaining)';
+        };
+
+        clear?.addEventListener('click', function () {
+            const url = new URL(window.location.href);
+            url.searchParams.delete('progress');
+            window.location.href = url.pathname + url.search + url.hash;
+        });
+        panel.ownerDocument.addEventListener('change', function (event) {
+            if (!event.target.closest('.heartopia-collection-checkbox')) return;
+            window.setTimeout(refresh, 0);
+        });
+        refresh();
+        return refresh;
+    }
+
     function initCollection(panel) {
         const config = {
             key: panel.dataset.collectionKey || location.pathname,
@@ -133,6 +183,7 @@
         document.querySelectorAll(config.tableSelector).forEach(table => {
             injectCollectionColumn(table, config, savedSet, updateProgress);
         });
+        const refreshUncollected = setupUncollectedView(panel, config, savedSet);
 
         if (clearButton) {
             clearButton.addEventListener('click', () => {
@@ -143,6 +194,7 @@
                     input.checked = false;
                 });
                 updateProgress();
+                refreshUncollected();
             });
         }
 
@@ -151,5 +203,6 @@
 
     document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('[data-collection-progress]').forEach(initCollection);
+        window.setTimeout(applySearchRequest, 0);
     });
 })();

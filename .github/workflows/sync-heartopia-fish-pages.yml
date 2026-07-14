@@ -4,11 +4,15 @@ on:
   push:
     paths:
       - 'database/fish/index.html'
+      - 'data/heartopia-fish.json'
       - 'img/fish/**'
       - 'scripts/sync-fish-pages.mjs'
       - 'scripts/generate-fish-detail-pages.mjs'
       - 'scripts/refresh-legacy-fish-references.mjs'
       - 'scripts/refresh-collection-legacy-pages.mjs'
+      - 'scripts/sync-heartopia-hubs.mjs'
+      - 'scripts/build-progress-catalog.mjs'
+      - 'scripts/build-heartopia-search-index.mjs'
   workflow_dispatch:
 
 permissions:
@@ -35,11 +39,20 @@ jobs:
       - name: Refresh legacy fish references
         run: node scripts/refresh-legacy-fish-references.mjs
 
+      - name: Refresh database and progress hub totals
+        run: node scripts/sync-heartopia-hubs.mjs
+
+      - name: Build My Progress catalog
+        run: node scripts/build-progress-catalog.mjs
+
+      - name: Build universal search index
+        run: node scripts/build-heartopia-search-index.mjs
+
       - name: Commit generated updates
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/heartopia-fish.json sitemap.xml scripts/generate-fish-detail-pages.mjs database/fish-prices/index.html guides/fishing-locations/index.html guides/fishing-spots/index.html guides/rare-fish/index.html guides/fish-locations/index.html database/fish/bluefin-tuna/index.html database/fish/swordfish/index.html database/fish/whale-shark/index.html database/fish/mahi-mahi/index.html database/fish/green-sea-turtle/index.html database/fish/giant-oarfish/index.html database/fish/anglerfish/index.html database/fish/king-crab/index.html scripts/refresh-legacy-fish-references.mjs hobbies/fishing/index.html hobbies/index.html progression/money-making/index.html guides/money-making/index.html guides/hidden-achievements/index.html
+          git add data/heartopia-fish.json data/heartopia-hub-totals.json data/heartopia-search-index.json sitemap.xml scripts/generate-fish-detail-pages.mjs database/index.html database/fish database/fish-prices/index.html guides/fishing-locations/index.html guides/fishing-spots/index.html guides/rare-fish/index.html guides/fish-locations/index.html scripts/refresh-legacy-fish-references.mjs assets/js/my-progress-dashboard.js assets/js/my-progress-assistant.js assets/js/progress-catalog.js assets/js/universal-search.js tools/my-progress/index.html hobbies/fishing/index.html hobbies/index.html progression/money-making/index.html guides/money-making/index.html guides/hidden-achievements/index.html
           if git diff --cached --quiet; then
             echo "No fish page changes to commit."
           else
