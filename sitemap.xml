@@ -454,7 +454,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/events/</loc>
-        <lastmod>2026-07-08</lastmod>
+        <lastmod>2026-07-14</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -466,7 +466,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/events/my-little-pony-collaboration/</loc>
-        <lastmod>2026-07-08</lastmod>
+        <lastmod>2026-07-14</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1346,4 +1346,16 @@
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
+  <url>
+    <loc>https://heartopia.life/events/call-of-whales/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://heartopia.life/events/sanrio-characters-collaboration/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

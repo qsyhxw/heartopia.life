@@ -1,763 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heartopia Events: Active, Upcoming & Past Events</title>
+  <meta name="description" content="Check the Heartopia event calendar for Call of Whales, the SANRIO CHARACTERS collaboration, permanent activities, and archived 2026 events.">
+  <link rel="canonical" href="https://heartopia.life/events/">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Heartopia Events: Active, Upcoming & Past Events">
+  <meta property="og:description" content="Check the Heartopia event calendar for Call of Whales, the SANRIO CHARACTERS collaboration, permanent activities, and archived 2026 events.">
+  <meta property="og:url" content="https://heartopia.life/events/">
+  <meta name="twitter:card" content="summary_large_image">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRJ91G3VRR"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-FRJ91G3VRR');</script>
+  <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
+  <script data-cfasync="false" async src="https://s.nitropay.com/ads-2368.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://heartopia.life/events/#webpage","url":"https://heartopia.life/events/","name":"Heartopia Events: Active, Upcoming and Past Events","description":"A dated Heartopia event calendar with active, upcoming, archived, and permanent activities.","dateModified":"2026-07-14"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://heartopia.life/"},{"@type":"ListItem","position":2,"name":"Events","item":"https://heartopia.life/events/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I know whether a Heartopia event is active?","acceptedAnswer":{"@type":"Answer","text":"Use the in-game event panel and server-time schedule as the final check. This page separates live, upcoming, and ended activities so older event guides are easier to identify."}},{"@type":"Question","name":"What is the current Heartopia event?","acceptedAnswer":{"@type":"Answer","text":"Call of Whales is active from July 11, 2026 at 6:00 AM through August 22, 2026 at 5:59 AM, using server time."}},{"@type":"Question","name":"When does the Heartopia x SANRIO CHARACTERS collaboration begin?","acceptedAnswer":{"@type":"Answer","text":"The collaboration begins July 17, 2026. Its invitation pre-event begins July 10, 2026."}}]}]}</script>
+  <style>
+    :root{--ink:#2d241e;--muted:#735f4d;--paper:#fffaf5;--line:#eaded2;--pink:#df5e75;--blue:#4e90ad;--mint:#62a88c;--gold:#ca9140}
+    body{background:#fff8f1;color:var(--ink);font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    h1,h2,h3{font-family:Georgia,"Times New Roman",serif;letter-spacing:0}
+    .surface{background:rgba(255,255,255,.88);border:1px solid var(--line);border-radius:8px}
+    .eyebrow{font-size:.76rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    .nav-link{color:#6a5749;font-size:.92rem;font-weight:700}.nav-link:hover{color:#bd4f68}
+    .tag{display:inline-flex;align-items:center;border-radius:999px;padding:.32rem .66rem;font-size:.75rem;font-weight:800}
+    .status-active{background:#ddf3e7;color:#277451}.status-upcoming{background:#e4effa;color:#36749a}.status-archive{background:#f3e8df;color:#8b6250}.status-evergreen{background:#fff0ca;color:#8b6516}
+    .event-image{width:100%;aspect-ratio:16/10;object-fit:contain;background:#f4f8fa;padding:1rem}
+    .detail-image{width:100%;max-width:360px;aspect-ratio:1/1;object-fit:contain;background:#eff7f9;padding:1.25rem;border:1px solid #d6e6eb;border-radius:8px}
+    .cta{display:inline-flex;align-items:center;justify-content:center;border-radius:6px;background:#c9536e;color:#fff;padding:.7rem 1rem;font-weight:800}.cta:hover{background:#ae4058}
+    .cta-soft{display:inline-flex;align-items:center;justify-content:center;border-radius:6px;border:1px solid #d8b6c0;color:#a34459;padding:.68rem .95rem;font-weight:800}.cta-soft:hover{background:#fff2f4}
+    .rule{border-top:1px solid var(--line)}
+    a{text-underline-offset:3px}
+  </style>
+</head><body>
+<header class="border-b border-[#eaded2] bg-white/90 backdrop-blur">
+  <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-5 py-4">
+    <a href="" class="text-xl font-black tracking-wide text-[#c85069]">Heartopia Life</a>
+    <nav class="flex flex-wrap items-center gap-x-5 gap-y-2">
+      <a class="nav-link" href="database/">Database</a>
+      <a class="nav-link" href="guides/">Guides</a>
+      <a class="nav-link" href="events/">Events</a>
+      <a class="nav-link" href="tools/">Tools</a>
+      <a class="nav-link" href="codes/">Codes</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="border-b border-[#eaded2] bg-[linear-gradient(120deg,#fff5ee,#f4fbfb)]">
+    <div class="mx-auto max-w-6xl px-5 py-14">
+      <p class="eyebrow text-[#bc536a]">Heartopia event calendar</p>
+      <div class="mt-3 flex flex-col justify-between gap-7 md:flex-row md:items-end">
+        <div class="max-w-3xl"><h1 class="text-4xl font-bold leading-tight md:text-5xl">Heartopia Events</h1><p class="mt-4 text-lg leading-8 text-[#735f4d]">See what is active now, what starts next, and which 2026 events have already ended. Times use the game server schedule.</p></div>
+        <p class="text-sm font-bold text-[#8a6d58]">Last updated: July 14, 2026</p>
+      </div>
+      <div class="mt-8 grid gap-3 sm:grid-cols-3">
+        <div class="surface p-4"><p class="eyebrow text-[#277451]">Active now</p><p class="mt-1 text-2xl font-black">1 event</p><p class="mt-1 text-sm text-[#735f4d]">Call of Whales</p></div>
+        <div class="surface p-4"><p class="eyebrow text-[#36749a]">Upcoming</p><p class="mt-1 text-2xl font-black">1 collaboration</p><p class="mt-1 text-sm text-[#735f4d]">SANRIO CHARACTERS</p></div>
+        <div class="surface p-4"><p class="eyebrow text-[#8b6250]">Archive</p><p class="mt-1 text-2xl font-black">8 entries</p><p class="mt-1 text-sm text-[#735f4d]">Ended 2026 events</p></div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRJ91G3VRR"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-FRJ91G3VRR');
-    </script>
+  <section class="mx-auto max-w-6xl px-5 py-12">
+    <div class="flex items-end justify-between gap-4"><div><p class="eyebrow text-[#277451]">Active</p><h2 class="mt-2 text-3xl font-bold">Play now</h2></div><span class="tag status-active">Active</span></div>
+    <article class="surface mt-5 overflow-hidden md:grid md:grid-cols-[.85fr_1.15fr]">
+      <div class="bg-[#eef8f8]"><img class="event-image" src="/img/fish/Japanese-Flying-Squid.webp" alt="Japanese Flying Squid from Heartopia"></div>
+      <div class="p-6 md:p-8"><div class="flex flex-wrap gap-2"><span class="tag status-active">Call of Whales</span><span class="tag status-evergreen">Fashionwave season</span></div><h3 class="mt-4 text-3xl font-bold">Call of Whales</h3><p class="mt-3 text-lg font-semibold text-[#4e625f]">July 11, 2026, 6:00 AM - August 22, 2026, 5:59 AM</p><p class="mt-4 leading-7 text-[#735f4d]">Explore Whalefall Canyon, take part in the Ocean Cleanup hobby, build toward an underwater home, and follow the Fashionwave collection during this season.</p><div class="mt-5 grid gap-3 sm:grid-cols-2"><div class="rounded-md bg-[#f4faf7] p-3"><p class="font-bold">Entry requirement</p><p class="mt-1 text-sm text-[#735f4d]">D.G. Member Level 7 and the main story quest “The Answer Lies Within.”</p></div><div class="rounded-md bg-[#fff7ee] p-3"><p class="font-bold">Quick check</p><p class="mt-1 text-sm text-[#735f4d]">Open the event panel in-game before starting, especially around the server reset.</p></div></div><a class="cta mt-6" href="/events/call-of-whales/">Open Call of Whales guide</a></div>
+    </article>
+    <div class="mt-8"><div id="heartopia_in_content"></div>
 
+</div>
+  </section>
 
-    <!-- Meta Tags -->
-    <title>Heartopia Events Guide: Current Events, Collabs & 711 Search Check</title>
-    <meta name="description"
-        content="Heartopia events guide for Sea Fishing, Bait Insects, Nest of Hundreds, Tea Party, seasonal events, collabs, and 711 / 7-Eleven search checks.">
-    <meta name="keywords"
-        content="heartopia events, heartopia 711, heartopia 7-eleven, heartopia collab, heartopia sea fishing, heartopia bait insects, heartopia tea party">
-    <meta name="author" content="Heartopia.Life">
-    <meta name="robots" content="index, follow">
+  <section class="rule bg-[#f5f9ff]">
+    <div class="mx-auto max-w-6xl px-5 py-12">
+      <div class="flex items-end justify-between gap-4"><div><p class="eyebrow text-[#36749a]">Upcoming</p><h2 class="mt-2 text-3xl font-bold">Next on the calendar</h2></div><span class="tag status-upcoming">Starts July 17</span></div>
+      <article class="surface mt-5 p-6 md:p-8"><div class="grid gap-7 md:grid-cols-[1.2fr_.8fr] md:items-center"><div><div class="flex flex-wrap gap-2"><span class="tag status-upcoming">SANRIO CHARACTERS</span><span class="tag status-evergreen">Collaboration</span></div><h3 class="mt-4 text-3xl font-bold">Heartopia x SANRIO CHARACTERS</h3><p class="mt-3 text-lg font-semibold text-[#486c86]">Collaboration begins July 17, 2026</p><p class="mt-4 leading-7 text-[#735f4d]">Cinnamoroll, Kuromi, and My Melody arrive with a collaboration event. The invitation pre-event begins July 10: log in daily, light the puzzle pieces, and collect the listed Exhibition Pass and wallpaper rewards.</p><a class="cta mt-6" href="/events/sanrio-characters-collaboration/">Open SANRIO collaboration guide</a></div><div class="rounded-lg border border-[#d9e5f3] bg-[#f8fbff] p-5"><p class="eyebrow text-[#5c80a0]">Before it begins</p><ol class="mt-3 space-y-3 text-sm leading-6 text-[#596d7a]"><li><strong>1.</strong> Complete the daily invitation check-in.</li><li><strong>2.</strong> Keep any Exhibition Pass rewards for the collaboration exhibition.</li><li><strong>3.</strong> Check the live event panel on July 17 for the full end date and timetable.</li></ol></div></div></article>
+    </div>
+  </section>
 
-    <!-- Canonical -->
-    <link rel="canonical" href="https://heartopia.life/events/">
+  <section class="mx-auto max-w-6xl px-5 py-12">
+    <p class="eyebrow text-[#8b6516]">Permanent activities</p><h2 class="mt-2 text-3xl font-bold">Available beyond a limited event window</h2><p class="mt-3 max-w-3xl leading-7 text-[#735f4d]">These are gameplay activities with their own requirements and progression. They are not shown as short-lived event announcements.</p>
+    <div class="mt-6 grid gap-5 md:grid-cols-3">
+      <a class="surface overflow-hidden transition hover:-translate-y-0.5 hover:shadow-md" href="/events/sea-fishing/"><img class="event-image" src="/img/fish/Whale-Shark.webp" alt="Whale Shark from Heartopia"><div class="p-5"><span class="tag status-evergreen">Permanent activity</span><h3 class="mt-3 text-2xl font-bold">Sea Fishing</h3><p class="mt-2 text-sm leading-6 text-[#735f4d]">Sea-fishing rules, locations, and related fish entries.</p></div></a>
+      <a class="surface overflow-hidden transition hover:-translate-y-0.5 hover:shadow-md" href="/events/bait-insects/"><img class="event-image" src="/img/insects/Abeja-Azul.webp" alt="Blue Bee from Heartopia"><div class="p-5"><span class="tag status-evergreen">Permanent activity</span><h3 class="mt-3 text-2xl font-bold">Bait the Insects</h3><p class="mt-2 text-sm leading-6 text-[#735f4d]">A multiplayer insect activity with its own entry requirement.</p></div></a>
+      <a class="surface overflow-hidden transition hover:-translate-y-0.5 hover:shadow-md" href="/events/nest-of-hundreds/"><img class="event-image" src="/img/birds/African-Olive-Pigeon.webp" alt="African Olive Pigeon from Heartopia"><div class="p-5"><span class="tag status-evergreen">Permanent activity</span><h3 class="mt-3 text-2xl font-bold">Nest of Hundreds</h3><p class="mt-2 text-sm leading-6 text-[#735f4d]">A bird-related activity and checklist for returning players.</p></div></a>
+    </div>
+  </section>
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Heartopia Events Guide: Current Events, Collabs & 711 Search Check">
-    <meta property="og:description" content="Track Heartopia events, collabs, multiplayer activities, and searches such as Heartopia 711 or 7-Eleven.">
-    <meta property="og:url" content="https://heartopia.life/events/">
-    <meta property="og:site_name" content="Heartopia.Life">
+  <section class="rule bg-[#fff6ef]">
+    <div class="mx-auto max-w-6xl px-5 py-12"><div class="flex flex-wrap items-end justify-between gap-4"><div><p class="eyebrow text-[#8b6250]">Archive</p><h2 class="mt-2 text-3xl font-bold">Ended 2026 events</h2></div><p class="max-w-xl text-sm leading-6 text-[#735f4d]">These entries remain here as a history and reward reference. They are not active unless the game announces a return.</p></div>
+      <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <article class="surface p-5"><span class="tag status-archive">Ended</span><h3 class="mt-3 text-xl font-bold">Midsummer Rhyme</h3><p class="mt-2 text-sm text-[#735f4d]">June 19 - July 6, 2026</p></article>
+        <article class="surface p-5"><span class="tag status-archive">Ended</span><h3 class="mt-3 text-xl font-bold">Rainbow Verse</h3><p class="mt-2 text-sm text-[#735f4d]">May 28 - June 22, 2026</p></article>
+        <article class="surface p-5"><span class="tag status-archive">Ended</span><h3 class="mt-3 text-xl font-bold">Modular Streets</h3><p class="mt-2 text-sm text-[#735f4d]">May 9 - June 20, 2026</p></article>
+        <article class="surface p-5"><span class="tag status-archive">Ended</span><h3 class="mt-3 text-xl font-bold">Maltese</h3><p class="mt-2 text-sm text-[#735f4d]">April 30 - May 25, 2026</p></article>
+        <article class="surface p-5"><span class="tag status-archive">Ended</span><h3 class="mt-3 text-xl font-bold">Pleasant Goat and Big Big Wolf</h3><p class="mt-2 text-sm text-[#735f4d]">March 28 - April 27, 2026</p></article>
+        <article class="surface p-5"><span class="tag status-archive">Ended</span><h3 class="mt-3 text-xl font-bold">Dreamlight Cinematics</h3><p class="mt-2 text-sm text-[#735f4d]">March 21 - May 9, 2026</p></article>
+        <a class="surface p-5 transition hover:shadow-md" href="/events/my-little-pony-collaboration/"><span class="tag status-archive">Ended</span><h3 class="mt-3 text-xl font-bold">My Little Pony</h3><p class="mt-2 text-sm text-[#735f4d]">February 14 - March 25, 2026</p></a>
+        <a class="surface overflow-hidden transition hover:shadow-md" href="/events/winter-2026/"><img class="event-image" src="/img/fish/Frostspore-Whale-Shark.webp" alt="Frostspore Whale Shark from Heartopia"><div class="p-5"><span class="tag status-archive">Ended</span><h3 class="mt-3 text-xl font-bold">Winter Frost</h3><p class="mt-2 text-sm text-[#735f4d]">January 24 - March 14, 2026</p></div></a>
+      </div>
+      <div class="mt-8">
+<div id="heartopia_in_content_2"></div>
+</div>
+    </div>
+  </section>
 
-    <!-- FAQ Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What events are available in Heartopia?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Heartopia has recurring multiplayer events such as Sea Fishing, Bait the Insects, and Nest of Hundreds, plus themed pages for seasonal activities, Tea Party setups, and confirmed collaborations."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "When do Heartopia events unlock?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Events unlock at different DG (Members Guild) levels: Sea Fishing at DG Level 7, Bait the Insects and Nest of Hundreds at DG Level 8. Seasonal events have limited-time availability."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are seasonal events in Heartopia?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Seasonal events are limited-time activities such as winter, festival, and collaboration events. Check official channels for dates before treating a rumored collab as active."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Is there a Heartopia 711 or 7-Eleven collaboration?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "As of July 8, 2026, Heartopia.Life has not found a reliable official source confirming a Heartopia x 7-Eleven collaboration. Most visible 711 results appear to be player-made convenience store builds."
-                }
-            }
-        ]
-    }
-    </script>
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'cozy': {
-                            'cream': '#FFF8F0',
-                            'peach': '#FFE5D9',
-                            'coral': '#FF9B85',
-                            'rose': '#D4A5A5',
-                            'sage': '#A8C686',
-                            'mint': '#B8E0D2',
-                            'sky': '#95C8D8',
-                            'wood': '#8B7355',
-                            'bark': '#5D4E37',
-                        }
-                    },
-                    fontFamily: {
-                        'display': ['Georgia', 'serif'],
-                        'body': ['system-ui', '-apple-system', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        .card-hover {
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .card-hover:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 24px rgba(139, 115, 85, 0.15);
-        }
-    </style>
-    <!-- NitroPay Global Header -->
-    <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
-    <script data-cfasync="false" async src="https://s.nitropay.com/ads-2368.js"></script>
-</head>
-
-<body class="bg-cozy-cream text-cozy-bark font-body">
-
-    <!-- HEADER -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-cozy-peach/50">
-        <nav class="max-w-6xl mx-auto px-4 py-3">
-            <div class="flex items-center justify-between">
-                <a href="/" class="flex items-center gap-2 group">
-                    <img src="/favicon-96x96.png" alt="Heartopia.Life" class="w-7 h-7">
-                    <span class="font-display text-xl font-bold text-cozy-bark">Heartopia<span
-                            class="text-cozy-sage">.Life</span></span>
-                </a>
-                <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
-                    <li><a href="/guides/map/"
-                            class="hover:text-cozy-coral transition-colors flex items-center gap-1">🗺️ Map</a></li>
-                    <li><a href="/codes/" class="hover:text-cozy-coral transition-colors flex items-center gap-1">🎁
-                            Codes</a></li>
-                    <li><a href="/guides/" class="hover:text-cozy-coral transition-colors">Guides</a></li>
-                    <li><a href="/hobbies/" class="hover:text-cozy-coral transition-colors">Hobbies</a></li>
-                    <li><a href="/events/" class="text-cozy-coral font-bold">Events</a></li>
-                    <li><a href="/database/" class="hover:text-cozy-coral transition-colors">Database</a></li>
-                    <li><a href="/npcs/" class="hover:text-cozy-coral transition-colors">NPCs</a></li>
-                </ul>
-
-                <button class="md:hidden p-2 hover:bg-cozy-peach/50 rounded-lg" aria-label="Open menu"
-                    onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
-            </div>
-
-            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-cozy-peach/50 pt-4">
-                <ul class="flex flex-col gap-3 text-sm font-medium">
-                    <li><a href="/guides/map/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🗺️ Map</a>
-                    </li>
-                    <li><a href="/codes/" class="flex items-center gap-2 py-2 hover:text-cozy-coral">🎁 Codes</a></li>
-                    <li><a href="/guides/" class="py-2 hover:text-cozy-coral">Guides</a></li>
-                    <li><a href="/hobbies/" class="py-2 hover:text-cozy-coral">Hobbies</a></li>
-                    <li><a href="/events/" class="py-2 hover:text-cozy-coral">Events</a></li>
-                    <li><a href="/database/" class="py-2 hover:text-cozy-coral">Database</a></li>
-                    <li><a href="/tools/" class="py-2 hover:text-cozy-coral">Tools</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main class="max-w-4xl mx-auto px-4 py-8">
-
-        <!-- Breadcrumb -->
-        <nav class="text-sm text-cozy-wood mb-6">
-            <a href="/" class="hover:text-cozy-coral">Home</a>
-            <span class="mx-2">›</span>
-            <span class="text-cozy-bark font-medium">Events</span>
-        </nav>
-
-        <!-- Hero -->
-        <div class="bg-gradient-to-br from-purple-100 to-cozy-coral/30 rounded-2xl p-6 md:p-8 mb-8">
-            <div class="flex items-center gap-2 text-sm font-medium text-green-700 mb-3">
-                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                Updated: July 8, 2026
-            </div>
-            <h1 class="font-display text-3xl md:text-4xl font-bold text-cozy-bark mb-4">
-                🎉 Heartopia Events Guide
-            </h1>
-            <p class="text-cozy-wood text-lg">
-                Track Heartopia multiplayer events, seasonal pages, confirmed collaborations, and rumor checks. Start with <strong>Sea Fishing, Bait Insects, Nest of Hundreds</strong>, then use the notes below for Tea Party and 711 / 7-Eleven searches.
-            </p>
-        </div>
-
-        <!-- Quick Overview -->
-        <div class="bg-white rounded-xl p-6 mb-8 border border-cozy-peach/30">
-            <h2 class="font-bold text-lg mb-4">📊 Event Overview</h2>
-            <div class="overflow-x-auto">
-                <table class="w-full text-sm">
-                    <thead class="text-left border-b border-cozy-peach/30">
-                        <tr>
-                            <th class="py-2 font-bold">Event</th>
-                            <th class="py-2 font-bold">Unlock</th>
-                            <th class="py-2 font-bold">Hobby Required</th>
-                            <th class="py-2 font-bold">Location / Status</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-cozy-peach/20">
-                        <tr>
-                            <td class="py-2">🎣 Sea Fishing</td>
-                            <td class="py-2"><span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs">DG
-                                    Level 7</span></td>
-                            <td class="py-2 text-cozy-wood">Fishing</td>
-                            <td class="py-2 text-cozy-wood">Fishing Village (Bill)</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2">🦋 Bait the Insects</td>
-                            <td class="py-2"><span class="bg-purple-100 text-purple-700 px-2 py-0.5 rounded text-xs">DG
-                                    Level 8</span></td>
-                            <td class="py-2 text-cozy-wood">Insect Catching</td>
-                            <td class="py-2 text-cozy-wood">Onsen Mountain</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2">🐦 Nest of Hundreds</td>
-                            <td class="py-2"><span class="bg-purple-100 text-purple-700 px-2 py-0.5 rounded text-xs">DG
-                                    Level 8</span></td>
-                            <td class="py-2 text-cozy-wood">Birdwatching</td>
-                            <td class="py-2 text-cozy-wood">Fishing Village Fountain</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2">🌸 Seasonal Events</td>
-                            <td class="py-2"><span
-                                    class="bg-orange-100 text-orange-700 px-2 py-0.5 rounded text-xs">Limited
-                                    Time</span></td>
-                            <td class="py-2 text-cozy-wood">Seasonal Hobbies</td>
-                            <td class="py-2 text-cozy-wood">Various</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2">🫖 Tea Party</td>
-                            <td class="py-2"><span class="bg-pink-100 text-pink-700 px-2 py-0.5 rounded text-xs">Themed</span></td>
-                            <td class="py-2 text-cozy-wood">Decorating / Camera</td>
-                            <td class="py-2 text-cozy-wood">Home, garden, or active party area</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2">🏪 711 / 7-Eleven</td>
-                            <td class="py-2"><span class="bg-gray-100 text-gray-700 px-2 py-0.5 rounded text-xs">Not confirmed</span></td>
-                            <td class="py-2 text-cozy-wood">Player builds / search check</td>
-                            <td class="py-2 text-cozy-wood">No reliable official collab source found</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2">❄️ Winter Frost 2026</td>
-                            <td class="py-2"><span class="bg-cyan-100 text-cyan-700 px-2 py-0.5 rounded text-xs">Limited
-                                    Time</span></td>
-                            <td class="py-2 text-cozy-wood">Snow Sculpting</td>
-                            <td class="py-2 text-cozy-wood">Onsen Mountain</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <!-- EVENTS DETAIL -->
-        <article class="space-y-12">
-
-            <!-- SEA FISHING -->
-            <section id="sea-fishing" class="scroll-mt-20">
-                <div class="card-hover bg-white rounded-2xl p-6 border-2 border-cozy-sky/50">
-                    <div class="flex items-start gap-4 mb-4">
-                        <div class="w-16 h-16 bg-cozy-sky/20 rounded-2xl flex items-center justify-center">
-                            <span class="text-3xl">🎣</span>
-                        </div>
-                        <div class="flex-1">
-                            <div class="flex items-center gap-2 mb-1">
-                                <h2 class="font-display text-2xl font-bold">Sea Fishing Event</h2>
-                                <span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs">DG Level 7</span>
-                            </div>
-                            <p class="text-cozy-wood">Deep sea fishing expedition with exclusive rare fish!</p>
-                        </div>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 gap-4 mb-4">
-                        <div class="bg-cozy-sky/10 rounded-xl p-4">
-                            <h3 class="font-bold mb-2">📍 How to Start</h3>
-                            <ul class="text-sm text-cozy-wood space-y-1">
-                                <li>• Talk to <strong>Bill</strong> near the boats</li>
-                                <li>• Location: <strong>Fishing Village</strong></li>
-                                <li>• Requires <strong>Fishing hobby</strong> unlocked</li>
-                            </ul>
-                        </div>
-                        <div class="bg-cozy-sky/10 rounded-xl p-4">
-                            <h3 class="font-bold mb-2">⏱️ Gameplay</h3>
-                            <ul class="text-sm text-cozy-wood space-y-1">
-                                <li>• Players split into two boats</li>
-                                <li>• Travel to deep waters</li>
-                                <li>• Limited time fishing session</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="bg-yellow-50 rounded-xl p-4 border border-yellow-200">
-                        <h3 class="font-bold mb-2">🎯 Goals & Rewards</h3>
-                        <div class="grid md:grid-cols-2 gap-4 text-sm">
-                            <div>
-                                <span class="text-cozy-wood">Personal Goal:</span>
-                                <span class="font-bold"> Catch 5 fish</span>
-                            </div>
-                            <div>
-                                <span class="text-cozy-wood">Group Goal:</span>
-                                <span class="font-bold"> Catch 30 fish total</span>
-                            </div>
-                        </div>
-                        <p class="text-sm text-cozy-wood mt-2">🎁 <strong>Reward:</strong> Surprise Gacha Pods</p>
-                    </div>
-
-                    <div class="mt-4 bg-cozy-mint/20 rounded-xl p-4">
-                        <p class="text-sm text-cozy-wood"><strong>💡 Tip:</strong> Use <strong>Mermaid Perfume</strong>
-                            or <strong>Fish Attractor</strong> baits (buy from Bill) to increase your chances of
-                            catching rare fish during the event!</p>
-                    </div>
-
-                    <a href="/events/sea-fishing/"
-                        class="block mt-4 text-center bg-cozy-sky text-white font-bold py-3 px-6 rounded-xl hover:bg-cozy-sky/80 transition-colors">
-                        📖 Read Full Sea Fishing Guide →
-                    </a>
-                </div>
-            </section>
-        <div id="heartopia_in_content" class="heartopia-ad-slot max-w-6xl mx-auto px-4 my-6 text-center"></div>
-
-
-            <!-- BAIT THE INSECTS -->
-            <section id="bait-insects" class="scroll-mt-20">
-                <div class="card-hover bg-white rounded-2xl p-6 border-2 border-cozy-mint/50">
-                    <div class="flex items-start gap-4 mb-4">
-                        <div class="w-16 h-16 bg-cozy-mint/30 rounded-2xl flex items-center justify-center">
-                            <span class="text-3xl">🦋</span>
-                        </div>
-                        <div class="flex-1">
-                            <div class="flex items-center gap-2 mb-1">
-                                <h2 class="font-display text-2xl font-bold">Bait the Insects Event</h2>
-                                <span class="bg-purple-100 text-purple-700 px-2 py-0.5 rounded text-xs">DG Level
-                                    8</span>
-                            </div>
-                            <p class="text-cozy-wood">Catch as many insects as possible in a timed challenge!</p>
-                        </div>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 gap-4 mb-4">
-                        <div class="bg-cozy-mint/10 rounded-xl p-4">
-                            <h3 class="font-bold mb-2">📍 How to Start</h3>
-                            <ul class="text-sm text-cozy-wood space-y-1">
-                                <li>• Find the <strong>insect baiting device</strong></li>
-                                <li>• Location: <strong>Onsen Mountain</strong> (near lake)</li>
-                                <li>• Requires <strong>Insect Catching</strong> hobby</li>
-                            </ul>
-                        </div>
-                        <div class="bg-cozy-mint/10 rounded-xl p-4">
-                            <h3 class="font-bold mb-2">⏱️ Gameplay</h3>
-                            <ul class="text-sm text-cozy-wood space-y-1">
-                                <li>• <strong>Phase 1:</strong> 3 min at Onsen Mountain</li>
-                                <li>• <strong>Travel:</strong> 1 min to Crater Lake</li>
-                                <li>• <strong>Phase 2:</strong> 3 min at Crater Lake</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="bg-yellow-50 rounded-xl p-4 border border-yellow-200">
-                        <h3 class="font-bold mb-2">🎯 Goals</h3>
-                        <div class="grid md:grid-cols-2 gap-4 text-sm">
-                            <div>
-                                <span class="text-cozy-wood">Personal Goal:</span>
-                                <span class="font-bold"> Catch 10 insects</span>
-                            </div>
-                            <div>
-                                <span class="text-cozy-wood">Group Goal:</span>
-                                <span class="font-bold"> Catch 50 insects total</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-4 bg-cozy-coral/10 rounded-xl p-4">
-                        <p class="text-sm text-cozy-wood"><strong>⚠️ Warning:</strong> This event consumes a lot of
-                            stamina! <strong>Eat stamina-boosting food</strong> beforehand. Naniwa sometimes hosts free
-                            Town Events for bug catching.</p>
-                    </div>
-
-                    <a href="/events/bait-insects/"
-                        class="block mt-4 text-center bg-teal-500 text-white font-bold py-3 px-6 rounded-xl hover:bg-teal-600 transition-colors">
-                        📖 Read Full Bait Insects Guide →
-                    </a>
-                </div>
-            </section>
-
-            <!-- NEST OF HUNDREDS -->
-            <section id="nest-of-hundreds" class="scroll-mt-20">
-                <div class="card-hover bg-white rounded-2xl p-6 border-2 border-cozy-rose/50">
-                    <div class="flex items-start gap-4 mb-4">
-                        <div class="w-16 h-16 bg-cozy-rose/20 rounded-2xl flex items-center justify-center">
-                            <span class="text-3xl">🐦</span>
-                        </div>
-                        <div class="flex-1">
-                            <div class="flex items-center gap-2 mb-1">
-                                <h2 class="font-display text-2xl font-bold">Nest of Hundreds Event</h2>
-                                <span class="bg-purple-100 text-purple-700 px-2 py-0.5 rounded text-xs">DG Level
-                                    8</span>
-                            </div>
-                            <p class="text-cozy-wood">Photograph rare birds in a timed bird-watching challenge!</p>
-                        </div>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 gap-4 mb-4">
-                        <div class="bg-cozy-rose/10 rounded-xl p-4">
-                            <h3 class="font-bold mb-2">📍 How to Start</h3>
-                            <ul class="text-sm text-cozy-wood space-y-1">
-                                <li>• Find the <strong>bird-calling device</strong></li>
-                                <li>• Location: <strong>Fishing Village Fountain</strong></li>
-                                <li>• Requires <strong>Birdwatching</strong> hobby</li>
-                            </ul>
-                        </div>
-                        <div class="bg-cozy-rose/10 rounded-xl p-4">
-                            <h3 class="font-bold mb-2">⏱️ Gameplay</h3>
-                            <ul class="text-sm text-cozy-wood space-y-1">
-                                <li>• Rare birds appear during event</li>
-                                <li>• Use binoculars to find birds</li>
-                                <li>• Photograph before they fly away</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="bg-yellow-50 rounded-xl p-4 border border-yellow-200">
-                        <h3 class="font-bold mb-2">🎯 Goals (Star Points)</h3>
-                        <div class="grid md:grid-cols-2 gap-4 text-sm">
-                            <div>
-                                <span class="text-cozy-wood">Personal Goal:</span>
-                                <span class="font-bold"> 30 star points</span>
-                            </div>
-                            <div>
-                                <span class="text-cozy-wood">Group Goal:</span>
-                                <span class="font-bold"> 150 star points total</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-4 bg-cozy-mint/20 rounded-xl p-4">
-                        <p class="text-sm text-cozy-wood"><strong>💡 Tips:</strong></p>
-                        <ul class="text-sm text-cozy-wood mt-1 space-y-1">
-                            <li>• You can photograph the <strong>same bird multiple times</strong></li>
-                            <li>• Focus on <strong>quantity over quality</strong> — spam pictures to reach goal faster!
-                            </li>
-                        </ul>
-                    </div>
-
-                    <a href="/events/nest-of-hundreds/"
-                        class="block mt-4 text-center bg-cozy-rose text-white font-bold py-3 px-6 rounded-xl hover:bg-cozy-rose/80 transition-colors">
-                        📖 Read Full Nest of Hundreds Guide →
-                    </a>
-                </div>
-            </section>
-
-            <!-- WINTER FROST 2026 -->
-            <section id="winter-2026" class="scroll-mt-20">
-                <div class="card-hover bg-white rounded-2xl p-6 border-2 border-cyan-300/50">
-                    <div class="flex items-start gap-4 mb-4">
-                        <div class="w-16 h-16 bg-cyan-100 rounded-2xl flex items-center justify-center">
-                            <span class="text-3xl">❄️</span>
-                        </div>
-                        <div class="flex-1">
-                            <div class="flex items-center gap-2 mb-1">
-                                <h2 class="font-display text-2xl font-bold">Winter Frost 2026</h2>
-                                <span class="bg-orange-100 text-orange-700 px-2 py-0.5 rounded text-xs">Limited
-                                    Time</span>
-                            </div>
-                            <p class="text-cozy-wood">Special winter event with snow sculpting, exclusive items &
-                                festive activities!</p>
-                        </div>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 gap-4 mb-4">
-                        <div class="bg-cyan-50 rounded-xl p-4">
-                            <h3 class="font-bold mb-2">📍 Location</h3>
-                            <ul class="text-sm text-cozy-wood space-y-1">
-                                <li>• <strong>Onsen Mountain</strong></li>
-                                <li>• Winter Utopia Station</li>
-                                <li>• Onsen Mountain Park</li>
-                            </ul>
-                        </div>
-                        <div class="bg-cyan-50 rounded-xl p-4">
-                            <h3 class="font-bold mb-2">🎯 Activities</h3>
-                            <ul class="text-sm text-cozy-wood space-y-1">
-                                <li>• Snow Sculpting hobby unlock</li>
-                                <li>• Winter quests with Eric</li>
-                                <li>• Exclusive winter items</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="bg-yellow-50 rounded-xl p-4 border border-yellow-200">
-                        <h3 class="font-bold mb-2">🎁 Features</h3>
-                        <div class="grid md:grid-cols-2 gap-4 text-sm">
-                            <div>
-                                <span class="text-cozy-wood">New Hobby:</span>
-                                <span class="font-bold"> Snow Sculpting (100 ⭐)</span>
-                            </div>
-                            <div>
-                                <span class="text-cozy-wood">Event NPCs:</span>
-                                <span class="font-bold"> Azure, Eric</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-4 bg-cozy-mint/20 rounded-xl p-4">
-                        <p class="text-sm text-cozy-wood"><strong>💡 Tip:</strong> Visit <strong>Azure</strong> at
-                            Winter Utopia Station to unlock Snow Sculpting for 100 Wishing Stars. Finish
-                            <strong>Eric's quests</strong> at Onsen Mountain Park for exclusive winter rewards!
-                        </p>
-                    </div>
-
-                    <a href="/events/winter-2026/"
-                        class="block mt-4 text-center bg-cyan-500 text-white font-bold py-3 px-6 rounded-xl hover:bg-cyan-600 transition-colors">
-                        📖 Read Full Winter 2026 Guide →
-                    </a>
-                </div>
-            </section>
-            <!-- TEA PARTY -->
-            <section id="tea-party" class="scroll-mt-20">
-                <div class="card-hover bg-white rounded-2xl p-6 border-2 border-pink-200">
-                    <div class="flex items-start gap-4 mb-4">
-                        <div class="w-16 h-16 bg-pink-100 rounded-2xl flex items-center justify-center">
-                            <span class="text-3xl">🫖</span>
-                        </div>
-                        <div class="flex-1">
-                            <div class="flex items-center gap-2 mb-1">
-                                <h2 class="font-display text-2xl font-bold">Tea Party Guide</h2>
-                                <span class="bg-pink-100 text-pink-700 px-2 py-0.5 rounded text-xs">Decor / Photo</span>
-                            </div>
-                            <p class="text-cozy-wood">Whimsical Tea Party items, hosting setup, and tea party photo task help.</p>
-                        </div>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 gap-4 mb-4">
-                        <div class="bg-pink-50 rounded-xl p-4">
-                            <h3 class="font-bold mb-2">📍 How to Use It</h3>
-                            <ul class="text-sm text-cozy-wood space-y-1">
-                                <li>• Build a tea table setup at home or in the garden</li>
-                                <li>• Add chairs, tea, cakes, flowers, and pastel decor</li>
-                                <li>• Take a new wide photo if the task asks for one</li>
-                            </ul>
-                        </div>
-                        <div class="bg-amber-50 rounded-xl p-4">
-                            <h3 class="font-bold mb-2">🎯 Covers</h3>
-                            <ul class="text-sm text-cozy-wood space-y-1">
-                                <li>• Whimsical Tea Party themed searches</li>
-                                <li>• How to host a tea party</li>
-                                <li>• Take a photo during the Tea Party</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <a href="/events/tea-party/"
-                        class="block mt-4 text-center bg-pink-500 text-white font-bold py-3 px-6 rounded-xl hover:bg-pink-600 transition-colors">
-                        📖 Read Full Tea Party Guide →
-                    </a>
-                </div>
-            </section>
-
-            <!-- 711 / 7-ELEVEN SEARCH CHECK -->
-            <section id="711-collaboration" class="scroll-mt-20">
-                <div class="card-hover bg-white rounded-2xl p-6 border-2 border-gray-200">
-                    <div class="flex items-start gap-4 mb-4">
-                        <div class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center">
-                            <span class="text-3xl">🏪</span>
-                        </div>
-                        <div class="flex-1">
-                            <div class="flex items-center gap-2 mb-1">
-                                <h2 class="font-display text-2xl font-bold">Heartopia 711 / 7-Eleven Search Check</h2>
-                                <span class="bg-gray-100 text-gray-700 px-2 py-0.5 rounded text-xs">Not confirmed</span>
-                            </div>
-                            <p class="text-cozy-wood">As of July 8, 2026, this does not look like a verified Heartopia collaboration event.</p>
-                        </div>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 gap-4 mb-4">
-                        <div class="bg-gray-50 rounded-xl p-4">
-                            <h3 class="font-bold mb-2">What was found</h3>
-                            <ul class="text-sm text-cozy-wood space-y-1">
-                                <li>• Player-made 7/11 or convenience store builds</li>
-                                <li>• Reddit and social posts showing custom shops</li>
-                                <li>• No reliable official event page or reward list found</li>
-                            </ul>
-                        </div>
-                        <div class="bg-cozy-cream rounded-xl p-4">
-                            <h3 class="font-bold mb-2">Where to go instead</h3>
-                            <ul class="text-sm text-cozy-wood space-y-1">
-                                <li>• Use <a href="/guides/house-layouts/" class="text-cozy-coral underline">house layouts</a> for shop-style builds</li>
-                                <li>• Use <a href="/community/" class="text-cozy-coral underline">community links</a> for Reddit build posts</li>
-                                <li>• Check official channels before treating it as an event</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="bg-yellow-50 rounded-xl p-4 border border-yellow-200 text-sm text-cozy-wood">
-                        <strong class="text-cozy-bark">Quick answer:</strong> If you searched <strong>heartopia 711</strong>, you are most likely seeing player-made 7-Eleven style builds, not a confirmed 7-Eleven collaboration event.
-                    </div>
-                </div>
-            </section>
-        <div id="heartopia_in_content_2" class="heartopia-ad-slot max-w-6xl mx-auto px-4 my-6 text-center"></div>
-
-
-            <!-- UNLOCK PROGRESSION -->
-            <section class="bg-gradient-to-r from-cozy-peach/30 to-cozy-mint/30 rounded-xl p-6">
-                <h2 class="font-display text-xl font-bold mb-4">📈 Event Unlock Progression</h2>
-
-                <div class="flex flex-col md:flex-row gap-4 items-center justify-center">
-                    <div class="bg-white rounded-lg p-4 text-center border border-cozy-peach/50">
-                        <div class="text-2xl mb-1">🎣</div>
-                        <div class="font-bold">DG 7</div>
-                        <div class="text-xs text-cozy-wood">Sea Fishing</div>
-                    </div>
-                    <span class="text-2xl text-cozy-wood">→</span>
-                    <div class="bg-white rounded-lg p-4 text-center border border-cozy-peach/50">
-                        <div class="text-2xl mb-1">🦋</div>
-                        <div class="font-bold">DG 8</div>
-                        <div class="text-xs text-cozy-wood">Bait Insects</div>
-                    </div>
-                    <span class="text-2xl text-cozy-wood">+</span>
-                    <div class="bg-white rounded-lg p-4 text-center border border-cozy-peach/50">
-                        <div class="text-2xl mb-1">🐦</div>
-                        <div class="font-bold">DG 8</div>
-                        <div class="text-xs text-cozy-wood">Nest of Hundreds</div>
-                    </div>
-                </div>
-
-                <p class="text-sm text-cozy-wood text-center mt-4">Focus on reaching <strong>DG Level 7-8</strong> to
-                    unlock all current events!</p>
-            </section>
-
-        </article>
-
-        <!-- Related Guides -->
-        <section class="mt-12 pt-8 border-t border-cozy-peach/30">
-            <h2 class="font-bold text-xl mb-6">📚 Related Guides</h2>
-            <div class="grid md:grid-cols-2 gap-4">
-                <a href="/progression/dg-levels/"
-                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
-                    <span class="text-3xl">⬆️</span>
-                    <div>
-                        <h3 class="font-bold">DG Level Guide</h3>
-                        <p class="text-sm text-cozy-wood">How to unlock events faster</p>
-                    </div>
-                </a>
-                <a href="/hobbies/fishing/"
-                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
-                    <span class="text-3xl">🎣</span>
-                    <div>
-                        <h3 class="font-bold">Fishing Guide</h3>
-                        <p class="text-sm text-cozy-wood">Master fishing for events</p>
-                    </div>
-                </a>
-                <a href="/hobbies/insect-catching/"
-                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
-                    <span class="text-3xl">🦋</span>
-                    <div>
-                        <h3 class="font-bold">Insect Catching Guide</h3>
-                        <p class="text-sm text-cozy-wood">Prepare for Bait Insects</p>
-                    </div>
-                </a>
-                <a href="/hobbies/birdwatching/"
-                    class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
-                    <span class="text-3xl">🐦</span>
-                    <div>
-                        <h3 class="font-bold">Birdwatching Guide</h3>
-                        <p class="text-sm text-cozy-wood">Prepare for Nest of Hundreds</p>
-                    </div>
-                </a>
-            </div>
-        </section>
-        <div id="heartopia_in_content_3" class="heartopia-ad-slot max-w-6xl mx-auto px-4 my-6 text-center"></div>
+  <section class="mx-auto max-w-6xl px-5 py-12"><div class="grid gap-6 lg:grid-cols-[1.1fr_.9fr]"><div><p class="eyebrow text-[#bc536a]">Event quick check</p><h2 class="mt-2 text-3xl font-bold">Before you start an event</h2><ol class="mt-5 space-y-4 text-[#735f4d]"><li><strong class="text-[#2d241e]">1. Check server time.</strong> The event panel is the final authority for a live start, reset, and end time.</li><li><strong class="text-[#2d241e]">2. Check the entry condition.</strong> Some activities require a D.G. Member level or a completed main story quest.</li><li><strong class="text-[#2d241e]">3. Keep old-event rewards separate.</strong> Archive entries can help identify an item, but do not mean it is available today.</li></ol></div><div class="surface p-6"><h3 class="text-2xl font-bold">Useful event tools</h3><div class="mt-4 grid gap-3"><a class="cta-soft" href="/tools/daily-tasks/">Daily Tasks</a><a class="cta-soft" href="/tools/my-progress/">My Progress</a><a class="cta-soft" href="/codes/">Active Codes</a><a class="cta-soft" href="/guides/map/">Map & Locations</a></div></div></div>
+    <div class="mt-10 border-t border-[#eaded2] pt-8"><h2 class="text-3xl font-bold">Event FAQ</h2><div class="mt-5 grid gap-4 md:grid-cols-3"><article class="surface p-5"><h3 class="text-xl font-bold">How do I know an event is active?</h3><p class="mt-2 text-sm leading-6 text-[#735f4d]">Use the in-game event panel and server time. This calendar labels old events separately so their guides are not mistaken for active content.</p></article><article class="surface p-5"><h3 class="text-xl font-bold">Why is a past event still listed?</h3><p class="mt-2 text-sm leading-6 text-[#735f4d]">The archive helps with reward names, screenshots, and returning-event history. It does not indicate that an activity is currently open.</p></article><article class="surface p-5"><h3 class="text-xl font-bold">Is 711 confirmed as an event?</h3><p class="mt-2 text-sm leading-6 text-[#735f4d]">It is not included in this calendar without an official in-game or publisher announcement.</p></article></div></div>
+  </section>
 </main>
-
-    <!-- FOOTER -->
-    <footer class="bg-cozy-bark text-white py-8 mt-12">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <a href="/" class="inline-flex items-center gap-2 mb-4">
-                <span class="text-xl">🏡</span>
-                <span class="font-display font-bold">Heartopia<span class="text-cozy-sage">.Life</span></span>
-            </a>
-            <p class="text-white/60 text-sm mb-4">Unofficial fan site. Not affiliated with XD Entertainment.</p>
-            <p class="text-white/40 text-xs">© 2026 Heartopia.Life</p>
-        </div>
+<footer class="mt-16 border-t border-[#eaded2] bg-white">
+  <div class="mx-auto flex max-w-6xl flex-wrap justify-between gap-5 px-5 py-8 text-sm text-[#735f4d]">
+    <p>Heartopia Life is an independent fan guide. Game content and event availability can change in-game.</p>
+    <div class="flex gap-4"><a href="privacy/">Privacy</a><a href="contact/">Contact</a><a href="sitemap.xml">Sitemap</a></div>
+  </div>
 </footer>
-    <!-- NitroPay Ad Units -->
 <script>
-        if (window['nitroAds']) {
-            window['nitroAds'].createAd('heartopia_anchor', {
-                "format": "anchor-v2",
-                "anchor": "bottom",
-                "anchorBgColor": "rgb(0 0 0 / 80%)",
-                "anchorClose": true,
-                "anchorPersistClose": false,
-                "anchorStickyOffset": 0,
-                "mediaQuery": "(max-width: 1024px)",
-                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-right" }
-            });
-
-            window['nitroAds'].createAd('heartopia_floating_video', {
-                "format": "floating",
-                "floating": { "position": "left" },
-                "mediaQuery": "(min-width: 1025px)",
-                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-left" }
-            });
-
-            window['nitroAds'].createAd('heartopia_side_rail', {
-                "format": "rail",
-                "rail": "right",
-                "railOffsetTop": 0,
-                "railOffsetBottom": 0,
-                "railCollisionWhitelist": [],
-                "railCloseColor": "#666666",
-                "railSpacing": 10,
-                "railStack": false,
-                "railStickyTop": 70,
-                "railVerticalAlign": "top",
-                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-left" },
-                "mediaQuery": "(min-width: 1025px)"
-            });
-
-            window['nitroAds'].createAd('heartopia_in_content', {
-                "format": "display",
-                "sizes": [[970, 90], [970, 250], [728, 90], [300, 250], [320, 100], [320, 50]],
-                "collapseEmpty": true,
-                "renderVisibleOnly": true,
-                "visibleMargin": 800,
-                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "bottom-right" }
-            });
-            window['nitroAds'].createAd('heartopia_in_content_2', {
-                "format": "display",
-                "sizes": [[970, 90], [970, 250], [728, 90], [300, 250], [320, 100], [320, 50]],
-                "collapseEmpty": true,
-                "renderVisibleOnly": true,
-                "visibleMargin": 800,
-                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "bottom-right" }
-            });
-            window['nitroAds'].createAd('heartopia_in_content_3', {
-                "format": "display",
-                "sizes": [[970, 90], [970, 250], [728, 90], [300, 250], [320, 100], [320, 50]],
-                "collapseEmpty": true,
-                "renderVisibleOnly": true,
-                "visibleMargin": 800,
-                "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "bottom-right" }
-            });
-        }
-    </script>
-</body>
-
-</html>
+(function(){
+  function createAds(){if(window.__heartopiaEventsAdsInitialized)return;window.__heartopiaEventsAdsInitialized=true;
+    if(!window.nitroAds||!window.nitroAds.createAd)return;
+    window.nitroAds.createAd('heartopia_anchor',{format:'anchor-v2',anchor:'bottom',anchorBgColor:'rgb(0 0 0 / 80%)',anchorClose:true,anchorPersistClose:false,anchorStickyOffset:0,mediaQuery:'(max-width: 1024px)',report:{enabled:true,icon:true,wording:'Report Ad',position:'top-right'}});
+    window.nitroAds.createAd('heartopia_floating_video',{format:'floating',mediaQuery:'(min-width: 1025px)',report:{enabled:true,icon:true,wording:'Report Ad',position:'top-left'}});
+    window.nitroAds.createAd('heartopia_side_rail',{format:'rail',rail:'right',railOffsetTop:0,railOffsetBottom:0,railCollisionWhitelist:[],railCloseColor:'#666666',railSpacing:10,railStack:false,railStickyTop:70,railVerticalAlign:'top',mediaQuery:'(min-width: 1025px)',report:{enabled:true,icon:true,wording:'Report Ad',position:'top-left'}});
+    window.nitroAds.createAd('heartopia_in_content',{format:'display',sizes:[[300,250],[336,280],[728,90]],mediaQuery:'(min-width: 0px)',report:{enabled:true,icon:true,wording:'Report Ad',position:'bottom-right'}});
+    window.nitroAds.createAd('heartopia_in_content_2',{format:'display',sizes:[[300,250],[336,280],[728,90]],mediaQuery:'(min-width: 0px)',report:{enabled:true,icon:true,wording:'Report Ad',position:'bottom-right'}});
+  }
+  if(window.nitroAds&&window.nitroAds.loaded)createAds();else document.addEventListener('nitroAds.loaded',createAds,{once:true});
+})();
+</script>
+</body></html>
