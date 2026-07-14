@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRJ91G3VRR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-FRJ91G3VRR');
+    </script>
+
+    <title>Heartopia Search: Fish, Recipes, NPCs and More</title>
+    <meta name="description" content="Search the Heartopia database in one place. Find fish, insects, birds, recipes, ingredients, items, NPCs, wildlife, and crops by name, alias, location, level, or price.">
+    <meta name="keywords" content="heartopia search, heartopia database search, heartopia fish, heartopia recipes, heartopia NPCs, heartopia items">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://heartopia.life/tools/search/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Heartopia Search: Fish, Recipes, NPCs and More">
+    <meta property="og:description" content="Find Heartopia database entries by name, alias, location, level, price, and more.">
+    <meta property="og:url" content="https://heartopia.life/tools/search/">
+    <meta property="og:site_name" content="Heartopia.Life">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cozy: {
+                            cream: '#FFF8F0',
+                            peach: '#FFE5D9',
+                            coral: '#FF9B85',
+                            rose: '#D4A5A5',
+                            sage: '#A8C686',
+                            mint: '#B8E0D2',
+                            sky: '#95C8D8',
+                            wood: '#8B7355',
+                            bark: '#5D4E37'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Georgia', 'serif'],
+                        body: ['system-ui', '-apple-system', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .search-chip { transition: border-color .18s ease, background-color .18s ease, color .18s ease; }
+        .search-result-card { transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+        .search-result-card:hover { transform: translateY(-2px); border-color: #FF9B85; box-shadow: 0 10px 20px rgba(139, 115, 85, .12); }
+        .search-type { display: inline-flex; align-items: center; border-radius: 9999px; padding: .2rem .55rem; font-size: .7rem; font-weight: 700; line-height: 1; }
+        .search-type-fish { background: rgba(149, 200, 216, .24); color: #346b7e; }
+        .search-type-insects { background: rgba(168, 198, 134, .25); color: #536a36; }
+        .search-type-birds { background: rgba(184, 224, 210, .45); color: #356f62; }
+        .search-type-recipes { background: rgba(255, 229, 217, .8); color: #a4503e; }
+        .search-type-ingredients { background: rgba(254, 243, 199, .75); color: #8b5b16; }
+        .search-type-items { background: rgba(221, 214, 254, .65); color: #6246a3; }
+        .search-type-npcs { background: rgba(252, 231, 243, .8); color: #a44f79; }
+        .search-type-wildlife { background: rgba(220, 252, 231, .75); color: #437252; }
+        .search-type-crops { background: rgba(236, 252, 203, .7); color: #55783b; }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "name": "Heartopia Search",
+          "url": "https://heartopia.life/tools/search/",
+          "applicationCategory": "ReferenceApplication",
+          "operatingSystem": "Any",
+          "description": "Search Heartopia fish, insects, birds, recipes, ingredients, items, NPCs, wildlife, and crops from one database tool."
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://heartopia.life/" },
+            { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://heartopia.life/tools/" },
+            { "@type": "ListItem", "position": 3, "name": "Search", "item": "https://heartopia.life/tools/search/" }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What can I search on Heartopia.Life?",
+              "acceptedAnswer": { "@type": "Answer", "text": "You can search fish, insects, birds, recipes, ingredients, items, NPCs, wildlife, and crops from the Heartopia database." }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Heartopia Search understand alternate spellings?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Yes. The search matches names, partial names, common alternate spellings, aliases, locations, roles, and selected item details. For example, Picaso can find Picasso Bug." }
+            },
+            {
+              "@type": "Question",
+              "name": "Where do search results open?",
+              "acceptedAnswer": { "@type": "Answer", "text": "A result opens its existing detail page when one is available. Otherwise it opens the matching database category with that name already entered in its search field." }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
+    <script data-cfasync="false" async src="https://s.nitropay.com/ads-2368.js"></script>
+</head>
+
+<body class="bg-cozy-cream text-cozy-bark font-body">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-cozy-peach/50">
+        <nav class="max-w-6xl mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center gap-2 group" aria-label="Heartopia.Life Home">
+                    <img src="/favicon-96x96.png" alt="Heartopia.Life" class="w-7 h-7">
+                    <span class="font-display text-xl font-bold text-cozy-bark group-hover:text-cozy-coral transition-colors">Heartopia<span class="text-cozy-sage">.Life</span></span>
+                </a>
+                <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+                    <li><a href="/guides/map/" class="hover:text-cozy-coral transition-colors">Map</a></li>
+                    <li><a href="/codes/" class="hover:text-cozy-coral transition-colors">Codes</a></li>
+                    <li><a href="/guides/" class="hover:text-cozy-coral transition-colors">Guides</a></li>
+                    <li><a href="/database/" class="hover:text-cozy-coral transition-colors">Database</a></li>
+                    <li><a href="/tools/" class="hover:text-cozy-coral transition-colors">Tools</a></li>
+                    <li><a href="/tools/search/" class="text-cozy-coral font-bold transition-colors">Search</a></li>
+                </ul>
+                <button class="md:hidden p-2 hover:bg-cozy-peach/50 rounded-lg" aria-label="Open menu" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-cozy-peach/50 pt-4">
+                <ul class="flex flex-col gap-3 text-sm font-medium">
+                    <li><a href="/guides/map/" class="py-2 hover:text-cozy-coral">Map</a></li>
+                    <li><a href="/codes/" class="py-2 hover:text-cozy-coral">Codes</a></li>
+                    <li><a href="/guides/" class="py-2 hover:text-cozy-coral">Guides</a></li>
+                    <li><a href="/database/" class="py-2 hover:text-cozy-coral">Database</a></li>
+                    <li><a href="/tools/" class="py-2 hover:text-cozy-coral">Tools</a></li>
+                    <li><a href="/tools/search/" class="py-2 text-cozy-coral font-bold">Search</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        <nav class="text-sm text-cozy-wood mb-6" aria-label="Breadcrumb">
+            <a href="/" class="hover:text-cozy-coral">Home</a><span class="mx-2">/</span><a href="/tools/" class="hover:text-cozy-coral">Tools</a><span class="mx-2">/</span><span class="font-medium text-cozy-bark">Search</span>
+        </nav>
+
+        <section class="bg-gradient-to-br from-cozy-sky/35 via-white to-cozy-mint/45 rounded-2xl p-6 md:p-9 mb-8 border border-white/80">
+            <p class="text-sm font-bold text-cozy-sage mb-3">Heartopia database finder</p>
+            <h1 class="font-display text-3xl md:text-5xl font-bold text-cozy-bark">Search Heartopia</h1>
+            <p class="text-lg text-cozy-wood max-w-3xl mt-4">Find a named fish, insect, bird, recipe, ingredient, item, NPC, wildlife entry, or crop without choosing the right database first.</p>
+            <p class="text-sm text-cozy-wood mt-3"><strong id="universal-search-total">Loading</strong> entries are ready to search<span id="universal-search-updated" class="hidden"></span>.</p>
+
+            <div class="relative mt-6 max-w-4xl">
+                <label for="universal-search-input" class="sr-only">Search the Heartopia database</label>
+                <input id="universal-search-input" type="search" autocomplete="off" spellcheck="false" placeholder="Try Picasso, bluefin tuna, Naniwa, wheat, or a location..." class="w-full rounded-xl border-2 border-cozy-peach bg-white px-5 py-4 pr-20 text-base shadow-sm outline-none transition focus:border-cozy-coral" autofocus>
+                <button id="universal-search-clear" type="button" class="hidden absolute right-3 top-1/2 -translate-y-1/2 rounded-lg px-3 py-2 text-sm font-bold text-cozy-wood hover:bg-cozy-peach/50 hover:text-cozy-coral" aria-label="Clear search">Clear</button>
+            </div>
+        </section>
+
+        <section class="mb-8" aria-labelledby="search-filter-heading">
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+                <h2 id="search-filter-heading" class="font-display text-2xl font-bold">Choose a category</h2>
+                <p id="universal-search-status" class="text-sm font-medium text-cozy-wood" aria-live="polite">Loading database entries</p>
+            </div>
+            <div id="universal-search-types" class="flex flex-wrap gap-2" aria-label="Search categories">
+                <button type="button" data-search-type="all" class="search-chip rounded-lg border border-cozy-peach px-3 py-2 text-sm font-bold">All</button>
+                <button type="button" data-search-type="fish" class="search-chip rounded-lg border border-cozy-peach px-3 py-2 text-sm font-bold">Fish</button>
+                <button type="button" data-search-type="insects" class="search-chip rounded-lg border border-cozy-peach px-3 py-2 text-sm font-bold">Insects</button>
+                <button type="button" data-search-type="birds" class="search-chip rounded-lg border border-cozy-peach px-3 py-2 text-sm font-bold">Birds</button>
+                <button type="button" data-search-type="recipes" class="search-chip rounded-lg border border-cozy-peach px-3 py-2 text-sm font-bold">Recipes</button>
+                <button type="button" data-search-type="ingredients" class="search-chip rounded-lg border border-cozy-peach px-3 py-2 text-sm font-bold">Ingredients</button>
+                <button type="button" data-search-type="items" class="search-chip rounded-lg border border-cozy-peach px-3 py-2 text-sm font-bold">Items</button>
+                <button type="button" data-search-type="npcs" class="search-chip rounded-lg border border-cozy-peach px-3 py-2 text-sm font-bold">NPCs</button>
+                <button type="button" data-search-type="wildlife" class="search-chip rounded-lg border border-cozy-peach px-3 py-2 text-sm font-bold">Wildlife</button>
+                <button type="button" data-search-type="crops" class="search-chip rounded-lg border border-cozy-peach px-3 py-2 text-sm font-bold">Crops</button>
+            </div>
+        </section>
+
+        <section aria-live="polite" aria-label="Search results">
+            <div id="universal-search-results" class="grid gap-3"></div>
+            <div class="mt-5 text-center">
+                <button id="universal-search-more" type="button" class="hidden rounded-lg border border-cozy-coral bg-white px-4 py-2.5 text-sm font-bold text-cozy-coral hover:bg-cozy-peach/40"></button>
+            </div>
+        </section>
+
+        <div id="heartopia_in_content" class="heartopia-ad-slot my-8 text-center"></div>
+
+        <section class="grid lg:grid-cols-[1.1fr_0.9fr] gap-6 mb-10">
+            <div class="bg-white border border-cozy-peach/40 rounded-2xl p-6">
+                <h2 class="font-display text-2xl font-bold">How to use the finder</h2>
+                <ol class="mt-4 grid sm:grid-cols-3 gap-4 text-sm text-cozy-wood">
+                    <li class="rounded-xl bg-cozy-cream p-4"><strong class="block text-cozy-bark text-base">1. Search a clue</strong><span class="block mt-2">Enter a name, a partial spelling, a location, role, price, or recipe item.</span></li>
+                    <li class="rounded-xl bg-cozy-cream p-4"><strong class="block text-cozy-bark text-base">2. Narrow it down</strong><span class="block mt-2">Choose Fish, NPCs, Recipes, or another category when you know the type.</span></li>
+                    <li class="rounded-xl bg-cozy-cream p-4"><strong class="block text-cozy-bark text-base">3. Open the result</strong><span class="block mt-2">Go straight to a detail guide or to the matching row in its database.</span></li>
+                </ol>
+            </div>
+            <aside class="bg-cozy-bark text-white rounded-2xl p-6">
+                <h2 class="font-display text-2xl font-bold">Useful next steps</h2>
+                <p class="text-white/75 mt-3 text-sm">After finding an entry, use the collection pages to mark what you have caught, found, grown, or met.</p>
+                <div class="mt-5 flex flex-col gap-3 text-sm font-bold">
+                    <a href="/tools/my-progress/" class="text-cozy-mint hover:text-white">Open My Progress</a>
+                    <a href="/database/" class="text-cozy-mint hover:text-white">Browse the database hub</a>
+                    <a href="/guides/map/" class="text-cozy-mint hover:text-white">Use the map finder</a>
+                </div>
+            </aside>
+        </section>
+
+        <section class="bg-white border border-cozy-peach/40 rounded-2xl p-6">
+            <h2 class="font-display text-2xl font-bold">Search questions</h2>
+            <div class="grid md:grid-cols-3 gap-5 mt-5 text-sm text-cozy-wood">
+                <div><h3 class="font-bold text-cozy-bark">Can I search a misspelling?</h3><p class="mt-2">Yes. The finder checks partial names and common aliases. For example, Picaso also finds Picasso Bug.</p></div>
+                <div><h3 class="font-bold text-cozy-bark">Why does a result open a database list?</h3><p class="mt-2">Not every entry has a separate guide yet. Those results open the right database with the name already filled in.</p></div>
+                <div><h3 class="font-bold text-cozy-bark">Is a login required?</h3><p class="mt-2">No. Searching is available immediately and does not require an account.</p></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-cozy-bark text-white py-8 mt-12">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <a href="/" class="inline-flex items-center gap-2 mb-4"><img src="/favicon-96x96.png" alt="Heartopia.Life" class="w-6 h-6"><span class="font-display font-bold">Heartopia<span class="text-cozy-sage">.Life</span></span></a>
+            <p class="text-white/60 text-sm">Unofficial fan guide. Not affiliated with XD Entertainment.</p>
+            <p class="text-white/40 text-xs mt-4">Copyright 2026 Heartopia.Life</p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/universal-search.js"></script>
+    <script>
+        if (window['nitroAds']) {
+            window['nitroAds'].createAd('heartopia_anchor', {
+                format: 'anchor-v2', anchor: 'bottom', anchorBgColor: 'rgb(0 0 0 / 80%)', anchorClose: true, anchorPersistClose: false,
+                mediaQuery: '(max-width: 1024px)', report: { enabled: true, icon: true, wording: 'Report Ad', position: 'top-right' }
+            });
+            window['nitroAds'].createAd('heartopia_side_rail', {
+                format: 'rail', rail: 'right', railOffsetTop: 0, railOffsetBottom: 0, railCloseColor: '#666666', railSpacing: 10, railStack: false, railStickyTop: 70, railVerticalAlign: 'top',
+                mediaQuery: '(min-width: 1025px)', report: { enabled: true, icon: true, wording: 'Report Ad', position: 'top-left' }
+            });
+            window['nitroAds'].createAd('heartopia_floating_video', {
+                format: 'floating', floating: { position: 'left' }, mediaQuery: '(min-width: 1025px)',
+                report: { enabled: true, icon: true, wording: 'Report Ad', position: 'top-left' }
+            });
+            window['nitroAds'].createAd('heartopia_in_content', {
+                format: 'display', sizes: [[970, 90], [970, 250], [728, 90], [300, 250], [320, 100], [320, 50]],
+                collapseEmpty: true, renderVisibleOnly: true, visibleMargin: 800,
+                report: { enabled: true, icon: true, wording: 'Report Ad', position: 'bottom-right' }
+            });
+        }
+    </script>
+</body>
+
+</html>
