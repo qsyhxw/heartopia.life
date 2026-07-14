@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-07-14",
-  "count": 570,
+  "count": 580,
   "typeOrder": [
     "fish",
     "insects",
@@ -10,7 +10,8 @@
     "items",
     "npcs",
     "wildlife",
-    "crops"
+    "crops",
+    "flowers"
   ],
   "entries": [
     {
@@ -8581,6 +8582,176 @@
       "listingHref": "/database/crops/?search=White%20Radish",
       "meta": "Vegetable | 10 G | 15m",
       "searchText": "white radish crop vegetable 10 g 15m white radish quick up to 1 hour steak w mashed white radish creamy white radish soup house salad smoked fish bagel"
+    },
+    {
+      "id": "flowers:black-flower",
+      "name": "Black Flower",
+      "normalized": "black flower",
+      "aliases": [
+        "Black Flower",
+        "Black 3 star flower",
+        "3 star Black flower"
+      ],
+      "type": "Flower",
+      "typeKey": "flowers",
+      "image": "/img/flowers/Black-Flower-3-Star.webp",
+      "href": "/database/flowers/?search=Black%20Flower",
+      "listingHref": "/database/flowers/?search=Black%20Flower",
+      "meta": "Black | 3-star | Hybrid color form",
+      "searchText": "black flower flower black 3 star hybrid color form black flower black 3 star flower 3 star black flower possible result from a compatible 2 star pairing 2 star 2 star 2 star 3 star 3 star 3 star 3 star 4 star same flower species mature and ready flowers daily check after server reset use as a compatible parent while working toward a 4 star result star tier 3"
+    },
+    {
+      "id": "flowers:blue-flower",
+      "name": "Blue Flower",
+      "normalized": "blue flower",
+      "aliases": [
+        "Blue Flower",
+        "Blue 4 star flower",
+        "4 star Blue flower"
+      ],
+      "type": "Flower",
+      "typeKey": "flowers",
+      "image": "/img/flowers/Blue-Flower-4-Star.webp",
+      "href": "/database/flowers/?search=Blue%20Flower",
+      "listingHref": "/database/flowers/?search=Blue%20Flower",
+      "meta": "Blue | 4-star | High-tier hybrid form",
+      "searchText": "blue flower flower blue 4 star high tier hybrid form blue flower blue 4 star flower 4 star blue flower possible result from a compatible 3 star pairing 3 star 3 star 3 star 4 star 4 star 4 star same flower species mature and ready flowers daily check after server reset use as a compatible parent while working toward a 5 star result star tier 4"
+    },
+    {
+      "id": "flowers:crystal-flower",
+      "name": "Crystal Flower",
+      "normalized": "crystal flower",
+      "aliases": [
+        "Crystal Flower",
+        "Crystal 5 star flower",
+        "5 star Crystal flower"
+      ],
+      "type": "Flower",
+      "typeKey": "flowers",
+      "image": "/img/flowers/Crystal-Flower-5-Star.webp",
+      "href": "/database/flowers/?search=Crystal%20Flower",
+      "listingHref": "/database/flowers/?search=Crystal%20Flower",
+      "meta": "Crystal | 5-star | Maximum documented flower tier",
+      "searchText": "crystal flower flower crystal 5 star maximum documented flower tier crystal flower crystal 5 star flower 5 star crystal flower possible result from a 4 star 4 star pairing 4 star 4 star same flower species mature and ready flowers daily check after server reset 5 star flowers do not provide seeds harvest them to reopen a breeding tile star tier 5"
+    },
+    {
+      "id": "flowers:green-flower",
+      "name": "Green Flower",
+      "normalized": "green flower",
+      "aliases": [
+        "Green Flower",
+        "Green 4 star flower",
+        "4 star Green flower"
+      ],
+      "type": "Flower",
+      "typeKey": "flowers",
+      "image": "/img/flowers/Green-Flower-4-Star.webp",
+      "href": "/database/flowers/?search=Green%20Flower",
+      "listingHref": "/database/flowers/?search=Green%20Flower",
+      "meta": "Green | 4-star | High-tier hybrid form",
+      "searchText": "green flower flower green 4 star high tier hybrid form green flower green 4 star flower 4 star green flower possible result from a compatible 3 star pairing 3 star 3 star 3 star 4 star 4 star 4 star same flower species mature and ready flowers daily check after server reset use as a compatible parent while working toward a 5 star result star tier 4"
+    },
+    {
+      "id": "flowers:orange-flower",
+      "name": "Orange Flower",
+      "normalized": "orange flower",
+      "aliases": [
+        "Orange Flower",
+        "Orange 2 star flower",
+        "2 star Orange flower"
+      ],
+      "type": "Flower",
+      "typeKey": "flowers",
+      "image": "/img/flowers/Orange-Flower-2-Star.webp",
+      "href": "/database/flowers/?search=Orange%20Flower",
+      "listingHref": "/database/flowers/?search=Orange%20Flower",
+      "meta": "Orange | 2-star | Hybrid color form",
+      "searchText": "orange flower flower orange 2 star hybrid color form orange flower orange 2 star flower 2 star orange flower possible result from a compatible 1 star pairing 1 star 1 star 1 star 2 star 2 star 2 star 2 star 3 star same flower species mature and ready flowers daily check after server reset use as a compatible parent while working toward a 3 star result star tier 2"
+    },
+    {
+      "id": "flowers:peach-flower",
+      "name": "Peach Flower",
+      "normalized": "peach flower",
+      "aliases": [
+        "Peach Flower",
+        "Peach 3 star flower",
+        "3 star Peach flower"
+      ],
+      "type": "Flower",
+      "typeKey": "flowers",
+      "image": "/img/flowers/Peach-Flower-3-Star.webp",
+      "href": "/database/flowers/?search=Peach%20Flower",
+      "listingHref": "/database/flowers/?search=Peach%20Flower",
+      "meta": "Peach | 3-star | Hybrid color form",
+      "searchText": "peach flower flower peach 3 star hybrid color form peach flower peach 3 star flower 3 star peach flower possible result from a compatible 2 star pairing 2 star 2 star 2 star 3 star 3 star 3 star 3 star 4 star same flower species mature and ready flowers daily check after server reset use as a compatible parent while working toward a 4 star result star tier 3"
+    },
+    {
+      "id": "flowers:pink-flower",
+      "name": "Pink Flower",
+      "normalized": "pink flower",
+      "aliases": [
+        "Pink Flower",
+        "Pink 2 star flower",
+        "2 star Pink flower"
+      ],
+      "type": "Flower",
+      "typeKey": "flowers",
+      "image": "/img/flowers/Pink-Flower-2-Star.webp",
+      "href": "/database/flowers/?search=Pink%20Flower",
+      "listingHref": "/database/flowers/?search=Pink%20Flower",
+      "meta": "Pink | 2-star | Hybrid color form",
+      "searchText": "pink flower flower pink 2 star hybrid color form pink flower pink 2 star flower 2 star pink flower possible result from a compatible 1 star pairing 1 star 1 star 1 star 2 star 2 star 2 star 2 star 3 star same flower species mature and ready flowers daily check after server reset use as a compatible parent while working toward a 3 star result star tier 2"
+    },
+    {
+      "id": "flowers:red-flower",
+      "name": "Red Flower",
+      "normalized": "red flower",
+      "aliases": [
+        "Red Flower",
+        "Red 1 star flower",
+        "1 star Red flower"
+      ],
+      "type": "Flower",
+      "typeKey": "flowers",
+      "image": "/img/flowers/Red-Flower-1-Star.webp",
+      "href": "/database/flowers/?search=Red%20Flower",
+      "listingHref": "/database/flowers/?search=Red%20Flower",
+      "meta": "Red | 1-star | Starter color form",
+      "searchText": "red flower flower red 1 star starter color form red flower red 1 star flower 1 star red flower starter tier or a 1 star compatible breeding result 1 star 1 star 1 star 2 star same flower species mature and ready flowers daily check after server reset use as a starting parent in a same species flower bed star tier 1"
+    },
+    {
+      "id": "flowers:white-flower",
+      "name": "White Flower",
+      "normalized": "white flower",
+      "aliases": [
+        "White Flower",
+        "White 1 star flower",
+        "1 star White flower"
+      ],
+      "type": "Flower",
+      "typeKey": "flowers",
+      "image": "/img/flowers/White-Flower-1-Star.webp",
+      "href": "/database/flowers/?search=White%20Flower",
+      "listingHref": "/database/flowers/?search=White%20Flower",
+      "meta": "White | 1-star | Starter color form",
+      "searchText": "white flower flower white 1 star starter color form white flower white 1 star flower 1 star white flower starter tier or a 1 star compatible breeding result 1 star 1 star 1 star 2 star same flower species mature and ready flowers daily check after server reset use as a starting parent in a same species flower bed star tier 1"
+    },
+    {
+      "id": "flowers:yellow-flower",
+      "name": "Yellow Flower",
+      "normalized": "yellow flower",
+      "aliases": [
+        "Yellow Flower",
+        "Yellow 1 star flower",
+        "1 star Yellow flower"
+      ],
+      "type": "Flower",
+      "typeKey": "flowers",
+      "image": "/img/flowers/Yellow-Flower-1-Star.webp",
+      "href": "/database/flowers/?search=Yellow%20Flower",
+      "listingHref": "/database/flowers/?search=Yellow%20Flower",
+      "meta": "Yellow | 1-star | Starter color form",
+      "searchText": "yellow flower flower yellow 1 star starter color form yellow flower yellow 1 star flower 1 star yellow flower starter tier or a 1 star compatible breeding result 1 star 1 star 1 star 2 star same flower species mature and ready flowers daily check after server reset use as a starting parent in a same species flower bed star tier 1"
     }
   ]
 }

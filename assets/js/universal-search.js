@@ -9,10 +9,11 @@
     items: 'Items',
     npcs: 'NPCs',
     wildlife: 'Wildlife',
-    crops: 'Crops'
+    crops: 'Crops',
+    flowers: 'Flowers'
   };
 
-  const typeOrder = ['fish', 'insects', 'birds', 'recipes', 'ingredients', 'items', 'npcs', 'wildlife', 'crops'];
+  const typeOrder = ['fish', 'insects', 'birds', 'recipes', 'ingredients', 'items', 'npcs', 'wildlife', 'crops', 'flowers'];
   const maxVisible = 30;
   const elements = {
     input: document.getElementById('universal-search-input'),
@@ -243,7 +244,7 @@
       elements.input.focus();
     } catch (error) {
       elements.status.textContent = 'Search is temporarily unavailable';
-      elements.results.innerHTML = `<div class="bg-white border border-cozy-peach rounded-xl p-6 text-center"><h2 class="font-display text-2xl font-bold">Open a database category</h2><p class="text-cozy-wood mt-2">Use a category below while the search list loads again.</p><div class="mt-4 flex flex-wrap justify-center gap-3"><a class="font-bold text-cozy-coral hover:underline" href="/database/fish/">Fish</a><a class="font-bold text-cozy-coral hover:underline" href="/database/insects/">Insects</a><a class="font-bold text-cozy-coral hover:underline" href="/database/birds/">Birds</a><a class="font-bold text-cozy-coral hover:underline" href="/database/recipes/">Recipes</a><a class="font-bold text-cozy-coral hover:underline" href="/npcs/">NPCs</a></div></div>`;
+      elements.results.innerHTML = `<div class="bg-white border border-cozy-peach rounded-xl p-6 text-center"><h2 class="font-display text-2xl font-bold">Open a database category</h2><p class="text-cozy-wood mt-2">Use a category below while the search list loads again.</p><div class="mt-4 flex flex-wrap justify-center gap-3"><a class="font-bold text-cozy-coral hover:underline" href="/database/fish/">Fish</a><a class="font-bold text-cozy-coral hover:underline" href="/database/insects/">Insects</a><a class="font-bold text-cozy-coral hover:underline" href="/database/birds/">Birds</a><a class="font-bold text-cozy-coral hover:underline" href="/database/flowers/">Flowers</a><a class="font-bold text-cozy-coral hover:underline" href="/database/recipes/">Recipes</a><a class="font-bold text-cozy-coral hover:underline" href="/npcs/">NPCs</a></div></div>`;
     }
   }
 

@@ -12,15 +12,15 @@
         gtag('config', 'G-FRJ91G3VRR');
     </script>
 
-    <title>Heartopia Search: Fish, Recipes, NPCs and More</title>
-    <meta name="description" content="Search the Heartopia database in one place. Find fish, insects, birds, recipes, ingredients, items, NPCs, wildlife, and crops by name, alias, location, level, or price.">
-    <meta name="keywords" content="heartopia search, heartopia database search, heartopia fish, heartopia recipes, heartopia NPCs, heartopia items">
+    <title>Heartopia Search: Fish, Flowers, Recipes, NPCs and More</title>
+    <meta name="description" content="Search the Heartopia database in one place. Find fish, insects, birds, flowers, recipes, ingredients, items, NPCs, wildlife, and crops by name, alias, location, level, or price.">
+    <meta name="keywords" content="heartopia search, heartopia database search, heartopia fish, heartopia flowers, heartopia recipes, heartopia NPCs, heartopia items">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://heartopia.life/tools/search/">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Heartopia Search: Fish, Recipes, NPCs and More">
-    <meta property="og:description" content="Find Heartopia database entries by name, alias, location, level, price, and more.">
+    <meta property="og:title" content="Heartopia Search: Fish, Flowers, Recipes, NPCs and More">
+    <meta property="og:description" content="Find Heartopia database entries, including flower color forms and star tiers, by name, alias, location, level, price, and more.">
     <meta property="og:url" content="https://heartopia.life/tools/search/">
     <meta property="og:site_name" content="Heartopia.Life">
     <meta name="twitter:card" content="summary_large_image">
@@ -72,6 +72,7 @@
         .search-type-npcs { background: rgba(252, 231, 243, .8); color: #a44f79; }
         .search-type-wildlife { background: rgba(220, 252, 231, .75); color: #437252; }
         .search-type-crops { background: rgba(236, 252, 203, .7); color: #55783b; }
+        .search-type-flowers { background: rgba(251, 207, 232, .72); color: #9d174d; }
     </style>
 
     <script type="application/ld+json">
@@ -84,7 +85,7 @@
           "url": "https://heartopia.life/tools/search/",
           "applicationCategory": "ReferenceApplication",
           "operatingSystem": "Any",
-          "description": "Search Heartopia fish, insects, birds, recipes, ingredients, items, NPCs, wildlife, and crops from one database tool."
+          "description": "Search Heartopia fish, insects, birds, flowers, recipes, ingredients, items, NPCs, wildlife, and crops from one database tool."
         },
         {
           "@type": "BreadcrumbList",
@@ -100,7 +101,7 @@
             {
               "@type": "Question",
               "name": "What can I search on Heartopia.Life?",
-              "acceptedAnswer": { "@type": "Answer", "text": "You can search fish, insects, birds, recipes, ingredients, items, NPCs, wildlife, and crops from the Heartopia database." }
+              "acceptedAnswer": { "@type": "Answer", "text": "You can search fish, insects, birds, flowers, recipes, ingredients, items, NPCs, wildlife, and crops from the Heartopia database." }
             },
             {
               "@type": "Question",
@@ -163,12 +164,12 @@
         <section class="bg-gradient-to-br from-cozy-sky/35 via-white to-cozy-mint/45 rounded-2xl p-6 md:p-9 mb-8 border border-white/80">
             <p class="text-sm font-bold text-cozy-sage mb-3">Heartopia database finder</p>
             <h1 class="font-display text-3xl md:text-5xl font-bold text-cozy-bark">Search Heartopia</h1>
-            <p class="text-lg text-cozy-wood max-w-3xl mt-4">Find a named fish, insect, bird, recipe, ingredient, item, NPC, wildlife entry, or crop without choosing the right database first.</p>
+            <p class="text-lg text-cozy-wood max-w-3xl mt-4">Find a named fish, insect, bird, flower form, recipe, ingredient, item, NPC, wildlife entry, or crop without choosing the right database first.</p>
             <p class="text-sm text-cozy-wood mt-3"><strong id="universal-search-total">Loading</strong> entries are ready to search<span id="universal-search-updated" class="hidden"></span>.</p>
 
             <div class="relative mt-6 max-w-4xl">
                 <label for="universal-search-input" class="sr-only">Search the Heartopia database</label>
-                <input id="universal-search-input" type="search" autocomplete="off" spellcheck="false" placeholder="Try Picasso, bluefin tuna, Naniwa, wheat, or a location..." class="w-full rounded-xl border-2 border-cozy-peach bg-white px-5 py-4 pr-20 text-base shadow-sm outline-none transition focus:border-cozy-coral" autofocus>
+                <input id="universal-search-input" type="search" autocomplete="off" spellcheck="false" placeholder="Try Picasso, bluefin tuna, pink flower, Naniwa, wheat, or a location..." class="w-full rounded-xl border-2 border-cozy-peach bg-white px-5 py-4 pr-20 text-base shadow-sm outline-none transition focus:border-cozy-coral" autofocus>
                 <button id="universal-search-clear" type="button" class="hidden absolute right-3 top-1/2 -translate-y-1/2 rounded-lg px-3 py-2 text-sm font-bold text-cozy-wood hover:bg-cozy-peach/50 hover:text-cozy-coral" aria-label="Clear search">Clear</button>
             </div>
         </section>
@@ -189,6 +190,7 @@
                 <button type="button" data-search-type="npcs" class="search-chip rounded-lg border border-cozy-peach px-3 py-2 text-sm font-bold">NPCs</button>
                 <button type="button" data-search-type="wildlife" class="search-chip rounded-lg border border-cozy-peach px-3 py-2 text-sm font-bold">Wildlife</button>
                 <button type="button" data-search-type="crops" class="search-chip rounded-lg border border-cozy-peach px-3 py-2 text-sm font-bold">Crops</button>
+                <button type="button" data-search-type="flowers" class="search-chip rounded-lg border border-cozy-peach px-3 py-2 text-sm font-bold">Flowers</button>
             </div>
         </section>
 

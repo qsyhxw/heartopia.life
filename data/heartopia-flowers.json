@@ -1,0 +1,378 @@
+{
+  "generatedAt": "2026-07-14",
+  "count": 10,
+  "sourceUrl": "https://www.heartodex.com/en/flowers/",
+  "rules": {
+    "resetTime": "After 6:00 AM server time",
+    "sameSpecies": "Only flowers of the same type can crossbreed.",
+    "colorRule": "Color does not determine whether a seed appears. Star compatibility controls the breeding range.",
+    "starRule": "Use equal stars or a one-star difference. A gap of two or more stars cannot crossbreed.",
+    "watering": "More people watering ready flowers can improve the chance of success, with up to five helpers.",
+    "layout": "A 3 by 3 bed keeps parent pairs readable. A highest-star center flower can reach the eight surrounding flowers.",
+    "maxTier": "5-star flowers do not provide seeds."
+  },
+  "pairings": [
+    {
+      "id": "1-1",
+      "parents": [
+        1,
+        1
+      ],
+      "label": "1-star + 1-star",
+      "outcomes": [
+        1,
+        2
+      ],
+      "result": "1 to 2 stars",
+      "use": "Starter bed and first hybrid attempts."
+    },
+    {
+      "id": "1-2",
+      "parents": [
+        1,
+        2
+      ],
+      "label": "1-star + 2-star",
+      "outcomes": [
+        1,
+        2
+      ],
+      "result": "1 to 2 stars",
+      "use": "Keep a lower-tier hybrid loop active."
+    },
+    {
+      "id": "2-2",
+      "parents": [
+        2,
+        2
+      ],
+      "label": "2-star + 2-star",
+      "outcomes": [
+        2,
+        3
+      ],
+      "result": "2 to 3 stars",
+      "use": "Work toward a 3-star form."
+    },
+    {
+      "id": "2-3",
+      "parents": [
+        2,
+        3
+      ],
+      "label": "2-star + 3-star",
+      "outcomes": [
+        2,
+        3
+      ],
+      "result": "2 to 3 stars",
+      "use": "Maintain a 2 to 3-star breeding bed."
+    },
+    {
+      "id": "3-3",
+      "parents": [
+        3,
+        3
+      ],
+      "label": "3-star + 3-star",
+      "outcomes": [
+        3,
+        4
+      ],
+      "result": "3 to 4 stars",
+      "use": "Work toward a 4-star form."
+    },
+    {
+      "id": "3-4",
+      "parents": [
+        3,
+        4
+      ],
+      "label": "3-star + 4-star",
+      "outcomes": [
+        3,
+        4
+      ],
+      "result": "3 to 4 stars",
+      "use": "Maintain a 3 to 4-star breeding bed."
+    },
+    {
+      "id": "4-4",
+      "parents": [
+        4,
+        4
+      ],
+      "label": "4-star + 4-star",
+      "outcomes": [
+        4,
+        5
+      ],
+      "result": "4 to 5 stars",
+      "use": "Your route to a 5-star crystal flower."
+    }
+  ],
+  "flowers": [
+    {
+      "id": "red-flower-1-star",
+      "name": "Red Flower",
+      "color": "Red",
+      "stars": 1,
+      "role": "Starter color form",
+      "breedingSource": "Starter tier or a 1-star compatible breeding result",
+      "parentPairs": [
+        "1-star + 1-star",
+        "1-star + 2-star"
+      ],
+      "possibleResults": [
+        "1 to 2 stars",
+        "1 to 2 stars"
+      ],
+      "conditions": [
+        "Same flower species",
+        "Mature and ready flowers",
+        "Daily check after server reset"
+      ],
+      "use": "Use as a starting parent in a same-species flower bed.",
+      "image": "/img/flowers/Red-Flower-1-Star.webp"
+    },
+    {
+      "id": "yellow-flower-1-star",
+      "name": "Yellow Flower",
+      "color": "Yellow",
+      "stars": 1,
+      "role": "Starter color form",
+      "breedingSource": "Starter tier or a 1-star compatible breeding result",
+      "parentPairs": [
+        "1-star + 1-star",
+        "1-star + 2-star"
+      ],
+      "possibleResults": [
+        "1 to 2 stars",
+        "1 to 2 stars"
+      ],
+      "conditions": [
+        "Same flower species",
+        "Mature and ready flowers",
+        "Daily check after server reset"
+      ],
+      "use": "Use as a starting parent in a same-species flower bed.",
+      "image": "/img/flowers/Yellow-Flower-1-Star.webp"
+    },
+    {
+      "id": "white-flower-1-star",
+      "name": "White Flower",
+      "color": "White",
+      "stars": 1,
+      "role": "Starter color form",
+      "breedingSource": "Starter tier or a 1-star compatible breeding result",
+      "parentPairs": [
+        "1-star + 1-star",
+        "1-star + 2-star"
+      ],
+      "possibleResults": [
+        "1 to 2 stars",
+        "1 to 2 stars"
+      ],
+      "conditions": [
+        "Same flower species",
+        "Mature and ready flowers",
+        "Daily check after server reset"
+      ],
+      "use": "Use as a starting parent in a same-species flower bed.",
+      "image": "/img/flowers/White-Flower-1-Star.webp"
+    },
+    {
+      "id": "pink-flower-2-star",
+      "name": "Pink Flower",
+      "color": "Pink",
+      "stars": 2,
+      "role": "Hybrid color form",
+      "breedingSource": "Possible result from a compatible 1-star pairing",
+      "parentPairs": [
+        "1-star + 1-star",
+        "1-star + 2-star",
+        "2-star + 2-star",
+        "2-star + 3-star"
+      ],
+      "possibleResults": [
+        "1 to 2 stars",
+        "1 to 2 stars",
+        "2 to 3 stars",
+        "2 to 3 stars"
+      ],
+      "conditions": [
+        "Same flower species",
+        "Mature and ready flowers",
+        "Daily check after server reset"
+      ],
+      "use": "Use as a compatible parent while working toward a 3-star result.",
+      "image": "/img/flowers/Pink-Flower-2-Star.webp"
+    },
+    {
+      "id": "orange-flower-2-star",
+      "name": "Orange Flower",
+      "color": "Orange",
+      "stars": 2,
+      "role": "Hybrid color form",
+      "breedingSource": "Possible result from a compatible 1-star pairing",
+      "parentPairs": [
+        "1-star + 1-star",
+        "1-star + 2-star",
+        "2-star + 2-star",
+        "2-star + 3-star"
+      ],
+      "possibleResults": [
+        "1 to 2 stars",
+        "1 to 2 stars",
+        "2 to 3 stars",
+        "2 to 3 stars"
+      ],
+      "conditions": [
+        "Same flower species",
+        "Mature and ready flowers",
+        "Daily check after server reset"
+      ],
+      "use": "Use as a compatible parent while working toward a 3-star result.",
+      "image": "/img/flowers/Orange-Flower-2-Star.webp"
+    },
+    {
+      "id": "black-flower-3-star",
+      "name": "Black Flower",
+      "color": "Black",
+      "stars": 3,
+      "role": "Hybrid color form",
+      "breedingSource": "Possible result from a compatible 2-star pairing",
+      "parentPairs": [
+        "2-star + 2-star",
+        "2-star + 3-star",
+        "3-star + 3-star",
+        "3-star + 4-star"
+      ],
+      "possibleResults": [
+        "2 to 3 stars",
+        "2 to 3 stars",
+        "3 to 4 stars",
+        "3 to 4 stars"
+      ],
+      "conditions": [
+        "Same flower species",
+        "Mature and ready flowers",
+        "Daily check after server reset"
+      ],
+      "use": "Use as a compatible parent while working toward a 4-star result.",
+      "image": "/img/flowers/Black-Flower-3-Star.webp"
+    },
+    {
+      "id": "peach-flower-3-star",
+      "name": "Peach Flower",
+      "color": "Peach",
+      "stars": 3,
+      "role": "Hybrid color form",
+      "breedingSource": "Possible result from a compatible 2-star pairing",
+      "parentPairs": [
+        "2-star + 2-star",
+        "2-star + 3-star",
+        "3-star + 3-star",
+        "3-star + 4-star"
+      ],
+      "possibleResults": [
+        "2 to 3 stars",
+        "2 to 3 stars",
+        "3 to 4 stars",
+        "3 to 4 stars"
+      ],
+      "conditions": [
+        "Same flower species",
+        "Mature and ready flowers",
+        "Daily check after server reset"
+      ],
+      "use": "Use as a compatible parent while working toward a 4-star result.",
+      "image": "/img/flowers/Peach-Flower-3-Star.webp"
+    },
+    {
+      "id": "blue-flower-4-star",
+      "name": "Blue Flower",
+      "color": "Blue",
+      "stars": 4,
+      "role": "High-tier hybrid form",
+      "breedingSource": "Possible result from a compatible 3-star pairing",
+      "parentPairs": [
+        "3-star + 3-star",
+        "3-star + 4-star",
+        "4-star + 4-star"
+      ],
+      "possibleResults": [
+        "3 to 4 stars",
+        "3 to 4 stars",
+        "4 to 5 stars"
+      ],
+      "conditions": [
+        "Same flower species",
+        "Mature and ready flowers",
+        "Daily check after server reset"
+      ],
+      "use": "Use as a compatible parent while working toward a 5-star result.",
+      "image": "/img/flowers/Blue-Flower-4-Star.webp"
+    },
+    {
+      "id": "green-flower-4-star",
+      "name": "Green Flower",
+      "color": "Green",
+      "stars": 4,
+      "role": "High-tier hybrid form",
+      "breedingSource": "Possible result from a compatible 3-star pairing",
+      "parentPairs": [
+        "3-star + 3-star",
+        "3-star + 4-star",
+        "4-star + 4-star"
+      ],
+      "possibleResults": [
+        "3 to 4 stars",
+        "3 to 4 stars",
+        "4 to 5 stars"
+      ],
+      "conditions": [
+        "Same flower species",
+        "Mature and ready flowers",
+        "Daily check after server reset"
+      ],
+      "use": "Use as a compatible parent while working toward a 5-star result.",
+      "image": "/img/flowers/Green-Flower-4-Star.webp"
+    },
+    {
+      "id": "crystal-flower-5-star",
+      "name": "Crystal Flower",
+      "color": "Crystal",
+      "stars": 5,
+      "role": "Maximum documented flower tier",
+      "breedingSource": "Possible result from a 4-star + 4-star pairing",
+      "parentPairs": [
+        "4-star + 4-star"
+      ],
+      "possibleResults": [
+        "4 to 5 stars"
+      ],
+      "conditions": [
+        "Same flower species",
+        "Mature and ready flowers",
+        "Daily check after server reset"
+      ],
+      "use": "5-star flowers do not provide seeds. Harvest them to reopen a breeding tile.",
+      "image": "/img/flowers/Crystal-Flower-5-Star.webp"
+    }
+  ],
+  "tools": [
+    {
+      "id": "rainbow-bag",
+      "name": "Rainbow Bag",
+      "effect": "Guarantees a successful hybridization check.",
+      "image": "/img/flowers/Rainbow-Bag.webp"
+    },
+    {
+      "id": "rainbow-bouquet",
+      "name": "Rainbow Bouquet",
+      "effect": "Can trigger the Rainbow Bag effect when watering ready flowers.",
+      "image": "/img/flowers/Rainbow-Bouquet.webp"
+    }
+  ]
+}

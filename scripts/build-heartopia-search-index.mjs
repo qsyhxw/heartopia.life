@@ -93,7 +93,7 @@ function aliasesFor(name, extra = []) {
   ]);
 }
 
-const typeOrder = ['fish', 'insects', 'birds', 'recipes', 'ingredients', 'items', 'npcs', 'wildlife', 'crops'];
+const typeOrder = ['fish', 'insects', 'birds', 'recipes', 'ingredients', 'items', 'npcs', 'wildlife', 'crops', 'flowers'];
 const entries = [];
 
 function addEntry({ type, typeKey, name, image, href, listingHref, meta, aliases = [], extraSearch = [] }) {
@@ -251,6 +251,22 @@ for (const item of crops) {
   });
 }
 
+const flowers = readJson('data/heartopia-flowers.json').flowers;
+for (const item of flowers) {
+  const listingHref = `/database/flowers/?search=${encodeURIComponent(item.name)}`;
+  addEntry({
+    type: 'Flower',
+    typeKey: 'flowers',
+    name: item.name,
+    image: item.image,
+    href: listingHref,
+    listingHref,
+    meta: joinMeta([item.color, `${item.stars}-star`, item.role]),
+    aliases: [`${item.color} ${item.stars} star flower`, `${item.stars} star ${item.color} flower`],
+    extraSearch: [item.breedingSource, ...(item.parentPairs || []), ...(item.conditions || []), item.use, `star tier ${item.stars}`]
+  });
+}
+
 entries.sort((left, right) => {
   const typeDifference = typeOrder.indexOf(left.typeKey) - typeOrder.indexOf(right.typeKey);
   return typeDifference || left.name.localeCompare(right.name, 'en');
@@ -275,6 +291,7 @@ const queryTargets = [
   'database/items/index.html',
   'database/wildlife/index.html',
   'database/crops/index.html',
+  'database/flowers/index.html',
   'npcs/index.html'
 ];
 

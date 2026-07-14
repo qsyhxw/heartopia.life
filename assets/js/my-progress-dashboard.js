@@ -6,6 +6,7 @@
         { id: 'birds', title: 'Birds photographed', icon: '&#128038;', image: '/img/birds/African-Olive-Pigeon.webp', storageKey: 'heartopia.collection.birds', total: 97, url: '/database/birds/', action: 'Open bird database', color: 'coral' },
         { id: 'wildlife', title: 'Wildlife found', icon: '&#128062;', image: '/img/wildlife/Capybara.webp', storageKey: 'heartopia.collection.wildlife', total: 10, url: '/database/wildlife/', action: 'Open wildlife database', color: 'mint' },
         { id: 'crops', title: 'Crops harvested', icon: '&#127806;', image: '/img/crops/Grape.webp', storageKey: 'heartopia.collection.crops', total: 17, url: '/database/crops/', action: 'Open crops database', color: 'gold' },
+        { id: 'flowers', title: 'Flowers grown', icon: '', image: '/img/flowers/Pink-Flower-2-Star.webp', storageKey: 'heartopia.collection.flowers', total: 10, url: '/database/flowers/', action: 'Open flowers database', color: 'flower' },
         { id: 'recipes', title: 'Recipes learned', icon: '&#127859;', image: '/img/recipes/Afternoon-Tea.webp', storageKey: 'heartopia.database.recipes.learned.v2', total: 168, url: '/database/recipes/', action: 'Open recipe database', color: 'recipe' },
         { id: 'achievements', title: 'Achievements earned', icon: '&#127942;', image: '/img/achievements/Collector.webp', storageKey: 'heartopia.achievements.earned', total: 63, url: '/guides/achievements/', action: 'Open achievements', color: 'achievement' },
         { id: 'collectibles', title: 'Collectibles found', icon: '&#129525;', image: '/img/collectibles/Apple.webp', storageKey: 'heartopia.collection.collectibles', total: 37, url: '/database/collectibles/', action: 'Open collectibles', color: 'forest' },
@@ -27,7 +28,8 @@
         cream: 'bg-amber-50 border-amber-200 text-amber-700',
         npc: 'bg-violet-100 border-violet-300 text-violet-700',
         recipe: 'bg-orange-100 border-orange-300 text-orange-700',
-        achievement: 'bg-yellow-100 border-yellow-300 text-yellow-700'
+        achievement: 'bg-yellow-100 border-yellow-300 text-yellow-700',
+        flower: 'bg-pink-100 border-pink-300 text-pink-700'
     };
 
     function readArray(key) {
