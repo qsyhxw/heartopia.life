@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-14",
+  "source": "https://www.heartodex.com/en/events/",
+  "policy": {
+    "mode": "auto-publish-listing-facts",
+    "images": "Source image URLs are recorded for review only. Third-party images are not downloaded or copied automatically."
+  },
+  "events": [
+    {
+      "slug": "call-of-whales",
+      "localSlug": "call-of-whales",
+      "name": "Call of Whales",
+      "status": "active",
+      "type": "Fashionwave",
+      "startDate": "July 11, 2026",
+      "endDate": "August 22, 2026",
+      "dateLabel": "Jul 11 → Aug 22, 2026",
+      "requirements": "",
+      "sourceUrl": "https://www.heartodex.com/en/events/call-of-whales"
+    },
+    {
+      "slug": "midsummer-rhyme",
+      "localSlug": "midsummer-rhyme",
+      "name": "Midsummer Rhyme",
+      "status": "archive",
+      "type": "",
+      "startDate": "",
+      "endDate": "",
+      "dateLabel": "Jun 19 – Jul 6",
+      "requirements": "",
+      "sourceUrl": "https://www.heartodex.com/en/events/midsummer-rhyme"
+    },
+    {
+      "slug": "rainbow-verse",
+      "localSlug": "rainbow-verse",
+      "name": "Rainbow Verse",
+      "status": "archive",
+      "type": "",
+      "startDate": "",
+      "endDate": "",
+      "dateLabel": "May 28 – Jun 22",
+      "requirements": "",
+      "sourceUrl": "https://www.heartodex.com/en/events/rainbow-verse"
+    },
+    {
+      "slug": "modular-streets",
+      "localSlug": "modular-streets",
+      "name": "Modular Streets",
+      "status": "archive",
+      "type": "",
+      "startDate": "",
+      "endDate": "",
+      "dateLabel": "May 9 – Jun 20",
+      "requirements": "",
+      "sourceUrl": "https://www.heartodex.com/en/events/modular-streets"
+    },
+    {
+      "slug": "maltese",
+      "localSlug": "maltese",
+      "name": "Maltese",
+      "status": "archive",
+      "type": "",
+      "startDate": "",
+      "endDate": "",
+      "dateLabel": "Apr 30 – May 25",
+      "requirements": "",
+      "sourceUrl": "https://www.heartodex.com/en/events/maltese"
+    },
+    {
+      "slug": "pleasant-goat-and-big-big-wolf",
+      "localSlug": "pleasant-goat-and-big-big-wolf",
+      "name": "Pleasant Goat and Big Big Wolf",
+      "status": "archive",
+      "type": "",
+      "startDate": "",
+      "endDate": "",
+      "dateLabel": "Mar 28 – Apr 27",
+      "requirements": "",
+      "sourceUrl": "https://www.heartodex.com/en/events/pleasant-goat-and-big-big-wolf"
+    },
+    {
+      "slug": "dreamlight-cinematics",
+      "localSlug": "dreamlight-cinematics",
+      "name": "Dreamlight Cinematics",
+      "status": "archive",
+      "type": "",
+      "startDate": "",
+      "endDate": "",
+      "dateLabel": "Mar 21 – May 9",
+      "requirements": "",
+      "sourceUrl": "https://www.heartodex.com/en/events/dreamlight-cinematics"
+    },
+    {
+      "slug": "my-little-pony",
+      "localSlug": "my-little-pony-collaboration",
+      "name": "My Little Pony",
+      "status": "archive",
+      "type": "",
+      "startDate": "",
+      "endDate": "",
+      "dateLabel": "Feb 14 – Mar 24",
+      "requirements": "",
+      "sourceUrl": "https://www.heartodex.com/en/events/my-little-pony"
+    },
+    {
+      "slug": "winter-frost-season",
+      "localSlug": "winter-2026",
+      "name": "Winter Frost Season",
+      "status": "archive",
+      "type": "",
+      "startDate": "",
+      "endDate": "",
+      "dateLabel": "Jan 24 – Mar 14",
+      "requirements": "",
+      "sourceUrl": "https://www.heartodex.com/en/events/winter-frost-season"
+    },
+    {
+      "slug": "sanrio-characters-collaboration",
+      "localSlug": "sanrio-characters-collaboration",
+      "name": "Heartopia x SANRIO CHARACTERS",
+      "status": "upcoming",
+      "type": "Collaboration",
+      "startDate": "",
+      "endDate": "",
+      "dateLabel": "July 17, 2026",
+      "requirements": "",
+      "sourceUrl": ""
+    }
+  ]
+}
