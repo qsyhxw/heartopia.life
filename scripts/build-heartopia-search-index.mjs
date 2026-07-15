@@ -282,6 +282,7 @@ const missingImages = entries.filter((entry) => !entry.image).map((entry) => `${
 write(output, `${JSON.stringify({ generatedAt, count: entries.length, typeOrder, entries }, null, 2)}\n`);
 
 const queryHelper = '<script src="/assets/js/database-search-query.js"></script>';
+const queryHelperPattern = /<script\s+src=(["'])\/assets\/js\/database-search-query\.js(?:\?[^"']*)?\1\s*><\/script>/gi;
 const queryTargets = [
   'database/fish/index.html',
   'database/insects/index.html',
@@ -297,10 +298,16 @@ const queryTargets = [
 
 for (const file of queryTargets) {
   const html = read(file);
-  if (!html.includes(queryHelper)) {
-    if (!html.includes('</body>')) throw new Error(`Could not add query helper to ${file}`);
-    write(file, html.replace('</body>', `${queryHelper}</body>`));
+  let matches = 0;
+  let next = html.replace(queryHelperPattern, (match) => {
+    matches += 1;
+    return matches === 1 ? match : '';
+  });
+  if (!matches) {
+    if (!next.includes('</body>')) throw new Error(`Could not add query helper to ${file}`);
+    next = next.replace('</body>', `${queryHelper}</body>`);
   }
+  if (next !== html) write(file, next);
 }
 
 console.log(`Built universal search index with ${entries.length} entries and ${localImages} local images.`);

@@ -39,10 +39,13 @@ const scriptPattern = /<script\b[^>]*\bsrc\s*=\s*["']\/assets\/js\/([A-Za-z0-9._
 let localScriptReferences = 0;
 for (const file of walk(root, '.html')) {
   const source = fs.readFileSync(file, 'utf8');
+  const pageScripts = new Set();
   for (const match of source.matchAll(scriptPattern)) {
     localScriptReferences += 1;
     const expected = assetVersion(match[1]);
     const page = path.relative(root, file).replace(/\\/g, '/');
+    check(!pageScripts.has(match[1]), `${page}: duplicate /assets/js/${match[1]} reference`);
+    pageScripts.add(match[1]);
     check(expected, `${page}: missing /assets/js/${match[1]}`);
     check(match[2], `${page}: /assets/js/${match[1]} has no content version`);
     check(!expected || match[2] === expected, `${page}: /assets/js/${match[1]} has stale version ${match[2] || '(none)'}, expected ${expected}`);
