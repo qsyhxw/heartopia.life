@@ -3,6 +3,7 @@ name: Sync Heartopia Fish Pages
 on:
   push:
     paths:
+      - '.github/workflows/sync-heartopia-fish-pages.yml'
       - 'database/fish/index.html'
       - 'data/heartopia-fish.json'
       - 'img/fish/**'

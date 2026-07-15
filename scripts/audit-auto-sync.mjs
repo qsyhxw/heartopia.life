@@ -128,6 +128,21 @@ for (const event of eventMonitor.events || []) {
   check(fs.existsSync(path.join(root, 'events', event.localSlug, 'index.html')), `Events: missing ${event.status} detail page /events/${event.localSlug}/`);
 }
 
+const workflowFiles = [
+  '.github/workflows/monitor-heartodex-collections.yml',
+  '.github/workflows/sync-heartopia-fish-pages.yml',
+  '.github/workflows/sync-heartopia-insects.yml',
+  '.github/workflows/update-heartopia-codes.yml'
+];
+for (const file of workflowFiles) {
+  check(read(file).includes('group: heartopia-derived-sync'), `${file}: shared concurrency group is missing`);
+}
+for (const file of ['.github/workflows/sync-heartopia-fish-pages.yml', '.github/workflows/sync-heartopia-insects.yml']) {
+  const workflow = read(file);
+  check(workflow.includes('ref: ${{ github.ref_name }}'), `${file}: checkout does not follow the latest triggering branch`);
+  check(workflow.includes(`- '${file}'`), `${file}: workflow changes do not trigger a validation run`);
+}
+
 notes.push(`${localScriptReferences} local script references use current content hashes`);
 notes.push(`My Progress and Database totals match ${Object.keys(totals).length} synchronized categories`);
 notes.push(`Universal Search matches 10 searchable categories`);

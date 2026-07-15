@@ -3,6 +3,7 @@ name: Sync Heartopia Insect Database
 on:
   push:
     paths:
+      - '.github/workflows/sync-heartopia-insects.yml'
       - 'data/heartopia-insects.json'
       - 'img/insects/**'
       - 'scripts/sync-insect-database.mjs'
