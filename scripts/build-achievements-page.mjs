@@ -1,6 +1,22 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// The live page is rendered by sync-heartodex-achievements.mjs so listing and
+// detail data update together. Prevent this retired fixed-size builder from
+// overwriting a newer synchronized page.
+{
+  const canonicalRoot = path.resolve(import.meta.dirname, '..');
+  const canonical = JSON.parse(fs.readFileSync(path.join(canonicalRoot, 'data', 'heartopia-achievements.json'), 'utf8'));
+  const canonicalCount = Array.isArray(canonical.achievements) ? canonical.achievements.length : 0;
+  const currentPage = fs.readFileSync(path.join(canonicalRoot, 'guides', 'achievements', 'index.html'), 'utf8');
+  if (!canonicalCount || Number(canonical.count) !== canonicalCount) throw new Error('Canonical achievement data is incomplete');
+  if (!currentPage.includes(`Heartopia Achievements List: ${canonicalCount} Badges & Titles`)) {
+    throw new Error('Achievement page is stale; run scripts/sync-heartodex-achievements.mjs');
+  }
+  console.log(`Achievement page is current with ${canonicalCount} canonical entries.`);
+  process.exit(0);
+}
+
 const root = process.cwd();
 const imageDir = path.join(root, 'img', 'achievements');
 const key = (value) => value.toLowerCase().replace(/[^a-z0-9]/g, '');

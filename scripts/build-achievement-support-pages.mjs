@@ -1,5 +1,10 @@
 import fs from 'node:fs';
 import path from 'node:path';
+
+// Compatibility entry point: the canonical-data builder replaces the retired
+// fixed-size implementation below without breaking older local commands.
+await import('./build-achievement-derived-pages.mjs');
+process.exit(0);
 const root=process.cwd();
 const dataPath=path.join(root,'data','achievement-details.json');
 const items=JSON.parse(fs.readFileSync(dataPath,'utf8'));

@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
 
 const root = path.resolve(import.meta.dirname, '..');
 const databaseRoots = [
@@ -8,7 +9,9 @@ const databaseRoots = [
     'database/wildlife',
     'database/materials'
 ];
-const scriptTag = '<script src="/assets/js/map-entity-links.js?v=20260715b"></script>';
+const mapScript = fs.readFileSync(path.join(root, 'assets/js/map-entity-links.js'), 'utf8').replace(/\r\n/g, '\n');
+const mapScriptVersion = createHash('sha256').update(mapScript).digest('hex').slice(0, 12);
+const scriptTag = `<script src="/assets/js/map-entity-links.js?v=${mapScriptVersion}"></script>`;
 const scriptPattern = /<script\s+src="\/assets\/js\/map-entity-links\.js(?:\?[^"\s>]*)?"\s*><\/script>/i;
 
 function walkForIndexFiles(directory) {

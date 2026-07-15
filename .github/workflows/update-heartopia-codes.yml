@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: heartopia-derived-sync
+  cancel-in-progress: false
+
 jobs:
   update-codes:
     runs-on: ubuntu-latest
