@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-15",
+  "trackedCategories": [
+    {
+      "id": "fish",
+      "label": "Fish",
+      "url": "/database/fish/"
+    },
+    {
+      "id": "birds",
+      "label": "Birds",
+      "url": "/database/birds/"
+    },
+    {
+      "id": "insects",
+      "label": "Insects",
+      "url": "/database/insects/"
+    },
+    {
+      "id": "wildlife",
+      "label": "Wildlife",
+      "url": "/database/wildlife/"
+    },
+    {
+      "id": "crops",
+      "label": "Crops",
+      "url": "/database/crops/"
+    },
+    {
+      "id": "flowers",
+      "label": "Flowers",
+      "url": "/database/flowers/"
+    },
+    {
+      "id": "recipes",
+      "label": "Recipes",
+      "url": "/database/recipes/"
+    },
+    {
+      "id": "achievements",
+      "label": "Achievements",
+      "url": "/guides/achievements/"
+    },
+    {
+      "id": "items",
+      "label": "Items",
+      "url": "/database/items/"
+    },
+    {
+      "id": "ingredients",
+      "label": "Ingredients",
+      "url": "/database/ingredients/"
+    },
+    {
+      "id": "collectibles",
+      "label": "Collectibles",
+      "url": "/database/collectibles/"
+    },
+    {
+      "id": "npcs",
+      "label": "NPCs",
+      "url": "/npcs/"
+    },
+    {
+      "id": "events",
+      "label": "Events",
+      "url": "/events/"
+    }
+  ],
+  "totals": {
+    "fish": 119,
+    "birds": 97,
+    "insects": 91,
+    "wildlife": 10,
+    "crops": 17,
+    "flowers": 10,
+    "recipes": 168,
+    "achievements": 63,
+    "items": 23,
+    "ingredients": 26,
+    "collectibles": 37,
+    "npcs": 19,
+    "events": 10
+  },
+  "entries": [
+    {
+      "id": "2026-07-15-tracking-launched",
+      "timestamp": "2026-07-15T00:00:00.000Z",
+      "date": "2026-07-15",
+      "title": "Automatic database change tracking is live",
+      "summary": "13 databases now publish real content changes",
+      "signature": "tracking-launch-v1",
+      "changes": [
+        {
+          "category": "Database",
+          "singular": "Database",
+          "categoryId": "database",
+          "action": "system",
+          "count": 13,
+          "label": "databases monitored",
+          "items": [
+            "Fish",
+            "Birds",
+            "Insects",
+            "Wildlife",
+            "Crops",
+            "Flowers",
+            "Recipes",
+            "Achievements",
+            "Items",
+            "Ingredients",
+            "Collectibles",
+            "NPCs",
+            "Events"
+          ],
+          "truncated": false,
+          "url": "/database/"
+        }
+      ]
+    }
+  ]
+}

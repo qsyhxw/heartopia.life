@@ -32,11 +32,6 @@ function replaceIfPresent(html, pattern, replacement) {
   return pattern.test(html) ? html.replace(pattern, replacement) : html;
 }
 
-function humanDate(value) {
-  const [year, month, day] = value.split('-').map(Number);
-  return new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(Date.UTC(year, month - 1, day)));
-}
-
 const monitored = readJson('data/monitor/heartodex-collections.json');
 const totals = {
   fish: collectionCount('heartopia-fish.json', 'fish'),
@@ -85,7 +80,6 @@ progress = replaceIfPresent(progress, /Track all \d+ residents/, `Track all ${to
 write('tools/my-progress/index.html', progress);
 
 let hub = read('database/index.html');
-hub = replaceOne(hub, /Updated [A-Z][a-z]+ \d{1,2}, \d{4}/, `Updated ${humanDate(updated)}`, 'database update date');
 hub = replaceOne(hub, /\d+ prices, recipe-use counts/, `${totals.ingredients} prices, recipe-use counts`, 'ingredient quick jump');
 hub = replaceOne(hub, /\d+ entries, filters, progress/, `${totals.collectibles} entries, filters, progress`, 'collectible quick jump');
 hub = replaceOne(hub, /\d+ tools, sellers, prices/, `${totals.items} tools, sellers, prices`, 'item quick jump');
