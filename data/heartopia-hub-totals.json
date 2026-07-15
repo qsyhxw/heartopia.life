@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14",
+  "updated": "2026-07-15",
   "totals": {
     "fish": 119,
     "insects": 91,
@@ -13,6 +13,6 @@
     "items": 23,
     "ingredients": 26,
     "npcs": 19,
-    "map": 38
+    "map": 46
   }
 }

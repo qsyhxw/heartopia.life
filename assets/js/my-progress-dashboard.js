@@ -13,7 +13,7 @@
         { id: 'items', title: 'Items owned', icon: '&#127890;', image: '/img/items/Amazing-Seasoning.webp', storageKey: 'heartopia.collection.items', total: 23, url: '/database/items/', action: 'Open items database', color: 'violet' },
         { id: 'ingredients', title: 'Ingredients stocked', icon: '&#129371;', image: '/img/ingredients/Butter.webp', storageKey: 'heartopia.collection.ingredients', total: 26, url: '/database/ingredients/', action: 'Open ingredients database', color: 'cream' },
         { id: 'npcs', title: 'NPCs met', icon: '&#128101;', image: '/img/npcs/Bailey-J.webp', storageKey: 'heartopia.collection.npcs', total: 19, url: '/npcs/', action: 'Open NPC directory', color: 'npc' },
-        { id: 'map', title: 'Map locations checked', icon: '&#128506;', storageKey: 'heartopia.map.visitedLocations', total: 38, url: '/guides/map/#location-tool', action: 'Open map finder', color: 'rose' }
+        { id: 'map', title: 'Map locations checked', icon: '&#128506;', storageKey: 'heartopia.map.visitedLocations', total: 46, url: '/guides/map/#location-tool', action: 'Open map finder', color: 'rose' }
     ];
 
     const colorClasses = {
