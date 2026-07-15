@@ -1,6 +1,7 @@
 (function () {
     const STORAGE_KEY = 'heartopia.map.visitedLocations';
     const TODAY_ROUTE_KEY = 'heartopia.map.todayRouteChecklist';
+    const FILTER_STATE_KEY = 'heartopia.map.filterState';
     const locations = [
         { name: 'Dorothy', type: 'npc', area: 'Central Town', tags: 'clothing store poster quest', note: 'Clothing store NPC unlocked through the poster quest.', link: '/guides/npc-locations/' },
         { name: 'Bob', type: 'npc', area: 'Central Town', tags: 'furniture store joinery tea table quest', note: 'Furniture store NPC tied to the joinery tea table quest.', link: '/guides/npc-locations/' },
@@ -12,7 +13,7 @@
         { name: 'Roaming Oak', type: 'npc', area: 'Home Lots', tags: 'rare timber tree daily moving resource', note: 'Moving tree NPC that can provide Roaming Oak Timber.', link: '/database/materials/roaming-oak-timber/' },
         { name: 'Alpaca', type: 'wildlife', area: 'Amethyst Beach', tags: 'wildlife alpaca sunny beach', note: 'Appears at Amethyst Beach in Sunny weather.', link: '/database/wildlife/' },
         { name: 'Bunny', type: 'wildlife', area: 'Suburbs', tags: 'wildlife bunny sunny suburbs', note: 'Appears in the Suburbs in Sunny weather.', link: '/database/wildlife/' },
-        { name: 'Capybara', type: 'wildlife', area: 'Ruins', tags: 'wildlife capybara ruins rainbow rainy', note: 'Appears in the Ruins in Rainbow or Rainy weather.', link: '/database/wildlife/' },
+        { name: 'Capybara', type: 'wildlife', area: 'Crater Lake', tags: 'wildlife capybara crater lake rainbow', note: 'Appears at Crater Lake in Rainbow weather.', link: '/database/wildlife/capybara/' },
         { name: 'Ferret', type: 'wildlife', area: 'Rosy River', tags: 'wildlife ferret rosy river rainbow', note: 'Appears at Rosy River in Rainbow weather.', link: '/database/wildlife/' },
         { name: 'Fox', type: 'wildlife', area: 'Flower Field', tags: 'wildlife fox meadow lake windmill rainbow', note: 'Appears in Windmill Flower Field, Amethyst Beach, or Meadow Lake in Rainbow weather.', link: '/database/wildlife/' },
         { name: 'Maltese', type: 'wildlife', area: 'Forest Island', tags: 'wildlife maltese forest island sunny', note: 'Listed in the Maltese category at Forest Island in Sunny weather.', link: '/database/wildlife/' },
@@ -25,13 +26,21 @@
         { name: 'Bamboo', type: 'resource', area: 'Forest', tags: 'panda forest southern area gathering', note: 'Southern forest gathering route near Panda habitat.', link: '/guides/map/#foraging' },
         { name: 'Fluorite Mine', type: 'resource', area: 'Onsen Mountain', tags: 'fluorite mineral mine crafting material', note: 'Mineral route for Fluorite and crafting materials.', link: '/database/materials/fluorite/' },
         { name: 'Black Truffle', type: 'resource', area: 'Forest Island', tags: 'truffle recipes respawn forest island', note: 'High-value ingredient route tied to Forest Island.', link: '/database/items/black-truffle/' },
+        { name: 'Flower Field Materials', type: 'resource', area: 'Flower Field', tags: 'highland poppy flower material gathering route', note: 'Broad Flower Field gathering route for flower materials; confirm the current in-game spawn before planning an exact stop.', link: '/database/materials/' },
         { name: 'Meadow Lake', type: 'fish', area: 'Flower Field', tags: 'butterfly koi lake fishing rain rainbow', note: 'Lake fishing spot connected to Butterfly Koi searches.', link: '/database/fish/butterfly-koi/' },
         { name: 'Any River', type: 'fish', area: 'River Routes', tags: 'tilapia river mermaid attractor fishing', note: 'Use river routes when hunting Tilapia and common river fish.', link: '/database/fish/tilapia/' },
         { name: 'Fishing Village Coast', type: 'fish', area: 'Fishing Village', tags: 'sea fishing sardine ocean coastal', note: 'Coastal route for sea fish and event fishing.', link: '/database/fish/sardine/' },
         { name: 'Whale Sea', type: 'fish', area: 'Sea', tags: 'seahorse whale sea fishing', note: 'Sea route connected to Seahorse and ocean fish.', link: '/database/fish/seahorse/' },
+        { name: 'Forest Lake Fishing', type: 'fish', area: 'Forest', tags: 'forest lake fishing freshwater', note: 'Route anchor for fish listings around Forest Lake; check the fish database for each target condition.', link: '/database/fish/' },
+        { name: 'Onsen Lake Fishing', type: 'fish', area: 'Onsen Mountain', tags: 'onsen mountain lake crater lake fishing freshwater', note: 'Route anchor for fish listings around Onsen Mountain and Crater Lake; check the fish database for each target condition.', link: '/database/fish/' },
         { name: 'Central Area Birds', type: 'bird', area: 'Central Area', tags: 'european robin magpie house sparrow photo', note: 'Easy birdwatching route for all-day birds.', link: '/guides/bird-locations/' },
         { name: 'Fishing Village Lighthouse Birds', type: 'bird', area: 'Fishing Village', tags: 'double barred finch lighthouse bird location', note: 'Bird route for Double-Barred Finch and village species.', link: '/database/birds/double-barred-finch/' },
         { name: 'Onsen Mountain Birds', type: 'bird', area: 'Onsen Mountain', tags: 'hawfinch golden pheasant crater lake bird', note: 'Route for Hawfinch and mountain bird searches.', link: '/database/birds/hawfinch/' },
+        { name: 'Forest Bird Route', type: 'bird', area: 'Forest', tags: 'forest lake forest island birdwatching', note: 'Broad birdwatching route for forest and Forest Lake listings; confirm each bird\'s conditions in the database.', link: '/database/birds/' },
+        { name: 'Flower Field Birds', type: 'bird', area: 'Flower Field', tags: 'flower field meadow lake birdwatching', note: 'Broad birdwatching route for Flower Field and Meadow Lake listings; confirm each bird\'s conditions in the database.', link: '/database/birds/' },
+        { name: 'Seaside Bird Route', type: 'bird', area: 'Coast', tags: 'beach coast sea birdwatching', note: 'Broad birdwatching route for beach and coast listings; confirm each bird\'s conditions in the database.', link: '/database/birds/' },
+        { name: 'Suburbs Bird Route', type: 'bird', area: 'Suburbs', tags: 'suburbs town birdwatching', note: 'Broad birdwatching route for Suburbs listings; confirm each bird\'s conditions in the database.', link: '/database/birds/' },
+        { name: 'Nest of Hundreds Birds', type: 'bird', area: 'Event Area', tags: 'nest of hundreds event bird peafowl macaw', note: 'Birdwatching route for entries tied to the Nest of Hundreds event area.', link: '/database/birds/' },
         { name: 'Flower Field Butterflies', type: 'insect', area: 'Flower Field', tags: 'purple emperor elegant flower beetle butterfly', note: 'Flower route for butterflies and flower beetles.', link: '/database/insects/' },
         { name: 'Forest Beetles', type: 'insect', area: 'Forest', tags: 'golden stag beetle hercules beetle night', note: 'Forest route for rare beetles and high-level catches.', link: '/database/insects/golden-stag-beetle/' },
         { name: 'Insect Attractor Route', type: 'insect', area: 'Home Lots', tags: 'sulkowskys morpho attractor home garden', note: 'Use attractor checks for special insect entries.', link: '/database/insects/sulkowskys-morpho/' },
@@ -56,7 +65,7 @@
     const dailyRoutes = [
         {
             id: 'daily-resource-route',
-            name: 'Daily Resource Route',
+            name: 'Daily Materials Route',
             emoji: '🧺',
             area: 'Mixed route',
             description: 'A fast material loop for mushrooms, timber, fluorite, bamboo, and Black Truffle checks.',
@@ -85,6 +94,30 @@
             area: 'Birds, fish, insects',
             description: 'A collection route for bird photos, fish spots, and insect areas.',
             items: ['Central Area Birds', 'Fishing Village Lighthouse Birds', 'Onsen Mountain Birds', 'Meadow Lake', 'Fishing Village Coast', 'Forest Beetles', 'Flower Field Butterflies']
+        },
+        {
+            id: 'rainy-insect-route',
+            name: 'Rainy Insect Route',
+            emoji: '☔',
+            area: 'Flower Field, Forest, Home Lots',
+            description: 'When Rainy weather is active, use this loop to check key insect areas. Confirm each insect\'s own weather and time in the database.',
+            items: ['Flower Field Butterflies', 'Forest Beetles', 'Insect Attractor Route']
+        },
+        {
+            id: 'rainbow-wildlife-route',
+            name: 'Rainbow Wildlife Route',
+            emoji: '🌈',
+            area: 'Flower Field, Crater Lake, Rosy River',
+            description: 'A focused route for the wildlife entries currently listed under Rainbow weather.',
+            items: ['Fox', 'Capybara', 'Ferret']
+        },
+        {
+            id: 'event-route',
+            name: 'Event Route',
+            emoji: '✨',
+            area: 'Fishing Village, Event Area, Onsen Mountain',
+            description: 'A quick event-area loop. Check the current in-game schedule before traveling to a limited activity.',
+            items: ['Sea Fishing Event', 'Nest of Hundreds', 'Meteor Shower Sites']
         }
     ];
 
@@ -104,6 +137,60 @@
         } catch (error) {
             return;
         }
+    }
+
+    function readFilterState() {
+        try {
+            const raw = localStorage.getItem(FILTER_STATE_KEY);
+            const value = raw ? JSON.parse(raw) : null;
+            return value && typeof value === 'object' ? value : {};
+        } catch (error) {
+            return {};
+        }
+    }
+
+    function getCurrentFilterState() {
+        const search = document.getElementById('map-location-search');
+        const type = document.getElementById('map-type-filter');
+        const area = document.getElementById('map-area-filter');
+        const hideVisited = document.getElementById('map-hide-visited');
+        return {
+            search: search ? search.value.trim() : '',
+            type: type ? type.value : 'all',
+            area: area ? area.value : 'all',
+            hideVisited: Boolean(hideVisited?.checked)
+        };
+    }
+
+    function saveFilterState(overrides = {}) {
+        try {
+            const prior = readFilterState();
+            const state = {
+                ...prior,
+                ...getCurrentFilterState(),
+                focus: prior.focus || '',
+                entity: prior.entity || '',
+                ...overrides,
+                savedAt: Date.now()
+            };
+            localStorage.setItem(FILTER_STATE_KEY, JSON.stringify(state));
+            return state;
+        } catch (error) {
+            return {};
+        }
+    }
+
+    function restoreFilterState() {
+        const state = readFilterState();
+        const search = document.getElementById('map-location-search');
+        const type = document.getElementById('map-type-filter');
+        const area = document.getElementById('map-area-filter');
+        const hideVisited = document.getElementById('map-hide-visited');
+        if (search && typeof state.search === 'string') search.value = state.search;
+        if (type && Object.prototype.hasOwnProperty.call(typeLabels, state.type)) type.value = state.type;
+        if (area && Array.from(area.options).some(option => option.value === state.area)) area.value = state.area;
+        if (hideVisited && typeof state.hideVisited === 'boolean') hideVisited.checked = state.hideVisited;
+        return state;
     }
 
     function slug(text) {
@@ -148,16 +235,30 @@
         return locations.find(item => item.name === name);
     }
 
-    function scrollToMap(item) {
+    function scrollToMap(item, entity = '') {
         const map = document.getElementById('interactive-map');
         const status = document.getElementById('map-focus-status');
         if (!map) return;
+        if (item) saveFilterState({ focus: item.name, entity });
         map.scrollIntoView({ behavior: 'smooth', block: 'start' });
         map.classList.add('ring-4', 'ring-cozy-coral/40');
         window.setTimeout(() => map.classList.remove('ring-4', 'ring-cozy-coral/40'), 1800);
         if (status && item) {
             status.classList.remove('hidden');
-            status.innerHTML = `<strong>Map focus:</strong> ${item.name} · ${item.area}. Use the map search or category filters to inspect this area, then return to the finder for the guide link.`;
+            const label = document.createElement('strong');
+            label.textContent = 'Map focus:';
+            const target = entity ? `${entity} -> ${item.name}` : item.name;
+            status.replaceChildren(label, document.createTextNode(` ${target} · ${item.area}. This is a route anchor; use the Location Finder filters below for the related database and guide links.`));
+        }
+    }
+
+    function withMapReturn(link) {
+        try {
+            const url = new URL(link, window.location.origin);
+            url.searchParams.set('map-return', '1');
+            return url.pathname + url.search + url.hash;
+        } catch (error) {
+            return link;
         }
     }
 
@@ -215,7 +316,7 @@
                         <span class="rounded-full bg-white px-2 py-1 border border-cozy-peach/40">${item.area}</span>
                         <span class="rounded-full bg-white px-2 py-1 border border-cozy-peach/40">${typeLabels[item.type]}</span>
                         <button type="button" class="map-focus-button text-cozy-coral font-bold hover:underline" data-location-id="${itemId}">Show on map</button>
-                        <a href="${item.link}" class="ml-auto text-cozy-coral font-bold hover:underline">Open guide</a>
+                        <a href="${withMapReturn(item.link)}" class="map-guide-link ml-auto text-cozy-coral font-bold hover:underline" data-location-id="${itemId}">Open guide</a>
                     </div>
                 </article>`;
         }).join('');
@@ -289,6 +390,7 @@
         document.getElementById('map-type-filter').value = 'all';
         document.getElementById('map-area-filter').value = 'all';
         document.getElementById('map-hide-visited').checked = false;
+        saveFilterState({ focus: '', entity: '' });
         renderLocations();
     }
 
@@ -298,37 +400,73 @@
         renderLocations();
     }
 
-    function applyUncollectedDeepLink() {
-        const params = new URLSearchParams(window.location.search);
-        if (params.get('progress') !== 'uncollected') return;
+    function showUncollectedNotice() {
         const toggle = document.getElementById('map-hide-visited');
         const panel = toggle?.closest('section');
-        if (!toggle) return;
-        const query = params.get('search')?.trim();
+        if (!toggle || document.getElementById('map-progress-filter-notice')) return;
+        const notice = document.createElement('div');
+        notice.id = 'map-progress-filter-notice';
+        notice.className = 'mb-4 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-cozy-sky/40 bg-cozy-sky/10 px-4 py-3 text-sm text-cozy-bark';
+        notice.innerHTML = '<span><strong>Uncollected only</strong> is active.</span><button type="button" class="font-bold text-cozy-coral hover:underline">Show all</button>';
+        notice.querySelector('button')?.addEventListener('click', function () {
+            const url = new URL(window.location.href);
+            url.searchParams.delete('progress');
+            window.location.href = url.pathname + url.search + url.hash;
+        });
+        panel?.parentNode?.insertBefore(notice, panel.nextSibling);
+    }
+
+    function applyNavigationState() {
+        const prior = restoreFilterState();
+        const params = new URLSearchParams(window.location.search);
         const search = document.getElementById('map-location-search');
-        if (query && search) search.value = query;
-        toggle.checked = true;
-        if (!document.getElementById('map-progress-filter-notice')) {
-            const notice = document.createElement('div');
-            notice.id = 'map-progress-filter-notice';
-            notice.className = 'mb-4 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-cozy-sky/40 bg-cozy-sky/10 px-4 py-3 text-sm text-cozy-bark';
-            notice.innerHTML = '<span><strong>Uncollected only</strong> is active.</span><button type="button" class="font-bold text-cozy-coral hover:underline">Show all</button>';
-            notice.querySelector('button')?.addEventListener('click', function () {
-                const url = new URL(window.location.href);
-                url.searchParams.delete('progress');
-                url.searchParams.delete('search');
-                window.location.href = url.pathname + url.search + url.hash;
-            });
-            panel?.parentNode?.insertBefore(notice, panel.nextSibling);
+        const type = document.getElementById('map-type-filter');
+        const area = document.getElementById('map-area-filter');
+        const hideVisited = document.getElementById('map-hide-visited');
+        const urlSearch = params.get('search');
+        const urlType = params.get('type');
+        const urlArea = params.get('area');
+        const isEntityView = params.get('view') === 'entity';
+        const isUncollected = params.get('progress') === 'uncollected';
+        const hasNavigation = ['view', 'search', 'type', 'area', 'progress', 'focus', 'entity'].some(key => params.has(key));
+
+        if (isEntityView) {
+            if (search) search.value = '';
+            if (type) type.value = 'all';
+            if (area) area.value = 'all';
+            if (hideVisited) hideVisited.checked = false;
         }
+        if (search && urlSearch !== null) search.value = urlSearch.trim();
+        if (type && urlType && Object.prototype.hasOwnProperty.call(typeLabels, urlType)) type.value = urlType;
+        if (area && urlArea && Array.from(area.options).some(option => option.value === urlArea)) area.value = urlArea;
+        if (hideVisited && isUncollected) hideVisited.checked = true;
+
+        const requestedFocus = params.get('focus')?.trim() || '';
+        const focusItem = requestedFocus ? getLocationByName(requestedFocus) : null;
+        const entity = params.get('entity')?.trim() || '';
+        if (focusItem) {
+            saveFilterState({ focus: focusItem.name, entity });
+        } else if (hasNavigation) {
+            saveFilterState({ focus: '', entity: '' });
+        } else if (prior.focus) {
+            saveFilterState({ focus: prior.focus, entity: prior.entity || '' });
+        }
+
+        if (isUncollected) showUncollectedNotice();
+        return { focusItem, entity };
+    }
+
+    function handleFilterChange() {
+        saveFilterState({ focus: '', entity: '' });
+        renderLocations();
     }
 
     document.addEventListener('DOMContentLoaded', () => {
         setupAreaOptions();
         ['map-location-search', 'map-type-filter', 'map-area-filter', 'map-hide-visited'].forEach(id => {
             const el = document.getElementById(id);
-            if (el) el.addEventListener('input', renderLocations);
-            if (el) el.addEventListener('change', renderLocations);
+            if (el) el.addEventListener('input', handleFilterChange);
+            if (el) el.addEventListener('change', handleFilterChange);
         });
         document.getElementById('map-reset-filters')?.addEventListener('click', resetFilters);
         document.getElementById('map-clear-visited')?.addEventListener('click', clearVisited);
@@ -360,6 +498,12 @@
             scrollToMap(item);
         });
         document.getElementById('map-location-results')?.addEventListener('click', event => {
+            const guideLink = event.target.closest('.map-guide-link');
+            if (guideLink) {
+                const item = locations.find(location => slug(location.name) === guideLink.dataset.locationId);
+                if (item) saveFilterState({ focus: item.name, entity: '' });
+                return;
+            }
             const focusButton = event.target.closest('.map-focus-button');
             const card = event.target.closest('.map-location-card');
             if (!focusButton && (!card || event.target.closest('a, input, label'))) return;
@@ -380,8 +524,9 @@
             writeVisited(visited);
             renderLocations();
         });
-        applyUncollectedDeepLink();
+        const navigation = applyNavigationState();
         renderLocations();
         renderDailyRoutes();
+        if (navigation.focusItem) window.setTimeout(() => scrollToMap(navigation.focusItem, navigation.entity), 120);
     });
 })();
