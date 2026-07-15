@@ -52,6 +52,15 @@ for (const file of walk(root, '.html')) {
   }
 }
 
+const mapScriptPattern = /<script\b[^>]*\bsrc\s*=\s*["']\/assets\/js\/map-entity-links\.js(?:\?v=[^"']*)?["']/gi;
+for (const directory of ['database/fish', 'database/birds', 'database/wildlife', 'database/materials']) {
+  for (const file of walk(path.join(root, directory), '.html').filter((target) => path.basename(target) === 'index.html')) {
+    const page = path.relative(root, file).replace(/\\/g, '/');
+    const count = [...fs.readFileSync(file, 'utf8').matchAll(mapScriptPattern)].length;
+    check(count === 1, `${page}: expected one map entity script, found ${count}`);
+  }
+}
+
 for (const file of walk(assetRoot, '.js')) {
   const source = fs.readFileSync(file, 'utf8');
   const fetchPattern = /fetch\(\s*(["'])(\/data\/[^"']+\.json)\1\s*(?:,\s*(\{[\s\S]{0,500}?\}))?\s*\)/g;

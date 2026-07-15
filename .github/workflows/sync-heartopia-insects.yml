@@ -11,6 +11,7 @@ on:
       - 'scripts/sync-heartopia-hubs.mjs'
       - 'scripts/build-progress-catalog.mjs'
       - 'scripts/build-heartopia-search-index.mjs'
+      - 'scripts/add-map-entity-links.mjs'
       - 'scripts/audit-auto-sync.mjs'
       - 'scripts/version-local-assets.mjs'
   workflow_dispatch:
@@ -43,6 +44,8 @@ jobs:
         run: node scripts/build-progress-catalog.mjs
       - name: Build universal search index
         run: node scripts/build-heartopia-search-index.mjs
+      - name: Attach database map links
+        run: node scripts/add-map-entity-links.mjs
       - name: Version local JavaScript assets
         run: node scripts/version-local-assets.mjs
       - name: Audit tools and shared data
@@ -53,7 +56,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/heartopia-hub-totals.json data/heartopia-search-index.json database/index.html database/insects scripts/refresh-collection-legacy-pages.mjs scripts/version-local-assets.mjs scripts/audit-auto-sync.mjs assets/js/my-progress-dashboard.js assets/js/my-progress-assistant.js assets/js/progress-catalog.js assets/js/universal-search.js tools/my-progress/index.html hobbies/insect-catching/index.html guides/index.html tools/index.html hobbies/index.html hobbies/fishing/index.html events/winter-2026/index.html database/fish/rainbow-fish/index.html database/fish/legendary-koi/index.html
+          git add data/heartopia-hub-totals.json data/heartopia-search-index.json database/index.html database/insects scripts/refresh-collection-legacy-pages.mjs scripts/add-map-entity-links.mjs scripts/version-local-assets.mjs scripts/audit-auto-sync.mjs assets/js/my-progress-dashboard.js assets/js/my-progress-assistant.js assets/js/progress-catalog.js assets/js/universal-search.js tools/my-progress/index.html hobbies/insect-catching/index.html guides/index.html tools/index.html hobbies/index.html hobbies/fishing/index.html events/winter-2026/index.html database/fish/rainbow-fish/index.html database/fish/legendary-koi/index.html
           if git diff --cached --quiet; then
             echo "No insect database changes to commit."
           else
