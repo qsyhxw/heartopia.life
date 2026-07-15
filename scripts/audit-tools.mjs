@@ -135,7 +135,11 @@ check(searchIndex.count === searchIndex.entries.length, 'Universal Search: decla
 
 const progressSource = read('assets/js/progress-catalog.js');
 const progressAssistantSource = read('assets/js/my-progress-assistant.js');
-const expectedProgressVersion = createHash('sha256').update(progressSource).update(progressAssistantSource).digest('hex').slice(0, 12);
+const expectedProgressVersion = createHash('sha256')
+  .update(progressSource.replace(/\r\n/g, '\n'))
+  .update(progressAssistantSource.replace(/\r\n/g, '\n'))
+  .digest('hex')
+  .slice(0, 12);
 const progressPage = read('tools/my-progress/index.html');
 check(progressPage.includes(`/assets/js/progress-catalog.js?v=${expectedProgressVersion}`), 'My Progress: progress catalog cache version is stale');
 check(progressPage.includes(`/assets/js/my-progress-assistant.js?v=${expectedProgressVersion}`), 'My Progress: assistant cache version is stale');

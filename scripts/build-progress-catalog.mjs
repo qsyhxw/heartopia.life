@@ -180,7 +180,7 @@ if (!fs.existsSync(destination) || fs.readFileSync(destination, 'utf8') !== outp
     console.log('Progress catalog is already current.');
 }
 
-const assistantSource = read('assets/js/my-progress-assistant.js');
+const assistantSource = read('assets/js/my-progress-assistant.js').replace(/\r\n/g, '\n');
 const cacheVersion = createHash('sha256').update(output).update(assistantSource).digest('hex').slice(0, 12);
 const progressPagePath = fromRoot('tools/my-progress/index.html');
 const progressPage = fs.readFileSync(progressPagePath, 'utf8');
