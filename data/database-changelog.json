@@ -76,7 +76,7 @@
     "crops": 17,
     "flowers": 10,
     "recipes": 168,
-    "achievements": 63,
+    "achievements": 67,
     "items": 23,
     "ingredients": 26,
     "collectibles": 37,
@@ -84,6 +84,43 @@
     "events": 10
   },
   "entries": [
+    {
+      "id": "2026-07-15-8241a31ac92a7bdd",
+      "timestamp": "2026-07-15T06:40:55.499Z",
+      "date": "2026-07-15",
+      "title": "New Achievements added",
+      "summary": "+4 Achievements · 1 Achievement updated",
+      "signature": "8241a31ac92a7bdd",
+      "changes": [
+        {
+          "category": "Achievements",
+          "singular": "Achievement",
+          "categoryId": "achievements",
+          "action": "added",
+          "count": 4,
+          "items": [
+            "Licensed & Ready",
+            "No Corner Left Behind",
+            "Ocean Cleanup Expert",
+            "Tides of Life"
+          ],
+          "truncated": false,
+          "url": "/guides/achievements/"
+        },
+        {
+          "category": "Achievements",
+          "singular": "Achievement",
+          "categoryId": "achievements",
+          "action": "updated",
+          "count": 1,
+          "items": [
+            "Onsen Mountain Insect King"
+          ],
+          "truncated": false,
+          "url": "/guides/achievements/"
+        }
+      ]
+    },
     {
       "id": "2026-07-15-tracking-launched",
       "timestamp": "2026-07-15T00:00:00.000Z",

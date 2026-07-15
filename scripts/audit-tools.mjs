@@ -143,12 +143,26 @@ try {
 }
 check(Object.keys(progressCatalog).filter((key) => key !== 'generatedAt').length === 13, 'My Progress: expected 13 collection categories');
 
+const achievementSource = readJson('data/heartopia-achievements.json').achievements;
+const progressAchievements = progressCatalog.achievements?.items || [];
+const progressDashboard = read('assets/js/my-progress-dashboard.js');
+const progressAchievementTotal = Number(progressDashboard.match(/id: 'achievements'[\s\S]*?total: (\d+)/)?.[1] || 0);
+const hubAchievementTotal = Number(readJson('data/heartopia-hub-totals.json').totals?.achievements || 0);
+check(progressAchievements.length === achievementSource.length, `Achievements: My Progress catalog has ${progressAchievements.length}, expected ${achievementSource.length}`);
+check(progressAchievementTotal === achievementSource.length, `Achievements: dashboard total is ${progressAchievementTotal}, expected ${achievementSource.length}`);
+check(hubAchievementTotal === achievementSource.length, `Achievements: database hub total is ${hubAchievementTotal}, expected ${achievementSource.length}`);
+for (const achievement of achievementSource) {
+  const image = achievement.image?.startsWith('/') ? path.join(root, achievement.image.slice(1)) : null;
+  check(image && fs.existsSync(image), `Achievements: missing local image for ${achievement.name}`);
+}
+
 notes.push(`Fish Tracker: ${fishTool.length}/${fishSource.length}`);
 notes.push(`Recipe Calculator: ${recipeTool.length}/${recipeSource.length} calculable recipes`);
 notes.push(`Crop Planner: ${cropTool.length}/${cropSource.length}`);
 notes.push(`NPC Visit Tracker: ${npcSource.length}`);
 notes.push(`Universal Search: ${searchIndex.entries.length}`);
 notes.push(`My Progress: ${Object.keys(progressCatalog).filter((key) => key !== 'generatedAt').length} categories`);
+notes.push(`Achievements: ${achievementSource.length}/${progressAchievements.length} with local images`);
 
 if (errors.length) {
   console.error(`Tools audit failed with ${errors.length} issue(s):`);

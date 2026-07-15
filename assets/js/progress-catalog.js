@@ -3458,6 +3458,24 @@ window.heartopiaProgressCatalog = {
         "detail": "Special Hobbies · Idea Hamster"
       },
       {
+        "id": "Licensed & Ready",
+        "name": "Licensed & Ready",
+        "image": "/img/achievements/licensed-ready.webp",
+        "detail": "Special Hobbies · Clear Obstacles"
+      },
+      {
+        "id": "No Corner Left Behind",
+        "name": "No Corner Left Behind",
+        "image": "/img/achievements/no-corner-left-behind.webp",
+        "detail": "Special Hobbies · Secret Realm"
+      },
+      {
+        "id": "Ocean Cleanup Expert",
+        "name": "Ocean Cleanup Expert",
+        "image": "/img/achievements/ocean-cleanup-expert.webp",
+        "detail": "Special Hobbies · Ocean"
+      },
+      {
         "id": "Party Animal",
         "name": "Party Animal",
         "image": "/img/achievements/party-animal.webp",
@@ -3480,6 +3498,12 @@ window.heartopiaProgressCatalog = {
         "name": "Snow King",
         "image": "/img/achievements/snow-king.webp",
         "detail": "Special Hobbies · Snow King"
+      },
+      {
+        "id": "Tides of Life",
+        "name": "Tides of Life",
+        "image": "/img/achievements/tides-of-life.webp",
+        "detail": "Special Hobbies · Scale Gathering"
       }
     ]
   },

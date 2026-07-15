@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-14",
-  "count": 63,
+  "generatedAt": "2026-07-15",
+  "count": 67,
   "achievements": [
     {
       "name": "Bird Whisperer",
@@ -419,7 +419,7 @@
       "objective": "Obtain all titles in Bait the Insects Events.",
       "reward": "Insect Catcher",
       "image": "/img/achievements/onsen-mountain-insect-king.webp",
-      "status": "Current listing",
+      "status": "Activity-dependent",
       "version": "Current Heartodex listing"
     },
     {
@@ -593,6 +593,36 @@
       "version": "Current Heartodex listing"
     },
     {
+      "name": "Licensed & Ready",
+      "group": "Special Hobbies",
+      "slug": "licensed-ready",
+      "objective": "Participate in ocean cleanup events and remove large pollutants 60 times total",
+      "reward": "Clear Obstacles",
+      "image": "/img/achievements/licensed-ready.webp",
+      "status": "Activity-dependent",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "No Corner Left Behind",
+      "group": "Special Hobbies",
+      "slug": "no-corner-left-behind",
+      "objective": "Trigger the hidden phase of Ocean Cleanup Event 10 times in total",
+      "reward": "Secret Realm",
+      "image": "/img/achievements/no-corner-left-behind.webp",
+      "status": "Activity-dependent",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Ocean Cleanup Expert",
+      "group": "Special Hobbies",
+      "slug": "ocean-cleanup-expert",
+      "objective": "Reach Level 10 in Ocean Cleaning Hobby",
+      "reward": "Ocean",
+      "image": "/img/achievements/ocean-cleanup-expert.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
       "name": "Party Animal",
       "group": "Special Hobbies",
       "slug": "party-animal",
@@ -629,6 +659,16 @@
       "objective": "Snow Sculpting Hobby reaches Lv.5.",
       "reward": "Snow King",
       "image": "/img/achievements/snow-king.webp",
+      "status": "Current listing",
+      "version": "Current Heartodex listing"
+    },
+    {
+      "name": "Tides of Life",
+      "group": "Special Hobbies",
+      "slug": "tides-of-life",
+      "objective": "Reach the \"Tidal Abundance\" eco-fish level at any underwater seamount.",
+      "reward": "Scale Gathering",
+      "image": "/img/achievements/tides-of-life.webp",
       "status": "Current listing",
       "version": "Current Heartodex listing"
     }
