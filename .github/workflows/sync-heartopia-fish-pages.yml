@@ -14,6 +14,8 @@ on:
       - 'scripts/build-progress-catalog.mjs'
       - 'scripts/build-heartopia-search-index.mjs'
       - 'scripts/add-map-entity-links.mjs'
+      - 'scripts/refresh-fish-tracker.mjs'
+      - 'scripts/audit-tools.mjs'
       - 'scripts/build-sitemap.mjs'
       - 'assets/js/map-entity-links.js'
       - 'assets/js/map-location-finder.js'
@@ -43,6 +45,9 @@ jobs:
       - name: Build fish detail pages
         run: node scripts/generate-fish-detail-pages.mjs
 
+      - name: Refresh Fish tracker
+        run: node scripts/refresh-fish-tracker.mjs
+
       - name: Refresh legacy fish references
         run: node scripts/refresh-legacy-fish-references.mjs
 
@@ -58,6 +63,9 @@ jobs:
       - name: Attach database map links
         run: node scripts/add-map-entity-links.mjs
 
+      - name: Audit tools and shared data
+        run: node scripts/audit-tools.mjs
+
       - name: Refresh XML sitemap
         run: node scripts/build-sitemap.mjs
 
@@ -65,7 +73,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/heartopia-fish.json data/heartopia-hub-totals.json data/heartopia-search-index.json sitemap.xml scripts/generate-fish-detail-pages.mjs scripts/add-map-entity-links.mjs scripts/build-sitemap.mjs database/index.html database/fish database/birds database/wildlife database/materials database/fish-prices/index.html guides/map/index.html guides/fishing-locations/index.html guides/fishing-spots/index.html guides/rare-fish/index.html guides/fish-locations/index.html scripts/refresh-legacy-fish-references.mjs assets/js/my-progress-dashboard.js assets/js/my-progress-assistant.js assets/js/progress-catalog.js assets/js/universal-search.js assets/js/map-entity-links.js assets/js/map-location-finder.js tools/my-progress/index.html hobbies/fishing/index.html hobbies/index.html progression/money-making/index.html guides/money-making/index.html guides/hidden-achievements/index.html
+          git add data/heartopia-fish.json data/heartopia-hub-totals.json data/heartopia-search-index.json sitemap.xml scripts/generate-fish-detail-pages.mjs scripts/refresh-fish-tracker.mjs scripts/add-map-entity-links.mjs scripts/build-sitemap.mjs database/index.html database/fish database/birds database/wildlife database/materials database/fish-prices/index.html guides/map/index.html guides/fishing-locations/index.html guides/fishing-spots/index.html guides/rare-fish/index.html guides/fish-locations/index.html scripts/refresh-legacy-fish-references.mjs assets/js/fish-tracker.js assets/js/my-progress-dashboard.js assets/js/my-progress-assistant.js assets/js/progress-catalog.js assets/js/universal-search.js assets/js/map-entity-links.js assets/js/map-location-finder.js tools/fish-tracker/index.html tools/my-progress/index.html hobbies/fishing/index.html hobbies/index.html progression/money-making/index.html guides/money-making/index.html guides/hidden-achievements/index.html
           if git diff --cached --quiet; then
             echo "No fish page changes to commit."
           else

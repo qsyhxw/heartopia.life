@@ -20,7 +20,7 @@
     <!-- Meta Tags -->
     <title>Heartopia Tools: Calculators & Interactive Helpers</title>
     <meta name="description"
-        content="Heartopia tools and trackers for daily tasks, collection progress, recipe profit, fish, crops, and NPC friendship helpers.">
+        content="Heartopia tools for wiki search, collection progress, daily tasks, recipe profit, fish, crops, and NPC visit tracking.">
     <meta name="keywords" content="heartopia tools, heartopia daily tasks, heartopia progress tracker, heartopia collection tracker, heartopia calculator, heartopia helper">
     <meta name="author" content="Heartopia.Life">
     <meta name="robots" content="index, follow">
@@ -34,6 +34,11 @@
     <meta property="og:description" content="Interactive Heartopia tools for collection progress, calculators, trackers, and planning.">
     <meta property="og:url" content="https://heartopia.life/tools/">
     <meta property="og:site_name" content="Heartopia.Life">
+    <meta property="og:image" content="https://heartopia.life/img/home/my-progress.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Heartopia Tools & Calculators">
+    <meta name="twitter:description" content="Interactive Heartopia tools for collection progress, calculators, trackers, and planning.">
+    <meta name="twitter:image" content="https://heartopia.life/img/home/my-progress.webp">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -67,6 +72,29 @@
                 }
             }
         }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Heartopia Tools & Calculators",
+      "url": "https://heartopia.life/tools/",
+      "description": "Heartopia tools for search, collection progress, daily tasks, recipes, fish, crops, and NPC visits.",
+      "mainEntity": {
+        "@type": "ItemList",
+        "numberOfItems": 7,
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"name":"Universal Search","url":"https://heartopia.life/tools/search/"},
+          {"@type":"ListItem","position":2,"name":"My Progress","url":"https://heartopia.life/tools/my-progress/"},
+          {"@type":"ListItem","position":3,"name":"Daily Tasks","url":"https://heartopia.life/tools/daily-tasks/"},
+          {"@type":"ListItem","position":4,"name":"Recipe Calculator","url":"https://heartopia.life/tools/recipe-calculator/"},
+          {"@type":"ListItem","position":5,"name":"Fish Tracker","url":"https://heartopia.life/tools/fish-tracker/"},
+          {"@type":"ListItem","position":6,"name":"Crop Planner","url":"https://heartopia.life/tools/crop-planner/"},
+          {"@type":"ListItem","position":7,"name":"NPC Visit Tracker","url":"https://heartopia.life/tools/friendship-tracker/"}
+        ]
+      }
+    }
     </script>
 
     <style>
@@ -103,8 +131,9 @@
                     <li><a href="/guides/map/" class="hover:text-cozy-coral transition-colors flex items-center gap-1">🗺️ Map</a></li>
                     <li><a href="/codes/" class="hover:text-cozy-coral">🎁 Codes</a></li>
                     <li><a href="/guides/" class="hover:text-cozy-coral">Guides</a></li>
-                    <li><a href="/hobbies/" class="hover:text-cozy-coral">Hobbies</a></li>
-                    <li><a href="/npcs/" class="hover:text-cozy-coral">NPCs</a></li>
+                    <li><a href="/events/" class="hover:text-cozy-coral">Events</a></li>
+                    <li><a href="/database/" class="hover:text-cozy-coral">Database</a></li>
+                    <li><a href="/tools/" class="font-bold text-cozy-coral">Tools</a></li>
                 </ul>
             
                 <button class="md:hidden p-2 hover:bg-cozy-peach/50 rounded-lg" aria-label="Open menu"
@@ -140,11 +169,12 @@
 
         <!-- Hero -->
         <div class="bg-gradient-to-br from-purple-100 to-cozy-sky/30 rounded-2xl p-6 md:p-8 mb-8">
+            <p class="mb-2 text-xs font-bold uppercase text-cozy-sage">7 interactive tools</p>
             <h1 class="font-display text-3xl md:text-4xl font-bold text-cozy-bark mb-4">
-                🛠️ Heartopia Tools
+                Heartopia Tools
             </h1>
             <p class="text-cozy-wood text-lg">
-                Interactive calculators and helpers to optimize your gameplay and maximize profits!
+                Search the wiki, plan daily routes, calculate costs, and keep private collection progress in your browser.
             </p>
         </div>
 
@@ -167,13 +197,13 @@
                     <img src="/img/achievements/Collector.webp" alt="Collector achievement from Heartopia" class="w-14 h-14 object-contain" loading="lazy">
                 </div>
                 <h2 class="font-display text-xl font-bold mb-2">My Progress</h2>
-                <p class="text-cozy-wood text-sm mb-3">View fish, insects, birds, and checked map locations from one browser-only dashboard.</p>
+                <p class="text-cozy-wood text-sm mb-3">Review 13 collection categories, missing targets, map checks, milestones, and local backup tools.</p>
                 <span class="text-cozy-coral font-medium text-sm">Open Progress →</span>
             </a>
             <!-- Daily Tasks -->
             <a href="/tools/daily-tasks/" class="card-hover bg-white rounded-2xl p-6 border-2 border-cozy-sage/50">
                 <div class="w-16 h-16 bg-cozy-sage/20 rounded-2xl flex items-center justify-center mb-4">
-                    <span class="text-3xl">✅</span>
+                    <img src="/img/home/daily-tasks.webp" alt="Heartopia daily tasks" class="w-14 h-14 object-contain" loading="lazy">
                 </div>
                 <h2 class="font-display text-xl font-bold mb-2">Daily Tasks</h2>
                 <p class="text-cozy-wood text-sm mb-3">Use a daily checklist with local saving, custom tasks, and a server reset countdown.</p>
@@ -186,8 +216,7 @@
                     <img src="/img/recipes/Afternoon-Tea.webp" alt="Afternoon Tea recipe from Heartopia" class="w-14 h-14 object-contain" loading="lazy">
                 </div>
                 <h2 class="font-display text-xl font-bold mb-2">Recipe Profit Calculator</h2>
-                <p class="text-cozy-wood text-sm mb-3">Calculate cooking profits, compare recipe ROI, and find the best
-                    dishes to maximize Gold.</p>
+                <p class="text-cozy-wood text-sm mb-3">Enter ingredient costs and compare them with verified four-tier recipe market values.</p>
                 <span class="text-cozy-coral font-medium text-sm">Use Tool →</span>
             </a>
 
@@ -198,7 +227,7 @@
                 </div>
                 <h2 class="font-display text-xl font-bold mb-2">Fish Tracker</h2>
                 <p class="text-cozy-wood text-sm mb-3">Track your fish collection, mark caught fish, and filter by
-                    location, weather & time.</p>
+                    location, weather, and time. Progress is shared with My Progress.</p>
                 <span class="text-cozy-sky font-medium text-sm">Use Tool →</span>
             </a>
 
@@ -208,21 +237,19 @@
                     <img src="/img/crops/Grape.webp" alt="Grape crop from Heartopia" class="w-14 h-14 object-contain" loading="lazy">
                 </div>
                 <h2 class="font-display text-xl font-bold mb-2">Crop Planner</h2>
-                <p class="text-cozy-wood text-sm mb-3">Plan your garden, calculate profits per session, and find the
-                    best crops for your playstyle.</p>
+                <p class="text-cozy-wood text-sm mb-3">Plan seed costs and harvest timing, compare crop cycles, and check recipe uses.</p>
                 <span class="text-cozy-sage font-medium text-sm">Use Tool →</span>
             </a>
 
-            <!-- Friendship Tracker -->
+            <!-- NPC Visit Tracker -->
             <a href="/tools/friendship-tracker/"
                 class="card-hover bg-white rounded-2xl p-6 border-2 border-cozy-rose/50">
                 <div class="w-16 h-16 bg-cozy-rose/20 rounded-2xl flex items-center justify-center mb-4">
-                    <span class="text-3xl">💕</span>
+                    <img src="/img/npcs/Bailey-J.webp" alt="Bailey J NPC from Heartopia" class="w-14 h-14 object-contain" loading="lazy">
                 </div>
-                <h2 class="font-display text-xl font-bold mb-2">Friendship Tracker</h2>
-                <p class="text-cozy-wood text-sm mb-3">Track NPC relationships, find favorite gifts, and unlock rewards
-                    faster.</p>
-                <span class="text-cozy-rose font-medium text-sm">Use Tool →</span>
+                <h2 class="font-display text-xl font-bold mb-2">NPC Visit Tracker</h2>
+                <p class="text-cozy-wood text-sm mb-3">Search all 19 current NPCs by location or role and mark the residents you have met.</p>
+                <span class="text-cozy-rose font-medium text-sm">Open Tracker →</span>
             </a>
 
         </section>
@@ -231,7 +258,7 @@
 
         <!-- Related Links -->
         <section class="pt-8 border-t border-cozy-peach/30">
-            <h2 class="font-bold text-xl mb-6">📚 Related Resources</h2>
+            <h2 class="font-bold text-xl mb-6">Related Resources</h2>
             <div class="grid md:grid-cols-2 gap-4">
                 <a href="/database/recipes/"
                     class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
@@ -240,6 +267,14 @@
                         <h3 class="font-bold">Recipe Database</h3>
                         <p class="text-sm text-cozy-wood">All recipes & ingredients</p>
                     </div>
+                </a>
+                <a href="/database/" class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <img src="/img/home/my-progress.webp" alt="Heartopia database and progress" class="w-12 h-12 shrink-0 object-contain rounded-lg bg-cozy-cream p-1" loading="lazy">
+                    <div><h3 class="font-bold">Database Hub</h3><p class="text-sm text-cozy-wood">All searchable categories</p></div>
+                </a>
+                <a href="/guides/map/" class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
+                    <img src="/img/home/map-locations.webp" alt="Heartopia map locations" class="w-12 h-12 shrink-0 object-contain rounded-lg bg-cozy-cream p-1" loading="lazy">
+                    <div><h3 class="font-bold">Map & Location Finder</h3><p class="text-sm text-cozy-wood">Routes, resources, and NPCs</p></div>
                 </a>
                 <a href="/database/fish/"
                     class="card-hover flex items-center gap-4 bg-white rounded-xl p-4 border border-cozy-peach/30">
@@ -258,7 +293,7 @@
     <footer class="bg-cozy-bark text-white py-8 mt-12">
         <div class="max-w-4xl mx-auto px-4 text-center">
             <a href="/" class="inline-flex items-center gap-2 mb-4">
-                <span class="text-xl">🏡</span>
+                <img src="/favicon-96x96.png" alt="" class="h-7 w-7 rounded-md" width="28" height="28">
                 <span class="font-display font-bold">Heartopia<span class="text-cozy-sage">.Life</span></span>
             </a>
             <p class="text-white/60 text-sm mb-4">Unofficial fan site. Not affiliated with XD Entertainment.</p>
@@ -284,6 +319,13 @@
                 "floating": { "position": "left" },
                 "mediaQuery": "(min-width: 1025px)",
                 "report": { "enabled": true, "icon": true, "wording": "Report Ad", "position": "top-left" }
+            });
+
+            window['nitroAds'].createAd('heartopia_side_rail', {
+                "format": "rail",
+                "rail": "right",
+                "railStickyTop": 70,
+                "mediaQuery": "(min-width: 1025px)"
             });
 
             window['nitroAds'].createAd('heartopia_in_content', {

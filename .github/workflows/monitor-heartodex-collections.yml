@@ -38,6 +38,9 @@ jobs:
       - name: Refresh Fish shared pages
         run: node scripts/sync-fish-pages.mjs
 
+      - name: Refresh Fish tracker
+        run: node scripts/refresh-fish-tracker.mjs
+
       - name: Refresh Insect database
         run: node scripts/sync-insect-database.mjs
 
@@ -80,6 +83,9 @@ jobs:
       - name: Attach database map links
         run: node scripts/add-map-entity-links.mjs
 
+      - name: Audit tools and shared data
+        run: node scripts/audit-tools.mjs
+
       - name: Refresh XML sitemap
         run: node scripts/build-sitemap.mjs
 
@@ -92,6 +98,6 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html database/index.html database/changelog/index.html data/database-changelog.json data/heartopia-hub-totals.json data/heartopia-search-index.json database/fish database/birds database/insects/index.html database/wildlife database/materials database/crops/index.html database/flowers/index.html database/recipes/index.html database/ingredients/index.html database/items/index.html database/collectibles/index.html npcs/index.html guides/best-crops/index.html guides/flower-crossbreeding/index.html tools/crop-planner/index.html hobbies/gardening/index.html database/recipe-prices/index.html guides/best-food-to-sell/index.html tools/recipe-calculator/index.html guides/achievements/index.html data/heartopia-fish.json data/heartopia-insects.json data/heartopia-wildlife.json data/heartopia-crops.json data/heartopia-flowers.json data/heartopia-recipes.json data/heartopia-achievements.json data/monitor/heartodex-collections.json data/monitor/heartodex-sync-readiness.json img/fish img/birds img/insects img/wildlife img/crops img/flowers img/recipes img/achievements assets/js/my-progress-dashboard.js assets/js/my-progress-assistant.js assets/js/progress-catalog.js assets/js/database-search-query.js assets/js/universal-search.js assets/js/map-entity-links.js assets/js/map-location-finder.js assets/js/relational-database.js scripts/add-map-entity-links.mjs scripts/build-database-changelog.mjs scripts/build-sitemap.mjs scripts/build-relational-databases.mjs scripts/build-items-page.mjs scripts/build-ingredients-page.mjs scripts/build-collectibles-page.mjs scripts/sync-heartodex-crops.mjs guides/map/index.html tools/my-progress/index.html tools/search/index.html guides/fishing-locations/index.html guides/fishing-spots/index.html guides/rare-fish/index.html guides/fish-locations/index.html database/fish-prices/index.html data/monitor/heartodex-events.json events/index.html events/*/index.html sitemap.xml
+          git add index.html database/index.html database/changelog/index.html data/database-changelog.json data/heartopia-hub-totals.json data/heartopia-search-index.json database/fish database/birds database/insects/index.html database/wildlife database/materials database/crops/index.html database/flowers/index.html database/recipes/index.html database/ingredients/index.html database/items/index.html database/collectibles/index.html npcs/index.html guides/best-crops/index.html guides/flower-crossbreeding/index.html tools/crop-planner/index.html tools/fish-tracker/index.html hobbies/gardening/index.html database/recipe-prices/index.html guides/best-food-to-sell/index.html tools/recipe-calculator/index.html guides/achievements/index.html data/heartopia-fish.json data/heartopia-insects.json data/heartopia-wildlife.json data/heartopia-crops.json data/heartopia-flowers.json data/heartopia-recipes.json data/heartopia-achievements.json data/monitor/heartodex-collections.json data/monitor/heartodex-sync-readiness.json img/fish img/birds img/insects img/wildlife img/crops img/flowers img/recipes img/achievements assets/js/fish-tracker.js assets/js/my-progress-dashboard.js assets/js/my-progress-assistant.js assets/js/progress-catalog.js assets/js/database-search-query.js assets/js/universal-search.js assets/js/map-entity-links.js assets/js/map-location-finder.js assets/js/relational-database.js scripts/refresh-fish-tracker.mjs scripts/add-map-entity-links.mjs scripts/build-database-changelog.mjs scripts/build-sitemap.mjs scripts/build-relational-databases.mjs scripts/build-items-page.mjs scripts/build-ingredients-page.mjs scripts/build-collectibles-page.mjs scripts/sync-heartodex-crops.mjs guides/map/index.html tools/my-progress/index.html tools/search/index.html guides/fishing-locations/index.html guides/fishing-spots/index.html guides/rare-fish/index.html guides/fish-locations/index.html database/fish-prices/index.html data/monitor/heartodex-events.json events/index.html events/*/index.html sitemap.xml
           git commit -m "chore: auto-sync Heartodex collections"
           git push
