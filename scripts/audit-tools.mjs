@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = (file) => fs.readFileSync(path.join(root, file), 'utf8');
@@ -133,6 +134,11 @@ const searchIndex = readJson('data/heartopia-search-index.json');
 check(searchIndex.count === searchIndex.entries.length, 'Universal Search: declared count differs from entry count');
 
 const progressSource = read('assets/js/progress-catalog.js');
+const progressAssistantSource = read('assets/js/my-progress-assistant.js');
+const expectedProgressVersion = createHash('sha256').update(progressSource).update(progressAssistantSource).digest('hex').slice(0, 12);
+const progressPage = read('tools/my-progress/index.html');
+check(progressPage.includes(`/assets/js/progress-catalog.js?v=${expectedProgressVersion}`), 'My Progress: progress catalog cache version is stale');
+check(progressPage.includes(`/assets/js/my-progress-assistant.js?v=${expectedProgressVersion}`), 'My Progress: assistant cache version is stale');
 const progressStart = progressSource.indexOf('window.heartopiaProgressCatalog = ');
 const progressEnd = progressSource.lastIndexOf(';');
 let progressCatalog = {};

@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
+import { createHash } from 'node:crypto';
 
 const root = path.resolve(import.meta.dirname, '..');
 const fromRoot = (file) => path.join(root, file);
@@ -177,4 +178,16 @@ if (!fs.existsSync(destination) || fs.readFileSync(destination, 'utf8') !== outp
     console.log(`Built progress catalog with ${Object.values(catalog).reduce((sum, group) => sum + (group.items?.length || 0), 0)} entries.`);
 } else {
     console.log('Progress catalog is already current.');
+}
+
+const assistantSource = read('assets/js/my-progress-assistant.js');
+const cacheVersion = createHash('sha256').update(output).update(assistantSource).digest('hex').slice(0, 12);
+const progressPagePath = fromRoot('tools/my-progress/index.html');
+const progressPage = fs.readFileSync(progressPagePath, 'utf8');
+const versionedProgressPage = progressPage
+    .replace(/\/assets\/js\/progress-catalog\.js(?:\?v=[^"']*)?/, `/assets/js/progress-catalog.js?v=${cacheVersion}`)
+    .replace(/\/assets\/js\/my-progress-assistant\.js(?:\?v=[^"']*)?/, `/assets/js/my-progress-assistant.js?v=${cacheVersion}`);
+if (versionedProgressPage !== progressPage) {
+    fs.writeFileSync(progressPagePath, versionedProgressPage);
+    console.log(`Updated My Progress asset version to ${cacheVersion}.`);
 }
