@@ -1,5 +1,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { buildRelationalDatabases } from './build-relational-databases.mjs';
+
+buildRelationalDatabases({ only: ['items'] });
+process.exit(0);
 const root=process.cwd(),items=JSON.parse(fs.readFileSync(path.join(root,'data','heartopia-items.json'),'utf8')).items;
 if(items.length!==23||items.some(x=>!fs.existsSync(path.join(root,x.image.slice(1)))))throw Error('Item data or images missing');
 const json=JSON.stringify(items).replace(/</g,'\\u003c');

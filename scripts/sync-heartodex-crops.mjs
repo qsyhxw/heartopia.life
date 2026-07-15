@@ -88,4 +88,6 @@ let progress = read('assets/js/my-progress-dashboard.js');
 write('assets/js/my-progress-dashboard.js', progress.replace(/(id: 'crops'[\s\S]*?total: )\d+/, '$1' + entries.length));
 let myProgress = read('tools/my-progress/index.html');
 write('tools/my-progress/index.html', myProgress.replace(/Track all \d+ crops by seed price and growth time\./, `Track all ${entries.length} crops by seed price, growth time, and recipe uses.`));
+const { buildRelationalDatabases } = await import('./build-relational-databases.mjs');
+buildRelationalDatabases({ only: ['crops'] });
 console.log(`Synced ${entries.length} crops and refreshed crop pages.`);

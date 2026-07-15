@@ -1,5 +1,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { buildRelationalDatabases } from './build-relational-databases.mjs';
+
+buildRelationalDatabases({ only: ['collectibles'] });
+process.exit(0);
 const root=process.cwd(), data=JSON.parse(fs.readFileSync(path.join(root,'data','heartopia-collectibles.json'),'utf8')).collectibles;
 if(data.length!==37||data.some(x=>!fs.existsSync(path.join(root,x.image.slice(1)))))throw Error('Collectible data or image missing');
 const safe=JSON.stringify(data).replace(/</g,'\\u003c');
