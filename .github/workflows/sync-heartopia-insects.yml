@@ -15,6 +15,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: heartopia-derived-sync
+  cancel-in-progress: false
+
 jobs:
   sync-insects:
     runs-on: ubuntu-latest

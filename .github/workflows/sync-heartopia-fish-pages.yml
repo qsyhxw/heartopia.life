@@ -25,6 +25,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: heartopia-derived-sync
+  cancel-in-progress: false
+
 jobs:
   sync-fish-pages:
     runs-on: ubuntu-latest
