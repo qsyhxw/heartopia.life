@@ -214,6 +214,13 @@
                     <li><a href="/events/" class="hover:text-cozy-coral transition-colors">Events</a></li>
                     <li><a href="/database/" class="hover:text-cozy-coral transition-colors">Database</a></li>
                     <li><a href="/npcs/" class="hover:text-cozy-coral transition-colors">NPCs</a></li>
+                    <li class="relative group">
+                        <a href="/tools/" class="hover:text-cozy-coral transition-colors">More</a>
+                        <div class="invisible absolute right-0 top-full z-50 mt-2 w-52 translate-y-1 rounded-lg border border-cozy-peach bg-white p-2 opacity-0 shadow-lg transition-all group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
+                            <a href="/tools/" class="block rounded-lg px-3 py-2 hover:bg-cozy-cream">Tools</a>
+                            <a href="/guides/top-up/" class="block rounded-lg px-3 py-2 hover:bg-amber-50">Top-Up Options</a>
+                        </div>
+                    </li>
                 </ul>
 
                 <button class="md:hidden p-2 hover:bg-cozy-peach/50 rounded-lg" aria-label="Open menu"
@@ -235,6 +242,7 @@
                     <li><a href="/events/" class="py-2 hover:text-cozy-coral">Events</a></li>
                     <li><a href="/database/" class="py-2 hover:text-cozy-coral">Database</a></li>
                     <li><a href="/tools/" class="py-2 hover:text-cozy-coral">Tools</a></li>
+                    <li><a href="/guides/top-up/" class="py-2 hover:text-cozy-coral">Top-Up Options</a></li>
                 </ul>
             </div>
         </nav>
@@ -651,6 +659,14 @@
                 </div>
             </div>
         </section>
+
+        <aside class="mb-12 flex flex-col gap-4 rounded-lg border border-amber-200 bg-amber-50 p-5 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+                <p class="text-xs font-bold uppercase text-amber-800">Looking for paid currency?</p>
+                <p class="mt-1 text-sm text-cozy-wood">Redeem codes are free. For memberships, packs, or Heart Diamonds, compare the official and third-party payment routes first.</p>
+            </div>
+            <a href="/guides/top-up/" class="inline-flex shrink-0 items-center justify-center rounded-lg border-2 border-amber-400 px-4 py-2 text-sm font-bold text-amber-900 hover:bg-amber-100">Compare top-up options</a>
+        </aside>
 
         <!-- CURRENCY EXPLANATION -->
         <section class="mb-12">
