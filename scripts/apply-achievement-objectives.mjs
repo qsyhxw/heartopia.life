@@ -5,7 +5,6 @@ import { achievementObjectives, localAchievementObjective } from './achievement-
 const root = path.resolve(import.meta.dirname, '..');
 const read = (file) => fs.readFileSync(path.join(root, file), 'utf8');
 const write = (file, value) => fs.writeFileSync(path.join(root, file), value);
-const key = (value) => String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
 const source = JSON.parse(read('data/heartopia-achievements.json'));
 const achievements = source.achievements || [];
 const slugs = new Set(achievements.map((entry) => entry.slug));
@@ -23,17 +22,6 @@ for (const entry of achievements) {
 source.generatedAt = new Date().toISOString().slice(0, 10);
 source.count = achievements.length;
 write('data/heartopia-achievements.json', JSON.stringify(source, null, 2) + '\n');
-
-const detailsFile = 'data/achievement-details.json';
-if (fs.existsSync(path.join(root, detailsFile))) {
-  const details = JSON.parse(read(detailsFile));
-  const byName = new Map(achievements.map((entry) => [key(entry.name), entry.objective]));
-  for (const entry of details) {
-    const objective = localAchievementObjective(entry.slug) || byName.get(key(entry.name));
-    if (objective) entry.objective = objective;
-  }
-  write(detailsFile, JSON.stringify(details, null, 2) + '\n');
-}
 
 const pageFile = 'guides/achievements/index.html';
 let page = read(pageFile);

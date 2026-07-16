@@ -19,9 +19,18 @@ const activeAutoSyncScripts = [
   'scripts/sync-heartodex-flowers.mjs',
   'scripts/sync-heartodex-recipes.mjs',
   'scripts/sync-heartodex-achievements.mjs',
-  'scripts/sync-achievement-details.mjs',
   'scripts/sync-heartodex-events.mjs',
 ];
+
+const retiredAchievementArtifacts = [
+  'data/achievement-details.json',
+  'scripts/sync-achievement-details.mjs',
+];
+for (const file of retiredAchievementArtifacts) {
+  if (fs.existsSync(path.join(root, file))) {
+    throw new Error(`Retired raw Objective artifact must not exist: ${file}`);
+  }
+}
 const extractionPatterns = [...BLOCKED_REMOTE_FIELDS].map((field) => ({
   field,
   pattern: new RegExp(`(?:detail|section|between)\\s*\\([^\\n]{0,180}["']${field}["']`, 'i'),
