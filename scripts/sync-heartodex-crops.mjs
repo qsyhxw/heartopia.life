@@ -18,7 +18,7 @@ async function request(url) {
   for (let attempt = 1; attempt <= 3; attempt += 1) {
     try {
       const response = await fetch(url, { headers: { 'user-agent': 'HeartopiaLifeCropSync/1.0 (+https://heartopia.life/)' } });
-      if (!response.ok) throw new Error(`${response.status} ${url}`);
+      if (!response.ok) throw new Error(`Remote request failed with status ${response.status}`);
       return response;
     } catch (caught) { error = caught; await new Promise((done) => setTimeout(done, attempt * 750)); }
   }

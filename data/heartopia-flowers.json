@@ -1,7 +1,6 @@
 {
   "generatedAt": "2026-07-14",
   "count": 10,
-  "sourceUrl": "https://www.heartodex.com/en/flowers/",
   "rules": {
     "resetTime": "After 6:00 AM server time",
     "sameSpecies": "Only flowers of the same type can crossbreed.",

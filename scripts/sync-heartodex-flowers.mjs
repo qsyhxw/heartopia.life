@@ -50,7 +50,7 @@ async function request(url) {
   for (let attempt = 1; attempt <= 3; attempt += 1) {
     try {
       const response = await fetch(url, { headers: { 'user-agent': 'HeartopiaLifeFlowerSync/1.0 (+https://heartopia.life/)' } });
-      if (!response.ok) throw new Error(`${response.status} ${url}`);
+      if (!response.ok) throw new Error(`Remote request failed with status ${response.status}`);
       return response;
     } catch (caught) {
       error = caught;
@@ -70,9 +70,9 @@ function assetUrl(html, asset) {
 async function download(url, file) {
   const response = await request(url);
   const contentType = response.headers.get('content-type') || '';
-  if (!contentType.includes('image')) throw new Error(`Unexpected image response for ${url}: ${contentType}`);
+  if (!contentType.includes('image')) throw new Error(`Unexpected remote image content type: ${contentType}`);
   const buffer = Buffer.from(await response.arrayBuffer());
-  if (buffer.length < 1000) throw new Error(`Downloaded flower image is unexpectedly small: ${url}`);
+  if (buffer.length < 1000) throw new Error('Downloaded flower image is unexpectedly small');
   const target = path.join(root, file);
   fs.mkdirSync(path.dirname(target), { recursive: true });
   if (!fs.existsSync(target) || !fs.readFileSync(target).equals(buffer)) fs.writeFileSync(target, buffer);
@@ -114,7 +114,6 @@ const flowers = forms.map((form) => ({
 const data = {
   generatedAt: today(),
   count: flowers.length,
-  sourceUrl,
   rules: {
     resetTime: 'After 6:00 AM server time',
     sameSpecies: 'Only flowers of the same type can crossbreed.',

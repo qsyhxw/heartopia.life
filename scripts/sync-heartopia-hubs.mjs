@@ -32,11 +32,10 @@ function replaceIfPresent(html, pattern, replacement) {
   return pattern.test(html) ? html.replace(pattern, replacement) : html;
 }
 
-const monitored = readJson('data/monitor/heartodex-collections.json');
 const totals = {
   fish: collectionCount('heartopia-fish.json', 'fish'),
   insects: collectionCount('heartopia-insects.json', 'insects'),
-  birds: monitored.collections?.birds?.registered,
+  birds: collectionCount('heartopia-birds.json', 'birds'),
   wildlife: collectionCount('heartopia-wildlife.json', 'wildlife'),
   crops: collectionCount('heartopia-crops.json', 'crops'),
   flowers: collectionCount('heartopia-flowers.json', 'flowers'),
@@ -49,9 +48,9 @@ const totals = {
   map: mapLocationCount()
 };
 
-if (!Number.isInteger(totals.birds) || totals.birds < 1) throw new Error('Missing monitored bird count');
+if (!Number.isInteger(totals.birds) || totals.birds < 1) throw new Error('Missing local bird count');
 
-const dateSources = ['heartopia-fish.json', 'heartopia-insects.json', 'heartopia-wildlife.json', 'heartopia-crops.json', 'heartopia-flowers.json', 'heartopia-recipes.json', 'heartopia-achievements.json']
+const dateSources = ['heartopia-fish.json', 'heartopia-birds.json', 'heartopia-insects.json', 'heartopia-wildlife.json', 'heartopia-crops.json', 'heartopia-flowers.json', 'heartopia-recipes.json', 'heartopia-achievements.json']
   .map((file) => readJson(`data/${file}`).generatedAt)
   .filter((value) => /^\d{4}-\d{2}-\d{2}$/.test(value));
 const previous = fs.existsSync(path.join(root, 'data/heartopia-hub-totals.json')) ? readJson('data/heartopia-hub-totals.json') : null;

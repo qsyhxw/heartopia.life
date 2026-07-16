@@ -27,7 +27,7 @@ const esc = (value) => String(value ?? '')
 
 const specs = [
   { id: 'fish', label: 'Fish', singular: 'Fish', file: 'data/heartopia-fish.json', dataPath: ['fish'], key: 'name', url: '/database/fish/', media: 'image' },
-  { id: 'birds', label: 'Birds', singular: 'Bird', file: 'data/monitor/heartodex-collections.json', dataPath: ['collections', 'birds', 'entries'], key: 'slug', url: '/database/birds/' },
+  { id: 'birds', label: 'Birds', singular: 'Bird', file: 'data/heartopia-birds.json', dataPath: ['birds'], key: 'name', url: '/database/birds/', media: 'img' },
   { id: 'insects', label: 'Insects', singular: 'Insect', file: 'data/heartopia-insects.json', dataPath: ['insects'], key: 'slug', url: '/database/insects/', media: 'image' },
   { id: 'wildlife', label: 'Wildlife', singular: 'Wildlife entry', file: 'data/heartopia-wildlife.json', dataPath: ['wildlife'], key: 'id', url: '/database/wildlife/', media: 'image' },
   { id: 'crops', label: 'Crops', singular: 'Crop', file: 'data/heartopia-crops.json', dataPath: ['crops'], key: 'id', url: '/database/crops/', media: 'image' },
@@ -38,7 +38,7 @@ const specs = [
   { id: 'ingredients', label: 'Ingredients', singular: 'Ingredient', file: 'data/heartopia-ingredients.json', dataPath: ['ingredients'], key: 'sourceSlug', url: '/database/ingredients/', media: 'image' },
   { id: 'collectibles', label: 'Collectibles', singular: 'Collectible', file: 'data/heartopia-collectibles.json', dataPath: ['collectibles'], key: 'sourceSlug', url: '/database/collectibles/', media: 'image' },
   { id: 'npcs', label: 'NPCs', singular: 'NPC', file: 'data/heartopia-npcs.json', dataPath: ['npcs'], key: 'sourceSlug', url: '/npcs/', media: 'image' },
-  { id: 'events', label: 'Events', singular: 'Event', file: 'data/monitor/heartodex-events.json', dataPath: ['events'], key: 'slug', url: '/events/', statusField: 'status' }
+  { id: 'events', label: 'Events', singular: 'Event', file: 'data/heartopia-events.json', dataPath: ['events'], key: 'slug', url: '/events/', statusField: 'status' }
 ];
 
 function getAt(value, keys) {

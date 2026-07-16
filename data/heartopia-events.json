@@ -1,12 +1,7 @@
 {
-  "schemaVersion": 2,
-  "updatedAt": "2026-07-15",
-  "source": "https://www.heartodex.com/en/events/",
-  "policy": {
-    "mode": "auto-publish-whitelisted-facts",
-    "allowed": "Names, dates, status, event type, and local route only. Narrative fields are blocked.",
-    "images": "Source image URLs are recorded for review only. Third-party images are not downloaded or copied automatically."
-  },
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-15",
+  "count": 10,
   "events": [
     {
       "slug": "call-of-whales",
@@ -16,8 +11,7 @@
       "type": "Fashionwave",
       "startDate": "July 11, 2026",
       "endDate": "August 22, 2026",
-      "dateLabel": "Jul 11 → Aug 22, 2026",
-      "sourceUrl": "https://www.heartodex.com/en/events/call-of-whales"
+      "dateLabel": "Jul 11 → Aug 22, 2026"
     },
     {
       "slug": "midsummer-rhyme",
@@ -27,8 +21,7 @@
       "type": "",
       "startDate": "",
       "endDate": "",
-      "dateLabel": "Jun 19 – Jul 6",
-      "sourceUrl": "https://www.heartodex.com/en/events/midsummer-rhyme"
+      "dateLabel": "Jun 19 – Jul 6"
     },
     {
       "slug": "rainbow-verse",
@@ -38,8 +31,7 @@
       "type": "",
       "startDate": "",
       "endDate": "",
-      "dateLabel": "May 28 – Jun 22",
-      "sourceUrl": "https://www.heartodex.com/en/events/rainbow-verse"
+      "dateLabel": "May 28 – Jun 22"
     },
     {
       "slug": "modular-streets",
@@ -49,8 +41,7 @@
       "type": "",
       "startDate": "",
       "endDate": "",
-      "dateLabel": "May 9 – Jun 20",
-      "sourceUrl": "https://www.heartodex.com/en/events/modular-streets"
+      "dateLabel": "May 9 – Jun 20"
     },
     {
       "slug": "maltese",
@@ -60,8 +51,7 @@
       "type": "",
       "startDate": "",
       "endDate": "",
-      "dateLabel": "Apr 30 – May 25",
-      "sourceUrl": "https://www.heartodex.com/en/events/maltese"
+      "dateLabel": "Apr 30 – May 25"
     },
     {
       "slug": "pleasant-goat-and-big-big-wolf",
@@ -71,8 +61,7 @@
       "type": "",
       "startDate": "",
       "endDate": "",
-      "dateLabel": "Mar 28 – Apr 27",
-      "sourceUrl": "https://www.heartodex.com/en/events/pleasant-goat-and-big-big-wolf"
+      "dateLabel": "Mar 28 – Apr 27"
     },
     {
       "slug": "dreamlight-cinematics",
@@ -82,8 +71,7 @@
       "type": "",
       "startDate": "",
       "endDate": "",
-      "dateLabel": "Mar 21 – May 9",
-      "sourceUrl": "https://www.heartodex.com/en/events/dreamlight-cinematics"
+      "dateLabel": "Mar 21 – May 9"
     },
     {
       "slug": "my-little-pony",
@@ -93,8 +81,7 @@
       "type": "",
       "startDate": "",
       "endDate": "",
-      "dateLabel": "Feb 14 – Mar 24",
-      "sourceUrl": "https://www.heartodex.com/en/events/my-little-pony"
+      "dateLabel": "Feb 14 – Mar 24"
     },
     {
       "slug": "winter-frost-season",
@@ -104,8 +91,7 @@
       "type": "",
       "startDate": "",
       "endDate": "",
-      "dateLabel": "Jan 24 – Mar 14",
-      "sourceUrl": "https://www.heartodex.com/en/events/winter-frost-season"
+      "dateLabel": "Jan 24 – Mar 14"
     },
     {
       "slug": "sanrio-characters-collaboration",
@@ -115,8 +101,7 @@
       "type": "Collaboration",
       "startDate": "",
       "endDate": "",
-      "dateLabel": "July 17, 2026",
-      "sourceUrl": ""
+      "dateLabel": "July 17, 2026"
     }
   ]
 }

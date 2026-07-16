@@ -73,6 +73,7 @@ for (const file of walk(assetRoot, '.js')) {
 const sourceConfig = {
   fish: ['data/heartopia-fish.json', 'fish'],
   insects: ['data/heartopia-insects.json', 'insects'],
+  birds: ['data/heartopia-birds.json', 'birds'],
   wildlife: ['data/heartopia-wildlife.json', 'wildlife'],
   crops: ['data/heartopia-crops.json', 'crops'],
   flowers: ['data/heartopia-flowers.json', 'flowers'],
@@ -91,11 +92,6 @@ for (const [key, [file, property]] of Object.entries(sourceConfig)) {
   totals[key] = Array.isArray(data[property]) ? data[property].length : 0;
   if (Number.isInteger(data.count)) check(data.count === totals[key], `${file}: declared count ${data.count}, actual ${totals[key]}`);
 }
-
-const birdHtml = read('database/birds/index.html');
-const birdMatch = birdHtml.match(/const birdData=(\[[\s\S]*?\])\s*;const birdLinks/);
-check(birdMatch, 'database/birds/index.html: embedded bird data is missing');
-totals.birds = birdMatch ? JSON.parse(birdMatch[1]).length : 0;
 
 const mapSource = read('assets/js/map-location-finder.js');
 const mapMatch = mapSource.match(/const locations = (\[[\s\S]*?\]);\s*\n\s*const typeLabels/);
@@ -134,8 +130,8 @@ for (const file of ['guides/achievements/index.html', 'guides/badges/index.html'
   check(html.includes(String(achievements)), `${file}: current achievement total ${achievements} is not present`);
 }
 
-const eventMonitor = readJson('data/monitor/heartodex-events.json');
-for (const event of eventMonitor.events || []) {
+const eventData = readJson('data/heartopia-events.json');
+for (const event of eventData.events || []) {
   if (!['active', 'upcoming'].includes(event.status)) continue;
   check(fs.existsSync(path.join(root, 'events', event.localSlug, 'index.html')), `Events: missing ${event.status} detail page /events/${event.localSlug}/`);
 }

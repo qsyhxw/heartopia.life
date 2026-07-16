@@ -1,0 +1,879 @@
+{
+  "generatedAt": "2026-07-16",
+  "count": 97,
+  "birds": [
+    {
+      "name": "mallard",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Suburban Lake",
+      "category": "Common",
+      "img": "Mallard.webp"
+    },
+    {
+      "name": "winter mallard",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "[EVENT] Winter Birdwatching, Suburban Lake",
+      "category": "Winter frost season",
+      "img": "Winter-Mallard.webp"
+    },
+    {
+      "name": "bearded reedling",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Stone Cliff, Onsen, Crater Lake, Ruins",
+      "category": "Common",
+      "img": "Bearded-Reedling.webp"
+    },
+    {
+      "name": "eurasian bullfinch",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Suburbs",
+      "category": "Common",
+      "img": "Eurasian-Bullfinch.webp"
+    },
+    {
+      "name": "eurasian wren",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Spirit-Oak Pine Forest, Forest Lake",
+      "category": "Common",
+      "img": "Eurasian-Wren.webp"
+    },
+    {
+      "name": "pied imperial pigeon",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "East Pier of Fishing Village, Fishing Village Square, Wharf",
+      "category": "Common",
+      "img": "Pied-Imperial-Pigeon.webp"
+    },
+    {
+      "name": "greater flamingo",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Suburban Lake",
+      "category": "Common",
+      "img": "Greater-Flamingo.webp"
+    },
+    {
+      "name": "winter greater flamingo",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "[EVENT] Winter Birdwatching, Suburban Lake",
+      "category": "Winter frost season",
+      "img": "Winter-Greater-Flamingo.webp"
+    },
+    {
+      "name": "blue brick sparrow",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Onsen",
+      "category": "Modular Streets",
+      "img": "Blue-Brick-Sparrow.webp"
+    },
+    {
+      "name": "purple brick sparrow",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Ruins",
+      "category": "Modular Streets",
+      "img": "Purple-Brick-Sparrow.webp"
+    },
+    {
+      "name": "colorful brick sparrow",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Evento especial de aves de bloques",
+      "category": "Modular Streets",
+      "img": "Colorful-Brick-Sparrow.webp"
+    },
+    {
+      "name": "pink brick sparrow",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Stone Cliff",
+      "category": "Modular Streets",
+      "img": "Pink-Brick-Sparrow.webp"
+    },
+    {
+      "name": "green brick sparrow",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Crater Lake",
+      "category": "Modular Streets",
+      "img": "Green-Brick-Sparrow.webp"
+    },
+    {
+      "name": "blue-and-yellow macaw",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "[EVENT] Nest of Hundreds ",
+      "category": "Common,Nest of Hundreds ",
+      "img": "Blue-and-yellow-Macaw.webp"
+    },
+    {
+      "name": "long-tailed tit",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Blanc's Head",
+      "category": "Common",
+      "img": "Long-Tailed-Tit.webp"
+    },
+    {
+      "name": "blue suit dove",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Spirit-Oak Pine Forest, [EVENT] Actor Dove",
+      "category": "Dreamlight Cinematics",
+      "img": "Blue-Suit-Dove.webp"
+    },
+    {
+      "name": "gray suit dove",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Deer Tower, [EVENT] Actor Dove",
+      "category": "Dreamlight Cinematics",
+      "img": "Gray-Suit-Dove.webp"
+    },
+    {
+      "name": "striped suit dove",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "[EVENT] Actor Dove",
+      "category": "Dreamlight Cinematics",
+      "img": "Striped-Suit-Dove.webp"
+    },
+    {
+      "name": "red suit dove",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Forest Island, [EVENT] Actor Dove",
+      "category": "Dreamlight Cinematics",
+      "img": "Red-Suit-Dove.webp"
+    },
+    {
+      "name": "green suit dove",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Forest Jump Puzzle, [EVENT] Actor Dove",
+      "category": "Dreamlight Cinematics",
+      "img": "Green-Suit-Dove.webp"
+    },
+    {
+      "name": "wonga pigeon",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Spirit-Oak Pine Forest, Deer Tower, Forest Lake",
+      "category": "Common",
+      "img": "Wonga-Pigeon.webp"
+    },
+    {
+      "name": "winter mandarin duck",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "[EVENT] Winter Birdwatching",
+      "category": "Winter frost season",
+      "img": "Winter-Mandarin-Duck.webp"
+    },
+    {
+      "name": "blue peafowl",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "[EVENT] Nest of Hundreds ",
+      "category": "Nest of Hundreds ",
+      "img": "Blue-Peafowl.webp"
+    },
+    {
+      "name": "european robin",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Central Square",
+      "category": "Common",
+      "img": "European-Robin.webp"
+    },
+    {
+      "name": "winter smew",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "[EVENT] Winter Birdwatching, Suburban Lake",
+      "category": "Winter frost season",
+      "img": "Winter-Smew.webp"
+    },
+    {
+      "name": "winter eurasian wigeon",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "[EVENT] Winter Birdwatching, Suburban Lake",
+      "category": "Winter frost season",
+      "img": "Winter-Eurasian-Wigeon.webp"
+    },
+    {
+      "name": "eurasian collared dove",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Residential Area",
+      "category": "Common",
+      "img": "Eurasian-Collared-Dove.webp"
+    },
+    {
+      "name": "pink-necked green pigeon",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Windmill Flower Field",
+      "category": "Common",
+      "img": "Pink-Necked-Green-Pigeon.webp"
+    },
+    {
+      "name": "woodchat shrike",
+      "level": 2,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Suburbs",
+      "category": "Common",
+      "img": "Woodchat-Shrike.webp"
+    },
+    {
+      "name": "great tit",
+      "level": 2,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Crater Lake, Ruins",
+      "category": "Common",
+      "img": "Great-Tit.webp"
+    },
+    {
+      "name": "seagull",
+      "level": 2,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Seaside",
+      "category": "Common",
+      "img": "Seagull.webp"
+    },
+    {
+      "name": "eurasian nuthatch",
+      "level": 2,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "East Pier of Fishing Village, Fishing Village Square",
+      "category": "Common",
+      "img": "Eurasian-Nuthatch.webp"
+    },
+    {
+      "name": "stock dove",
+      "level": 2,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Central Square",
+      "category": "Common",
+      "img": "Stock-Dove.webp"
+    },
+    {
+      "name": "eurasian chaffinch",
+      "level": 2,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Windmill Flower Field",
+      "category": "Common",
+      "img": "Eurasian-Chaffinch.webp"
+    },
+    {
+      "name": "eurasian wigeon",
+      "level": 2,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "River",
+      "category": "Common",
+      "img": "Eurasian-Wigeon.webp"
+    },
+    {
+      "name": "european shag",
+      "level": 3,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Forest Island",
+      "category": "Common",
+      "img": "European-Shag.webp"
+    },
+    {
+      "name": "double-barred finch",
+      "level": 3,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Lighthouse",
+      "category": "Common",
+      "img": "Double-Barred-Finch.webp"
+    },
+    {
+      "name": "king eider",
+      "level": 3,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "River",
+      "category": "Common",
+      "img": "King-Eider.webp"
+    },
+    {
+      "name": "audouin’s gull",
+      "level": 3,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Whale Sea",
+      "category": "Common",
+      "img": "Audouin’s-Gull.webp"
+    },
+    {
+      "name": "red-and-green macaw",
+      "level": 3,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "[EVENT] Nest of Hundreds ",
+      "category": "Nest of Hundreds ",
+      "img": "Red-and-green-Macaw.webp"
+    },
+    {
+      "name": "silver-throated tit",
+      "level": 3,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Forest Jump Puzzle",
+      "category": "Common",
+      "img": "Silver-Throated-Tit.webp"
+    },
+    {
+      "name": "eurasian golden oriole",
+      "level": 3,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Residential Area",
+      "category": "Common",
+      "img": "Eurasian-Golden-Oriole.webp"
+    },
+    {
+      "name": "ruddy shelduck",
+      "level": 3,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Suburban Lake",
+      "category": "Common",
+      "img": "Ruddy-Shelduck.webp"
+    },
+    {
+      "name": "pine grosbeak",
+      "level": 4,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Forest Island",
+      "category": "Common",
+      "img": "Pine-Grosbeak.webp"
+    },
+    {
+      "name": "lady amherst pheasant",
+      "level": 4,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Ruins",
+      "category": "Common",
+      "img": "Lady-Amherst-Pheasant.webp"
+    },
+    {
+      "name": "white wagtail",
+      "level": 4,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Amethyst Beach",
+      "category": "Common",
+      "img": "White-Wagtail.webp"
+    },
+    {
+      "name": "regent bowerbird",
+      "level": 4,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Spirit-Oak Pine Forest",
+      "category": "Common",
+      "img": "Regent-Bowerbird.webp"
+    },
+    {
+      "name": "przevalski's parrotbill",
+      "level": 4,
+      "weather": "Rainbow, Sunny",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "East Pier of Fishing Village, Fishing Village Square",
+      "category": "Common",
+      "img": "Przevalski's-Parrotbill.webp"
+    },
+    {
+      "name": "smew",
+      "level": 4,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Forest Lake",
+      "category": "Common",
+      "img": "Smew.webp"
+    },
+    {
+      "name": "wallace's fruit dove",
+      "level": 4,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Windmill Flower Field",
+      "category": "Common",
+      "img": "Wallace's-Fruit-Dove.webp"
+    },
+    {
+      "name": "european bee-eater",
+      "level": 5,
+      "weather": "Rainbow, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Onsen Mountain Lake",
+      "category": "Common",
+      "img": "European-Bee-Eater.webp"
+    },
+    {
+      "name": "brown noddy",
+      "level": 5,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Old Sea",
+      "category": "Common",
+      "img": "Brown-Noddy.webp"
+    },
+    {
+      "name": "lesser flamingo",
+      "level": 5,
+      "weather": "Rainbow, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Forest Lake",
+      "category": "Common",
+      "img": "Lesser-Flamingo.webp"
+    },
+    {
+      "name": "great green macaw",
+      "level": 5,
+      "weather": "Rainbow, Sunny",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "[EVENT] Nest of Hundreds ",
+      "category": "Nest of Hundreds ",
+      "img": "Great-Green-Macaw.webp"
+    },
+    {
+      "name": "african olive pigeon",
+      "level": 5,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Onsen, Onsen Mountain Lake",
+      "category": "Common",
+      "img": "African-Olive-Pigeon.webp"
+    },
+    {
+      "name": "yellow bellied flycatcher",
+      "level": 5,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Fishing Village Square, Wharf",
+      "category": "Common",
+      "img": "Yellow-Bellied-Flycatcher.webp"
+    },
+    {
+      "name": "long eared owl",
+      "level": 6,
+      "weather": "Rainbow, Sunny",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Stone Cliff, Onsen Mountain Lake",
+      "category": "Common",
+      "img": "Long-Eared-Owl.webp"
+    },
+    {
+      "name": "red faced cormorant",
+      "level": 6,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Old Sea, Whale Sea",
+      "category": "Common",
+      "img": "Red-Faced-Cormorant.webp"
+    },
+    {
+      "name": "cinnamon ground dove",
+      "level": 6,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "East Pier of Fishing Village, Fishing Village Square",
+      "category": "Common",
+      "img": "Cinnamon-Ground-Dove.webp"
+    },
+    {
+      "name": "hawfinch",
+      "level": 6,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Onsen Mountain Lake, Crater Lake",
+      "category": "Common",
+      "img": "Hawfinch.webp"
+    },
+    {
+      "name": "common kestrel",
+      "level": 7,
+      "weather": "Rainbow, Sunny",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Deer Tower",
+      "category": "Common",
+      "img": "Common-Kestrel.webp"
+    },
+    {
+      "name": "tern",
+      "level": 7,
+      "weather": "Rainbow",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "East Sea, Seaside",
+      "category": "Common",
+      "img": "Tern.webp"
+    },
+    {
+      "name": "lear's macaw",
+      "level": 7,
+      "weather": "Rainbow, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "[EVENT] Nest of Hundreds ",
+      "category": "Nest of Hundreds ",
+      "img": "Lear's-Macaw.webp"
+    },
+    {
+      "name": "azure tit",
+      "level": 7,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Windmill Flower Field, Meadow Lake",
+      "category": "Common",
+      "img": "Azure-Tit.webp"
+    },
+    {
+      "name": "jambu fruit dove",
+      "level": 7,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Suburbs",
+      "category": "Common",
+      "img": "Jambu-Fruit-Dove.webp"
+    },
+    {
+      "name": "peregrine falcon",
+      "level": 8,
+      "weather": "Rainbow, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Stone Cliff, Onsen",
+      "category": "Common",
+      "img": "Peregrine-Falcon.webp"
+    },
+    {
+      "name": "eastern bluebird",
+      "level": 8,
+      "weather": "Rainbow, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Suburbs",
+      "category": "Common",
+      "img": "Eastern-Bluebird.webp"
+    },
+    {
+      "name": "pink pigeon",
+      "level": 8,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Whale Mountain, Windmill Flower Field",
+      "category": "Common",
+      "img": "Pink-Pigeon.webp"
+    },
+    {
+      "name": "redpoll",
+      "level": 8,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Spirit-Oak Pine Forest",
+      "category": "Common",
+      "img": "Redpoll.webp"
+    },
+    {
+      "name": "imperial shag",
+      "level": 9,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "East Sea, Zephyr Sea",
+      "category": "Common",
+      "img": "Imperial-Shag.webp"
+    },
+    {
+      "name": "american flamingo",
+      "level": 9,
+      "weather": "Rainbow",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Amethyst Beach",
+      "category": "Common",
+      "img": "American-Flamingo.webp"
+    },
+    {
+      "name": "white-headed duck",
+      "level": 9,
+      "weather": "Rainbow, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Onsen Mountain Lake",
+      "category": "Common",
+      "img": "White-Headed-Duck.webp"
+    },
+    {
+      "name": "green peafowl",
+      "level": 9,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "[EVENT] Nest of Hundreds ",
+      "category": "Nest of Hundreds ",
+      "img": "Green-Peafowl.webp"
+    },
+    {
+      "name": "paradise tanager",
+      "level": 9,
+      "weather": "Rainbow",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Suburbs",
+      "category": "Common",
+      "img": "Paradise-Tanager.webp"
+    },
+    {
+      "name": "eagle-owl",
+      "level": 10,
+      "weather": "Rainbow, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Deer Tower",
+      "category": "Common",
+      "img": "Eagle-Owl.webp"
+    },
+    {
+      "name": "azores bullfinch",
+      "level": 10,
+      "weather": "Rainbow",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Lighthouse",
+      "category": "Common",
+      "img": "Azores-Bullfinch.webp"
+    },
+    {
+      "name": "amur falcon",
+      "level": 10,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Crater Lake, Ruins",
+      "category": "Common",
+      "img": "Amur-Falcon.webp"
+    },
+    {
+      "name": "verditer flycatcher",
+      "level": 10,
+      "weather": "Rainbow",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Forest Jump Puzzle",
+      "category": "Common",
+      "img": "Verditer-Flycatcher.webp"
+    },
+    {
+      "name": "baikal teal",
+      "level": 11,
+      "weather": "Rainbow",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Onsen Mountain Lake",
+      "category": "Common",
+      "img": "Baikal-Teal.webp"
+    },
+    {
+      "name": "inca tern",
+      "level": 11,
+      "weather": "Rainbow, Rainy",
+      "time": "Day, Dawn, Dusk",
+      "location": "Old Sea",
+      "category": "Common",
+      "img": "Inca-Tern.webp"
+    },
+    {
+      "name": "chestnut-cheeked starling",
+      "level": 11,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Windmill Flower Field",
+      "category": "Common",
+      "img": "Chestnut-Cheeked-Starling.webp"
+    },
+    {
+      "name": "blue-headed quail-dove",
+      "level": 11,
+      "weather": "Rainbow, Sunny",
+      "time": "Day, Dusk, Night",
+      "location": "Suburbs",
+      "category": "Common",
+      "img": "Blue-Headed-Quail-Dove.webp"
+    },
+    {
+      "name": "white peafowl",
+      "level": 11,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "[EVENT] Nest of Hundreds ",
+      "category": "Nest of Hundreds ",
+      "img": "White-Peafowl.webp"
+    },
+    {
+      "name": "snowy owl",
+      "level": 12,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dusk",
+      "location": "Spirit-Oak Pine Forest",
+      "category": "Common",
+      "img": "Snowy-Owl.webp"
+    },
+    {
+      "name": "red-browed finch",
+      "level": 12,
+      "weather": "Rainbow",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Crater Lake",
+      "category": "Common",
+      "img": "Red-Browed-Finch.webp"
+    },
+    {
+      "name": "atlantic puffin",
+      "level": 12,
+      "weather": "Rainbow, Sunny",
+      "time": "Dawn, Dusk, Night",
+      "location": "Whale Sea",
+      "category": "Common",
+      "img": "Atlantic-Puffin.webp"
+    },
+    {
+      "name": "blue-footed booby",
+      "level": 12,
+      "weather": "Rainbow, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Zephyr Sea",
+      "category": "Common",
+      "img": "Blue-Footed-Booby.webp"
+    },
+    {
+      "name": "whooper swan",
+      "level": 13,
+      "weather": "Rainbow, Sunny",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Suburban Lake",
+      "category": "Common",
+      "img": "Whooper-Swan.webp"
+    },
+    {
+      "name": "black swan",
+      "level": 13,
+      "weather": "Rainbow, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "Suburban Lake",
+      "category": "Common",
+      "img": "Black-Swan.webp"
+    },
+    {
+      "name": "black peafowl",
+      "level": 13,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "[EVENT] Nest of Hundreds ",
+      "category": "Nest of Hundreds ",
+      "img": "Black-Peafowl.webp"
+    },
+    {
+      "name": "black stork",
+      "level": 14,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dusk, Night",
+      "location": "Meadow Lake",
+      "category": "Common",
+      "img": "Black-Stork.webp"
+    },
+    {
+      "name": "spectacled owl",
+      "level": 14,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Dawn, Night",
+      "location": "Forest Jump Puzzle",
+      "category": "Common",
+      "img": "Spectacled-Owl.webp"
+    },
+    {
+      "name": "wandering albatross",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "[EVENT] Call of Whales, Amethyst Beach",
+      "category": "Call of Whales",
+      "img": "Wandering-Albatross.webp"
+    },
+    {
+      "name": "grey-mantled albatross",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "[EVENT] Call of Whales, Stone Cliff",
+      "category": "Call of Whales",
+      "img": "Grey-mantled-Albatross.webp"
+    },
+    {
+      "name": "white spoonbill",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "[EVENT] Call of Whales, Onsen Mountain Lake",
+      "category": "Call of Whales",
+      "img": "White-Spoonbill.webp"
+    },
+    {
+      "name": "white-winged tern",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "[EVENT] Call of Whales, Whale Mountain",
+      "category": "Call of Whales",
+      "img": "White-winged-Tern.webp"
+    },
+    {
+      "name": "pomarine skua",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Day, Dawn, Dusk, Night",
+      "location": "[EVENT] Call of Whales, Whale Mountain, Windmill Flower Field, Amethyst Beach",
+      "category": "Call of Whales",
+      "img": "Pomarine-Skua.webp"
+    }
+  ]
+}

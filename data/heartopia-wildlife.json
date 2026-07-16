@@ -5,7 +5,6 @@
     {
       "id": "alpaca",
       "name": "Alpaca",
-      "imageUrl": "https://www.heartodex.com/_astro/1783738190730-animal-alpaca_gDg6z.webp",
       "category": "Common",
       "location": "Amethyst Beach",
       "weather": "Sunny",
@@ -22,7 +21,6 @@
     {
       "id": "bunny",
       "name": "Bunny",
-      "imageUrl": "https://www.heartodex.com/_astro/1783738158505-animal-conejo_1tCt1y.webp",
       "category": "Common",
       "location": "Suburbs",
       "weather": "Sunny",
@@ -39,7 +37,6 @@
     {
       "id": "capybara",
       "name": "Capybara",
-      "imageUrl": "https://www.heartodex.com/_astro/1783738150016-animal-capibara_qxpUA.webp",
       "category": "Common",
       "location": "Crater Lake",
       "weather": "Rainbow",
@@ -56,7 +53,6 @@
     {
       "id": "ferret",
       "name": "Ferret",
-      "imageUrl": "https://www.heartodex.com/_astro/1783738180133-animal-huron_ZCdP02.webp",
       "category": "Common",
       "location": "Rosy River",
       "weather": "Rainbow",
@@ -71,7 +67,6 @@
     {
       "id": "fox",
       "name": "Fox",
-      "imageUrl": "https://www.heartodex.com/_astro/1783738126393-animal-zorro_WO9be.webp",
       "category": "Common",
       "location": "Windmill Flower Field",
       "weather": "Rainbow",
@@ -86,7 +81,6 @@
     {
       "id": "maltese",
       "name": "Maltese",
-      "imageUrl": "https://www.heartodex.com/_astro/1783738210562-animal-maltese_ZDrvFr.webp",
       "category": "Maltese",
       "location": "Forest Island",
       "weather": "Sunny",
@@ -101,7 +95,6 @@
     {
       "id": "panda",
       "name": "Panda",
-      "imageUrl": "https://www.heartodex.com/_astro/1783738206153-animal-panda_105qed.webp",
       "category": "Common",
       "location": "Forest Jump Puzzle",
       "weather": "Rainy",
@@ -118,7 +111,6 @@
     {
       "id": "penguin",
       "name": "Penguin",
-      "imageUrl": "https://www.heartodex.com/_astro/1783738195430-animal-pinguino_Z1dWc2l.webp",
       "category": "Winter frost season",
       "location": "Old Sea",
       "weather": "Rainy",
@@ -131,7 +123,6 @@
     {
       "id": "sea-otter",
       "name": "Sea Otter",
-      "imageUrl": "https://www.heartodex.com/_astro/1783738186224-animal-nutriamarina_Z1eE5Nl.webp",
       "category": "Common",
       "location": "Fishing Village Square",
       "weather": "Rainy",
@@ -144,7 +135,6 @@
     {
       "id": "sika-deer",
       "name": "Sika Deer",
-      "imageUrl": "https://www.heartodex.com/_astro/1783738201643-animal-ciervosika_1WSxKk.webp",
       "category": "Common",
       "location": "Forest Lake",
       "weather": "Sunny",

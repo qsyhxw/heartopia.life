@@ -86,5 +86,6 @@ const details=await Promise.all(remote.map(enrich)), events=merge(details);
 for(const e of events){const old=exists(e)?read(file(e)):'';if((e.status==='active'||e.status==='upcoming')&&(!old||old.includes('data-event-sync="managed"')))write(file(e),detailPage(e));}
 write('events/index.html',rootPage(events));
 updateSitemap(events);
-write('data/monitor/heartodex-events.json',JSON.stringify({schemaVersion:2,updatedAt:today,source:base+'/en/events/',policy:{mode:'auto-publish-whitelisted-facts',allowed:'Names, dates, status, event type, and local route only. Narrative fields are blocked.',images:'Source image URLs are recorded for review only. Third-party images are not downloaded or copied automatically.'},events:events.map(e=>pickRemoteFields('events',{slug:e.slug,localSlug:route(e),name:e.name,status:e.status,type:e.type||'',startDate:e.startDate||'',endDate:e.endDate||'',dateLabel:e.date||'',sourceUrl:e.sourceUrl||''}))},null,2)+'\n');
+const publicEvents=events.map(e=>pickRemoteFields('events',{slug:e.slug,localSlug:route(e),name:e.name,status:e.status,type:e.type||'',startDate:e.startDate||'',endDate:e.endDate||'',dateLabel:e.date||''}));
+write('data/heartopia-events.json',JSON.stringify({schemaVersion:1,generatedAt:today,count:publicEvents.length,events:publicEvents},null,2)+'\n');
 console.log('Synced '+events.length+' event listings.');

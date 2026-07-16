@@ -1,11 +1,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { readSyncJson } from './sync-runtime.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const read = (file) => fs.readFileSync(path.join(root, file), 'utf8');
 const write = (file, value) => fs.writeFileSync(path.join(root, file), value);
 const escape = (value) => String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-const readiness = JSON.parse(read('data/monitor/heartodex-sync-readiness.json'));
+const readiness = readSyncJson('readiness.json');
 let changes = 0;
 
 if (readiness.ready.fish.length) {

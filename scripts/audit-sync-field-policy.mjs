@@ -6,8 +6,8 @@ const root = path.resolve(import.meta.dirname, '..');
 const read = (file) => fs.readFileSync(path.join(root, file), 'utf8');
 const readJson = (file) => JSON.parse(read(file));
 
-const eventMonitor = readJson('data/monitor/heartodex-events.json');
-for (const event of eventMonitor.events || []) assertRemoteFields('events', event);
+const eventData = readJson('data/heartopia-events.json');
+for (const event of eventData.events || []) assertRemoteFields('events', event);
 
 const activeAutoSyncScripts = [
   'scripts/monitor-heartodex-collections.mjs',
@@ -21,6 +21,31 @@ const activeAutoSyncScripts = [
   'scripts/sync-heartodex-achievements.mjs',
   'scripts/sync-heartodex-events.mjs',
 ];
+
+const retiredMonitorArtifacts = [
+  'data/monitor/heartodex-collections.json',
+  'data/monitor/heartodex-sync-readiness.json',
+  'data/monitor/heartodex-events.json',
+];
+for (const file of retiredMonitorArtifacts) {
+  if (fs.existsSync(path.join(root, file))) throw new Error(`Public monitor artifact must not exist: ${file}`);
+}
+if (read('.github/workflows/monitor-heartodex-collections.yml').includes('data/monitor/')) {
+  throw new Error('Collection workflow still stages public monitor artifacts.');
+}
+
+const blockedPublicFields = new Set(['source', 'sourceUrl', 'imageUrl']);
+function auditPublicValue(value, location) {
+  if (Array.isArray(value)) return value.forEach((item, index) => auditPublicValue(item, `${location}[${index}]`));
+  if (!value || typeof value !== 'object') return;
+  for (const [field, nested] of Object.entries(value)) {
+    if (blockedPublicFields.has(field)) throw new Error(`Public data contains ${field}: ${location}.${field}`);
+    auditPublicValue(nested, `${location}.${field}`);
+  }
+}
+for (const name of fs.readdirSync(path.join(root, 'data')).filter((name) => /^heartopia-.*\.json$/.test(name))) {
+  auditPublicValue(readJson(`data/${name}`), `data/${name}`);
+}
 
 const retiredAchievementArtifacts = [
   'data/achievement-details.json',
@@ -54,6 +79,6 @@ if (/objective\s*:\s*remoteObjective|rawObjective\s*[,}]/.test(achievementSync))
 console.log(JSON.stringify({
   ok: true,
   policy: SYNC_FIELD_POLICY,
-  auditedEventRecords: (eventMonitor.events || []).length,
+  auditedEventRecords: (eventData.events || []).length,
   auditedScripts: activeAutoSyncScripts,
 }, null, 2));

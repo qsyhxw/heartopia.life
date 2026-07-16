@@ -1,10 +1,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { syncPath } from './sync-runtime.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const sourceBase = 'https://www.heartodex.com';
 const sourceRoot = sourceBase + '/en/';
-const outputFile = 'data/monitor/heartodex-collections.json';
+const outputFile = syncPath('collections.json');
 
 const read = (file) => fs.readFileSync(path.join(root, file), 'utf8');
 const write = (file, value) => {
@@ -46,7 +47,7 @@ async function fetchPage(kind) {
       await new Promise((resolve) => setTimeout(resolve, attempt * 900));
     }
   }
-  throw new Error('Unable to fetch ' + url + ': ' + lastError.message);
+  throw new Error('Unable to fetch a reference collection page: ' + lastError.message.replace(/https?:\/\/\S+/g, '[remote URL]'));
 }
 
 function parseRemoteCollection(html, kind) {
@@ -149,10 +150,11 @@ const snapshot = {
   }
 };
 const next = JSON.stringify(snapshot, null, 2) + '\n';
-const previous = fs.existsSync(path.join(root, outputFile)) ? read(outputFile) : '';
+const previous = fs.existsSync(outputFile) ? fs.readFileSync(outputFile, 'utf8') : '';
 if (previous === next) {
-  console.log('No Heartodex collection change. Fish ' + remote.fish.registered + '/' + local.fish.length + '; birds ' + remote.birds.registered + '/' + local.birds.length + '; insects ' + remote.insects.registered + '/' + local.insects.length + '.');
+  console.log('No reference collection change. Fish ' + remote.fish.registered + '/' + local.fish.length + '; birds ' + remote.birds.registered + '/' + local.birds.length + '; insects ' + remote.insects.registered + '/' + local.insects.length + '.');
 } else {
-  write(outputFile, next);
-  console.log('Updated monitor snapshot. Fish ' + remote.fish.registered + '/' + local.fish.length + '; birds ' + remote.birds.registered + '/' + local.birds.length + '; insects ' + remote.insects.registered + '/' + local.insects.length + '.');
+  fs.mkdirSync(path.dirname(outputFile), { recursive: true });
+  fs.writeFileSync(outputFile, next);
+  console.log('Updated temporary monitor snapshot. Fish ' + remote.fish.registered + '/' + local.fish.length + '; birds ' + remote.birds.registered + '/' + local.birds.length + '; insects ' + remote.insects.registered + '/' + local.insects.length + '.');
 }
