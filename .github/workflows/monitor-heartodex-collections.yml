@@ -16,8 +16,6 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    env:
-      HEARTOPIA_SYNC_DIR: ${{ runner.temp }}/heartopia-sync
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -28,6 +26,10 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: '24'
+
+      - name: Prepare private sync runtime
+        shell: bash
+        run: echo "HEARTOPIA_SYNC_DIR=$RUNNER_TEMP/heartopia-sync" >> "$GITHUB_ENV"
 
       - name: Read reference collection listings
         run: node scripts/monitor-heartodex-collections.mjs
