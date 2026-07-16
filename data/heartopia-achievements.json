@@ -1,676 +1,676 @@
 {
-  "generatedAt": "2026-07-15",
+  "generatedAt": "2026-07-16",
   "count": 67,
   "achievements": [
     {
       "name": "Bird Whisperer",
       "group": "Birdwatching",
       "slug": "bird-whisperer",
-      "objective": "Birdwatching Hobby reaches Lv.10.",
+      "objective": "Hobby level: Birdwatching Lv. 10",
       "reward": "Bird Whisperer",
       "image": "/img/achievements/bird-whisperer.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Bush Wholesaler",
       "group": "Birdwatching",
       "slug": "bush-wholesaler",
-      "objective": "Share Camouflage Bush with 100 D.G. Members in total.",
+      "objective": "Sharing target: 100 D.G. Members; Item: Camouflage Bush",
       "reward": "Recommends",
       "image": "/img/achievements/bush-wholesaler.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Cloud Walker",
       "group": "Birdwatching",
       "slug": "cloud-walker",
-      "objective": "Trigger the hidden phase of Birdwatching Event 10 times in total.",
+      "objective": "Hidden-phase target: 10 activations; Event: Birdwatching",
       "reward": "Sky",
       "image": "/img/achievements/cloud-walker.webp",
       "status": "Activity-dependent",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Decisive Moment",
       "group": "Birdwatching",
       "slug": "decisive-moment",
-      "objective": "Obtain 10 5-Star Info Cards in a single Birdwatching Event.",
+      "objective": "Single-event target: 10 five-star Info Cards; Event: Birdwatching",
       "reward": "Moment",
       "image": "/img/achievements/decisive-moment.webp",
       "status": "Activity-dependent",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Harmony With Breeze",
       "group": "Birdwatching",
       "slug": "harmony-with-breeze",
-      "objective": "Trigger 100 Bird Waves in total during Birdwatching Events.",
+      "objective": "Cumulative target: 100 Bird Waves; Activity: Birdwatching Events",
       "reward": "Resonance",
       "image": "/img/achievements/harmony-with-breeze.webp",
       "status": "Activity-dependent",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Joyful Chorus",
       "group": "Birdwatching",
       "slug": "joyful-chorus",
-      "objective": "Trigger 3 Bird Waves in a single Birdwatching Event.",
+      "objective": "Single-event target: 3 Bird Waves; Event: Birdwatching",
       "reward": "Feather",
       "image": "/img/achievements/joyful-chorus.webp",
       "status": "Activity-dependent",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Animal Keeper",
       "group": "Collections",
       "slug": "animal-keeper",
-      "objective": "Discover the favorite foods for 8 animal groups.",
+      "objective": "Discovery target: Favorite foods for 8 animal groups",
       "reward": "Delicious",
       "image": "/img/achievements/animal-keeper.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Animal Neighbor",
       "group": "Collections",
       "slug": "animal-neighbor",
-      "objective": "Reach Bond Level 10 with 8 animal groups.",
+      "objective": "Bond target: Level 10 with 8 animal groups",
       "reward": "New Neighbor",
       "image": "/img/achievements/animal-neighbor.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Collector",
       "group": "Collections",
       "slug": "collector",
-      "objective": "Become an Expert Collector.",
+      "objective": "Rank requirement: Expert Collector",
       "reward": "Collector",
       "image": "/img/achievements/collector.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "D.G. Member",
       "group": "Collections",
       "slug": "dg-member",
-      "objective": "D.G. Member Level reaches Lv.30.",
+      "objective": "D.G. Member level: 30",
       "reward": "D.G. Member",
       "image": "/img/achievements/dg-member.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Pop Star",
       "group": "Collections",
       "slug": "pop-star",
-      "objective": "Receive 100 Home Likes in total.",
+      "objective": "Cumulative target: 100 Home Likes",
       "reward": "Rising Star",
       "image": "/img/achievements/pop-star.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Puzzle Artist",
       "group": "Collections",
       "slug": "puzzle-artist",
-      "objective": "Become a Puzzle Artist.",
+      "objective": "Rank requirement: Puzzle Artist",
       "reward": "Puzzle",
       "image": "/img/achievements/puzzle-artist.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Rocket Sponsor",
       "group": "Collections",
       "slug": "rocket-sponsor",
-      "objective": "Earn a total of 500,000 Gold by selling items to Gold Merchant Albert Jr.",
+      "objective": "Sales income target: 500,000 Gold; Buyer: Gold Merchant Albert Jr.",
       "reward": "Rocket",
       "image": "/img/achievements/rocket-sponsor.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Stardust Collector",
       "group": "Collections",
       "slug": "stardust-collector",
-      "objective": "Collect 60 Starfall Shards.",
+      "objective": "Collection target: 60 Starfall Shards",
       "reward": "Star Picker",
       "image": "/img/achievements/stardust-collector.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Fast & Flawless",
       "group": "Cooking",
       "slug": "fast-flawless",
-      "objective": "Cook 2 5-Star dishes within 60s.",
+      "objective": "Time limit: 60 seconds; Cooking target: 2 five-star dishes",
       "reward": "Kitchen Clock",
       "image": "/img/achievements/fast-flawless.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Gourmet Diplomat",
       "group": "Cooking",
       "slug": "gourmet-diplomat",
-      "objective": "Share food 100 times in total.",
+      "objective": "Sharing target: 100 food shares",
       "reward": "Savior",
       "image": "/img/achievements/gourmet-diplomat.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Town Cooking Legend",
       "group": "Cooking",
       "slug": "town-cooking-legend",
-      "objective": "Cooking Hobby reaches Lv.10.",
+      "objective": "Hobby level: Cooking Lv. 10",
       "reward": "Chef",
       "image": "/img/achievements/town-cooking-legend.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Bestselling Author",
       "group": "Dreams",
       "slug": "bestselling-author",
-      "objective": "Reach a cumulative total of 1000 unique purchases for the books you created",
+      "objective": "Reader target: 1,000 unique purchases across books you created",
       "reward": "Bestseller",
       "image": "/img/achievements/bestselling-author.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Golden Music Cd",
       "group": "Dreams",
       "slug": "golden-music-cd",
-      "objective": "Music Dream reaches Golden Music CD.",
+      "objective": "Dream milestone: Golden Music CD; Dream: Music",
       "reward": "Music",
       "image": "/img/achievements/golden-music-cd.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Hidden Achievement 1",
       "group": "Dreams",
       "slug": "hidden-achievement-1",
-      "objective": "Sell a total of 10 books; each book must be purchased by 200 DIFFERENT players.",
+      "objective": "Publishing target: 10 books; Buyer requirement: 200 different players per book",
       "reward": "?",
       "image": "/img/achievements/hidden-achievement-1.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Ice Elf",
       "group": "Dreams",
       "slug": "ice-elf",
-      "objective": "Figure Skating Dream reaches Ice Elf.",
+      "objective": "Dream milestone: Ice Elf; Dream: Figure Skating",
       "reward": "Ice Skating",
       "image": "/img/achievements/ice-elf.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Persistent Quill",
       "group": "Dreams",
       "slug": "persistent-quill",
-      "objective": "Writing Dream reaches Master.",
+      "objective": "Dream milestone: Master; Dream: Writing",
       "reward": "Writing",
       "image": "/img/achievements/persistent-quill.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Fishing Machine",
       "group": "Fishing",
       "slug": "fishing-machine",
-      "objective": "Catch a total of 50 fish over 100kg each.",
+      "objective": "Catch target: 50 fish; Weight requirement: More than 100 kg each",
       "reward": "Fish Basket",
       "image": "/img/achievements/fishing-machine.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Mystic Fisher",
       "group": "Fishing",
       "slug": "mystic-fisher",
-      "objective": "Trigger the hidden phase of Fishing Event 10 times in total.",
+      "objective": "Hidden-phase target: 10 activations; Event: Fishing",
       "reward": "Fisher",
       "image": "/img/achievements/mystic-fisher.webp",
       "status": "Activity-dependent",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Never Empty-Handed",
       "group": "Fishing",
       "slug": "never-empty-handed",
-      "objective": "Fishing Hobby reaches Lv.10.",
+      "objective": "Hobby level: Fishing Lv. 10",
       "reward": "Skilled Angler",
       "image": "/img/achievements/never-empty-handed.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Sea Fishing Master",
       "group": "Fishing",
       "slug": "sea-fishing-master",
-      "objective": "Obtain all titles in Daily Sea Fishing Events.",
+      "objective": "Completion target: All Daily Sea Fishing Event titles",
       "reward": "Sea Fisher",
       "image": "/img/achievements/sea-fishing-master.webp",
       "status": "Activity-dependent",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Shark Frenzy",
       "group": "Fishing",
       "slug": "shark-frenzy",
-      "objective": "Catch 3 sharks from gold-glowing fish shadows during a single Sea Fishing event.",
+      "objective": "Single-event target: 3 sharks; Shadow requirement: Gold-glowing; Event: Sea Fishing",
       "reward": "Shark Cage",
       "image": "/img/achievements/shark-frenzy.webp",
       "status": "Activity-dependent",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Shoal Caller",
       "group": "Fishing",
       "slug": "shoal-caller",
-      "objective": "Trigger 3 Shoals in a single Fishing Event.",
+      "objective": "Single-event target: 3 Shoals; Event: Fishing",
       "reward": "Shoal Caller",
       "image": "/img/achievements/shoal-caller.webp",
       "status": "Activity-dependent",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Shoal'S Blessing",
       "group": "Fishing",
       "slug": "shoals-blessing",
-      "objective": "Trigger 100 Shoals in total during Fishing Events.",
+      "objective": "Cumulative target: 100 Shoals; Activity: Fishing Events",
       "reward": "Blessing",
       "image": "/img/achievements/shoals-blessing.webp",
       "status": "Activity-dependent",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Starlight Fisher",
       "group": "Fishing",
       "slug": "starlight-fisher",
-      "objective": "Catch 4 5-Star fish in a single Fishing Event.",
+      "objective": "Single-event target: 4 five-star fish; Event: Fishing",
       "reward": "Fishing Maniac",
       "image": "/img/achievements/starlight-fisher.webp",
       "status": "Activity-dependent",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Strong Sailor",
       "group": "Fishing",
       "slug": "strong-sailor",
-      "objective": "Catch fish over 100kg for 2 consecutive times.",
+      "objective": "Consecutive catch target: 2 fish; Weight requirement: More than 100 kg each",
       "reward": "Fishing Line",
       "image": "/img/achievements/strong-sailor.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Twin Fish Fortune",
       "group": "Fishing",
       "slug": "twin-fish-fortune",
-      "objective": "Catch 2 5-Star fish within 1 min.",
+      "objective": "Time limit: 1 minute; Catch target: 2 five-star fish",
       "reward": "Osprey",
       "image": "/img/achievements/twin-fish-fortune.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Green Touch",
       "group": "Gardening Hobby",
       "slug": "green-touch",
-      "objective": "Gardening Hobby reaches Lv.10.",
+      "objective": "Hobby level: Gardening Lv. 10",
       "reward": "Horticulturist",
       "image": "/img/achievements/green-touch.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Plentiful Harvest",
       "group": "Gardening Hobby",
       "slug": "plentiful-harvest",
-      "objective": "Harvest a 5-star crop during Bountiful Harvest.",
+      "objective": "Crop target: One five-star harvest; Activity: Bountiful Harvest",
       "reward": "Harvest",
       "image": "/img/achievements/plentiful-harvest.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Rainbow Luck",
       "group": "Gardening Hobby",
       "slug": "rainbow-luck",
-      "objective": "Trigger 2 Rainbow Hybrid Blessings in a single multi-area watering.",
+      "objective": "Single-watering target: 2 Rainbow Hybrid Blessings; Method: Multi-area watering",
       "reward": "Rainbow Luck",
       "image": "/img/achievements/rainbow-luck.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Five Insects Blessing",
       "group": "Insect Catching Hobby",
       "slug": "five-insects-blessing",
-      "objective": "Catch 5 5-Star insects during a single Insect Catching Event.",
+      "objective": "Single-event target: 5 five-star insects; Event: Insect Catching",
       "reward": "Insect Lord",
       "image": "/img/achievements/five-insects-blessing.webp",
       "status": "Activity-dependent",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Human Insect Attractor",
       "group": "Insect Catching Hobby",
       "slug": "human-insect-attractor",
-      "objective": "Trigger 4 Swarms in a single Insect Catching event.",
+      "objective": "Single-event target: 4 Swarms; Event: Insect Catching",
       "reward": "Insect Attractor",
       "image": "/img/achievements/human-insect-attractor.webp",
       "status": "Activity-dependent",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Insect Catching Party",
       "group": "Insect Catching Hobby",
       "slug": "insect-catching-party",
-      "objective": "Share Inflatable Insect Attractor with 100 D.G. Members in total.",
+      "objective": "Sharing target: 100 D.G. Members; Item: Inflatable Insect Attractor",
       "reward": "Insect Attractor",
       "image": "/img/achievements/insect-catching-party.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Insect Commander",
       "group": "Insect Catching Hobby",
       "slug": "insect-commander",
-      "objective": "Insect Catching Hobby reaches Lv.10.",
+      "objective": "Hobby level: Insect Catching Lv. 10",
       "reward": "Insect Master",
       "image": "/img/achievements/insect-commander.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Insect Harvester",
       "group": "Insect Catching Hobby",
       "slug": "insect-harvester",
-      "objective": "Catch 3 insects with a single insect-catching bubble.",
+      "objective": "Single-bubble target: 3 insects",
       "reward": "Triple Catch",
       "image": "/img/achievements/insect-harvester.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Mystic Tracker",
       "group": "Insect Catching Hobby",
       "slug": "mystic-tracker",
-      "objective": "Trigger the hidden phase in Insect Catching Event 10 times in total.",
+      "objective": "Hidden-phase target: 10 activations; Event: Insect Catching",
       "reward": "Exploration",
       "image": "/img/achievements/mystic-tracker.webp",
       "status": "Activity-dependent",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Onsen Mountain Insect King",
       "group": "Insect Catching Hobby",
       "slug": "onsen-mountain-insect-king",
-      "objective": "Obtain all titles in Bait the Insects Events.",
+      "objective": "Completion target: All Bait the Insects Event titles",
       "reward": "Insect Catcher",
       "image": "/img/achievements/onsen-mountain-insect-king.webp",
       "status": "Activity-dependent",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Swarm Commander",
       "group": "Insect Catching Hobby",
       "slug": "swarm-commander",
-      "objective": "Trigger 100 Swarms in total during Insect Catching Events.",
+      "objective": "Cumulative target: 100 Swarms; Activity: Insect Catching Events",
       "reward": "Swarm",
       "image": "/img/achievements/swarm-commander.webp",
       "status": "Activity-dependent",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Ace Cat Servant",
       "group": "Pet Hobby",
       "slug": "ace-cat-servant",
-      "objective": "Cat Caring Hobby reaches Lv.10.",
+      "objective": "Hobby level: Cat Caring Lv. 10",
       "reward": "Cat Lover",
       "image": "/img/achievements/ace-cat-servant.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Ace Dog Trainer",
       "group": "Pet Hobby",
       "slug": "ace-dog-trainer",
-      "objective": "Dog Caring Hobby reaches Lv.10.",
+      "objective": "Hobby level: Dog Caring Lv. 10",
       "reward": "Dog Pal",
       "image": "/img/achievements/ace-dog-trainer.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Doggie Canteen",
       "group": "Pet Hobby",
       "slug": "doggie-canteen",
-      "objective": "Feed 3 dogs their favorite food.",
+      "objective": "Feeding target: 3 dogs; Food requirement: Each dog receives a favorite food",
       "reward": "Dog Food",
       "image": "/img/achievements/doggie-canteen.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Meow-Meow Canteen",
       "group": "Pet Hobby",
       "slug": "meow-meow-canteen",
-      "objective": "Feed 5 cats their favorite food.",
+      "objective": "Feeding target: 5 cats; Food requirement: Each cat receives a favorite food",
       "reward": "Cat Food",
       "image": "/img/achievements/meow-meow-canteen.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Beneath The Meteor Shower",
       "group": "Social",
       "slug": "beneath-the-meteor-shower",
-      "objective": "Make a wish under the meteor with friends.",
+      "objective": "Social action: Make a wish with friends; Condition: Beneath a meteor",
       "reward": "Gemini",
       "image": "/img/achievements/beneath-the-meteor-shower.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Bold Grimkin",
       "group": "Social",
       "slug": "bold-grimkin",
-      "objective": "In a Hide & Seek Party, while possessing a Mysterious Grimkin, pop 20 Psionic Bubbles",
+      "objective": "Role: Mysterious Grimkin; Action target: Pop 20 Psionic Bubbles; Event: Hide & Seek",
       "reward": "Thrilling",
       "image": "/img/achievements/bold-grimkin.webp",
       "status": "Activity-dependent",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Foreman Beaver",
       "group": "Social",
       "slug": "foreman-beaver",
-      "objective": "Participated in 4 Build Challenges with works succesfully entering the Exhibition Phase",
+      "objective": "Participation target: 4 Build Challenges; Qualification: Work reaches the Exhibition Phase",
       "reward": "Build",
       "image": "/img/achievements/foreman-beaver.webp",
       "status": "Activity-dependent",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Logistics Beaver",
       "group": "Social",
       "slug": "logistics-beaver",
-      "objective": "Accumulate 5,000 Fresh Sprouts for a team during the Build Challenge.",
+      "objective": "Team resource target: 5,000 Fresh Sprouts; Event: Build Challenge",
       "reward": "Logistics",
       "image": "/img/achievements/logistics-beaver.webp",
       "status": "Activity-dependent",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Merge Into One",
       "group": "Social",
       "slug": "merge-into-one",
-      "objective": "In a Hide & Seek party, stayed possessed as a Mysterious Grimkin for 4 minutes without being found by the Investigative Journalist",
+      "objective": "Role: Mysterious Grimkin; Survival time: 4 minutes without discovery; Event: Hide & Seek",
       "reward": "Hide",
       "image": "/img/achievements/merge-into-one.webp",
       "status": "Activity-dependent",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Onsen Buddy",
       "group": "Social",
       "slug": "onsen-buddy",
-      "objective": "Take an Onsen with friends.",
+      "objective": "Social action: Visit an Onsen with friends",
       "reward": "Onsen",
       "image": "/img/achievements/onsen-buddy.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Quick Draw Starter",
       "group": "Social",
       "slug": "quick-draw-starter",
-      "objective": "As a Investigative Journalist in a Hide & Seek Party, discovered 3 Mysterious Grimkins within 60 seconds",
+      "objective": "Role: Investigative Journalist; Discovery target: 3 Mysterious Grimkins; Time limit: 60 seconds; Event: Hide & Seek",
       "reward": "Quick Draw",
       "image": "/img/achievements/quick-draw-starter.webp",
       "status": "Activity-dependent",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Rainbow Messenger",
       "group": "Social",
       "slug": "rainbow-messenger",
-      "objective": "Share Rainbow Bouquet with 50 D.G. Members in total.",
+      "objective": "Sharing target: 50 D.G. Members; Item: Rainbow Bouquet",
       "reward": "Rainbow Flower",
       "image": "/img/achievements/rainbow-messenger.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Repair Expert",
       "group": "Social",
       "slug": "repair-expert",
-      "objective": "Share Repair Kit with 100 D.G. Members in total.",
+      "objective": "Sharing target: 100 D.G. Members; Item: Repair Kit",
       "reward": "Repairs",
       "image": "/img/achievements/repair-expert.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Romantic Skater",
       "group": "Social",
       "slug": "romantic-skater",
-      "objective": "Skate hand-in-hand with a friend under a meteor shower.",
+      "objective": "Social action: Skate hand-in-hand with a friend; Condition: Meteor shower",
       "reward": "Pair Skating",
       "image": "/img/achievements/romantic-skater.webp",
       "status": "Activity-dependent",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Sharpshooter Basics",
       "group": "Social",
       "slug": "sharpshooter-basics",
-      "objective": "In a Hide & Seek Party, as an Investigative Journalist, successfully captured Special Photos 2 times in a row",
+      "objective": "Role: Investigative Journalist; Streak target: 2 consecutive Special Photos; Event: Hide & Seek",
       "reward": "Sharpshooter",
       "image": "/img/achievements/sharpshooter-basics.webp",
       "status": "Activity-dependent",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Idea Hamster",
       "group": "Special Hobbies",
       "slug": "idea-hamster",
-      "objective": "Party Artisan Dream reaches Idea Hamster",
+      "objective": "Dream milestone: Idea Hamster; Dream: Party Artisan",
       "reward": "Idea Hamster",
       "image": "/img/achievements/idea-hamster.webp",
       "status": "Activity-dependent",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Licensed & Ready",
       "group": "Special Hobbies",
       "slug": "licensed-ready",
-      "objective": "Participate in ocean cleanup events and remove large pollutants 60 times total",
+      "objective": "Cumulative target: 60 large pollutants removed; Activity: Ocean Cleanup Events",
       "reward": "Clear Obstacles",
       "image": "/img/achievements/licensed-ready.webp",
       "status": "Activity-dependent",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "No Corner Left Behind",
       "group": "Special Hobbies",
       "slug": "no-corner-left-behind",
-      "objective": "Trigger the hidden phase of Ocean Cleanup Event 10 times in total",
+      "objective": "Hidden-phase target: 10 activations; Event: Ocean Cleanup",
       "reward": "Secret Realm",
       "image": "/img/achievements/no-corner-left-behind.webp",
       "status": "Activity-dependent",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Ocean Cleanup Expert",
       "group": "Special Hobbies",
       "slug": "ocean-cleanup-expert",
-      "objective": "Reach Level 10 in Ocean Cleaning Hobby",
+      "objective": "Hobby level: Ocean Cleaning Lv. 10",
       "reward": "Ocean",
       "image": "/img/achievements/ocean-cleanup-expert.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Party Animal",
       "group": "Special Hobbies",
       "slug": "party-animal",
-      "objective": "Party Player Dream reaches Party Animal",
+      "objective": "Dream milestone: Party Animal; Dream: Party Player",
       "reward": "Player",
       "image": "/img/achievements/party-animal.webp",
       "status": "Activity-dependent",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Pumpkinarchy",
       "group": "Special Hobbies",
       "slug": "pumpkinarchy",
-      "objective": "Pumpkin Carving Hobby reaches Lv.5.",
+      "objective": "Hobby level: Pumpkin Carving Lv. 5",
       "reward": "Pumpkin Head",
       "image": "/img/achievements/pumpkinarchy.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Sand Sculpture Artist",
       "group": "Special Hobbies",
       "slug": "sand-sculpture-artist",
-      "objective": "Sand Sculpting Hobby reaches Lv.5.",
+      "objective": "Hobby level: Sand Sculpting Lv. 5",
       "reward": "Sand Sculptor",
       "image": "/img/achievements/sand-sculpture-artist.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Snow King",
       "group": "Special Hobbies",
       "slug": "snow-king",
-      "objective": "Snow Sculpting Hobby reaches Lv.5.",
+      "objective": "Hobby level: Snow Sculpting Lv. 5",
       "reward": "Snow King",
       "image": "/img/achievements/snow-king.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     },
     {
       "name": "Tides of Life",
       "group": "Special Hobbies",
       "slug": "tides-of-life",
-      "objective": "Reach the \"Tidal Abundance\" eco-fish level at any underwater seamount.",
+      "objective": "Eco-fish milestone: Tidal Abundance; Location: Any underwater seamount",
       "reward": "Scale Gathering",
       "image": "/img/achievements/tides-of-life.webp",
       "status": "Current listing",
-      "version": "Current Heartodex listing"
+      "version": "Locally structured condition"
     }
   ]
 }

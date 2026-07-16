@@ -19,6 +19,7 @@ const activeAutoSyncScripts = [
   'scripts/sync-heartodex-flowers.mjs',
   'scripts/sync-heartodex-recipes.mjs',
   'scripts/sync-heartodex-achievements.mjs',
+  'scripts/sync-achievement-details.mjs',
   'scripts/sync-heartodex-events.mjs',
 ];
 const extractionPatterns = [...BLOCKED_REMOTE_FIELDS].map((field) => ({
@@ -34,8 +35,8 @@ for (const file of activeAutoSyncScripts) {
 }
 
 const achievementSync = read('scripts/sync-heartodex-achievements.mjs');
-if (!achievementSync.includes("const objective = known?.objective || ''")) {
-  throw new Error('Achievement objectives are not frozen to locally reviewed values.');
+if (!achievementSync.includes('const objective = localAchievementObjective(item.slug)')) {
+  throw new Error('Achievement objectives are not restricted to the local structured map.');
 }
 
 console.log(JSON.stringify({

@@ -5,6 +5,8 @@ import { promisify } from 'node:util';
 
 const execFileAsync = promisify(execFile);
 const root = process.cwd();
+const canonical = JSON.parse(fs.readFileSync(path.join(root, 'data', 'heartopia-achievements.json'), 'utf8')).achievements || [];
+const objectiveByName = new Map(canonical.map((entry) => [entry.name.toLowerCase().replace(/[^a-z0-9]+/g, ''), entry.objective]));
 const groups = {
   Collections: ['Puzzle Artist', 'Collector', 'Stardust Collector', 'Animal Keeper', 'D.G. Member', 'Pop Star', 'Rocket Sponsor', 'Animal Neighbor'],
   Fishing: ["Shoal's Blessing", 'Fishing Machine', 'Twin Fish Fortune', 'Sea Fishing Master', 'Shoal Caller', 'Shark Frenzy', 'Mystic Fisher', 'Starlight Fisher', 'Never Empty-Handed', 'Strong Sailor'],
@@ -24,9 +26,7 @@ const achievements = Object.entries(groups).flatMap(([group, names]) => names.ma
 if (achievements.length !== 63) throw new Error(`Expected 63 achievements, got ${achievements.length}`);
 
 function parse(html, achievement) {
-  const objectiveStart = html.indexOf('Objective </h2>');
-  const objectiveEnd = html.indexOf('Achievement Reward', objectiveStart);
-  const objective = objectiveStart >= 0 && objectiveEnd > objectiveStart ? clean(html.slice(objectiveStart + 'Objective </h2>'.length, objectiveEnd)) : '';
+  const objective = objectiveByName.get(achievement.name.toLowerCase().replace(/[^a-z0-9]+/g, '')) || '';
   const rewardStart = html.indexOf('unlocked title </span>');
   const rewardMatch = rewardStart >= 0 ? html.slice(rewardStart, rewardStart + 500).match(/<span[^>]*>\s*["\u201c]?\s*([^<"\u201d]+?)\s*["\u201d]?\s*<\/span>/i) : null;
   return { ...achievement, objective, reward: rewardMatch ? clean(rewardMatch[1]) : '' };
@@ -36,9 +36,9 @@ async function fetchDetail(achievement) {
   const url = `https://www.heartodex.com/en/achievements/${achievement.slug}/`;
   try {
     const { stdout } = await execFileAsync('curl.exe', ['-L', '--max-time', '30', '-sS', '-A', 'Mozilla/5.0', url], { maxBuffer: 3 * 1024 * 1024 });
-    return stdout.includes('<html') ? parse(stdout, achievement) : { ...achievement, objective: '', reward: '', error: 'No page data returned' };
+    return stdout.includes('<html') ? parse(stdout, achievement) : { ...achievement, objective: objectiveByName.get(achievement.name.toLowerCase().replace(/[^a-z0-9]+/g, '')) || '', reward: '', error: 'No page data returned' };
   } catch (error) {
-    return { ...achievement, objective: '', reward: '', error: error.message };
+    return { ...achievement, objective: objectiveByName.get(achievement.name.toLowerCase().replace(/[^a-z0-9]+/g, '')) || '', reward: '', error: error.message };
   }
 }
 
@@ -48,7 +48,7 @@ for (let index = 0; index < achievements.length; index += 3) {
   console.log(`Fetched ${Math.min(index + 3, achievements.length)} / ${achievements.length}`);
 }
 
-const overrides = { 'D.G. Member': { objective: "Reach Developer's Guild Level 30.", reward: 'D.G. Member' }, "Shoal's Blessing": { objective: 'Trigger 100 Shoals in total during Fishing Events.', reward: 'Blessing' } };
+const overrides = { 'D.G. Member': { reward: 'D.G. Member' }, "Shoal's Blessing": { reward: 'Blessing' } };
 for (const item of result) Object.assign(item, overrides[item.name] || {});
 fs.writeFileSync(path.join(root, 'data', 'achievement-details.json'), `${JSON.stringify(result, null, 2)}\n`);
 console.log(`Saved ${result.length} achievements; ${result.filter((item) => item.objective).length} with objectives; ${result.filter((item) => item.error).length} fetch failures.`);

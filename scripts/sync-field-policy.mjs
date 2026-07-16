@@ -44,5 +44,5 @@ export function assertRemoteFields(dataset, record) {
 export const SYNC_FIELD_POLICY = Object.freeze({
   allowedFacts: ['name', 'number', 'date', 'location', 'weather', 'level', 'price', 'category', 'status', 'image', 'structured names and quantities'],
   blockedNarrative: [...BLOCKED_REMOTE_FIELDS],
-  achievementObjectives: 'local-frozen-until-independent-verification',
+  achievementObjectives: 'local-structured-map-only',
 });
