@@ -187,7 +187,7 @@ for (const item of ingredients) {
     href: findDetailPath('database/ingredients', item) || listingHref,
     listingHref,
     meta: joinMeta([item.category, money(item.buyPrice), item.recipeCount ? `${item.recipeCount} recipe${item.recipeCount === 1 ? '' : 's'}` : '']),
-    extraSearch: [item.availability, item.about]
+    extraSearch: [item.availability]
   });
 }
 
@@ -202,7 +202,7 @@ for (const item of items) {
     href: findDetailPath('database/items', item) || listingHref,
     listingHref,
     meta: joinMeta([item.category, money(item.price), item.soldBy]),
-    extraSearch: [item.about]
+    extraSearch: []
   });
 }
 
@@ -217,7 +217,7 @@ for (const item of npcs) {
     href: findDetailPath('npcs', item) || listingHref,
     listingHref,
     meta: joinMeta([item.location, item.role, item.saleCount ? `${item.saleCount} shop item${item.saleCount === 1 ? '' : 's'}` : '']),
-    extraSearch: [item.gifts, item.about]
+    extraSearch: [item.gifts]
   });
 }
 

@@ -193,7 +193,7 @@ function buildItems() {
     if (entries.length !== 23) throw new Error(`Item safety check failed: ${entries.length}`);
     const date = latestDate(currentBuildDate, source.generatedAt);
     const cards = entries.map(item => {
-        const use = itemUses[item.name] || item.about || `${item.category} supply sold by ${item.soldBy}.`;
+        const use = itemUses[item.name] || `${item.category} supply sold by ${item.soldBy}.`;
         const price = Number.isFinite(item.price) ? item.price : null;
         const seller = existingLink(sellerPaths[item.soldBy], item.soldBy || 'Seller not shown');
         const activity = existingLink(activityPaths[item.category], item.category);
@@ -237,10 +237,10 @@ function buildIngredients(recipes, recipeDate) {
         const relationshipNote = sourceCount > linked.length
             ? `${linked.length} named recipe${linked.length === 1 ? '' : 's'} currently appear in the local recipe index; the ingredient entry lists ${sourceCount} total culinary uses.`
             : `${linked.length} named recipe${linked.length === 1 ? '' : 's'} currently use this ingredient.`;
-        return `<article ${relationCardAttributes({ name: item.name, key: item.name, search: `${item.name} ${item.category} ${item.availability} ${item.about} ${names.join(' ')}`, filters: [item.category, item.availability], sortValue: item.buyPrice, relations: sourceCount })} class="relation-card bg-white border border-cozy-peach/40 p-4">
+        return `<article ${relationCardAttributes({ name: item.name, key: item.name, search: `${item.name} ${item.category} ${item.availability} ${names.join(' ')}`, filters: [item.category, item.availability], sortValue: item.buyPrice, relations: sourceCount })} class="relation-card bg-white border border-cozy-peach/40 p-4">
             <div class="flex gap-4"><img src="${item.image}" alt="${esc(item.name)} ingredient image" class="w-16 h-16 object-contain bg-cozy-cream p-1 shrink-0" loading="lazy"><div class="min-w-0"><p class="text-xs font-bold text-cozy-sage">${esc(item.category)}</p><h2 class="font-display text-xl font-bold mt-1">${esc(item.name)}</h2><p class="text-xs mt-1 ${item.availability === 'Event ended' ? 'text-red-600 font-bold' : 'text-cozy-wood'}">${esc(item.availability)}</p></div></div>
             <dl class="grid grid-cols-2 gap-x-4 gap-y-2 border-y border-cozy-peach/50 py-3 mt-4 text-sm"><div><dt class="text-xs text-cozy-wood">Buy price</dt><dd class="font-bold">${Number.isFinite(item.buyPrice) ? `${item.buyPrice.toLocaleString()} Gold` : 'No price shown'}</dd></div><div><dt class="text-xs text-cozy-wood">Recipe uses</dt><dd class="font-bold">${sourceCount}</dd></div></dl>
-            <details class="relation-detail mt-3 border-b border-cozy-peach/50 pb-3"><summary class="font-bold text-sm text-cozy-coral">Expand recipe connections<span class="relation-toggle shrink-0" aria-hidden="true"></span></summary><div class="mt-3 space-y-3"><p class="text-xs text-cozy-wood">${esc(relationshipNote)}</p>${recipeLinks(names)}${item.about ? `<p class="text-sm text-cozy-wood"><strong class="text-cozy-bark">About:</strong> ${esc(item.about)}</p>` : ''}</div></details>
+            <details class="relation-detail mt-3 border-b border-cozy-peach/50 pb-3"><summary class="font-bold text-sm text-cozy-coral">Expand recipe connections<span class="relation-toggle shrink-0" aria-hidden="true"></span></summary><div class="mt-3 space-y-3"><p class="text-xs text-cozy-wood">${esc(relationshipNote)}</p>${recipeLinks(names)}</div></details>
             ${markButton(item.name, 'Mark stocked', 'Stocked')}
         </article>`;
     }).join('');
@@ -277,30 +277,16 @@ function buildCrops() {
     write('database/crops/index.html', html);
 }
 
-function cleanCollectibleAbout(item) {
-    const overrides = {
-        'Tall Mustard': 'Despite its name, it carries the pungent, spicy character associated with garlic and mustard greens.',
-        'Fiddlehead': 'Often described as the king of wild greens; blanch it before cooking.',
-        'Drawing Board': 'Use it for custom drawing and design activities.'
-    };
-    return overrides[item.name] || String(item.about || '')
-        .replace(/\btupe\b/gi, 'type')
-        .replace(/\bverg\b/gi, 'very')
-        .replace(/\bStag away\b/g, 'Stay away')
-        .replace(/\bspicg\b/gi, 'spicy');
-}
-
 function buildCollectibles() {
     const source = readJson('data/heartopia-collectibles.json');
     const entries = source.collectibles;
     if (entries.length !== 37) throw new Error(`Collectible safety check failed: ${entries.length}`);
     const date = latestDate(currentBuildDate, source.generatedAt);
     const cards = entries.map(item => {
-        const about = cleanCollectibleAbout(item);
-        return `<article ${relationCardAttributes({ name: item.name, key: item.name, search: `${item.name} ${item.category} ${item.location} ${item.availability} ${about}`, filters: [item.location, item.category, item.availability], sortValue: item.sellValue, relations: Number.isFinite(item.energy) ? 1 : 0 })} class="relation-card bg-white border border-cozy-peach/40 p-4">
+        return `<article ${relationCardAttributes({ name: item.name, key: item.name, search: `${item.name} ${item.category} ${item.location} ${item.availability}`, filters: [item.location, item.category, item.availability], sortValue: item.sellValue, relations: Number.isFinite(item.energy) ? 1 : 0 })} class="relation-card bg-white border border-cozy-peach/40 p-4">
             <div class="flex gap-4"><img src="${item.image}" alt="${esc(item.name)} collectible image" class="w-16 h-16 object-contain bg-cozy-cream p-1 shrink-0" loading="lazy"><div class="min-w-0"><p class="text-xs font-bold text-cozy-sage">${esc(item.category)}</p><h2 class="font-display text-xl font-bold mt-1">${esc(item.name)}</h2><p class="text-xs mt-1 ${item.availability === 'Event ended' ? 'font-bold text-red-600' : 'text-cozy-wood'}">${esc(item.availability)}</p></div></div>
             <dl class="grid grid-cols-3 gap-x-3 border-y border-cozy-peach/50 py-3 mt-4 text-sm"><div><dt class="text-xs text-cozy-wood">Location</dt><dd class="font-bold">${esc(item.location)}</dd></div><div><dt class="text-xs text-cozy-wood">Sell</dt><dd class="font-bold">${Number.isFinite(item.sellValue) ? `${item.sellValue} G` : '-'}</dd></div><div><dt class="text-xs text-cozy-wood">Energy</dt><dd class="font-bold">${Number.isFinite(item.energy) ? `+${item.energy}` : '-'}</dd></div></dl>
-            <details class="relation-detail mt-3 border-b border-cozy-peach/50 pb-3"><summary class="font-bold text-sm text-cozy-coral">Expand details<span class="relation-toggle shrink-0" aria-hidden="true"></span></summary><dl class="mt-3 grid gap-3 text-sm"><div><dt class="text-xs text-cozy-wood">Availability</dt><dd>${esc(item.availability)}</dd></div><div><dt class="text-xs text-cozy-wood">Where to look</dt><dd>${esc(item.location)}</dd></div><div><dt class="text-xs text-cozy-wood">Use / description</dt><dd>${esc(about || 'Use the current in-game description for this collectible.')}</dd></div></dl></details>
+            <details class="relation-detail mt-3 border-b border-cozy-peach/50 pb-3"><summary class="font-bold text-sm text-cozy-coral">Expand details<span class="relation-toggle shrink-0" aria-hidden="true"></span></summary><dl class="mt-3 grid gap-3 text-sm"><div><dt class="text-xs text-cozy-wood">Availability</dt><dd>${esc(item.availability)}</dd></div><div><dt class="text-xs text-cozy-wood">Where to look</dt><dd>${esc(item.location)}</dd></div></dl></details>
             ${markButton(item.name, 'Mark found', 'Found')}
         </article>`;
     }).join('');

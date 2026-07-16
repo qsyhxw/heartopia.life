@@ -6,7 +6,6 @@
       "image": "/img/items/Inflatable-Insect-Attractor.webp",
       "price": 2,
       "soldBy": "Naniwa",
-      "about": "",
       "sourceSlug": "inflatable-insect-attractor"
     },
     {
@@ -15,7 +14,6 @@
       "image": "/img/items/Mermaid-Fish-Attractor.webp",
       "price": null,
       "soldBy": "Vanya",
-      "about": "",
       "sourceSlug": "mermaid-fish-attractor"
     },
     {
@@ -24,7 +22,6 @@
       "image": "/img/items/Growth-Booster.webp",
       "price": null,
       "soldBy": "Blanc",
-      "about": "",
       "sourceSlug": "growth-booster"
     },
     {
@@ -33,7 +30,6 @@
       "image": "/img/items/Quality-Growth-Booster.webp",
       "price": null,
       "soldBy": "Blanc",
-      "about": "",
       "sourceSlug": "quality-growth-booster"
     },
     {
@@ -42,7 +38,6 @@
       "image": "/img/items/Camouflage-Bush.webp",
       "price": 3,
       "soldBy": "Bailey J",
-      "about": "Tras su uso, aparece un matorral que camufla tu presencia ante las aves. Dura 240 s.",
       "sourceSlug": "camouflage-bush"
     },
     {
@@ -51,7 +46,6 @@
       "image": "/img/items/Bait.webp",
       "price": null,
       "soldBy": "Vanya",
-      "about": "",
       "sourceSlug": "bait"
     },
     {
@@ -60,7 +54,6 @@
       "image": "/img/items/Bird-Food.webp",
       "price": null,
       "soldBy": "Bailey J",
-      "about": "Obtained in exchange for delivering cards to Bailey J.",
       "sourceSlug": "bird-food"
     },
     {
@@ -69,7 +62,6 @@
       "image": "/img/items/Universal-Animal-Food.webp",
       "price": 150,
       "soldBy": "Joan",
-      "about": "Un alimento que provee nutrición equilibrada a todos los animales.",
       "sourceSlug": "universal-animal-food"
     },
     {
@@ -78,7 +70,6 @@
       "image": "/img/items/Amazing-Seasoning.webp",
       "price": 3,
       "soldBy": "Massimo",
-      "about": "Se usa para cocinar. Mejora la calidad de la comida (mínimo de 2 estrellas) cuando se cocina con éxito (sin efecto al fracasar),",
       "sourceSlug": "amazing-seasoning"
     },
     {
@@ -87,7 +78,6 @@
       "image": "/img/items/Dog-Food.webp",
       "price": 150,
       "soldBy": "Joan",
-      "about": "Croquetas balanceadas para perros, ¡no dejes que tu perrito pase hambre!",
       "sourceSlug": "dog-food"
     },
     {
@@ -96,7 +86,6 @@
       "image": "/img/items/Energy-Dog-Food.webp",
       "price": 2,
       "soldBy": "Joan",
-      "about": "Alimenta a tu perro para restaurar su vitalidad.",
       "sourceSlug": "energy-dog-food"
     },
     {
@@ -105,7 +94,6 @@
       "image": "/img/items/Cat-Food.webp",
       "price": 150,
       "soldBy": "Joan",
-      "about": "Comida nutritiva para gatos, ¡no dejes que tu gato pase hambre!",
       "sourceSlug": "cat-food"
     },
     {
@@ -114,7 +102,6 @@
       "image": "/img/items/Fertilizer.webp",
       "price": null,
       "soldBy": "Blanc",
-      "about": "",
       "sourceSlug": "fertilizer"
     },
     {
@@ -123,7 +110,6 @@
       "image": "/img/items/Quality-Fertilizer.webp",
       "price": null,
       "soldBy": "Blanc",
-      "about": "",
       "sourceSlug": "quality-fertilizer"
     },
     {
@@ -132,7 +118,6 @@
       "image": "/img/items/Universal-Ingredient.webp",
       "price": 2,
       "soldBy": "Massimo",
-      "about": "Puede sustituir cualquier ingrediente",
       "sourceSlug": "universal-ingredient"
     },
     {
@@ -141,7 +126,6 @@
       "image": "/img/items/Drawing-Board.webp",
       "price": null,
       "soldBy": "Ka Ching",
-      "about": "Unleash gour creativity on the drawing board.",
       "sourceSlug": "drawing-board"
     },
     {
@@ -150,7 +134,6 @@
       "image": "/img/items/Mermaid-Perfume.webp",
       "price": null,
       "soldBy": "Vanya",
-      "about": "",
       "sourceSlug": "mermaid-perfume"
     },
     {
@@ -159,7 +142,6 @@
       "image": "/img/items/Energy-Fish-Jerky.webp",
       "price": 2,
       "soldBy": "Joan",
-      "about": "Alimenta a tu gatito para restaurar su vitalidad.",
       "sourceSlug": "energy-fish-jerky"
     },
     {
@@ -168,7 +150,6 @@
       "image": "/img/items/Rainbow-Breeding-Powder.webp",
       "price": 3,
       "soldBy": "Blanc",
-      "about": "",
       "sourceSlug": "rainbow-breeding-powder"
     },
     {
@@ -177,7 +158,6 @@
       "image": "/img/items/Sense-Booster.webp",
       "price": 3,
       "soldBy": "Naniwa",
-      "about": "",
       "sourceSlug": "sense-booster"
     },
     {
@@ -186,7 +166,6 @@
       "image": "/img/items/Auto-Bird-Whistle.webp",
       "price": 2,
       "soldBy": "Bailey J",
-      "about": "Tras su uso, las aves cercanas (excepto las del soporte) realizan acciones con más frecuencia durante 3 min.",
       "sourceSlug": "auto-bird-whistle"
     },
     {
@@ -195,7 +174,6 @@
       "image": "/img/items/Top-Growth-Booster.webp",
       "price": null,
       "soldBy": "Blanc",
-      "about": "",
       "sourceSlug": "top-growth-booster"
     },
     {
@@ -204,7 +182,6 @@
       "image": "/img/items/Top-Fertilizer.webp",
       "price": null,
       "soldBy": "Blanc",
-      "about": "",
       "sourceSlug": "top-fertilizer"
     }
   ]

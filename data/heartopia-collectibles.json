@@ -8,7 +8,6 @@
       "sellValue": 5,
       "energy": null,
       "availability": "Event ended",
-      "about": "Unrelated to garlic. get it carries the pungent, spicg kick of both garlic and mustard greens.",
       "sourceSlug": "tall-mustard"
     },
     {
@@ -19,7 +18,6 @@
       "sellValue": 16,
       "energy": 5,
       "availability": "Available",
-      "about": "Good for eyes.",
       "sourceSlug": "blueberry"
     },
     {
@@ -30,7 +28,6 @@
       "sellValue": 7,
       "energy": null,
       "availability": "Available",
-      "about": "A hardy and versatile plant that grows in moist areas.",
       "sourceSlug": "bamboo"
     },
     {
@@ -41,7 +38,6 @@
       "sellValue": 5,
       "energy": null,
       "availability": "Event ended",
-      "about": "Yam? Twig? Nah, it's burdock.",
       "sourceSlug": "burdock"
     },
     {
@@ -52,7 +48,6 @@
       "sellValue": 16,
       "energy": 5,
       "availability": "Available",
-      "about": "True to its name, this mushroom earns its title from its thick, meaty body resembling a bread bun.",
       "sourceSlug": "penny-bun"
     },
     {
@@ -63,7 +58,6 @@
       "sellValue": 16,
       "energy": null,
       "availability": "Available",
-      "about": "Warning: This mushroom's threat level has reached purple alert! Do not eat!!!",
       "sourceSlug": "bizarre-penny-bun-purple"
     },
     {
@@ -74,7 +68,6 @@
       "sellValue": 16,
       "energy": null,
       "availability": "Available",
-      "about": "Warning: This mushroom's threat level has reached red alert! Do not eat!!!",
       "sourceSlug": "bizarre-penny-bun-red"
     },
     {
@@ -85,7 +78,6 @@
       "sellValue": 16,
       "energy": null,
       "availability": "Available",
-      "about": "Warning: This mushroom's threat level has reached pink alert! Do not eat!!!",
       "sourceSlug": "bizarre-penny-bun-pink"
     },
     {
@@ -96,7 +88,6 @@
       "sellValue": 16,
       "energy": 5,
       "availability": "Available",
-      "about": "It really does look like a perfect button.",
       "sourceSlug": "button-mushroom"
     },
     {
@@ -107,7 +98,6 @@
       "sellValue": 16,
       "energy": null,
       "availability": "Available",
-      "about": "A blue mushroom straight out of a fairytale—beautiful but dangerous. Do not eat!!!",
       "sourceSlug": "bizarre-button-mushroom-blue"
     },
     {
@@ -118,7 +108,6 @@
       "sellValue": 16,
       "energy": null,
       "availability": "Available",
-      "about": "A red mushroom straight out of a fairytale—beautiful but dangerous. Do not eat!!!",
       "sourceSlug": "bizarre-button-mushroom-red"
     },
     {
@@ -129,7 +118,6 @@
       "sellValue": 16,
       "energy": null,
       "availability": "Available",
-      "about": "A green mushroom straight out of a fairytale—beautiful but dangerous. Do not eat!!!",
       "sourceSlug": "bizarre-button-mushroom-green"
     },
     {
@@ -140,7 +128,6 @@
       "sellValue": 150,
       "energy": null,
       "availability": "Available",
-      "about": "A rare ore, often Used by Moabit's little moles for disguise.",
       "sourceSlug": "flawless-fluorite"
     },
     {
@@ -151,7 +138,6 @@
       "sellValue": 150,
       "energy": null,
       "availability": "Available",
-      "about": "Obtained by mining Starfall Ore during a meteor shower. Can be redeemed for various souvenirs at Doris's Fortune Store.",
       "sourceSlug": "starfall-shard"
     },
     {
@@ -162,7 +148,6 @@
       "sellValue": 26,
       "energy": 7,
       "availability": "Available",
-      "about": "Some call it \"golden fruit\" for its heart benefits.",
       "sourceSlug": "raspberry"
     },
     {
@@ -173,7 +158,6 @@
       "sellValue": 5,
       "energy": null,
       "availability": "Event ended",
-      "about": "The \"King of Wild Greens.'i Blanching in boiling water before cooking removes harmful substances.",
       "sourceSlug": "fiddlehead"
     },
     {
@@ -184,7 +168,6 @@
       "sellValue": 6,
       "energy": null,
       "availability": "Available",
-      "about": "A common tupe of timber, gathered from trees near homes.",
       "sourceSlug": "timber"
     },
     {
@@ -195,7 +178,6 @@
       "sellValue": 12,
       "energy": null,
       "availability": "Available",
-      "about": "High-quality timber. Head to the forest on the island's east for quick collection.",
       "sourceSlug": "quality-timber"
     },
     {
@@ -206,7 +188,6 @@
       "sellValue": 150,
       "energy": null,
       "availability": "Available",
-      "about": "Extremely rare timber, gathered by rescuing a lively friend in trouble.",
       "sourceSlug": "roaming-oak-timber"
     },
     {
@@ -217,7 +198,6 @@
       "sellValue": 50,
       "energy": null,
       "availability": "Available",
-      "about": "Valuable timber, gathered from trees with thick trunks.",
       "sourceSlug": "rare-timber"
     },
     {
@@ -228,7 +208,6 @@
       "sellValue": null,
       "energy": null,
       "availability": "Available",
-      "about": "You can get it from your crops.",
       "sourceSlug": "weed"
     },
     {
@@ -239,7 +218,6 @@
       "sellValue": 28,
       "energy": 8,
       "availability": "Available",
-      "about": "Sweet and tart, a simple way to replenish vitamins.",
       "sourceSlug": "mandarin"
     },
     {
@@ -250,7 +228,6 @@
       "sellValue": 28,
       "energy": 8,
       "availability": "Available",
-      "about": "An apple a day keeps the doctor away.",
       "sourceSlug": "apple"
     },
     {
@@ -261,7 +238,6 @@
       "sellValue": 16,
       "energy": 5,
       "availability": "Available",
-      "about": "Though matsutakes often appear in groups, they're not easy to find—a true delicacy.",
       "sourceSlug": "matsutake"
     },
     {
@@ -272,7 +248,6 @@
       "sellValue": 14,
       "energy": null,
       "availability": "Available",
-      "about": "A widely distributed ore, gathered from black rocks near the sea.",
       "sourceSlug": "ore"
     },
     {
@@ -283,7 +258,6 @@
       "sellValue": 5,
       "energy": null,
       "availability": "Event ended",
-      "about": "Looks green and harmless, but carries a sharp, pungent aroma.",
       "sourceSlug": "mustard-greens"
     },
     {
@@ -294,7 +268,6 @@
       "sellValue": 8,
       "energy": null,
       "availability": "Available",
-      "about": "A frequently found ore, gathered from rocks near homes.",
       "sourceSlug": "stone"
     },
     {
@@ -305,7 +278,6 @@
       "sellValue": 5,
       "energy": null,
       "availability": "Available",
-      "about": "A verg common material that can be gathered from bushes.",
       "sourceSlug": "branch"
     },
     {
@@ -316,7 +288,6 @@
       "sellValue": 16,
       "energy": 5,
       "availability": "Available",
-      "about": "With its flat cap, it loves playing stacking games with other mushrooms.",
       "sourceSlug": "oyster-mushroom"
     },
     {
@@ -327,7 +298,6 @@
       "sellValue": 16,
       "energy": null,
       "availability": "Available",
-      "about": "Stag away from this purple bizarre oyster mushroom. Do not eat!!!",
       "sourceSlug": "bizarre-oyster-mushroom-purple"
     },
     {
@@ -338,7 +308,6 @@
       "sellValue": 16,
       "energy": null,
       "availability": "Available",
-      "about": "Stag away from this orange bizarre oyster mushroom. Do not eat!!!",
       "sourceSlug": "bizarre-oyster-mushroom-orange"
     },
     {
@@ -349,7 +318,6 @@
       "sellValue": 16,
       "energy": null,
       "availability": "Available",
-      "about": "Stag away from this pink bizarre oyster mushroom. Do not eat!!!",
       "sourceSlug": "bizarre-oyster-mushroom-pink"
     },
     {
@@ -360,7 +328,6 @@
       "sellValue": 16,
       "energy": 5,
       "availability": "Available",
-      "about": "When the air is damp, shiitake mushrooms pop up everywhere holding up their little umbrellas.",
       "sourceSlug": "shiitake"
     },
     {
@@ -371,7 +338,6 @@
       "sellValue": 16,
       "energy": null,
       "availability": "Available",
-      "about": "Blue top, white base—one taste, and it's your final place.",
       "sourceSlug": "bizarre-shiitake-blue"
     },
     {
@@ -382,7 +348,6 @@
       "sellValue": 16,
       "energy": null,
       "availability": "Available",
-      "about": "Black top, white base—one taste, and it's your final place.",
       "sourceSlug": "bizarre-shiitak-black"
     },
     {
@@ -393,7 +358,6 @@
       "sellValue": 16,
       "energy": null,
       "availability": "Available",
-      "about": "Red top, white base—one taste, and it's your final place.",
       "sourceSlug": "bizarre-shiitake-red"
     },
     {
@@ -404,7 +368,6 @@
       "sellValue": 99,
       "energy": 25,
       "availability": "Available",
-      "about": "Known as the \"diamond of the fungi,\" it loves hiding in small pits.",
       "sourceSlug": "black-truffle"
     }
   ]
