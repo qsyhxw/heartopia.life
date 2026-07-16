@@ -13,12 +13,11 @@ concurrency:
   group: heartopia-derived-sync
   cancel-in-progress: false
 
-env:
-  HEARTOPIA_SYNC_DIR: ${{ runner.temp }}/heartopia-sync
-
 jobs:
   sync:
     runs-on: ubuntu-latest
+    env:
+      HEARTOPIA_SYNC_DIR: ${{ runner.temp }}/heartopia-sync
     steps:
       - name: Checkout
         uses: actions/checkout@v5
