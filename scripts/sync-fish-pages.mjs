@@ -9,7 +9,14 @@ const escape = (value) => String(value).replace(/&/g, '&amp;').replace(/</g, '&l
 const key = (value) => value.toLowerCase().replace(/[^a-z0-9]/g, '');
 const maxValue = (value) => Math.max(...(value.match(/[\d,]+/g) || ['0']).map((item) => Number(item.replace(/,/g, ''))));
 
-const fishTable = read('database/fish/index.html');
+let fishTable = read('database/fish/index.html');
+const fishTableWithoutAbout = fishTable
+  .replace(/[ \t]*<th class="px-4 py-3 font-bold min-w-\[260px\]">About<\/th>\r?\n/g, '')
+  .replace(/[ \t]*<td class="px-4 py-2 text-cozy-wood text-xs leading-relaxed min-w-\[260px\]">[^<]*<\/td>\r?\n/g, '');
+if (fishTableWithoutAbout !== fishTable) {
+  fishTable = fishTableWithoutAbout;
+  write('database/fish/index.html', fishTable);
+}
 const images = new Map(fs.readdirSync(path.join(root, 'img/fish')).filter((file) => file.endsWith('.webp')).map((file) => [key(path.basename(file, '.webp')), `/img/fish/${file}`]));
 const fish = [];
 for (const match of fishTable.matchAll(/<tr>\s*([\s\S]*?)\s*<\/tr>/g)) {
