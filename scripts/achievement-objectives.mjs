@@ -68,6 +68,69 @@ export const achievementObjectives = Object.freeze({
   'tides-of-life': 'Eco-fish milestone: Tidal Abundance; Location: Any underwater seamount',
 });
 
+function numericFacts(value) {
+  return String(value || '')
+    .replace(/\b5[\s-]*star\b/gi, 'five-star')
+    .match(/\d[\d,]*(?:\.\d+)?/g)?.map((token) => Number(token.replaceAll(',', ''))) || [];
+}
+
+const numericOrder = Object.freeze({
+  'fast-flawless': [1, 0],
+  'strong-sailor': [1, 0],
+  'twin-fish-fortune': [1, 0],
+});
+
+const ignoredTerms = new Set(['target', 'requirement', 'activity', 'event', 'events', 'level', 'single', 'cumulative', 'action', 'condition', 'role', 'method', 'completion', 'hidden', 'phase', 'time', 'limit', 'hobby', 'dream', 'milestone', 'social', 'sharing', 'collection', 'discovery', 'rank', 'feeding', 'each', 'with', 'all', 'any', 'one', 'more', 'than', 'per', 'the', 'and']);
+
+function semanticTerms(value) {
+  return String(value || '').toLowerCase().match(/[a-z][a-z'-]*/g)?.map((term) => term.replace(/ing$/, '').replace(/s$/, '')).filter((term) => term.length > 2 && !ignoredTerms.has(term)) || [];
+}
+
+function applyNumericFacts(template, source, slug) {
+  const sourceTerms = new Set(semanticTerms(source));
+  if (!semanticTerms(template).some((term) => sourceTerms.has(term))) {
+    throw new Error(`Achievement meaning changed or could not be verified for ${slug}`);
+  }
+  const sourceFacts = numericFacts(source);
+  const templateFacts = numericFacts(template);
+  if (sourceFacts.length !== templateFacts.length) {
+    throw new Error(`Achievement fact count changed: expected ${templateFacts.length}, received ${sourceFacts.length}`);
+  }
+  let index = 0;
+  const result = template.replace(/\d[\d,]*(?:\.\d+)?/g, (token) => {
+    const templateIndex = index++;
+    const sourceIndex = numericOrder[slug]?.[templateIndex] ?? templateIndex;
+    const next = sourceFacts[sourceIndex];
+    const current = Number(token.replaceAll(',', ''));
+    if (next === current) return token;
+    return token.includes(',') ? next.toLocaleString('en-US') : String(next);
+  });
+  return result
+    .replace(/\b1 seconds\b/g, '1 second')
+    .replace(/\b(\d[\d,]*) minute\b/g, (text, count) => Number(count.replaceAll(',', '')) === 1 ? text : `${count} minutes`);
+}
+
+function commonObjectivePattern(raw) {
+  let match = raw.match(/^(.+?) Hobby reaches Lv\.?\s*(\d+)\.?$/i);
+  if (match) return `Hobby level: ${match[1]} Lv. ${match[2]}`;
+  match = raw.match(/^Reach Level (\d+) in (.+?) Hobby\.?$/i);
+  if (match) return `Hobby level: ${match[2]} Lv. ${match[1]}`;
+  match = raw.match(/^(.+?) Dream reaches (.+?)\.?$/i);
+  if (match) return `Dream milestone: ${match[2]}; Dream: ${match[1]}`;
+  match = raw.match(/^Share (.+?) with ([\d,]+) D\.G\. Members in total\.?$/i);
+  if (match) return `Sharing target: ${match[2]} D.G. Members; Item: ${match[1]}`;
+  return '';
+}
+
+export function structureAchievementObjective(rawObjective, slug) {
+  const raw = String(rawObjective || '').replace(/\s+/g, ' ').trim();
+  if (!raw) throw new Error(`Missing remote achievement condition for ${slug}`);
+  const template = localAchievementObjective(slug);
+  if (template) return applyNumericFacts(template, raw, slug);
+  const structured = commonObjectivePattern(raw);
+  if (!structured) throw new Error(`Unsupported achievement condition pattern for ${slug}`);
+  return structured;
+}
 export function localAchievementObjective(slug) {
   return achievementObjectives[slug] || '';
 }

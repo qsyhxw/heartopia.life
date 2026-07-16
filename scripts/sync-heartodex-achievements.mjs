@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { pickRemoteFields } from './sync-field-policy.mjs';
-import { localAchievementObjective } from './achievement-objectives.mjs';
+import { structureAchievementObjective } from './achievement-objectives.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const base = 'https://www.heartodex.com';
@@ -15,6 +15,7 @@ const preferredNames = new Map([['tides-of-life', 'Tides of Life']]);
 
 async function request(url) { let error; for (let attempt = 1; attempt <= 3; attempt += 1) { try { const controller = new AbortController(); const timer = setTimeout(() => controller.abort(), 15000); try { const response = await fetch(url, { headers: { 'user-agent': 'HeartopiaLifeAchievementSync/1.0 (+https://heartopia.life/)' }, signal: controller.signal }); if (!response.ok) throw new Error(`${response.status} ${url}`); return response; } finally { clearTimeout(timer); } } catch (caught) { error = caught; await new Promise((done) => setTimeout(done, attempt * 500)); } } throw error; }
 function listing(html) { const rows = []; for (const match of html.matchAll(/<div data-category="([^"]+)"[^>]*>[\s\S]{0,1000}?<a href="\/en\/achievements\/([^"?#]+)"\s+data-name="([^"]+)"/gi)) rows.push({ group: clean(match[1]), slug: match[2], name: clean(match[3]) }); return [...new Map(rows.map((item) => [item.slug, item])).values()]; }
+function remoteObjective(html) { const start = html.indexOf('Objective </h2>'); const end = html.indexOf('Achievement Reward', start); return start >= 0 && end > start ? clean(html.slice(start + 'Objective </h2>'.length, end)) : ''; }
 const activityPattern = /\bevents?\b|party|challenge|meteor shower|build challenge|hide\s*&?\s*seek|fishing event|birdwatching event|insect catching event/i;
 async function detail(item, known) {
   const html = await (await request(`${base}/en/achievements/${item.slug}`)).text();
@@ -26,8 +27,8 @@ async function detail(item, known) {
   const local = path.join(root, image.slice(1));
   if (!fs.existsSync(local) || fs.statSync(local).size < 100) { const bytes = Buffer.from(await (await request(new URL(imageUrl, base).href)).arrayBuffer()); if (bytes.subarray(0, 4).toString() !== 'RIFF' || bytes.subarray(8, 12).toString() !== 'WEBP') throw new Error(`Invalid image for ${name}`); write(image.slice(1), bytes); }
   const remoteFacts = pickRemoteFields('achievements', { name, group: item.group, slug: item.slug, image, imageUrl, status: 'Current listing' });
-  const objective = localAchievementObjective(item.slug);
-  if (!objective) throw new Error(`Missing local structured condition for ${item.slug}`);
+  const objective = structureAchievementObjective(remoteObjective(html), item.slug);
+  if (!objective) throw new Error(`Failed to build structured condition for ${item.slug}`);
   const reward = known?.reward || '';
   const status = known?.status || (activityPattern.test(objective) ? 'Activity-dependent' : remoteFacts.status);
   return {

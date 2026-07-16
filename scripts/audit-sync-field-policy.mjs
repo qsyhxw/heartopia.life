@@ -35,8 +35,11 @@ for (const file of activeAutoSyncScripts) {
 }
 
 const achievementSync = read('scripts/sync-heartodex-achievements.mjs');
-if (!achievementSync.includes('const objective = localAchievementObjective(item.slug)')) {
-  throw new Error('Achievement objectives are not restricted to the local structured map.');
+if (!achievementSync.includes('const objective = structureAchievementObjective(remoteObjective(html), item.slug)')) {
+  throw new Error('Achievement objectives do not pass through the structured fact parser.');
+}
+if (/objective\s*:\s*remoteObjective|rawObjective\s*[,}]/.test(achievementSync)) {
+  throw new Error('Raw achievement Objective text can be persisted.');
 }
 
 console.log(JSON.stringify({
