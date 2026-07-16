@@ -1,9 +1,10 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "updatedAt": "2026-07-15",
   "source": "https://www.heartodex.com/en/events/",
   "policy": {
-    "mode": "auto-publish-listing-facts",
+    "mode": "auto-publish-whitelisted-facts",
+    "allowed": "Names, dates, status, event type, and local route only. Narrative fields are blocked.",
     "images": "Source image URLs are recorded for review only. Third-party images are not downloaded or copied automatically."
   },
   "events": [
@@ -16,7 +17,6 @@
       "startDate": "July 11, 2026",
       "endDate": "August 22, 2026",
       "dateLabel": "Jul 11 → Aug 22, 2026",
-      "requirements": "",
       "sourceUrl": "https://www.heartodex.com/en/events/call-of-whales"
     },
     {
@@ -28,7 +28,6 @@
       "startDate": "",
       "endDate": "",
       "dateLabel": "Jun 19 – Jul 6",
-      "requirements": "",
       "sourceUrl": "https://www.heartodex.com/en/events/midsummer-rhyme"
     },
     {
@@ -40,7 +39,6 @@
       "startDate": "",
       "endDate": "",
       "dateLabel": "May 28 – Jun 22",
-      "requirements": "",
       "sourceUrl": "https://www.heartodex.com/en/events/rainbow-verse"
     },
     {
@@ -52,7 +50,6 @@
       "startDate": "",
       "endDate": "",
       "dateLabel": "May 9 – Jun 20",
-      "requirements": "",
       "sourceUrl": "https://www.heartodex.com/en/events/modular-streets"
     },
     {
@@ -64,7 +61,6 @@
       "startDate": "",
       "endDate": "",
       "dateLabel": "Apr 30 – May 25",
-      "requirements": "",
       "sourceUrl": "https://www.heartodex.com/en/events/maltese"
     },
     {
@@ -76,7 +72,6 @@
       "startDate": "",
       "endDate": "",
       "dateLabel": "Mar 28 – Apr 27",
-      "requirements": "",
       "sourceUrl": "https://www.heartodex.com/en/events/pleasant-goat-and-big-big-wolf"
     },
     {
@@ -88,7 +83,6 @@
       "startDate": "",
       "endDate": "",
       "dateLabel": "Mar 21 – May 9",
-      "requirements": "",
       "sourceUrl": "https://www.heartodex.com/en/events/dreamlight-cinematics"
     },
     {
@@ -100,7 +94,6 @@
       "startDate": "",
       "endDate": "",
       "dateLabel": "Feb 14 – Mar 24",
-      "requirements": "",
       "sourceUrl": "https://www.heartodex.com/en/events/my-little-pony"
     },
     {
@@ -112,7 +105,6 @@
       "startDate": "",
       "endDate": "",
       "dateLabel": "Jan 24 – Mar 14",
-      "requirements": "",
       "sourceUrl": "https://www.heartodex.com/en/events/winter-frost-season"
     },
     {
@@ -124,7 +116,6 @@
       "startDate": "",
       "endDate": "",
       "dateLabel": "July 17, 2026",
-      "requirements": "",
       "sourceUrl": ""
     }
   ]
