@@ -132,18 +132,20 @@ for (const item of fish) {
 const insects = readJson('data/heartopia-insects.json').insects;
 for (const item of insects) {
   const listingHref = `/database/insects/?search=${encodeURIComponent(item.name)}`;
+  const isFrostspore = item.category === 'Winter frost season';
+  const isFrostsporeAliasEntry = normalize(item.name) === 'frostspore sulkowsky s morpho';
   addEntry({
     type: 'Insect',
     typeKey: 'insects',
     name: item.name,
     image: item.image,
-    href: detailOverrides[`insects:${normalize(item.name)}`] || findDetailPath('database/insects', item) || listingHref,
+    href: isFrostspore ? '/events/frostspore-butterflies/' : (detailOverrides[`insects:${normalize(item.name)}`] || findDetailPath('database/insects', item) || listingHref),
     listingHref,
     meta: joinMeta([item.location, `Lv. ${item.level}`, item.weather]),
+    aliases: isFrostsporeAliasEntry ? ['frostspire butterfly', 'frostpore butterfly', 'crystalline butterfly', 'papillon cristallin', 'borboleta cristalina'] : [],
     extraSearch: [item.category, item.schedule, item.slug]
   });
 }
-
 const { birds, links: birdLinks } = parseBirds();
 for (const item of birds) {
   const name = titleCase(item.name);

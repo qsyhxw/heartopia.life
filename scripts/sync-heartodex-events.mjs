@@ -6,7 +6,10 @@ const root = path.resolve(import.meta.dirname, '..');
 const today = new Date().toISOString().slice(0, 10);
 const base = 'https://www.heartodex.com';
 const aliases = {'call-of-whales':'call-of-whales','my-little-pony':'my-little-pony-collaboration','winter-frost-season':'winter-2026'};
-const manual = [{slug:'sanrio-characters-collaboration',name:'Heartopia x SANRIO CHARACTERS',status:'upcoming',date:'July 17, 2026',type:'Collaboration',local:'sanrio-characters-collaboration'}];
+const manual = [
+  {slug:'sanrio-characters-collaboration',name:'Heartopia x SANRIO CHARACTERS',status:'upcoming',date:'July 17, 2026',type:'Collaboration',local:'sanrio-characters-collaboration'},
+  {slug:'frostspore-butterflies',name:'Frostspore Butterflies',status:'archive',date:'January 24 - March 14, 2026',type:'Winter Frost Season insects',local:'frostspore-butterflies'}
+];
 const clean = s => String(s || '').replace(/<[^>]+>/g,' ').replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&#39;|&apos;/g,"'").replace(/\s+/g,' ').trim();
 const esc = s => String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 const slug = s => clean(s).toLowerCase().normalize('NFKD').replace(/[’']/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');

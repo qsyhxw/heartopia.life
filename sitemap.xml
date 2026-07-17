@@ -241,7 +241,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/database/insects/</loc>
-        <lastmod>2026-07-15</lastmod>
+        <lastmod>2026-07-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -454,7 +454,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/events/</loc>
-        <lastmod>2026-07-16</lastmod>
+        <lastmod>2026-07-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -496,7 +496,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/events/winter-2026/</loc>
-        <lastmod>2026-07-13</lastmod>
+        <lastmod>2026-07-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1464,6 +1464,12 @@
         <loc>https://heartopia.life/database/birds/winter-smew/</loc>
         <lastmod>2026-07-17</lastmod>
         <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/events/frostspore-butterflies/</loc>
+        <lastmod>2026-07-17</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
 </urlset>

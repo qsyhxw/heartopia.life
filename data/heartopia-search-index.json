@@ -2275,7 +2275,7 @@
       "type": "Insect",
       "typeKey": "insects",
       "image": "/img/insects/Mariposa-madreperla-de-cristal-nevado.webp",
-      "href": "/database/insects/?search=Frostspore%20Mother-of-Pearl",
+      "href": "/events/frostspore-butterflies/",
       "listingHref": "/database/insects/?search=Frostspore%20Mother-of-Pearl",
       "meta": "Spirit-Oak Pine Forest, [EVENT] Frostspore Butterfly, Forest Jump Puzzle | Lv. 1 | Rainbow, Sunny, Rainy",
       "searchText": "frostspore mother of pearl insect spirit oak pine forest event frostspore butterfly forest jump puzzle lv 1 rainbow sunny rainy frostspore mother of pearl winter frost season day dawn dusk night frostspore mother of pearl"
@@ -2290,7 +2290,7 @@
       "type": "Insect",
       "typeKey": "insects",
       "image": "/img/insects/Mariposa-Cartero-de-Cristal-Nevado.webp",
-      "href": "/database/insects/?search=Frostspore%20Postman%20Butterfly",
+      "href": "/events/frostspore-butterflies/",
       "listingHref": "/database/insects/?search=Frostspore%20Postman%20Butterfly",
       "meta": "[EVENT] Frostspore Butterfly | Lv. 1 | Rainbow, Sunny, Rainy",
       "searchText": "frostspore postman butterfly insect event frostspore butterfly lv 1 rainbow sunny rainy frostspore postman butterfly winter frost season day dawn dusk night frostspore postman butterfly"
@@ -2305,7 +2305,7 @@
       "type": "Insect",
       "typeKey": "insects",
       "image": "/img/insects/Mariposa-graphium-weiskei-de-cristal-nevado.webp",
-      "href": "/database/insects/?search=Frostspore%20Purple%20Spotted%20Swallowtail",
+      "href": "/events/frostspore-butterflies/",
       "listingHref": "/database/insects/?search=Frostspore%20Purple%20Spotted%20Swallowtail",
       "meta": "Spirit-Oak Pine Forest, [EVENT] Frostspore Butterfly | Lv. 1 | Rainbow, Sunny, Rainy",
       "searchText": "frostspore purple spotted swallowtail insect spirit oak pine forest event frostspore butterfly lv 1 rainbow sunny rainy frostspore purple spotted swallowtail winter frost season day dawn dusk night frostspore purple spotted swallowtail"
@@ -2321,7 +2321,7 @@
       "type": "Insect",
       "typeKey": "insects",
       "image": "/img/insects/Mariposa-alas-de-pájaro-de-cristal-nevado.webp",
-      "href": "/database/insects/?search=Frostspore%20Queen%20Alexandra's%20Birdwing",
+      "href": "/events/frostspore-butterflies/",
       "listingHref": "/database/insects/?search=Frostspore%20Queen%20Alexandra's%20Birdwing",
       "meta": "[EVENT] Frostspore Butterfly, Deer Tower | Lv. 1 | Rainbow, Sunny, Rainy",
       "searchText": "frostspore queen alexandra s birdwing insect event frostspore butterfly deer tower lv 1 rainbow sunny rainy frostspore queen alexandra s birdwing frostspore queen alexandras birdwing winter frost season day dawn dusk night frostspore queen alexandra s birdwing"
@@ -2332,15 +2332,20 @@
       "normalized": "frostspore sulkowsky s morpho",
       "aliases": [
         "Frostspore Sulkowsky's Morpho",
-        "Frostspore Sulkowskys Morpho"
+        "Frostspore Sulkowskys Morpho",
+        "frostspire butterfly",
+        "frostpore butterfly",
+        "crystalline butterfly",
+        "papillon cristallin",
+        "borboleta cristalina"
       ],
       "type": "Insect",
       "typeKey": "insects",
       "image": "/img/insects/Mariposa-morpho-sulkowskyi-de-cristal-nevado.webp",
-      "href": "/database/insects/?search=Frostspore%20Sulkowsky's%20Morpho",
+      "href": "/events/frostspore-butterflies/",
       "listingHref": "/database/insects/?search=Frostspore%20Sulkowsky's%20Morpho",
       "meta": "Spirit-Oak Pine Forest, [EVENT] Frostspore Butterfly, Deer Tower, Forest Lake | Lv. 1 | Rainbow, Sunny, Rainy",
-      "searchText": "frostspore sulkowsky s morpho insect spirit oak pine forest event frostspore butterfly deer tower forest lake lv 1 rainbow sunny rainy frostspore sulkowsky s morpho frostspore sulkowskys morpho winter frost season day dawn dusk night frostspore sulkowsky s morpho"
+      "searchText": "frostspore sulkowsky s morpho insect spirit oak pine forest event frostspore butterfly deer tower forest lake lv 1 rainbow sunny rainy frostspore sulkowsky s morpho frostspore sulkowskys morpho frostspire butterfly frostpore butterfly crystalline butterfly papillon cristallin borboleta cristalina winter frost season day dawn dusk night frostspore sulkowsky s morpho"
     },
     {
       "id": "insects:giant-asian-mantis",
