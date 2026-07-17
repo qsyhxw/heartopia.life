@@ -1348,7 +1348,7 @@
     </url>
   <url>
     <loc>https://heartopia.life/events/call-of-whales/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1416,6 +1416,12 @@
         <loc>https://heartopia.life/guides/rare-timber/</loc>
         <lastmod>2026-07-17</lastmod>
         <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/ja/events/call-of-whales/</loc>
+        <lastmod>2026-07-17</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 </urlset>
