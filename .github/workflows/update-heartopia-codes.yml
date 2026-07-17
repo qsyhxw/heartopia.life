@@ -25,16 +25,18 @@ jobs:
           node-version: '24'
 
       - name: Fetch and render codes
-        run: node scripts/update-heartopia-codes.mjs
+        run: |
+          node scripts/update-heartopia-codes.mjs
+          node scripts/render-ja-codes.mjs
 
       - name: Show changes
-        run: git diff -- data/heartopia-codes.json codes/index.html sitemap.xml
+        run: git diff -- data/heartopia-codes.json codes/index.html ja/codes/index.html sitemap.xml
 
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/heartopia-codes.json codes/index.html sitemap.xml
+          git add data/heartopia-codes.json codes/index.html ja/codes/index.html sitemap.xml
           if git diff --cached --quiet; then
             echo "No code changes to commit."
           else
