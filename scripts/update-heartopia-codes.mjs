@@ -227,6 +227,7 @@ function renderActiveRows(data) {
                                 <td class="px-4 py-3"><code class="code-badge ${badgeClass} text-white px-2 py-1 rounded text-xs font-bold">${escapeHtml(item.code)}</code>${newBadge}${sourceNote}</td>
                                 <td class="px-4 py-3">${escapeHtml(item.reward || 'Free rewards')}</td>
                                 <td class="px-4 py-3 text-cozy-wood">${escapeHtml(item.expires || 'No posted expiry')}</td>
+                                <td class="px-4 py-3"><button type="button" class="copy-code-btn rounded-lg border border-cozy-bark bg-white px-3 py-2 font-bold text-cozy-bark" data-copy-code="${escapeHtml(item.code)}">Copy</button></td>
                             </tr>`;
   }).join('\n');
 }
@@ -248,6 +249,7 @@ function replaceJsonLdDates(html, isoDate, displayDate, newestCodes) {
 function renderPage(html, data) {
   const isoDate = data.lastChecked;
   const displayDate = longDate(isoDate);
+  const compactDate = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' }).format(new Date(`${isoDate}T12:00:00Z`));
   const newestCodes = data.active.slice(0, 7).map((item) => item.code).join(', ');
 
   html = html
@@ -261,15 +263,20 @@ function renderPage(html, data) {
     .replace(/current list was checked on [A-Z][a-z]+ \d{1,2}, \d{4}/g, `current list was checked on ${displayDate}`)
     .replace(/<!-- Latest codes: checked [^-]+-->/, `<!-- Latest codes: checked ${displayDate} -->`);
 
+  html = html
+    .replace(/(<div data-code-active-count[^>]*>)[^<]+(<\/div>)/, `$1${data.active.length}$2`)
+    .replace(/(<div data-code-last-checked[^>]*>)[^<]+(<\/div>)/, `$1${compactDate}$2`)
+    .replace(/(<div data-code-expired-count[^>]*>)[^<]+(<\/div>)/, `$1${data.expired.length}$2`);
+
   html = replaceJsonLdDates(html, isoDate, displayDate, newestCodes);
 
   html = html.replace(
-    /(<section id="active-codes"[\s\S]*?<tbody class="divide-y divide-cozy-peach\/30">)[\s\S]*?(\s*<\/tbody>)/,
+    /(<section id="active-codes"[\s\S]*?<tbody class="divide-y divide-cozy-peach\/30">)[\s\S]*?(<\/tbody>)/,
     `$1\n                            <!-- Latest codes: checked ${displayDate} -->\n${renderActiveRows(data)}\n                        $2`
   );
 
   html = html.replace(
-    /(<section id="expired-codes"[\s\S]*?<div class="space-y-2 text-sm">)[\s\S]*?(\s*<\/div>\s*<\/div>\s*<\/section>)/,
+    /(<section id="expired-codes"[\s\S]*?<div class="space-y-2 text-sm">)[\s\S]*?(<\/div>\s*<\/div>\s*<\/section>)/,
     `$1\n${renderExpiredList(data)}\n                $2`
   );
 
@@ -289,7 +296,7 @@ async function main() {
   const data = JSON.parse(await fs.readFile(dataPath, 'utf8'));
   data.sources ||= [];
   data.pending ||= [];
-  data.lastChecked = TODAY;
+  if (!renderOnly) data.lastChecked = TODAY;
 
   if (!renderOnly) {
     const knownCodes = new Set([
