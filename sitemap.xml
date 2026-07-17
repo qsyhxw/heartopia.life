@@ -56,7 +56,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/database/birds/</loc>
-        <lastmod>2026-07-15</lastmod>
+        <lastmod>2026-07-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -436,7 +436,7 @@
         <priority>0.7</priority>
     </url>    <url>
         <loc>https://heartopia.life/database/wildlife/winter-bird/</loc>
-        <lastmod>2026-07-15</lastmod>
+        <lastmod>2026-07-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -562,7 +562,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/guides/</loc>
-        <lastmod>2026-07-13</lastmod>
+        <lastmod>2026-07-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -610,7 +610,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/guides/bird-locations/</loc>
-        <lastmod>2026-07-07</lastmod>
+        <lastmod>2026-07-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1459,5 +1459,11 @@
         <lastmod>2026-07-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/database/birds/winter-smew/</loc>
+        <lastmod>2026-07-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
 </urlset>

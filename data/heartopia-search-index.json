@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16",
+  "generatedAt": "2026-07-17",
   "count": 580,
   "typeOrder": [
     "fish",
@@ -4584,7 +4584,7 @@
       "type": "Bird",
       "typeKey": "birds",
       "image": "/img/birds/Winter-Smew.webp",
-      "href": "/database/birds/?search=Winter%20Smew",
+      "href": "/database/birds/winter-smew/",
       "listingHref": "/database/birds/?search=Winter%20Smew",
       "meta": "[EVENT] Winter Birdwatching, Suburban Lake | Lv. 1 | Winter frost season",
       "searchText": "winter smew bird event winter birdwatching suburban lake lv 1 winter frost season winter smew rainbow sunny rainy day dawn dusk night"
