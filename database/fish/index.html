@@ -182,7 +182,7 @@
         <div class="bg-gradient-to-br from-blue-100 to-cozy-sky/40 rounded-2xl p-6 md:p-8 mb-8">
             <div class="flex items-center gap-2 text-sm font-medium text-cozy-sage mb-3">
                 <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                Updated: July 13, 2026
+                Updated: July 17, 2026
             </div>
             <h1 class="font-display text-3xl md:text-4xl font-bold text-cozy-bark mb-4">
                 🐟 Heartopia Fish Database
@@ -238,7 +238,7 @@
                 <div class="flex flex-col md:flex-row md:items-end gap-4">
                     <div class="flex-1 min-w-[220px]">
                         <label for="fish-search" class="block text-xs font-bold text-cozy-wood mb-1">Search fish</label>
-                        <input id="fish-search" type="search" placeholder="Try Butterfly Koi, Sardine, Whale Sea, Rainbow..." oninput="filterFish()"
+                        <input id="fish-search" type="search" placeholder="Try Oriental Shrimp, Butterfly Koi, Whale Sea, Rainbow..." oninput="filterFish()"
                             class="w-full p-3 text-sm border border-cozy-peach rounded-lg bg-cozy-cream focus:outline-none focus:border-cozy-coral">
                     </div>
                     <div class="grid grid-cols-2 lg:grid-cols-5 gap-3 flex-1">
@@ -302,6 +302,20 @@
                     <p class="text-cozy-wood"><strong id="fish-result-count">0</strong> matching fish shown. Filters only affect the database tables below.</p>
                     <button type="button" onclick="resetFishFilters()" class="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-cozy-peach hover:bg-cozy-coral hover:text-white font-bold transition-colors">Reset filters</button>
                 </div>
+            </div>
+        </section>
+        <section id="oriental-shrimp-location" class="mb-8 grid gap-5 rounded-xl border border-cyan-200 bg-cyan-50 p-5 md:grid-cols-[96px_minmax(0,1fr)_auto] md:items-center">
+            <div class="grid aspect-square place-items-center rounded-lg border border-cyan-200 bg-white p-3">
+                <img src="/img/fish/Oriental-Shrimp.webp" alt="Oriental Shrimp" width="96" height="96" class="h-full w-full object-contain">
+            </div>
+            <div>
+                <p class="text-xs font-black uppercase text-cyan-800">Shrimp quick location</p>
+                <h2 class="font-display mt-1 text-2xl font-bold">Where to find Oriental Shrimp</h2>
+                <p class="mt-2 text-sm leading-6 text-cozy-wood"><strong>River</strong> · Fishing Lv. 1 · Small shadow · Rainbow, Sunny, or Rainy · Any time.</p>
+            </div>
+            <div class="flex flex-col gap-2 sm:flex-row md:flex-col">
+                <button type="button" onclick="focusFish('heartopia shrimp location', 'river', 'oriental-shrimp-cell')" class="inline-flex min-h-11 items-center justify-center rounded-md bg-cyan-800 px-4 py-3 text-sm font-bold text-white hover:bg-cyan-900">Locate in table</button>
+                <a href="/guides/map/?view=entity&amp;type=fish&amp;focus=Any+River&amp;entity=Oriental+Shrimp&amp;source=River#location-tool" class="inline-flex min-h-11 items-center justify-center rounded-md border border-cyan-800 bg-white px-4 py-3 text-sm font-bold text-cyan-900 hover:bg-cyan-100">View river route</a>
             </div>
         </section>
         <section id="my-progress" data-collection-progress data-collection-key="fish" data-collection-label="fish" data-table-selector="table.fish-table" class="bg-white rounded-xl p-5 mb-8 border border-cozy-peach/30 shadow-sm">
@@ -414,7 +428,7 @@
                                     <td class="px-4 py-2 text-cozy-wood">50 / 75 / 100 / 200 / 400</td>
                                 </tr>
                                                                 <tr>
-                                    <td class="px-4 py-2 font-medium">Oriental Shrimp</td>
+                                    <td id="oriental-shrimp-cell" data-search-aliases="shrimp heartopia shrimp heartopia shrimp location where to find shrimp in heartopia" class="px-4 py-2 font-medium">Oriental Shrimp</td>
                                     <td class="px-4 py-2 text-cozy-wood">River</td>
                                     <td class="px-4 py-2">1</td>
                                     <td class="px-4 py-2 text-cozy-wood">Small</td>
@@ -1726,7 +1740,7 @@
             let visible = 0;
 
             rows.forEach(row => {
-                const text = row.textContent.toLowerCase();
+                const text = `${row.textContent} ${row.querySelector('[data-search-aliases]')?.dataset.searchAliases || ''}`.toLowerCase();
                 const section = row.closest('section');
                 const sectionId = section ? section.id : '';
                 const level = getTableLevel(row);
@@ -1743,6 +1757,17 @@
             });
 
             document.getElementById('fish-result-count').textContent = visible;
+        }
+
+        function focusFish(query, category, rowId) {
+            document.getElementById('fish-search').value = query;
+            document.getElementById('fish-category').value = category || 'all';
+            document.getElementById('fish-weather').value = 'all';
+            document.getElementById('fish-level').value = 'all';
+            document.getElementById('fish-shadow').value = 'all';
+            document.getElementById('fish-kind').value = 'all';
+            filterFish();
+            document.getElementById(rowId)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
 
         function resetFishFilters() {

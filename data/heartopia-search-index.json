@@ -1250,15 +1250,19 @@
       "name": "Oriental Shrimp",
       "normalized": "oriental shrimp",
       "aliases": [
-        "Oriental Shrimp"
+        "Oriental Shrimp",
+        "shrimp",
+        "heartopia shrimp",
+        "heartopia shrimp location",
+        "where to find shrimp in heartopia"
       ],
       "type": "Fish",
       "typeKey": "fish",
       "image": "/img/fish/Oriental-Shrimp.webp",
-      "href": "/database/fish/?search=Oriental%20Shrimp",
-      "listingHref": "/database/fish/?search=Oriental%20Shrimp",
+      "href": "/database/fish/?search=heartopia%20shrimp%20location",
+      "listingHref": "/database/fish/?search=heartopia%20shrimp%20location",
       "meta": "River | Lv. 1 | Common | 400 G",
-      "searchText": "oriental shrimp fish river lv 1 common 400 g oriental shrimp rainbow sunny rainy day dawn dusk night small 50 75 100 200 400"
+      "searchText": "oriental shrimp fish river lv 1 common 400 g oriental shrimp shrimp heartopia shrimp heartopia shrimp location where to find shrimp in heartopia rainbow sunny rainy day dawn dusk night small 50 75 100 200 400"
     },
     {
       "id": "fish:pink-betta",

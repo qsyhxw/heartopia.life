@@ -116,7 +116,9 @@ function addEntry({ type, typeKey, name, image, href, listingHref, meta, aliases
 
 const fish = readJson('data/heartopia-fish.json').fish;
 for (const item of fish) {
-  const listingHref = `/database/fish/?search=${encodeURIComponent(item.name)}`;
+  const isOrientalShrimp = normalize(item.name) === 'oriental shrimp';
+  const listingQuery = isOrientalShrimp ? 'heartopia shrimp location' : item.name;
+  const listingHref = `/database/fish/?search=${encodeURIComponent(listingQuery)}`;
   addEntry({
     type: 'Fish',
     typeKey: 'fish',
@@ -125,6 +127,7 @@ for (const item of fish) {
     href: findDetailPath('database/fish', item) || listingHref,
     listingHref,
     meta: joinMeta([item.location, `Lv. ${item.level}`, item.category, money(item.maxValue)]),
+    aliases: isOrientalShrimp ? ['shrimp', 'heartopia shrimp', 'heartopia shrimp location', 'where to find shrimp in heartopia'] : [],
     extraSearch: [item.schedule, item.shadow, item.value]
   });
 }
