@@ -395,7 +395,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/database/recipes/</loc>
-        <lastmod>2026-07-15</lastmod>
+        <lastmod>2026-07-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1432,8 +1432,14 @@
     </url>
     <url>
         <loc>https://heartopia.life/ja/codes/</loc>
-        <lastmod>2026-07-16</lastmod>
+        <lastmod>2026-07-17</lastmod>
         <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/ja/database/recipes/</loc>
+        <lastmod>2026-07-17</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 </urlset>
