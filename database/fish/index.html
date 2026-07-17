@@ -1756,6 +1756,14 @@
                 if (show) visible += 1;
             });
 
+            ['river', 'lake', 'sea', 'event', 'special'].forEach(sectionId => {
+                const section = document.getElementById(sectionId);
+                if (!section) return;
+                const hasVisibleRow = [...section.querySelectorAll('table.fish-table tbody tr')]
+                    .some(row => row.style.display !== 'none');
+                section.hidden = !hasVisibleRow;
+            });
+
             document.getElementById('fish-result-count').textContent = visible;
         }
 
