@@ -55,6 +55,18 @@ function merge(remote) {
   return all;
 }
 
+function syncCustomEventStatus(e) {
+  if (!exists(e)) return;
+  const current = read(file(e));
+  if (!current.includes('data-sync-event-status') || current.includes('data-event-sync="managed"')) return;
+  const visible = e.status === 'archive' ? 'Archived event' : e.status === 'upcoming' ? 'Upcoming event' : 'Active event';
+  const schemaStatus = e.status === 'archive' ? 'EventCompleted' : 'EventScheduled';
+  const next = current
+    .replace(/(<[^>]+data-sync-event-status[^>]*>)[^<]*(<\/[^>]+>)/, `$1${visible}$2`)
+    .replace(/"eventStatus":"https:\/\/schema\.org\/(?:EventScheduled|EventCompleted)"/, `"eventStatus":"https://schema.org/${schemaStatus}"`)
+    .replace(/"dateModified":"\d{4}-\d{2}-\d{2}"/, `"dateModified":"${today}"`);
+  if (next !== current) write(file(e), next);
+}
 function head(title,description,url,schema,body) {
  return `<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)}</title><meta name="description" content="${esc(description)}"><link rel="canonical" href="${url}"><meta name="robots" content="index,follow"><link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><script src="https://cdn.tailwindcss.com"></script><script>tailwind.config={theme:{extend:{colors:{cozy:{cream:'#FFF8F0',peach:'#FFE5D9',coral:'#FF9B85',rose:'#D4A5A5',sage:'#A8C686',mint:'#B8E0D2',sky:'#95C8D8',wood:'#8B7355',bark:'#5D4E37'}},fontFamily:{display:['Georgia','serif'],body:['system-ui','-apple-system','sans-serif']}}}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-FRJ91G3VRR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-FRJ91G3VRR');</script><script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script><script data-cfasync="false" async src="https://s.nitropay.com/ads-2368.js"></script><script type="application/ld+json">${JSON.stringify(schema)}</script><style>html{scroll-behavior:smooth}.card{background:#fff;border:1px solid rgb(255 229 217 / .8);border-radius:1rem;transition:transform .2s ease,box-shadow .2s ease}.card:hover{transform:translateY(-3px);box-shadow:0 12px 24px rgb(139 115 85 / .14)}.link{color:#8B7355;font-weight:700}.link:hover{color:#FF9B85}</style></head><body class="bg-cozy-cream text-cozy-bark font-body">${body}<script>(function(){function a(){if(window.__heartopiaEventAds||!window.nitroAds)return;window.__heartopiaEventAds=true;window.nitroAds.createAd('heartopia_anchor',{format:'anchor-v2',anchor:'bottom',anchorBgColor:'rgb(0 0 0 / 80%)',anchorClose:true,mediaQuery:'(max-width: 1024px)'});window.nitroAds.createAd('heartopia_side_rail',{format:'rail',rail:'right',railStickyTop:70,mediaQuery:'(min-width: 1025px)'});window.nitroAds.createAd('heartopia_floating_video',{format:'floating',floating:{position:'left'},mediaQuery:'(min-width: 1025px)'});for(const id of ['heartopia_in_content','heartopia_in_content_2'])window.nitroAds.createAd(id,{format:'display',sizes:[[300,250],[336,280],[728,90]],collapseEmpty:true})}if(window.nitroAds&&window.nitroAds.loaded)a();else document.addEventListener('nitroAds.loaded',a,{once:true})})();</script></body></html>`;
 }
@@ -83,7 +95,7 @@ function updateSitemap(events) {
 const remote=parse(await get(base+'/en/events/'));
 if(!remote.length) throw Error('Event parse safety check failed: no event cards found.');
 const details=await Promise.all(remote.map(enrich)), events=merge(details);
-for(const e of events){const old=exists(e)?read(file(e)):'';if((e.status==='active'||e.status==='upcoming')&&(!old||old.includes('data-event-sync="managed"')))write(file(e),detailPage(e));}
+for(const e of events){const old=exists(e)?read(file(e)):'';if((e.status==='active'||e.status==='upcoming')&&(!old||old.includes('data-event-sync="managed"')))write(file(e),detailPage(e));else syncCustomEventStatus(e);}
 write('events/index.html',rootPage(events));
 updateSitemap(events);
 const publicEvents=events.map(e=>pickRemoteFields('events',{slug:e.slug,localSlug:route(e),name:e.name,status:e.status,type:e.type||'',startDate:e.startDate||'',endDate:e.endDate||'',dateLabel:e.date||''}));
