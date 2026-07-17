@@ -377,7 +377,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/database/materials/</loc>
-        <lastmod>2026-07-15</lastmod>
+        <lastmod>2026-07-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1174,7 +1174,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/database/materials/roaming-oak-timber/</loc>
-        <lastmod>2026-07-15</lastmod>
+        <lastmod>2026-07-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1402,6 +1402,12 @@
     </url>
     <url>
         <loc>https://heartopia.life/th/database/food-prices/</loc>
+        <lastmod>2026-07-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/th/guides/rare-timber/</loc>
         <lastmod>2026-07-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
