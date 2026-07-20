@@ -898,7 +898,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/hobbies/</loc>
-        <lastmod>2026-07-13</lastmod>
+        <lastmod>2026-07-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -1476,6 +1476,12 @@
         <loc>https://heartopia.life/events/call-of-whales/bubble-locations/</loc>
         <lastmod>2026-07-20</lastmod>
         <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/hobbies/ocean-cleanup/</loc>
+        <lastmod>2026-07-20</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
 </urlset>
