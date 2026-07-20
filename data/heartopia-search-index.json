@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17",
+  "generatedAt": "2026-07-20",
   "count": 580,
   "typeOrder": [
     "fish",
@@ -6133,7 +6133,9 @@
       "name": "Onsen Egg",
       "normalized": "onsen egg",
       "aliases": [
-        "Onsen Egg"
+        "Onsen Egg",
+        "onsen ei",
+        "heartopia onsen ei"
       ],
       "type": "Recipe",
       "typeKey": "recipes",
@@ -6141,7 +6143,7 @@
       "href": "/database/recipes/onsen-egg/",
       "listingHref": "/database/recipes/?search=Onsen%20Egg",
       "meta": "Base Game | Lv. 1 | 520 G",
-      "searchText": "onsen egg recipe base game lv 1 520 g onsen egg permanent object object"
+      "searchText": "onsen egg recipe base game lv 1 520 g onsen egg onsen ei heartopia onsen ei permanent object object"
     },
     {
       "id": "recipes:orange-egg",

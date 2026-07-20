@@ -76,7 +76,8 @@ const aliasMap = {
   'ka ching': ['ka-ching', 'kachng'],
   'mrs joan': ['mrs. joan', 'mrs-joan'],
   'golden stag beetle': ['golden stag'],
-  'green sea turtle': ['sea turtle']
+  'green sea turtle': ['sea turtle'],
+  'onsen egg': ['onsen ei', 'heartopia onsen ei']
 };
 
 const detailOverrides = {
