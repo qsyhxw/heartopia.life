@@ -1312,7 +1312,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/npcs/massimo/</loc>
-        <lastmod>2026-07-13</lastmod>
+        <lastmod>2026-07-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1488,6 +1488,12 @@
         <loc>https://heartopia.life/database/wildlife/dolphin/</loc>
         <lastmod>2026-07-20</lastmod>
         <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/guides/call-of-whales-cooking/</loc>
+        <lastmod>2026-07-20</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
 </urlset>
