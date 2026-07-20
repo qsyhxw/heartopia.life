@@ -1878,7 +1878,7 @@ window.heartopiaProgressCatalog = {
       {
         "id": "dolphin",
         "name": "Dolphin",
-        "image": "/img/wildlife/Dolphin.jpg",
+        "image": "/img/wildlife/Dolphin-Official.jpg",
         "detail": "Whalefall Canyon · Any weather"
       },
       {

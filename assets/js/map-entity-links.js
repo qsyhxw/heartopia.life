@@ -105,7 +105,7 @@
             .heartopia-map-table-cell { min-width: 48px; text-align: center; white-space: nowrap; }
             .heartopia-map-table-link { display: inline-flex; width: 32px; height: 32px; align-items: center; justify-content: center; border: 1px solid rgba(255,155,133,.55); border-radius: 6px; color: #d86f5b; background: #fff; transition: border-color .15s ease, background-color .15s ease, color .15s ease; }
             .heartopia-map-table-link:hover, .heartopia-map-table-link:focus-visible { border-color: #ff9b85; color: #5d4e37; background: #fff8f0; outline: none; }
-            .heartopia-map-detail-link { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; margin: 0 0 28px; padding: 14px 0; border-bottom: 1px solid rgba(255,229,217,.9); }
+            .heartopia-map-detail-link { display: flex; width: min(calc(100% - 2rem), 72rem); box-sizing: border-box; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; margin: 24px auto 28px; padding: 14px 16px; border: 1px solid rgba(149,200,216,.55); border-radius: 8px; background: #fff; }
             .heartopia-map-detail-link p { margin: 0; color: #8b7355; font-size: .875rem; }
             .heartopia-map-detail-link strong { display: block; color: #5d4e37; margin-bottom: 2px; }
             .heartopia-map-detail-link a { display: inline-flex; align-items: center; gap: 8px; border-radius: 6px; background: #ff9b85; color: #fff; padding: 9px 13px; font-size: .875rem; font-weight: 700; text-decoration: none; }
