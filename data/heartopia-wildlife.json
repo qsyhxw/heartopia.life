@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-13",
-  "count": 10,
+  "generatedAt": "2026-07-20",
+  "count": 11,
   "wildlife": [
     {
       "id": "alpaca",
@@ -49,6 +49,18 @@
       "interaction": "Interact once to add the trough to the in-game map or Animals app.",
       "status": "Current listing",
       "image": "/img/wildlife/Capybara.webp"
+    },
+    {
+      "id": "dolphin",
+      "name": "Dolphin",
+      "category": "Call of Whales",
+      "location": "Whalefall Canyon",
+      "weather": "Any weather",
+      "favoriteFood": [],
+      "trough": "Dolphin feeding point: Whalefall Canyon.",
+      "interaction": "Feed and interact with the dolphin group to raise group familiarity; Life Fragments unlock at Familiarity Lv. 4.",
+      "status": "Seasonal - active",
+      "image": "/img/wildlife/Dolphin.jpg"
     },
     {
       "id": "ferret",

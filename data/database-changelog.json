@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-15",
+  "updatedAt": "2026-07-20",
   "trackedCategories": [
     {
       "id": "fish",
@@ -72,7 +72,7 @@
     "fish": 119,
     "birds": 97,
     "insects": 91,
-    "wildlife": 10,
+    "wildlife": 11,
     "crops": 17,
     "flowers": 10,
     "recipes": 168,
@@ -84,6 +84,28 @@
     "events": 10
   },
   "entries": [
+    {
+      "id": "2026-07-20-9cc01d4de20ffeea",
+      "timestamp": "2026-07-20T07:27:33.625Z",
+      "date": "2026-07-20",
+      "title": "New Wildlife added",
+      "summary": "+1 Wildlife entry",
+      "signature": "9cc01d4de20ffeea",
+      "changes": [
+        {
+          "category": "Wildlife",
+          "singular": "Wildlife entry",
+          "categoryId": "wildlife",
+          "action": "added",
+          "count": 1,
+          "items": [
+            "Dolphin"
+          ],
+          "truncated": false,
+          "url": "/database/wildlife/"
+        }
+      ]
+    },
     {
       "id": "2026-07-15-8241a31ac92a7bdd",
       "timestamp": "2026-07-15T06:40:55.499Z",

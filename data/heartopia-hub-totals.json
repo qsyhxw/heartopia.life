@@ -4,7 +4,7 @@
     "fish": 119,
     "insects": 91,
     "birds": 97,
-    "wildlife": 10,
+    "wildlife": 11,
     "crops": 17,
     "flowers": 10,
     "recipes": 168,
@@ -13,6 +13,6 @@
     "items": 23,
     "ingredients": 26,
     "npcs": 19,
-    "map": 46
+    "map": 47
   }
 }

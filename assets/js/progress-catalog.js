@@ -1876,6 +1876,12 @@ window.heartopiaProgressCatalog = {
         "detail": "Crater Lake · Rainbow"
       },
       {
+        "id": "dolphin",
+        "name": "Dolphin",
+        "image": "/img/wildlife/Dolphin.jpg",
+        "detail": "Whalefall Canyon · Any weather"
+      },
+      {
         "id": "ferret",
         "name": "Ferret",
         "image": "/img/wildlife/Ferret.webp",
@@ -4220,6 +4226,12 @@ window.heartopiaProgressCatalog = {
         "name": "Capybara",
         "image": "",
         "detail": "Crater Lake · wildlife"
+      },
+      {
+        "id": "dolphin",
+        "name": "Dolphin",
+        "image": "",
+        "detail": "Whalefall Canyon · wildlife"
       },
       {
         "id": "ferret",

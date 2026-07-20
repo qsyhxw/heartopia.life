@@ -4,7 +4,7 @@
         { id: 'fish', title: 'Fish collected', icon: '&#128031;', image: '/img/fish/Anglerfish.webp', storageKey: 'heartopia.collection.fish', total: 119, url: '/database/fish/', action: 'Open fish database', color: 'sky' },
         { id: 'insects', title: 'Insects collected', icon: '&#129419;', image: '/img/insects/Abeja-Azul.webp', storageKey: 'heartopia.collection.insects', total: 91, url: '/database/insects/', action: 'Open insect database', color: 'sage' },
         { id: 'birds', title: 'Birds photographed', icon: '&#128038;', image: '/img/birds/African-Olive-Pigeon.webp', storageKey: 'heartopia.collection.birds', total: 97, url: '/database/birds/', action: 'Open bird database', color: 'coral' },
-        { id: 'wildlife', title: 'Wildlife found', icon: '&#128062;', image: '/img/wildlife/Capybara.webp', storageKey: 'heartopia.collection.wildlife', total: 10, url: '/database/wildlife/', action: 'Open wildlife database', color: 'mint' },
+        { id: 'wildlife', title: 'Wildlife found', icon: '&#128062;', image: '/img/wildlife/Capybara.webp', storageKey: 'heartopia.collection.wildlife', total: 11, url: '/database/wildlife/', action: 'Open wildlife database', color: 'mint' },
         { id: 'crops', title: 'Crops harvested', icon: '&#127806;', image: '/img/crops/Grape.webp', storageKey: 'heartopia.collection.crops', total: 17, url: '/database/crops/', action: 'Open crops database', color: 'gold' },
         { id: 'flowers', title: 'Flowers grown', icon: '', image: '/img/flowers/Pink-Flower-2-Star.webp', storageKey: 'heartopia.collection.flowers', total: 10, url: '/database/flowers/', action: 'Open flowers database', color: 'flower' },
         { id: 'recipes', title: 'Recipes learned', icon: '&#127859;', image: '/img/recipes/Afternoon-Tea.webp', storageKey: 'heartopia.database.recipes.learned.v2', total: 168, url: '/database/recipes/', action: 'Open recipe database', color: 'recipe' },
@@ -13,7 +13,7 @@
         { id: 'items', title: 'Items owned', icon: '&#127890;', image: '/img/items/Amazing-Seasoning.webp', storageKey: 'heartopia.collection.items', total: 23, url: '/database/items/', action: 'Open items database', color: 'violet' },
         { id: 'ingredients', title: 'Ingredients stocked', icon: '&#129371;', image: '/img/ingredients/Butter.webp', storageKey: 'heartopia.collection.ingredients', total: 26, url: '/database/ingredients/', action: 'Open ingredients database', color: 'cream' },
         { id: 'npcs', title: 'NPCs met', icon: '&#128101;', image: '/img/npcs/Bailey-J.webp', storageKey: 'heartopia.collection.npcs', total: 19, url: '/npcs/', action: 'Open NPC directory', color: 'npc' },
-        { id: 'map', title: 'Map locations checked', icon: '&#128506;', storageKey: 'heartopia.map.visitedLocations', total: 46, url: '/guides/map/#location-tool', action: 'Open map finder', color: 'rose' }
+        { id: 'map', title: 'Map locations checked', icon: '&#128506;', storageKey: 'heartopia.map.visitedLocations', total: 47, url: '/guides/map/#location-tool', action: 'Open map finder', color: 'rose' }
     ];
 
     const colorClasses = {

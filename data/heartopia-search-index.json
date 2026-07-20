@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-07-20",
-  "count": 580,
+  "count": 581,
   "typeOrder": [
     "fish",
     "insects",
@@ -8233,6 +8233,21 @@
       "listingHref": "/database/wildlife/?search=Capybara",
       "meta": "Crater Lake | Common | Tomato, Grape",
       "searchText": "capybara wildlife crater lake common tomato grape capybara rainbow tomato grape raspberry capybara trough crater lake near the fluorite mine route interact once to add the trough to the in game map or animals app current listing"
+    },
+    {
+      "id": "wildlife:dolphin",
+      "name": "Dolphin",
+      "normalized": "dolphin",
+      "aliases": [
+        "Dolphin"
+      ],
+      "type": "Wildlife",
+      "typeKey": "wildlife",
+      "image": "/img/wildlife/Dolphin.jpg",
+      "href": "/database/wildlife/dolphin/",
+      "listingHref": "/database/wildlife/?search=Dolphin",
+      "meta": "Whalefall Canyon | Call of Whales",
+      "searchText": "dolphin wildlife whalefall canyon call of whales dolphin any weather dolphin feeding point whalefall canyon feed and interact with the dolphin group to raise group familiarity life fragments unlock at familiarity lv 4 seasonal active"
     },
     {
       "id": "wildlife:ferret",

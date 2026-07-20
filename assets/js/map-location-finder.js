@@ -14,6 +14,7 @@
         { name: 'Alpaca', type: 'wildlife', area: 'Amethyst Beach', tags: 'wildlife alpaca sunny beach', note: 'Appears at Amethyst Beach in Sunny weather.', link: '/database/wildlife/' },
         { name: 'Bunny', type: 'wildlife', area: 'Suburbs', tags: 'wildlife bunny sunny suburbs', note: 'Appears in the Suburbs in Sunny weather.', link: '/database/wildlife/' },
         { name: 'Capybara', type: 'wildlife', area: 'Crater Lake', tags: 'wildlife capybara crater lake rainbow', note: 'Appears at Crater Lake in Rainbow weather.', link: '/database/wildlife/capybara/' },
+        { name: 'Dolphin', type: 'wildlife', area: 'Whalefall Canyon', tags: 'wildlife dolphin seasonal call of whales familiarity life fragment', note: 'Seasonal dolphin group in Whalefall Canyon through August 22, 2026.', link: '/database/wildlife/dolphin/' },
         { name: 'Ferret', type: 'wildlife', area: 'Rosy River', tags: 'wildlife ferret rosy river rainbow', note: 'Appears at Rosy River in Rainbow weather.', link: '/database/wildlife/' },
         { name: 'Fox', type: 'wildlife', area: 'Flower Field', tags: 'wildlife fox meadow lake windmill rainbow', note: 'Appears in Windmill Flower Field, Amethyst Beach, or Meadow Lake in Rainbow weather.', link: '/database/wildlife/' },
         { name: 'Maltese', type: 'wildlife', area: 'Forest Island', tags: 'wildlife maltese forest island sunny', note: 'Listed in the Maltese category at Forest Island in Sunny weather.', link: '/database/wildlife/' },
