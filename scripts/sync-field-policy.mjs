@@ -1,6 +1,7 @@
 const POLICIES = {
   achievements: new Set(['name', 'group', 'slug', 'image', 'imageUrl', 'status']),
   events: new Set(['slug', 'localSlug', 'local', 'name', 'status', 'type', 'startDate', 'endDate', 'date', 'dateLabel', 'sourceUrl']),
+  eventRoutes: new Set(['day', 'id', 'name', 'color', 'location', 'rewardBubble']),
   collections: new Set(['id', 'slug', 'name', 'category', 'image', 'imageUrl', 'level', 'weather', 'location', 'time', 'price', 'marketValue', 'shadow', 'status']),
   crops: new Set(['id', 'slug', 'name', 'category', 'image', 'imageUrl', 'seedPrice', 'growthTime', 'growthMinutes', 'recipes', 'recipeCount', 'status']),
   recipes: new Set(['id', 'slug', 'name', 'category', 'image', 'imageUrl', 'level', 'ingredients', 'market', 'energy', 'eventTokens', 'status', 'availability']),

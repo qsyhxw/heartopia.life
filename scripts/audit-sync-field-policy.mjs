@@ -8,6 +8,8 @@ const readJson = (file) => JSON.parse(read(file));
 
 const eventData = readJson('data/heartopia-events.json');
 for (const event of eventData.events || []) assertRemoteFields('events', event);
+const whaleRouteData = readJson('data/heartopia-call-of-whales-routes.json');
+for (const route of whaleRouteData.routes || []) assertRemoteFields('eventRoutes', route);
 
 const activeAutoSyncScripts = [
   'scripts/monitor-heartodex-collections.mjs',
@@ -20,6 +22,7 @@ const activeAutoSyncScripts = [
   'scripts/sync-heartodex-recipes.mjs',
   'scripts/sync-heartodex-achievements.mjs',
   'scripts/sync-heartodex-events.mjs',
+  'scripts/sync-call-of-whales-routes.mjs',
 ];
 
 const retiredMonitorArtifacts = [
@@ -80,5 +83,6 @@ console.log(JSON.stringify({
   ok: true,
   policy: SYNC_FIELD_POLICY,
   auditedEventRecords: (eventData.events || []).length,
+  auditedWhaleRoutes: (whaleRouteData.routes || []).length,
   auditedScripts: activeAutoSyncScripts,
 }, null, 2));

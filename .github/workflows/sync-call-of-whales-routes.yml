@@ -1,0 +1,59 @@
+name: Sync Call of Whales Routes
+
+on:
+  schedule:
+    # Daily at 11:15 China Standard Time while the event is active.
+    - cron: '15 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: heartopia-derived-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+
+      - name: Test the next-day validation path
+        env:
+          CALL_OF_WHALES_PRIMARY_HTML: tests/fixtures/call-of-whales-day-11.html
+          CALL_OF_WHALES_HUB_HTML: tests/fixtures/call-of-whales-hub-day-11.html
+          CALL_OF_WHALES_NOW: '2026-07-21T12:00:00Z'
+        run: node scripts/sync-call-of-whales-routes.mjs --check
+
+      - name: Cross-check and sync released whale routes
+        run: node scripts/sync-call-of-whales-routes.mjs
+
+      - name: Enforce remote field whitelist
+        run: node scripts/audit-sync-field-policy.mjs
+
+      - name: Verify generated route page
+        run: node scripts/build-call-of-whales-routes.mjs
+
+      - name: Commit verified route additions
+        shell: bash
+        run: |
+          if git diff --quiet -- data/heartopia-call-of-whales-routes.json events/call-of-whales/index.html; then
+            echo "No verified whale route change detected."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/heartopia-call-of-whales-routes.json events/call-of-whales/index.html
+          git commit -m "chore: sync released Call of Whales routes"
+          git pull --rebase origin main
+          git push
