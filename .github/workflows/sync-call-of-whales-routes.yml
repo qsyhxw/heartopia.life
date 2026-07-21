@@ -27,6 +27,13 @@ jobs:
         with:
           node-version: '24'
 
+      - name: Prepare private route audit
+        shell: bash
+        run: echo "HEARTOPIA_SYNC_DIR=$RUNNER_TEMP/heartopia-sync" >> "$GITHUB_ENV"
+
+      - name: Test Day 11-16 route safeguards
+        run: node --test tests/call-of-whales-routes.test.mjs
+
       - name: Test the next-day validation path
         env:
           CALL_OF_WHALES_PRIMARY_HTML: tests/fixtures/call-of-whales-day-11.html
@@ -36,6 +43,15 @@ jobs:
 
       - name: Cross-check and sync released whale routes
         run: node scripts/sync-call-of-whales-routes.mjs
+
+      - name: Save private route audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: call-of-whales-route-audit
+          path: ${{ runner.temp }}/heartopia-sync/call-of-whales-route-audit.json
+          if-no-files-found: ignore
+          retention-days: 14
 
       - name: Enforce remote field whitelist
         run: node scripts/audit-sync-field-policy.mjs

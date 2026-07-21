@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
+import { pathToFileURL } from 'node:url';
 import { assertRemoteFields } from './sync-field-policy.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
@@ -10,10 +11,14 @@ const hubUrl = 'https://www.taptap.cn/app/45213/strategy/entity-collection/38656
 const eventEnd = new Date('2026-08-23T00:00:00Z');
 const eventStart = new Date('2026-07-11T00:00:00Z');
 const dryRun = process.argv.includes('--check') || process.env.DRY_RUN === '1';
+const auditDir = process.env.HEARTOPIA_SYNC_DIR || '';
+const auditPath = auditDir ? path.join(auditDir, 'call-of-whales-route-audit.json') : '';
 
 const colorMap = new Map([
   ['黄绿色', 'Yellow-Green'], ['黄绿', 'Yellow-Green'], ['天蓝色', 'Sky Blue'], ['天蓝', 'Sky Blue'],
   ['浅蓝色', 'Light Blue'], ['浅蓝', 'Light Blue'], ['青色', 'Cyan'], ['灰色', 'Gray'],
+  ['深蓝色', 'Deep Blue'], ['深蓝', 'Deep Blue'], ['深紫色', 'Deep Purple'], ['深紫', 'Deep Purple'],
+  ['米白色', 'Ivory'], ['米白', 'Ivory'], ['银色', 'Silver'], ['金色', 'Gold'], ['棕色', 'Brown'],
   ['粉色', 'Pink'], ['紫色', 'Purple'], ['黄色', 'Yellow'], ['橙色', 'Orange'],
   ['绿色', 'Green'], ['红色', 'Red'], ['白色', 'White'], ['黑色', 'Black'], ['彩虹', 'Rainbow'],
 ]);
@@ -52,7 +57,7 @@ function englishColor(label) {
   return '';
 }
 
-export function parseWhaleGuide(html, currentRoutes) {
+export function parseWhaleEntries(html) {
   const lines = htmlToText(html).split('\n').map((line) => line.trim()).filter(Boolean);
   const found = [];
   for (let index = 0; index < lines.length; index += 1) {
@@ -64,8 +69,12 @@ export function parseWhaleGuide(html, currentRoutes) {
     if (!found.some((item) => item.rawLabel === hit[1])) found.push({ rawLabel: hit[1], color, locationZh: hit[2], bubbleZh: bubble });
   }
 
+  return found.reverse();
+}
+
+export function parseWhaleGuide(html, currentRoutes) {
+  const chronological = parseWhaleEntries(html);
   const knownDays = new Map(currentRoutes.map((route) => [route.color, route.day]));
-  const chronological = found.reverse();
   for (let index = 0; index < chronological.length; index += 1) {
     const expected = index + 1;
     const known = knownDays.get(chronological[index].color);
@@ -101,6 +110,27 @@ async function redditConfirms(day, color) {
   } catch {
     return false;
   }
+}
+
+function normalizedFact(value) {
+  try {
+    return structureRouteFact(value).toLowerCase().replace(/\s+/g, ' ').trim();
+  } catch {
+    return '';
+  }
+}
+
+export function hubConfirmsRoute(candidate, hubHtml) {
+  const match = parseWhaleEntries(hubHtml).find((item) => item.rawLabel === candidate.rawLabel);
+  if (!match) return false;
+  return normalizedFact(match.locationZh) === normalizedFact(candidate.locationZh)
+    && normalizedFact(match.bubbleZh) === normalizedFact(candidate.bubbleZh);
+}
+
+function writeAudit(report) {
+  if (!auditPath) return;
+  fs.mkdirSync(auditDir, { recursive: true });
+  fs.writeFileSync(auditPath, `${JSON.stringify(report, null, 2)}\n`);
 }
 
 export function structureRouteFact(value) {
@@ -196,18 +226,27 @@ async function main() {
     throw new Error('Existing whale sequence no longer matches the verified local baseline.');
   }
 
-  const hubText = htmlToText(hubHtml);
   const additions = [];
+  const candidates = [];
   for (const candidate of parsed.slice(data.routes.length)) {
     if (candidate.day !== data.routes.length + additions.length + 1) break;
     if (unlockDate(candidate.day) > now) break;
-    const secondSignal = hubText.includes(candidate.rawLabel) || await redditConfirms(candidate.day, candidate.color);
-    if (!secondSignal) {
-      console.log(`Day ${candidate.day} is pending a second confirmation signal.`);
-      break;
-    }
+    const hubExact = hubConfirmsRoute(candidate, hubHtml);
+    const redditSignal = await redditConfirms(candidate.day, candidate.color);
     const location = structureRouteFact(candidate.locationZh);
     const rewardBubble = structureRouteFact(candidate.bubbleZh);
+    candidates.push({
+      day: candidate.day,
+      color: candidate.color,
+      location,
+      rewardBubble,
+      confirmation: { hubExact, redditSignal },
+      publishable: hubExact,
+    });
+    if (!hubExact) {
+      console.log(`Day ${candidate.day} is pending an exact second-guide route confirmation.`);
+      break;
+    }
     const route = {
       day: candidate.day,
       id: `day-${candidate.day}-${slug(candidate.color)}-splash-whale`,
@@ -221,6 +260,7 @@ async function main() {
   }
 
   if (!additions.length) {
+    writeAudit({ checkedAt: new Date().toISOString(), publishedThrough: data.routes.length, candidates });
     console.log(`Verified ${data.routes.length} published whale routes; no publishable addition found.`);
     return;
   }
@@ -231,13 +271,15 @@ async function main() {
     routes: [...data.routes, ...additions],
   };
   if (dryRun) {
+    writeAudit({ checkedAt: new Date().toISOString(), publishedThrough: data.routes.length, candidates, dryRun: true });
     console.log(`Dry run verified ${additions.length} new whale route(s).`);
     return;
   }
   fs.writeFileSync(dataPath, `${JSON.stringify(next, null, 2)}\n`);
+  writeAudit({ checkedAt: new Date().toISOString(), publishedThrough: next.routes.length, candidates, published: additions.map((route) => route.day) });
   const build = spawnSync(process.execPath, [path.join(root, 'scripts', 'build-call-of-whales-routes.mjs')], { cwd: root, stdio: 'inherit' });
   if (build.status !== 0) throw new Error('Call of Whales page rebuild failed.');
   console.log(`Published ${additions.length} newly cross-checked whale route(s).`);
 }
 
-await main();
+if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) await main();

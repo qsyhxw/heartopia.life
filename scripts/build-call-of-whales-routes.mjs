@@ -52,7 +52,10 @@ function routeCard(route) {
 const nav = `<nav class="mt-6 flex gap-2 overflow-x-auto pb-2" aria-label="Jump to a Splash Whale">${routes.map((route) => `<a class="whale-jump" href="#${esc(route.id)}">Day ${route.day} ${esc(route.color)}</a>`).join('')}</nav>`;
 const cards = `<div class="mt-4 grid gap-5 md:grid-cols-2 xl:grid-cols-3">${routes.map(routeCard).join('')}</div>`;
 const statusDate = new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }).format(new Date(`${data.updatedAt}T00:00:00Z`));
-const status = `<div class="mt-6 rounded-lg border border-amber-200 bg-amber-50 p-5 text-sm leading-6 text-amber-950"><strong>Collection status:</strong> the event contains ${data.total} Splash Whales. This directory covers the ${maxDay} daily locations released through ${statusDate}. Later entries unlock in sequence, so use the in-game hunt list instead of guessing an unreleased color.</div>`;
+const statusCopy = maxDay === data.total
+  ? `All ${data.total} daily Splash Whale locations are now listed. The route directory was completed on ${statusDate}.`
+  : `This directory covers the ${maxDay} daily locations released through ${statusDate}. Later entries unlock in sequence, so use the in-game hunt list instead of guessing an unreleased color.`;
+const status = `<div class="mt-6 rounded-lg border border-amber-200 bg-amber-50 p-5 text-sm leading-6 text-amber-950"><strong>Collection status:</strong> the event contains ${data.total} Splash Whales. ${statusCopy}</div>`;
 const generated = `${startMarker}\n      ${nav}\n      ${cards}\n      ${status}\n      ${endMarker}`;
 
 let html = fs.readFileSync(pageFile, 'utf8');
@@ -67,7 +70,9 @@ if (html.includes(startMarker)) {
 html = html
   .replace(/Day 1-\d+/g, `Day 1-${maxDay}`)
   .replace(/of \d+ released whales photographed/, `of ${maxDay} released whales photographed`)
-  .replace(/There are 16 Small Fountain Whales in the complete sequence\. [^<]*/, `There are ${data.total} Small Fountain Whales in the complete sequence. ${maxDay} locations were available through ${statusDate}; later whales unlock on following days.`);
+  .replace(/There are 16 Small Fountain Whales in the complete sequence\. [^<]*/, maxDay === data.total
+    ? `There are ${data.total} Small Fountain Whales in the complete sequence, and all ${data.total} locations are listed through ${statusDate}.`
+    : `There are ${data.total} Small Fountain Whales in the complete sequence. ${maxDay} locations were available through ${statusDate}; later whales unlock on following days.`);
 
 const schemaMatch = html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);
 if (!schemaMatch) throw new Error('Call of Whales JSON-LD block is missing.');
@@ -88,7 +93,9 @@ itemList.itemListElement = routes.map((route) => ({
   url: `https://heartopia.life/events/call-of-whales/#${route.id}`,
 }));
 const countFaq = faq.mainEntity?.find((item) => item.name === 'How many Splash Whales are there?');
-if (countFaq) countFaq.acceptedAnswer.text = `The collection contains ${data.total} Splash Whales. ${maxDay} daily locations were available by ${statusDate}, with later entries unlocking in sequence.`;
+if (countFaq) countFaq.acceptedAnswer.text = maxDay === data.total
+  ? `The collection contains ${data.total} Splash Whales, and all ${data.total} daily locations are listed through ${statusDate}.`
+  : `The collection contains ${data.total} Splash Whales. ${maxDay} daily locations were available by ${statusDate}, with later entries unlocking in sequence.`;
 html = html.replace(schemaMatch[0], `<script type="application/ld+json">${JSON.stringify(schema)}</script>`);
 
 fs.writeFileSync(pageFile, html);
