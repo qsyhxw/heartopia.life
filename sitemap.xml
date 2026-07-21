@@ -1378,7 +1378,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/ja/guides/top-up/</loc>
-        <lastmod>2026-07-17</lastmod>
+        <lastmod>2026-07-21</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1522,6 +1522,12 @@
     </url>
     <url>
         <loc>https://heartopia.life/events/call-of-whales/sunburn/</loc>
+        <lastmod>2026-07-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/ja/guides/gacha/</loc>
         <lastmod>2026-07-21</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
