@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "event": "call-of-whales",
   "total": 16,
-  "updatedAt": "2026-07-20",
+  "updatedAt": "2026-07-21",
   "routes": [
     {
       "day": 1,
@@ -83,6 +83,14 @@
       "color": "Sky Blue",
       "location": "On blue coral around the northern corner of Coral Way.",
       "rewardBubble": "On blue coral behind and to the right of the whale."
+    },
+    {
+      "day": 11,
+      "id": "day-11-blue-purple-splash-whale",
+      "name": "Blue-Purple Splash Whale",
+      "color": "Blue-Purple",
+      "location": "Area: Whalefall; landmark: blue-purple coral at the sealed opening.",
+      "rewardBubble": "Area: Whalefall; landmark: whale skull; position: upper-right side."
     }
   ]
 }

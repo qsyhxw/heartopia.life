@@ -17,6 +17,7 @@ const auditPath = auditDir ? path.join(auditDir, 'call-of-whales-route-audit.jso
 const colorMap = new Map([
   ['黄绿色', 'Yellow-Green'], ['黄绿', 'Yellow-Green'], ['天蓝色', 'Sky Blue'], ['天蓝', 'Sky Blue'],
   ['浅蓝色', 'Light Blue'], ['浅蓝', 'Light Blue'], ['青色', 'Cyan'], ['灰色', 'Gray'],
+  ['蓝紫色', 'Blue-Purple'], ['蓝紫', 'Blue-Purple'],
   ['深蓝色', 'Deep Blue'], ['深蓝', 'Deep Blue'], ['深紫色', 'Deep Purple'], ['深紫', 'Deep Purple'],
   ['米白色', 'Ivory'], ['米白', 'Ivory'], ['银色', 'Silver'], ['金色', 'Gold'], ['棕色', 'Brown'],
   ['粉色', 'Pink'], ['紫色', 'Purple'], ['黄色', 'Yellow'], ['橙色', 'Orange'],
@@ -29,6 +30,7 @@ const redditColorTerms = {
   'Light Blue': ['light blue'],
   Gray: ['gray', 'grey'],
   Cyan: ['cyan', 'teal'],
+  'Blue-Purple': ['blue purple', 'blue-purple', 'indigo', 'violet blue'],
 };
 
 const decode = (value) => String(value || '')
@@ -145,13 +147,15 @@ export function structureRouteFact(value) {
     return '';
   };
 
-  const area = take(['鲸落峡谷'], 'Whalefall Canyon') || take(['珊瑚道'], 'Coral Way') || take(['营地'], 'base camp');
+  const area = take(['鲸落峡谷'], 'Whalefall Canyon') || take(['鲸落'], 'Whalefall') || take(['珊瑚道'], 'Coral Way') || take(['营地'], 'base camp');
   const landmark =
+    take(['封住的洞口 蓝紫珊瑚', '封住的洞口蓝紫珊瑚'], 'blue-purple coral at the sealed opening') ||
     take(['红色珊瑚', '红珊瑚'], 'red coral') ||
     take(['蓝色珊瑚', '蓝珊瑚'], 'blue coral') ||
     take(['粉色珊瑚', '粉珊瑚'], 'pink coral') ||
     take(['青色珊瑚', '青珊瑚'], 'cyan coral') ||
     take(['黄色珊瑚', '黄珊瑚'], 'yellow coral') ||
+    take(['头骨'], 'whale skull') ||
     take(['石洞入口'], 'rocky opening') ||
     take(['石洞', '山洞'], 'rocky cave') ||
     take(['传送门'], 'return portal') ||
@@ -166,7 +170,7 @@ export function structureRouteFact(value) {
   const positionPatterns = [
     ['左后方', 'behind and left of the whale'], ['右后方', 'behind and right of the whale'],
     ['后上方', 'above and behind the whale'], ['左斜对面', 'diagonally left'],
-    ['右上', 'upper-right side'], ['右侧', 'right side'], ['左侧', 'left side'],
+    ['右上方', 'upper-right side'], ['右上', 'upper-right side'], ['右侧', 'right side'], ['左侧', 'left side'],
     ['北部', 'north side'], ['中部', 'middle section'], ['出口', 'near the exit'],
     ['拐角处', 'at the corner'], ['二楼', 'second floor'], ['一楼', 'ground floor'],
     ['后面', 'behind'], ['旁边', 'beside'], ['附近', 'nearby'], ['外', 'outside'], ['内', 'inside'],

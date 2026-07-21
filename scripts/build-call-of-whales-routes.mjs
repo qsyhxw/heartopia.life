@@ -32,6 +32,7 @@ const colors = {
   Cyan: ['#60cbd0', '#24767a'],
   Pink: ['#efa4bd', '#98445f'],
   'Sky Blue': ['#72bde8', '#356f98'],
+  'Blue-Purple': ['linear-gradient(110deg,#558fd0 0 52%,#7760b7 52% 100%)', '#514286'],
   Red: ['#e98276', '#8f3d34'],
   White: ['#f4f1ea', '#665f55'],
   Black: ['#55565a', '#ffffff'],
