@@ -46,7 +46,7 @@ jobs:
 
       - name: Save private route audit
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: call-of-whales-route-audit
           path: ${{ runner.temp }}/heartopia-sync/call-of-whales-route-audit.json
