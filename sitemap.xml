@@ -1474,7 +1474,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/events/call-of-whales/bubble-locations/</loc>
-        <lastmod>2026-07-20</lastmod>
+        <lastmod>2026-07-21</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1492,7 +1492,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/guides/call-of-whales-cooking/</loc>
-        <lastmod>2026-07-20</lastmod>
+        <lastmod>2026-07-21</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1500,6 +1500,12 @@
         <loc>https://heartopia.life/guides/seamount-underwater-home/</loc>
         <lastmod>2026-07-21</lastmod>
         <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/events/call-of-whales/fashionwave-memory-journal/</loc>
+        <lastmod>2026-07-21</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 </urlset>
