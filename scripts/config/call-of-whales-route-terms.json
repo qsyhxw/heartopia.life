@@ -1,0 +1,319 @@
+{
+  "areas": [
+    {
+      "patterns": [
+        "鲸落峡谷"
+      ],
+      "value": "Whalefall Canyon"
+    },
+    {
+      "patterns": [
+        "鲸落"
+      ],
+      "value": "Whalefall"
+    },
+    {
+      "patterns": [
+        "珊瑚道"
+      ],
+      "value": "Coral Way"
+    },
+    {
+      "patterns": [
+        "营地"
+      ],
+      "value": "base camp"
+    }
+  ],
+  "landmarks": [
+    {
+      "patterns": [
+        "封住的洞口 蓝紫珊瑚",
+        "封住的洞口蓝紫珊瑚"
+      ],
+      "value": "blue-purple coral at the sealed opening"
+    },
+    {
+      "patterns": [
+        "红色珊瑚",
+        "红珊瑚"
+      ],
+      "value": "red coral"
+    },
+    {
+      "patterns": [
+        "蓝色珊瑚",
+        "蓝珊瑚"
+      ],
+      "value": "blue coral"
+    },
+    {
+      "patterns": [
+        "粉色珊瑚",
+        "粉珊瑚"
+      ],
+      "value": "pink coral"
+    },
+    {
+      "patterns": [
+        "青色珊瑚",
+        "青珊瑚"
+      ],
+      "value": "cyan coral"
+    },
+    {
+      "patterns": [
+        "黄色珊瑚",
+        "黄珊瑚"
+      ],
+      "value": "yellow coral"
+    },
+    {
+      "patterns": [
+        "头骨"
+      ],
+      "value": "whale skull"
+    },
+    {
+      "patterns": [
+        "石洞入口"
+      ],
+      "value": "rocky opening"
+    },
+    {
+      "patterns": [
+        "封住的洞口"
+      ],
+      "value": "sealed opening"
+    },
+    {
+      "patterns": [
+        "石洞",
+        "山洞"
+      ],
+      "value": "rocky cave"
+    },
+    {
+      "patterns": [
+        "传送门"
+      ],
+      "value": "return portal"
+    },
+    {
+      "patterns": [
+        "石柱"
+      ],
+      "value": "stone pillar"
+    },
+    {
+      "patterns": [
+        "亭子"
+      ],
+      "value": "pavilion"
+    },
+    {
+      "patterns": [
+        "窗台"
+      ],
+      "value": "window ledge"
+    },
+    {
+      "patterns": [
+        "桌子"
+      ],
+      "value": "table"
+    },
+    {
+      "patterns": [
+        "海草"
+      ],
+      "value": "seaweed"
+    },
+    {
+      "patterns": [
+        "珊瑚"
+      ],
+      "value": "coral"
+    }
+  ],
+  "positions": [
+    {
+      "patterns": [
+        "左后方"
+      ],
+      "value": "behind and left of the whale"
+    },
+    {
+      "patterns": [
+        "右后方"
+      ],
+      "value": "behind and right of the whale"
+    },
+    {
+      "patterns": [
+        "后上方"
+      ],
+      "value": "above and behind the whale"
+    },
+    {
+      "patterns": [
+        "左斜对面"
+      ],
+      "value": "diagonally left"
+    },
+    {
+      "patterns": [
+        "右上方",
+        "右上"
+      ],
+      "value": "upper-right side"
+    },
+    {
+      "patterns": [
+        "左上方",
+        "左上"
+      ],
+      "value": "upper-left side"
+    },
+    {
+      "patterns": [
+        "右下方",
+        "右下"
+      ],
+      "value": "lower-right side"
+    },
+    {
+      "patterns": [
+        "左下方",
+        "左下"
+      ],
+      "value": "lower-left side"
+    },
+    {
+      "patterns": [
+        "右侧"
+      ],
+      "value": "right side"
+    },
+    {
+      "patterns": [
+        "左侧"
+      ],
+      "value": "left side"
+    },
+    {
+      "patterns": [
+        "北部"
+      ],
+      "value": "north side"
+    },
+    {
+      "patterns": [
+        "南部"
+      ],
+      "value": "south side"
+    },
+    {
+      "patterns": [
+        "东部"
+      ],
+      "value": "east side"
+    },
+    {
+      "patterns": [
+        "西部"
+      ],
+      "value": "west side"
+    },
+    {
+      "patterns": [
+        "中部"
+      ],
+      "value": "middle section"
+    },
+    {
+      "patterns": [
+        "出口"
+      ],
+      "value": "near the exit"
+    },
+    {
+      "patterns": [
+        "入口"
+      ],
+      "value": "near the entrance"
+    },
+    {
+      "patterns": [
+        "拐角处"
+      ],
+      "value": "at the corner"
+    },
+    {
+      "patterns": [
+        "二楼"
+      ],
+      "value": "second floor"
+    },
+    {
+      "patterns": [
+        "一楼"
+      ],
+      "value": "ground floor"
+    },
+    {
+      "patterns": [
+        "后面"
+      ],
+      "value": "behind"
+    },
+    {
+      "patterns": [
+        "前面"
+      ],
+      "value": "in front"
+    },
+    {
+      "patterns": [
+        "旁边"
+      ],
+      "value": "beside"
+    },
+    {
+      "patterns": [
+        "附近"
+      ],
+      "value": "nearby"
+    },
+    {
+      "patterns": [
+        "外"
+      ],
+      "value": "outside"
+    },
+    {
+      "patterns": [
+        "内"
+      ],
+      "value": "inside"
+    }
+  ],
+  "ignored": [
+    "小鲸鱼",
+    "鲸鱼",
+    "高处",
+    "庭院",
+    "的",
+    "处",
+    "往",
+    "走",
+    "上",
+    "里",
+    "在",
+    "、",
+    "，",
+    "。",
+    "—",
+    "-"
+  ]
+}

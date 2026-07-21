@@ -6,6 +6,8 @@ import { assertRemoteFields } from './sync-field-policy.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const dataPath = path.join(root, 'data', 'heartopia-call-of-whales-routes.json');
+const routeTermsPath = path.join(root, 'scripts', 'config', 'call-of-whales-route-terms.json');
+const routeTerms = JSON.parse(fs.readFileSync(routeTermsPath, 'utf8'));
 const primaryUrl = 'https://www.taptap.cn/moment/824870918210718847';
 const hubUrl = 'https://www.taptap.cn/app/45213/strategy/entity-collection/386564';
 const eventEnd = new Date('2026-08-23T00:00:00Z');
@@ -54,23 +56,67 @@ function htmlToText(html) {
     .trim();
 }
 
-function englishColor(label) {
-  for (const [chinese, english] of colorMap) if (label.includes(chinese)) return english;
-  return '';
+const colorTokens = [
+  ['蓝', 'Blue'], ['紫', 'Purple'], ['绿', 'Green'], ['黄', 'Yellow'], ['红', 'Red'],
+  ['橙', 'Orange'], ['粉', 'Pink'], ['青', 'Cyan'], ['灰', 'Gray'], ['白', 'White'],
+  ['黑', 'Black'], ['银', 'Silver'], ['金', 'Gold'], ['棕', 'Brown'],
+];
+
+const colorModifiers = new Map([
+  ['浅', 'Light'], ['深', 'Deep'], ['亮', 'Bright'], ['淡', 'Pale'],
+]);
+
+export function resolveWhaleColor(label) {
+  const normalized = String(label || '').replace(/\s+/g, '').replace(/色$/u, '');
+  for (const [chinese, english] of colorMap) {
+    if (normalized === chinese.replace(/色$/u, '')) return { color: english, unknownTokens: [] };
+  }
+
+  let rest = normalized;
+  let modifier = '';
+  for (const [token, english] of colorModifiers) {
+    if (rest.startsWith(token)) {
+      modifier = english;
+      rest = rest.slice(token.length);
+      break;
+    }
+  }
+  const parts = [];
+  while (rest) {
+    const token = colorTokens.find(([chinese]) => rest.startsWith(chinese));
+    if (!token) break;
+    parts.push(token[1]);
+    rest = rest.slice(token[0].length);
+  }
+  if (!parts.length || rest) return { color: '', unknownTokens: rest ? [rest] : [normalized] };
+  const color = parts.join('-');
+  return { color: modifier ? `${modifier} ${color}` : color, unknownTokens: [] };
 }
 
 export function parseWhaleEntries(html) {
   const lines = htmlToText(html).split('\n').map((line) => line.trim()).filter(Boolean);
   const found = [];
   for (let index = 0; index < lines.length; index += 1) {
-    const hit = lines[index].match(/([\u3400-\u9fff]{1,8})喷水小鲸鱼[：:]\s*(.+)$/);
+    const hit = lines[index].match(/([\u3400-\u9fff]{1,12})喷水小鲸鱼[：:]\s*(.+)$/);
     if (!hit) continue;
-    const color = englishColor(hit[1]);
-    const bubble = lines.slice(index + 1, index + 4).map((line) => line.match(/家具泡泡[：:]\s*(.+)$/)?.[1]).find(Boolean);
-    if (!color || !hit[2] || !bubble) continue;
-    if (!found.some((item) => item.rawLabel === hit[1])) found.push({ rawLabel: hit[1], color, locationZh: hit[2], bubbleZh: bubble });
+    let bubble = '';
+    for (let lookahead = index + 1; lookahead < Math.min(lines.length, index + 8); lookahead += 1) {
+      if (/喷水小鲸鱼[：:]/.test(lines[lookahead])) break;
+      const bubbleHit = lines[lookahead].match(/家具泡泡[：:]\s*(.+)$/);
+      if (bubbleHit) { bubble = bubbleHit[1]; break; }
+    }
+    const colorResult = resolveWhaleColor(hit[1]);
+    if (!found.some((item) => item.rawLabel === hit[1])) {
+      found.push({
+        rawLabel: hit[1],
+        color: colorResult.color,
+        unknownColorTokens: colorResult.unknownTokens,
+        locationZh: hit[2] || '',
+        bubbleZh: bubble,
+        missingFields: [!hit[2] && 'location', !bubble && 'rewardBubble'].filter(Boolean),
+      });
+    }
   }
-
   return found.reverse();
 }
 
@@ -125,8 +171,13 @@ function normalizedFact(value) {
 export function hubConfirmsRoute(candidate, hubHtml) {
   const match = parseWhaleEntries(hubHtml).find((item) => item.rawLabel === candidate.rawLabel);
   if (!match) return false;
-  return normalizedFact(match.locationZh) === normalizedFact(candidate.locationZh)
-    && normalizedFact(match.bubbleZh) === normalizedFact(candidate.bubbleZh);
+  const hubLocation = normalizedFact(match.locationZh);
+  const candidateLocation = normalizedFact(candidate.locationZh);
+  const hubBubble = normalizedFact(match.bubbleZh);
+  const candidateBubble = normalizedFact(candidate.bubbleZh);
+  return Boolean(hubLocation && candidateLocation && hubBubble && candidateBubble)
+    && hubLocation === candidateLocation
+    && hubBubble === candidateBubble;
 }
 
 function writeAudit(report) {
@@ -135,49 +186,39 @@ function writeAudit(report) {
   fs.writeFileSync(auditPath, `${JSON.stringify(report, null, 2)}\n`);
 }
 
+export class UnmappedRouteTermError extends Error {
+  constructor(terms) {
+    super(`Unmapped route terms: ${terms.join(', ')}`);
+    this.name = 'UnmappedRouteTermError';
+    this.code = 'UNMAPPED_ROUTE_TERMS';
+    this.terms = terms;
+  }
+}
+
 export function structureRouteFact(value) {
   let rest = String(value || '');
-  const take = (patterns, label) => {
-    for (const pattern of patterns) {
-      if (rest.includes(pattern)) {
-        rest = rest.replace(pattern, '');
-        return label;
+  const consumeFirst = (entries) => {
+    for (const entry of entries) {
+      for (const pattern of [...entry.patterns].sort((a, b) => b.length - a.length)) {
+        if (rest.includes(pattern)) {
+          rest = rest.replace(pattern, '');
+          return entry.value;
+        }
       }
     }
     return '';
   };
-
-  const area = take(['鲸落峡谷'], 'Whalefall Canyon') || take(['鲸落'], 'Whalefall') || take(['珊瑚道'], 'Coral Way') || take(['营地'], 'base camp');
-  const landmark =
-    take(['封住的洞口 蓝紫珊瑚', '封住的洞口蓝紫珊瑚'], 'blue-purple coral at the sealed opening') ||
-    take(['红色珊瑚', '红珊瑚'], 'red coral') ||
-    take(['蓝色珊瑚', '蓝珊瑚'], 'blue coral') ||
-    take(['粉色珊瑚', '粉珊瑚'], 'pink coral') ||
-    take(['青色珊瑚', '青珊瑚'], 'cyan coral') ||
-    take(['黄色珊瑚', '黄珊瑚'], 'yellow coral') ||
-    take(['头骨'], 'whale skull') ||
-    take(['石洞入口'], 'rocky opening') ||
-    take(['石洞', '山洞'], 'rocky cave') ||
-    take(['传送门'], 'return portal') ||
-    take(['石柱'], 'stone pillar') ||
-    take(['亭子'], 'pavilion') ||
-    take(['窗台'], 'window ledge') ||
-    take(['桌子'], 'table') ||
-    take(['海草'], 'seaweed') ||
-    take(['珊瑚'], 'coral');
-
+  const area = consumeFirst(routeTerms.areas);
+  const landmark = consumeFirst(routeTerms.landmarks);
   const positions = [];
-  const positionPatterns = [
-    ['左后方', 'behind and left of the whale'], ['右后方', 'behind and right of the whale'],
-    ['后上方', 'above and behind the whale'], ['左斜对面', 'diagonally left'],
-    ['右上方', 'upper-right side'], ['右上', 'upper-right side'], ['右侧', 'right side'], ['左侧', 'left side'],
-    ['北部', 'north side'], ['中部', 'middle section'], ['出口', 'near the exit'],
-    ['拐角处', 'at the corner'], ['二楼', 'second floor'], ['一楼', 'ground floor'],
-    ['后面', 'behind'], ['旁边', 'beside'], ['附近', 'nearby'], ['外', 'outside'], ['内', 'inside'],
-  ];
-  for (const [pattern, label] of positionPatterns) if (rest.includes(pattern)) {
-    rest = rest.replace(pattern, '');
-    positions.push(label);
+  for (const entry of routeTerms.positions) {
+    for (const pattern of [...entry.patterns].sort((a, b) => b.length - a.length)) {
+      if (rest.includes(pattern)) {
+        rest = rest.replace(pattern, '');
+        positions.push(entry.value);
+        break;
+      }
+    }
   }
   if (rest.includes('安妮') && rest.includes('皑皑')) {
     rest = rest.replace('安妮', '').replace('皑皑', '').replace(/和|与|中间/g, '');
@@ -187,13 +228,16 @@ export function structureRouteFact(value) {
     rest = rest.replace('奥利弗', '');
     positions.push('near Oliver');
   }
-
-  rest = rest.replace(/小鲸鱼|鲸鱼|的|处|往|走|上|里|在|、|，|。|\s+/g, '');
-  if (/[\u3400-\u9fff]/.test(rest)) throw new Error('A route contains an unrecognized landmark or direction.');
+  for (const ignored of [...routeTerms.ignored].sort((a, b) => b.length - a.length)) rest = rest.split(ignored).join('');
+  rest = rest.replace(/\s+/g, '');
+  const unknownTerms = [...new Set(rest.match(/[\u3400-\u9fff]+/g) || [])];
+  if (unknownTerms.length) throw new UnmappedRouteTermError(unknownTerms);
   if (!area && !landmark) throw new Error('A route is missing a recognized area or landmark.');
-  return [area && `Area: ${area}`, landmark && `landmark: ${landmark}`, positions.length && `position: ${positions.join(', ')}`]
-    .filter(Boolean)
-    .join('; ') + '.';
+  return [
+    area && `Area: ${area}`,
+    landmark && `landmark: ${landmark}`,
+    positions.length && `position: ${[...new Set(positions)].join(', ')}`,
+  ].filter(Boolean).join('; ') + '.';
 }
 
 function unlockDate(day) {
@@ -235,18 +279,42 @@ async function main() {
   for (const candidate of parsed.slice(data.routes.length)) {
     if (candidate.day !== data.routes.length + additions.length + 1) break;
     if (unlockDate(candidate.day) > now) break;
+    const auditCandidate = {
+      day: candidate.day,
+      sourceLabel: candidate.rawLabel,
+      color: candidate.color || null,
+      location: candidate.locationZh,
+      rewardBubble: candidate.bubbleZh,
+      unknownTerms: [...candidate.unknownColorTokens],
+      missingFields: candidate.missingFields,
+      confidence: 'low',
+      confirmation: { hubExact: false, redditSignal: false },
+      publishable: false,
+    };
+    if (!candidate.color || candidate.missingFields.length) {
+      candidates.push(auditCandidate);
+      writeAudit({ checkedAt: new Date().toISOString(), status: 'needs-mapping', publishedThrough: data.routes.length, candidates });
+      throw new Error(`Day ${candidate.day} was detected but needs a color mapping or required field; see the private route audit artifact.`);
+    }
+    let location;
+    let rewardBubble;
+    try {
+      location = structureRouteFact(candidate.locationZh);
+      rewardBubble = structureRouteFact(candidate.bubbleZh);
+    } catch (error) {
+      auditCandidate.unknownTerms = [...new Set([...auditCandidate.unknownTerms, ...(Array.isArray(error.terms) ? error.terms : [])])];
+      candidates.push(auditCandidate);
+      writeAudit({ checkedAt: new Date().toISOString(), status: 'needs-mapping', publishedThrough: data.routes.length, candidates });
+      throw new Error(`Day ${candidate.day} contains an unmapped route term; see the private route audit artifact.`);
+    }
     const hubExact = hubConfirmsRoute(candidate, hubHtml);
     const redditSignal = await redditConfirms(candidate.day, candidate.color);
-    const location = structureRouteFact(candidate.locationZh);
-    const rewardBubble = structureRouteFact(candidate.bubbleZh);
-    candidates.push({
-      day: candidate.day,
-      color: candidate.color,
-      location,
-      rewardBubble,
-      confirmation: { hubExact, redditSignal },
-      publishable: hubExact,
-    });
+    auditCandidate.location = location;
+    auditCandidate.rewardBubble = rewardBubble;
+    auditCandidate.confirmation = { hubExact, redditSignal };
+    auditCandidate.confidence = hubExact ? 'high' : redditSignal ? 'medium' : 'low';
+    auditCandidate.publishable = hubExact;
+    candidates.push(auditCandidate);
     if (!hubExact) {
       console.log(`Day ${candidate.day} is pending an exact second-guide route confirmation.`);
       break;

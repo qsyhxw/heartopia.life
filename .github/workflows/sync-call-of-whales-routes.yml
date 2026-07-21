@@ -31,14 +31,14 @@ jobs:
         shell: bash
         run: echo "HEARTOPIA_SYNC_DIR=$RUNNER_TEMP/heartopia-sync" >> "$GITHUB_ENV"
 
-      - name: Test Day 11-16 route safeguards
+      - name: Test adaptive route safeguards
         run: node --test tests/call-of-whales-routes.test.mjs
 
       - name: Test the next-day validation path
         env:
-          CALL_OF_WHALES_PRIMARY_HTML: tests/fixtures/call-of-whales-day-11.html
-          CALL_OF_WHALES_HUB_HTML: tests/fixtures/call-of-whales-hub-day-11.html
-          CALL_OF_WHALES_NOW: '2026-07-21T12:00:00Z'
+          CALL_OF_WHALES_PRIMARY_HTML: tests/fixtures/call-of-whales-day-12.html
+          CALL_OF_WHALES_HUB_HTML: tests/fixtures/call-of-whales-hub-day-12.html
+          CALL_OF_WHALES_NOW: '2026-07-22T12:00:00Z'
         run: node scripts/sync-call-of-whales-routes.mjs --check
 
       - name: Cross-check and sync released whale routes
@@ -59,17 +59,20 @@ jobs:
       - name: Verify generated route page
         run: node scripts/build-call-of-whales-routes.mjs
 
+      - name: Refresh sitemap metadata
+        run: node scripts/build-sitemap.mjs
+
       - name: Commit verified route additions
         shell: bash
         run: |
-          if git diff --quiet -- data/heartopia-call-of-whales-routes.json events/call-of-whales/index.html; then
+          if git diff --quiet -- data/heartopia-call-of-whales-routes.json events/call-of-whales/index.html sitemap.xml; then
             echo "No verified whale route change detected."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/heartopia-call-of-whales-routes.json events/call-of-whales/index.html
+          git add data/heartopia-call-of-whales-routes.json events/call-of-whales/index.html sitemap.xml
           git commit -m "chore: sync released Call of Whales routes"
           git pull --rebase origin main
           git push
