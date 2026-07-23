@@ -105,4 +105,5 @@ if (countFaq) countFaq.acceptedAnswer.text = maxDay === data.total
 html = html.replace(schemaMatch[0], `<script type="application/ld+json">${JSON.stringify(schema)}</script>`);
 
 fs.writeFileSync(pageFile, html);
+await import('./build-call-of-whales-locales.mjs');
 console.log(`Built Call of Whales routes through Day ${maxDay}.`);
