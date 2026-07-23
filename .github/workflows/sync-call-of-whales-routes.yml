@@ -1,6 +1,15 @@
 name: Sync Call of Whales Routes
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/sync-call-of-whales-routes.yml'
+      - 'scripts/sync-call-of-whales-routes.mjs'
+      - 'scripts/build-call-of-whales-routes.mjs'
+      - 'scripts/config/call-of-whales-route-terms.json'
+      - 'tests/call-of-whales-routes.test.mjs'
+      - 'tests/fixtures/call-of-whales-*.html'
   schedule:
     # Daily at 11:15 China Standard Time while the event is active.
     - cron: '15 3 * * *'
