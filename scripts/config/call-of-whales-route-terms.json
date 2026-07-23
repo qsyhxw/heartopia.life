@@ -28,6 +28,25 @@
   "landmarks": [
     {
       "patterns": [
+        "遗骸左眼眶"
+      ],
+      "value": "left eye socket of the whale skeleton"
+    },
+    {
+      "patterns": [
+        "遗骸下"
+      ],
+      "value": "beneath the whale skeleton"
+    },
+    {
+      "patterns": [
+        "地面蓝紫珊瑚",
+        "地面蓝紫色珊瑚"
+      ],
+      "value": "blue-purple coral on the seafloor"
+    },
+    {
+      "patterns": [
         "封住的洞口 蓝紫珊瑚",
         "封住的洞口蓝紫珊瑚"
       ],
@@ -104,6 +123,12 @@
         "石柱"
       ],
       "value": "stone pillar"
+    },
+    {
+      "patterns": [
+        "石门"
+      ],
+      "value": "stone gate"
     },
     {
       "patterns": [

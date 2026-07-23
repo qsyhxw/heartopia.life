@@ -50,3 +50,25 @@ test('reports unmapped route terms for private review', () => {
     (error) => error instanceof UnmappedRouteTermError && error.terms.includes('神秘拱门'),
   );
 });
+
+test('structures the verified Day 12 seafloor coral and stone gate route', () => {
+  assert.equal(
+    structureRouteFact('鲸落 右侧地面蓝紫珊瑚里'),
+    'Area: Whalefall; landmark: blue-purple coral on the seafloor; position: right side.',
+  );
+  assert.equal(
+    structureRouteFact('鲸落 左下方 石门里'),
+    'Area: Whalefall; landmark: stone gate; position: lower-left side.',
+  );
+});
+
+test('structures the verified Day 13 whale skeleton route', () => {
+  assert.equal(
+    structureRouteFact('鲸落 遗骸左眼眶'),
+    'Area: Whalefall; landmark: left eye socket of the whale skeleton.',
+  );
+  assert.equal(
+    structureRouteFact('鲸落 遗骸下'),
+    'Area: Whalefall; landmark: beneath the whale skeleton.',
+  );
+});

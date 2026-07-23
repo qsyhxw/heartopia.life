@@ -38,7 +38,7 @@ jobs:
         env:
           CALL_OF_WHALES_PRIMARY_HTML: tests/fixtures/call-of-whales-day-12.html
           CALL_OF_WHALES_HUB_HTML: tests/fixtures/call-of-whales-hub-day-12.html
-          CALL_OF_WHALES_NOW: '2026-07-22T12:00:00Z'
+          CALL_OF_WHALES_NOW: '2026-07-23T12:00:00Z'
         run: node scripts/sync-call-of-whales-routes.mjs --check
 
       - name: Cross-check and sync released whale routes

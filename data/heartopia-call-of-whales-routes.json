@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "event": "call-of-whales",
   "total": 16,
-  "updatedAt": "2026-07-21",
+  "updatedAt": "2026-07-23",
   "routes": [
     {
       "day": 1,
@@ -91,6 +91,22 @@
       "color": "Blue-Purple",
       "location": "Area: Whalefall; landmark: blue-purple coral at the sealed opening.",
       "rewardBubble": "Area: Whalefall; landmark: whale skull; position: upper-right side."
+    },
+    {
+      "day": 12,
+      "id": "day-12-deep-blue-splash-whale",
+      "name": "Deep Blue Splash Whale",
+      "color": "Deep Blue",
+      "location": "Area: Whalefall; landmark: blue-purple coral on the seafloor; position: right side.",
+      "rewardBubble": "Area: Whalefall; landmark: stone gate; position: lower-left side."
+    },
+    {
+      "day": 13,
+      "id": "day-13-white-splash-whale",
+      "name": "White Splash Whale",
+      "color": "White",
+      "location": "Area: Whalefall; landmark: left eye socket of the whale skeleton.",
+      "rewardBubble": "Area: Whalefall; landmark: beneath the whale skeleton."
     }
   ]
 }
