@@ -72,3 +72,20 @@ test('structures the verified Day 13 whale skeleton route', () => {
     'Area: Whalefall; landmark: beneath the whale skeleton.',
   );
 });
+
+
+test('structures the verified Day 14 Jellyfish Cave route', () => {
+  const candidate = parseWhaleEntries('<p>黑色喷水小鲸鱼：从鲸落 进 水母洞穴的 入口处 珊瑚上</p><p>家具泡泡：水母洞穴里</p>')[0];
+  const hub = '<p>黑色喷水小鲸鱼：从鲸落 进 水母洞穴的 入口处 珊瑚上</p><p>家具泡泡：水母洞穴里</p>';
+
+  assert.equal(candidate.color, 'Black');
+  assert.equal(hubConfirmsRoute(candidate, hub), true);
+  assert.equal(
+    structureRouteFact(candidate.locationZh),
+    'Area: Whalefall; landmark: coral at the entrance to Jellyfish Cave.',
+  );
+  assert.equal(
+    structureRouteFact(candidate.bubbleZh),
+    'Landmark: Jellyfish Cave interior.',
+  );
+});

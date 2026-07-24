@@ -28,6 +28,25 @@
   "landmarks": [
     {
       "patterns": [
+        "水母洞穴的入口处珊瑚",
+        "水母洞穴入口处珊瑚"
+      ],
+      "value": "coral at the entrance to Jellyfish Cave"
+    },
+    {
+      "patterns": [
+        "水母洞穴里"
+      ],
+      "value": "Jellyfish Cave interior"
+    },
+    {
+      "patterns": [
+        "水母洞穴"
+      ],
+      "value": "Jellyfish Cave"
+    },
+    {
+      "patterns": [
         "遗骸左眼眶"
       ],
       "value": "left eye socket of the whale skeleton"
@@ -324,6 +343,8 @@
     }
   ],
   "ignored": [
+    "进",
+    "从",
     "小鲸鱼",
     "鲸鱼",
     "高处",
@@ -333,12 +354,12 @@
     "往",
     "走",
     "上",
-    "里",
     "在",
     "、",
     "，",
     "。",
     "—",
-    "-"
+    "-",
+    "里"
   ]
 }

@@ -196,7 +196,7 @@ export class UnmappedRouteTermError extends Error {
 }
 
 export function structureRouteFact(value) {
-  let rest = String(value || '');
+  let rest = String(value || '').replace(/\s+/g, '');
   const consumeFirst = (entries) => {
     for (const entry of entries) {
       for (const pattern of [...entry.patterns].sort((a, b) => b.length - a.length)) {
@@ -235,7 +235,7 @@ export function structureRouteFact(value) {
   if (!area && !landmark) throw new Error('A route is missing a recognized area or landmark.');
   return [
     area && `Area: ${area}`,
-    landmark && `landmark: ${landmark}`,
+    landmark && `${area ? 'landmark' : 'Landmark'}: ${landmark}`,
     positions.length && `position: ${[...new Set(positions)].join(', ')}`,
   ].filter(Boolean).join('; ') + '.';
 }

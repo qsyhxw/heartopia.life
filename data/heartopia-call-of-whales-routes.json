@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "event": "call-of-whales",
   "total": 16,
-  "updatedAt": "2026-07-23",
+  "updatedAt": "2026-07-24",
   "routes": [
     {
       "day": 1,
@@ -107,6 +107,14 @@
       "color": "White",
       "location": "Area: Whalefall; landmark: left eye socket of the whale skeleton.",
       "rewardBubble": "Area: Whalefall; landmark: beneath the whale skeleton."
+    },
+    {
+      "day": 14,
+      "id": "day-14-black-splash-whale",
+      "name": "Black Splash Whale",
+      "color": "Black",
+      "location": "Area: Whalefall; landmark: coral at the entrance to Jellyfish Cave.",
+      "rewardBubble": "Landmark: Jellyfish Cave interior."
     }
   ]
 }
