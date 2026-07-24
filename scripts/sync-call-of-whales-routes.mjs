@@ -5,7 +5,9 @@ import { pathToFileURL } from 'node:url';
 import { assertRemoteFields } from './sync-field-policy.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
-const dataPath = path.join(root, 'data', 'heartopia-call-of-whales-routes.json');
+const dataPath = process.env.CALL_OF_WHALES_DATA_PATH
+  ? path.resolve(process.env.CALL_OF_WHALES_DATA_PATH)
+  : path.join(root, 'data', 'heartopia-call-of-whales-routes.json');
 const routeTermsPath = path.join(root, 'scripts', 'config', 'call-of-whales-route-terms.json');
 const routeTerms = JSON.parse(fs.readFileSync(routeTermsPath, 'utf8'));
 const primaryUrl = 'https://www.taptap.cn/moment/824870918210718847';

@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "event": "call-of-whales",
+  "total": 16,
+  "updatedAt": "2026-07-22",
+  "routes": [
+    {
+      "day": 1,
+      "id": "light-blue-splash-whale",
+      "name": "Light Blue Splash Whale",
+      "color": "Light Blue",
+      "location": "Outside the second-floor window of the D.G. Expedition Base Camp.",
+      "rewardBubble": "Outside camp, on the coral to the right of the whale route."
+    },
+    {
+      "day": 2,
+      "id": "green-splash-whale",
+      "name": "Green Splash Whale",
+      "color": "Green",
+      "location": "On top of the portal that returns to the mainland.",
+      "rewardBubble": "Behind the same return portal."
+    },
+    {
+      "day": 3,
+      "id": "orange-splash-whale",
+      "name": "Orange Splash Whale",
+      "color": "Orange",
+      "location": "On the ground floor of the D.G. Expedition Base Camp.",
+      "rewardBubble": "On the ground floor nearby, behind the whale route."
+    },
+    {
+      "day": 4,
+      "id": "yellow-splash-whale",
+      "name": "Yellow Splash Whale",
+      "color": "Yellow",
+      "location": "In the yellow coral north and to the right of base camp.",
+      "rewardBubble": "Beside the stone pillar on the left side of the return portal."
+    },
+    {
+      "day": 5,
+      "id": "purple-splash-whale",
+      "name": "Purple Splash Whale",
+      "color": "Purple",
+      "location": "Inside the base camp courtyard, near Oliver.",
+      "rewardBubble": "In the seaweed diagonally left from base camp."
+    },
+    {
+      "day": 6,
+      "id": "yellow-green-splash-whale",
+      "name": "Yellow Splash Whale (Green Tail)",
+      "color": "Yellow-Green",
+      "location": "Inside the second-floor pavilion at base camp.",
+      "rewardBubble": "Floating close to the second-floor pavilion."
+    },
+    {
+      "day": 7,
+      "id": "gray-splash-whale",
+      "name": "Gray Splash Whale",
+      "color": "Gray",
+      "location": "On the table between Annie and Aiai at base camp.",
+      "rewardBubble": "Deeper inside the rocky cave behind base camp."
+    },
+    {
+      "day": 8,
+      "id": "cyan-splash-whale",
+      "name": "Cyan Splash Whale",
+      "color": "Cyan",
+      "location": "On cyan coral along the right side of Coral Way.",
+      "rewardBubble": "Inside the rocky opening on the left side of Coral Way."
+    },
+    {
+      "day": 9,
+      "id": "pink-splash-whale",
+      "name": "Pink Splash Whale",
+      "color": "Pink",
+      "location": "On raised pink coral around the middle of Coral Way.",
+      "rewardBubble": "Above and behind the whale route."
+    },
+    {
+      "day": 10,
+      "id": "sky-blue-splash-whale",
+      "name": "Sky Blue Splash Whale (Purple Tail)",
+      "color": "Sky Blue",
+      "location": "On blue coral around the northern corner of Coral Way.",
+      "rewardBubble": "On blue coral behind and to the right of the whale."
+    },
+    {
+      "day": 11,
+      "id": "day-11-blue-purple-splash-whale",
+      "name": "Blue-Purple Splash Whale",
+      "color": "Blue-Purple",
+      "location": "Area: Whalefall; landmark: blue-purple coral at the sealed opening.",
+      "rewardBubble": "Area: Whalefall; landmark: whale skull; position: upper-right side."
+    },
+    {
+      "day": 12,
+      "id": "day-12-deep-blue-splash-whale",
+      "name": "Deep Blue Splash Whale",
+      "color": "Deep Blue",
+      "location": "Area: Whalefall; landmark: blue-purple coral on the seafloor; position: right side.",
+      "rewardBubble": "Area: Whalefall; landmark: stone gate; position: lower-left side."
+    }
+  ]
+}

@@ -47,6 +47,7 @@ jobs:
 
       - name: Test the next-day validation path
         env:
+          CALL_OF_WHALES_DATA_PATH: tests/fixtures/call-of-whales-routes-day-12.json
           CALL_OF_WHALES_PRIMARY_HTML: tests/fixtures/call-of-whales-day-12.html
           CALL_OF_WHALES_HUB_HTML: tests/fixtures/call-of-whales-hub-day-12.html
           CALL_OF_WHALES_NOW: '2026-07-23T12:00:00Z'
