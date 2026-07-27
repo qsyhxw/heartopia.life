@@ -41,6 +41,8 @@ const colors = {
   Red: ['#e98276', '#8f3d34'],
   White: ['#f4f1ea', '#665f55'],
   Black: ['#55565a', '#ffffff'],
+  'Peach-Green': ['linear-gradient(110deg,#ef7d86 0 52%,#8dce7b 52% 100%)', '#713f48'],
+  Iridescent: ['linear-gradient(110deg,#78dfe2,#9fa6ef,#eda4d0)', '#455f7e'],
   Rainbow: ['linear-gradient(110deg,#ef8e8e,#f0d36a,#83c98c,#72bde8,#b79be0)', '#4d4d4d'],
 };
 

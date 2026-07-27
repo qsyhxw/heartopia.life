@@ -8,6 +8,12 @@
     },
     {
       "patterns": [
+        "鲸落区"
+      ],
+      "value": "Whalefall"
+    },
+    {
+      "patterns": [
         "鲸落"
       ],
       "value": "Whalefall"
@@ -26,6 +32,30 @@
     }
   ],
   "landmarks": [
+    {
+      "patterns": [
+        "水母洞穴入口左侧珊瑚"
+      ],
+      "value": "coral to the left of the Jellyfish Cave entrance"
+    },
+    {
+      "patterns": [
+        "水母洞穴入口上方洞口"
+      ],
+      "value": "opening above the Jellyfish Cave entrance"
+    },
+    {
+      "patterns": [
+        "水母洞穴下方外侧道路珊瑚"
+      ],
+      "value": "coral along the outer path below Jellyfish Cave"
+    },
+    {
+      "patterns": [
+        "幻彩鲸鱼"
+      ],
+      "value": "Iridescent Splash Whale"
+    },
     {
       "patterns": [
         "水母洞穴的入口处珊瑚",

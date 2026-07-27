@@ -23,6 +23,7 @@ const colorMap = new Map([
   ['浅蓝色', 'Light Blue'], ['浅蓝', 'Light Blue'], ['青色', 'Cyan'], ['灰色', 'Gray'],
   ['蓝紫色', 'Blue-Purple'], ['蓝紫', 'Blue-Purple'],
   ['深蓝色', 'Deep Blue'], ['深蓝', 'Deep Blue'], ['深紫色', 'Deep Purple'], ['深紫', 'Deep Purple'],
+  ['桃绿色', 'Peach-Green'], ['桃绿', 'Peach-Green'], ['幻彩色', 'Iridescent'], ['幻彩', 'Iridescent'],
   ['米白色', 'Ivory'], ['米白', 'Ivory'], ['银色', 'Silver'], ['金色', 'Gold'], ['棕色', 'Brown'],
   ['粉色', 'Pink'], ['紫色', 'Purple'], ['黄色', 'Yellow'], ['橙色', 'Orange'],
   ['绿色', 'Green'], ['红色', 'Red'], ['白色', 'White'], ['黑色', 'Black'], ['彩虹', 'Rainbow'],
@@ -35,6 +36,8 @@ const redditColorTerms = {
   Gray: ['gray', 'grey'],
   Cyan: ['cyan', 'teal'],
   'Blue-Purple': ['blue purple', 'blue-purple', 'indigo', 'violet blue'],
+  'Peach-Green': ['peach green', 'peach-green', 'pink green'],
+  Iridescent: ['iridescent', 'rainbow'],
 };
 
 const decode = (value) => String(value || '')
@@ -123,7 +126,17 @@ export function parseWhaleEntries(html) {
 }
 
 export function parseWhaleGuide(html, currentRoutes) {
-  const chronological = parseWhaleEntries(html);
+  const parsed = parseWhaleEntries(html);
+  const knownRoutes = [...currentRoutes].sort((a, b) => a.day - b.day);
+  const prefixMatches = (entries) => knownRoutes.every((route, index) => entries[index]?.color === route.color);
+  let chronological = parsed;
+
+  if (knownRoutes.length) {
+    const reversed = [...parsed].reverse();
+    if (prefixMatches(parsed)) chronological = parsed;
+    else if (prefixMatches(reversed)) chronological = reversed;
+    else throw new Error('Existing whale sequence no longer matches either guide ordering.');
+  }
   const knownDays = new Map(currentRoutes.map((route) => [route.color, route.day]));
   for (let index = 0; index < chronological.length; index += 1) {
     const expected = index + 1;

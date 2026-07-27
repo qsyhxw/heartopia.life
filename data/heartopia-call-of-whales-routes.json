@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "event": "call-of-whales",
   "total": 16,
-  "updatedAt": "2026-07-24",
+  "updatedAt": "2026-07-27",
   "routes": [
     {
       "day": 1,
@@ -115,6 +115,22 @@
       "color": "Black",
       "location": "Area: Whalefall; landmark: coral at the entrance to Jellyfish Cave.",
       "rewardBubble": "Landmark: Jellyfish Cave interior."
+    },
+    {
+      "day": 15,
+      "id": "day-15-peach-green-splash-whale",
+      "name": "Peach-Green Splash Whale",
+      "color": "Peach-Green",
+      "location": "Landmark: coral to the left of the Jellyfish Cave entrance.",
+      "rewardBubble": "Area: Whalefall; landmark: opening above the Jellyfish Cave entrance."
+    },
+    {
+      "day": 16,
+      "id": "day-16-iridescent-splash-whale",
+      "name": "Iridescent Splash Whale",
+      "color": "Iridescent",
+      "location": "Landmark: coral along the outer path below Jellyfish Cave.",
+      "rewardBubble": "Landmark: Iridescent Splash Whale; position: nearby."
     }
   ]
 }

@@ -16,6 +16,19 @@ test('parses a contiguous Day 1-16 sequence from newest-first guide markup', () 
   assert.equal(parsed[15].color, 'Ivory');
 });
 
+test('adapts when the guide switches from newest-first to chronological markup', () => {
+  const chronologicalHtml = `<!doctype html><html><body>${[...blocks].reverse().join('')}</body></html>`;
+  const currentRoutes = labels.slice(0, 14).map((label, index) => ({
+    day: index + 1,
+    color: resolveWhaleColor(label).color,
+  }));
+  const parsed = parseWhaleGuide(chronologicalHtml, currentRoutes);
+
+  assert.equal(parsed[0].color, 'Light Blue');
+  assert.equal(parsed[13].color, 'Gold');
+  assert.equal(parsed[15].day, 16);
+});
+
 test('requires exact location and reward bubble facts from the second guide', () => {
   const candidate = parseWhaleEntries('<p>蓝紫喷水小鲸鱼：鲸落 封住的洞口 蓝紫珊瑚上</p><p>家具泡泡：鲸落 头骨右上方</p>')[0];
   assert.equal(hubConfirmsRoute(candidate, '<p>蓝紫喷水小鲸鱼：鲸落 封住的洞口 蓝紫珊瑚上</p><p>家具泡泡：鲸落 头骨右上方</p>'), true);
@@ -88,4 +101,14 @@ test('structures the verified Day 14 Jellyfish Cave route', () => {
     structureRouteFact(candidate.bubbleZh),
     'Landmark: Jellyfish Cave interior.',
   );
+});
+
+
+test('structures the verified Day 15 and Day 16 Jellyfish Cave routes', () => {
+  assert.deepEqual(resolveWhaleColor('桃绿色'), { color: 'Peach-Green', unknownTokens: [] });
+  assert.deepEqual(resolveWhaleColor('幻彩'), { color: 'Iridescent', unknownTokens: [] });
+  assert.equal(structureRouteFact('水母洞穴入口 左侧 珊瑚上'), 'Landmark: coral to the left of the Jellyfish Cave entrance.');
+  assert.equal(structureRouteFact('鲸落区 水母洞穴入口 上方洞口'), 'Area: Whalefall; landmark: opening above the Jellyfish Cave entrance.');
+  assert.equal(structureRouteFact('水母洞穴下方外侧道路 珊瑚上'), 'Landmark: coral along the outer path below Jellyfish Cave.');
+  assert.equal(structureRouteFact('幻彩鲸鱼附近'), 'Landmark: Iridescent Splash Whale; position: nearby.');
 });
