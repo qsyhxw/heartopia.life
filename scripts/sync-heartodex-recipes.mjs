@@ -11,7 +11,23 @@ const today = () => new Date().toISOString().slice(0, 10);
 
 async function request(url) { let error; for (let attempt = 1; attempt <= 3; attempt += 1) { try { const controller = new AbortController(); const timer = setTimeout(() => controller.abort(), 15000); try { const response = await fetch(url, { headers: { "user-agent": "HeartopiaLifeRecipeSync/1.0 (+https://heartopia.life/)" }, signal: controller.signal }); if (!response.ok) throw new Error("Remote request failed with status " + response.status); return response; } finally { clearTimeout(timer); } } catch (caught) { error = caught; await new Promise((done) => setTimeout(done, attempt * 500)); } } throw error; }
 const fromPage = (html, name) => JSON.parse(html.match(new RegExp(`const ${name}=(\\[.*?\\]|\\{.*?\\});const`, 's'))?.[1] || 'null');
-const cardNames = (html) => [...html.matchAll(/<a href="\/en\/recipes\/([^"?#]+)"\s+data-name="([^"]+)"/gi)].map((match) => ({ slug: match[1], name: clean(match[2]) }));
+const titleCase = (value) => value.replace(/\b[a-z]/g, (letter) => letter.toUpperCase());
+const cardNames = (html) => {
+  const entries = new Map();
+  for (const match of html.matchAll(/<a href="\/en\/recipes\/([^"?#]+)"([^>]*)>([\s\S]*?)<\/a>/gi)) {
+    const slug = match[1];
+    const attributes = match[2];
+    const block = match[3];
+    const heading = block.match(/<h[1-6][^>]*>([\s\S]*?)<\/h[1-6]>/i)?.[1];
+    const alt = block.match(/<img[^>]+alt="([^"]+)"/i)?.[1];
+    const dataName = attributes.match(/data-name="([^"]+)"/i)?.[1];
+    const level = Number(attributes.match(/data-level="?(\d+)"?/i)?.[1] || 1);
+    const category = clean(attributes.match(/data-categories="([^"]*)"/i)?.[1] || 'Base Game');
+    const name = clean(heading || alt || titleCase(dataName || slug.replace(/-/g, ' ')));
+    if (slug && name) entries.set(slug, { slug, name, level, category });
+  }
+  return [...entries.values()];
+};
 const numberList = (block, matcher) => [...block.matchAll(matcher)].map((match) => Number(match[1].replace(/\./g, ''))).filter(Number.isFinite);
 const equal = (a, b) => JSON.stringify(a) === JSON.stringify(b);
 const imageName = (slug) => `${slug.replace(/[^a-z0-9-]+/gi, '-').replace(/^-|-$/g, '')}.webp`;
@@ -53,14 +69,37 @@ const existingHtml = read('database/recipes/index.html');
 const listed = fromPage(existingHtml, 'recipes');
 const oldDetails = fromPage(existingHtml, 'detailMap');
 const sourceCards = cardNames(await (await request(`${base}/en/recipes/`)).text());
-if (!Array.isArray(listed) || listed.length !== 168 || sourceCards.length !== 168) throw new Error(`Recipe safety check failed: local ${listed?.length}, source ${sourceCards.length}`);
-const sourceByName = new Map(sourceCards.map((x) => [x.name.toLowerCase(), x.slug]));
-const tasks = listed.map((item) => ({ ...item, slug: sourceByName.get(item.name.toLowerCase()) || oldDetails[item.name]?.slug }));
+if (!Array.isArray(listed) || !listed.length) throw new Error('Recipe safety check failed: local recipe list is missing');
+if (sourceCards.length < Math.floor(listed.length * 0.9) || sourceCards.length > listed.length + 60) {
+  throw new Error(`Recipe listing safety check failed: local ${listed.length}, source ${sourceCards.length}`);
+}
+const sourceByName = new Map(sourceCards.map((item) => [item.name.toLowerCase(), item]));
+const sourceBySlug = new Map(sourceCards.map((item) => [item.slug, item]));
+const tasks = listed.map((item) => {
+  const oldSlug = oldDetails[item.name]?.slug;
+  const source = sourceByName.get(item.name.toLowerCase()) || sourceBySlug.get(oldSlug);
+  const category = item.category === 'Common' ? 'Base Game' : item.category;
+  return { ...item, category, availability: category === 'Base Game' ? 'Permanent' : item.availability, slug: source?.slug || oldSlug };
+});
+const knownSlugs = new Set(tasks.map((item) => item.slug).filter(Boolean));
+for (const source of sourceCards) {
+  if (knownSlugs.has(source.slug)) continue;
+  const category = source.category === 'Common' ? 'Base Game' : source.category;
+  tasks.push({
+    name: source.name,
+    level: source.level,
+    category,
+    availability: category === 'Base Game' ? 'Permanent' : 'Active Event',
+    image: null,
+    slug: source.slug,
+  });
+  knownSlugs.add(source.slug);
+}
 if (tasks.some((item) => !item.slug)) throw new Error(`Missing source slug for ${tasks.filter((item) => !item.slug).map((item) => item.name).join(', ')}`);
 const entries = [];
 for (let index = 0; index < tasks.length; index += 8) entries.push(...await Promise.all(tasks.slice(index, index + 8).map(detail)));
 entries.sort((a, b) => a.name.localeCompare(b.name));
-if (entries.length !== 168) throw new Error(`Recipe detail safety check failed: ${entries.length}`);
+if (entries.length !== tasks.length) throw new Error(`Recipe detail safety check failed: expected ${tasks.length}, received ${entries.length}`);
 const list = entries.map(({ ingredients, market, energy, eventTokens, slug, ...item }) => item);
 const detailMap = Object.fromEntries(entries.map(({ name, slug, ingredients, market, energy, eventTokens }) => [name, { name, slug, ingredients, market, energy, eventTokens }]));
 const prior = fs.existsSync(path.join(root, 'data/heartopia-recipes.json')) ? JSON.parse(read('data/heartopia-recipes.json')) : null;

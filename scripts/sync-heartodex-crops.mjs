@@ -9,9 +9,11 @@ const write = (file, value) => { const target = path.join(root, file); fs.mkdirS
 const esc = (value) => String(value || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const clean = (value) => String(value || '').replace(/<[^>]*>/g, ' ').replace(/&amp;/g, '&').replace(/&#38;/g, '&').replace(/&#39;/g, "'").replace(/\s+/g, ' ').trim();
 
-const crops = [
+const knownCrops = [
   ['Avocado', 'avocado', 'Fruit'], ['Cacao Bean', 'cacao-bean', 'Specialty'], ['Carrot', 'carrot', 'Vegetable'], ['Corn', 'corn', 'Grain'], ['Eggplant', 'eggplant', 'Vegetable'], ['Grape', 'grape', 'Fruit'], ['Lemon Verbena', 'lemon-verbena', 'Herb'], ['Lettuce', 'lettuce', 'Vegetable'], ['Paddy', 'paddy', 'Grain'], ['Pineapple', 'pineapple', 'Fruit'], ['Potatoes', 'potatoes', 'Vegetable'], ['Romaine Lettuce', 'romaine-lettuce', 'Vegetable'], ['Strawberry', 'strawberry', 'Fruit'], ['Tea Leaf', 'tea-leaf', 'Herb'], ['Tomato', 'tomato', 'Vegetable'], ['Wheat', 'wheat', 'Grain'], ['White Radish', 'white-radish', 'Vegetable']
 ].map(([name, id, type]) => ({ name, id, type }));
+const priorCropData = JSON.parse(read('data/heartopia-crops.json'));
+const priorCropsById = new Map(priorCropData.crops.map((crop) => [crop.id, crop]));
 
 async function request(url) {
   let error;
@@ -26,6 +28,24 @@ async function request(url) {
 }
 
 const imageFile = (name) => name.replace(/[^a-z0-9]+/gi, '-').replace(/^-|-$/g, '') + '.webp';
+const titleCase = (value) => value.replace(/\b[a-z]/g, (letter) => letter.toUpperCase());
+function listingCrops(html) {
+  const known = new Map(knownCrops.map((crop) => [crop.id, crop]));
+  const entries = new Map();
+  for (const match of html.matchAll(/<a href="\/en\/crops\/([^"?#]+)"([^>]*)>([\s\S]*?)<\/a>/gi)) {
+    const id = match[1];
+    const attributes = match[2];
+    const block = match[3];
+    const heading = block.match(/<h[1-6][^>]*>([\s\S]*?)<\/h[1-6]>/i)?.[1];
+    const alt = block.match(/<img[^>]+alt="([^"]+)"/i)?.[1];
+    const dataName = attributes.match(/data-name="([^"]+)"/i)?.[1];
+    const category = clean(attributes.match(/data-categories="([^"]+)"/i)?.[1] || 'Other');
+    const name = clean(heading || alt || titleCase(dataName || id.replace(/-/g, ' ')));
+    if (!id || !name) continue;
+    entries.set(id, known.get(id) || { name, id, type: category });
+  }
+  return [...entries.values()];
+}
 const windowFor = (minutes) => minutes <= 60 ? 'Quick: up to 1 hour' : minutes <= 360 ? 'Medium: 2 to 6 hours' : 'Long: 8 hours or more';
 const hoursLabel = (text) => {
   const match = text.match(/(\d{2}):(\d{2}):(\d{2})h/);
@@ -43,7 +63,9 @@ async function detail(crop) {
   const recipeStart = html.indexOf('Module: Recipes');
   const recipeBlock = recipeStart < 0 ? '' : html.slice(recipeStart, recipeStart + 65000);
   const recipes = [...recipeBlock.matchAll(/href="\/en\/recipes\/[^"]+"[\s\S]{0,1000}?alt="([^"]+)"/gi)].map((match) => clean(match[1]));
-  const uniqueRecipes = [...new Set(recipes)].filter(Boolean);
+  const parsedRecipes = [...new Set(recipes)].filter(Boolean);
+  const priorRecipes = priorCropsById.get(crop.id)?.recipes || [];
+  const uniqueRecipes = parsedRecipes.length ? parsedRecipes : priorRecipes;
   const growth = hoursLabel(time);
   const file = `img/crops/${imageFile(crop.name)}`;
   const local = path.join(root, file);
@@ -76,9 +98,31 @@ function gardening(entries,date) { return head('Heartopia Gardening Guide: Seeds
 
 const renderPlannerOnly = process.argv.includes('--render-planner');
 const entries = renderPlannerOnly ? JSON.parse(read('data/heartopia-crops.json')).crops : [];
-if (!renderPlannerOnly) for (const crop of crops) entries.push(await detail(crop));
+if (!renderPlannerOnly) {
+  const source = listingCrops(await (await request(`${base}/en/crops/`)).text());
+  const priorCount = JSON.parse(read('data/heartopia-crops.json')).crops.length;
+  if (source.length < Math.floor(priorCount * 0.9) || source.length > priorCount + 30) {
+    throw new Error(`Crop listing safety check failed: local ${priorCount}, source ${source.length}`);
+  }
+  for (const crop of source) entries.push(await detail(crop));
+}
+const recipeData = JSON.parse(read('data/heartopia-recipes.json'));
+const recipesByIngredient = new Map();
+for (const recipe of recipeData.recipes || []) {
+  for (const ingredient of recipe.ingredients || []) {
+    const key = clean(ingredient.name).toLowerCase();
+    if (!key) continue;
+    if (!recipesByIngredient.has(key)) recipesByIngredient.set(key, []);
+    recipesByIngredient.get(key).push(recipe.name);
+  }
+}
+for (const crop of entries) {
+  const linked = recipesByIngredient.get(clean(crop.name).toLowerCase()) || [];
+  crop.recipes = [...new Set([...(crop.recipes || []), ...linked])].sort();
+  crop.recipeCount = crop.recipes.length;
+}
 entries.sort((a, b) => a.name.localeCompare(b.name));
-if (entries.length !== 17) throw new Error(`Crop safety check failed: expected 17 entries, received ${entries.length}`);
+if (!entries.length) throw new Error('Crop safety check failed: no entries were produced');
 if (renderPlannerOnly) {
   const local = JSON.parse(read('data/heartopia-crops.json'));
   write('tools/crop-planner/index.html', improvedPlanner(entries, local.generatedAt));

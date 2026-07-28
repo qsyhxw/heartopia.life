@@ -73,9 +73,9 @@
     "birds": 97,
     "insects": 91,
     "wildlife": 11,
-    "crops": 17,
+    "crops": 18,
     "flowers": 10,
-    "recipes": 168,
+    "recipes": 173,
     "achievements": 67,
     "items": 23,
     "ingredients": 26,
@@ -84,6 +84,133 @@
     "events": 11
   },
   "entries": [
+    {
+      "id": "2026-07-28-95bc0aa3d3e687ca",
+      "timestamp": "2026-07-28T07:24:33.427Z",
+      "date": "2026-07-28",
+      "title": "New Crops added",
+      "summary": "+1 Crop · 16 Crops updated · +5 Recipes · +1 more",
+      "signature": "95bc0aa3d3e687ca",
+      "changes": [
+        {
+          "category": "Crops",
+          "singular": "Crop",
+          "categoryId": "crops",
+          "action": "added",
+          "count": 1,
+          "items": [
+            "Starfruit"
+          ],
+          "truncated": false,
+          "url": "/database/crops/"
+        },
+        {
+          "category": "Crops",
+          "singular": "Crop",
+          "categoryId": "crops",
+          "action": "updated",
+          "count": 16,
+          "items": [
+            "Avocado",
+            "Cacao Bean",
+            "Carrot",
+            "Corn",
+            "Eggplant",
+            "Grape",
+            "Lemon Verbena",
+            "Lettuce",
+            "Paddy",
+            "Pineapple",
+            "Potatoes",
+            "Strawberry",
+            "Tea Leaf",
+            "Tomato",
+            "Wheat",
+            "White Radish"
+          ],
+          "truncated": false,
+          "url": "/database/crops/"
+        },
+        {
+          "category": "Recipes",
+          "singular": "Recipe",
+          "categoryId": "recipes",
+          "action": "added",
+          "count": 5,
+          "items": [
+            "Cheese Crayfish Stuffed Crab Claws",
+            "Cinnamoroll Crepe",
+            "Crayfish Avocado Cup",
+            "Kuromi Crepe",
+            "My Melody Crepe"
+          ],
+          "truncated": false,
+          "url": "/database/recipes/"
+        },
+        {
+          "category": "Recipes",
+          "singular": "Recipe",
+          "categoryId": "recipes",
+          "action": "updated",
+          "count": 1,
+          "items": [
+            "Grilled Squid w/ Strawberry Jam"
+          ],
+          "truncated": false,
+          "url": "/database/recipes/"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-28-b4521723497f6a60",
+      "timestamp": "2026-07-28T07:15:38.980Z",
+      "date": "2026-07-28",
+      "title": "New Crops added",
+      "summary": "+1 Crop · +5 Recipes · 1 Recipe updated",
+      "signature": "b4521723497f6a60",
+      "changes": [
+        {
+          "category": "Crops",
+          "singular": "Crop",
+          "categoryId": "crops",
+          "action": "added",
+          "count": 1,
+          "items": [
+            "Starfruit"
+          ],
+          "truncated": false,
+          "url": "/database/crops/"
+        },
+        {
+          "category": "Recipes",
+          "singular": "Recipe",
+          "categoryId": "recipes",
+          "action": "added",
+          "count": 5,
+          "items": [
+            "Cheese Crayfish Stuffed Crab Claws",
+            "Cinnamoroll Crepe",
+            "Crayfish Avocado Cup",
+            "Kuromi Crepe",
+            "My Melody Crepe"
+          ],
+          "truncated": false,
+          "url": "/database/recipes/"
+        },
+        {
+          "category": "Recipes",
+          "singular": "Recipe",
+          "categoryId": "recipes",
+          "action": "updated",
+          "count": 1,
+          "items": [
+            "Grilled Squid w/ Strawberry Jam"
+          ],
+          "truncated": false,
+          "url": "/database/recipes/"
+        }
+      ]
+    },
     {
       "id": "2026-07-28-9d8a24dd2892e977",
       "timestamp": "2026-07-28T05:40:17.318Z",

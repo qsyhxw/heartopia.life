@@ -2000,6 +2000,12 @@ window.heartopiaProgressCatalog = {
         "detail": "15m · 10 G seed"
       },
       {
+        "id": "starfruit",
+        "name": "Starfruit",
+        "image": "/img/crops/Starfruit.webp",
+        "detail": "15m · 10 G seed"
+      },
+      {
         "id": "strawberry",
         "name": "Strawberry",
         "image": "/img/crops/Strawberry.webp",
@@ -2338,10 +2344,22 @@ window.heartopiaProgressCatalog = {
         "detail": "Lv. 2 · Base Game · up to 1920 G"
       },
       {
+        "id": "Cheese Crayfish Stuffed Crab Claws",
+        "name": "Cheese Crayfish Stuffed Crab Claws",
+        "image": "/img/recipes/cheese-crayfish-stuffed-crab-claws.webp",
+        "detail": "Lv. 13 · Base Game · up to 5760 G"
+      },
+      {
         "id": "Chocolate Sauce",
         "name": "Chocolate Sauce",
         "image": "/img/recipes/Chocolate-Sauce.webp",
         "detail": "Lv. 1 · Base Game · up to 5600 G"
+      },
+      {
+        "id": "Cinnamoroll Crepe",
+        "name": "Cinnamoroll Crepe",
+        "image": "/img/recipes/cinnamoroll-crepe.webp",
+        "detail": "Lv. 1 · SANRIO CHARACTERS · up to 2680 G"
       },
       {
         "id": "Cocoa Milk Tea",
@@ -2384,6 +2402,12 @@ window.heartopiaProgressCatalog = {
         "name": "Corn Soup",
         "image": "/img/recipes/Corn-Soup.webp",
         "detail": "Lv. 5 · Base Game · up to 5360 G"
+      },
+      {
+        "id": "Crayfish Avocado Cup",
+        "name": "Crayfish Avocado Cup",
+        "image": "/img/recipes/crayfish-avocado-cup.webp",
+        "detail": "Lv. 13 · Base Game · up to 6240 G"
       },
       {
         "id": "Crayfish Sashimi",
@@ -2584,6 +2608,12 @@ window.heartopiaProgressCatalog = {
         "detail": "Lv. 1 · Base Game · up to 2280 G"
       },
       {
+        "id": "Kuromi Crepe",
+        "name": "Kuromi Crepe",
+        "image": "/img/recipes/kuromi-crepe.webp",
+        "detail": "Lv. 1 · SANRIO CHARACTERS · up to 2680 G"
+      },
+      {
         "id": "Maltese Canelé",
         "name": "Maltese Canelé",
         "image": "/img/recipes/Maltese-Canelé.webp",
@@ -2678,6 +2708,12 @@ window.heartopiaProgressCatalog = {
         "name": "Mushroom Pie",
         "image": "/img/recipes/Mushroom-Pie.webp",
         "detail": "Lv. 1 · Base Game · up to 2000 G"
+      },
+      {
+        "id": "My Melody Crepe",
+        "name": "My Melody Crepe",
+        "image": "/img/recipes/my-melody-crepe.webp",
+        "detail": "Lv. 1 · SANRIO CHARACTERS · up to 2680 G"
       },
       {
         "id": "Ocean Feast",

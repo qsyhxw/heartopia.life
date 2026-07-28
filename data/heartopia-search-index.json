@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-20",
-  "count": 581,
+  "generatedAt": "2026-07-28",
+  "count": 587,
   "typeOrder": [
     "fish",
     "insects",
@@ -5244,6 +5244,21 @@
       "searchText": "cheese cake recipe base game lv 2 1 920 g cheese cake permanent object object object object object object"
     },
     {
+      "id": "recipes:cheese-crayfish-stuffed-crab-claws",
+      "name": "Cheese Crayfish Stuffed Crab Claws",
+      "normalized": "cheese crayfish stuffed crab claws",
+      "aliases": [
+        "Cheese Crayfish Stuffed Crab Claws"
+      ],
+      "type": "Recipe",
+      "typeKey": "recipes",
+      "image": "/img/recipes/cheese-crayfish-stuffed-crab-claws.webp",
+      "href": "/database/recipes/?search=Cheese%20Crayfish%20Stuffed%20Crab%20Claws",
+      "listingHref": "/database/recipes/?search=Cheese%20Crayfish%20Stuffed%20Crab%20Claws",
+      "meta": "Base Game | Lv. 13 | 5,760 G",
+      "searchText": "cheese crayfish stuffed crab claws recipe base game lv 13 5 760 g cheese crayfish stuffed crab claws permanent"
+    },
+    {
       "id": "recipes:chocolate-sauce",
       "name": "Chocolate Sauce",
       "normalized": "chocolate sauce",
@@ -5257,6 +5272,21 @@
       "listingHref": "/database/recipes/?search=Chocolate%20Sauce",
       "meta": "Base Game | Lv. 1 | 5,600 G",
       "searchText": "chocolate sauce recipe base game lv 1 5 600 g chocolate sauce permanent object object"
+    },
+    {
+      "id": "recipes:cinnamoroll-crepe",
+      "name": "Cinnamoroll Crepe",
+      "normalized": "cinnamoroll crepe",
+      "aliases": [
+        "Cinnamoroll Crepe"
+      ],
+      "type": "Recipe",
+      "typeKey": "recipes",
+      "image": "/img/recipes/cinnamoroll-crepe.webp",
+      "href": "/database/recipes/?search=Cinnamoroll%20Crepe",
+      "listingHref": "/database/recipes/?search=Cinnamoroll%20Crepe",
+      "meta": "SANRIO CHARACTERS | Lv. 1 | 2,680 G",
+      "searchText": "cinnamoroll crepe recipe sanrio characters lv 1 2 680 g cinnamoroll crepe active event object object object object object object object object"
     },
     {
       "id": "recipes:cocoa-milk-tea",
@@ -5362,6 +5392,21 @@
       "listingHref": "/database/recipes/?search=Corn%20Soup",
       "meta": "Base Game | Lv. 5 | 5,360 G",
       "searchText": "corn soup recipe base game lv 5 5 360 g corn soup permanent object object object object object object"
+    },
+    {
+      "id": "recipes:crayfish-avocado-cup",
+      "name": "Crayfish Avocado Cup",
+      "normalized": "crayfish avocado cup",
+      "aliases": [
+        "Crayfish Avocado Cup"
+      ],
+      "type": "Recipe",
+      "typeKey": "recipes",
+      "image": "/img/recipes/crayfish-avocado-cup.webp",
+      "href": "/database/recipes/?search=Crayfish%20Avocado%20Cup",
+      "listingHref": "/database/recipes/?search=Crayfish%20Avocado%20Cup",
+      "meta": "Base Game | Lv. 13 | 6,240 G",
+      "searchText": "crayfish avocado cup recipe base game lv 13 6 240 g crayfish avocado cup permanent object object"
     },
     {
       "id": "recipes:crayfish-sashimi",
@@ -5859,6 +5904,21 @@
       "searchText": "indigo roll cake recipe base game lv 1 2 280 g indigo roll cake permanent object object object object object object"
     },
     {
+      "id": "recipes:kuromi-crepe",
+      "name": "Kuromi Crepe",
+      "normalized": "kuromi crepe",
+      "aliases": [
+        "Kuromi Crepe"
+      ],
+      "type": "Recipe",
+      "typeKey": "recipes",
+      "image": "/img/recipes/kuromi-crepe.webp",
+      "href": "/database/recipes/?search=Kuromi%20Crepe",
+      "listingHref": "/database/recipes/?search=Kuromi%20Crepe",
+      "meta": "SANRIO CHARACTERS | Lv. 1 | 2,680 G",
+      "searchText": "kuromi crepe recipe sanrio characters lv 1 2 680 g kuromi crepe active event object object object object object object object object"
+    },
+    {
       "id": "recipes:maltese-canele",
       "name": "Maltese Canelé",
       "normalized": "maltese canele",
@@ -6097,6 +6157,21 @@
       "listingHref": "/database/recipes/?search=Mushroom%20Pie",
       "meta": "Base Game | Lv. 1 | 2,000 G",
       "searchText": "mushroom pie recipe base game lv 1 2 000 g mushroom pie permanent object object object object"
+    },
+    {
+      "id": "recipes:my-melody-crepe",
+      "name": "My Melody Crepe",
+      "normalized": "my melody crepe",
+      "aliases": [
+        "My Melody Crepe"
+      ],
+      "type": "Recipe",
+      "typeKey": "recipes",
+      "image": "/img/recipes/my-melody-crepe.webp",
+      "href": "/database/recipes/?search=My%20Melody%20Crepe",
+      "listingHref": "/database/recipes/?search=My%20Melody%20Crepe",
+      "meta": "SANRIO CHARACTERS | Lv. 1 | 2,680 G",
+      "searchText": "my melody crepe recipe sanrio characters lv 1 2 680 g my melody crepe active event object object object object object object object object"
     },
     {
       "id": "recipes:ocean-feast",
@@ -8367,7 +8442,7 @@
       "href": "/database/crops/?search=Avocado",
       "listingHref": "/database/crops/?search=Avocado",
       "meta": "Fruit | 180 G | 13h",
-      "searchText": "avocado crop fruit 180 g 13h avocado long 8 hours or more"
+      "searchText": "avocado crop fruit 180 g 13h avocado long 8 hours or more crayfish avocado cup"
     },
     {
       "id": "crops:cacao-bean",
@@ -8382,7 +8457,7 @@
       "href": "/database/crops/?search=Cacao%20Bean",
       "listingHref": "/database/crops/?search=Cacao%20Bean",
       "meta": "Specialty | 110 G | 5h",
-      "searchText": "cacao bean crop specialty 110 g 5h cacao bean medium 2 to 6 hours chocolate sauce milkshake cocoa milkshake cocoa milk tea mellow black tea"
+      "searchText": "cacao bean crop specialty 110 g 5h cacao bean medium 2 to 6 hours chocolate sauce cocoa milk tea cocoa milkshake mellow black tea milkshake"
     },
     {
       "id": "crops:carrot",
@@ -8397,7 +8472,7 @@
       "href": "/database/crops/?search=Carrot",
       "listingHref": "/database/crops/?search=Carrot",
       "meta": "Vegetable | 50 G | 2h",
-      "searchText": "carrot crop vegetable 50 g 2h carrot medium 2 to 6 hours house salad smoked fish bagel carrot cake"
+      "searchText": "carrot crop vegetable 50 g 2h carrot medium 2 to 6 hours carrot cake house salad smoked fish bagel"
     },
     {
       "id": "crops:corn",
@@ -8412,7 +8487,7 @@
       "href": "/database/crops/corn/",
       "listingHref": "/database/crops/?search=Corn",
       "meta": "Grain | 170 G | 12h",
-      "searchText": "corn crop grain 170 g 12h corn long 8 hours or more caramel popcorn bucket savory popcorn bucket house salad corn soup"
+      "searchText": "corn crop grain 170 g 12h corn long 8 hours or more caramel popcorn bucket corn soup house salad savory popcorn bucket"
     },
     {
       "id": "crops:eggplant",
@@ -8427,7 +8502,7 @@
       "href": "/database/crops/?search=Eggplant",
       "listingHref": "/database/crops/?search=Eggplant",
       "meta": "Vegetable | 135 G | 5h",
-      "searchText": "eggplant crop vegetable 135 g 5h eggplant medium 2 to 6 hours house salad smoked fish bagel baked eggplant w meat"
+      "searchText": "eggplant crop vegetable 135 g 5h eggplant medium 2 to 6 hours baked eggplant w meat house salad smoked fish bagel"
     },
     {
       "id": "crops:grape",
@@ -8442,7 +8517,7 @@
       "href": "/database/crops/grape/",
       "listingHref": "/database/crops/?search=Grape",
       "meta": "Fruit | 160 G | 10h",
-      "searchText": "grape crop fruit 160 g 10h grape long 8 hours or more rainbow heart rainbow spark brick bowl fruit shaved ice brick bowl grape shaved ice purple egg grape jam mixed jam original frosted pancake fruit verbena pie grape verbena pie springday grape black tea springday fruit black tea afternoon tea milkshake grape milkshake"
+      "searchText": "grape crop fruit 160 g 10h grape long 8 hours or more afternoon tea brick bowl fruit shaved ice brick bowl grape shaved ice fruit verbena pie grape jam grape milkshake grape verbena pie milkshake mixed jam original frosted pancake purple egg rainbow heart rainbow spark springday fruit black tea springday grape black tea"
     },
     {
       "id": "crops:lemon-verbena",
@@ -8457,7 +8532,7 @@
       "href": "/database/crops/?search=Lemon%20Verbena",
       "listingHref": "/database/crops/?search=Lemon%20Verbena",
       "meta": "Herb | 10 G | 15m",
-      "searchText": "lemon verbena crop herb 10 g 15m lemon verbena quick up to 1 hour blueberry verbena pie raspberry verbena pie strawberry verbena pie fruit verbena pie mandarin verbena pie apple verbena pie pineapple verbena pie grape verbena pie"
+      "searchText": "lemon verbena crop herb 10 g 15m lemon verbena quick up to 1 hour apple verbena pie blueberry verbena pie fruit verbena pie grape verbena pie mandarin verbena pie pineapple verbena pie raspberry verbena pie strawberry verbena pie"
     },
     {
       "id": "crops:lettuce",
@@ -8472,7 +8547,7 @@
       "href": "/database/crops/?search=Lettuce",
       "listingHref": "/database/crops/?search=Lettuce",
       "meta": "Vegetable | 145 G | 8h",
-      "searchText": "lettuce crop vegetable 145 g 8h lettuce long 8 hours or more house salad green egg smoked fish bagel rustic ratatouille meat burger crayfish sashimi blue european crayfish sashimi"
+      "searchText": "lettuce crop vegetable 145 g 8h lettuce long 8 hours or more blue european crayfish sashimi crayfish sashimi green egg house salad meat burger rustic ratatouille smoked fish bagel"
     },
     {
       "id": "crops:paddy",
@@ -8487,7 +8562,7 @@
       "href": "/database/crops/?search=Paddy",
       "listingHref": "/database/crops/?search=Paddy",
       "meta": "Grain | 12 G | 20m",
-      "searchText": "paddy crop grain 12 g 20m paddy quick up to 1 hour glasswort and shrimp fried rice pillow shaped red bean zongzi pillow shaped plain rice zongzi pillow shaped egg yolk and pork zongzi triangle plain rice zongzi triangle egg yolk and pork zongzi triangle red bean zongzi"
+      "searchText": "paddy crop grain 12 g 20m paddy quick up to 1 hour glasswort and shrimp fried rice pillow shaped egg yolk and pork zongzi pillow shaped plain rice zongzi pillow shaped red bean zongzi triangle egg yolk and pork zongzi triangle plain rice zongzi triangle red bean zongzi"
     },
     {
       "id": "crops:pineapple",
@@ -8502,7 +8577,7 @@
       "href": "/database/crops/?search=Pineapple",
       "listingHref": "/database/crops/?search=Pineapple",
       "meta": "Fruit | 15 G | 30m",
-      "searchText": "pineapple crop fruit 15 g 30m pineapple quick up to 1 hour rainbow heart rainbow spark brick bowl fruit shaved ice brick bowl pineapple shaved ice pineapple jam mixed jam original frosted pancake fruit verbena pie pineapple verbena pie springday pineapple black tea springday fruit black tea afternoon tea milkshake pineapple milkshake"
+      "searchText": "pineapple crop fruit 15 g 30m pineapple quick up to 1 hour afternoon tea brick bowl fruit shaved ice brick bowl pineapple shaved ice fruit verbena pie milkshake mixed jam original frosted pancake pineapple jam pineapple milkshake pineapple verbena pie rainbow heart rainbow spark springday fruit black tea springday pineapple black tea"
     },
     {
       "id": "crops:potatoes",
@@ -8517,7 +8592,7 @@
       "href": "/database/crops/?search=Potatoes",
       "listingHref": "/database/crops/?search=Potatoes",
       "meta": "Vegetable | 30 G | 1h",
-      "searchText": "potatoes crop vegetable 30 g 1h potatoes quick up to 1 hour house salad salsa wavy potato chips smoked fish bagel fish and chips rustic ratatouille"
+      "searchText": "potatoes crop vegetable 30 g 1h potatoes quick up to 1 hour fish and chips house salad rustic ratatouille salsa wavy potato chips smoked fish bagel"
     },
     {
       "id": "crops:romaine-lettuce",
@@ -8535,6 +8610,21 @@
       "searchText": "romaine lettuce crop vegetable 10 g 15m romaine lettuce quick up to 1 hour romaine lettuce taco"
     },
     {
+      "id": "crops:starfruit",
+      "name": "Starfruit",
+      "normalized": "starfruit",
+      "aliases": [
+        "Starfruit"
+      ],
+      "type": "Crop",
+      "typeKey": "crops",
+      "image": "/img/crops/Starfruit.webp",
+      "href": "/database/crops/?search=Starfruit",
+      "listingHref": "/database/crops/?search=Starfruit",
+      "meta": "Call of Whales | 10 G | 15m",
+      "searchText": "starfruit crop call of whales 10 g 15m starfruit quick up to 1 hour ocean iced drink starfruit jam starfruit pearl cake"
+    },
+    {
       "id": "crops:strawberry",
       "name": "Strawberry",
       "normalized": "strawberry",
@@ -8547,7 +8637,7 @@
       "href": "/database/crops/?search=Strawberry",
       "listingHref": "/database/crops/?search=Strawberry",
       "meta": "Fruit | 125 G | 6h",
-      "searchText": "strawberry crop fruit 125 g 6h strawberry medium 2 to 6 hours maltese canele rainbow heart rainbow spark brick bowl strawberry shaved ice brick bowl fruit shaved ice strawberry jam mixed jam original frosted pancake strawberry verbena pie fruit verbena pie springday strawberry black tea springday fruit black tea afternoon tea milkshake strawberry milkshake"
+      "searchText": "strawberry crop fruit 125 g 6h strawberry medium 2 to 6 hours afternoon tea brick bowl fruit shaved ice brick bowl strawberry shaved ice fruit verbena pie maltese canele milkshake mixed jam original frosted pancake rainbow heart rainbow spark springday fruit black tea springday strawberry black tea strawberry jam strawberry milkshake strawberry verbena pie"
     },
     {
       "id": "crops:tea-leaf",
@@ -8562,7 +8652,7 @@
       "href": "/database/crops/?search=Tea%20Leaf",
       "listingHref": "/database/crops/?search=Tea%20Leaf",
       "meta": "Herb | 25 G | 45m",
-      "searchText": "tea leaf crop herb 25 g 45m tea leaf quick up to 1 hour green tea matcha green milk tea green milk tea daisy tea rose tea"
+      "searchText": "tea leaf crop herb 25 g 45m tea leaf quick up to 1 hour daisy tea green milk tea green tea matcha green milk tea rose tea"
     },
     {
       "id": "crops:tomato",
@@ -8577,7 +8667,7 @@
       "href": "/database/crops/?search=Tomato",
       "listingHref": "/database/crops/?search=Tomato",
       "meta": "Vegetable | 10 G | 15m",
-      "searchText": "tomato crop vegetable 10 g 15m tomato quick up to 1 hour house salad mixed jam tomato sauce tomato seafood soup smoked fish bagel rustic ratatouille seafood risotto meat sauce pasta afternoon tea"
+      "searchText": "tomato crop vegetable 10 g 15m tomato quick up to 1 hour afternoon tea house salad meat sauce pasta mixed jam rustic ratatouille seafood risotto smoked fish bagel tomato sauce tomato seafood soup"
     },
     {
       "id": "crops:wheat",
@@ -8592,7 +8682,7 @@
       "href": "/database/crops/wheat/",
       "listingHref": "/database/crops/?search=Wheat",
       "meta": "Grain | 95 G | 4h",
-      "searchText": "wheat crop grain 95 g 4h wheat medium 2 to 6 hours retriever canele maltese canele house salad brick penny bun patty burger brick button mushroom patty burger brick mushroom patty burger brick oyster mushroom patty burger brick shiitake patty burger brick black truffle patty burger penny bun pie button mushroom pie grass cake mushroom pie oyster mushroom pie shiitake pie black truffle pie blueberry pearl cake seashell pearl cake starfruit pearl cake raspberry pearl cake apple pearl cake mandarin pearl cake tomato seafood soup smoked fish bagel cheese cake black truffle cream pasta seafood risotto meat sauce pasta seafood pizza carrot cake apple pie meat burger"
+      "searchText": "wheat crop grain 95 g 4h wheat medium 2 to 6 hours apple pearl cake apple pie black truffle cream pasta black truffle pie blueberry pearl cake brick black truffle patty burger brick button mushroom patty burger brick mushroom patty burger brick oyster mushroom patty burger brick penny bun patty burger brick shiitake patty burger button mushroom pie carrot cake cheese cake cinnamoroll crepe grass cake house salad kuromi crepe maltese canele mandarin pearl cake meat burger meat sauce pasta mushroom pie my melody crepe oyster mushroom pie penny bun pie raspberry pearl cake retriever canele seafood pizza seafood risotto seashell pearl cake shiitake pie smoked fish bagel starfruit pearl cake tomato seafood soup"
     },
     {
       "id": "crops:white-radish",
@@ -8607,7 +8697,7 @@
       "href": "/database/crops/?search=White%20Radish",
       "listingHref": "/database/crops/?search=White%20Radish",
       "meta": "Vegetable | 10 G | 15m",
-      "searchText": "white radish crop vegetable 10 g 15m white radish quick up to 1 hour steak w mashed white radish creamy white radish soup house salad smoked fish bagel"
+      "searchText": "white radish crop vegetable 10 g 15m white radish quick up to 1 hour creamy white radish soup house salad smoked fish bagel steak w mashed white radish"
     },
     {
       "id": "flowers:black-flower",

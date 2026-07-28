@@ -13,6 +13,7 @@ for (const route of whaleRouteData.routes || []) assertRemoteFields('eventRoutes
 
 const activeAutoSyncScripts = [
   'scripts/monitor-heartodex-collections.mjs',
+  'scripts/discover-heartopia-database-changes.mjs',
   'scripts/prepare-heartodex-fish-bird-sync.mjs',
   'scripts/apply-heartodex-fish-bird-sync.mjs',
   'scripts/sync-insect-database.mjs',
@@ -35,6 +36,16 @@ for (const file of retiredMonitorArtifacts) {
 }
 if (read('.github/workflows/monitor-heartodex-collections.yml').includes('data/monitor/')) {
   throw new Error('Collection workflow still stages public monitor artifacts.');
+}
+const discoveryWorkflow = read('.github/workflows/monitor-heartopia-databases-daily.yml');
+if (!discoveryWorkflow.includes('actions/upload-artifact@v4')) {
+  throw new Error('Daily database discovery does not save its baseline as a private Actions Artifact.');
+}
+if (/git\s+(?:add|commit|push)/.test(discoveryWorkflow)) {
+  throw new Error('Daily database discovery must not publish or commit remote listing snapshots.');
+}
+if (discoveryWorkflow.includes('data/monitor/')) {
+  throw new Error('Daily database discovery references a public monitor directory.');
 }
 
 const blockedPublicFields = new Set(['source', 'sourceUrl', 'imageUrl']);

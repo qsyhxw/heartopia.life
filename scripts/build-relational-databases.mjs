@@ -253,10 +253,23 @@ function buildIngredients(recipes, recipeDate) {
     write('database/ingredients/index.html', html);
 }
 
-function buildCrops() {
+function buildCrops(recipes) {
     const source = readJson('data/heartopia-crops.json');
-    const entries = source.crops;
-    if (entries.length !== 17) throw new Error(`Crop safety check failed: ${entries.length}`);
+    const recipesByIngredient = new Map();
+    for (const recipe of recipes) {
+        for (const ingredient of recipe.ingredients || []) {
+            const key = norm(ingredient.name);
+            if (!key) continue;
+            if (!recipesByIngredient.has(key)) recipesByIngredient.set(key, []);
+            recipesByIngredient.get(key).push(recipe.name);
+        }
+    }
+    const entries = source.crops.map((item) => {
+        const recipesFromIndex = recipesByIngredient.get(norm(item.name)) || [];
+        const names = [...new Set([...(item.recipes || []), ...recipesFromIndex])].sort();
+        return { ...item, recipes: names, recipeCount: names.length };
+    });
+    if (!entries.length) throw new Error('Crop safety check failed: no entries');
     const date = latestDate(currentBuildDate, source.generatedAt);
     const cards = entries.map(item => {
         const names = item.recipes || [];
@@ -269,7 +282,7 @@ function buildCrops() {
             ${markButton(norm(item.name), 'Mark harvested', 'Harvested')}
         </article>`;
     }).join('');
-    const html = pageStart({ title: 'Heartopia Crops: Recipe Uses, Seeds & Growth Times', description: 'Compare 17 Heartopia crops by seed price, growth time and expandable recipe connections with local crop images.', canonical: 'https://heartopia.life/database/crops/', h1: 'Heartopia Crops & Recipe Connections', intro: 'Choose a crop by seed budget and return time, then expand it to see every recipe currently connected to that crop.', date, heroClass: 'bg-gradient-to-br from-green-100 to-cozy-mint/50', sectionName: 'Crops', storageKey: 'heartopia.collection.crops', entityType: 'crops', socialImage: '/img/crops/Grape.webp' })
+    const html = pageStart({ title: 'Heartopia Crops: Recipe Uses, Seeds & Growth Times', description: `Compare ${entries.length} Heartopia crops by seed price, growth time and expandable recipe connections with local crop images.`, canonical: 'https://heartopia.life/database/crops/', h1: 'Heartopia Crops & Recipe Connections', intro: 'Choose a crop by seed budget and return time, then expand it to see every recipe currently connected to that crop.', date, heroClass: 'bg-gradient-to-br from-green-100 to-cozy-mint/50', sectionName: 'Crops', storageKey: 'heartopia.collection.crops', entityType: 'crops', socialImage: '/img/crops/Grape.webp' })
         + stats([{ value: entries.length, label: 'Crops', color: 'text-cozy-coral' }, { value: entries.reduce((sum, item) => sum + item.recipeCount, 0), label: 'Recipe connections', color: 'text-cozy-sage' }, { value: `${Math.min(...entries.map(x => x.seedPrice))} G`, label: 'Lowest seed price', color: 'text-emerald-600' }, { value: `${Math.max(...entries.map(x => x.growthMinutes)) / 60}h`, label: 'Longest growth time', color: 'text-amber-600' }])
         + controls({ searchPlaceholder: 'Crop or recipe name...', filters: [{ label: 'Type', values: [...new Set(entries.map(x => x.type))].sort() }, { label: 'Planting window', values: [...new Set(entries.map(x => x.plantingWindow))].sort() }], sortOptions: [{ value: 'name', label: 'Name A-Z' }, { value: 'relations', label: 'Most recipe uses' }, { value: 'low', label: 'Seed price: low to high' }, { value: 'high', label: 'Seed price: high to low' }] })
         + '<div id="heartopia_in_content" class="my-6 text-center"></div><section><h2 class="font-display text-2xl font-bold mb-1">Crop records</h2><p class="text-sm text-cozy-wood mb-4">Use the recipe list to decide what to plant before your next cooking session.</p><div data-empty-state class="hidden bg-white border border-cozy-peach p-5 text-cozy-wood">No crops match these filters.</div><div data-record-list class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">' + cards + '</div></section>'
@@ -303,7 +316,7 @@ export function buildRelationalDatabases({ only = ['items', 'ingredients', 'crop
     const recipeSource = readJson('data/heartopia-recipes.json');
     if (requested.has('items')) buildItems();
     if (requested.has('ingredients')) buildIngredients(recipeSource.recipes, recipeSource.generatedAt);
-    if (requested.has('crops')) buildCrops();
+    if (requested.has('crops')) buildCrops(recipeSource.recipes);
     if (requested.has('collectibles')) buildCollectibles();
     console.log(`Built relational database pages: ${Array.from(requested).join(', ')}.`);
 }

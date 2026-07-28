@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-13",
-  "count": 17,
+  "generatedAt": "2026-07-28",
+  "count": 18,
   "crops": [
     {
       "name": "Avocado",
@@ -10,8 +10,10 @@
       "growthTime": "13h",
       "growthMinutes": 780,
       "plantingWindow": "Long: 8 hours or more",
-      "recipeCount": 0,
-      "recipes": [],
+      "recipeCount": 1,
+      "recipes": [
+        "Crayfish Avocado Cup"
+      ],
       "image": "/img/crops/Avocado.webp"
     },
     {
@@ -25,10 +27,10 @@
       "recipeCount": 5,
       "recipes": [
         "Chocolate Sauce",
-        "Milkshake",
-        "Cocoa Milkshake",
         "Cocoa Milk Tea",
-        "Mellow Black Tea"
+        "Cocoa Milkshake",
+        "Mellow Black Tea",
+        "Milkshake"
       ],
       "image": "/img/crops/Cacao-Bean.webp"
     },
@@ -42,9 +44,9 @@
       "plantingWindow": "Medium: 2 to 6 hours",
       "recipeCount": 3,
       "recipes": [
+        "Carrot Cake",
         "House Salad",
-        "Smoked Fish Bagel",
-        "Carrot Cake"
+        "Smoked Fish Bagel"
       ],
       "image": "/img/crops/Carrot.webp"
     },
@@ -59,9 +61,9 @@
       "recipeCount": 4,
       "recipes": [
         "Caramel Popcorn Bucket",
-        "Savory Popcorn Bucket",
+        "Corn Soup",
         "House Salad",
-        "Corn Soup"
+        "Savory Popcorn Bucket"
       ],
       "image": "/img/crops/Corn.webp"
     },
@@ -75,9 +77,9 @@
       "plantingWindow": "Medium: 2 to 6 hours",
       "recipeCount": 3,
       "recipes": [
+        "Baked Eggplant w/ Meat",
         "House Salad",
-        "Smoked Fish Bagel",
-        "Baked Eggplant w/ Meat"
+        "Smoked Fish Bagel"
       ],
       "image": "/img/crops/Eggplant.webp"
     },
@@ -91,21 +93,21 @@
       "plantingWindow": "Long: 8 hours or more",
       "recipeCount": 15,
       "recipes": [
-        "Rainbow Heart",
-        "Rainbow Spark",
+        "Afternoon Tea",
         "Brick Bowl Fruit Shaved Ice",
         "Brick Bowl Grape Shaved Ice",
-        "Purple Egg",
+        "Fruit Verbena Pie",
         "Grape Jam",
+        "Grape Milkshake",
+        "Grape Verbena Pie",
+        "Milkshake",
         "Mixed Jam",
         "Original Frosted Pancake",
-        "Fruit Verbena Pie",
-        "Grape Verbena Pie",
-        "Springday Grape Black Tea",
+        "Purple Egg",
+        "Rainbow Heart",
+        "Rainbow Spark",
         "Springday Fruit Black Tea",
-        "Afternoon Tea",
-        "Milkshake",
-        "Grape Milkshake"
+        "Springday Grape Black Tea"
       ],
       "image": "/img/crops/Grape.webp"
     },
@@ -119,14 +121,14 @@
       "plantingWindow": "Quick: up to 1 hour",
       "recipeCount": 8,
       "recipes": [
-        "Blueberry Verbena Pie",
-        "Raspberry Verbena Pie",
-        "Strawberry Verbena Pie",
-        "Fruit Verbena Pie",
-        "Mandarin Verbena Pie",
         "Apple Verbena Pie",
+        "Blueberry Verbena Pie",
+        "Fruit Verbena Pie",
+        "Grape Verbena Pie",
+        "Mandarin Verbena Pie",
         "Pineapple Verbena Pie",
-        "Grape Verbena Pie"
+        "Raspberry Verbena Pie",
+        "Strawberry Verbena Pie"
       ],
       "image": "/img/crops/Lemon-Verbena.webp"
     },
@@ -140,13 +142,13 @@
       "plantingWindow": "Long: 8 hours or more",
       "recipeCount": 7,
       "recipes": [
-        "House Salad",
-        "Green Egg",
-        "Smoked Fish Bagel",
-        "Rustic Ratatouille",
-        "Meat Burger",
+        "Blue European Crayfish Sashimi",
         "Crayfish Sashimi",
-        "Blue European Crayfish Sashimi"
+        "Green Egg",
+        "House Salad",
+        "Meat Burger",
+        "Rustic Ratatouille",
+        "Smoked Fish Bagel"
       ],
       "image": "/img/crops/Lettuce.webp"
     },
@@ -161,11 +163,11 @@
       "recipeCount": 7,
       "recipes": [
         "Glasswort & Shrimp Fried Rice",
-        "Pillow-Shaped Red Bean Zongzi",
-        "Pillow-Shaped Plain Rice Zongzi",
         "Pillow-Shaped Egg Yolk & Pork Zongzi",
-        "Triangle Plain Rice Zongzi",
+        "Pillow-Shaped Plain Rice Zongzi",
+        "Pillow-Shaped Red Bean Zongzi",
         "Triangle Egg Yolk & Pork Zongzi",
+        "Triangle Plain Rice Zongzi",
         "Triangle Red Bean Zongzi"
       ],
       "image": "/img/crops/Paddy.webp"
@@ -180,20 +182,20 @@
       "plantingWindow": "Quick: up to 1 hour",
       "recipeCount": 14,
       "recipes": [
-        "Rainbow Heart",
-        "Rainbow Spark",
+        "Afternoon Tea",
         "Brick Bowl Fruit Shaved Ice",
         "Brick Bowl Pineapple Shaved Ice",
-        "Pineapple Jam",
+        "Fruit Verbena Pie",
+        "Milkshake",
         "Mixed Jam",
         "Original Frosted Pancake",
-        "Fruit Verbena Pie",
+        "Pineapple Jam",
+        "Pineapple Milkshake",
         "Pineapple Verbena Pie",
-        "Springday Pineapple Black Tea",
+        "Rainbow Heart",
+        "Rainbow Spark",
         "Springday Fruit Black Tea",
-        "Afternoon Tea",
-        "Milkshake",
-        "Pineapple Milkshake"
+        "Springday Pineapple Black Tea"
       ],
       "image": "/img/crops/Pineapple.webp"
     },
@@ -207,11 +209,11 @@
       "plantingWindow": "Quick: up to 1 hour",
       "recipeCount": 5,
       "recipes": [
-        "House Salad",
-        "Salsa Wavy Potato Chips",
-        "Smoked Fish Bagel",
         "Fish and Chips",
-        "Rustic Ratatouille"
+        "House Salad",
+        "Rustic Ratatouille",
+        "Salsa Wavy Potato Chips",
+        "Smoked Fish Bagel"
       ],
       "image": "/img/crops/Potatoes.webp"
     },
@@ -230,6 +232,22 @@
       "image": "/img/crops/Romaine-Lettuce.webp"
     },
     {
+      "name": "Starfruit",
+      "id": "starfruit",
+      "type": "Call of Whales",
+      "seedPrice": 10,
+      "growthTime": "15m",
+      "growthMinutes": 15,
+      "plantingWindow": "Quick: up to 1 hour",
+      "recipeCount": 3,
+      "recipes": [
+        "Ocean Iced Drink",
+        "Starfruit Jam",
+        "Starfruit Pearl Cake"
+      ],
+      "image": "/img/crops/Starfruit.webp"
+    },
+    {
       "name": "Strawberry",
       "id": "strawberry",
       "type": "Fruit",
@@ -239,21 +257,21 @@
       "plantingWindow": "Medium: 2 to 6 hours",
       "recipeCount": 15,
       "recipes": [
-        "Maltese Canelé",
-        "Rainbow Heart",
-        "Rainbow Spark",
-        "Brick Bowl Strawberry Shaved Ice",
+        "Afternoon Tea",
         "Brick Bowl Fruit Shaved Ice",
-        "Strawberry Jam",
+        "Brick Bowl Strawberry Shaved Ice",
+        "Fruit Verbena Pie",
+        "Maltese Canelé",
+        "Milkshake",
         "Mixed Jam",
         "Original Frosted Pancake",
-        "Strawberry Verbena Pie",
-        "Fruit Verbena Pie",
-        "Springday Strawberry Black Tea",
+        "Rainbow Heart",
+        "Rainbow Spark",
         "Springday Fruit Black Tea",
-        "Afternoon Tea",
-        "Milkshake",
-        "Strawberry Milkshake"
+        "Springday Strawberry Black Tea",
+        "Strawberry Jam",
+        "Strawberry Milkshake",
+        "Strawberry Verbena Pie"
       ],
       "image": "/img/crops/Strawberry.webp"
     },
@@ -267,10 +285,10 @@
       "plantingWindow": "Quick: up to 1 hour",
       "recipeCount": 5,
       "recipes": [
+        "Daisy Tea",
+        "Green Milk Tea",
         "Green Tea",
         "Matcha Green Milk Tea",
-        "Green Milk Tea",
-        "Daisy Tea",
         "Rose Tea"
       ],
       "image": "/img/crops/Tea-Leaf.webp"
@@ -285,15 +303,15 @@
       "plantingWindow": "Quick: up to 1 hour",
       "recipeCount": 9,
       "recipes": [
+        "Afternoon Tea",
         "House Salad",
+        "Meat Sauce Pasta",
         "Mixed Jam",
-        "Tomato Sauce",
-        "Tomato Seafood Soup",
-        "Smoked Fish Bagel",
         "Rustic Ratatouille",
         "Seafood Risotto",
-        "Meat Sauce Pasta",
-        "Afternoon Tea"
+        "Smoked Fish Bagel",
+        "Tomato Sauce",
+        "Tomato Seafood Soup"
       ],
       "image": "/img/crops/Tomato.webp"
     },
@@ -305,40 +323,43 @@
       "growthTime": "4h",
       "growthMinutes": 240,
       "plantingWindow": "Medium: 2 to 6 hours",
-      "recipeCount": 32,
+      "recipeCount": 35,
       "recipes": [
-        "Retriever Canelé",
-        "Maltese Canelé",
-        "House Salad",
-        "Brick Penny Bun Patty Burger",
+        "Apple Pearl Cake",
+        "Apple Pie",
+        "Black Truffle Cream Pasta",
+        "Black Truffle Pie",
+        "Blueberry Pearl Cake",
+        "Brick Black Truffle Patty Burger",
         "Brick Button Mushroom Patty Burger",
         "Brick Mushroom Patty Burger",
         "Brick Oyster Mushroom Patty Burger",
+        "Brick Penny Bun Patty Burger",
         "Brick Shiitake Patty Burger",
-        "Brick Black Truffle Patty Burger",
-        "Penny Bun Pie",
         "Button Mushroom Pie",
-        "Grass Cake",
-        "Mushroom Pie",
-        "Oyster Mushroom Pie",
-        "Shiitake Pie",
-        "Black Truffle Pie",
-        "Blueberry Pearl Cake",
-        "Seashell Pearl Cake",
-        "Starfruit Pearl Cake",
-        "Raspberry Pearl Cake",
-        "Apple Pearl Cake",
-        "Mandarin Pearl Cake",
-        "Tomato Seafood Soup",
-        "Smoked Fish Bagel",
-        "Cheese Cake",
-        "Black Truffle Cream Pasta",
-        "Seafood Risotto",
-        "Meat Sauce Pasta",
-        "Seafood Pizza",
         "Carrot Cake",
-        "Apple Pie",
-        "Meat Burger"
+        "Cheese Cake",
+        "Cinnamoroll Crepe",
+        "Grass Cake",
+        "House Salad",
+        "Kuromi Crepe",
+        "Maltese Canelé",
+        "Mandarin Pearl Cake",
+        "Meat Burger",
+        "Meat Sauce Pasta",
+        "Mushroom Pie",
+        "My Melody Crepe",
+        "Oyster Mushroom Pie",
+        "Penny Bun Pie",
+        "Raspberry Pearl Cake",
+        "Retriever Canelé",
+        "Seafood Pizza",
+        "Seafood Risotto",
+        "Seashell Pearl Cake",
+        "Shiitake Pie",
+        "Smoked Fish Bagel",
+        "Starfruit Pearl Cake",
+        "Tomato Seafood Soup"
       ],
       "image": "/img/crops/Wheat.webp"
     },
@@ -352,10 +373,10 @@
       "plantingWindow": "Quick: up to 1 hour",
       "recipeCount": 4,
       "recipes": [
-        "Steak w/ Mashed White Radish",
         "Creamy White Radish Soup",
         "House Salad",
-        "Smoked Fish Bagel"
+        "Smoked Fish Bagel",
+        "Steak w/ Mashed White Radish"
       ],
       "image": "/img/crops/White-Radish.webp"
     }

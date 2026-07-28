@@ -1,9 +1,11 @@
-name: Monthly Delayed Collection Sync
+name: Weekly Verified Database Sync
 
 on:
   schedule:
-    # Run once a month at 09:30 China Standard Time.
-    - cron: '30 1 15 * *'
+    # Verify factual details every Sunday at 09:30 China Standard Time.
+    - cron: '30 1 * * 0'
+    # Run an additional full reconciliation on the 15th at 09:50.
+    - cron: '50 1 15 * *'
   workflow_dispatch:
 
 permissions:
@@ -55,9 +57,6 @@ jobs:
       - name: Sync Wildlife details and database
         run: node scripts/sync-heartodex-wildlife.mjs
 
-      - name: Sync Crop details and planning pages
-        run: node scripts/sync-heartodex-crops.mjs
-
       - name: Sync Flowers database and images
         run: node scripts/sync-heartodex-flowers.mjs
 
@@ -66,6 +65,9 @@ jobs:
 
       - name: Sync Recipe details, prices, and tools
         run: node scripts/sync-heartodex-recipes.mjs
+
+      - name: Sync Crop details and planning pages
+        run: node scripts/sync-heartodex-crops.mjs
 
       - name: Build relational database hubs
         run: node scripts/build-relational-databases.mjs
@@ -76,8 +78,6 @@ jobs:
       - name: Build Achievement support pages
         run: node scripts/build-achievement-derived-pages.mjs
 
-      - name: Sync Heartopia event facts
-        run: node scripts/sync-heartodex-events.mjs
 
       - name: Refresh database and progress hub totals
         run: node scripts/sync-heartopia-hubs.mjs
@@ -118,6 +118,15 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html database/index.html database/changelog/index.html data/database-changelog.json data/heartopia-hub-totals.json data/heartopia-search-index.json database/fish database/birds database/insects/index.html database/wildlife database/materials database/crops/index.html database/flowers/index.html database/recipes/index.html database/ingredients/index.html database/items/index.html database/collectibles/index.html npcs/index.html guides/best-crops/index.html guides/flower-crossbreeding/index.html tools/crop-planner/index.html tools/fish-tracker/index.html hobbies/gardening/index.html database/recipe-prices/index.html guides/best-food-to-sell/index.html tools/recipe-calculator/index.html guides/achievements/index.html guides/badges/index.html guides/hidden-achievements/index.html data/heartopia-fish.json data/heartopia-birds.json data/heartopia-insects.json data/heartopia-wildlife.json data/heartopia-crops.json data/heartopia-flowers.json data/heartopia-recipes.json data/heartopia-achievements.json data/heartopia-events.json img/fish img/birds img/insects img/wildlife img/crops img/flowers img/recipes img/achievements assets/js/fish-tracker.js assets/js/my-progress-dashboard.js assets/js/my-progress-assistant.js assets/js/progress-catalog.js assets/js/database-search-query.js assets/js/universal-search.js assets/js/map-entity-links.js assets/js/map-location-finder.js assets/js/relational-database.js scripts/achievement-objectives.mjs scripts/apply-achievement-objectives.mjs scripts/sync-runtime.mjs scripts/build-birds-data.mjs scripts/refresh-fish-tracker.mjs scripts/add-map-entity-links.mjs scripts/build-achievement-derived-pages.mjs scripts/version-local-assets.mjs scripts/audit-auto-sync.mjs scripts/audit-sync-field-policy.mjs scripts/sync-field-policy.mjs scripts/build-database-changelog.mjs scripts/build-sitemap.mjs scripts/build-relational-databases.mjs scripts/build-items-page.mjs scripts/build-ingredients-page.mjs scripts/build-collectibles-page.mjs scripts/sync-heartodex-crops.mjs guides/map/index.html tools/my-progress/index.html tools/search/index.html guides/fishing-locations/index.html guides/fishing-spots/index.html guides/rare-fish/index.html guides/fish-locations/index.html database/fish-prices/index.html events/index.html events/*/index.html sitemap.xml
+          git add index.html database/index.html database/changelog/index.html data/database-changelog.json data/heartopia-hub-totals.json data/heartopia-search-index.json database/fish database/birds database/insects/index.html database/wildlife database/materials database/crops/index.html database/flowers/index.html database/recipes/index.html database/ingredients/index.html database/items/index.html database/collectibles/index.html npcs/index.html guides/best-crops/index.html guides/flower-crossbreeding/index.html tools/crop-planner/index.html tools/fish-tracker/index.html hobbies/gardening/index.html database/recipe-prices/index.html guides/best-food-to-sell/index.html tools/recipe-calculator/index.html guides/achievements/index.html guides/badges/index.html guides/hidden-achievements/index.html data/heartopia-fish.json data/heartopia-birds.json data/heartopia-insects.json data/heartopia-wildlife.json data/heartopia-crops.json data/heartopia-flowers.json data/heartopia-recipes.json data/heartopia-achievements.json img/fish img/birds img/insects img/wildlife img/crops img/flowers img/recipes img/achievements assets/js/fish-tracker.js assets/js/my-progress-dashboard.js assets/js/my-progress-assistant.js assets/js/progress-catalog.js assets/js/database-search-query.js assets/js/universal-search.js assets/js/map-entity-links.js assets/js/map-location-finder.js assets/js/relational-database.js scripts/achievement-objectives.mjs scripts/apply-achievement-objectives.mjs scripts/sync-runtime.mjs scripts/build-birds-data.mjs scripts/refresh-fish-tracker.mjs scripts/add-map-entity-links.mjs scripts/build-achievement-derived-pages.mjs scripts/version-local-assets.mjs scripts/audit-auto-sync.mjs scripts/audit-sync-field-policy.mjs scripts/sync-field-policy.mjs scripts/build-database-changelog.mjs scripts/build-sitemap.mjs scripts/build-relational-databases.mjs scripts/build-items-page.mjs scripts/build-ingredients-page.mjs scripts/build-collectibles-page.mjs scripts/sync-heartodex-crops.mjs guides/map/index.html tools/my-progress/index.html tools/search/index.html guides/fishing-locations/index.html guides/fishing-spots/index.html guides/rare-fish/index.html guides/fish-locations/index.html database/fish-prices/index.html sitemap.xml
           git commit -m "chore: auto-sync Heartopia reference data"
           git push
+      - name: Send verified sync failure Gmail alert
+        if: failure()
+        env:
+          GMAIL_USERNAME: ${{ secrets.GMAIL_USERNAME }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          DATABASE_ALERT_EMAIL: ${{ secrets.DATABASE_ALERT_EMAIL }}
+          EVENT_ALERT_EMAIL: ${{ secrets.EVENT_ALERT_EMAIL }}
+          PATCH_ALERT_EMAIL: ${{ secrets.PATCH_ALERT_EMAIL }}
+        run: python scripts/send_database_discovery_alert.py failure

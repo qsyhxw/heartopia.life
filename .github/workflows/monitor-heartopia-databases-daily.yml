@@ -1,0 +1,133 @@
+name: Daily Heartopia Database Discovery
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/monitor-heartopia-databases-daily.yml'
+      - 'scripts/discover-heartopia-database-changes.mjs'
+      - 'scripts/send_database_discovery_alert.py'
+  schedule:
+    # Run every day at 08:40 China Standard Time.
+    - cron: '40 0 * * *'
+  workflow_dispatch:
+    inputs:
+      send_test_email:
+        description: Send a Gmail configuration test
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  actions: read
+  contents: read
+
+concurrency:
+  group: heartopia-database-discovery
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+
+      - name: Prepare private discovery runtime
+        shell: bash
+        run: |
+          echo "HEARTOPIA_SYNC_DIR=$RUNNER_TEMP/heartopia-discovery" >> "$GITHUB_ENV"
+          mkdir -p "$RUNNER_TEMP/heartopia-discovery"
+
+      - name: Restore latest private discovery baseline
+        id: baseline
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          artifact_id="$(gh api "repos/$GITHUB_REPOSITORY/actions/artifacts?name=heartopia-database-discovery-baseline&per_page=20" \
+            --jq '.artifacts | map(select(.expired == false)) | sort_by(.created_at) | reverse | .[0].id // empty')"
+          if [ -z "$artifact_id" ]; then
+            echo "No previous private baseline found."
+            exit 0
+          fi
+          gh api "repos/$GITHUB_REPOSITORY/actions/artifacts/$artifact_id/zip" > "$RUNNER_TEMP/discovery-baseline.zip"
+          unzip -q "$RUNNER_TEMP/discovery-baseline.zip" -d "$HEARTOPIA_SYNC_DIR/restored"
+          baseline="$(find "$HEARTOPIA_SYNC_DIR/restored" -name database-discovery-snapshot.json -print -quit)"
+          if [ -n "$baseline" ]; then
+            cp "$baseline" "$HEARTOPIA_SYNC_DIR/database-discovery-before.json"
+            echo "restored=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check collection listings
+        id: discovery
+        run: node scripts/discover-heartopia-database-changes.mjs
+
+      - name: Save private discovery baseline
+        if: always() && steps.discovery.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with:
+          name: heartopia-database-discovery-baseline
+          path: ${{ env.HEARTOPIA_SYNC_DIR }}/database-discovery-snapshot.json
+          retention-days: 35
+          if-no-files-found: error
+
+      - name: Save private discovery report
+        if: always() && steps.discovery.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with:
+          name: heartopia-database-discovery-report-${{ github.run_id }}
+          path: ${{ env.HEARTOPIA_SYNC_DIR }}/database-discovery-report.json
+          retention-days: 14
+          if-no-files-found: error
+
+      - name: Send database change Gmail alert
+        if: steps.discovery.outputs.has_changes == 'true' || steps.discovery.outputs.has_warnings == 'true'
+        env:
+          GMAIL_USERNAME: ${{ secrets.GMAIL_USERNAME }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          DATABASE_ALERT_EMAIL: ${{ secrets.DATABASE_ALERT_EMAIL }}
+          EVENT_ALERT_EMAIL: ${{ secrets.EVENT_ALERT_EMAIL }}
+          PATCH_ALERT_EMAIL: ${{ secrets.PATCH_ALERT_EMAIL }}
+          DATABASE_DISCOVERY_REPORT: ${{ steps.discovery.outputs.report_file }}
+        run: python scripts/send_database_discovery_alert.py update
+
+      - name: Send Gmail configuration test
+        if: github.event_name == 'workflow_dispatch' && inputs.send_test_email
+        env:
+          GMAIL_USERNAME: ${{ secrets.GMAIL_USERNAME }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          DATABASE_ALERT_EMAIL: ${{ secrets.DATABASE_ALERT_EMAIL }}
+          EVENT_ALERT_EMAIL: ${{ secrets.EVENT_ALERT_EMAIL }}
+          PATCH_ALERT_EMAIL: ${{ secrets.PATCH_ALERT_EMAIL }}
+        run: python scripts/send_database_discovery_alert.py test
+
+      - name: Add discovery summary
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo "## Daily Heartopia Database Discovery"
+            echo ""
+            echo "- Collections checked: ${{ steps.discovery.outputs.checked_count || '0' }}"
+            echo "- Listing changes: ${{ steps.discovery.outputs.change_count || '0' }}"
+            echo "- Warnings: ${{ steps.discovery.outputs.warning_count || '0' }}"
+            echo "- Previous baseline restored: ${{ steps.baseline.outputs.restored || 'false' }}"
+            echo "- Website files changed: no"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Send workflow failure Gmail alert
+        if: failure()
+        env:
+          GMAIL_USERNAME: ${{ secrets.GMAIL_USERNAME }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          DATABASE_ALERT_EMAIL: ${{ secrets.DATABASE_ALERT_EMAIL }}
+          EVENT_ALERT_EMAIL: ${{ secrets.EVENT_ALERT_EMAIL }}
+          PATCH_ALERT_EMAIL: ${{ secrets.PATCH_ALERT_EMAIL }}
+        run: python scripts/send_database_discovery_alert.py failure

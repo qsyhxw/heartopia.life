@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-13",
-  "count": 168,
+  "generatedAt": "2026-07-28",
+  "count": 173,
   "recipes": [
     {
       "name": "Afternoon Tea",
@@ -1195,6 +1195,25 @@
       "eventTokens": []
     },
     {
+      "name": "Cheese Crayfish Stuffed Crab Claws",
+      "level": 13,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/cheese-crayfish-stuffed-crab-claws.webp",
+      "slug": "cheese-crayfish-stuffed-crab-claws",
+      "ingredients": [],
+      "market": [
+        1440,
+        2160,
+        2880,
+        5760
+      ],
+      "energy": [
+        80
+      ],
+      "eventTokens": []
+    },
+    {
       "name": "Chocolate Sauce",
       "level": 1,
       "category": "Base Game",
@@ -1219,6 +1238,40 @@
         112,
         128
       ],
+      "eventTokens": []
+    },
+    {
+      "name": "Cinnamoroll Crepe",
+      "level": 1,
+      "category": "SANRIO CHARACTERS",
+      "availability": "Active Event",
+      "image": "/img/recipes/cinnamoroll-crepe.webp",
+      "slug": "cinnamoroll-crepe",
+      "ingredients": [
+        {
+          "name": "Wheat",
+          "amount": 1
+        },
+        {
+          "name": "Butter",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Coffee Beans",
+          "amount": 1
+        }
+      ],
+      "market": [
+        670,
+        1005,
+        1340,
+        2680
+      ],
+      "energy": [],
       "eventTokens": []
     },
     {
@@ -1411,6 +1464,30 @@
         96,
         112,
         128
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Crayfish Avocado Cup",
+      "level": 13,
+      "category": "Base Game",
+      "availability": "Permanent",
+      "image": "/img/recipes/crayfish-avocado-cup.webp",
+      "slug": "crayfish-avocado-cup",
+      "ingredients": [
+        {
+          "name": "Avocado",
+          "amount": 2
+        }
+      ],
+      "market": [
+        1560,
+        2340,
+        3120,
+        6240
+      ],
+      "energy": [
+        96
       ],
       "eventTokens": []
     },
@@ -2197,11 +2274,11 @@
       "slug": "grilled-squid-w-strawberry-jam",
       "ingredients": [
         {
-          "name": "Japanese Flying Squid",
+          "name": "Wakame",
           "amount": 1
         },
         {
-          "name": "Wakame",
+          "name": "Japanese Flying Squid",
           "amount": 1
         },
         {
@@ -2365,6 +2442,42 @@
         58,
         67,
         77
+      ],
+      "eventTokens": []
+    },
+    {
+      "name": "Kuromi Crepe",
+      "level": 1,
+      "category": "SANRIO CHARACTERS",
+      "availability": "Active Event",
+      "image": "/img/recipes/kuromi-crepe.webp",
+      "slug": "kuromi-crepe",
+      "ingredients": [
+        {
+          "name": "Butter",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Wheat",
+          "amount": 1
+        },
+        {
+          "name": "Raspberry",
+          "amount": 1
+        }
+      ],
+      "market": [
+        670,
+        1005,
+        1340,
+        2680
+      ],
+      "energy": [
+        80
       ],
       "eventTokens": []
     },
@@ -2845,6 +2958,40 @@
         49,
         56
       ],
+      "eventTokens": []
+    },
+    {
+      "name": "My Melody Crepe",
+      "level": 1,
+      "category": "SANRIO CHARACTERS",
+      "availability": "Active Event",
+      "image": "/img/recipes/my-melody-crepe.webp",
+      "slug": "my-melody-crepe",
+      "ingredients": [
+        {
+          "name": "Wheat",
+          "amount": 1
+        },
+        {
+          "name": "Egg",
+          "amount": 1
+        },
+        {
+          "name": "Butter",
+          "amount": 1
+        },
+        {
+          "name": "Milk",
+          "amount": 1
+        }
+      ],
+      "market": [
+        670,
+        1005,
+        1340,
+        2680
+      ],
+      "energy": [],
       "eventTokens": []
     },
     {
