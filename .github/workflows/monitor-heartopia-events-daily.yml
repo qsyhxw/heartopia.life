@@ -1,6 +1,13 @@
 name: Daily Heartopia Event Monitor
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/monitor-heartopia-events-daily.yml'
+      - 'scripts/sync-heartodex-events.mjs'
+      - 'scripts/detect-heartopia-event-changes.mjs'
+      - 'scripts/send_event_alert.py'
   schedule:
     # Run every day at 09:10 China Standard Time.
     - cron: '10 1 * * *'
