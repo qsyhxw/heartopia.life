@@ -4,8 +4,12 @@ import { pickRemoteFields } from './sync-field-policy.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const today = new Date().toISOString().slice(0, 10);
+const currentEventDataFile = path.join(root, 'data', 'heartopia-events.json');
+const currentEventData = fs.existsSync(currentEventDataFile)
+  ? JSON.parse(fs.readFileSync(currentEventDataFile, 'utf8'))
+  : { generatedAt: today, events: [] };
 const base = 'https://www.heartodex.com';
-const aliases = {'call-of-whales':'call-of-whales','my-little-pony':'my-little-pony-collaboration','winter-frost-season':'winter-2026'};
+const aliases = {'call-of-whales':'call-of-whales','my-little-pony':'my-little-pony-collaboration','winter-frost-season':'winter-2026','sanrio-characters':'sanrio-characters-collaboration'};
 const manual = [
   {slug:'sanrio-characters-collaboration',name:'Heartopia x SANRIO CHARACTERS',status:'upcoming',date:'July 17, 2026',type:'Collaboration',local:'sanrio-characters-collaboration'},
   {slug:'frostspore-butterflies',name:'Frostspore Butterflies',status:'archive',date:'January 24 - March 14, 2026',type:'Winter Frost Season insects',local:'frostspore-butterflies'}
@@ -51,8 +55,8 @@ async function enrich(e) {
 function merge(remote) {
   const all = [...remote];
   for (const item of manual) {
-    const found = all.find((event) => event.slug === item.slug || slug(event.name).replace(/^heartopia-/, '') === slug(item.name).replace(/^heartopia-/, ''));
-    if (found) Object.assign(found, {...item, ...found, local: item.local || found.local});
+    const found = all.find((event) => route(event) === (item.local || item.slug) || event.slug === item.slug || slug(event.name).replace(/^heartopia-/, '') === slug(item.name).replace(/^heartopia-/, ''));
+    if (found) Object.assign(found, {...item, ...found, name: item.name || found.name, type: found.type || item.type || '', local: item.local || found.local});
     else all.push({...item, sourceUrl: '', startDate: item.startDate || '', endDate: item.endDate || ''});
   }
   return all;
@@ -64,10 +68,12 @@ function syncCustomEventStatus(e) {
   if (!current.includes('data-sync-event-status') || current.includes('data-event-sync="managed"')) return;
   const visible = e.status === 'archive' ? 'Archived event' : e.status === 'upcoming' ? 'Upcoming event' : 'Active event';
   const schemaStatus = e.status === 'archive' ? 'EventCompleted' : 'EventScheduled';
-  const next = current
+  const statusUpdated = current
     .replace(/(<[^>]+data-sync-event-status[^>]*>)[^<]*(<\/[^>]+>)/, `$1${visible}$2`)
-    .replace(/"eventStatus":"https:\/\/schema\.org\/(?:EventScheduled|EventCompleted)"/, `"eventStatus":"https://schema.org/${schemaStatus}"`)
-    .replace(/"dateModified":"\d{4}-\d{2}-\d{2}"/, `"dateModified":"${today}"`);
+    .replace(/"eventStatus":"https:\/\/schema\.org\/(?:EventScheduled|EventCompleted)"/, `"eventStatus":"https://schema.org/${schemaStatus}"`);
+  const next = statusUpdated === current
+    ? current
+    : statusUpdated.replace(/"dateModified":"\d{4}-\d{2}-\d{2}"/, `"dateModified":"${today}"`);
   if (next !== current) write(file(e), next);
 }
 function head(title,description,url,schema,body) {
@@ -80,10 +86,10 @@ const paidRelevant = e => /shop|pack|diamond|membership|fashionwave|collaboratio
 const paidCta = e => paidRelevant(e) ? `<section class="mx-auto max-w-6xl px-5 pb-12"><div class="card flex flex-col gap-5 border-amber-200 bg-amber-50 p-6 md:flex-row md:items-center md:justify-between"><div><p class="text-xs font-black uppercase text-amber-800">Optional paid content</p><h2 class="mt-2 text-2xl font-bold">Comparing event packs or Heart Diamonds?</h2><p class="mt-2 max-w-2xl text-sm leading-6 text-[#735f4d]">If this event includes paid items, compare payment routes and confirm your account, region, server, product, and checkout total first.</p></div><a class="link shrink-0" href="/guides/top-up/">Compare top-up options</a></div></section>` : '';
 
 function card(e) { const body=`<div class="p-5"><span class="inline-flex rounded-full px-2.5 py-1 text-xs font-bold ${classes(e.status)}">${label(e.status)}</span><h3 class="mt-3 text-xl font-bold">${esc(e.name)}</h3><p class="mt-2 text-sm text-[#735f4d]">${esc(period(e))}</p>${e.type?`<p class="mt-2 text-sm text-[#735f4d]">${esc(e.type)}</p>`:''}</div>`; return exists(e)?`<a class="card hover:shadow-md" href="/events/${route(e)}/">${body}</a>`:`<article class="card">${body}</article>`; }
-function rootPage(events) {
+function rootPage(events, updatedAt) {
   const group=s=>events.filter(e=>e.status===s), list=(s,empty)=>group(s).length?group(s).map(card).join(''):`<article class="card p-5 text-sm text-[#735f4d]">${empty}</article>`;
-  const body=`${nav('')}<main><section class="border-b border-[#eaded2] bg-[#fff4f3]"><div class="mx-auto max-w-6xl px-5 py-14"><p class="text-xs font-black uppercase text-[#bd506b]">Heartopia event calendar</p><h1 class="mt-3 text-4xl font-bold md:text-5xl">Heartopia Events</h1><p class="mt-4 max-w-3xl text-lg text-[#735f4d]">Current events, announced collaborations, permanent activities, and a clear archive of older event windows.</p><p class="mt-5 text-sm font-bold text-[#735f4d]">Updated: ${today}</p></div></section><section class="mx-auto max-w-6xl px-5 py-12"><p class="text-xs font-black uppercase text-emerald-700">Active now</p><h2 class="mt-2 text-3xl font-bold">Play now</h2><div class="mt-5 grid gap-5 md:grid-cols-2">${list('active','No active event is listed right now.')}</div><div id="heartopia_in_content" class="my-8"></div></section><section class="border-y border-[#e0eaf2] bg-[#f5f9ff]"><div class="mx-auto max-w-6xl px-5 py-12"><p class="text-xs font-black uppercase text-sky-700">Upcoming</p><h2 class="mt-2 text-3xl font-bold">Next on the calendar</h2><div class="mt-5 grid gap-5 md:grid-cols-2">${list('upcoming','No upcoming event is currently listed.')}</div></div></section><section class="mx-auto max-w-6xl px-5 py-12"><p class="text-xs font-black uppercase text-amber-700">Permanent activities</p><div class="mt-5 grid gap-5 md:grid-cols-3"><a class="card p-5" href="/events/sea-fishing/">Sea Fishing</a><a class="card p-5" href="/events/bait-insects/">Bait the Insects</a><a class="card p-5" href="/events/nest-of-hundreds/">Nest of Hundreds</a></div></section><section class="border-t border-[#eaded2] bg-[#fff6ef]"><div class="mx-auto max-w-6xl px-5 py-12"><p class="text-xs font-black uppercase text-stone-600">Archive</p><h2 class="mt-2 text-3xl font-bold">Ended events</h2><div class="mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-4">${list('archive','No archived events recorded yet.')}</div><div id="heartopia_in_content_2" class="my-8"></div></div></section></main>${footer('')}`;
-  return head('Heartopia Events: Active, Upcoming & Past Events','Check Heartopia events by active, upcoming, archive, and permanent activity status.','https://heartopia.life/events/',{'@context':'https://schema.org','@type':'CollectionPage',name:'Heartopia Events',dateModified:today},body);
+  const body=`${nav('')}<main><section class="border-b border-[#eaded2] bg-[#fff4f3]"><div class="mx-auto max-w-6xl px-5 py-14"><p class="text-xs font-black uppercase text-[#bd506b]">Heartopia event calendar</p><h1 class="mt-3 text-4xl font-bold md:text-5xl">Heartopia Events</h1><p class="mt-4 max-w-3xl text-lg text-[#735f4d]">Current events, announced collaborations, permanent activities, and a clear archive of older event windows.</p><p class="mt-5 text-sm font-bold text-[#735f4d]">Updated: ${updatedAt}</p></div></section><section class="mx-auto max-w-6xl px-5 py-12"><p class="text-xs font-black uppercase text-emerald-700">Active now</p><h2 class="mt-2 text-3xl font-bold">Play now</h2><div class="mt-5 grid gap-5 md:grid-cols-2">${list('active','No active event is listed right now.')}</div><div id="heartopia_in_content" class="my-8"></div></section><section class="border-y border-[#e0eaf2] bg-[#f5f9ff]"><div class="mx-auto max-w-6xl px-5 py-12"><p class="text-xs font-black uppercase text-sky-700">Upcoming</p><h2 class="mt-2 text-3xl font-bold">Next on the calendar</h2><div class="mt-5 grid gap-5 md:grid-cols-2">${list('upcoming','No upcoming event is currently listed.')}</div></div></section><section class="mx-auto max-w-6xl px-5 py-12"><p class="text-xs font-black uppercase text-amber-700">Permanent activities</p><div class="mt-5 grid gap-5 md:grid-cols-3"><a class="card p-5" href="/events/sea-fishing/">Sea Fishing</a><a class="card p-5" href="/events/bait-insects/">Bait the Insects</a><a class="card p-5" href="/events/nest-of-hundreds/">Nest of Hundreds</a></div></section><section class="border-t border-[#eaded2] bg-[#fff6ef]"><div class="mx-auto max-w-6xl px-5 py-12"><p class="text-xs font-black uppercase text-stone-600">Archive</p><h2 class="mt-2 text-3xl font-bold">Ended events</h2><div class="mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-4">${list('archive','No archived events recorded yet.')}</div><div id="heartopia_in_content_2" class="my-8"></div></div></section></main>${footer('')}`;
+  return head('Heartopia Events: Active, Upcoming & Past Events','Check Heartopia events by active, upcoming, archive, and permanent activity status.','https://heartopia.life/events/',{'@context':'https://schema.org','@type':'CollectionPage',name:'Heartopia Events',dateModified:updatedAt},body);
 }
 function detailPage(e) {
  const url='https://heartopia.life/events/'+route(e)+'/', desc='Heartopia '+e.name+' event page with schedule, type, status, and a local checklist.';
@@ -98,9 +104,22 @@ function updateSitemap(events) {
 const remote=parse(await get(base+'/en/events/'));
 if(!remote.length) throw Error('Event parse safety check failed: no event cards found.');
 const details=await Promise.all(remote.map(enrich)), events=merge(details);
-for(const e of events){const old=exists(e)?read(file(e)):'';if((e.status==='active'||e.status==='upcoming')&&(!old||old.includes('data-event-sync="managed"')))write(file(e),detailPage(e));else syncCustomEventStatus(e);}
-write('events/index.html',rootPage(events));
-updateSitemap(events);
+const previousByRoute = new Map((currentEventData.events || []).map(event => [event.localSlug || event.slug, event]));
+for (const event of events) {
+  const previous = previousByRoute.get(route(event));
+  if (previous) {
+    event.slug = previous.slug;
+    event.type = event.type || previous.type || '';
+    event.startDate = event.startDate || previous.startDate || '';
+    event.endDate = event.endDate || previous.endDate || '';
+    event.date = event.date || previous.dateLabel || '';
+  }
+}
 const publicEvents=events.map(e=>pickRemoteFields('events',{slug:e.slug,localSlug:route(e),name:e.name,status:e.status,type:e.type||'',startDate:e.startDate||'',endDate:e.endDate||'',dateLabel:e.date||''}));
-write('data/heartopia-events.json',JSON.stringify({schemaVersion:1,generatedAt:today,count:publicEvents.length,events:publicEvents},null,2)+'\n');
+const eventFactsChanged = JSON.stringify(publicEvents) !== JSON.stringify(currentEventData.events || []);
+const updatedAt = eventFactsChanged ? today : (currentEventData.generatedAt || today);
+for(const e of events){const old=exists(e)?read(file(e)):'';if((e.status==='active'||e.status==='upcoming')&&(!old||old.includes('data-event-sync="managed"')))write(file(e),detailPage(e));else syncCustomEventStatus(e);}
+write('events/index.html',rootPage(events, updatedAt));
+updateSitemap(events);
+write('data/heartopia-events.json',JSON.stringify({schemaVersion:1,generatedAt:updatedAt,count:publicEvents.length,events:publicEvents},null,2)+'\n');
 console.log('Synced '+events.length+' event listings.');

@@ -1,0 +1,125 @@
+name: Daily Heartopia Event Monitor
+
+on:
+  schedule:
+    # Run every day at 09:10 China Standard Time.
+    - cron: '10 1 * * *'
+  workflow_dispatch:
+    inputs:
+      send_test_email:
+        description: Send a Gmail configuration test even when no event changed
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: heartopia-derived-sync
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+
+      - name: Prepare private event baseline
+        shell: bash
+        run: |
+          echo "HEARTOPIA_SYNC_DIR=$RUNNER_TEMP/heartopia-sync" >> "$GITHUB_ENV"
+          mkdir -p "$RUNNER_TEMP/heartopia-sync"
+          cp data/heartopia-events.json "$RUNNER_TEMP/heartopia-sync/events-before.json"
+
+      - name: Read event facts and refresh basic pages
+        run: node scripts/sync-heartodex-events.mjs
+
+      - name: Detect new and changed events
+        id: changes
+        run: node scripts/detect-heartopia-event-changes.mjs --before "$HEARTOPIA_SYNC_DIR/events-before.json"
+
+      - name: Refresh database changelog
+        if: steps.changes.outputs.has_changes == 'true'
+        run: node scripts/build-database-changelog.mjs
+
+      - name: Refresh universal search index
+        if: steps.changes.outputs.has_changes == 'true'
+        run: node scripts/build-heartopia-search-index.mjs
+
+      - name: Enforce remote field whitelist
+        run: node scripts/audit-sync-field-policy.mjs
+
+      - name: Audit generated event pages
+        run: node scripts/audit-auto-sync.mjs
+
+      - name: Refresh XML sitemap
+        if: steps.changes.outputs.has_changes == 'true'
+        run: node scripts/build-sitemap.mjs
+
+      - name: Commit basic event update
+        id: commit
+        if: steps.changes.outputs.has_changes == 'true'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html database/index.html events data/heartopia-events.json data/database-changelog.json database/changelog/index.html data/heartopia-search-index.json assets/js/universal-search.js sitemap.xml
+          if git diff --cached --quiet; then
+            echo "No publishable event change detected."
+            echo "committed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "chore: update Heartopia event facts"
+          git push
+          echo "committed=true" >> "$GITHUB_OUTPUT"
+          echo "commit_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Send new event Gmail alert
+        if: steps.changes.outputs.new_count != '0'
+        env:
+          GMAIL_USERNAME: ${{ secrets.GMAIL_USERNAME }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          EVENT_ALERT_EMAIL: ${{ secrets.EVENT_ALERT_EMAIL }}
+          PATCH_ALERT_EMAIL: ${{ secrets.PATCH_ALERT_EMAIL }}
+          EVENT_ALERT_REPORT: ${{ steps.changes.outputs.report_file }}
+        run: python scripts/send_event_alert.py update
+
+      - name: Send Gmail configuration test
+        if: github.event_name == 'workflow_dispatch' && inputs.send_test_email
+        env:
+          GMAIL_USERNAME: ${{ secrets.GMAIL_USERNAME }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          EVENT_ALERT_EMAIL: ${{ secrets.EVENT_ALERT_EMAIL }}
+          PATCH_ALERT_EMAIL: ${{ secrets.PATCH_ALERT_EMAIL }}
+        run: python scripts/send_event_alert.py test
+
+      - name: Add event summary
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo "## Daily Heartopia Event Monitor"
+            echo ""
+            echo "- New events: ${{ steps.changes.outputs.new_count || '0' }}"
+            echo "- Changed events: ${{ steps.changes.outputs.changed_count || '0' }}"
+            echo "- Removed events: ${{ steps.changes.outputs.removed_count || '0' }}"
+            echo "- Published: ${{ steps.commit.outputs.committed || 'false' }}"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Send workflow failure Gmail alert
+        if: failure()
+        env:
+          GMAIL_USERNAME: ${{ secrets.GMAIL_USERNAME }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          EVENT_ALERT_EMAIL: ${{ secrets.EVENT_ALERT_EMAIL }}
+          PATCH_ALERT_EMAIL: ${{ secrets.PATCH_ALERT_EMAIL }}
+        run: python scripts/send_event_alert.py failure

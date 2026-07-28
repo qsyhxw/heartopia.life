@@ -1,8 +1,18 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-16",
-  "count": 10,
+  "generatedAt": "2026-07-28",
+  "count": 11,
   "events": [
+    {
+      "slug": "sanrio-characters-collaboration",
+      "localSlug": "sanrio-characters-collaboration",
+      "name": "Heartopia x SANRIO CHARACTERS",
+      "status": "active",
+      "type": "Collaboration",
+      "startDate": "July 17, 2026",
+      "endDate": "August 23, 2026",
+      "dateLabel": "Jul 17 → Aug 23, 2026"
+    },
     {
       "slug": "call-of-whales",
       "localSlug": "call-of-whales",
@@ -94,14 +104,14 @@
       "dateLabel": "Jan 24 – Mar 14"
     },
     {
-      "slug": "sanrio-characters-collaboration",
-      "localSlug": "sanrio-characters-collaboration",
-      "name": "Heartopia x SANRIO CHARACTERS",
-      "status": "upcoming",
-      "type": "Collaboration",
+      "slug": "frostspore-butterflies",
+      "localSlug": "frostspore-butterflies",
+      "name": "Frostspore Butterflies",
+      "status": "archive",
+      "type": "Winter Frost Season insects",
       "startDate": "",
       "endDate": "",
-      "dateLabel": "July 17, 2026"
+      "dateLabel": "January 24 - March 14, 2026"
     }
   ]
 }

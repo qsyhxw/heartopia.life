@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-20",
+  "updatedAt": "2026-07-28",
   "trackedCategories": [
     {
       "id": "fish",
@@ -81,9 +81,55 @@
     "ingredients": 26,
     "collectibles": 37,
     "npcs": 19,
-    "events": 10
+    "events": 11
   },
   "entries": [
+    {
+      "id": "2026-07-28-9d8a24dd2892e977",
+      "timestamp": "2026-07-28T05:40:17.318Z",
+      "date": "2026-07-28",
+      "title": "New Events added",
+      "summary": "+1 Event · 1 Event updated · 1 Event status changed",
+      "signature": "9d8a24dd2892e977",
+      "changes": [
+        {
+          "category": "Events",
+          "singular": "Event",
+          "categoryId": "events",
+          "action": "added",
+          "count": 1,
+          "items": [
+            "Frostspore Butterflies"
+          ],
+          "truncated": false,
+          "url": "/events/"
+        },
+        {
+          "category": "Events",
+          "singular": "Event",
+          "categoryId": "events",
+          "action": "updated",
+          "count": 1,
+          "items": [
+            "Heartopia x SANRIO CHARACTERS"
+          ],
+          "truncated": false,
+          "url": "/events/"
+        },
+        {
+          "category": "Events",
+          "singular": "Event",
+          "categoryId": "events",
+          "action": "status",
+          "count": 1,
+          "items": [
+            "Heartopia x SANRIO CHARACTERS: upcoming to active"
+          ],
+          "truncated": false,
+          "url": "/events/"
+        }
+      ]
+    },
     {
       "id": "2026-07-20-9cc01d4de20ffeea",
       "timestamp": "2026-07-20T07:27:33.625Z",
