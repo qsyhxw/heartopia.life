@@ -101,7 +101,7 @@ jobs:
         run: python scripts/send_event_alert.py update
 
       - name: Send Gmail configuration test
-        if: github.event_name == 'workflow_dispatch' && inputs.send_test_email
+        if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.send_test_email)
         env:
           GMAIL_USERNAME: ${{ secrets.GMAIL_USERNAME }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
