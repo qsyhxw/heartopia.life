@@ -27,13 +27,25 @@ const classes = s => s==='active'?'bg-emerald-100 text-emerald-800':s==='upcomin
 const period = e => e.startDate&&e.endDate ? e.startDate+' - '+e.endDate : e.startDate || e.endDate || e.date || 'Check the in-game event panel';
 
 async function get(url) {
-  const response=await fetch(url,{headers:{'user-agent':'HeartopiaLifeEventMonitor/1.0 (+https://heartopia.life/)','accept':'text/html,application/xhtml+xml'}});
-  if(!response.ok) throw Error(response.status+' '+response.statusText);
-  return response.text();
+  const headers={'user-agent':'HeartopiaLifeEventMonitor/1.0 (+https://heartopia.life/)','accept':'text/html,application/xhtml+xml'};
+  let response=null;
+  if(process.env.HEARTOPIA_EVENT_FORCE_READER!=='1') {
+    try {response=await fetch(url,{headers});} catch {}
+  }
+  if(response?.ok) return response.text();
+  if(response&&response.status!==403) throw Error(response.status+' '+response.statusText);
+  const pathname=new URL(url).pathname;
+  const readerUrl='https://r.jina.ai/http://www.heartodex.com'+pathname;
+  const reader=await fetch(readerUrl,{headers:{...headers,accept:'text/plain'}});
+  if(!reader.ok) throw Error('Reader fallback '+reader.status+' '+reader.statusText);
+  return reader.text();
 }
 function detail(html,name) {
-  const safe=name.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
-  return clean(html.match(new RegExp('>\\s*'+safe+'\\s*<\\/span>[\\s\\S]{0,700}?<span[^>]*>\\s*([\\s\\S]*?)\\s*<\\/span>','i'))?.[1]||'');
+  const safe=name.replace(/[.*+?^$(){}|[\]\\]/g,'\\$&');
+  const htmlValue=html.match(new RegExp('>\\s*'+safe+'\\s*<\\/span>[\\s\\S]{0,700}?<span[^>]*>\\s*([\\s\\S]*?)\\s*<\\/span>','i'))?.[1];
+  if(htmlValue) return clean(htmlValue);
+  const markdownValue=html.match(new RegExp('(?:^|\\s)'+safe+'\\s+([A-Za-z]+\\s+\\d{1,2},\\s+\\d{4})','i'))?.[1];
+  return clean(markdownValue||'');
 }
 function parse(html) {
   const map=new Map(), re=/<a\b[^>]*href=(["'])(?:https?:\/\/www\.heartodex\.com)?\/en\/events\/([^"'/?#]+)\/?[^"']*\1[^>]*>([\s\S]*?)<\/a>/gi;
@@ -42,14 +54,24 @@ function parse(html) {
     if(!name) continue;
     const nearby=html.slice(Math.max(0,hit.index-1800),hit.index+block.length+200).toLowerCase();
     const status=/past event|ended/i.test(block)?'archive':/active now|active event/i.test(block)?'active':/upcoming/i.test(block)?'upcoming':/active now|active event/.test(nearby)?'active':/upcoming/.test(nearby)?'upcoming':'archive';
-        const card=clean(block), date=card.match(/(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2}(?:\s*(?:→|–|-)\s*(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2})?(?:,?\s+\d{4})?/i)?.[0]||'';
+    const card=clean(block), date=card.match(/(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2}(?:\s*(?:→|–|-)\s*(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2})?(?:,?\s+\d{4})?/i)?.[0]||'';
     map.set(slug(hit[2]),{slug:slug(hit[2]),name,status,date,sourceUrl:base+'/en/events/'+slug(hit[2])});
+  }
+  if(map.size) return [...map.values()];
+  const markdownRe=/\[!\[Image \d+:\s*([^\]]+)\]\([^)\n]+\)\s*((?:(?!\[!\[Image)[\s\S])*?)\]\(https?:\/\/www\.heartodex\.com\/en\/events\/([^)\s/]+)\/?\)/gi;
+  for(const hit of html.matchAll(markdownRe)) {
+    const name=clean(hit[1]), card=clean(hit[2]), eventSlug=slug(hit[3]);
+    if(!name||!eventSlug) continue;
+    const status=/active now|active event/i.test(card)?'active':/upcoming/i.test(card)?'upcoming':'archive';
+    const date=card.match(/(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2}(?:\s*(?:→|–|-)\s*(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2})?(?:,?\s+\d{4})?/i)?.[0]||'';
+    const type=status==='active'?clean(card.match(/Active Now\s+(.+?)\s+(?=(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec))/i)?.[1]||''):'';
+    map.set(eventSlug,{slug:eventSlug,name,status,date,type,sourceUrl:base+'/en/events/'+eventSlug});
   }
   return [...map.values()];
 }
 async function enrich(e) {
   if(e.status==='archive') return e;
-  try {const html=await get(e.sourceUrl);return pickRemoteFields('events',{...e,startDate:detail(html,'Start Date'),endDate:detail(html,'End Date'),type:detail(html,'Event Type')});}
+  try {const html=await get(e.sourceUrl);const startDate=detail(html,'Start Date'),endDate=detail(html,'End Date'),eventType=detail(html,'Event Type');return pickRemoteFields('events',{...e,...(startDate?{startDate}:{}),...(endDate?{endDate}:{}),type:eventType||e.type||''});}
   catch {return e;}
 }
 function merge(remote) {
@@ -100,6 +122,12 @@ function updateSitemap(events) {
  let xml=read('sitemap.xml');
  for(const e of events) if(exists(e)) {const url='https://heartopia.life/events/'+route(e)+'/';if(!xml.includes('<loc>'+url+'</loc>'))xml=xml.replace('</urlset>',`  <url>\n    <loc>${url}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.7</priority>\n  </url>\n</urlset>`);}
  write('sitemap.xml',xml);
+}
+if(process.argv[2]==='--parse-fixture') {
+  const parsed=parse(fs.readFileSync(process.argv[3],'utf8'));
+  if(!parsed.length) throw Error('Event fixture parse safety check failed.');
+  console.log(JSON.stringify(parsed,null,2));
+  process.exit(0);
 }
 const remote=parse(await get(base+'/en/events/'));
 if(!remote.length) throw Error('Event parse safety check failed: no event cards found.');
