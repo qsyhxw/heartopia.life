@@ -42,7 +42,20 @@ jobs:
         shell: bash
         run: |
           echo "HEARTOPIA_SYNC_DIR=$RUNNER_TEMP/heartopia-discovery" >> "$GITHUB_ENV"
-          mkdir -p "$RUNNER_TEMP/heartopia-discovery"
+          echo "HEARTOPIA_DISCOVERY_FALLBACK_DIR=$RUNNER_TEMP/heartopia-discovery/listings" >> "$GITHUB_ENV"
+          mkdir -p "$RUNNER_TEMP/heartopia-discovery/listings"
+
+      - name: Prepare temporary list-only fallback
+        shell: bash
+        env:
+          MONITOR_HOST: heartodex.com
+        run: |
+          base="https://r.jina.ai/http://www.${MONITOR_HOST}"
+          for collection in fish birds insects wild-animals crops recipes achievements items ingredients collectibles npcs; do
+            curl --fail --silent --show-error --location --retry 2 --max-time 75 \
+              "${base}/en/${collection}/" \
+              --output "$HEARTOPIA_DISCOVERY_FALLBACK_DIR/${collection}.md"
+          done
 
       - name: Restore latest private discovery baseline
         id: baseline
@@ -67,6 +80,8 @@ jobs:
 
       - name: Check collection listings
         id: discovery
+        env:
+          HEARTOPIA_DISCOVERY_FORCE_PROXY: '1'
         run: node scripts/discover-heartopia-database-changes.mjs
 
       - name: Save private discovery baseline

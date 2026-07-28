@@ -13,7 +13,7 @@ const snapshotFile = path.resolve(option('--snapshot', syncPath('database-discov
 const reportFile = path.resolve(option('--report', syncPath('database-discovery-report.json')));
 const sourceBase = 'https://www.heartodex.com';
 
-const collections = [
+const allCollections = [
   { key: 'fish', label: 'Fish', remotePath: 'fish', file: 'data/heartopia-fish.json', array: 'fish' },
   { key: 'birds', label: 'Birds', remotePath: 'birds', file: 'data/heartopia-birds.json', array: 'birds' },
   { key: 'insects', label: 'Insects', remotePath: 'insects', file: 'data/heartopia-insects.json', array: 'insects' },
@@ -26,6 +26,15 @@ const collections = [
   { key: 'collectibles', label: 'Collectibles', remotePath: 'collectibles', file: 'data/heartopia-collectibles.json', array: 'collectibles' },
   { key: 'npcs', label: 'NPCs', remotePath: 'npcs', file: 'data/heartopia-npcs.json', array: 'npcs' },
 ];
+const requestedCollections = new Set(
+  String(process.env.HEARTOPIA_DISCOVERY_COLLECTIONS || '')
+    .split(',')
+    .map((value) => value.trim())
+    .filter(Boolean),
+);
+const collections = requestedCollections.size
+  ? allCollections.filter((collection) => requestedCollections.has(collection.key))
+  : allCollections;
 
 const decode = (value = '') => value
   .replace(/&amp;/g, '&')
@@ -58,28 +67,91 @@ const writeJson = (file, value) => {
 };
 const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 
-async function fetchListing(remotePath) {
-  const url = `${sourceBase}/en/${remotePath}/`;
+async function fetchText(url, { attempts = 1, timeout = 30000 } = {}) {
   let lastError;
-  for (let attempt = 1; attempt <= 3; attempt += 1) {
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeout);
     try {
       const response = await fetch(url, {
         headers: {
-          'user-agent': 'HeartopiaLifeDiscoveryMonitor/1.0 (+https://heartopia.life/)',
-          accept: 'text/html,application/xhtml+xml',
+          'user-agent': 'HeartopiaLifeDiscoveryMonitor/1.1 (+https://heartopia.life/)',
+          accept: 'text/html,text/plain,application/xhtml+xml',
         },
+        signal: controller.signal,
       });
       if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
       return await response.text();
     } catch (error) {
       lastError = error;
       await sleep(attempt * 900);
+    } finally {
+      clearTimeout(timer);
     }
   }
-  throw new Error(String(lastError?.message || 'request failed').replace(/https?:\/\/\S+/g, '[remote URL]'));
+  throw lastError || new Error('request failed');
 }
 
-function parseListing(html, remotePath) {
+async function fetchListing(remotePath) {
+  const directUrl = `${sourceBase}/en/${remotePath}/`;
+  const fallbackDir = process.env.HEARTOPIA_DISCOVERY_FALLBACK_DIR;
+  const fallbackFile = fallbackDir ? path.join(fallbackDir, `${remotePath}.md`) : '';
+  if (process.env.HEARTOPIA_DISCOVERY_FORCE_PROXY === '1' && fallbackFile && fs.existsSync(fallbackFile)) {
+    return { content: fs.readFileSync(fallbackFile, 'utf8'), format: 'markdown' };
+  }
+  let directError;
+  if (process.env.HEARTOPIA_DISCOVERY_FORCE_PROXY !== '1') {
+    try {
+      const content = await fetchText(directUrl, {
+        attempts: process.env.GITHUB_ACTIONS ? 1 : 3,
+        timeout: 18000,
+      });
+      return { content, format: 'html' };
+    } catch (error) {
+      directError = error;
+    }
+  }
+  try {
+    if (fallbackFile && fs.existsSync(fallbackFile)) {
+      return { content: fs.readFileSync(fallbackFile, 'utf8'), format: 'markdown' };
+    }
+    const proxyUrl = `https://r.jina.ai/http://www.heartodex.com/en/${remotePath}/`;
+    const content = await fetchText(proxyUrl, { attempts: 2, timeout: 45000 });
+    return { content, format: 'markdown' };
+  } catch (proxyError) {
+    const message = `${directError?.message || 'direct request skipped'}; ${proxyError?.message || 'fallback request failed'}`;
+    throw new Error(message.replace(/https?:\/\/\S+/g, '[remote URL]'));
+  }
+}
+function parseMarkdownListing(markdown, remotePath) {
+  const registeredMatch = markdown.match(/(\d{1,4})\s*Registered/i);
+  const items = new Map();
+  const escapedPath = remotePath.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const linkPattern = new RegExp(
+    `https?:\\/\\/(?:www\\.)?heartodex\\.com\\/en\\/${escapedPath}\\/([^\\s)\\]?#]+)\\)`,
+    'gi',
+  );
+  for (const match of markdown.matchAll(linkPattern)) {
+    const slug = slugify(match[1]);
+    const prefix = markdown.slice(Math.max(0, match.index - 1400), match.index);
+    const imageAlts = [...prefix.matchAll(/!\[Image\s+\d+:\s*([^\]]+)\]/gi)];
+    const headings = [...prefix.matchAll(/###\s+([^\n\[\]]+)/g)];
+    const rawName = imageAlts.at(-1)?.[1] || headings.at(-1)?.[1] || '';
+    const name = text(rawName.replace(/\s+(?:Location|Level|Category|Seller|Price|Schedule|Weather)\b[\s\S]*$/i, ''));
+    if (!slug || !name || name.length > 140) continue;
+    items.set(slug, { slug, name });
+  }
+  const entries = [...items.values()].sort((a, b) => a.slug.localeCompare(b.slug));
+  const registered = registeredMatch ? Number(registeredMatch[1]) : entries.length;
+  if (!entries.length) throw new Error('parsed zero entity links from text fallback');
+  if (registeredMatch && entries.length !== registered) {
+    throw new Error(`registered counter is ${registered}, but ${entries.length} text entity links were parsed`);
+  }
+  return { count: registered, entries };
+}
+function parseListing(payload, remotePath) {
+  if (payload.format === 'markdown') return parseMarkdownListing(payload.content, remotePath);
+  const html = payload.content;
   const registeredMatch = html.match(/(\d{1,4})\s*Registered/i);
   const items = new Map();
   const escapedPath = remotePath.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
