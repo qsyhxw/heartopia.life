@@ -75,7 +75,7 @@
       transport_type: 'beacon'
     };
     var currentEvent = eventName(window.location.pathname);
-    if (currentEvent) parameters.event_name = currentEvent;
+    if (currentEvent) parameters.heartopia_event = currentEvent;
 
     if (typeof window.gtag === 'function') {
       window.gtag('event', 'affiliate_click', parameters);
