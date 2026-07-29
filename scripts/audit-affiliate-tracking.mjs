@@ -26,6 +26,10 @@ for (const file of walk(root)) {
   const relative = path.relative(root, file).replace(/\\/g, '/');
   if (!html.includes('/assets/js/affiliate-tracking.js')) failures.push(`${relative}: missing shared tracker`);
   if (html.includes("document.querySelectorAll('[data-provider]').forEach(function(a){a.addEventListener('click'")) failures.push(`${relative}: legacy click listener remains`);
+  if (/(?:^|\/)guides\/top-up\/index\.html$/.test(relative)) {
+    if (!html.includes('data-affiliate-widget="lootbar-heartopia"')) failures.push(`${relative}: widget marker missing`);
+    if (html.includes("gtag('event','affiliate_widget_")) failures.push(`${relative}: legacy widget tracking remains`);
+  }
 
   affiliateLinks.forEach((link, index) => {
     if (!/data-affiliate=["']lootbar["']/i.test(link)) failures.push(`${relative}: link ${index + 1} missing data-affiliate`);

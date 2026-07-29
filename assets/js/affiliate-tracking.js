@@ -43,17 +43,45 @@
     return 'inline-link';
   }
 
-  function track(event) {
+  function baseParameters(place) {
+    var parameters = {
+      affiliate_name: 'lootbar',
+      payment_provider: 'lootbar-heartopia',
+      game: 'heartopia',
+      page_language: pageLanguage(),
+      page_type: pageType(window.location.pathname),
+      placement: place,
+      transport_type: 'beacon'
+    };
+    var currentEvent = eventName(window.location.pathname);
+    if (currentEvent) parameters.heartopia_event = currentEvent;
+    return parameters;
+  }
+
+  function send(name, parameters) {
+    if (typeof window.gtag === 'function') window.gtag('event', name, parameters);
+  }
+
+  function affiliateParameters(link, url) {
+    var parameters = baseParameters(placement(link, pageType(window.location.pathname)));
+    parameters.link_domain = url.hostname;
+    parameters.link_url = url.href;
+    return parameters;
+  }
+
+  function trackClick(event) {
     if (event.type === 'auxclick' && event.button !== 1) return;
     var link = event.target.closest && event.target.closest('a[href]');
     if (!link) return;
     var url = lootbarUrl(link);
     if (!url) {
-      if (link.dataset.provider && typeof window.gtag === 'function') {
-        window.gtag('event', 'outbound_payment_click', {
+      if (link.dataset.provider) {
+        send('outbound_payment_click', {
           payment_provider: link.dataset.provider,
+          game: 'heartopia',
           page_language: pageLanguage(),
           page_type: pageType(window.location.pathname),
+          placement: placement(link, pageType(window.location.pathname)),
           link_url: link.href,
           transport_type: 'beacon'
         });
@@ -61,27 +89,50 @@
       return;
     }
     if (link.dataset.affiliateTracked === 'false') return;
+    send('affiliate_click', affiliateParameters(link, url));
+  }
 
-    var type = pageType(window.location.pathname);
-    var parameters = {
-      affiliate_name: 'lootbar',
-      payment_provider: 'lootbar-heartopia',
-      game: 'heartopia',
-      page_language: pageLanguage(),
-      page_type: type,
-      placement: placement(link, type),
-      link_domain: url.hostname,
-      link_url: url.href,
-      transport_type: 'beacon'
-    };
-    var currentEvent = eventName(window.location.pathname);
-    if (currentEvent) parameters.heartopia_event = currentEvent;
+  function trackAffiliateImpressions() {
+    if (!('IntersectionObserver' in window)) return;
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var link = entry.target;
+        var url = lootbarUrl(link);
+        if (url) send('affiliate_impression', affiliateParameters(link, url));
+        observer.unobserve(link);
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('a[data-affiliate="lootbar"]').forEach(function (link) {
+      observer.observe(link);
+    });
+  }
 
-    if (typeof window.gtag === 'function') {
-      window.gtag('event', 'affiliate_click', parameters);
+  function trackAffiliateWidget() {
+    var widget = document.getElementById('lootbar-heartopia-widget');
+    var section = document.querySelector('[data-affiliate-widget="lootbar-heartopia"]');
+    var parameters = function () { return baseParameters('product-widget'); };
+
+    if (widget) {
+      widget.addEventListener('load', function () {
+        var loading = document.getElementById('lootbar-widget-loading');
+        if (loading) loading.hidden = true;
+        send('affiliate_widget_load', parameters());
+      }, { once: true });
+    }
+
+    if (section && 'IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        if (!entries.some(function (entry) { return entry.isIntersecting; })) return;
+        send('affiliate_widget_view', parameters());
+        observer.disconnect();
+      }, { threshold: 0.25 });
+      observer.observe(section);
     }
   }
 
-  document.addEventListener('click', track);
-  document.addEventListener('auxclick', track);
+  document.addEventListener('click', trackClick);
+  document.addEventListener('auxclick', trackClick);
+  trackAffiliateImpressions();
+  trackAffiliateWidget();
 })();
