@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-28",
+  "updatedAt": "2026-07-29",
   "trackedCategories": [
     {
       "id": "fish",
@@ -84,6 +84,35 @@
     "events": 11
   },
   "entries": [
+    {
+      "id": "2026-07-29-0382dc9a22bff97b",
+      "timestamp": "2026-07-29T04:31:48.889Z",
+      "date": "2026-07-29",
+      "title": "Database records updated",
+      "summary": "8 Events updated",
+      "signature": "0382dc9a22bff97b",
+      "changes": [
+        {
+          "category": "Events",
+          "singular": "Event",
+          "categoryId": "events",
+          "action": "updated",
+          "count": 8,
+          "items": [
+            "Midsummer Rhyme",
+            "Rainbow Verse",
+            "Modular Streets",
+            "Maltese",
+            "Pleasant Goat and Big Big Wolf",
+            "Dreamlight Cinematics",
+            "My Little Pony",
+            "Winter Frost Season"
+          ],
+          "truncated": false,
+          "url": "/events/"
+        }
+      ]
+    },
     {
       "id": "2026-07-28-95bc0aa3d3e687ca",
       "timestamp": "2026-07-28T07:24:33.427Z",

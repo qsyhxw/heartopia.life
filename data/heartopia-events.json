@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-28",
+  "generatedAt": "2026-07-29",
   "count": 11,
   "events": [
     {
@@ -29,8 +29,8 @@
       "name": "Midsummer Rhyme",
       "status": "archive",
       "type": "",
-      "startDate": "",
-      "endDate": "",
+      "startDate": "June 19, 2026",
+      "endDate": "July 6, 2026",
       "dateLabel": "Jun 19 – Jul 6"
     },
     {
@@ -39,8 +39,8 @@
       "name": "Rainbow Verse",
       "status": "archive",
       "type": "",
-      "startDate": "",
-      "endDate": "",
+      "startDate": "May 28, 2026",
+      "endDate": "June 22, 2026",
       "dateLabel": "May 28 – Jun 22"
     },
     {
@@ -49,8 +49,8 @@
       "name": "Modular Streets",
       "status": "archive",
       "type": "",
-      "startDate": "",
-      "endDate": "",
+      "startDate": "May 9, 2026",
+      "endDate": "June 20, 2026",
       "dateLabel": "May 9 – Jun 20"
     },
     {
@@ -59,8 +59,8 @@
       "name": "Maltese",
       "status": "archive",
       "type": "",
-      "startDate": "",
-      "endDate": "",
+      "startDate": "April 30, 2026",
+      "endDate": "May 25, 2026",
       "dateLabel": "Apr 30 – May 25"
     },
     {
@@ -69,8 +69,8 @@
       "name": "Pleasant Goat and Big Big Wolf",
       "status": "archive",
       "type": "",
-      "startDate": "",
-      "endDate": "",
+      "startDate": "March 28, 2026",
+      "endDate": "April 27, 2026",
       "dateLabel": "Mar 28 – Apr 27"
     },
     {
@@ -79,8 +79,8 @@
       "name": "Dreamlight Cinematics",
       "status": "archive",
       "type": "",
-      "startDate": "",
-      "endDate": "",
+      "startDate": "March 21, 2026",
+      "endDate": "May 9, 2026",
       "dateLabel": "Mar 21 – May 9"
     },
     {
@@ -89,8 +89,8 @@
       "name": "My Little Pony",
       "status": "archive",
       "type": "",
-      "startDate": "",
-      "endDate": "",
+      "startDate": "February 14, 2026",
+      "endDate": "March 24, 2026",
       "dateLabel": "Feb 14 – Mar 24"
     },
     {
@@ -99,8 +99,8 @@
       "name": "Winter Frost Season",
       "status": "archive",
       "type": "",
-      "startDate": "",
-      "endDate": "",
+      "startDate": "January 24, 2026",
+      "endDate": "March 14, 2026",
       "dateLabel": "Jan 24 – Mar 14"
     },
     {
