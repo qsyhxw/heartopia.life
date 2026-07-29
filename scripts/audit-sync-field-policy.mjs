@@ -14,6 +14,8 @@ for (const route of whaleRouteData.routes || []) assertRemoteFields('eventRoutes
 const activeAutoSyncScripts = [
   'scripts/monitor-heartodex-collections.mjs',
   'scripts/discover-heartopia-database-changes.mjs',
+  'scripts/discover-heartopia-event-sources.mjs',
+  'scripts/download-official-event-images.mjs',
   'scripts/prepare-heartodex-fish-bird-sync.mjs',
   'scripts/apply-heartodex-fish-bird-sync.mjs',
   'scripts/sync-insect-database.mjs',
@@ -47,6 +49,14 @@ if (/git\s+(?:add|commit|push)/.test(discoveryWorkflow)) {
 if (discoveryWorkflow.includes('data/monitor/')) {
   throw new Error('Daily database discovery references a public monitor directory.');
 }
+const eventWorkflow = read('.github/workflows/monitor-heartopia-events-daily.yml');
+if (!eventWorkflow.includes('actions/cache/restore@v4') || !eventWorkflow.includes('actions/cache/save@v4')) {
+  throw new Error('Daily event discovery does not keep its official signal baseline in private Actions Cache.');
+}
+if (eventWorkflow.includes('data/monitor/')) {
+  throw new Error('Daily event discovery references a public monitor directory.');
+}
+
 
 const blockedPublicFields = new Set(['source', 'sourceUrl', 'imageUrl']);
 function auditPublicValue(value, location) {

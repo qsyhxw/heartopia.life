@@ -8,6 +8,10 @@ const currentEventDataFile = path.join(root, 'data', 'heartopia-events.json');
 const currentEventData = fs.existsSync(currentEventDataFile)
   ? JSON.parse(fs.readFileSync(currentEventDataFile, 'utf8'))
   : { generatedAt: today, events: [] };
+const discoveryReportFile = process.env.EVENT_DISCOVERY_REPORT || '';
+const discoveryReport = discoveryReportFile && fs.existsSync(discoveryReportFile)
+  ? JSON.parse(fs.readFileSync(discoveryReportFile, 'utf8'))
+  : { officialEventCandidates: [] };
 const base = 'https://www.heartodex.com';
 const aliases = {'call-of-whales':'call-of-whales','my-little-pony':'my-little-pony-collaboration','winter-frost-season':'winter-2026','sanrio-characters':'sanrio-characters-collaboration'};
 const manual = [
@@ -76,12 +80,46 @@ async function enrich(e) {
 }
 function merge(remote) {
   const all = [...remote];
+  for (const candidate of discoveryReport.officialEventCandidates || []) {
+    const candidateSlug = slug(candidate.slug || candidate.title);
+    if (!candidateSlug) continue;
+    const found = all.find((event) => route(event) === candidateSlug || event.slug === candidateSlug || slug(event.name) === slug(candidate.title));
+    if (found) {
+      found.officialUrl = candidate.url || found.officialUrl || '';
+      found.officialImageUrl = candidate.imageUrl || found.officialImageUrl || '';
+      found.officialVerified = true;
+      continue;
+    }
+    all.push({
+      slug: candidateSlug,
+      local: candidateSlug,
+      name: candidate.title,
+      status: 'upcoming',
+      type: 'Official announcement',
+      date: candidate.date || '',
+      startDate: '',
+      endDate: '',
+      officialUrl: candidate.url || '',
+      officialImageUrl: candidate.imageUrl || '',
+      officialVerified: true,
+    });
+  }
   for (const item of manual) {
     const found = all.find((event) => route(event) === (item.local || item.slug) || event.slug === item.slug || slug(event.name).replace(/^heartopia-/, '') === slug(item.name).replace(/^heartopia-/, ''));
     if (found) Object.assign(found, {...item, ...found, name: item.name || found.name, type: found.type || item.type || '', local: item.local || found.local});
     else all.push({...item, sourceUrl: '', startDate: item.startDate || '', endDate: item.endDate || ''});
   }
   return all;
+}
+function localEventImage(e) {
+  const preferred = [route(e), e.slug].filter(Boolean);
+  for (const name of preferred) {
+    for (const extension of ['webp', 'jpg', 'jpeg', 'png']) {
+      const relative = `img/events/${name}.${extension}`;
+      if (fs.existsSync(path.join(root, relative))) return `/${relative}`;
+    }
+  }
+  return '';
 }
 
 function syncCustomEventStatus(e) {
@@ -107,16 +145,34 @@ const footer = () => `<footer class="mt-12 bg-cozy-bark py-8 text-white"><div cl
 const paidRelevant = e => /shop|pack|diamond|membership|fashionwave|collaboration|exhibition/i.test([e.name,e.type].filter(Boolean).join(' '));
 const paidCta = e => paidRelevant(e) ? `<section class="mx-auto max-w-6xl px-5 pb-12"><div class="card flex flex-col gap-5 border-amber-200 bg-amber-50 p-6 md:flex-row md:items-center md:justify-between"><div><p class="text-xs font-black uppercase text-amber-800">Optional paid content</p><h2 class="mt-2 text-2xl font-bold">Comparing event packs or Heart Diamonds?</h2><p class="mt-2 max-w-2xl text-sm leading-6 text-[#735f4d]">If this event includes paid items, compare payment routes and confirm your account, region, server, product, and checkout total first.</p></div><a class="link shrink-0" href="/guides/top-up/">Compare top-up options</a></div></section>` : '';
 
-function card(e) { const body=`<div class="p-5"><span class="inline-flex rounded-full px-2.5 py-1 text-xs font-bold ${classes(e.status)}">${label(e.status)}</span><h3 class="mt-3 text-xl font-bold">${esc(e.name)}</h3><p class="mt-2 text-sm text-[#735f4d]">${esc(period(e))}</p>${e.type?`<p class="mt-2 text-sm text-[#735f4d]">${esc(e.type)}</p>`:''}</div>`; return exists(e)?`<a class="card hover:shadow-md" href="/events/${route(e)}/">${body}</a>`:`<article class="card">${body}</article>`; }
+function card(e) {
+  const image = localEventImage(e);
+  const media = image
+    ? `<div class="aspect-[16/9] overflow-hidden bg-[#eef5f7]"><img src="${image}" alt="${esc(e.name)} event artwork" class="h-full w-full object-cover" loading="lazy"></div>`
+    : '<div class="flex aspect-[16/9] items-end bg-gradient-to-br from-[#dff4f2] via-[#eef5ff] to-[#fff0e7] p-5"><span class="text-xs font-black uppercase text-[#735f4d]">Event artwork pending</span></div>';
+  const official = e.officialVerified ? '<span class="rounded-full bg-amber-100 px-2.5 py-1 text-xs font-bold text-amber-900">Official signal</span>' : '';
+  const type = e.type ? `<p class="mt-2 text-sm text-[#735f4d]">${esc(e.type)}</p>` : '';
+  const body = `${media}<div class="p-5"><div class="flex flex-wrap items-center gap-2"><span class="inline-flex rounded-full px-2.5 py-1 text-xs font-bold ${classes(e.status)}">${label(e.status)}</span>${official}</div><h3 class="mt-3 text-xl font-bold">${esc(e.name)}</h3><p class="mt-2 text-sm text-[#735f4d]">${esc(period(e))}</p>${type}</div>`;
+  return exists(e) ? `<a class="card overflow-hidden hover:shadow-md" href="/events/${route(e)}/">${body}</a>` : `<article class="card overflow-hidden">${body}</article>`;
+}
 function rootPage(events, updatedAt) {
   const group=s=>events.filter(e=>e.status===s), list=(s,empty)=>group(s).length?group(s).map(card).join(''):`<article class="card p-5 text-sm text-[#735f4d]">${empty}</article>`;
   const body=`${nav('')}<main><section class="border-b border-[#eaded2] bg-[#fff4f3]"><div class="mx-auto max-w-6xl px-5 py-14"><p class="text-xs font-black uppercase text-[#bd506b]">Heartopia event calendar</p><h1 class="mt-3 text-4xl font-bold md:text-5xl">Heartopia Events</h1><p class="mt-4 max-w-3xl text-lg text-[#735f4d]">Current events, announced collaborations, permanent activities, and a clear archive of older event windows.</p><p class="mt-5 text-sm font-bold text-[#735f4d]">Updated: ${updatedAt}</p></div></section><section class="mx-auto max-w-6xl px-5 py-12"><p class="text-xs font-black uppercase text-emerald-700">Active now</p><h2 class="mt-2 text-3xl font-bold">Play now</h2><div class="mt-5 grid gap-5 md:grid-cols-2">${list('active','No active event is listed right now.')}</div><div id="heartopia_in_content" class="my-8"></div></section><section class="border-y border-[#e0eaf2] bg-[#f5f9ff]"><div class="mx-auto max-w-6xl px-5 py-12"><p class="text-xs font-black uppercase text-sky-700">Upcoming</p><h2 class="mt-2 text-3xl font-bold">Next on the calendar</h2><div class="mt-5 grid gap-5 md:grid-cols-2">${list('upcoming','No upcoming event is currently listed.')}</div></div></section><section class="mx-auto max-w-6xl px-5 py-12"><p class="text-xs font-black uppercase text-amber-700">Permanent activities</p><div class="mt-5 grid gap-5 md:grid-cols-3"><a class="card p-5" href="/events/sea-fishing/">Sea Fishing</a><a class="card p-5" href="/events/bait-insects/">Bait the Insects</a><a class="card p-5" href="/events/nest-of-hundreds/">Nest of Hundreds</a></div></section><section class="border-t border-[#eaded2] bg-[#fff6ef]"><div class="mx-auto max-w-6xl px-5 py-12"><p class="text-xs font-black uppercase text-stone-600">Archive</p><h2 class="mt-2 text-3xl font-bold">Ended events</h2><div class="mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-4">${list('archive','No archived events recorded yet.')}</div><div id="heartopia_in_content_2" class="my-8"></div></div></section></main>${footer('')}`;
   return head('Heartopia Events: Active, Upcoming & Past Events','Check Heartopia events by active, upcoming, archive, and permanent activity status.','https://heartopia.life/events/',{'@context':'https://schema.org','@type':'CollectionPage',name:'Heartopia Events',dateModified:updatedAt},body);
 }
 function detailPage(e) {
+function enhanceStarterPage(body, e) {
+  const image = localEventImage(e);
+  const media = image ? `<figure class="mb-8 overflow-hidden rounded-lg border border-cozy-peach bg-white p-2"><img src="${image}" alt="${esc(e.name)} official event artwork" class="aspect-[16/9] w-full rounded-md object-cover"><figcaption class="px-2 pt-2 text-xs text-[#735f4d]">Official event artwork stored locally for reliable display.</figcaption></figure>` : '';
+  const officialLink = e.officialUrl ? `<a href="${esc(e.officialUrl)}" target="_blank" rel="noopener nofollow" class="link">Open official announcement</a>` : '';
+  const verification = `<div class="mb-8 rounded-lg border border-amber-200 bg-amber-50 p-5"><p class="text-xs font-black uppercase text-amber-900">Details being verified</p><p class="mt-2 text-sm leading-6 text-amber-950">Names, dates, status, and event type are monitored automatically. Tasks, rewards, locations, and troubleshooting are expanded after official or in-game confirmation.</p>${officialLink ? `<p class="mt-3">${officialLink}</p>` : ''}</div>`;
+  const marker = '<section class="mx-auto max-w-6xl px-5 py-12">';
+  return body.replace(marker, `${marker}${media}${verification}`);
+}
+
  const url='https://heartopia.life/events/'+route(e)+'/', desc='Heartopia '+e.name+' event page with schedule, type, status, and a local checklist.';
  const body=`${nav('../../')}<main data-event-sync="managed"><section class="border-b border-[#eaded2] bg-[#fff4f3]"><div class="mx-auto max-w-6xl px-5 py-14"><span class="inline-flex rounded-full px-3 py-1 text-xs font-bold ${classes(e.status)}">${label(e.status)}</span><h1 class="mt-4 text-4xl font-bold">Heartopia ${esc(e.name)}</h1><p class="mt-4 text-lg text-[#735f4d]">${esc(period(e))}</p></div></section><section class="mx-auto max-w-6xl px-5 py-12"><div class="grid gap-5 md:grid-cols-3"><article class="card p-5"><h2 class="text-xl font-bold">Status</h2><p class="mt-2">${label(e.status)}</p></article><article class="card p-5"><h2 class="text-xl font-bold">Schedule</h2><p class="mt-2">${esc(period(e))}</p></article><article class="card p-5"><h2 class="text-xl font-bold">Type</h2><p class="mt-2">${esc(e.type||'Event')}</p></article></div><div class="mt-8 grid gap-6 md:grid-cols-2"><article class="card p-6"><h2 class="text-2xl font-bold">How to join</h2><ol class="mt-4 space-y-3 text-[#735f4d]"><li>1. Open the in-game event panel and confirm the server-time window.</li><li>2. Check your level, story, or account requirement.</li><li>3. Claim listed tasks before the final server reset.</li></ol></article><article class="card p-6"><h2 class="text-2xl font-bold">Before you join</h2><p class="mt-4 text-[#735f4d]">Event entry conditions can vary by server and version. Confirm the current level, story progress, and task list in the live in-game event panel.</p></article></div><div id="heartopia_in_content" class="my-8"></div><section class="card p-6"><a class="link" href="/events/">All events</a> <a class="link ml-4" href="/tools/daily-tasks/">Daily Tasks</a> <a class="link ml-4" href="/tools/my-progress/">My Progress</a></section><div id="heartopia_in_content_2" class="my-8"></div></section>${paidCta(e)}</main>${footer('../../')}`;
- return head('Heartopia '+e.name+': Dates, Status & Event Guide',desc,url,{'@context':'https://schema.org','@type':'Event',name:e.name,startDate:e.startDate||undefined,endDate:e.endDate||undefined,eventStatus:e.status==='archive'?'https://schema.org/EventCompleted':'https://schema.org/EventScheduled',url},body);
+ return head('Heartopia '+e.name+': Dates, Status & Event Guide',desc,url,{'@context':'https://schema.org','@type':'Event',name:e.name,startDate:e.startDate||undefined,endDate:e.endDate||undefined,eventStatus:e.status==='archive'?'https://schema.org/EventCompleted':'https://schema.org/EventScheduled',url},enhanceStarterPage(body,e));
 }
 function updateSitemap(events) {
  let xml=read('sitemap.xml');

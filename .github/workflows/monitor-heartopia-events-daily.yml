@@ -8,6 +8,9 @@ on:
       - 'scripts/sync-heartodex-events.mjs'
       - 'scripts/detect-heartopia-event-changes.mjs'
       - 'scripts/send_event_alert.py'
+      - 'scripts/discover-heartopia-event-sources.mjs'
+      - 'scripts/download-official-event-images.mjs'
+      - 'scripts/event-source-config.mjs'
   schedule:
     # Run every day at 09:10 China Standard Time.
     - cron: '10 1 * * *'
@@ -47,7 +50,32 @@ jobs:
           mkdir -p "$RUNNER_TEMP/heartopia-sync"
           cp data/heartopia-events.json "$RUNNER_TEMP/heartopia-sync/events-before.json"
 
+      - name: Restore private official signal baseline
+        uses: actions/cache/restore@v4
+        with:
+          path: ${{ runner.temp }}/heartopia-event-cache/signals.json
+          key: heartopia-event-signals-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            heartopia-event-signals-
+
+      - name: Prepare restored official signal baseline
+        shell: bash
+        run: |
+          if [ -f "$RUNNER_TEMP/heartopia-event-cache/signals.json" ]; then
+            cp "$RUNNER_TEMP/heartopia-event-cache/signals.json" "$HEARTOPIA_SYNC_DIR/official-signals-before.json"
+          fi
+
+      - name: Discover official announcements and event signals
+        id: sources
+        run: node scripts/discover-heartopia-event-sources.mjs --before "$HEARTOPIA_SYNC_DIR/official-signals-before.json"
+
+      - name: Download allowlisted official event artwork
+        id: artwork
+        run: node scripts/download-official-event-images.mjs "${{ steps.sources.outputs.report_file }}"
+
       - name: Read event facts and refresh basic pages
+        env:
+          EVENT_DISCOVERY_REPORT: ${{ steps.sources.outputs.report_file }}
         run: node scripts/sync-heartodex-events.mjs
 
       - name: Detect new and changed events
@@ -74,12 +102,12 @@ jobs:
 
       - name: Commit basic event update
         id: commit
-        if: steps.changes.outputs.has_changes == 'true'
+        if: steps.changes.outputs.has_changes == 'true' || steps.artwork.outputs.downloaded_count != '0'
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html database/index.html events data/heartopia-events.json data/database-changelog.json database/changelog/index.html data/heartopia-search-index.json assets/js/universal-search.js sitemap.xml
+          git add index.html database/index.html events img/events data/heartopia-events.json data/database-changelog.json database/changelog/index.html data/heartopia-search-index.json assets/js/universal-search.js sitemap.xml
           if git diff --cached --quiet; then
             echo "No publishable event change detected."
             echo "committed=false" >> "$GITHUB_OUTPUT"
@@ -91,13 +119,14 @@ jobs:
           echo "commit_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
       - name: Send new event Gmail alert
-        if: steps.changes.outputs.new_count != '0'
+        if: steps.changes.outputs.new_count != '0' || steps.sources.outputs.official_signal_count != '0'
         env:
           GMAIL_USERNAME: ${{ secrets.GMAIL_USERNAME }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           EVENT_ALERT_EMAIL: ${{ secrets.EVENT_ALERT_EMAIL }}
           PATCH_ALERT_EMAIL: ${{ secrets.PATCH_ALERT_EMAIL }}
           EVENT_ALERT_REPORT: ${{ steps.changes.outputs.report_file }}
+          EVENT_SOURCE_REPORT: ${{ steps.sources.outputs.report_file }}
         run: python scripts/send_event_alert.py update
 
       - name: Send Gmail configuration test
@@ -109,6 +138,20 @@ jobs:
           PATCH_ALERT_EMAIL: ${{ secrets.PATCH_ALERT_EMAIL }}
         run: python scripts/send_event_alert.py test
 
+      - name: Prepare private signal cache
+        if: always() && steps.sources.outputs.snapshot_file != ''
+        shell: bash
+        run: |
+          mkdir -p "$RUNNER_TEMP/heartopia-event-cache"
+          cp "${{ steps.sources.outputs.snapshot_file }}" "$RUNNER_TEMP/heartopia-event-cache/signals.json"
+
+      - name: Save private official signal baseline
+        if: always() && steps.sources.outputs.snapshot_file != ''
+        uses: actions/cache/save@v4
+        with:
+          path: ${{ runner.temp }}/heartopia-event-cache/signals.json
+          key: heartopia-event-signals-${{ github.run_id }}-${{ github.run_attempt }}
+
       - name: Add event summary
         if: always()
         shell: bash
@@ -116,6 +159,9 @@ jobs:
           {
             echo "## Daily Heartopia Event Monitor"
             echo ""
+            echo "- New official signals: ${{ steps.sources.outputs.official_signal_count || '0' }}"
+            echo "- Official images downloaded: ${{ steps.artwork.outputs.downloaded_count || '0' }}"
+            echo "- Source warnings: ${{ steps.sources.outputs.source_warning_count || '0' }}"
             echo "- New events: ${{ steps.changes.outputs.new_count || '0' }}"
             echo "- Changed events: ${{ steps.changes.outputs.changed_count || '0' }}"
             echo "- Removed events: ${{ steps.changes.outputs.removed_count || '0' }}"

@@ -45,13 +45,35 @@ def event_line(event: Mapping[str, object]) -> str:
     )
 
 
+def source_signal_line(signal: Mapping[str, object]) -> str:
+    return (
+        f"- {signal.get('title', 'Unnamed signal')} "
+        f"[{signal.get('signalType', 'announcement')}]\n"
+        f"  {signal.get('url', '')}"
+    )
+
+
+def read_source_signals(environment: Mapping[str, str]) -> list[Mapping[str, object]]:
+    report_file = Path(environment.get("EVENT_SOURCE_REPORT", ""))
+    if not report_file.is_file():
+        return []
+    try:
+        data = json.loads(report_file.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return []
+    return [signal for signal in data.get("newSignals", []) if signal.get("sourceKind") == "official"]
+
+
 def build_update_email(report: Mapping[str, object], environment: Mapping[str, str]) -> tuple[str, str]:
     new_events = list(report.get("newEvents", []))
     changed_events = list(report.get("changedEvents", []))
     removed_events = list(report.get("removedEvents", []))
-    subject = f"[Heartopia] 发现 {len(new_events)} 个新活动，请挖掘关键词"
+    official_signals = read_source_signals(environment)
+    subject = f"[Heartopia] {len(new_events)} 个新活动，{len(official_signals)} 个新官方信号"
     body = [
         "Heartopia 每日活动监控发现变化，本站 Events 已完成基础事实更新。",
+        f"新官方公告或版本信号：{len(official_signals)}",
+        *[source_signal_line(signal) for signal in official_signals],
         "",
         f"新活动：{len(new_events)}",
         *[event_line(event) for event in new_events],
