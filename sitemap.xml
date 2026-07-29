@@ -886,7 +886,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/guides/top-up/</loc>
-        <lastmod>2026-07-21</lastmod>
+        <lastmod>2026-07-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1378,19 +1378,19 @@
     </url>
     <url>
         <loc>https://heartopia.life/ja/guides/top-up/</loc>
-        <lastmod>2026-07-21</lastmod>
+        <lastmod>2026-07-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/th/guides/top-up/</loc>
-        <lastmod>2026-07-17</lastmod>
+        <lastmod>2026-07-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/zh-tw/guides/top-up/</loc>
-        <lastmod>2026-07-17</lastmod>
+        <lastmod>2026-07-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1534,7 +1534,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/guides/gacha/</loc>
-        <lastmod>2026-07-21</lastmod>
+        <lastmod>2026-07-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1572,6 +1572,18 @@
         <loc>https://heartopia.life/events/rainbow-verse/</loc>
         <lastmod>2026-07-29</lastmod>
         <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/id/guides/top-up/</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/pt-br/guides/top-up/</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 </urlset>

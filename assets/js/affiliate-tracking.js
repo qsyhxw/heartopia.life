@@ -16,6 +16,7 @@
   function pageLanguage() {
     var language = (document.documentElement.lang || 'en').toLowerCase();
     if (language === 'zh-hant' || language === 'zh-hk' || language === 'zh-tw') return 'zh-tw';
+    if (language === 'pt-br') return 'pt-br';
     return language.split('-')[0] || 'en';
   }
 
