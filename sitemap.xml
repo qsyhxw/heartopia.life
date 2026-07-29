@@ -32,7 +32,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/codes/</loc>
-        <lastmod>2026-07-28</lastmod>
+        <lastmod>2026-07-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -442,7 +442,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/download/</loc>
-        <lastmod>2026-07-20</lastmod>
+        <lastmod>2026-07-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -1348,13 +1348,13 @@
     </url>
   <url>
     <loc>https://heartopia.life/events/call-of-whales/</loc>
-    <lastmod>2026-07-27</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://heartopia.life/events/sanrio-characters-collaboration/</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1420,19 +1420,19 @@
     </url>
     <url>
         <loc>https://heartopia.life/ja/events/call-of-whales/</loc>
-        <lastmod>2026-07-27</lastmod>
+        <lastmod>2026-07-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/zh-tw/events/call-of-whales/</loc>
-        <lastmod>2026-07-27</lastmod>
+        <lastmod>2026-07-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/ja/codes/</loc>
-        <lastmod>2026-07-28</lastmod>
+        <lastmod>2026-07-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1510,7 +1510,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/zh-tw/codes/</loc>
-        <lastmod>2026-07-28</lastmod>
+        <lastmod>2026-07-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1528,7 +1528,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/ja/guides/gacha/</loc>
-        <lastmod>2026-07-21</lastmod>
+        <lastmod>2026-07-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1588,13 +1588,13 @@
     </url>
     <url>
         <loc>https://heartopia.life/id/codes/</loc>
-        <lastmod>2026-07-28</lastmod>
+        <lastmod>2026-07-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/pt-br/codes/</loc>
-        <lastmod>2026-07-28</lastmod>
+        <lastmod>2026-07-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1606,6 +1606,90 @@
     </url>
     <url>
         <loc>https://heartopia.life/pt-br/guides/gacha/</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/id/download/</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/id/events/</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/id/events/call-of-whales/</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/id/events/sanrio-characters-collaboration/</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/id/faq/safety/</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/ja/events/</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/ja/events/sanrio-characters-collaboration/</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/pt-br/download/</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/pt-br/events/</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/pt-br/events/call-of-whales/</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/pt-br/events/sanrio-characters-collaboration/</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/pt-br/faq/safety/</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/zh-tw/events/</loc>
+        <lastmod>2026-07-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/zh-tw/events/sanrio-characters-collaboration/</loc>
         <lastmod>2026-07-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>

@@ -206,4 +206,5 @@ for(const e of events){const old=exists(e)?read(file(e)):'';if((e.status==='acti
 renderHeartopiaEvents(events, updatedAt);
 updateSitemap(events);
 write('data/heartopia-events.json',JSON.stringify({schemaVersion:1,generatedAt:updatedAt,count:publicEvents.length,events:publicEvents},null,2)+'\n');
+await import('./render-localized-entry-pages.mjs');
 console.log('Synced '+events.length+' event listings.');

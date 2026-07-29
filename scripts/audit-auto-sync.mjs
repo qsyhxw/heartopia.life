@@ -134,6 +134,21 @@ const eventData = readJson('data/heartopia-events.json');
 for (const event of eventData.events || []) {
   if (!['active', 'upcoming'].includes(event.status)) continue;
   check(fs.existsSync(path.join(root, 'events', event.localSlug, 'index.html')), `Events: missing ${event.status} detail page /events/${event.localSlug}/`);
+  for (const locale of ['id', 'pt-br', 'ja', 'zh-tw']) {
+    check(fs.existsSync(path.join(root, locale, 'events', event.localSlug, 'index.html')), `Events: missing ${locale} ${event.status} detail page /${locale}/events/${event.localSlug}/`);
+  }
+}
+for (const locale of ['id', 'pt-br', 'ja', 'zh-tw']) {
+  const page = read(`${locale}/events/index.html`);
+  check(eventData.events.filter((event) => ['active', 'upcoming'].includes(event.status)).every((event) => page.includes(event.name)), `Events: /${locale}/events/ is missing current event cards`);
+}
+for (const locale of ['id', 'pt-br']) {
+  for (const route of ['download/index.html', 'faq/safety/index.html']) {
+    check(fs.existsSync(path.join(root, locale, route)), `Localized entry: missing /${locale}/${route}`);
+  }
+  const download = read(`${locale}/download/index.html`);
+  const externalLinks = [...download.matchAll(/<a\b[^>]*href="(https?:\/\/[^\"]+)"/g)].map((match) => match[1]);
+  check(externalLinks.every((url) => url.startsWith('https://heartopia.xd.com/') || url.startsWith('https://play.google.com/store/apps/details?id=com.xd.xdtglobal.gp')), `Localized download: /${locale}/download/ has a non-allowlisted direct download link`);
 }
 
 const workflowFiles = [

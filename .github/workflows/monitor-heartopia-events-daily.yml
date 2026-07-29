@@ -12,6 +12,7 @@ on:
       - 'scripts/download-official-event-images.mjs'
       - 'scripts/event-source-config.mjs'
       - 'scripts/render-heartopia-events.mjs'
+      - 'scripts/render-localized-entry-pages.mjs'
   schedule:
     # Run every day at 09:10 China Standard Time.
     - cron: '10 1 * * *'
@@ -108,7 +109,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html database/index.html events img/events data/heartopia-events.json data/database-changelog.json database/changelog/index.html data/heartopia-search-index.json assets/js/universal-search.js sitemap.xml
+          git add index.html database/index.html events id/events pt-br/events ja/events zh-tw/events id/download pt-br/download id/faq/safety pt-br/faq/safety id/codes id/guides pt-br/codes pt-br/guides download/index.html img/events data/heartopia-events.json data/database-changelog.json database/changelog/index.html data/heartopia-search-index.json assets/js/universal-search.js sitemap.xml
           if git diff --cached --quiet; then
             echo "No publishable event change detected."
             echo "committed=false" >> "$GITHUB_OUTPUT"
