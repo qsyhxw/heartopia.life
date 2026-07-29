@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { pickRemoteFields } from './sync-field-policy.mjs';
+import { renderHeartopiaEvents } from './render-heartopia-events.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const today = new Date().toISOString().slice(0, 10);
@@ -74,7 +75,6 @@ function parse(html) {
   return [...map.values()];
 }
 async function enrich(e) {
-  if(e.status==='archive') return e;
   try {const html=await get(e.sourceUrl);const startDate=detail(html,'Start Date'),endDate=detail(html,'End Date'),eventType=detail(html,'Event Type');return pickRemoteFields('events',{...e,...(startDate?{startDate}:{}),...(endDate?{endDate}:{}),type:eventType||e.type||''});}
   catch {return e;}
 }
@@ -203,7 +203,7 @@ const publicEvents=events.map(e=>pickRemoteFields('events',{slug:e.slug,localSlu
 const eventFactsChanged = JSON.stringify(publicEvents) !== JSON.stringify(currentEventData.events || []);
 const updatedAt = eventFactsChanged ? today : (currentEventData.generatedAt || today);
 for(const e of events){const old=exists(e)?read(file(e)):'';if((e.status==='active'||e.status==='upcoming')&&(!old||old.includes('data-event-sync="managed"')))write(file(e),detailPage(e));else syncCustomEventStatus(e);}
-write('events/index.html',rootPage(events, updatedAt));
+renderHeartopiaEvents(events, updatedAt);
 updateSitemap(events);
 write('data/heartopia-events.json',JSON.stringify({schemaVersion:1,generatedAt:updatedAt,count:publicEvents.length,events:publicEvents},null,2)+'\n');
 console.log('Synced '+events.length+' event listings.');
