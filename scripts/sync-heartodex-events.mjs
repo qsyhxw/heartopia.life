@@ -207,4 +207,5 @@ renderHeartopiaEvents(events, updatedAt);
 updateSitemap(events);
 write('data/heartopia-events.json',JSON.stringify({schemaVersion:1,generatedAt:updatedAt,count:publicEvents.length,events:publicEvents},null,2)+'\n');
 await import('./render-localized-entry-pages.mjs');
+await import('./render-localized-content-pages.mjs');
 console.log('Synced '+events.length+' event listings.');

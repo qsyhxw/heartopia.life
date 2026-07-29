@@ -13,6 +13,7 @@ on:
       - 'scripts/event-source-config.mjs'
       - 'scripts/render-heartopia-events.mjs'
       - 'scripts/render-localized-entry-pages.mjs'
+      - 'scripts/render-localized-content-pages.mjs'
   schedule:
     # Run every day at 09:10 China Standard Time.
     - cron: '10 1 * * *'

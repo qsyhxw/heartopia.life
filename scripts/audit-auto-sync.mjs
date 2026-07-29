@@ -150,6 +150,25 @@ for (const locale of ['id', 'pt-br']) {
   const externalLinks = [...download.matchAll(/<a\b[^>]*href="(https?:\/\/[^\"]+)"/g)].map((match) => match[1]);
   check(externalLinks.every((url) => url.startsWith('https://heartopia.xd.com/') || url.startsWith('https://play.google.com/store/apps/details?id=com.xd.xdtglobal.gp')), `Localized download: /${locale}/download/ has a non-allowlisted direct download link`);
 }
+function countTags(html, tag) {
+  return (html.match(new RegExp(`<${tag}\\b`, 'g')) || []).length;
+}
+for (const locale of ['id', 'pt-br', 'ja', 'zh-tw']) {
+  const index = read(`${locale}/events/index.html`);
+  const sanrio = read(`${locale}/events/sanrio-characters-collaboration/index.html`);
+  check(countTags(index, 'section') >= 5 && countTags(index, 'h2') >= 4, `Localized events: /${locale}/events/ is still a thin page`);
+  check(countTags(sanrio, 'section') >= 4 && countTags(sanrio, 'h2') >= 7, `Localized events: /${locale}/events/sanrio-characters-collaboration/ is still a thin page`);
+  check(sanrio.includes('/img/events/sanrio-characters-collaboration.webp'), `Localized events: /${locale}/events/sanrio-characters-collaboration/ is not using SANRIO artwork`);
+}
+for (const locale of ['id', 'pt-br']) {
+  const whale = read(`${locale}/events/call-of-whales/index.html`);
+  const download = read(`${locale}/download/index.html`);
+  const safety = read(`${locale}/faq/safety/index.html`);
+  check(countTags(whale, 'section') >= 6 && countTags(whale, 'h2') >= 10, `Localized events: /${locale}/events/call-of-whales/ is still a thin page`);
+  check((whale.match(/data-whale-check=/g) || []).length === 16, `Localized events: /${locale}/events/call-of-whales/ does not list all 16 whales`);
+  check(countTags(download, 'section') >= 4 && countTags(download, 'h2') >= 4, `Localized download: /${locale}/download/ is still a thin page`);
+  check(countTags(safety, 'section') >= 6 && countTags(safety, 'h2') >= 6, `Localized safety: /${locale}/faq/safety/ is still a thin page`);
+}
 
 const workflowFiles = [
   '.github/workflows/monitor-heartodex-collections.yml',
