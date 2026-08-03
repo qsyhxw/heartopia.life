@@ -39,30 +39,65 @@ function retryDelay(response, attempt) {
 
 async function fetchPage(kind) {
   const url = sourceRoot + kind + '/';
-  let lastError;
-  for (let attempt = 1; attempt <= 4; attempt += 1) {
-    try {
-      const response = await fetch(url, {
-        headers: {
-          'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36 HeartopiaLifeMonitor/1.1',
-          accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-          'accept-language': 'en-US,en;q=0.9',
-          referer: sourceRoot
+  let directError;
+  const directAttempts = process.env.GITHUB_ACTIONS ? 1 : 4;
+  if (process.env.HEARTOPIA_COLLECTIONS_FORCE_PROXY !== '1') {
+    for (let attempt = 1; attempt <= directAttempts; attempt += 1) {
+      try {
+        const response = await fetch(url, {
+          headers: {
+            'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36 HeartopiaLifeMonitor/1.2',
+            accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'accept-language': 'en-US,en;q=0.9',
+            referer: sourceRoot
+          }
+        });
+        if (!response.ok) {
+          directError = new Error(response.status + ' ' + response.statusText);
+          if (![403, 408, 425, 429, 500, 502, 503, 504].includes(response.status)) throw directError;
+          if (attempt < directAttempts) await sleep(retryDelay(response, attempt));
+          continue;
         }
-      });
-      if (!response.ok) {
-        lastError = new Error(response.status + ' ' + response.statusText);
-        if (![403, 408, 425, 429, 500, 502, 503, 504].includes(response.status)) throw lastError;
-        if (attempt < 4) await sleep(retryDelay(response, attempt));
-        continue;
+        return { content: await response.text(), format: 'html' };
+      } catch (error) {
+        directError = error;
+        if (attempt < directAttempts) await sleep(retryDelay(null, attempt));
       }
-      return await response.text();
-    } catch (error) {
-      lastError = error;
-      if (attempt < 4) await sleep(retryDelay(null, attempt));
     }
   }
-  throw new Error('Unable to fetch a reference collection page: ' + lastError.message.replace(/https?:\/\/\S+/g, '[remote URL]'));
+
+  let fallbackError;
+  const fallbackDir = process.env.HEARTOPIA_COLLECTIONS_FALLBACK_DIR;
+  const fallbackFile = fallbackDir ? path.join(fallbackDir, 'heartodex-' + kind + '.md') : '';
+  if (fallbackFile && fs.existsSync(fallbackFile)) {
+    console.warn('Direct listing unavailable for ' + kind + '; using validated text fixture.');
+    return { content: fs.readFileSync(fallbackFile, 'utf8'), format: 'markdown' };
+  }
+  const fallbackUrl = 'https://r.jina.ai/http://www.heartodex.com/en/' + kind + '/';
+  for (let attempt = 1; attempt <= 2; attempt += 1) {
+    try {
+      const response = await fetch(fallbackUrl, {
+        headers: {
+          'user-agent': 'HeartopiaLifeCollectionMonitor/1.2 (+https://heartopia.life/)',
+          accept: 'text/plain,text/markdown;q=0.9,*/*;q=0.8'
+        },
+        signal: AbortSignal.timeout(45000)
+      });
+      if (!response.ok) {
+        fallbackError = new Error(response.status + ' ' + response.statusText);
+        if (attempt < 2) await sleep(retryDelay(response, attempt));
+        continue;
+      }
+      console.warn('Direct listing unavailable for ' + kind + '; using validated text fallback.');
+      return { content: await response.text(), format: 'markdown' };
+    } catch (error) {
+      fallbackError = error;
+      if (attempt < 2) await sleep(retryDelay(null, attempt));
+    }
+  }
+
+  const message = (directError?.message || 'direct request skipped') + '; fallback: ' + (fallbackError?.message || 'request failed');
+  throw new Error('Unable to fetch a reference collection page: ' + message.replace(/https?:\/\/\S+/g, '[remote URL]'));
 }
 
 function parseRemoteCollection(html, kind) {
@@ -91,6 +126,33 @@ function parseRemoteCollection(html, kind) {
     throw new Error(kind + ' parse safety check failed: page says ' + registered + ', parsed ' + entries.length + '. No snapshot was written.');
   }
   return { registered, entries };
+}
+function parseRemoteMarkdown(markdown, kind) {
+  const countMatch = markdown.match(/(\d{1,4})\s*Registered/i);
+  const items = new Map();
+  const cardPattern = new RegExp('!\\[Image\\s+\\d+:\\s*([^\\]]+)\\]\\(([^)\\s]+)\\)\\s+###\\s+[\\s\\S]{0,700}?\\]\\(https?:\\/\\/(?:www\\.)?heartodex\\.com\\/en\\/' + kind + '\\/([^)\\s/?#]+)\\/?\\)', 'gi');
+  for (const match of markdown.matchAll(cardPattern)) {
+    const slug = slugify(match[3]);
+    const name = text(match[1]);
+    if (!slug || !name) continue;
+    items.set(slug, {
+      slug,
+      name,
+      imageUrl: new URL(match[2], sourceBase).href.replace(/^http:/, 'https:')
+    });
+  }
+  const entries = [...items.values()].sort((a, b) => a.slug.localeCompare(b.slug));
+  const registered = countMatch ? Number(countMatch[1]) : entries.length;
+  if (!entries.length || entries.length !== registered) {
+    throw new Error(kind + ' text fallback safety check failed: page says ' + registered + ', parsed ' + entries.length + '. No snapshot was written.');
+  }
+  return { registered, entries };
+}
+
+function parseRemotePayload(payload, kind) {
+  return payload.format === 'markdown'
+    ? parseRemoteMarkdown(payload.content, kind)
+    : parseRemoteCollection(payload.content, kind);
 }
 
 function localFish() {
@@ -133,9 +195,9 @@ for (const kind of ['fish', 'birds', 'insects']) {
   if (kind !== 'insects') await sleep(1200);
 }
 const remote = {
-  fish: parseRemoteCollection(listingHtml.fish, 'fish'),
-  birds: parseRemoteCollection(listingHtml.birds, 'birds'),
-  insects: parseRemoteCollection(listingHtml.insects, 'insects')
+  fish: parseRemotePayload(listingHtml.fish, 'fish'),
+  birds: parseRemotePayload(listingHtml.birds, 'birds'),
+  insects: parseRemotePayload(listingHtml.insects, 'insects')
 };
 const local = {
   fish: localFish(),
