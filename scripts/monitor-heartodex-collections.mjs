@@ -29,22 +29,37 @@ const slugify = (value = '') => decode(value).toLowerCase()
   .replace(/^-|-$/g, '');
 const attrs = (tag) => Object.fromEntries([...tag.matchAll(/([:\w-]+)\s*=\s*(["'])([\s\S]*?)\2/g)].map((match) => [match[1].toLowerCase(), decode(match[3])]));
 
+const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
+
+function retryDelay(response, attempt) {
+  const retryAfter = Number(response?.headers?.get('retry-after'));
+  if (Number.isFinite(retryAfter) && retryAfter > 0) return Math.min(retryAfter * 1000, 30000);
+  return Math.min(1500 * (2 ** (attempt - 1)), 12000);
+}
+
 async function fetchPage(kind) {
   const url = sourceRoot + kind + '/';
   let lastError;
-  for (let attempt = 1; attempt <= 3; attempt += 1) {
+  for (let attempt = 1; attempt <= 4; attempt += 1) {
     try {
       const response = await fetch(url, {
         headers: {
-          'user-agent': 'HeartopiaLifeCollectionMonitor/1.0 (+https://heartopia.life/)',
-          accept: 'text/html,application/xhtml+xml'
+          'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36 HeartopiaLifeMonitor/1.1',
+          accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+          'accept-language': 'en-US,en;q=0.9',
+          referer: sourceRoot
         }
       });
-      if (!response.ok) throw new Error(response.status + ' ' + response.statusText);
+      if (!response.ok) {
+        lastError = new Error(response.status + ' ' + response.statusText);
+        if (![403, 408, 425, 429, 500, 502, 503, 504].includes(response.status)) throw lastError;
+        if (attempt < 4) await sleep(retryDelay(response, attempt));
+        continue;
+      }
       return await response.text();
     } catch (error) {
       lastError = error;
-      await new Promise((resolve) => setTimeout(resolve, attempt * 900));
+      if (attempt < 4) await sleep(retryDelay(null, attempt));
     }
   }
   throw new Error('Unable to fetch a reference collection page: ' + lastError.message.replace(/https?:\/\/\S+/g, '[remote URL]'));
@@ -110,11 +125,17 @@ function comparison(remote, local) {
   };
 }
 
-const [fishHtml, birdsHtml, insectsHtml] = await Promise.all([fetchPage('fish'), fetchPage('birds'), fetchPage('insects')]);
+// Fetch one same-origin listing at a time. GitHub-hosted runners can be throttled when
+// all three requests arrive together, which previously made the third request fail 403.
+const listingHtml = {};
+for (const kind of ['fish', 'birds', 'insects']) {
+  listingHtml[kind] = await fetchPage(kind);
+  if (kind !== 'insects') await sleep(1200);
+}
 const remote = {
-  fish: parseRemoteCollection(fishHtml, 'fish'),
-  birds: parseRemoteCollection(birdsHtml, 'birds'),
-  insects: parseRemoteCollection(insectsHtml, 'insects')
+  fish: parseRemoteCollection(listingHtml.fish, 'fish'),
+  birds: parseRemoteCollection(listingHtml.birds, 'birds'),
+  insects: parseRemoteCollection(listingHtml.insects, 'insects')
 };
 const local = {
   fish: localFish(),
