@@ -2,8 +2,8 @@
     const backupVersion = 1;
     const progressItems = [
         { id: 'fish', title: 'Fish collected', icon: '&#128031;', image: '/img/fish/Anglerfish.webp', storageKey: 'heartopia.collection.fish', total: 119, url: '/database/fish/', action: 'Open fish database', color: 'sky' },
-        { id: 'insects', title: 'Insects collected', icon: '&#129419;', image: '/img/insects/Abeja-Azul.webp', storageKey: 'heartopia.collection.insects', total: 91, url: '/database/insects/', action: 'Open insect database', color: 'sage' },
-        { id: 'birds', title: 'Birds photographed', icon: '&#128038;', image: '/img/birds/African-Olive-Pigeon.webp', storageKey: 'heartopia.collection.birds', total: 97, url: '/database/birds/', action: 'Open bird database', color: 'coral' },
+        { id: 'insects', title: 'Insects collected', icon: '&#129419;', image: '/img/insects/Abeja-Azul.webp', storageKey: 'heartopia.collection.insects', total: 96, url: '/database/insects/', action: 'Open insect database', color: 'sage' },
+        { id: 'birds', title: 'Birds photographed', icon: '&#128038;', image: '/img/birds/African-Olive-Pigeon.webp', storageKey: 'heartopia.collection.birds', total: 98, url: '/database/birds/', action: 'Open bird database', color: 'coral' },
         { id: 'wildlife', title: 'Wildlife found', icon: '&#128062;', image: '/img/wildlife/Capybara.webp', storageKey: 'heartopia.collection.wildlife', total: 11, url: '/database/wildlife/', action: 'Open wildlife database', color: 'mint' },
         { id: 'crops', title: 'Crops harvested', icon: '&#127806;', image: '/img/crops/Grape.webp', storageKey: 'heartopia.collection.crops', total: 18, url: '/database/crops/', action: 'Open crops database', color: 'gold' },
         { id: 'flowers', title: 'Flowers grown', icon: '', image: '/img/flowers/Pink-Flower-2-Star.webp', storageKey: 'heartopia.collection.flowers', total: 10, url: '/database/flowers/', action: 'Open flowers database', color: 'flower' },

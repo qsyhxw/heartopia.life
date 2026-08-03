@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-28",
-  "count": 587,
+  "generatedAt": "2026-08-03",
+  "count": 593,
   "typeOrder": [
     "fish",
     "insects",
@@ -1805,6 +1805,21 @@
       "searchText": "zander fish giantwood river lv 3 common 1 840 g zander rainbow sunny day dawn dusk night medium 230 345 460 920 1 840"
     },
     {
+      "id": "insects:agrias-butterfly",
+      "name": "Agrias Butterfly",
+      "normalized": "agrias butterfly",
+      "aliases": [
+        "Agrias Butterfly"
+      ],
+      "type": "Insect",
+      "typeKey": "insects",
+      "image": "/img/insects/Agrias-Butterfly.webp",
+      "href": "/database/insects/?search=Agrias%20Butterfly",
+      "listingHref": "/database/insects/?search=Agrias%20Butterfly",
+      "meta": "Check in game | Lv. 1 | Rainbow, Sunny, Rainy",
+      "searchText": "agrias butterfly insect check in game lv 1 rainbow sunny rainy agrias butterfly auto synced location pending check in game agrias butterfly"
+    },
+    {
       "id": "insects:alpine-longhorn-beetle",
       "name": "Alpine Longhorn Beetle",
       "normalized": "alpine longhorn beetle",
@@ -1968,6 +1983,21 @@
       "listingHref": "/database/insects/?search=Blue%20Brick%20Large%20Red%20Damselfly",
       "meta": "Deer Tower | Lv. 1 | Rainbow, Sunny, Rainy",
       "searchText": "blue brick large red damselfly insect deer tower lv 1 rainbow sunny rainy blue brick large red damselfly modular streets day dawn dusk night blue brick large red damselfly"
+    },
+    {
+      "id": "insects:blue-milkweed-beetle",
+      "name": "Blue Milkweed Beetle",
+      "normalized": "blue milkweed beetle",
+      "aliases": [
+        "Blue Milkweed Beetle"
+      ],
+      "type": "Insect",
+      "typeKey": "insects",
+      "image": "/img/insects/Blue-Milkweed-Beetle.webp",
+      "href": "/database/insects/?search=Blue%20Milkweed%20Beetle",
+      "listingHref": "/database/insects/?search=Blue%20Milkweed%20Beetle",
+      "meta": "Check in game | Lv. 1 | Rainbow, Sunny, Rainy",
+      "searchText": "blue milkweed beetle insect check in game lv 1 rainbow sunny rainy blue milkweed beetle auto synced location pending check in game blue milkweed beetle"
     },
     {
       "id": "insects:blue-morpho",
@@ -2488,6 +2518,21 @@
       "searchText": "green birdwing insect suburbs lv 6 rainbow sunny rainy green birdwing common dusk night green birdwing"
     },
     {
+      "id": "insects:green-flower-chafer",
+      "name": "Green Flower Chafer",
+      "normalized": "green flower chafer",
+      "aliases": [
+        "Green Flower Chafer"
+      ],
+      "type": "Insect",
+      "typeKey": "insects",
+      "image": "/img/insects/Green-Flower-Chafer.webp",
+      "href": "/database/insects/?search=Green%20Flower%20Chafer",
+      "listingHref": "/database/insects/?search=Green%20Flower%20Chafer",
+      "meta": "Check in game | Lv. 1 | Rainbow, Sunny, Rainy",
+      "searchText": "green flower chafer insect check in game lv 1 rainbow sunny rainy green flower chafer auto synced location pending check in game green flower chafer"
+    },
+    {
       "id": "insects:green-metalwing",
       "name": "Green Metalwing",
       "normalized": "green metalwing",
@@ -2681,6 +2726,21 @@
       "listingHref": "/database/insects/?search=Morpho%20Helena",
       "meta": "Amethyst Beach | Lv. 10 | Rainbow",
       "searchText": "morpho helena insect amethyst beach lv 10 rainbow morpho helena common day dawn morpho helena"
+    },
+    {
+      "id": "insects:morpho-luna",
+      "name": "Morpho Luna",
+      "normalized": "morpho luna",
+      "aliases": [
+        "Morpho Luna"
+      ],
+      "type": "Insect",
+      "typeKey": "insects",
+      "image": "/img/insects/Morpho-Luna.webp",
+      "href": "/database/insects/?search=Morpho%20Luna",
+      "listingHref": "/database/insects/?search=Morpho%20Luna",
+      "meta": "Check in game | Lv. 1 | Rainbow, Sunny, Rainy",
+      "searchText": "morpho luna insect check in game lv 1 rainbow sunny rainy morpho luna auto synced location pending check in game morpho luna"
     },
     {
       "id": "insects:mother-of-pearl",
@@ -3168,6 +3228,21 @@
       "listingHref": "/database/insects/?search=White%20Witch",
       "meta": "[EVENT] Bait the Insects | Lv. 5 | Rainbow, Sunny",
       "searchText": "white witch insect event bait the insects lv 5 rainbow sunny white witch bait the insects day dawn dusk night white witch"
+    },
+    {
+      "id": "insects:white-banded-erebus-moth",
+      "name": "White-banded Erebus Moth",
+      "normalized": "white banded erebus moth",
+      "aliases": [
+        "White-banded Erebus Moth"
+      ],
+      "type": "Insect",
+      "typeKey": "insects",
+      "image": "/img/insects/White-banded-Erebus-Moth.webp",
+      "href": "/database/insects/?search=White-banded%20Erebus%20Moth",
+      "listingHref": "/database/insects/?search=White-banded%20Erebus%20Moth",
+      "meta": "Check in game | Lv. 1 | Rainbow, Sunny, Rainy",
+      "searchText": "white banded erebus moth insect check in game lv 1 rainbow sunny rainy white banded erebus moth auto synced location pending check in game white banded erebus moth"
     },
     {
       "id": "insects:yellow-brick-large-red-damselfly",
@@ -4251,6 +4326,21 @@
       "listingHref": "/database/birds/?search=Regent%20Bowerbird",
       "meta": "Spirit-Oak Pine Forest | Lv. 4 | Common",
       "searchText": "regent bowerbird bird spirit oak pine forest lv 4 common regent bowerbird rainbow sunny rainy day dawn dusk night"
+    },
+    {
+      "id": "birds:roseate-spoonbill",
+      "name": "Roseate Spoonbill",
+      "normalized": "roseate spoonbill",
+      "aliases": [
+        "Roseate Spoonbill"
+      ],
+      "type": "Bird",
+      "typeKey": "birds",
+      "image": "/img/birds/Roseate-Spoonbill.webp",
+      "href": "/database/birds/?search=Roseate%20Spoonbill",
+      "listingHref": "/database/birds/?search=Roseate%20Spoonbill",
+      "meta": "Check in game | Lv. 1 | Auto-synced (location pending)",
+      "searchText": "roseate spoonbill bird check in game lv 1 auto synced location pending roseate spoonbill rainbow sunny rainy check in game"
     },
     {
       "id": "birds:ruddy-shelduck",

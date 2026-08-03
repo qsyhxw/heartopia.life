@@ -1266,6 +1266,36 @@ window.heartopiaProgressCatalog = {
         "name": "Glasswing Butterfly",
         "image": "/img/insects/Mariposa-de-alas-transparentes.webp",
         "detail": "Whale Mountain · Lv. 14 · Rainbow"
+      },
+      {
+        "id": "agrias butterfly",
+        "name": "Agrias Butterfly",
+        "image": "/img/insects/Agrias-Butterfly.webp",
+        "detail": "Check in game · Lv. 1 · Rainbow, Sunny, Rainy"
+      },
+      {
+        "id": "blue milkweed beetle",
+        "name": "Blue Milkweed Beetle",
+        "image": "/img/insects/Blue-Milkweed-Beetle.webp",
+        "detail": "Check in game · Lv. 1 · Rainbow, Sunny, Rainy"
+      },
+      {
+        "id": "green flower chafer",
+        "name": "Green Flower Chafer",
+        "image": "/img/insects/Green-Flower-Chafer.webp",
+        "detail": "Check in game · Lv. 1 · Rainbow, Sunny, Rainy"
+      },
+      {
+        "id": "morpho luna",
+        "name": "Morpho Luna",
+        "image": "/img/insects/Morpho-Luna.webp",
+        "detail": "Check in game · Lv. 1 · Rainbow, Sunny, Rainy"
+      },
+      {
+        "id": "white-banded erebus moth",
+        "name": "White-banded Erebus Moth",
+        "image": "/img/insects/White-banded-Erebus-Moth.webp",
+        "detail": "Check in game · Lv. 1 · Rainbow, Sunny, Rainy"
       }
     ]
   },
@@ -1852,6 +1882,12 @@ window.heartopiaProgressCatalog = {
         "name": "Pomarine Skua",
         "image": "/img/birds/Pomarine-Skua.webp",
         "detail": "[EVENT] Call of Whales, Whale Mountain, Windmill Flower Field, Amethyst Beach · Lv. 1 · Rainbow, Sunny, Rainy"
+      },
+      {
+        "id": "roseate spoonbill",
+        "name": "Roseate Spoonbill",
+        "image": "/img/birds/Roseate-Spoonbill.webp",
+        "detail": "Check in game · Lv. 1 · Rainbow, Sunny, Rainy"
       }
     ]
   },

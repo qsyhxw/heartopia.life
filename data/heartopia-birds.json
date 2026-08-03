@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-16",
-  "count": 97,
+  "generatedAt": "2026-08-03",
+  "count": 98,
   "birds": [
     {
       "name": "mallard",
@@ -874,6 +874,15 @@
       "location": "[EVENT] Call of Whales, Whale Mountain, Windmill Flower Field, Amethyst Beach",
       "category": "Call of Whales",
       "img": "Pomarine-Skua.webp"
+    },
+    {
+      "name": "roseate spoonbill",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "img": "Roseate-Spoonbill.webp"
     }
   ]
 }

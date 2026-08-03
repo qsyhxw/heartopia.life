@@ -872,6 +872,15 @@
     "location": "[EVENT] Call of Whales, Whale Mountain, Windmill Flower Field, Amethyst Beach",
     "category": "Call of Whales",
     "img": "Pomarine-Skua.webp"
+  },
+  {
+    "name": "roseate spoonbill",
+    "level": 1,
+    "weather": "Rainbow, Sunny, Rainy",
+    "time": "Check in game",
+    "location": "Check in game",
+    "category": "Auto-synced (location pending)",
+    "img": "Roseate-Spoonbill.webp"
   }
 ]
 ;const birdLinks={'european robin':'/database/birds/european-robin/','double-barred finch':'/database/birds/double-barred-finch/','eurasian golden oriole':'/database/birds/golden-oriole/','hawfinch':'/database/birds/hawfinch/','green peafowl':'/database/birds/green-peafowl/','winter mandarin duck':'/database/birds/winter-mandarin-duck/','winter smew':'/database/birds/winter-smew/','wonga pigeon':'/database/birds/wonga-pigeon/','black stork':'/database/birds/black-stork/','spectacled owl':'/database/birds/spectacled-owl/','atlantic puffin':'/database/birds/atlantic-puffin/','blue-footed booby':'/database/birds/blue-footed-booby/','snowy owl':'/database/birds/snowy-owl/','azores bullfinch':'/database/birds/azores-bullfinch/'};const esc=v=>String(v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');const displayName=n=>n.replace(/\b\w/g,c=>c.toUpperCase());const collected=()=>{try{return new Set(JSON.parse(localStorage.getItem('heartopia.collection.birds')||'[]'))}catch(e){return new Set()}};const unique=items=>[...new Set(items.map(String))].sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}));function addOptions(id,items,prefix){const el=document.getElementById(id);unique(items).forEach(value=>{const o=document.createElement('option');o.value=value;o.textContent=prefix?prefix+value:value;el.appendChild(o)})}addOptions('bird-level',birdData.map(b=>b.level), 'Lv. ');addOptions('bird-location',birdData.flatMap(b=>b.location.split(', ').filter(v=>!v.startsWith('[EVENT]'))));addOptions('bird-category',birdData.map(b=>b.category));function renderTable(){const body=document.getElementById('bird-table-body');body.innerHTML=birdData.map(b=>{const name=displayName(b.name),href=birdLinks[b.name],nameHtml=href?`<a href="${href}" class="font-bold text-cozy-coral hover:underline">${esc(name)}</a>`:`<span>${esc(name)}</span>`;return `<tr class="bird-row" data-bird-id="${esc(b.name)}" data-bird-name="${esc(b.name)}" data-bird-level="${b.level}" data-bird-location="${esc(b.location)}"><td class="px-3 py-3 font-medium min-w-[220px]"><span class="inline-flex items-center gap-3"><img src="/img/birds/${encodeURIComponent(b.img)}" alt="${esc(name)} bird image" class="w-11 h-11 object-contain rounded-lg bg-cozy-mint/20 p-1" loading="lazy" onerror="this.remove()">${nameHtml}</span></td><td class="px-3 py-3 text-cozy-wood min-w-[190px]">${esc(b.location)}</td><td class="px-3 py-3 text-center">${b.level}</td><td class="px-3 py-3 text-cozy-wood">${esc(b.category)}</td><td class="px-3 py-3 text-cozy-wood">${esc(b.weather)}</td><td class="px-3 py-3 text-cozy-wood">${esc(b.time)}</td></tr>`}).join('')}

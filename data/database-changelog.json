@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-29",
+  "updatedAt": "2026-08-03",
   "trackedCategories": [
     {
       "id": "fish",
@@ -70,8 +70,8 @@
   ],
   "totals": {
     "fish": 119,
-    "birds": 97,
-    "insects": 91,
+    "birds": 98,
+    "insects": 96,
     "wildlife": 11,
     "crops": 18,
     "flowers": 10,
@@ -84,6 +84,44 @@
     "events": 11
   },
   "entries": [
+    {
+      "id": "2026-08-03-51c4558378571efb",
+      "timestamp": "2026-08-03T03:21:35.038Z",
+      "date": "2026-08-03",
+      "title": "New Birds added",
+      "summary": "+1 Bird · +5 Insects",
+      "signature": "51c4558378571efb",
+      "changes": [
+        {
+          "category": "Birds",
+          "singular": "Bird",
+          "categoryId": "birds",
+          "action": "added",
+          "count": 1,
+          "items": [
+            "roseate spoonbill"
+          ],
+          "truncated": false,
+          "url": "/database/birds/"
+        },
+        {
+          "category": "Insects",
+          "singular": "Insect",
+          "categoryId": "insects",
+          "action": "added",
+          "count": 5,
+          "items": [
+            "Agrias Butterfly",
+            "Blue Milkweed Beetle",
+            "Green Flower Chafer",
+            "Morpho Luna",
+            "White-banded Erebus Moth"
+          ],
+          "truncated": false,
+          "url": "/database/insects/"
+        }
+      ]
+    },
     {
       "id": "2026-07-29-0382dc9a22bff97b",
       "timestamp": "2026-07-29T04:31:48.889Z",

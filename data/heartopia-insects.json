@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-10",
-  "count": 91,
+  "generatedAt": "2026-08-03",
+  "count": 96,
   "insects": [
     {
       "slug": "golden script supervisor bumblebee",
@@ -1002,6 +1002,61 @@
       "name": "Glasswing Butterfly",
       "image": "/img/insects/Mariposa-de-alas-transparentes.webp",
       "imageSourceName": "Mariposa de alas transparentes"
+    },
+    {
+      "slug": "agrias butterfly",
+      "name": "Agrias Butterfly",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "schedule": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "image": "/img/insects/Agrias-Butterfly.webp",
+      "imageSourceName": "Agrias Butterfly"
+    },
+    {
+      "slug": "blue milkweed beetle",
+      "name": "Blue Milkweed Beetle",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "schedule": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "image": "/img/insects/Blue-Milkweed-Beetle.webp",
+      "imageSourceName": "Blue Milkweed Beetle"
+    },
+    {
+      "slug": "green flower chafer",
+      "name": "Green Flower Chafer",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "schedule": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "image": "/img/insects/Green-Flower-Chafer.webp",
+      "imageSourceName": "Green Flower Chafer"
+    },
+    {
+      "slug": "morpho luna",
+      "name": "Morpho Luna",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "schedule": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "image": "/img/insects/Morpho-Luna.webp",
+      "imageSourceName": "Morpho Luna"
+    },
+    {
+      "slug": "white-banded erebus moth",
+      "name": "White-banded Erebus Moth",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "schedule": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "image": "/img/insects/White-banded-Erebus-Moth.webp",
+      "imageSourceName": "White-banded Erebus Moth"
     }
   ]
 }
