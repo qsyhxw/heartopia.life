@@ -179,6 +179,18 @@ const workflowFiles = [
 for (const file of workflowFiles) {
   check(read(file).includes('group: heartopia-derived-sync'), `${file}: shared concurrency group is missing`);
 }
+const collectionWorkflow = read('.github/workflows/monitor-heartodex-collections.yml');
+check(collectionWorkflow.includes("if: env.HEARTODEX_DIRECT_BLOCKED == '1'"), 'Collection workflow: direct-source deferral report is missing');
+for (const step of [
+  'Sync Wildlife details and database',
+  'Sync Flowers database and images',
+  'Sync Recipe details, prices, and tools',
+  'Sync Crop details and planning pages',
+  'Sync Achievement details and progress'
+]) {
+  const guardedStep = new RegExp(`- name: ${step}\\n\\s+if: env\\.HEARTODEX_DIRECT_BLOCKED != '1'`);
+  check(guardedStep.test(collectionWorkflow), `Collection workflow: ${step} is not guarded by the direct-source circuit breaker`);
+}
 for (const file of ['.github/workflows/sync-heartopia-fish-pages.yml', '.github/workflows/sync-heartopia-insects.yml']) {
   const workflow = read(file);
   check(workflow.includes('ref: ${{ github.ref_name }}'), `${file}: checkout does not follow the latest triggering branch`);

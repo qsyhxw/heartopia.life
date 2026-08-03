@@ -55,24 +55,33 @@ jobs:
         run: node scripts/sync-insect-database.mjs
 
       - name: Sync Wildlife details and database
+        if: env.HEARTODEX_DIRECT_BLOCKED != '1'
         run: node scripts/sync-heartodex-wildlife.mjs
 
       - name: Sync Flowers database and images
+        if: env.HEARTODEX_DIRECT_BLOCKED != '1'
         run: node scripts/sync-heartodex-flowers.mjs
+
+      - name: Report deferred direct-only Heartodex syncs
+        if: env.HEARTODEX_DIRECT_BLOCKED == '1'
+        run: echo "::warning title=Heartodex direct source unavailable::Wildlife, flowers, recipes, crops, and achievements retained their verified local baseline. Proxy discovery monitoring remains active."
 
       - name: Build Flowers database page
         run: node scripts/build-flowers-page.mjs
 
       - name: Sync Recipe details, prices, and tools
+        if: env.HEARTODEX_DIRECT_BLOCKED != '1'
         run: node scripts/sync-heartodex-recipes.mjs
 
       - name: Sync Crop details and planning pages
+        if: env.HEARTODEX_DIRECT_BLOCKED != '1'
         run: node scripts/sync-heartodex-crops.mjs
 
       - name: Build relational database hubs
         run: node scripts/build-relational-databases.mjs
 
       - name: Sync Achievement details and progress
+        if: env.HEARTODEX_DIRECT_BLOCKED != '1'
         run: node scripts/sync-heartodex-achievements.mjs
 
       - name: Build Achievement support pages

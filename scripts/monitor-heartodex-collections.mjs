@@ -194,6 +194,11 @@ for (const kind of ['fish', 'birds', 'insects']) {
   listingHtml[kind] = await fetchPage(kind);
   if (kind !== 'insects') await sleep(1200);
 }
+const directSourceBlocked = Object.values(listingHtml).some((payload) => payload.format === 'markdown');
+if (directSourceBlocked && process.env.GITHUB_ENV) {
+  fs.appendFileSync(process.env.GITHUB_ENV, 'HEARTODEX_DIRECT_BLOCKED=1\n');
+  console.warn('Heartodex direct HTML is unavailable from this runner; direct-only database syncs will retain their verified local baseline.');
+}
 const remote = {
   fish: parseRemotePayload(listingHtml.fish, 'fish'),
   birds: parseRemotePayload(listingHtml.birds, 'birds'),
