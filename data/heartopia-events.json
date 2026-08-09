@@ -1,8 +1,18 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-29",
-  "count": 11,
+  "generatedAt": "2026-08-09",
+  "count": 12,
   "events": [
+    {
+      "slug": "dave-the-diver",
+      "localSlug": "dave-the-diver",
+      "name": "Dave the Diver",
+      "status": "active",
+      "type": "Collaboration",
+      "startDate": "August 8, 2026",
+      "endDate": "September 7, 2026",
+      "dateLabel": "Aug 8 → Sep 7, 2026"
+    },
     {
       "slug": "sanrio-characters-collaboration",
       "localSlug": "sanrio-characters-collaboration",
