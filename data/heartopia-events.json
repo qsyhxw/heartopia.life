@@ -1,8 +1,28 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-09",
-  "count": 12,
+  "generatedAt": "2026-09-01",
+  "count": 14,
   "events": [
+    {
+      "slug": "echo-of-ancients",
+      "localSlug": "echo-of-ancients",
+      "name": "Echo of Ancients",
+      "status": "active",
+      "type": "Content",
+      "startDate": "August 29, 2026",
+      "endDate": "October 17, 2026",
+      "dateLabel": "Aug 29 → Oct 17, 2026"
+    },
+    {
+      "slug": "qixi-fair",
+      "localSlug": "qixi-fair",
+      "name": "Qixi Fair",
+      "status": "active",
+      "type": "Content",
+      "startDate": "August 15, 2026",
+      "endDate": "September 7, 2026",
+      "dateLabel": "Aug 15 → Sep 7, 2026"
+    },
     {
       "slug": "dave-the-diver",
       "localSlug": "dave-the-diver",
@@ -17,21 +37,21 @@
       "slug": "sanrio-characters-collaboration",
       "localSlug": "sanrio-characters-collaboration",
       "name": "Heartopia x SANRIO CHARACTERS",
-      "status": "active",
+      "status": "archive",
       "type": "Collaboration",
       "startDate": "July 17, 2026",
       "endDate": "August 23, 2026",
-      "dateLabel": "Jul 17 → Aug 23, 2026"
+      "dateLabel": "Jul 17 – Aug 23"
     },
     {
       "slug": "call-of-whales",
       "localSlug": "call-of-whales",
       "name": "Call of Whales",
-      "status": "active",
+      "status": "archive",
       "type": "Fashionwave",
       "startDate": "July 11, 2026",
       "endDate": "August 22, 2026",
-      "dateLabel": "Jul 11 → Aug 22, 2026"
+      "dateLabel": "Jul 11 – Aug 22"
     },
     {
       "slug": "midsummer-rhyme",

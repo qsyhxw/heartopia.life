@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-09",
+  "updatedAt": "2026-09-01",
   "trackedCategories": [
     {
       "id": "fish",
@@ -81,9 +81,58 @@
     "ingredients": 26,
     "collectibles": 37,
     "npcs": 19,
-    "events": 12
+    "events": 14
   },
   "entries": [
+    {
+      "id": "2026-09-01-5d66c5b3e488bd2e",
+      "timestamp": "2026-09-01T06:12:40.685Z",
+      "date": "2026-09-01",
+      "title": "New Events added",
+      "summary": "+2 Events · 2 Events updated · 2 Events changed status",
+      "signature": "5d66c5b3e488bd2e",
+      "changes": [
+        {
+          "category": "Events",
+          "singular": "Event",
+          "categoryId": "events",
+          "action": "added",
+          "count": 2,
+          "items": [
+            "Echo of Ancients",
+            "Qixi Fair"
+          ],
+          "truncated": false,
+          "url": "/events/"
+        },
+        {
+          "category": "Events",
+          "singular": "Event",
+          "categoryId": "events",
+          "action": "updated",
+          "count": 2,
+          "items": [
+            "Heartopia x SANRIO CHARACTERS",
+            "Call of Whales"
+          ],
+          "truncated": false,
+          "url": "/events/"
+        },
+        {
+          "category": "Events",
+          "singular": "Event",
+          "categoryId": "events",
+          "action": "status",
+          "count": 2,
+          "items": [
+            "Heartopia x SANRIO CHARACTERS: active to archive",
+            "Call of Whales: active to archive"
+          ],
+          "truncated": false,
+          "url": "/events/"
+        }
+      ]
+    },
     {
       "id": "2026-08-09-cfc621b2f75cef5a",
       "timestamp": "2026-08-09T03:05:37.436Z",
