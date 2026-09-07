@@ -14,11 +14,14 @@ if (readiness.ready.fish.length) {
   let html = read(file);
   const rows = readiness.ready.fish.map((fish) => `<tr><td class="px-4 py-2 font-medium">${escape(fish.name)}</td><td class="px-4 py-2 text-cozy-wood">Check in game</td><td class="px-4 py-2">${fish.level}</td><td class="px-4 py-2 text-cozy-wood">Check in game</td><td class="px-4 py-2 text-cozy-wood">Auto-synced (location pending)</td><td class="px-4 py-2 text-cozy-wood">${escape(fish.weather.join(', '))}; Check in game</td><td class="px-4 py-2 text-cozy-wood">Check in game</td><td class="px-4 py-2 text-cozy-wood text-xs">Detected automatically. Confirm location, time, shadow, and value in game.</td></tr>`).join('');
   const block = `<!-- AUTO-SYNC:UNVERIFIED:FISH:START --><section id="auto-synced-fish" class="mb-12"><h2 class="font-display text-2xl font-bold mb-2">New Fish: Conditions Pending</h2><p class="text-sm text-cozy-wood mb-4">Newly detected entries with verified level, weather, and local image. Check the game for remaining conditions.</p><div class="overflow-x-auto"><table class="w-full text-sm"><tbody class="divide-y divide-cozy-peach/20">${rows}</tbody></table></div></section><!-- AUTO-SYNC:UNVERIFIED:FISH:END -->`;
-  const marker = '<!-- ===== SPECIAL COLLABORATION FISH ===== -->';
-  if (!html.includes(marker)) throw new Error('Fish insertion marker not found');
+  // The fish page has used both the original decorated marker and the
+  // normalized marker emitted by the page generator. Accept either form so
+  // a newly discovered fish cannot fail the whole sync on a formatting change.
+  const marker = /<!--\s*(?:={3,}\s*)?SPECIAL COLLABORATION FISH(?:\s*={3,})?\s*-->/i;
+  if (!marker.test(html)) throw new Error('Fish insertion marker not found');
   html = html.includes('AUTO-SYNC:UNVERIFIED:FISH:START')
     ? html.replace(/<!-- AUTO-SYNC:UNVERIFIED:FISH:START -->[\s\S]*?<!-- AUTO-SYNC:UNVERIFIED:FISH:END -->/, block)
-    : html.replace(marker, `${block}\n${marker}`);
+    : html.replace(marker, (match) => `${block}\n${match}`);
   write(file, html);
   changes += readiness.ready.fish.length;
 }
