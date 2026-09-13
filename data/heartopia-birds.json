@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-03",
-  "count": 98,
+  "generatedAt": "2026-09-13",
+  "count": 103,
   "birds": [
     {
       "name": "mallard",
@@ -883,6 +883,51 @@
       "location": "Check in game",
       "category": "Auto-synced (location pending)",
       "img": "Roseate-Spoonbill.webp"
+    },
+    {
+      "name": "blue hoopoe",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "img": "Blue-Hoopoe.webp"
+    },
+    {
+      "name": "colorful hoopoe",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "img": "Colorful-Hoopoe.webp"
+    },
+    {
+      "name": "green hoopoe",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "img": "Green-Hoopoe.webp"
+    },
+    {
+      "name": "orange hoopoe",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "img": "Orange-Hoopoe.webp"
+    },
+    {
+      "name": "red hoopoe",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "img": "Red-Hoopoe.webp"
     }
   ]
 }

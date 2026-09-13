@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-30",
-  "count": 119,
+  "generatedAt": "2026-09-13",
+  "count": 124,
   "fish": [
     {
       "name": "Barbel",
@@ -1199,6 +1199,61 @@
       "schedule": "Rainbow, Sunny, Rainy; Day, Dawn, Dusk, Night",
       "value": "&mdash;",
       "image": "/img/fish/Scallop.webp",
+      "maxValue": 0
+    },
+    {
+      "name": "Black Garfish",
+      "location": "Check in game",
+      "level": 1,
+      "shadow": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "schedule": "Rainbow, Sunny, Rainy; Check in game",
+      "value": "Check in game",
+      "image": "/img/fish/Black-Garfish.webp",
+      "maxValue": 0
+    },
+    {
+      "name": "Brown Garfish",
+      "location": "Check in game",
+      "level": 1,
+      "shadow": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "schedule": "Rainbow, Sunny, Rainy; Check in game",
+      "value": "Check in game",
+      "image": "/img/fish/Brown-Garfish.webp",
+      "maxValue": 0
+    },
+    {
+      "name": "Golden Garfish",
+      "location": "Check in game",
+      "level": 1,
+      "shadow": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "schedule": "Rainbow, Sunny, Rainy; Check in game",
+      "value": "Check in game",
+      "image": "/img/fish/Golden-Garfish.webp",
+      "maxValue": 0
+    },
+    {
+      "name": "Pale Gold Garfish",
+      "location": "Check in game",
+      "level": 1,
+      "shadow": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "schedule": "Rainbow, Sunny, Rainy; Check in game",
+      "value": "Check in game",
+      "image": "/img/fish/Pale-Gold-Garfish.webp",
+      "maxValue": 0
+    },
+    {
+      "name": "Silver Garfish",
+      "location": "Check in game",
+      "level": 1,
+      "shadow": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "schedule": "Rainbow, Sunny, Rainy; Check in game",
+      "value": "Check in game",
+      "image": "/img/fish/Silver-Garfish.webp",
       "maxValue": 0
     },
     {

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-03",
-  "count": 96,
+  "generatedAt": "2026-09-13",
+  "count": 101,
   "insects": [
     {
       "slug": "golden script supervisor bumblebee",
@@ -1057,6 +1057,61 @@
       "category": "Auto-synced (location pending)",
       "image": "/img/insects/White-banded-Erebus-Moth.webp",
       "imageSourceName": "White-banded Erebus Moth"
+    },
+    {
+      "slug": "brown rhinoceros beetle",
+      "name": "Brown Rhinoceros Beetle",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "schedule": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "image": "/img/insects/Brown-Rhinoceros-Beetle.webp",
+      "imageSourceName": "Brown Rhinoceros Beetle"
+    },
+    {
+      "slug": "grey-horned firefly",
+      "name": "Grey-horned Firefly",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "schedule": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "image": "/img/insects/Grey-horned-Firefly.webp",
+      "imageSourceName": "Grey-horned Firefly"
+    },
+    {
+      "slug": "iridescent rhinoceros beetle",
+      "name": "Iridescent Rhinoceros Beetle",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "schedule": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "image": "/img/insects/Iridescent-Rhinoceros-Beetle.webp",
+      "imageSourceName": "Iridescent Rhinoceros Beetle"
+    },
+    {
+      "slug": "pink-horned firefly",
+      "name": "Pink-horned Firefly",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "schedule": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "image": "/img/insects/Pink-horned-Firefly.webp",
+      "imageSourceName": "Pink-horned Firefly"
+    },
+    {
+      "slug": "purple-horned firefly",
+      "name": "Purple-horned Firefly",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "schedule": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "image": "/img/insects/Purple-horned-Firefly.webp",
+      "imageSourceName": "Purple-horned Firefly"
     }
   ]
 }

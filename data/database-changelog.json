@@ -69,9 +69,9 @@
     }
   ],
   "totals": {
-    "fish": 119,
-    "birds": 98,
-    "insects": 96,
+    "fish": 124,
+    "birds": 103,
+    "insects": 101,
     "wildlife": 11,
     "crops": 18,
     "flowers": 10,
@@ -84,6 +84,64 @@
     "events": 14
   },
   "entries": [
+    {
+      "id": "2026-09-13-27adda8d958b1be0",
+      "timestamp": "2026-09-13T06:23:04.964Z",
+      "date": "2026-09-13",
+      "title": "New Fish added",
+      "summary": "+5 Fish · +5 Birds · +5 Insects",
+      "signature": "27adda8d958b1be0",
+      "changes": [
+        {
+          "category": "Fish",
+          "singular": "Fish",
+          "categoryId": "fish",
+          "action": "added",
+          "count": 5,
+          "items": [
+            "Black Garfish",
+            "Brown Garfish",
+            "Golden Garfish",
+            "Pale Gold Garfish",
+            "Silver Garfish"
+          ],
+          "truncated": false,
+          "url": "/database/fish/"
+        },
+        {
+          "category": "Birds",
+          "singular": "Bird",
+          "categoryId": "birds",
+          "action": "added",
+          "count": 5,
+          "items": [
+            "blue hoopoe",
+            "colorful hoopoe",
+            "green hoopoe",
+            "orange hoopoe",
+            "red hoopoe"
+          ],
+          "truncated": false,
+          "url": "/database/birds/"
+        },
+        {
+          "category": "Insects",
+          "singular": "Insect",
+          "categoryId": "insects",
+          "action": "added",
+          "count": 5,
+          "items": [
+            "Brown Rhinoceros Beetle",
+            "Grey-horned Firefly",
+            "Iridescent Rhinoceros Beetle",
+            "Pink-horned Firefly",
+            "Purple-horned Firefly"
+          ],
+          "truncated": false,
+          "url": "/database/insects/"
+        }
+      ]
+    },
     {
       "id": "2026-09-13-2b2a21b8a9842aa7",
       "timestamp": "2026-09-13T05:59:31.262Z",

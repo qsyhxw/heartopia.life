@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-03",
-  "count": 593,
+  "generatedAt": "2026-09-13",
+  "count": 608,
   "typeOrder": [
     "fish",
     "insects",
@@ -165,6 +165,21 @@
       "searchText": "beltfish fish zephyr sea lv 1 common 840 g beltfish rainbow sunny rainy day dawn dusk night large 105 157 210 420 840"
     },
     {
+      "id": "fish:black-garfish",
+      "name": "Black Garfish",
+      "normalized": "black garfish",
+      "aliases": [
+        "Black Garfish"
+      ],
+      "type": "Fish",
+      "typeKey": "fish",
+      "image": "/img/fish/Black-Garfish.webp",
+      "href": "/database/fish/?search=Black%20Garfish",
+      "listingHref": "/database/fish/?search=Black%20Garfish",
+      "meta": "Check in game | Lv. 1 | Auto-synced (location pending)",
+      "searchText": "black garfish fish check in game lv 1 auto synced location pending black garfish rainbow sunny rainy check in game check in game check in game"
+    },
+    {
       "id": "fish:blackspot-seabream",
       "name": "Blackspot Seabream",
       "normalized": "blackspot seabream",
@@ -268,6 +283,21 @@
       "listingHref": "/database/fish/?search=Bluegill",
       "meta": "Onsen Mountain Lake | Lv. 10 | Common | 3,160 G",
       "searchText": "bluegill fish onsen mountain lake lv 10 common 3 160 g bluegill rainbow sunny dusk night small 395 592 790 1 580 3 160"
+    },
+    {
+      "id": "fish:brown-garfish",
+      "name": "Brown Garfish",
+      "normalized": "brown garfish",
+      "aliases": [
+        "Brown Garfish"
+      ],
+      "type": "Fish",
+      "typeKey": "fish",
+      "image": "/img/fish/Brown-Garfish.webp",
+      "href": "/database/fish/?search=Brown%20Garfish",
+      "listingHref": "/database/fish/?search=Brown%20Garfish",
+      "meta": "Check in game | Lv. 1 | Auto-synced (location pending)",
+      "searchText": "brown garfish fish check in game lv 1 auto synced location pending brown garfish rainbow sunny rainy check in game check in game check in game"
     },
     {
       "id": "fish:burbot",
@@ -840,6 +870,21 @@
       "searchText": "goby fish east sea lv 4 common 1 200 g goby rainbow sunny rainy day dawn small 150 225 300 600 1 200"
     },
     {
+      "id": "fish:golden-garfish",
+      "name": "Golden Garfish",
+      "normalized": "golden garfish",
+      "aliases": [
+        "Golden Garfish"
+      ],
+      "type": "Fish",
+      "typeKey": "fish",
+      "image": "/img/fish/Golden-Garfish.webp",
+      "href": "/database/fish/?search=Golden%20Garfish",
+      "listingHref": "/database/fish/?search=Golden%20Garfish",
+      "meta": "Check in game | Lv. 1 | Auto-synced (location pending)",
+      "searchText": "golden garfish fish check in game lv 1 auto synced location pending golden garfish rainbow sunny rainy check in game check in game check in game"
+    },
+    {
       "id": "fish:golden-king-crab",
       "name": "Golden King Crab",
       "normalized": "golden king crab",
@@ -1265,6 +1310,21 @@
       "searchText": "oriental shrimp fish river lv 1 common 400 g oriental shrimp shrimp heartopia shrimp heartopia shrimp location where to find shrimp in heartopia rainbow sunny rainy day dawn dusk night small 50 75 100 200 400"
     },
     {
+      "id": "fish:pale-gold-garfish",
+      "name": "Pale Gold Garfish",
+      "normalized": "pale gold garfish",
+      "aliases": [
+        "Pale Gold Garfish"
+      ],
+      "type": "Fish",
+      "typeKey": "fish",
+      "image": "/img/fish/Pale-Gold-Garfish.webp",
+      "href": "/database/fish/?search=Pale%20Gold%20Garfish",
+      "listingHref": "/database/fish/?search=Pale%20Gold%20Garfish",
+      "meta": "Check in game | Lv. 1 | Auto-synced (location pending)",
+      "searchText": "pale gold garfish fish check in game lv 1 auto synced location pending pale gold garfish rainbow sunny rainy check in game check in game check in game"
+    },
+    {
       "id": "fish:pink-betta",
       "name": "Pink Betta",
       "normalized": "pink betta",
@@ -1533,6 +1593,21 @@
       "listingHref": "/database/fish/?search=Shortfin%20Mako%20Shark",
       "meta": "[EVENT] Sea Fishing | Lv. 10 | Sea Fishing | 6,800 G",
       "searchText": "shortfin mako shark fish event sea fishing lv 10 sea fishing 6 800 g shortfin mako shark rainbow day dawn golden 850 1 275 1 700 3 400 6 800"
+    },
+    {
+      "id": "fish:silver-garfish",
+      "name": "Silver Garfish",
+      "normalized": "silver garfish",
+      "aliases": [
+        "Silver Garfish"
+      ],
+      "type": "Fish",
+      "typeKey": "fish",
+      "image": "/img/fish/Silver-Garfish.webp",
+      "href": "/database/fish/?search=Silver%20Garfish",
+      "listingHref": "/database/fish/?search=Silver%20Garfish",
+      "meta": "Check in game | Lv. 1 | Auto-synced (location pending)",
+      "searchText": "silver garfish fish check in game lv 1 auto synced location pending silver garfish rainbow sunny rainy check in game check in game check in game"
     },
     {
       "id": "fish:skipjack-tuna",
@@ -2028,6 +2103,21 @@
       "listingHref": "/database/insects/?search=Blue%20Shieldbug",
       "meta": "Lighthouse | Lv. 6 | Rainbow, Sunny, Rainy",
       "searchText": "blue shieldbug insect lighthouse lv 6 rainbow sunny rainy blue shieldbug common day dawn blue shieldbug"
+    },
+    {
+      "id": "insects:brown-rhinoceros-beetle",
+      "name": "Brown Rhinoceros Beetle",
+      "normalized": "brown rhinoceros beetle",
+      "aliases": [
+        "Brown Rhinoceros Beetle"
+      ],
+      "type": "Insect",
+      "typeKey": "insects",
+      "image": "/img/insects/Brown-Rhinoceros-Beetle.webp",
+      "href": "/database/insects/?search=Brown%20Rhinoceros%20Beetle",
+      "listingHref": "/database/insects/?search=Brown%20Rhinoceros%20Beetle",
+      "meta": "Check in game | Lv. 1 | Rainbow, Sunny, Rainy",
+      "searchText": "brown rhinoceros beetle insect check in game lv 1 rainbow sunny rainy brown rhinoceros beetle auto synced location pending check in game brown rhinoceros beetle"
     },
     {
       "id": "insects:bumblebee",
@@ -2593,6 +2683,21 @@
       "searchText": "green tiger beetle insect onsen onsen mountain lake crater lake ruins lv 2 rainbow sunny rainy green tiger beetle common day dawn dusk night green tiger beetle"
     },
     {
+      "id": "insects:grey-horned-firefly",
+      "name": "Grey-horned Firefly",
+      "normalized": "grey horned firefly",
+      "aliases": [
+        "Grey-horned Firefly"
+      ],
+      "type": "Insect",
+      "typeKey": "insects",
+      "image": "/img/insects/Grey-horned-Firefly.webp",
+      "href": "/database/insects/?search=Grey-horned%20Firefly",
+      "listingHref": "/database/insects/?search=Grey-horned%20Firefly",
+      "meta": "Check in game | Lv. 1 | Rainbow, Sunny, Rainy",
+      "searchText": "grey horned firefly insect check in game lv 1 rainbow sunny rainy grey horned firefly auto synced location pending check in game grey horned firefly"
+    },
+    {
       "id": "insects:hercules-beetle",
       "name": "Hercules Beetle",
       "normalized": "hercules beetle",
@@ -2621,6 +2726,21 @@
       "listingHref": "/database/insects/?search=Horned%20Beetle",
       "meta": "East Pier of Fishing Village | Lv. 8 | Rainbow, Sunny",
       "searchText": "horned beetle insect east pier of fishing village lv 8 rainbow sunny horned beetle common dusk night horned beetle"
+    },
+    {
+      "id": "insects:iridescent-rhinoceros-beetle",
+      "name": "Iridescent Rhinoceros Beetle",
+      "normalized": "iridescent rhinoceros beetle",
+      "aliases": [
+        "Iridescent Rhinoceros Beetle"
+      ],
+      "type": "Insect",
+      "typeKey": "insects",
+      "image": "/img/insects/Iridescent-Rhinoceros-Beetle.webp",
+      "href": "/database/insects/?search=Iridescent%20Rhinoceros%20Beetle",
+      "listingHref": "/database/insects/?search=Iridescent%20Rhinoceros%20Beetle",
+      "meta": "Check in game | Lv. 1 | Rainbow, Sunny, Rainy",
+      "searchText": "iridescent rhinoceros beetle insect check in game lv 1 rainbow sunny rainy iridescent rhinoceros beetle auto synced location pending check in game iridescent rhinoceros beetle"
     },
     {
       "id": "insects:katydid",
@@ -2897,6 +3017,21 @@
       "searchText": "pink script supervisor bumblebee insect windmill flower field lv 1 rainbow sunny rainy pink script supervisor bumblebee dreamlight cinematics day dawn dusk night pink script supervisor bumblebee"
     },
     {
+      "id": "insects:pink-horned-firefly",
+      "name": "Pink-horned Firefly",
+      "normalized": "pink horned firefly",
+      "aliases": [
+        "Pink-horned Firefly"
+      ],
+      "type": "Insect",
+      "typeKey": "insects",
+      "image": "/img/insects/Pink-horned-Firefly.webp",
+      "href": "/database/insects/?search=Pink-horned%20Firefly",
+      "listingHref": "/database/insects/?search=Pink-horned%20Firefly",
+      "meta": "Check in game | Lv. 1 | Rainbow, Sunny, Rainy",
+      "searchText": "pink horned firefly insect check in game lv 1 rainbow sunny rainy pink horned firefly auto synced location pending check in game pink horned firefly"
+    },
+    {
       "id": "insects:postman-butterfly",
       "name": "Postman Butterfly",
       "normalized": "postman butterfly",
@@ -2970,6 +3105,21 @@
       "listingHref": "/database/insects/?search=Purple%20Spotted%20Swallowtail",
       "meta": "Windmill Flower Field | Lv. 12 | Rainbow, Rainy",
       "searchText": "purple spotted swallowtail insect windmill flower field lv 12 rainbow rainy purple spotted swallowtail common dawn dusk night purple spotted swallowtail"
+    },
+    {
+      "id": "insects:purple-horned-firefly",
+      "name": "Purple-horned Firefly",
+      "normalized": "purple horned firefly",
+      "aliases": [
+        "Purple-horned Firefly"
+      ],
+      "type": "Insect",
+      "typeKey": "insects",
+      "image": "/img/insects/Purple-horned-Firefly.webp",
+      "href": "/database/insects/?search=Purple-horned%20Firefly",
+      "listingHref": "/database/insects/?search=Purple-horned%20Firefly",
+      "meta": "Check in game | Lv. 1 | Rainbow, Sunny, Rainy",
+      "searchText": "purple horned firefly insect check in game lv 1 rainbow sunny rainy purple horned firefly auto synced location pending check in game purple horned firefly"
     },
     {
       "id": "insects:queen-alexandra-s-birdwing",
@@ -3456,6 +3606,21 @@
       "searchText": "blue brick sparrow bird onsen lv 1 modular streets blue brick sparrow rainbow sunny rainy day dawn dusk night"
     },
     {
+      "id": "birds:blue-hoopoe",
+      "name": "Blue Hoopoe",
+      "normalized": "blue hoopoe",
+      "aliases": [
+        "Blue Hoopoe"
+      ],
+      "type": "Bird",
+      "typeKey": "birds",
+      "image": "/img/birds/Blue-Hoopoe.webp",
+      "href": "/database/birds/?search=Blue%20Hoopoe",
+      "listingHref": "/database/birds/?search=Blue%20Hoopoe",
+      "meta": "Check in game | Lv. 1 | Auto-synced (location pending)",
+      "searchText": "blue hoopoe bird check in game lv 1 auto synced location pending blue hoopoe rainbow sunny rainy check in game"
+    },
+    {
       "id": "birds:blue-peafowl",
       "name": "Blue Peafowl",
       "normalized": "blue peafowl",
@@ -3589,6 +3754,21 @@
       "listingHref": "/database/birds/?search=Colorful%20Brick%20Sparrow",
       "meta": "Evento especial de aves de bloques | Lv. 1 | Modular Streets",
       "searchText": "colorful brick sparrow bird evento especial de aves de bloques lv 1 modular streets colorful brick sparrow rainbow sunny rainy day dawn dusk night"
+    },
+    {
+      "id": "birds:colorful-hoopoe",
+      "name": "Colorful Hoopoe",
+      "normalized": "colorful hoopoe",
+      "aliases": [
+        "Colorful Hoopoe"
+      ],
+      "type": "Bird",
+      "typeKey": "birds",
+      "image": "/img/birds/Colorful-Hoopoe.webp",
+      "href": "/database/birds/?search=Colorful%20Hoopoe",
+      "listingHref": "/database/birds/?search=Colorful%20Hoopoe",
+      "meta": "Check in game | Lv. 1 | Auto-synced (location pending)",
+      "searchText": "colorful hoopoe bird check in game lv 1 auto synced location pending colorful hoopoe rainbow sunny rainy check in game"
     },
     {
       "id": "birds:common-kestrel",
@@ -3876,6 +4056,21 @@
       "searchText": "green brick sparrow bird crater lake lv 1 modular streets green brick sparrow rainbow sunny rainy day dawn dusk night"
     },
     {
+      "id": "birds:green-hoopoe",
+      "name": "Green Hoopoe",
+      "normalized": "green hoopoe",
+      "aliases": [
+        "Green Hoopoe"
+      ],
+      "type": "Bird",
+      "typeKey": "birds",
+      "image": "/img/birds/Green-Hoopoe.webp",
+      "href": "/database/birds/?search=Green%20Hoopoe",
+      "listingHref": "/database/birds/?search=Green%20Hoopoe",
+      "meta": "Check in game | Lv. 1 | Auto-synced (location pending)",
+      "searchText": "green hoopoe bird check in game lv 1 auto synced location pending green hoopoe rainbow sunny rainy check in game"
+    },
+    {
       "id": "birds:green-peafowl",
       "name": "Green Peafowl",
       "normalized": "green peafowl",
@@ -4087,6 +4282,21 @@
       "searchText": "mallard bird suburban lake lv 1 common mallard rainbow sunny rainy day dawn dusk night"
     },
     {
+      "id": "birds:orange-hoopoe",
+      "name": "Orange Hoopoe",
+      "normalized": "orange hoopoe",
+      "aliases": [
+        "Orange Hoopoe"
+      ],
+      "type": "Bird",
+      "typeKey": "birds",
+      "image": "/img/birds/Orange-Hoopoe.webp",
+      "href": "/database/birds/?search=Orange%20Hoopoe",
+      "listingHref": "/database/birds/?search=Orange%20Hoopoe",
+      "meta": "Check in game | Lv. 1 | Auto-synced (location pending)",
+      "searchText": "orange hoopoe bird check in game lv 1 auto synced location pending orange hoopoe rainbow sunny rainy check in game"
+    },
+    {
       "id": "birds:paradise-tanager",
       "name": "Paradise Tanager",
       "normalized": "paradise tanager",
@@ -4251,6 +4461,21 @@
       "listingHref": "/database/birds/?search=Red%20Faced%20Cormorant",
       "meta": "Old Sea, Whale Sea | Lv. 6 | Common",
       "searchText": "red faced cormorant bird old sea whale sea lv 6 common red faced cormorant rainbow sunny rainy day dawn dusk night"
+    },
+    {
+      "id": "birds:red-hoopoe",
+      "name": "Red Hoopoe",
+      "normalized": "red hoopoe",
+      "aliases": [
+        "Red Hoopoe"
+      ],
+      "type": "Bird",
+      "typeKey": "birds",
+      "image": "/img/birds/Red-Hoopoe.webp",
+      "href": "/database/birds/?search=Red%20Hoopoe",
+      "listingHref": "/database/birds/?search=Red%20Hoopoe",
+      "meta": "Check in game | Lv. 1 | Auto-synced (location pending)",
+      "searchText": "red hoopoe bird check in game lv 1 auto synced location pending red hoopoe rainbow sunny rainy check in game"
     },
     {
       "id": "birds:red-suit-dove",
