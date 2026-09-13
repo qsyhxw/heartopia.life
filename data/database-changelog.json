@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-13",
   "trackedCategories": [
     {
       "id": "fish",
@@ -84,6 +84,42 @@
     "events": 14
   },
   "entries": [
+    {
+      "id": "2026-09-13-2b2a21b8a9842aa7",
+      "timestamp": "2026-09-13T05:59:31.262Z",
+      "date": "2026-09-13",
+      "title": "Database records updated",
+      "summary": "2 Events updated · 2 Events changed status",
+      "signature": "2b2a21b8a9842aa7",
+      "changes": [
+        {
+          "category": "Events",
+          "singular": "Event",
+          "categoryId": "events",
+          "action": "updated",
+          "count": 2,
+          "items": [
+            "Qixi Fair",
+            "Dave the Diver"
+          ],
+          "truncated": false,
+          "url": "/events/"
+        },
+        {
+          "category": "Events",
+          "singular": "Event",
+          "categoryId": "events",
+          "action": "status",
+          "count": 2,
+          "items": [
+            "Qixi Fair: active to archive",
+            "Dave the Diver: active to archive"
+          ],
+          "truncated": false,
+          "url": "/events/"
+        }
+      ]
+    },
     {
       "id": "2026-09-01-5d66c5b3e488bd2e",
       "timestamp": "2026-09-01T06:12:40.685Z",

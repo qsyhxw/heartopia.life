@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-01",
+  "generatedAt": "2026-09-13",
   "count": 14,
   "events": [
     {
@@ -17,21 +17,21 @@
       "slug": "qixi-fair",
       "localSlug": "qixi-fair",
       "name": "Qixi Fair",
-      "status": "active",
+      "status": "archive",
       "type": "Content",
       "startDate": "August 15, 2026",
       "endDate": "September 7, 2026",
-      "dateLabel": "Aug 15 → Sep 7, 2026"
+      "dateLabel": "Aug 15 – Sep 7"
     },
     {
       "slug": "dave-the-diver",
       "localSlug": "dave-the-diver",
       "name": "Dave the Diver",
-      "status": "active",
+      "status": "archive",
       "type": "Collaboration",
       "startDate": "August 8, 2026",
       "endDate": "September 7, 2026",
-      "dateLabel": "Aug 8 → Sep 7, 2026"
+      "dateLabel": "Aug 8 – Sep 7"
     },
     {
       "slug": "sanrio-characters-collaboration",
