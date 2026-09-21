@@ -11,6 +11,7 @@ on:
       - 'scripts/discover-heartopia-event-sources.mjs'
       - 'scripts/download-official-event-images.mjs'
       - 'scripts/event-source-config.mjs'
+      - 'scripts/audit-heartopia-events.mjs'
       - 'scripts/render-heartopia-events.mjs'
       - 'scripts/render-localized-entry-pages.mjs'
       - 'scripts/render-localized-content-pages.mjs'
@@ -100,7 +101,7 @@ jobs:
         run: node --test tests/event-monitor.test.mjs
 
       - name: Audit generated event pages
-        run: node scripts/audit-auto-sync.mjs
+        run: node scripts/audit-heartopia-events.mjs
 
       - name: Refresh XML sitemap
         if: steps.changes.outputs.has_changes == 'true'

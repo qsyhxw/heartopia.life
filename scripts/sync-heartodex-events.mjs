@@ -212,7 +212,7 @@ for (const event of events) {
     event.date = event.date || previous.dateLabel || '';
   }
 }
-const publicEvents=events.map(e=>pickRemoteFields('events',{slug:e.slug,localSlug:route(e),name:e.name,status:e.status,type:e.type||'',startDate:e.startDate||'',endDate:e.endDate||'',dateLabel:e.date||'',sourceUrl:e.sourceUrl||'',officialUrl:e.officialUrl||'',officialImageUrl:e.officialImageUrl||'',officialVerified:Boolean(e.officialVerified)}));
+const publicEvents=events.map(e=>pickRemoteFields('events',{slug:e.slug,localSlug:route(e),name:e.name,status:e.status,type:e.type||'',startDate:e.startDate||'',endDate:e.endDate||'',dateLabel:e.date||'',officialUrl:e.officialUrl||'',officialImageUrl:e.officialImageUrl||'',officialVerified:Boolean(e.officialVerified)}));
 const eventFactsChanged = JSON.stringify(publicEvents) !== JSON.stringify(currentEventData.events || []);
 const updatedAt = eventFactsChanged ? today : (currentEventData.generatedAt || today);
 for(const e of events){const old=exists(e)?read(file(e)):'';if((e.status==='active'||e.status==='upcoming')&&(!old||old.includes('data-event-sync="managed"')))write(file(e),detailPage(e));else syncCustomEventStatus(e);}

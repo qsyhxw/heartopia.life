@@ -33,6 +33,15 @@ test('public event image manifest omits blocked source-page fields', () => {
   }
 });
 
+test('public event catalog omits blocked crawler-source fields', () => {
+  const catalog = JSON.parse(fs.readFileSync(path.join(root, 'data', 'heartopia-events.json'), 'utf8'));
+  for (const event of catalog.events || []) {
+    assert.equal(Object.hasOwn(event, 'sourceUrl'), false, `${event.slug} exposes sourceUrl`);
+    assert.equal(Object.hasOwn(event, 'source'), false, `${event.slug} exposes source`);
+    assert.equal(Object.hasOwn(event, 'imageUrl'), false, `${event.slug} exposes imageUrl`);
+  }
+});
+
 test('official Steam RSS extracts an internal event candidate and artwork', () => {
   const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'heartopia-steam-event-'));
   const fixture = path.join(temp, 'steam.xml');
