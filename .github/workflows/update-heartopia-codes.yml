@@ -1,6 +1,8 @@
 name: Update Heartopia Codes
 
 on:
+  schedule:
+    - cron: '20 7 * * *'
   workflow_dispatch:
 
 permissions:
@@ -22,7 +24,10 @@ jobs:
         with:
           node-version: '24'
 
-      - name: Collect candidates and render reviewed codes
+      - name: Test code quality gates
+        run: node --test tests/heartopia-code-quality.test.mjs
+
+      - name: Collect, cross-check, and render codes
         run: |
           node scripts/update-heartopia-codes.mjs
           node scripts/render-ja-codes.mjs

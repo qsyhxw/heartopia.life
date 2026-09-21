@@ -1,5 +1,15 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import {
+  extractCandidateSignals,
+  isPastExpiry,
+  mergeSignal,
+  normalizeCode,
+  promotionDecision,
+  shouldRetire,
+  sourceIdentity,
+  sourceRole
+} from './lib/heartopia-code-quality.mjs';
 
 const root = process.cwd();
 const dataPath = path.join(root, 'data', 'heartopia-codes.json');
@@ -34,87 +44,8 @@ function longDate(isoDate) {
   }).format(date);
 }
 
-function normalizeCode(code) {
-  return String(code || '').trim().toLowerCase();
-}
-
 function uniq(values) {
   return [...new Set(values.filter(Boolean))];
-}
-
-function decodeHtml(text) {
-  return text
-    .replace(/&nbsp;/gi, ' ')
-    .replace(/&amp;/gi, '&')
-    .replace(/&quot;/gi, '"')
-    .replace(/&#39;/gi, "'")
-    .replace(/&lt;/gi, '<')
-    .replace(/&gt;/gi, '>');
-}
-
-function htmlToText(html) {
-  return decodeHtml(html)
-    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
-    .replace(/<style[\s\S]*?<\/style>/gi, ' ')
-    .replace(/<[^>]+>/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
-}
-
-function looksLikeCode(token, context, knownCodes) {
-  const value = token.trim();
-  const lower = value.toLowerCase();
-  if (value.length < 6 || value.length > 32) return false;
-  if (STOPWORDS.has(lower)) return false;
-  if (/^\d+$/.test(value)) return false;
-  if (/^20\d{2}$/.test(value)) return false;
-  if (/^(https?|www|com|net|html|json)$/i.test(value)) return false;
-  if (knownCodes.has(lower)) return true;
-
-  const hasDigit = /\d/.test(value);
-  const compactLower = /^[a-z0-9_-]+$/.test(value);
-  if (!compactLower) return false;
-
-  const usefulContext = /(code|redeem|reward|gift|active|expired|working|claim)/i.test(context);
-  const tooWordy = /^[a-z]+$/.test(value) && value.length > 18;
-  if (tooWordy) return false;
-
-  // For unknown codes, stay conservative. Plain words without digits create too many false positives.
-  if (!hasDigit) return false;
-  if (!/[a-z]/i.test(value)) return false;
-
-  return usefulContext;
-}
-
-function extractCandidates(html, url, knownCodes) {
-  const text = htmlToText(html);
-  const found = new Map();
-  const tokenRe = /\b[A-Za-z0-9][A-Za-z0-9_-]{5,31}\b/g;
-  let match;
-  while ((match = tokenRe.exec(text))) {
-    const token = match[0];
-    const start = Math.max(0, match.index - 160);
-    const end = Math.min(text.length, match.index + token.length + 160);
-    const context = text.slice(start, end);
-    if (!looksLikeCode(token, context, knownCodes)) continue;
-
-    const key = normalizeCode(token);
-    const expiredHint = /expired|no longer|not working|invalid|inactive/i.test(context);
-    const activeHint = /active|working|new|redeem|reward|claim|try/i.test(context);
-    const existing = found.get(key) || {
-      code: token,
-      sources: [],
-      expiredHints: 0,
-      activeHints: 0,
-      contexts: []
-    };
-    existing.sources.push(url);
-    existing.expiredHints += expiredHint ? 1 : 0;
-    existing.activeHints += activeHint ? 1 : 0;
-    existing.contexts.push(context.slice(0, 220));
-    found.set(key, existing);
-  }
-  return found;
 }
 
 async function fetchSource(url) {
@@ -144,31 +75,88 @@ function dedupeByCode(items) {
   return output;
 }
 
-function mergeFindings(data, findings) {
+function evidenceUrls(data, identities) {
+  return data.sources.filter((url) => identities.has(sourceIdentity(url)));
+}
+
+function archiveItem(item, now, note) {
+  return {
+    ...item,
+    status: undefined,
+    verification: undefined,
+    needsCheck: undefined,
+    lastSeen: now,
+    note
+  };
+}
+
+function mergeFindings(data, findings, nowDate = new Date()) {
   const activeByKey = new Map(data.active.map((item) => [normalizeCode(item.code), item]));
   const expiredByKey = new Map(data.expired.map((item) => [normalizeCode(item.code), item]));
   const pendingByKey = new Map((data.pending || []).map((item) => [normalizeCode(item.code), item]));
   const now = data.lastChecked;
 
+  for (const [key, item] of activeByKey) {
+    if (!isPastExpiry(item, nowDate)) continue;
+    activeByKey.delete(key);
+    expiredByKey.set(key, archiveItem(item, now, 'Expired at the published deadline.'));
+  }
+
   for (const [key, hit] of findings) {
-    const sourceList = uniq(hit.sources);
-    const sourceCount = sourceList.length;
-    const isExpiredHint = hit.expiredHints > 0 && hit.expiredHints >= hit.activeHints;
+    const activeUrls = evidenceUrls(data, hit.activeSources);
+    const expiredUrls = evidenceUrls(data, hit.expiredSources);
+    const decision = promotionDecision(hit);
 
     if (activeByKey.has(key)) {
       const item = activeByKey.get(key);
-      item.lastSeen = now;
-      item.sourceCount = Math.max(item.sourceCount || 0, sourceCount);
-      item.sources = uniq([...(item.sources || []), ...sourceList]);
-      if (isExpiredHint) item.needsCheck = true;
+      if (hit.activeSources.size > 0) {
+        item.lastSeen = now;
+        item.sourceCount = hit.activeSources.size;
+        item.sources = uniq([...(item.sources || []), ...activeUrls]);
+      }
+      if (shouldRetire(hit)) {
+        activeByKey.delete(key);
+        expiredByKey.set(key, archiveItem(item, now, 'Listed as expired by two independent current sources.'));
+      } else {
+        item.needsCheck = hit.expiredSources.size > 0;
+      }
       continue;
     }
 
     if (expiredByKey.has(key)) {
       const item = expiredByKey.get(key);
-      item.lastSeen = now;
-      item.sources = uniq([...(item.sources || []), ...sourceList]);
-      if (!isExpiredHint && sourceCount > 0) item.needsCheck = true;
+      item.sources = uniq([...(item.sources || []), ...expiredUrls]);
+      if (decision.publish) {
+        expiredByKey.delete(key);
+        activeByKey.set(key, {
+          ...item,
+          status: 'new',
+          firstSeen: item.firstSeen || now,
+          lastSeen: now,
+          expires: 'No posted expiry',
+          sourceCount: hit.activeSources.size,
+          sources: activeUrls,
+          verification: decision.reason === 'official_announcement' ? 'Official announcement' : 'Confirmed by 2 independent current sources',
+          note: 'Automatically restored only after current-source consensus.'
+        });
+      }
+      continue;
+    }
+
+    if (decision.publish) {
+      activeByKey.set(key, {
+        code: hit.code,
+        reward: 'Free rewards',
+        expires: 'No posted expiry',
+        status: 'new',
+        firstSeen: now,
+        lastSeen: now,
+        sourceCount: hit.activeSources.size,
+        sources: activeUrls,
+        verification: decision.reason === 'official_announcement' ? 'Official announcement' : 'Confirmed by 2 independent current sources',
+        note: 'Automatically published after the code quality gate passed.'
+      });
+      pendingByKey.delete(key);
       continue;
     }
 
@@ -176,20 +164,36 @@ function mergeFindings(data, findings) {
       code: hit.code,
       reward: 'Unknown',
       firstSeen: now,
-      status: isExpiredHint ? 'possibly_expired' : 'needs_manual_review',
+      status: hit.expiredSources.size > 0 ? 'possibly_expired' : 'awaiting_cross_check',
       sources: [],
       contexts: []
     };
     pending.lastSeen = now;
-    pending.sourceCount = Math.max(pending.sourceCount || 0, sourceCount);
-    pending.sources = uniq([...(pending.sources || []), ...sourceList]);
+    pending.sourceCount = Math.max(pending.sourceCount || 0, hit.activeSources.size);
+    pending.sources = uniq([...(pending.sources || []), ...activeUrls, ...expiredUrls]);
     pending.contexts = uniq([...(pending.contexts || []), ...hit.contexts]).slice(0, 5);
+    pending.reason = decision.reason;
     pendingByKey.set(key, pending);
   }
 
   data.pending = [...pendingByKey.values()].sort((a, b) => String(b.lastSeen || '').localeCompare(String(a.lastSeen || '')));
-  data.active = dedupeByCode(data.active);
-  data.expired = dedupeByCode(data.expired);
+  data.active = dedupeByCode([...activeByKey.values()]);
+  data.expired = dedupeByCode([...expiredByKey.values()]);
+}
+
+function validatePublicList(data, nowDate = new Date()) {
+  const active = new Set();
+  const expired = new Set(data.expired.map((item) => normalizeCode(item.code)));
+  for (const item of data.active) {
+    const key = normalizeCode(item.code);
+    if (!key || active.has(key)) throw new Error(`Duplicate active code: ${item.code}`);
+    if (expired.has(key)) throw new Error(`Code appears in active and expired lists: ${item.code}`);
+    if (isPastExpiry(item, nowDate)) throw new Error(`Expired code remained public: ${item.code}`);
+    const identities = new Set((item.sources || []).map(sourceIdentity).filter(Boolean));
+    const official = (item.sources || []).some((url) => sourceRole(url) === 'official');
+    if (!official && identities.size < 2) throw new Error(`Active code lacks independent evidence: ${item.code}`);
+    active.add(key);
+  }
 }
 
 function renderActiveRows(data) {
@@ -276,8 +280,6 @@ async function main() {
   const data = JSON.parse(await fs.readFile(dataPath, 'utf8'));
   data.sources ||= [];
   data.pending ||= [];
-  // Automated discovery is evidence intake only. A human-curated run controls the
-  // public verification date and active list.
 
   if (!renderOnly) {
     const knownCodes = new Set([
@@ -286,18 +288,15 @@ async function main() {
       ...data.pending.map((item) => normalizeCode(item.code))
     ]);
     const mergedFindings = new Map();
+    const successfulSources = new Set();
 
     for (const url of data.sources) {
       try {
         const html = await fetchSource(url);
-        const hits = extractCandidates(html, url, knownCodes);
+        successfulSources.add(sourceIdentity(url));
+        const hits = extractCandidateSignals(html, url, knownCodes, STOPWORDS);
         for (const [key, hit] of hits) {
-          const existing = mergedFindings.get(key) || { ...hit, sources: [], contexts: [], activeHints: 0, expiredHints: 0 };
-          existing.sources = uniq([...existing.sources, ...hit.sources]);
-          existing.contexts = uniq([...existing.contexts, ...hit.contexts]);
-          existing.activeHints += hit.activeHints;
-          existing.expiredHints += hit.expiredHints;
-          mergedFindings.set(key, existing);
+          mergedFindings.set(key, mergeSignal(mergedFindings.get(key), hit));
         }
         console.log(`Fetched ${url}: ${hits.size} candidates`);
       } catch (error) {
@@ -305,7 +304,20 @@ async function main() {
       }
     }
 
-    mergeFindings(data, mergedFindings);
+    if (successfulSources.size < 2) {
+      throw new Error(`Quality gate stopped publication: only ${successfulSources.size} independent source(s) were reachable.`);
+    }
+    const nowDate = new Date();
+    data.lastChecked = nowDate.toISOString().slice(0, 10);
+    mergeFindings(data, mergedFindings, nowDate);
+    validatePublicList(data, nowDate);
+    data.automation = {
+      lastRun: nowDate.toISOString(),
+      successfulIndependentSources: successfulSources.size,
+      policy: 'Official announcement, or two independent current-source confirmations; conflicting candidates are withheld.'
+    };
+  } else {
+    validatePublicList(data);
   }
 
   const html = await fs.readFile(pagePath, 'utf8');
