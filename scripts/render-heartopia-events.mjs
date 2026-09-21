@@ -68,6 +68,8 @@ const profiles = {
     type: 'Official update preview',
     summary: 'Announced for the September 23 update: a Legend of Madame White Snake collaboration, Starlight Express Cat Witch and Owl Messenger, Mid-Autumn activities, and building-tool changes. Full mechanics are not published yet.',
     officialUrl: 'https://x.com/myheartopia/status/2101597244990382260',
+    imageAlt: 'Official Heartopia News Flash artwork for the September 23 update preview',
+    imagePosition: 'center top',
     guideSections: [
       {
         eyebrow: 'Confirmed preview',
@@ -88,6 +90,18 @@ const profiles = {
         ],
       },
     ],
+  },
+  'echo-of-ancients': {
+    type: 'Content',
+    imageAlt: 'Official Echo of Ancients festival artwork',
+  },
+  'qixi-fair': {
+    type: 'Content',
+    imageAlt: 'Qixi Fair event characters in festival outfits',
+  },
+  'dave-the-diver': {
+    type: 'Collaboration',
+    imageAlt: 'Official Heartopia x Dave the Diver collaboration artwork',
   },
   'sanrio-characters-collaboration': {
     type: 'Collaboration',
@@ -222,7 +236,7 @@ function card(event, compact = false) {
   const summary = summaryFor(event);
   const type = typeFor(event);
   const media = image
-    ? `<div class="aspect-[16/9] overflow-hidden bg-[#edf4f4]"><img src="${image}" alt="${esc(profile.imageAlt || `${event.name} event artwork`)}" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.025]" loading="lazy"></div>`
+    ? `<div class="aspect-[16/9] overflow-hidden bg-[#edf4f4]"><img src="${image}" alt="${esc(profile.imageAlt || `${event.name} event artwork`)}" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.025]" style="object-position:${esc(profile.imagePosition || 'center')}" loading="lazy"></div>`
     : `<div class="flex aspect-[16/9] items-end bg-[#edf4f4] p-5"><span class="text-xs font-black uppercase text-[#735f4d]">Artwork not available</span></div>`;
   const leadingMedia = profile.hubOnly ? '' : media;
   const content = `${leadingMedia}<div class="flex flex-1 flex-col ${compact ? 'p-4' : 'p-5'}"><div class="flex flex-wrap items-center gap-2"><span class="inline-flex rounded-full px-2.5 py-1 text-xs font-bold ${classes(event.status)}">${label(event.status)}</span><span class="text-xs font-bold uppercase text-[#8b7355]">${esc(type)}</span></div><h3 class="mt-3 ${compact ? 'text-lg' : 'text-xl'} font-bold leading-snug">${esc(event.name)}</h3><p class="mt-2 text-sm font-semibold text-[#735f4d]">${esc(period(event))}</p><p class="mt-3 flex-1 text-sm leading-6 text-[#735f4d]">${esc(summary)}</p>`;
@@ -254,7 +268,7 @@ function detailPage(event) {
   const type = typeFor(event);
   const archived = event.status === 'archive';
   const heroMedia = image
-    ? `<img src="${image}" alt="${esc(profileFor(event).imageAlt || `${event.name} event artwork`)}" class="absolute inset-0 h-full w-full object-cover">`
+    ? `<img src="${image}" alt="${esc(profileFor(event).imageAlt || `${event.name} event artwork`)}" class="absolute inset-0 h-full w-full object-cover" style="object-position:${esc(profileFor(event).imagePosition || 'center')}">`
     : '<div class="absolute inset-0 bg-[#8ab9c2]"></div>';
   const statusPanel = archived
     ? `<section class="border-y border-[#eaded2] bg-[#fff4ed]"><div class="mx-auto max-w-6xl px-5 py-8"><p class="text-sm font-bold text-[#8a4b35]">This event has ended.</p><p class="mt-2 max-w-3xl leading-7 text-[#735f4d]">The archive remains useful for identifying limited entries and preparing for a possible rerun. Availability can differ by server.</p></div></section>`

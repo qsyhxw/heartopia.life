@@ -14,6 +14,34 @@
       "sourceUrl": "https://x.com/MyHeartopia/status/2098698174743605572",
       "sha256": "39f3428576902f911b4d8452878b74edb7a3f07bd2a4ecc74d385b7979e71dcb",
       "updatedAt": "2026-09-21"
+    },
+    "september-23-update-preview": {
+      "path": "/img/events/september-23-update-preview.jpg",
+      "sourceImageUrl": "https://pbs.twimg.com/media/HSpOglDaAAArP4V.jpg?name=orig",
+      "sourceUrl": "https://x.com/MyHeartopia/status/2101597244990382260",
+      "sha256": "206439106cdcb0c0da67ce2b19e3bffda0049a40b52a577fc08c68ebc7d0b8a6",
+      "updatedAt": "2026-09-21"
+    },
+    "echo-of-ancients": {
+      "path": "/img/events/echo-of-ancients.jpg",
+      "sourceImageUrl": "https://img.youtube.com/vi/8K5lHoKJgyI/maxresdefault.jpg",
+      "sourceUrl": "https://www.youtube.com/watch?v=8K5lHoKJgyI",
+      "sha256": "1c937653025fd5ef7596d4962a3422c7b85e7c884273246746b34d0a2124c6fb",
+      "updatedAt": "2026-09-21"
+    },
+    "qixi-fair": {
+      "path": "/img/events/qixi-fair.webp",
+      "sourceImageUrl": "https://raw.githubusercontent.com/deskoxp/htpimagstor/main/webcms/eventos/1788212824431-evento-134312823022865932_1239_697_1786790731377.webp",
+      "sourceUrl": "https://www.heartodex.com/en/events/qixi-fair/",
+      "sha256": "a80f25a0852a89a1881c81f2ac3d2d75afb11245d2bc60c46ca3235f2be50f8a",
+      "updatedAt": "2026-09-21"
+    },
+    "dave-the-diver": {
+      "path": "/img/events/dave-the-diver.jpg",
+      "sourceImageUrl": "https://clan.fastly.steamstatic.com/images/45812445/41615538ecf9abb1f2a2a602025ea175da9790ba.jpg",
+      "sourceUrl": "https://store.steampowered.com/news/app/4025700/view/719038550989865207",
+      "sha256": "18e636495d5527e50d827d0020e7119629313b62d3b94ad7ec32fafd60d5e892",
+      "updatedAt": "2026-09-21"
     }
   },
   "updatedAt": "2026-09-21"

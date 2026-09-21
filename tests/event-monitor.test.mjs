@@ -9,6 +9,21 @@ const root = path.resolve(import.meta.dirname, '..');
 const detector = path.join(root, 'scripts', 'detect-heartopia-event-changes.mjs');
 const discovery = path.join(root, 'scripts', 'discover-heartopia-event-sources.mjs');
 
+test('every published event guide has local artwork', () => {
+  const events = JSON.parse(fs.readFileSync(path.join(root, 'data', 'heartopia-events.json'), 'utf8')).events;
+  const aliases = {
+    'my-little-pony': 'my-little-pony-collaboration',
+    'winter-frost-season': 'winter-2026',
+    'sanrio-characters': 'sanrio-characters-collaboration',
+    'frostspore-butterflies': 'winter-2026',
+  };
+  const missing = events.filter((event) => {
+    const slug = aliases[event.slug] || event.localSlug || event.slug;
+    return !['webp', 'jpg', 'jpeg', 'png'].some((extension) => fs.existsSync(path.join(root, 'img', 'events', `${slug}.${extension}`)));
+  }).map((event) => event.slug);
+  assert.deepEqual(missing, []);
+});
+
 test('official Steam RSS extracts an internal event candidate and artwork', () => {
   const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'heartopia-steam-event-'));
   const fixture = path.join(temp, 'steam.xml');

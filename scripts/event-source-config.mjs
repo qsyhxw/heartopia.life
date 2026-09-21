@@ -37,9 +37,41 @@ export const OFFICIAL_EVENT_IMAGE_HOSTS = Object.freeze([
   'website.xdcdn.net',
   'web.xdcdn.net',
   'pbs.twimg.com',
+  'img.youtube.com',
+  'raw.githubusercontent.com',
   'clan.cdn.queniuqe.com',
   'clan.fastly.steamstatic.com',
   'clan.st.dl.eccdnx.com',
   'steamuserimages-a.akamaihd.net',
   'shared.akamai.steamstatic.com',
+]);
+
+// Stable, event-specific artwork selected from verified announcements or the
+// cross-check catalog. Discovery may add images for new events, but it must not
+// replace these known-good assets with a generic Steam "Notice" enclosure.
+export const VERIFIED_EVENT_ARTWORK_SOURCES = Object.freeze([
+  {
+    slug: 'september-23-update-preview',
+    title: 'September 23 Update Preview',
+    imageUrl: 'https://pbs.twimg.com/media/HSpOglDaAAArP4V.jpg?name=orig',
+    url: 'https://x.com/MyHeartopia/status/2101597244990382260',
+  },
+  {
+    slug: 'echo-of-ancients',
+    title: 'Echo of Ancients',
+    imageUrl: 'https://img.youtube.com/vi/8K5lHoKJgyI/maxresdefault.jpg',
+    url: 'https://www.youtube.com/watch?v=8K5lHoKJgyI',
+  },
+  {
+    slug: 'qixi-fair',
+    title: 'Qixi Fair',
+    imageUrl: 'https://raw.githubusercontent.com/deskoxp/htpimagstor/main/webcms/eventos/1788212824431-evento-134312823022865932_1239_697_1786790731377.webp',
+    url: 'https://www.heartodex.com/en/events/qixi-fair/',
+  },
+  {
+    slug: 'dave-the-diver',
+    title: 'Dave the Diver',
+    imageUrl: 'https://clan.fastly.steamstatic.com/images/45812445/41615538ecf9abb1f2a2a602025ea175da9790ba.jpg',
+    url: 'https://store.steampowered.com/news/app/4025700/view/719038550989865207',
+  },
 ]);

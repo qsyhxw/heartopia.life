@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
-import { OFFICIAL_EVENT_IMAGE_HOSTS } from './event-source-config.mjs';
+import { OFFICIAL_EVENT_IMAGE_HOSTS, VERIFIED_EVENT_ARTWORK_SOURCES } from './event-source-config.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const reportFile = process.argv[2];
@@ -44,7 +44,11 @@ async function fetchImage(url) {
   throw lastError;
 }
 let downloaded = 0;
+const candidates = new Map(VERIFIED_EVENT_ARTWORK_SOURCES.map((item) => [item.slug, item]));
 for (const item of report.officialEventCandidates || []) {
+  if (!candidates.has(item.slug)) candidates.set(item.slug, item);
+}
+for (const item of candidates.values()) {
   if (!item.imageUrl || !allowed(item.imageUrl)) continue;
   try {
     const response = await fetchImage(item.imageUrl);
@@ -72,7 +76,7 @@ for (const item of report.officialEventCandidates || []) {
       };
     }
   } catch (error) {
-    console.log(`::warning::Official image skipped for ${item.title}: ${error.message}`);
+    console.log(`::warning::Event image skipped for ${item.title}: ${error.message}`);
   }
 }
 manifest.updatedAt = Object.values(manifest.images).reduce((latest, item) => item.updatedAt > latest ? item.updatedAt : latest, '');

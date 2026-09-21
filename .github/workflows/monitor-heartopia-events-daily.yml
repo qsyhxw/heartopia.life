@@ -72,7 +72,7 @@ jobs:
         id: sources
         run: node scripts/discover-heartopia-event-sources.mjs --before "$HEARTOPIA_SYNC_DIR/official-signals-before.json"
 
-      - name: Download allowlisted official event artwork
+      - name: Download allowlisted verified event artwork
         id: artwork
         run: node scripts/download-official-event-images.mjs "${{ steps.sources.outputs.report_file }}"
 
@@ -95,6 +95,9 @@ jobs:
 
       - name: Enforce remote field whitelist
         run: node scripts/audit-sync-field-policy.mjs
+
+      - name: Require local artwork for every published event
+        run: node --test tests/event-monitor.test.mjs
 
       - name: Audit generated event pages
         run: node scripts/audit-auto-sync.mjs
