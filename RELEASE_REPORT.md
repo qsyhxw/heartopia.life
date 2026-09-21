@@ -21,5 +21,7 @@ Mode: `ANALYZE_AND_IMPLEMENT` / `BATCH_VALIDATED`.
 
 ## Deployment
 
-- Push/deployment/online verification: pending at the time this report was created; update after batch push.
-
+- Push: **BLOCKED**. Three attempts on 2026-09-21 failed because the connection to `github.com:443` was reset or could not be established. The validated commits remain local on `main`.
+- Deployment: **NOT DEPLOYED**. No remote update was accepted, so no deployment was triggered.
+- Online verification: **OLD VERSION CONFIRMED** on 2026-09-21. The live codes page still showed the prior September 20 state with 50 active codes; the events, friends, and platforms pages likewise retained their pre-update dates/content.
+- Next action: retry `git push origin main` after GitHub connectivity is restored, then repeat the desktop/mobile and live-link checks against the deployed URLs.
