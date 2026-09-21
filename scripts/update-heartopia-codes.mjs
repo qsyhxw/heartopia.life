@@ -293,8 +293,14 @@ async function main() {
     for (const url of data.sources) {
       try {
         const html = await fetchSource(url);
-        successfulSources.add(sourceIdentity(url));
         const hits = extractCandidateSignals(html, url, knownCodes, STOPWORDS);
+        const containsKnownCode = [...hits.keys()].some((key) => knownCodes.has(key));
+        const meaningfulResponse = sourceRole(url) === 'official' || containsKnownCode || hits.size >= 2;
+        if (!meaningfulResponse) {
+          console.warn(`Ignored ${url}: response did not contain a recognizable code list.`);
+          continue;
+        }
+        successfulSources.add(sourceIdentity(url));
         for (const [key, hit] of hits) {
           mergedFindings.set(key, mergeSignal(mergedFindings.get(key), hit));
         }
