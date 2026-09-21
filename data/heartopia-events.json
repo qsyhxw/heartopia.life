@@ -1,8 +1,38 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13",
-  "count": 14,
+  "generatedAt": "2026-09-21",
+  "count": 17,
   "events": [
+    {
+      "slug": "party-festival-september-2026",
+      "localSlug": "party-festival-september-2026",
+      "name": "Party Festival",
+      "status": "active",
+      "type": "Limited festival",
+      "startDate": "September 19, 2026",
+      "endDate": "October 9, 2026",
+      "dateLabel": "Sep 19 - Oct 9, 2026"
+    },
+    {
+      "slug": "burger-bliss",
+      "localSlug": "burger-bliss",
+      "name": "Burger Bliss",
+      "status": "active",
+      "type": "Limited event",
+      "startDate": "September 19, 2026",
+      "endDate": "October 12, 2026",
+      "dateLabel": "Sep 19 - Oct 12, 2026"
+    },
+    {
+      "slug": "september-23-update-preview",
+      "localSlug": "september-23-update-preview",
+      "name": "September 23 Update Preview",
+      "status": "upcoming",
+      "type": "Official update preview",
+      "startDate": "September 23, 2026",
+      "endDate": "",
+      "dateLabel": "September 23, 2026"
+    },
     {
       "slug": "echo-of-ancients",
       "localSlug": "echo-of-ancients",
