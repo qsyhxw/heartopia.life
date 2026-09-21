@@ -24,6 +24,15 @@ test('every published event guide has local artwork', () => {
   assert.deepEqual(missing, []);
 });
 
+test('public event image manifest omits blocked source-page fields', () => {
+  const manifest = JSON.parse(fs.readFileSync(path.join(root, 'data', 'heartopia-event-images.json'), 'utf8'));
+  for (const [slug, image] of Object.entries(manifest.images || {})) {
+    assert.equal(Object.hasOwn(image, 'sourceUrl'), false, `${slug} exposes sourceUrl`);
+    assert.equal(Object.hasOwn(image, 'source'), false, `${slug} exposes source`);
+    assert.equal(Object.hasOwn(image, 'imageUrl'), false, `${slug} exposes imageUrl`);
+  }
+});
+
 test('official Steam RSS extracts an internal event candidate and artwork', () => {
   const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'heartopia-steam-event-'));
   const fixture = path.join(temp, 'steam.xml');

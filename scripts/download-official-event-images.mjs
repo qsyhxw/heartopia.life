@@ -66,11 +66,10 @@ for (const item of candidates.values()) {
       fs.writeFileSync(target, body);
       downloaded += 1;
     }
-    if (!same || previous?.path !== relative || previous?.sourceImageUrl !== item.imageUrl || previous?.sourceUrl !== item.url) {
+    if (!same || previous?.path !== relative || previous?.sourceImageUrl !== item.imageUrl) {
       manifest.images[item.slug] = {
         path: relative,
         sourceImageUrl: item.imageUrl,
-        sourceUrl: item.url || '',
         sha256,
         updatedAt: report.generatedAt?.slice(0, 10) || new Date().toISOString().slice(0, 10),
       };
