@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "images": {
+    "party-festival-september-2026": {
+      "path": "/img/events/party-festival-september-2026.jpg",
+      "sourceImageUrl": "https://clan.st.dl.eccdnx.com/images/45812445/fb510f2d4d91fc6b300d8a3c94c7acedbb4e8bce.jpg",
+      "sourceUrl": "https://store.steampowered.com/news/app/4025700/view/706656188498968594",
+      "sha256": "b4afb7a7370af3f51c37aec62e046c0f6f6ad7e8c098c2a8c0e0d97987b216e7",
+      "updatedAt": "2026-09-21"
+    },
+    "burger-bliss": {
+      "path": "/img/events/burger-bliss.jpg",
+      "sourceImageUrl": "https://pbs.twimg.com/media/HSAS3NUbUAA4QBz.jpg?name=orig",
+      "sourceUrl": "https://x.com/MyHeartopia/status/2098698174743605572",
+      "sha256": "39f3428576902f911b4d8452878b74edb7a3f07bd2a4ecc74d385b7979e71dcb",
+      "updatedAt": "2026-09-21"
+    }
+  },
+  "updatedAt": "2026-09-21"
+}

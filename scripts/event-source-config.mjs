@@ -1,5 +1,26 @@
 export const EVENT_DISCOVERY_SOURCES = Object.freeze([
   {
+    id: 'steam-official-news-rss',
+    label: 'Official Heartopia Steam news feed',
+    kind: 'official',
+    format: 'steam-rss',
+    url: 'https://store.steampowered.com/feeds/news/app/4025700/?l=english&cc=US',
+  },
+  {
+    id: 'official-x-burger-bliss',
+    label: 'Official Heartopia X post: Burger Bliss',
+    kind: 'official',
+    format: 'fx-tweet',
+    url: 'https://api.fxtwitter.com/MyHeartopia/status/2098698174743605572',
+  },
+  {
+    id: 'official-x-september-preview',
+    label: 'Official Heartopia X post: September update preview',
+    kind: 'official',
+    format: 'fx-tweet',
+    url: 'https://api.fxtwitter.com/MyHeartopia/status/2101597244990382260',
+  },
+  {
     id: 'official-news-api',
     label: 'Official Heartopia news feed',
     kind: 'official',
@@ -15,4 +36,10 @@ export const OFFICIAL_EVENT_IMAGE_HOSTS = Object.freeze([
   'heartopia.xd.com',
   'website.xdcdn.net',
   'web.xdcdn.net',
+  'pbs.twimg.com',
+  'clan.cdn.queniuqe.com',
+  'clan.fastly.steamstatic.com',
+  'clan.st.dl.eccdnx.com',
+  'steamuserimages-a.akamaihd.net',
+  'shared.akamai.steamstatic.com',
 ]);

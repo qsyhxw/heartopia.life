@@ -12,21 +12,82 @@ const aliases = {
 const profiles = {
   'party-festival-september-2026': {
     type: 'Limited festival',
-    summary: 'Runs September 19 through October 9. It adds party maps and Celebration Slabs that reset daily at 6:00 server time.',
-    hubOnly: true,
-    officialUrl: 'https://steamcommunity.com/app/4025700/announcements/?l=english',
+    period: 'September 19, 6:00 AM - October 9, 5:59 AM (Server Time)',
+    summary: 'Runs September 19 through October 9. The new round adds Party Club maps and Party Blueprints created by other D.G. Members.',
+    officialUrl: 'https://store.steampowered.com/news/app/4025700/view/706656188498968594',
+    imageAlt: 'Official flash update artwork accompanying the Party Festival announcement',
+    guideSections: [
+      {
+        eyebrow: 'What changed',
+        title: 'What is available during Party Festival',
+        items: [
+          'A new Party Festival round opens at 6:00 AM server time on September 19.',
+          'The Party Map will feature new maps released by the Party Club.',
+          'Player-created Party Blueprints can also appear for D.G. Members to try.',
+        ],
+      },
+      {
+        eyebrow: 'Before joining',
+        title: 'What the announcement does not specify',
+        items: [
+          'The official flash-update post does not list a separate level or story requirement for this Party Festival round.',
+          'Check the live Party interface for available maps, participant limits, and any map-specific rules before joining.',
+          'The event closes at 5:59 AM server time on October 9, so finish time-limited participation before that reset.',
+        ],
+      },
+    ],
   },
   'burger-bliss': {
     type: 'Limited event',
+    period: 'September 19, 6:00 AM - October 12, 5:59 AM (Server Time)',
     summary: 'Runs September 19 through October 12. Event tasks award the Burger Time emote, while the pop-up store exchanges event currency for recipes and outfits.',
-    hubOnly: true,
     officialUrl: 'https://x.com/myheartopia/status/2098698174743605572',
+    imageAlt: 'Official Burger Bliss event poster with the pop-up store and event dates',
+    guideSections: [
+      {
+        eyebrow: 'Where to start',
+        title: 'Find the Burger Bliss pop-up store',
+        items: [
+          'Go to the fountain near the Art Street entrance during the event window.',
+          'Open the event task list and complete the designated tasks shown in game.',
+          'Use the pop-up store to check the currently available exchange items before spending event currency.',
+        ],
+      },
+      {
+        eyebrow: 'Confirmed rewards',
+        title: 'What you can earn',
+        items: [
+          'Completing the designated event tasks awards the limited-time Burger Time emote.',
+          'The pop-up store offers exclusive outfits, recipes, and additional event items.',
+          'The official announcement does not publish the full task thresholds or complete exchange costs, so confirm those values in game.',
+        ],
+      },
+    ],
   },
   'september-23-update-preview': {
     type: 'Official update preview',
     summary: 'Announced for the September 23 update: a Legend of Madame White Snake collaboration, Starlight Express Cat Witch and Owl Messenger, Mid-Autumn activities, and building-tool changes. Full mechanics are not published yet.',
-    hubOnly: true,
     officialUrl: 'https://x.com/myheartopia/status/2101597244990382260',
+    guideSections: [
+      {
+        eyebrow: 'Confirmed preview',
+        title: 'What the September 23 preview names',
+        items: [
+          'A Legend of Madame White Snake collaboration is announced as part of the update.',
+          'Starlight Express Cat Witch and Owl Messenger content is shown in the preview.',
+          'Mid-Autumn activities and building-tool changes are also announced.',
+        ],
+      },
+      {
+        eyebrow: 'Still unconfirmed',
+        title: 'Details to check after the update goes live',
+        items: [
+          'The preview does not give complete task steps, unlock requirements, reward quantities, or exchange costs.',
+          'Use the live event panel after the update to confirm server times and claim deadlines.',
+          'This page will remain a preview until the monitor receives publishable official details.',
+        ],
+      },
+    ],
   },
   'sanrio-characters-collaboration': {
     type: 'Collaboration',
@@ -94,15 +155,19 @@ const eventFile = (event) => path.join(root, 'events', route(event), 'index.html
 const profileFor = (event) => profiles[route(event)] || {};
 const label = (status) => status === 'active' ? 'Active now' : status === 'upcoming' ? 'Upcoming' : 'Past event';
 const classes = (status) => status === 'active' ? 'bg-emerald-100 text-emerald-800' : status === 'upcoming' ? 'bg-sky-100 text-sky-800' : 'bg-stone-100 text-stone-700';
-const period = (event) => event.startDate && event.endDate
+const period = (event) => profileFor(event).period || (event.startDate && event.endDate
   ? `${event.startDate} - ${event.endDate}`
-  : event.startDate || event.endDate || event.date || 'Check the in-game event panel';
+  : event.startDate || event.endDate || event.date || 'Check the in-game event panel');
 
 const recordsBySource = relationSources.map((source) => {
   const data = JSON.parse(fs.readFileSync(path.join(root, source.file), 'utf8'));
   const records = source.fields.map((field) => data[field]).find(Array.isArray) || [];
   return { ...source, records };
 });
+const imageManifestFile = path.join(root, 'data', 'heartopia-event-images.json');
+const imageManifest = fs.existsSync(imageManifestFile)
+  ? JSON.parse(fs.readFileSync(imageManifestFile, 'utf8'))
+  : { images: {} };
 
 function relationsFor(event) {
   const profile = profileFor(event);
@@ -116,6 +181,10 @@ function relationsFor(event) {
 function artworkFor(event) {
   const profile = profileFor(event);
   const names = [route(event), event.slug, profile.artwork].filter(Boolean);
+  for (const name of names) {
+    const mapped = imageManifest.images?.[name]?.path;
+    if (mapped && fs.existsSync(path.join(root, mapped.replace(/^\//, '')))) return mapped;
+  }
   for (const name of names) {
     for (const extension of ['webp', 'jpg', 'jpeg', 'png']) {
       const relative = `img/events/${name}.${extension}`;
@@ -153,7 +222,7 @@ function card(event, compact = false) {
   const summary = summaryFor(event);
   const type = typeFor(event);
   const media = image
-    ? `<div class="aspect-[16/9] overflow-hidden bg-[#edf4f4]"><img src="${image}" alt="${esc(event.name)} event artwork" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.025]" loading="lazy"></div>`
+    ? `<div class="aspect-[16/9] overflow-hidden bg-[#edf4f4]"><img src="${image}" alt="${esc(profile.imageAlt || `${event.name} event artwork`)}" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.025]" loading="lazy"></div>`
     : `<div class="flex aspect-[16/9] items-end bg-[#edf4f4] p-5"><span class="text-xs font-black uppercase text-[#735f4d]">Artwork not available</span></div>`;
   const leadingMedia = profile.hubOnly ? '' : media;
   const content = `${leadingMedia}<div class="flex flex-1 flex-col ${compact ? 'p-4' : 'p-5'}"><div class="flex flex-wrap items-center gap-2"><span class="inline-flex rounded-full px-2.5 py-1 text-xs font-bold ${classes(event.status)}">${label(event.status)}</span><span class="text-xs font-bold uppercase text-[#8b7355]">${esc(type)}</span></div><h3 class="mt-3 ${compact ? 'text-lg' : 'text-xl'} font-bold leading-snug">${esc(event.name)}</h3><p class="mt-2 text-sm font-semibold text-[#735f4d]">${esc(period(event))}</p><p class="mt-3 flex-1 text-sm leading-6 text-[#735f4d]">${esc(summary)}</p>`;
@@ -185,7 +254,7 @@ function detailPage(event) {
   const type = typeFor(event);
   const archived = event.status === 'archive';
   const heroMedia = image
-    ? `<img src="${image}" alt="${esc(event.name)} event artwork" class="absolute inset-0 h-full w-full object-cover">`
+    ? `<img src="${image}" alt="${esc(profileFor(event).imageAlt || `${event.name} event artwork`)}" class="absolute inset-0 h-full w-full object-cover">`
     : '<div class="absolute inset-0 bg-[#8ab9c2]"></div>';
   const statusPanel = archived
     ? `<section class="border-y border-[#eaded2] bg-[#fff4ed]"><div class="mx-auto max-w-6xl px-5 py-8"><p class="text-sm font-bold text-[#8a4b35]">This event has ended.</p><p class="mt-2 max-w-3xl leading-7 text-[#735f4d]">The archive remains useful for identifying limited entries and preparing for a possible rerun. Availability can differ by server.</p></div></section>`
@@ -193,8 +262,11 @@ function detailPage(event) {
   const action = archived
     ? `<h2 class="text-2xl font-bold">Using this archive</h2><ul class="mt-4 space-y-3 leading-7 text-[#735f4d]"><li>Check which collections and recipes were tied to the event.</li><li>Use the linked database filters to identify missing entries.</li><li>Confirm rerun availability in the current in-game event panel.</li></ul>`
     : `<h2 class="text-2xl font-bold">Start here</h2><ol class="mt-4 space-y-3 leading-7 text-[#735f4d]"><li>1. Confirm the event window in server time.</li><li>2. Check story, hobby, or level requirements.</li><li>3. Prioritize limited tasks and claim rewards before reset.</li></ol>`;
-  const officialLink = event.officialUrl ? `<a class="link" href="${esc(event.officialUrl)}" target="_blank" rel="noopener nofollow">Official announcement &rarr;</a>` : '';
-  const body = `${nav()}<main data-event-sync="managed"><section class="relative min-h-[430px] overflow-hidden bg-cozy-bark">${heroMedia}<div class="absolute inset-0 bg-black/55"></div><div class="relative mx-auto flex min-h-[430px] max-w-6xl flex-col justify-end px-5 py-12 text-white"><div class="flex flex-wrap items-center gap-2"><span class="rounded-full bg-white/90 px-3 py-1 text-xs font-bold text-cozy-bark">${label(event.status)}</span><span class="rounded-full border border-white/40 bg-black/25 px-3 py-1 text-xs font-bold">${esc(type)}</span></div><h1 class="mt-4 max-w-4xl text-4xl font-bold md:text-5xl">Heartopia ${esc(event.name)}</h1><p class="mt-4 text-lg font-semibold">${esc(period(event))}</p><p class="mt-4 max-w-3xl text-base leading-7 text-white/90">${esc(summary)}</p></div></section>${statusPanel}<section class="mx-auto max-w-6xl px-5 py-12"><div class="grid gap-8 lg:grid-cols-[1.15fr_.85fr]"><div><p class="text-xs font-black uppercase text-[#bd506b]">Event overview</p><h2 class="mt-2 text-3xl font-bold">What this event included</h2><p class="mt-4 max-w-3xl text-lg leading-8 text-[#735f4d]">${esc(summary)}</p>${officialLink ? `<p class="mt-5">${officialLink}</p>` : ''}</div><aside class="border-l-4 border-cozy-coral bg-white p-6"><dl class="grid gap-4 text-sm"><div><dt class="font-bold">Status</dt><dd class="mt-1 text-[#735f4d]">${label(event.status)}</dd></div><div><dt class="font-bold">Schedule</dt><dd class="mt-1 text-[#735f4d]">${esc(period(event))}</dd></div><div><dt class="font-bold">Event type</dt><dd class="mt-1 text-[#735f4d]">${esc(type)}</dd></div></dl></aside></div><div class="mt-10 border-t border-[#eaded2] pt-10">${action}</div><div id="heartopia_in_content" class="my-8"></div><section class="mt-10"><p class="text-xs font-black uppercase text-[#bd506b]">Connected content</p><h2 class="mt-2 text-3xl font-bold">Related collections and recipes</h2><p class="mt-3 max-w-3xl text-[#735f4d]">These counts come from Heartopia.Life database entries tagged to this event.</p>${relationCards(event)}</section><div class="mt-10 flex flex-wrap gap-3 border-t border-[#eaded2] pt-8"><a class="rounded-lg bg-cozy-bark px-4 py-2 text-sm font-bold text-white" href="/events/">All events</a><a class="rounded-lg border border-[#d9c8bb] bg-white px-4 py-2 text-sm font-bold" href="/tools/my-progress/">My Progress</a><a class="rounded-lg border border-[#d9c8bb] bg-white px-4 py-2 text-sm font-bold" href="/tools/daily-tasks/">Daily Tasks</a></div><div id="heartopia_in_content_2" class="my-8"></div></section></main>${footer()}`;
+  const officialUrl = event.officialUrl || profileFor(event).officialUrl || '';
+  const officialLink = officialUrl ? `<a class="link" href="${esc(officialUrl)}" target="_blank" rel="noopener noreferrer nofollow">Official announcement <span aria-hidden="true">&nearr;</span><span class="sr-only"> (external link)</span></a>` : '';
+  const guideSections = (profileFor(event).guideSections || []).map((section) => `<section class="card p-6"><p class="text-xs font-black uppercase text-[#bd506b]">${esc(section.eyebrow)}</p><h2 class="mt-2 text-2xl font-bold">${esc(section.title)}</h2><ul class="mt-4 space-y-3 leading-7 text-[#735f4d]">${section.items.map((item) => `<li class="flex gap-3"><span aria-hidden="true" class="font-bold text-cozy-coral">&bull;</span><span>${esc(item)}</span></li>`).join('')}</ul></section>`).join('');
+  const detailedGuide = guideSections ? `<div class="mt-10 grid gap-6 md:grid-cols-2">${guideSections}</div>` : '';
+  const body = `${nav()}<main data-event-sync="managed"><section class="relative min-h-[430px] overflow-hidden bg-cozy-bark">${heroMedia}<div class="absolute inset-0 bg-black/55"></div><div class="relative mx-auto flex min-h-[430px] max-w-6xl flex-col justify-end px-5 py-12 text-white"><div class="flex flex-wrap items-center gap-2"><span class="rounded-full bg-white/90 px-3 py-1 text-xs font-bold text-cozy-bark">${label(event.status)}</span><span class="rounded-full border border-white/40 bg-black/25 px-3 py-1 text-xs font-bold">${esc(type)}</span></div><h1 class="mt-4 max-w-4xl text-4xl font-bold md:text-5xl">Heartopia ${esc(event.name)}</h1><p class="mt-4 text-lg font-semibold">${esc(period(event))}</p><p class="mt-4 max-w-3xl text-base leading-7 text-white/90">${esc(summary)}</p></div></section>${statusPanel}<section class="mx-auto max-w-6xl px-5 py-12"><div class="grid gap-8 lg:grid-cols-[1.15fr_.85fr]"><div><p class="text-xs font-black uppercase text-[#bd506b]">Event overview</p><h2 class="mt-2 text-3xl font-bold">What this event includes</h2><p class="mt-4 max-w-3xl text-lg leading-8 text-[#735f4d]">${esc(summary)}</p>${officialLink ? `<p class="mt-5">${officialLink}</p>` : ''}</div><aside class="border-l-4 border-cozy-coral bg-white p-6"><dl class="grid gap-4 text-sm"><div><dt class="font-bold">Status</dt><dd class="mt-1 text-[#735f4d]">${label(event.status)}</dd></div><div><dt class="font-bold">Schedule</dt><dd class="mt-1 text-[#735f4d]">${esc(period(event))}</dd></div><div><dt class="font-bold">Event type</dt><dd class="mt-1 text-[#735f4d]">${esc(type)}</dd></div></dl></aside></div>${detailedGuide}<div class="mt-10 border-t border-[#eaded2] pt-10">${action}</div><div id="heartopia_in_content" class="my-8"></div><section class="mt-10"><p class="text-xs font-black uppercase text-[#bd506b]">Connected content</p><h2 class="mt-2 text-3xl font-bold">Related collections and recipes</h2><p class="mt-3 max-w-3xl text-[#735f4d]">These counts come from Heartopia.Life database entries tagged to this event.</p>${relationCards(event)}</section><div class="mt-10 flex flex-wrap gap-3 border-t border-[#eaded2] pt-8"><a class="rounded-lg bg-cozy-bark px-4 py-2 text-sm font-bold text-white" href="/events/">All events</a><a class="rounded-lg border border-[#d9c8bb] bg-white px-4 py-2 text-sm font-bold" href="/tools/my-progress/">My Progress</a><a class="rounded-lg border border-[#d9c8bb] bg-white px-4 py-2 text-sm font-bold" href="/tools/daily-tasks/">Daily Tasks</a></div><div id="heartopia_in_content_2" class="my-8"></div></section></main>${footer()}`;
   const url = `https://heartopia.life/events/${route(event)}/`;
   const description = `${event.name} event guide with schedule, status, artwork, overview, and related Heartopia database collections.`;
   return head(`Heartopia ${event.name}: Event Guide, Dates & Collections`, description, url, { '@context': 'https://schema.org', '@type': 'Event', name: event.name, startDate: event.startDate || undefined, endDate: event.endDate || undefined, eventStatus: archived ? 'https://schema.org/EventCompleted' : 'https://schema.org/EventScheduled', url }, body);

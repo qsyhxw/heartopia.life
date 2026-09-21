@@ -11,7 +11,9 @@
       "type": "Limited festival",
       "startDate": "September 19, 2026",
       "endDate": "October 9, 2026",
-      "dateLabel": "Sep 19 - Oct 9, 2026"
+      "dateLabel": "September 19, 6:00 AM - October 9, 5:59 AM (Server Time)",
+      "officialUrl": "https://store.steampowered.com/news/app/4025700/view/706656188498968594",
+      "officialVerified": true
     },
     {
       "slug": "burger-bliss",
@@ -21,7 +23,9 @@
       "type": "Limited event",
       "startDate": "September 19, 2026",
       "endDate": "October 12, 2026",
-      "dateLabel": "Sep 19 - Oct 12, 2026"
+      "dateLabel": "September 19, 6:00 AM - October 12, 5:59 AM (Server Time)",
+      "officialUrl": "https://x.com/MyHeartopia/status/2098698174743605572",
+      "officialVerified": true
     },
     {
       "slug": "september-23-update-preview",

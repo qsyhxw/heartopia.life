@@ -28,6 +28,14 @@ const slugify = (value) => clean(value).toLowerCase().normalize('NFKD')
   .replace(/[’']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const hash = (value) => crypto.createHash('sha256').update(String(value)).digest('hex').slice(0, 20);
 const dateFrom = (value) => clean(value).match(/(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2}(?:,?\s+\d{4})?|\d{4}[./-]\d{1,2}[./-]\d{1,2}/i)?.[0] || '';
+const decodeXml = (value) => String(value || '')
+  .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
+  .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"')
+  .replace(/&#39;|&apos;/g, "'").replace(/&amp;/g, '&');
+const fullDate = (value, year) => {
+  const match = clean(value).match(/((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*)\s+(\d{1,2})(?:,?\s+(\d{4}))?/i);
+  return match ? `${match[1][0].toUpperCase()}${match[1].slice(1).toLowerCase()} ${Number(match[2])}, ${match[3] || year}` : '';
+};
 
 function absoluteUrl(value, baseUrl) {
   try {
@@ -115,6 +123,81 @@ function parseOfficialFeed(text, source) {
   }).filter(Boolean);
 }
 
+function eventCandidateFromText({ title, text, url, imageUrl, sourceId, publishedAt }) {
+  const plain = clean(decodeXml(text)).replace(/\\([\[\]])/g, '$1');
+  const year = new Date(publishedAt || now).getUTCFullYear();
+  const party = plain.match(/(?:new\s+round\s+of\s+)([A-Z][A-Za-z0-9'’ -]{2,60}?Festival)\s+will\s+be\s+available\s+from\s+((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2},?\s*\d{1,2}:\d{2}(?:\s*[AP]M)?)\s+to\s+((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2},?\s*\d{1,2}:\d{2}(?:\s*[AP]M)?)/i);
+  const period = plain.match(/Event\s+Period\s+((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2},?\s*\d{1,2}:\d{2}(?:\s*[AP]M)?)\s*[-–]\s*((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2},?\s*\d{1,2}:\d{2}(?:\s*[AP]M)?)/i);
+  let name = '';
+  let range = null;
+  if (party) {
+    name = clean(party[1]);
+    range = [party[2], party[3]];
+  } else if (period) {
+    name = clean(title).replace(/^[^A-Za-z0-9]+/, '').replace(/["“”]/g, '').replace(/\s+Event\s+Coming\s+Soon!?[\s\S]*$/i, '').trim();
+    range = [period[1], period[2]];
+  }
+  if (!name || !range) return null;
+  const startDate = fullDate(range[0], year);
+  const endDate = fullDate(range[1], year);
+  if (!startDate || !endDate) return null;
+  const eventSlug = /^party festival$/i.test(name) ? `party-festival-september-${year}` : slugify(name);
+  return {
+    title: name,
+    slug: eventSlug,
+    date: startDate,
+    startDate,
+    endDate,
+    dateLabel: `${clean(range[0])} - ${clean(range[1])} (Server Time)`,
+    type: /festival/i.test(name) ? 'Limited festival' : 'Limited event',
+    url,
+    imageUrl,
+    sourceId,
+  };
+}
+
+function parseSteamFeed(text, source) {
+  const signals = [];
+  const candidates = [];
+  for (const itemMatch of text.matchAll(/<item>([\s\S]*?)<\/item>/gi)) {
+    const item = itemMatch[1];
+    const value = (tag) => decodeXml(item.match(new RegExp(`<${tag}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${tag}>`, 'i'))?.[1] || '');
+    const title = clean(value('title'));
+    const description = value('description');
+    const url = clean(value('link'));
+    const publishedAt = clean(value('pubDate'));
+    // Preserve the RSS enclosure here; the downloader applies the image-host allowlist
+    // before any bytes are written to the repository.
+    const imageUrl = absoluteUrl(item.match(/<enclosure\b[^>]*\burl="([^"]+)"/i)?.[1] || '', source.url);
+    const itemSignal = record(source, title, url, `${publishedAt} ${description}`, imageUrl);
+    if (itemSignal) signals.push(itemSignal);
+    const candidate = eventCandidateFromText({ title, text: description, url, imageUrl, sourceId: source.id, publishedAt });
+    if (candidate) candidates.push(candidate);
+  }
+  if (!signals.length) throw new Error('Steam news feed returned no items.');
+  return { signals, candidates };
+}
+
+function parseFxTweet(text, source) {
+  const payload = JSON.parse(text);
+  const tweet = payload?.tweet;
+  if (!tweet?.text || tweet.author?.screen_name?.toLowerCase() !== 'myheartopia') {
+    throw new Error('X mirror returned no verified Heartopia post.');
+  }
+  const imageUrl = officialImage(tweet.media?.photos?.[0]?.url || '', tweet.url);
+  const title = clean(tweet.text.split(/\r?\n/).find(Boolean));
+  const signal = record(source, title, tweet.url, `${tweet.created_at || ''} ${tweet.text}`, imageUrl);
+  const candidate = eventCandidateFromText({
+    title,
+    text: tweet.text,
+    url: tweet.url,
+    imageUrl,
+    sourceId: source.id,
+    publishedAt: tweet.created_at,
+  });
+  return { signals: signal ? [signal] : [], candidates: candidate ? [candidate] : [] };
+}
+
 function officialRevisionSignal(html, source) {
   const markers = [
     html.match(/Build by[^<\n]+/i)?.[0],
@@ -129,15 +212,31 @@ function officialRevisionSignal(html, source) {
   return item;
 }
 
+const steamFixture = option('--parse-steam-fixture');
+const fxFixture = option('--parse-fx-fixture');
+if (steamFixture || fxFixture) {
+  const source = EVENT_DISCOVERY_SOURCES.find((item) => item.format === (steamFixture ? 'steam-rss' : 'fx-tweet'));
+  const parsed = steamFixture
+    ? parseSteamFeed(fs.readFileSync(path.resolve(steamFixture), 'utf8'), source)
+    : parseFxTweet(fs.readFileSync(path.resolve(fxFixture), 'utf8'), source);
+  console.log(JSON.stringify(parsed, null, 2));
+  process.exit(0);
+}
+
 
 const sourceResults = [];
 const signals = [];
+const discoveredCandidates = [];
 for (const source of EVENT_DISCOVERY_SOURCES) {
   try {
     const fetched = await fetchText(source);
-    const parsed = source.format === 'json'
-      ? parseOfficialFeed(fetched.text, source)
-      : parse(fetched.text, source);
+    const result = source.format === 'steam-rss'
+      ? parseSteamFeed(fetched.text, source)
+      : source.format === 'fx-tweet'
+        ? parseFxTweet(fetched.text, source)
+        : { signals: source.format === 'json' ? parseOfficialFeed(fetched.text, source) : parse(fetched.text, source), candidates: [] };
+    const parsed = result.signals;
+    discoveredCandidates.push(...result.candidates);
     if (source.kind === 'official' && source.revisionOnly) {
       parsed.length = 0;
       parsed.push(officialRevisionSignal(fetched.text, source));
@@ -170,10 +269,13 @@ const matchesCatalog = (signal) => catalogSlugs.some((catalogSlug) => (
   || signal.slug.includes(catalogSlug)
   || catalogSlug.includes(signal.slug)
 ));
-const officialEventCandidates = signals
+const inferredCandidates = signals
   .filter((signal) => signal.sourceKind === 'official' && recent(signal.date))
   .filter((signal) => signal.eventLikely || matchesCatalog(signal))
   .map(({ title, slug, date, url, imageUrl, sourceId }) => ({ title, slug, date, url, imageUrl, sourceId }));
+const officialEventCandidates = [...new Map(
+  [...discoveredCandidates, ...inferredCandidates].map((candidate) => [`${candidate.slug}:${candidate.url}`, candidate]),
+).values()];
 const report = { generatedAt: now.toISOString(), firstRun: !hadBaseline, sources: sourceResults, newSignals, officialEventCandidates };
 
 fs.mkdirSync(outputDir, { recursive: true });

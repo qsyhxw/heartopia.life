@@ -13,11 +13,15 @@ const discoveryReportFile = process.env.EVENT_DISCOVERY_REPORT || '';
 const discoveryReport = discoveryReportFile && fs.existsSync(discoveryReportFile)
   ? JSON.parse(fs.readFileSync(discoveryReportFile, 'utf8'))
   : { officialEventCandidates: [] };
+const eventImageManifestFile = path.join(root, 'data', 'heartopia-event-images.json');
+const eventImageManifest = fs.existsSync(eventImageManifestFile)
+  ? JSON.parse(fs.readFileSync(eventImageManifestFile, 'utf8'))
+  : { images: {} };
 const base = 'https://www.heartodex.com';
 const aliases = {'call-of-whales':'call-of-whales','my-little-pony':'my-little-pony-collaboration','winter-frost-season':'winter-2026','sanrio-characters':'sanrio-characters-collaboration'};
 const manual = [
-  {slug:'party-festival-september-2026',name:'Party Festival',status:'active',startDate:'September 19, 2026',endDate:'October 9, 2026',date:'Sep 19 - Oct 9, 2026',type:'Limited festival'},
-  {slug:'burger-bliss',name:'Burger Bliss',status:'active',startDate:'September 19, 2026',endDate:'October 12, 2026',date:'Sep 19 - Oct 12, 2026',type:'Limited event'},
+  {slug:'party-festival-september-2026',name:'Party Festival',status:'active',startDate:'September 19, 2026',endDate:'October 9, 2026',date:'September 19, 6:00 AM - October 9, 5:59 AM (Server Time)',type:'Limited festival',officialUrl:'https://store.steampowered.com/news/app/4025700/view/706656188498968594'},
+  {slug:'burger-bliss',name:'Burger Bliss',status:'active',startDate:'September 19, 2026',endDate:'October 12, 2026',date:'September 19, 6:00 AM - October 12, 5:59 AM (Server Time)',type:'Limited event',officialUrl:'https://x.com/MyHeartopia/status/2098698174743605572'},
   {slug:'september-23-update-preview',name:'September 23 Update Preview',status:'upcoming',startDate:'September 23, 2026',date:'September 23, 2026',type:'Official update preview'},
   {slug:'sanrio-characters-collaboration',name:'Heartopia x SANRIO CHARACTERS',status:'upcoming',date:'July 17, 2026',type:'Collaboration',local:'sanrio-characters-collaboration'},
   {slug:'frostspore-butterflies',name:'Frostspore Butterflies',status:'archive',date:'January 24 - March 14, 2026',type:'Winter Frost Season insects',local:'frostspore-butterflies'}
@@ -91,6 +95,10 @@ function merge(remote) {
       found.officialUrl = candidate.url || found.officialUrl || '';
       found.officialImageUrl = candidate.imageUrl || found.officialImageUrl || '';
       found.officialVerified = true;
+      found.startDate = candidate.startDate || found.startDate || '';
+      found.endDate = candidate.endDate || found.endDate || '';
+      found.date = candidate.dateLabel || candidate.date || found.date || '';
+      found.type = candidate.type || found.type || '';
       continue;
     }
     all.push({
@@ -115,6 +123,8 @@ function merge(remote) {
   return all;
 }
 function localEventImage(e) {
+  const mapped = eventImageManifest.images?.[route(e)]?.path || eventImageManifest.images?.[e.slug]?.path;
+  if (mapped && fs.existsSync(path.join(root, mapped.replace(/^\//, '')))) return mapped;
   const preferred = [route(e), e.slug].filter(Boolean);
   for (const name of preferred) {
     for (const extension of ['webp', 'jpg', 'jpeg', 'png']) {
@@ -202,7 +212,7 @@ for (const event of events) {
     event.date = event.date || previous.dateLabel || '';
   }
 }
-const publicEvents=events.map(e=>pickRemoteFields('events',{slug:e.slug,localSlug:route(e),name:e.name,status:e.status,type:e.type||'',startDate:e.startDate||'',endDate:e.endDate||'',dateLabel:e.date||''}));
+const publicEvents=events.map(e=>pickRemoteFields('events',{slug:e.slug,localSlug:route(e),name:e.name,status:e.status,type:e.type||'',startDate:e.startDate||'',endDate:e.endDate||'',dateLabel:e.date||'',sourceUrl:e.sourceUrl||'',officialUrl:e.officialUrl||'',officialImageUrl:e.officialImageUrl||'',officialVerified:Boolean(e.officialVerified)}));
 const eventFactsChanged = JSON.stringify(publicEvents) !== JSON.stringify(currentEventData.events || []);
 const updatedAt = eventFactsChanged ? today : (currentEventData.generatedAt || today);
 for(const e of events){const old=exists(e)?read(file(e)):'';if((e.status==='active'||e.status==='upcoming')&&(!old||old.includes('data-event-sync="managed"')))write(file(e),detailPage(e));else syncCustomEventStatus(e);}
