@@ -42,10 +42,11 @@ function renderActiveRows(data) {
 }
 
 function renderExpiredRows(data) {
-  return data.expired.map((item) => `                    <div class="flex items-center justify-between gap-3 rounded-md bg-gray-50 p-3">
+  const rows = data.expired.slice(0, 8).map((item) => `                    <div class="flex items-center justify-between gap-3 rounded-md bg-gray-50 p-3">
                         <code class="code-value font-bold text-gray-700">${escapeHtml(item.code)}</code>
                         <span class="text-xs text-gray-500">已失效</span>
                     </div>`).join('\n');
+  return `${rows}\n                    <a href="/codes/expired/" class="inline-flex min-h-11 items-center font-bold text-cozy-coral underline">搜尋全部 ${data.expired.length} 個過期兌換碼 ↗</a>`;
 }
 
 function renderPage(html, data) {

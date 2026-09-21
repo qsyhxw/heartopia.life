@@ -50,7 +50,7 @@ function uniq(values) {
 
 async function fetchSource(url) {
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 25000);
+  const timeout = setTimeout(() => controller.abort(), 15000);
   try {
     const res = await fetch(url, {
       headers: { 'user-agent': USER_AGENT, 'accept': 'text/html,application/xhtml+xml' },
@@ -202,13 +202,8 @@ function renderActiveRows(data) {
     const rowClass = isNew ? ' class="bg-green-50"' : item.status === 'active' ? ' class="bg-cozy-sky/20"' : '';
     const badgeClass = isNew ? 'bg-green-600' : item.status === 'active' ? 'bg-cozy-coral' : 'bg-cozy-bark';
     const newBadge = isNew ? ' <span class="ml-1 text-xs bg-green-500 text-white px-1 rounded">NEW</span>' : '';
-    const sourceNote = item.verification
-      ? `<div class="text-[11px] text-cozy-wood/60 mt-1">${escapeHtml(item.verification)}</div>`
-      : item.needsCheck
-        ? '<div class="text-[11px] text-amber-700 mt-1">Needs re-check</div>'
-        : '';
     return `                            <tr${rowClass}>
-                                <td class="px-4 py-3"><code class="code-badge ${badgeClass} text-white px-2 py-1 rounded text-xs font-bold">${escapeHtml(item.code)}</code>${newBadge}${sourceNote}</td>
+                                <td class="px-4 py-3"><code class="code-badge ${badgeClass} text-white px-2 py-1 rounded text-xs font-bold">${escapeHtml(item.code)}</code>${newBadge}</td>
                                 <td class="px-4 py-3">${escapeHtml(item.reward || 'Free rewards')}</td>
                                 <td class="px-4 py-3 text-cozy-wood">${escapeHtml(item.expires || 'No posted expiry')}</td>
                                 <td class="px-4 py-3"><button type="button" class="copy-code-btn rounded-lg border border-cozy-bark bg-white px-3 py-2 font-bold text-cozy-bark" data-copy-code="${escapeHtml(item.code)}">Copy</button></td>
@@ -217,10 +212,14 @@ function renderActiveRows(data) {
 }
 
 function renderExpiredList(data) {
-  return data.expired.map((item) => `                    <div class="flex items-center justify-between gap-3">
+  const recent = data.expired.slice(0, 8).map((item) => `                    <div class="flex items-center justify-between gap-3">
                         <code class="code-badge bg-gray-500 text-white px-2 py-1 rounded text-xs">${escapeHtml(item.code)}</code>
                         <span class="text-cozy-wood/60 text-right">${escapeHtml(item.note || 'Expired')}</span>
                     </div>`).join('\n');
+  return `${recent}
+                    <div class="border-t border-cozy-peach/40 pt-4 text-center">
+                        <a href="/codes/expired/" class="inline-flex min-h-11 items-center justify-center rounded-lg border-2 border-cozy-bark px-4 py-2 font-bold text-cozy-bark hover:bg-white">Search all ${data.expired.length} expired codes</a>
+                    </div>`;
 }
 
 function replaceJsonLdDates(html, isoDate, displayDate, newestCodes) {
@@ -234,7 +233,7 @@ function renderPage(html, data) {
   const isoDate = data.lastChecked;
   const displayDate = longDate(isoDate);
   const compactDate = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' }).format(new Date(`${isoDate}T12:00:00Z`));
-  const newestCodes = data.active.slice(0, 7).map((item) => item.code).join(', ');
+  const newestCodes = data.active.map((item) => item.code).join(', ');
 
   html = html
     .replace(/<!-- S[E]O Meta Tags -->/g, '<!-- Meta Tags -->')
@@ -290,24 +289,32 @@ async function main() {
     const mergedFindings = new Map();
     const successfulSources = new Set();
 
-    for (const url of data.sources) {
+    const sourceResults = await Promise.all(data.sources.map(async (url) => {
       try {
         const html = await fetchSource(url);
-        const hits = extractCandidateSignals(html, url, knownCodes, STOPWORDS);
-        const containsKnownCode = [...hits.keys()].some((key) => knownCodes.has(key));
-        const meaningfulResponse = sourceRole(url) === 'official' || containsKnownCode || hits.size >= 2;
-        if (!meaningfulResponse) {
-          console.warn(`Ignored ${url}: response did not contain a recognizable code list.`);
-          continue;
-        }
-        successfulSources.add(sourceIdentity(url));
-        for (const [key, hit] of hits) {
-          mergedFindings.set(key, mergeSignal(mergedFindings.get(key), hit));
-        }
-        console.log(`Fetched ${url}: ${hits.size} candidates`);
+        return { url, hits: extractCandidateSignals(html, url, knownCodes, STOPWORDS) };
       } catch (error) {
-        console.warn(`Could not fetch ${url}: ${error.message}`);
+        return { url, error };
       }
+    }));
+
+    for (const result of sourceResults) {
+      if (result.error) {
+        console.warn(`Could not fetch ${result.url}: ${result.error.message}`);
+        continue;
+      }
+      const { url, hits } = result;
+      const containsKnownCode = [...hits.keys()].some((key) => knownCodes.has(key));
+      const meaningfulResponse = sourceRole(url) === 'official' || containsKnownCode || hits.size >= 2;
+      if (!meaningfulResponse) {
+        console.warn(`Ignored ${url}: response did not contain a recognizable code list.`);
+        continue;
+      }
+      successfulSources.add(sourceIdentity(url));
+      for (const [key, hit] of hits) {
+        mergedFindings.set(key, mergeSignal(mergedFindings.get(key), hit));
+      }
+      console.log(`Fetched ${url}: ${hits.size} candidates`);
     }
 
     if (successfulSources.size < 2) {
@@ -336,7 +343,8 @@ async function main() {
       lastChecked: data.lastChecked,
       active: data.active.length,
       expired: data.expired.length,
-      pending: data.pending.length
+      pending: data.pending.length,
+      pendingCodes: data.pending.map((item) => ({ code: item.code, reason: item.reason || item.status }))
     }, null, 2));
     return;
   }

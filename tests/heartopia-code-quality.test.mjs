@@ -43,3 +43,19 @@ test('an official post can publish a code without a second tracker', () => {
   const official = extractCandidateSignals('<p>New Heartopia redeem code official123 — claim rewards now</p>', 'https://x.com/myheartopia/status/123', known, stopwords);
   assert.deepEqual(promotionDecision(official.get('official123')), { publish: true, reason: 'official_announcement' });
 });
+
+test('understands Japanese and Korean active/history sections', () => {
+  const japanese = extractCandidateSignals('<h2>配布中のギフトコード</h2><p>fresh789</p><h2>過去のギフトコード</h2><p>oldcode789</p>', 'https://jp.example/codes', known, stopwords);
+  const korean = extractCandidateSignals('<h3>사용 가능 (Active)</h3><p>fresh789</p><h3>만료된 코드 (Expired)</h3><p>oldcode789 Expired</p>', 'https://kr.example/codes', known, stopwords);
+  assert.equal(japanese.get('fresh789').activeSources.size, 1);
+  assert.equal(japanese.get('oldcode789').expiredSources.size, 1);
+  assert.equal(korean.get('fresh789').activeSources.size, 1);
+  assert.equal(korean.get('oldcode789').expiredSources.size, 1);
+});
+
+test('rejects reward fragments that resemble codes', () => {
+  const hits = extractCandidateSignals('<h2>Active codes</h2><p>Eggsx10 2-Star valid123</p>', 'https://one.example/codes', known, stopwords);
+  assert.equal(hits.has('eggsx10'), false);
+  assert.equal(hits.has('2-star'), false);
+  assert.equal(hits.has('valid123'), true);
+});

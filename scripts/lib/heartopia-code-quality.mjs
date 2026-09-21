@@ -37,6 +37,7 @@ function htmlToLines(html) {
   return decodeHtml(html)
     .replace(/<script[\s\S]*?<\/script>/gi, ' ')
     .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<h[1-6][^>]*>/gi, '\n[[HEADING]] ')
     .replace(/<\/(?:h[1-6]|p|li|tr|td|th|div|section|article|br)>/gi, '\n')
     .replace(/<(?:br|hr)\s*\/?>/gi, '\n')
     .replace(/<[^>]+>/g, ' ')
@@ -46,14 +47,18 @@ function htmlToLines(html) {
 }
 
 function sectionFromLine(line) {
-  if (/(expired|inactive|no longer (?:work|valid)|not working|invalid)\s+(?:heartopia\s+)?codes?/i.test(line)) return 'expired';
-  if (/(active|working|current|new|latest)\s+(?:heartopia\s+)?codes?/i.test(line)) return 'active';
+  const heading = line.startsWith('[[HEADING]]');
+  const text = line.replace(/^\[\[HEADING\]\]\s*/, '');
+  if (!heading && text.length > 90) return null;
+  if (/(expired|inactive|no longer (?:work|valid)|not working|invalid|history|past|過去|配布期間外|만료된|사용 불가|已失效|過期|期限切れ)/i.test(text)) return 'expired';
+  if (/(why|troubleshoot|aren't|isn't|not working)/i.test(text)) return null;
+  if (/(active|current|latest|new|working|配布中|使用可能|使用可|사용 가능|可使用).{0,35}(?:redeem|gift|heartopia|codes?|ギフトコード|선물 코드|兌換碼)?/i.test(text)) return 'active';
   return null;
 }
 
 function signalFromContext(line, section, role) {
-  const expired = /\b(expired|inactive|invalid|no longer (?:works?|valid)|not working)\b/i.test(line);
-  const active = /\b(active|working|current|new|latest|redeem|claim)\b/i.test(line);
+  const expired = /\b(expired|inactive|invalid|no longer (?:works?|valid)|not working)\b|使用不(?:可|能)|使用不可|사용 불가|已失效|過期|期限切れ/i.test(line);
+  const active = /\b(active|working|current|new|latest|redeem|claim)\b|使用可(?:能)?|사용 가능|可使用|配布中/i.test(line);
   if (expired && !active) return 'expired';
   if (active && !expired) return 'active';
   if (section) return section;
@@ -76,9 +81,10 @@ export function extractCandidateSignals(html, url, knownCodes, stopwords) {
       const key = normalizeCode(code);
       if (code.length < 6 || code.length > 32) continue;
       if (stopwords.has(key) || /^\d+$/.test(code) || /^20\d{2}$/.test(code)) continue;
+      if (/^\d+-[a-z]+$/i.test(code) || /^[a-z]{3,}x\d{1,3}$/i.test(code)) continue;
       if (!knownCodes.has(key)) {
         if (!/^[a-z0-9_-]+$/i.test(code) || !/\d/.test(code) || !/[a-z]/i.test(code)) continue;
-        if (!/\b(codes?|redeem|gift|rewards?|active|expired|working|claim)\b/i.test(line)) continue;
+        if (!section && !/\b(codes?|redeem|gift|rewards?|active|expired|working|claim)\b|ギフトコード|선물 코드|兌換碼|禮包碼/i.test(line)) continue;
       }
 
       const signal = signalFromContext(line, section, role);
