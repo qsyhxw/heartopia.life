@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-13",
+  "updatedAt": "2026-09-21",
   "trackedCategories": [
     {
       "id": "fish",
@@ -81,9 +81,60 @@
     "ingredients": 26,
     "collectibles": 37,
     "npcs": 19,
-    "events": 14
+    "events": 17
   },
   "entries": [
+    {
+      "id": "2026-09-21-74210e8aea0cb871",
+      "timestamp": "2026-09-21T22:32:44.446Z",
+      "date": "2026-09-21",
+      "title": "Database records updated",
+      "summary": "17 Events updated · 2 Events changed status",
+      "signature": "74210e8aea0cb871",
+      "changes": [
+        {
+          "category": "Events",
+          "singular": "Event",
+          "categoryId": "events",
+          "action": "updated",
+          "count": 17,
+          "items": [
+            "Echo of Ancients",
+            "Qixi Fair",
+            "Dave the Diver",
+            "Heartopia x SANRIO CHARACTERS",
+            "Call of Whales",
+            "Midsummer Rhyme",
+            "Rainbow Verse",
+            "Modular Streets",
+            "Maltese",
+            "Pleasant Goat and Big Big Wolf",
+            "Dreamlight Cinematics",
+            "My Little Pony",
+            "Winter Frost Season",
+            "Party Festival",
+            "Burger Bliss",
+            "September 23 Update Preview",
+            "Frostspore Butterflies"
+          ],
+          "truncated": false,
+          "url": "/events/"
+        },
+        {
+          "category": "Events",
+          "singular": "Event",
+          "categoryId": "events",
+          "action": "status",
+          "count": 2,
+          "items": [
+            "Party Festival: active to upcoming",
+            "Burger Bliss: active to upcoming"
+          ],
+          "truncated": false,
+          "url": "/events/"
+        }
+      ]
+    },
     {
       "id": "2026-09-13-27adda8d958b1be0",
       "timestamp": "2026-09-13T06:23:04.964Z",
