@@ -10,9 +10,6 @@ const renderOnly = args.has('--render-only');
 const dryRun = args.has('--dry-run');
 
 const USER_AGENT = 'HeartopiaLifeCodeBot/1.0 (+https://heartopia.life/codes/)';
-const TRUSTED_SOURCE_THRESHOLD = 2;
-const TODAY = new Date().toISOString().slice(0, 10);
-
 const STOPWORDS = new Set([
   'heartopia', 'codes', 'code', 'redeem', 'reward', 'rewards', 'active', 'expired', 'expires',
   'updated', 'update', 'guide', 'guides', 'gaming', 'android', 'iphone', 'mobile', 'steam',
@@ -171,24 +168,7 @@ function mergeFindings(data, findings) {
       const item = expiredByKey.get(key);
       item.lastSeen = now;
       item.sources = uniq([...(item.sources || []), ...sourceList]);
-      if (!isExpiredHint && sourceCount >= TRUSTED_SOURCE_THRESHOLD) item.needsCheck = true;
-      continue;
-    }
-
-    if (sourceCount >= TRUSTED_SOURCE_THRESHOLD && !isExpiredHint) {
-      data.active.unshift({
-        code: hit.code,
-        reward: 'Free rewards',
-        expires: 'No posted expiry',
-        status: 'new',
-        firstSeen: now,
-        lastSeen: now,
-        sourceCount,
-        sources: sourceList,
-        note: 'Auto-detected from multiple code trackers; verify in game.'
-      });
-      activeByKey.set(key, data.active[0]);
-      pendingByKey.delete(key);
+      if (!isExpiredHint && sourceCount > 0) item.needsCheck = true;
       continue;
     }
 
@@ -196,7 +176,7 @@ function mergeFindings(data, findings) {
       code: hit.code,
       reward: 'Unknown',
       firstSeen: now,
-      status: isExpiredHint ? 'possibly_expired' : 'needs_review',
+      status: isExpiredHint ? 'possibly_expired' : 'needs_manual_review',
       sources: [],
       contexts: []
     };
@@ -218,8 +198,8 @@ function renderActiveRows(data) {
     const rowClass = isNew ? ' class="bg-green-50"' : item.status === 'active' ? ' class="bg-cozy-sky/20"' : '';
     const badgeClass = isNew ? 'bg-green-600' : item.status === 'active' ? 'bg-cozy-coral' : 'bg-cozy-bark';
     const newBadge = isNew ? ' <span class="ml-1 text-xs bg-green-500 text-white px-1 rounded">NEW</span>' : '';
-    const sourceNote = item.sourceCount && item.sourceCount > 1
-      ? `<div class="text-[11px] text-cozy-wood/60 mt-1">Seen on ${item.sourceCount} sources</div>`
+    const sourceNote = item.verification
+      ? `<div class="text-[11px] text-cozy-wood/60 mt-1">${escapeHtml(item.verification)}</div>`
       : item.needsCheck
         ? '<div class="text-[11px] text-amber-700 mt-1">Needs re-check</div>'
         : '';
@@ -296,7 +276,8 @@ async function main() {
   const data = JSON.parse(await fs.readFile(dataPath, 'utf8'));
   data.sources ||= [];
   data.pending ||= [];
-  if (!renderOnly) data.lastChecked = TODAY;
+  // Automated discovery is evidence intake only. A human-curated run controls the
+  // public verification date and active list.
 
   if (!renderOnly) {
     const knownCodes = new Set([

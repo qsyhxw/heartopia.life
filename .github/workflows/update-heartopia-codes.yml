@@ -1,8 +1,6 @@
 name: Update Heartopia Codes
 
 on:
-  schedule:
-    - cron: '20 7 * * *'
   workflow_dispatch:
 
 permissions:
@@ -24,7 +22,7 @@ jobs:
         with:
           node-version: '24'
 
-      - name: Fetch and render codes
+      - name: Collect candidates and render reviewed codes
         run: |
           node scripts/update-heartopia-codes.mjs
           node scripts/render-ja-codes.mjs
