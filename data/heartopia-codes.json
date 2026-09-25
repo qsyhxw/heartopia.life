@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-09-24",
+  "lastChecked": "2026-09-25",
   "sources": [
     "https://tryhardguides.com/heartopia-codes/",
     "https://heartopia-plus.com/giftcode/",
@@ -16,7 +16,7 @@
       "expiresAt": "2026-09-30T10:59:00-05:00",
       "status": "new",
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-09-24",
+      "lastSeen": "2026-09-25",
       "verification": "Official announcement",
       "sources": [
         "https://x.com/myheartopia/status/2099347412301037747",
@@ -36,7 +36,7 @@
       "expiresAt": "2026-09-30T10:59:00-05:00",
       "status": "new",
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-09-24",
+      "lastSeen": "2026-09-25",
       "verification": "Official announcement",
       "sources": [
         "https://x.com/myheartopia/status/2096810694670778556",
@@ -56,7 +56,7 @@
       "expiresAt": "2026-09-30T10:59:00-05:00",
       "status": "new",
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-09-24",
+      "lastSeen": "2026-09-25",
       "verification": "Official announcement",
       "sources": [
         "https://x.com/myheartopia/status/2094273980760723811",
@@ -75,7 +75,7 @@
       "expires": "Sep 30, 2026 at 10:59 (UTC-5)",
       "expiresAt": "2026-09-30T10:59:00-05:00",
       "status": "active",
-      "lastSeen": "2026-09-24",
+      "lastSeen": "2026-09-25",
       "verification": "Official announcement",
       "sources": [
         "https://w.twstalker.com/MyHeartopia",
@@ -94,7 +94,7 @@
       "expires": "Sep 30, 2026 at 10:59 (UTC-5)",
       "expiresAt": "2026-09-30T10:59:00-05:00",
       "status": "active",
-      "lastSeen": "2026-09-24",
+      "lastSeen": "2026-09-25",
       "verification": "Current community reports across regions",
       "sources": [
         "https://forum.gamer.com.tw/Co.php?bsn=75403&sn=3025",
@@ -111,7 +111,7 @@
       "expires": "Sep 30, 2026 at 10:59 (UTC-5)",
       "expiresAt": "2026-09-30T10:59:00-05:00",
       "status": "active",
-      "lastSeen": "2026-09-24",
+      "lastSeen": "2026-09-25",
       "verification": "Cross-checked current list",
       "sources": [
         "https://www.heartodex.com/en/codes/",
@@ -130,7 +130,7 @@
       "expires": "Sep 30, 2026 at 10:59 (UTC-5)",
       "expiresAt": "2026-09-30T10:59:00-05:00",
       "status": "active",
-      "lastSeen": "2026-09-24",
+      "lastSeen": "2026-09-25",
       "verification": "Cross-checked current list",
       "sources": [
         "https://heartopia-plus.com/giftcode/",
@@ -148,7 +148,7 @@
       "expires": "Sep 30, 2026 at 10:59 (UTC-5)",
       "expiresAt": "2026-09-30T10:59:00-05:00",
       "status": "active",
-      "lastSeen": "2026-09-24",
+      "lastSeen": "2026-09-25",
       "verification": "Cross-checked current list",
       "sources": [
         "https://heartopia-plus.com/giftcode/",
@@ -166,7 +166,7 @@
       "expires": "No posted expiry",
       "status": "new",
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-09-24",
+      "lastSeen": "2026-09-25",
       "sourceCount": 4,
       "sources": [
         "https://tryhardguides.com/heartopia-codes/",
@@ -177,6 +177,22 @@
       "verification": "Confirmed by 2 independent current sources",
       "note": "Automatically published after the code quality gate passed.",
       "needsCheck": false
+    },
+    {
+      "code": "moonlike2609",
+      "reward": "Free rewards",
+      "expires": "No posted expiry",
+      "status": "new",
+      "firstSeen": "2026-09-25",
+      "lastSeen": "2026-09-25",
+      "sourceCount": 3,
+      "sources": [
+        "https://tryhardguides.com/heartopia-codes/",
+        "https://heartopia-plus.com/giftcode/",
+        "https://heartopia-life.me/wiki/codes"
+      ],
+      "verification": "Confirmed by 2 independent current sources",
+      "note": "Automatically published after the code quality gate passed."
     }
   ],
   "expired": [
@@ -1337,7 +1353,7 @@
     }
   ],
   "automation": {
-    "lastRun": "2026-09-24T12:44:37.484Z",
+    "lastRun": "2026-09-25T12:47:20.737Z",
     "successfulIndependentSources": 5,
     "policy": "Official announcement, or two independent current-source confirmations; conflicting candidates are withheld."
   }
