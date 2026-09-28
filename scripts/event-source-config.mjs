@@ -51,6 +51,12 @@ export const OFFICIAL_EVENT_IMAGE_HOSTS = Object.freeze([
 // replace these known-good assets with a generic Steam "Notice" enclosure.
 export const VERIFIED_EVENT_ARTWORK_SOURCES = Object.freeze([
   {
+    slug: 'autumn-moon-treasury',
+    title: 'Autumn Moon Treasury',
+    imageUrl: 'https://raw.githubusercontent.com/deskoxp/htpimagstor/main/webcms/eventos/1790465453223-evento-captura_de_pantalla_2026-09-26_202950.webp',
+    url: 'https://www.heartodex.com/en/events/autumn-moon-treasury/',
+  },
+  {
     slug: 'september-23-update-preview',
     title: 'September 23 Update Preview',
     imageUrl: 'https://pbs.twimg.com/media/HSpOglDaAAArP4V.jpg?name=orig',
