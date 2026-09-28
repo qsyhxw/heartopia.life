@@ -36,7 +36,13 @@
       "sourceImageUrl": "https://clan.fastly.steamstatic.com/images/45812445/41615538ecf9abb1f2a2a602025ea175da9790ba.jpg",
       "sha256": "18e636495d5527e50d827d0020e7119629313b62d3b94ad7ec32fafd60d5e892",
       "updatedAt": "2026-09-21"
+    },
+    "autumn-moon-treasury": {
+      "path": "/img/events/autumn-moon-treasury.webp",
+      "sourceImageUrl": "https://raw.githubusercontent.com/deskoxp/htpimagstor/main/webcms/eventos/1790465453223-evento-captura_de_pantalla_2026-09-26_202950.webp",
+      "sha256": "6740963225a5e1428376802400ceb775cdf7a1966bfee7418be5cdd69e7a2848",
+      "updatedAt": "2026-09-28"
     }
   },
-  "updatedAt": "2026-09-21"
+  "updatedAt": "2026-09-28"
 }
