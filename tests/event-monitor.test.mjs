@@ -4,10 +4,23 @@ import os from 'node:os';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import test from 'node:test';
+import { statusForDatedEvent } from '../scripts/event-date-status.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const detector = path.join(root, 'scripts', 'detect-heartopia-event-changes.mjs');
 const discovery = path.join(root, 'scripts', 'discover-heartopia-event-sources.mjs');
+
+test('dated event status follows the verified event window', () => {
+  const event = { status: 'upcoming', startDate: 'September 19, 2026', endDate: 'October 9, 2026' };
+  assert.equal(statusForDatedEvent(event, new Date('2026-09-18T12:00:00Z')), 'upcoming');
+  assert.equal(statusForDatedEvent(event, new Date('2026-09-29T12:00:00Z')), 'active');
+  assert.equal(statusForDatedEvent(event, new Date('2026-10-10T12:00:00Z')), 'archive');
+});
+
+test('events without a complete date window keep their reviewed status', () => {
+  const preview = { status: 'upcoming', startDate: 'September 23, 2026', endDate: '' };
+  assert.equal(statusForDatedEvent(preview, new Date('2026-09-29T12:00:00Z')), 'upcoming');
+});
 
 test('every published event guide has local artwork', () => {
   const events = JSON.parse(fs.readFileSync(path.join(root, 'data', 'heartopia-events.json'), 'utf8')).events;

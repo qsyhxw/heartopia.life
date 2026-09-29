@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { pickRemoteFields } from './sync-field-policy.mjs';
 import { renderHeartopiaEvents } from './render-heartopia-events.mjs';
+import { statusForDatedEvent } from './event-date-status.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const today = new Date().toISOString().slice(0, 10);
@@ -211,6 +212,7 @@ for (const event of events) {
     event.endDate = event.endDate || previous.endDate || '';
     event.date = event.date || previous.dateLabel || '';
   }
+  event.status = statusForDatedEvent(event);
 }
 const publicEvents=events.map(e=>pickRemoteFields('events',{slug:e.slug,localSlug:route(e),name:e.name,status:e.status,type:e.type||'',startDate:e.startDate||'',endDate:e.endDate||'',dateLabel:e.date||'',officialUrl:e.officialUrl||'',officialImageUrl:e.officialImageUrl||'',officialVerified:Boolean(e.officialVerified)}));
 const eventFactsChanged = JSON.stringify(publicEvents) !== JSON.stringify(currentEventData.events || []);
