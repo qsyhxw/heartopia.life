@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-13",
-  "count": 103,
+  "generatedAt": "2026-10-04",
+  "count": 104,
   "birds": [
     {
       "name": "mallard",
@@ -928,6 +928,15 @@
       "location": "Check in game",
       "category": "Auto-synced (location pending)",
       "img": "Red-Hoopoe.webp"
+    },
+    {
+      "name": "violet-backed starling",
+      "level": 11,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "img": "Violet-Backed-Starling.webp"
     }
   ]
 }

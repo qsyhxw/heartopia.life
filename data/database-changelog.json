@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-28",
+  "updatedAt": "2026-10-04",
   "trackedCategories": [
     {
       "id": "fish",
@@ -70,7 +70,7 @@
   ],
   "totals": {
     "fish": 124,
-    "birds": 103,
+    "birds": 104,
     "insects": 101,
     "wildlife": 11,
     "crops": 18,
@@ -84,6 +84,28 @@
     "events": 18
   },
   "entries": [
+    {
+      "id": "2026-10-04-f7a0d98453afc665",
+      "timestamp": "2026-10-04T07:03:34.336Z",
+      "date": "2026-10-04",
+      "title": "New Birds added",
+      "summary": "+1 Bird",
+      "signature": "f7a0d98453afc665",
+      "changes": [
+        {
+          "category": "Birds",
+          "singular": "Bird",
+          "categoryId": "birds",
+          "action": "added",
+          "count": 1,
+          "items": [
+            "violet-backed starling"
+          ],
+          "truncated": false,
+          "url": "/database/birds/"
+        }
+      ]
+    },
     {
       "id": "2026-09-28-2888f8670e560e89",
       "timestamp": "2026-09-28T07:48:58.221Z",

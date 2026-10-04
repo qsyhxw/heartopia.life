@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://heartopia.life/</loc>
-        <lastmod>2026-09-28</lastmod>
+        <lastmod>2026-10-04</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -50,13 +50,13 @@
     </url>
     <url>
         <loc>https://heartopia.life/database/</loc>
-        <lastmod>2026-09-28</lastmod>
+        <lastmod>2026-10-04</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://heartopia.life/database/birds/</loc>
-        <lastmod>2026-09-13</lastmod>
+        <lastmod>2026-10-04</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -454,7 +454,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/events/</loc>
-        <lastmod>2026-09-28</lastmod>
+        <lastmod>2026-09-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -1126,13 +1126,13 @@
     </url>
     <url>
         <loc>https://heartopia.life/tools/fish-tracker/</loc>
-        <lastmod>2026-09-27</lastmod>
+        <lastmod>2026-10-04</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/tools/my-progress/</loc>
-        <lastmod>2026-09-27</lastmod>
+        <lastmod>2026-10-04</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -1372,7 +1372,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/database/changelog/</loc>
-        <lastmod>2026-09-28</lastmod>
+        <lastmod>2026-10-04</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1588,13 +1588,13 @@
     </url>
     <url>
         <loc>https://heartopia.life/id/codes/</loc>
-        <lastmod>2026-09-27</lastmod>
+        <lastmod>2026-10-03</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/pt-br/codes/</loc>
-        <lastmod>2026-09-27</lastmod>
+        <lastmod>2026-10-03</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1618,7 +1618,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/id/events/</loc>
-        <lastmod>2026-09-28</lastmod>
+        <lastmod>2026-09-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1642,7 +1642,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/ja/events/</loc>
-        <lastmod>2026-09-28</lastmod>
+        <lastmod>2026-09-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1660,7 +1660,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/pt-br/events/</loc>
-        <lastmod>2026-09-28</lastmod>
+        <lastmod>2026-09-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1684,7 +1684,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/zh-tw/events/</loc>
-        <lastmod>2026-09-28</lastmod>
+        <lastmod>2026-09-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1798,7 +1798,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/events/party-festival-september-2026/</loc>
-        <lastmod>2026-09-21</lastmod>
+        <lastmod>2026-09-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1810,7 +1810,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/id/events/party-festival-september-2026/</loc>
-        <lastmod>2026-09-21</lastmod>
+        <lastmod>2026-09-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1828,7 +1828,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/ja/events/party-festival-september-2026/</loc>
-        <lastmod>2026-09-21</lastmod>
+        <lastmod>2026-09-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1846,7 +1846,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/pt-br/events/party-festival-september-2026/</loc>
-        <lastmod>2026-09-21</lastmod>
+        <lastmod>2026-09-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1864,7 +1864,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/zh-tw/events/party-festival-september-2026/</loc>
-        <lastmod>2026-09-21</lastmod>
+        <lastmod>2026-09-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>

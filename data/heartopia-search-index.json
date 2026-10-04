@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-13",
-  "count": 608,
+  "generatedAt": "2026-10-04",
+  "count": 609,
   "typeOrder": [
     "fish",
     "insects",
@@ -4716,6 +4716,21 @@
       "listingHref": "/database/birds/?search=Verditer%20Flycatcher",
       "meta": "Forest Jump Puzzle | Lv. 10 | Common",
       "searchText": "verditer flycatcher bird forest jump puzzle lv 10 common verditer flycatcher rainbow day dawn dusk night"
+    },
+    {
+      "id": "birds:violet-backed-starling",
+      "name": "Violet-Backed Starling",
+      "normalized": "violet backed starling",
+      "aliases": [
+        "Violet-Backed Starling"
+      ],
+      "type": "Bird",
+      "typeKey": "birds",
+      "image": "/img/birds/Violet-Backed-Starling.webp",
+      "href": "/database/birds/?search=Violet-Backed%20Starling",
+      "listingHref": "/database/birds/?search=Violet-Backed%20Starling",
+      "meta": "Check in game | Lv. 11 | Auto-synced (location pending)",
+      "searchText": "violet backed starling bird check in game lv 11 auto synced location pending violet backed starling rainbow sunny rainy check in game"
     },
     {
       "id": "birds:wallace-s-fruit-dove",
