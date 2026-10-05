@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-10-04",
+  "lastChecked": "2026-10-05",
   "sources": [
     "https://tryhardguides.com/heartopia-codes/",
     "https://heartopia-plus.com/giftcode/",
@@ -15,7 +15,7 @@
       "expires": "No posted expiry",
       "status": "new",
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-10-04",
+      "lastSeen": "2026-10-05",
       "sourceCount": 1,
       "sources": [
         "https://tryhardguides.com/heartopia-codes/",
@@ -33,7 +33,7 @@
       "expires": "No posted expiry",
       "status": "new",
       "firstSeen": "2026-09-25",
-      "lastSeen": "2026-10-04",
+      "lastSeen": "2026-10-05",
       "sourceCount": 4,
       "sources": [
         "https://tryhardguides.com/heartopia-codes/",
@@ -51,7 +51,7 @@
       "expires": "No posted expiry",
       "status": "new",
       "firstSeen": "2026-09-28",
-      "lastSeen": "2026-10-04",
+      "lastSeen": "2026-10-05",
       "sourceCount": 1,
       "sources": [
         "https://tryhardguides.com/heartopia-codes/",
@@ -61,6 +61,21 @@
       "verification": "Confirmed by 2 independent current sources",
       "note": "Automatically published after the code quality gate passed.",
       "needsCheck": true
+    },
+    {
+      "code": "r2q7a4m9k3n6",
+      "reward": "Free rewards",
+      "expires": "No posted expiry",
+      "status": "new",
+      "firstSeen": "2026-10-05",
+      "lastSeen": "2026-10-05",
+      "sourceCount": 2,
+      "sources": [
+        "https://heartopia-plus.com/giftcode/",
+        "https://heartopia-life.me/wiki/codes"
+      ],
+      "verification": "Confirmed by 2 independent current sources",
+      "note": "Automatically published after the code quality gate passed."
     }
   ],
   "expired": [
@@ -1348,7 +1363,7 @@
     }
   ],
   "automation": {
-    "lastRun": "2026-10-04T13:12:16.134Z",
+    "lastRun": "2026-10-05T16:01:38.605Z",
     "successfulIndependentSources": 5,
     "policy": "Official announcement, or two independent current-source confirmations; conflicting candidates are withheld."
   }
