@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-10-08",
+  "lastChecked": "2026-10-09",
   "sources": [
     "https://tryhardguides.com/heartopia-codes/",
     "https://heartopia-plus.com/giftcode/",
@@ -15,8 +15,8 @@
       "expires": "No posted expiry",
       "status": "new",
       "firstSeen": "2026-09-25",
-      "lastSeen": "2026-10-08",
-      "sourceCount": 3,
+      "lastSeen": "2026-10-09",
+      "sourceCount": 2,
       "sources": [
         "https://tryhardguides.com/heartopia-codes/",
         "https://heartopia-plus.com/giftcode/",
@@ -25,7 +25,7 @@
       ],
       "verification": "Confirmed by 2 independent current sources",
       "note": "Automatically published after the code quality gate passed.",
-      "needsCheck": false
+      "needsCheck": true
     },
     {
       "code": "r2q7a4m9k3n6",
@@ -33,7 +33,7 @@
       "expires": "No posted expiry",
       "status": "new",
       "firstSeen": "2026-10-05",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-09",
       "sourceCount": 3,
       "sources": [
         "https://heartopia-plus.com/giftcode/",
@@ -1360,7 +1360,7 @@
     }
   ],
   "automation": {
-    "lastRun": "2026-10-08T14:35:42.084Z",
+    "lastRun": "2026-10-09T14:22:59.569Z",
     "successfulIndependentSources": 4,
     "policy": "Official announcement, or two independent current-source confirmations; conflicting candidates are withheld."
   }
