@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29",
+  "generatedAt": "2026-10-10",
   "count": 18,
   "events": [
     {
@@ -202,13 +202,13 @@
       "slug": "party-festival-september-2026",
       "localSlug": "party-festival-september-2026",
       "name": "Party Festival",
-      "status": "active",
+      "status": "archive",
       "type": "Official announcement",
       "startDate": "September 19, 2026",
       "endDate": "October 9, 2026",
       "dateLabel": "September 19, 2026",
       "officialUrl": "https://store.steampowered.com/news/app/4025700/view/706656188498968594",
-      "officialImageUrl": "https://clan.fastly.steamstatic.com/images/45812445/fb510f2d4d91fc6b300d8a3c94c7acedbb4e8bce.jpg",
+      "officialImageUrl": "https://clan.akamai.steamstatic.com/images/45812445/fb510f2d4d91fc6b300d8a3c94c7acedbb4e8bce.jpg",
       "officialVerified": true
     },
     {
