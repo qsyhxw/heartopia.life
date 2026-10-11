@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-10-10",
+  "lastChecked": "2026-10-11",
   "sources": [
     "https://tryhardguides.com/heartopia-codes/",
     "https://heartopia-plus.com/giftcode/",
@@ -15,8 +15,8 @@
       "expires": "No posted expiry",
       "status": "new",
       "firstSeen": "2026-09-25",
-      "lastSeen": "2026-10-10",
-      "sourceCount": 2,
+      "lastSeen": "2026-10-11",
+      "sourceCount": 1,
       "sources": [
         "https://tryhardguides.com/heartopia-codes/",
         "https://heartopia-plus.com/giftcode/",
@@ -33,7 +33,7 @@
       "expires": "No posted expiry",
       "status": "new",
       "firstSeen": "2026-10-05",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-11",
       "sourceCount": 3,
       "sources": [
         "https://heartopia-plus.com/giftcode/",
@@ -43,6 +43,21 @@
       "verification": "Confirmed by 2 independent current sources",
       "note": "Automatically published after the code quality gate passed.",
       "needsCheck": false
+    },
+    {
+      "code": "hangeulday1009",
+      "reward": "Free rewards",
+      "expires": "No posted expiry",
+      "status": "new",
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "sourceCount": 2,
+      "sources": [
+        "https://heartopia-plus.com/giftcode/",
+        "https://heartopia-life.me/wiki/codes"
+      ],
+      "verification": "Confirmed by 2 independent current sources",
+      "note": "Automatically published after the code quality gate passed."
     }
   ],
   "expired": [
@@ -1330,21 +1345,6 @@
   ],
   "pending": [
     {
-      "code": "hangeulday1009",
-      "reward": "Unknown",
-      "firstSeen": "2026-10-10",
-      "status": "awaiting_cross_check",
-      "sources": [
-        "https://heartopia-life.me/wiki/codes"
-      ],
-      "contexts": [
-        "hangeulday1009"
-      ],
-      "lastSeen": "2026-10-10",
-      "sourceCount": 1,
-      "reason": "insufficient_independent_evidence"
-    },
-    {
       "code": "Update6",
       "reward": "Unknown",
       "firstSeen": "2026-09-21",
@@ -1375,7 +1375,7 @@
     }
   ],
   "automation": {
-    "lastRun": "2026-10-10T13:43:54.907Z",
+    "lastRun": "2026-10-11T14:03:43.337Z",
     "successfulIndependentSources": 4,
     "policy": "Official announcement, or two independent current-source confirmations; conflicting candidates are withheld."
   }
