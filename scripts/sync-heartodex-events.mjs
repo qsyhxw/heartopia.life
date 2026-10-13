@@ -3,6 +3,8 @@ import path from 'node:path';
 import { pickRemoteFields } from './sync-field-policy.mjs';
 import { renderHeartopiaEvents } from './render-heartopia-events.mjs';
 import { statusForDatedEvent } from './event-date-status.mjs';
+import { findLocalEventArtwork, selectPublishableEvents } from './event-publication-policy.mjs';
+import { syncPath, writeSyncJson } from './sync-runtime.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const today = new Date().toISOString().slice(0, 10);
@@ -124,16 +126,7 @@ function merge(remote) {
   return all;
 }
 function localEventImage(e) {
-  const mapped = eventImageManifest.images?.[route(e)]?.path || eventImageManifest.images?.[e.slug]?.path;
-  if (mapped && fs.existsSync(path.join(root, mapped.replace(/^\//, '')))) return mapped;
-  const preferred = [route(e), e.slug].filter(Boolean);
-  for (const name of preferred) {
-    for (const extension of ['webp', 'jpg', 'jpeg', 'png']) {
-      const relative = `img/events/${name}.${extension}`;
-      if (fs.existsSync(path.join(root, relative))) return `/${relative}`;
-    }
-  }
-  return '';
+  return findLocalEventArtwork(root, { ...e, localSlug: route(e) }, eventImageManifest);
 }
 
 function syncCustomEventStatus(e) {
@@ -201,9 +194,9 @@ if(process.argv[2]==='--parse-fixture') {
 }
 const remote=parse(await get(base+'/en/events/'));
 if(!remote.length) throw Error('Event parse safety check failed: no event cards found.');
-const details=await Promise.all(remote.map(enrich)), events=merge(details);
+const details=await Promise.all(remote.map(enrich)), candidates=merge(details);
 const previousByRoute = new Map((currentEventData.events || []).map(event => [event.localSlug || event.slug, event]));
-for (const event of events) {
+for (const event of candidates) {
   const previous = previousByRoute.get(route(event));
   if (previous) {
     event.slug = previous.slug;
@@ -214,6 +207,17 @@ for (const event of events) {
   }
   event.status = statusForDatedEvent(event);
 }
+const { published: events, pending } = selectPublishableEvents(candidates, currentEventData.events || [], localEventImage);
+writeSyncJson('events-pending-artwork.json', {
+  generatedAt: new Date().toISOString(),
+  pending: pending.map(event => ({
+    slug: event.slug, localSlug: route(event), name: event.name,
+    status: event.status, reason: 'missing-local-artwork',
+  })),
+});
+if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT,
+  `pending_count=${pending.length}\npending_report_file=${syncPath('events-pending-artwork.json')}\n`);
+for (const event of pending) console.log(`::warning::Event deferred until local artwork is available: ${event.slug}`);
 const publicEvents=events.map(e=>pickRemoteFields('events',{slug:e.slug,localSlug:route(e),name:e.name,status:e.status,type:e.type||'',startDate:e.startDate||'',endDate:e.endDate||'',dateLabel:e.date||'',officialUrl:e.officialUrl||'',officialImageUrl:e.officialImageUrl||'',officialVerified:Boolean(e.officialVerified)}));
 const eventFactsChanged = JSON.stringify(publicEvents) !== JSON.stringify(currentEventData.events || []);
 const updatedAt = eventFactsChanged ? today : (currentEventData.generatedAt || today);

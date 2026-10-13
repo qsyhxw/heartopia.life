@@ -5,10 +5,28 @@ import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import test from 'node:test';
 import { statusForDatedEvent } from '../scripts/event-date-status.mjs';
+import { findLocalEventArtwork, selectPublishableEvents } from '../scripts/event-publication-policy.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const detector = path.join(root, 'scripts', 'detect-heartopia-event-changes.mjs');
 const discovery = path.join(root, 'scripts', 'discover-heartopia-event-sources.mjs');
+
+test('missing new artwork defers only the new event and retries publication when ready', () => {
+  const previous = [{ slug: 'known', localSlug: 'known', status: 'active' }];
+  const events = [{ slug: 'known', status: 'archive' }, { slug: 'night-of-divination', status: 'upcoming' }];
+  const deferred = selectPublishableEvents(events, previous, event => event.slug === 'known');
+  assert.deepEqual(deferred.published, [events[0]]);
+  assert.deepEqual(deferred.pending, [events[1]]);
+  const ready = selectPublishableEvents(events, previous, () => true);
+  assert.deepEqual(ready.published, events);
+  assert.deepEqual(ready.pending, []);
+});
+
+test('existing missing artwork remains a publication error, including renamed slugs', () => {
+  assert.throws(() => selectPublishableEvents(
+    [{ slug: 'renamed', local: 'known' }], [{ slug: 'original', localSlug: 'known' }], () => false,
+  ), /Published event lost local artwork/);
+});
 
 test('dated event status follows the verified event window', () => {
   const event = { status: 'upcoming', startDate: 'September 19, 2026', endDate: 'October 9, 2026' };
@@ -24,6 +42,7 @@ test('events without a complete date window keep their reviewed status', () => {
 
 test('every published event guide has local artwork', () => {
   const events = JSON.parse(fs.readFileSync(path.join(root, 'data', 'heartopia-events.json'), 'utf8')).events;
+  const manifest = JSON.parse(fs.readFileSync(path.join(root, 'data', 'heartopia-event-images.json'), 'utf8'));
   const aliases = {
     'my-little-pony': 'my-little-pony-collaboration',
     'winter-frost-season': 'winter-2026',
@@ -32,7 +51,7 @@ test('every published event guide has local artwork', () => {
   };
   const missing = events.filter((event) => {
     const slug = aliases[event.slug] || event.localSlug || event.slug;
-    return !['webp', 'jpg', 'jpeg', 'png'].some((extension) => fs.existsSync(path.join(root, 'img', 'events', `${slug}.${extension}`)));
+    return !findLocalEventArtwork(root, { ...event, localSlug: slug }, manifest);
   }).map((event) => event.slug);
   assert.deepEqual(missing, []);
 });

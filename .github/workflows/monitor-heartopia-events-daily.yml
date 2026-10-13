@@ -6,6 +6,8 @@ on:
     paths:
       - '.github/workflows/monitor-heartopia-events-daily.yml'
       - 'scripts/sync-heartodex-events.mjs'
+      - 'scripts/event-publication-policy.mjs'
+      - 'tests/event-monitor.test.mjs'
       - 'scripts/detect-heartopia-event-changes.mjs'
       - 'scripts/send_event_alert.py'
       - 'scripts/discover-heartopia-event-sources.mjs'
@@ -78,9 +80,19 @@ jobs:
         run: node scripts/download-official-event-images.mjs "${{ steps.sources.outputs.report_file }}"
 
       - name: Read event facts and refresh basic pages
+        id: facts
         env:
           EVENT_DISCOVERY_REPORT: ${{ steps.sources.outputs.report_file }}
         run: node scripts/sync-heartodex-events.mjs
+
+      - name: Save private pending artwork report
+        if: always() && steps.facts.outputs.pending_report_file != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: heartopia-events-pending-artwork
+          path: ${{ steps.facts.outputs.pending_report_file }}
+          retention-days: 14
+          if-no-files-found: error
 
       - name: Detect new and changed events
         id: changes
@@ -169,6 +181,7 @@ jobs:
             echo "- New official signals: ${{ steps.sources.outputs.official_signal_count || '0' }}"
             echo "- Official images downloaded: ${{ steps.artwork.outputs.downloaded_count || '0' }}"
             echo "- Source warnings: ${{ steps.sources.outputs.source_warning_count || '0' }}"
+            echo "- Events awaiting local artwork: ${{ steps.facts.outputs.pending_count || '0' }}"
             echo "- New events: ${{ steps.changes.outputs.new_count || '0' }}"
             echo "- Changed events: ${{ steps.changes.outputs.changed_count || '0' }}"
             echo "- Removed events: ${{ steps.changes.outputs.removed_count || '0' }}"
