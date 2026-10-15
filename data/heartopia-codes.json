@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-10-14",
+  "lastChecked": "2026-10-15",
   "sources": [
     "https://tryhardguides.com/heartopia-codes/",
     "https://heartopia-plus.com/giftcode/",
@@ -15,7 +15,7 @@
       "expires": "No posted expiry",
       "status": "new",
       "firstSeen": "2026-10-05",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "sourceCount": 3,
       "sources": [
         "https://heartopia-plus.com/giftcode/",
@@ -32,7 +32,7 @@
       "expires": "No posted expiry",
       "status": "new",
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "sourceCount": 2,
       "sources": [
         "https://heartopia-plus.com/giftcode/",
@@ -48,7 +48,7 @@
       "expires": "No posted expiry",
       "status": "new",
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "sourceCount": 3,
       "sources": [
         "https://tryhardguides.com/heartopia-codes/",
@@ -56,7 +56,8 @@
         "https://hatopedia.com/"
       ],
       "verification": "Confirmed by 2 independent current sources",
-      "note": "Automatically published after the code quality gate passed."
+      "note": "Automatically published after the code quality gate passed.",
+      "needsCheck": false
     }
   ],
   "expired": [
@@ -1389,7 +1390,7 @@
     }
   ],
   "automation": {
-    "lastRun": "2026-10-14T12:53:25.853Z",
+    "lastRun": "2026-10-15T12:40:13.552Z",
     "successfulIndependentSources": 5,
     "policy": "Official announcement, or two independent current-source confirmations; conflicting candidates are withheld."
   }
