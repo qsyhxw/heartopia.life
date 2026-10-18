@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-13",
-  "count": 101,
+  "generatedAt": "2026-10-18",
+  "count": 106,
   "insects": [
     {
       "slug": "golden script supervisor bumblebee",
@@ -1112,6 +1112,61 @@
       "category": "Auto-synced (location pending)",
       "image": "/img/insects/Purple-horned-Firefly.webp",
       "imageSourceName": "Purple-horned Firefly"
+    },
+    {
+      "slug": "mandarin dung beetle",
+      "name": "Mandarin Dung Beetle",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "schedule": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "image": "/img/insects/Mandarin-Dung-Beetle.webp",
+      "imageSourceName": "Mandarin Dung Beetle"
+    },
+    {
+      "slug": "pumpkin dung beetle",
+      "name": "Pumpkin Dung Beetle",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "schedule": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "image": "/img/insects/Pumpkin-Dung-Beetle.webp",
+      "imageSourceName": "Pumpkin Dung Beetle"
+    },
+    {
+      "slug": "shiitake dung beetle",
+      "name": "Shiitake Dung Beetle",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "schedule": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "image": "/img/insects/Shiitake-Dung-Beetle.webp",
+      "imageSourceName": "Shiitake Dung Beetle"
+    },
+    {
+      "slug": "strawberry dung beetle",
+      "name": "Strawberry Dung Beetle",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "schedule": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "image": "/img/insects/Strawberry-Dung-Beetle.webp",
+      "imageSourceName": "Strawberry Dung Beetle"
+    },
+    {
+      "slug": "truffle dung beetle",
+      "name": "Truffle Dung Beetle",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "schedule": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "image": "/img/insects/Truffle-Dung-Beetle.webp",
+      "imageSourceName": "Truffle Dung Beetle"
     }
   ]
 }

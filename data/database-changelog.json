@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-13",
+  "updatedAt": "2026-10-18",
   "trackedCategories": [
     {
       "id": "fish",
@@ -69,9 +69,9 @@
     }
   ],
   "totals": {
-    "fish": 124,
-    "birds": 104,
-    "insects": 101,
+    "fish": 125,
+    "birds": 115,
+    "insects": 106,
     "wildlife": 11,
     "crops": 18,
     "flowers": 10,
@@ -84,6 +84,87 @@
     "events": 18
   },
   "entries": [
+    {
+      "id": "2026-10-18-edf937923cf260ee",
+      "timestamp": "2026-10-18T06:07:54.270Z",
+      "date": "2026-10-18",
+      "title": "New Fish added",
+      "summary": "+6 Fish · 5 Fish removed · +11 Birds · +1 more",
+      "signature": "edf937923cf260ee",
+      "changes": [
+        {
+          "category": "Fish",
+          "singular": "Fish",
+          "categoryId": "fish",
+          "action": "added",
+          "count": 6,
+          "items": [
+            "Blue Sea Angel",
+            "Golden Cuttlefish",
+            "Green Sea Angel",
+            "Pharaoh Cuttlefish",
+            "Purple Sea Angel",
+            "Spineless Cuttlefish"
+          ],
+          "truncated": false,
+          "url": "/database/fish/"
+        },
+        {
+          "category": "Fish",
+          "singular": "Fish",
+          "categoryId": "fish",
+          "action": "removed",
+          "count": 5,
+          "items": [
+            "Black Garfish",
+            "Brown Garfish",
+            "Golden Garfish",
+            "Pale Gold Garfish",
+            "Silver Garfish"
+          ],
+          "truncated": false,
+          "url": "/database/fish/"
+        },
+        {
+          "category": "Birds",
+          "singular": "Bird",
+          "categoryId": "birds",
+          "action": "added",
+          "count": 11,
+          "items": [
+            "apple raven",
+            "eastern screech owl",
+            "honduran white bat",
+            "long‑toothed fruit bat",
+            "mandarin raven",
+            "northern white-faced owl",
+            "palau scops owl",
+            "pumpkin raven",
+            "strawberry raven",
+            "tanzanian woolly bat",
+            "truffle raven"
+          ],
+          "truncated": false,
+          "url": "/database/birds/"
+        },
+        {
+          "category": "Insects",
+          "singular": "Insect",
+          "categoryId": "insects",
+          "action": "added",
+          "count": 5,
+          "items": [
+            "Mandarin Dung Beetle",
+            "Pumpkin Dung Beetle",
+            "Shiitake Dung Beetle",
+            "Strawberry Dung Beetle",
+            "Truffle Dung Beetle"
+          ],
+          "truncated": false,
+          "url": "/database/insects/"
+        }
+      ]
+    },
     {
       "id": "2026-10-13-3097d583bde25b5d",
       "timestamp": "2026-10-13T08:12:57.654Z",

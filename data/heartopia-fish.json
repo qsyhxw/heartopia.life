@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-11",
-  "count": 124,
+  "generatedAt": "2026-10-18",
+  "count": 125,
   "fish": [
     {
       "name": "Barbel",
@@ -1202,58 +1202,69 @@
       "maxValue": 0
     },
     {
-      "name": "Black Garfish",
+      "name": "Blue Sea Angel",
       "location": "Check in game",
       "level": 1,
       "shadow": "Check in game",
       "category": "Auto-synced (location pending)",
       "schedule": "Rainbow, Sunny, Rainy; Check in game",
       "value": "Check in game",
-      "image": "/img/fish/Black-Garfish.webp",
+      "image": "/img/fish/Blue-Sea-Angel.webp",
       "maxValue": 0
     },
     {
-      "name": "Brown Garfish",
+      "name": "Golden Cuttlefish",
       "location": "Check in game",
       "level": 1,
       "shadow": "Check in game",
       "category": "Auto-synced (location pending)",
       "schedule": "Rainbow, Sunny, Rainy; Check in game",
       "value": "Check in game",
-      "image": "/img/fish/Brown-Garfish.webp",
+      "image": "/img/fish/Golden-Cuttlefish.webp",
       "maxValue": 0
     },
     {
-      "name": "Golden Garfish",
+      "name": "Green Sea Angel",
       "location": "Check in game",
       "level": 1,
       "shadow": "Check in game",
       "category": "Auto-synced (location pending)",
       "schedule": "Rainbow, Sunny, Rainy; Check in game",
       "value": "Check in game",
-      "image": "/img/fish/Golden-Garfish.webp",
+      "image": "/img/fish/Green-Sea-Angel.webp",
       "maxValue": 0
     },
     {
-      "name": "Pale Gold Garfish",
+      "name": "Pharaoh Cuttlefish",
       "location": "Check in game",
       "level": 1,
       "shadow": "Check in game",
       "category": "Auto-synced (location pending)",
       "schedule": "Rainbow, Sunny, Rainy; Check in game",
       "value": "Check in game",
-      "image": "/img/fish/Pale-Gold-Garfish.webp",
+      "image": "/img/fish/Pharaoh-Cuttlefish.webp",
       "maxValue": 0
     },
     {
-      "name": "Silver Garfish",
+      "name": "Purple Sea Angel",
       "location": "Check in game",
       "level": 1,
       "shadow": "Check in game",
       "category": "Auto-synced (location pending)",
       "schedule": "Rainbow, Sunny, Rainy; Check in game",
       "value": "Check in game",
-      "image": "/img/fish/Silver-Garfish.webp",
+      "image": "/img/fish/Purple-Sea-Angel.webp",
+      "maxValue": 0
+    },
+    {
+      "name": "Spineless Cuttlefish",
+      "location": "Check in game",
+      "level": 1,
+      "shadow": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "schedule": "Rainbow, Sunny, Rainy; Check in game",
+      "value": "Check in game",
+      "image": "/img/fish/Spineless-Cuttlefish.webp",
       "maxValue": 0
     },
     {

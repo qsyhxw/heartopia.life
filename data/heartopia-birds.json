@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-04",
-  "count": 104,
+  "generatedAt": "2026-10-18",
+  "count": 115,
   "birds": [
     {
       "name": "mallard",
@@ -937,6 +937,105 @@
       "location": "Check in game",
       "category": "Auto-synced (location pending)",
       "img": "Violet-Backed-Starling.webp"
+    },
+    {
+      "name": "apple raven",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "img": "Apple-Raven.webp"
+    },
+    {
+      "name": "eastern screech owl",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "img": "Eastern-Screech-Owl.webp"
+    },
+    {
+      "name": "honduran white bat",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "img": "Honduran-White-Bat.webp"
+    },
+    {
+      "name": "long‑toothed fruit bat",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "img": "Long-Toothed-Fruit-Bat.webp"
+    },
+    {
+      "name": "mandarin raven",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "img": "Mandarin-Raven.webp"
+    },
+    {
+      "name": "northern white-faced owl",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "img": "Northern-White-Faced-Owl.webp"
+    },
+    {
+      "name": "palau scops owl",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "img": "Palau-Scops-Owl.webp"
+    },
+    {
+      "name": "pumpkin raven",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "img": "Pumpkin-Raven.webp"
+    },
+    {
+      "name": "strawberry raven",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "img": "Strawberry-Raven.webp"
+    },
+    {
+      "name": "tanzanian woolly bat",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "img": "Tanzanian-Woolly-Bat.webp"
+    },
+    {
+      "name": "truffle raven",
+      "level": 1,
+      "weather": "Rainbow, Sunny, Rainy",
+      "time": "Check in game",
+      "location": "Check in game",
+      "category": "Auto-synced (location pending)",
+      "img": "Truffle-Raven.webp"
     }
   ]
 }
