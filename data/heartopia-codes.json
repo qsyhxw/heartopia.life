@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-10-18",
+  "lastChecked": "2026-10-19",
   "sources": [
     "https://tryhardguides.com/heartopia-codes/",
     "https://heartopia-plus.com/giftcode/",
@@ -15,7 +15,7 @@
       "expires": "No posted expiry",
       "status": "new",
       "firstSeen": "2026-10-05",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-19",
       "sourceCount": 3,
       "sources": [
         "https://heartopia-plus.com/giftcode/",
@@ -32,7 +32,7 @@
       "expires": "No posted expiry",
       "status": "new",
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-19",
       "sourceCount": 2,
       "sources": [
         "https://heartopia-plus.com/giftcode/",
@@ -48,7 +48,7 @@
       "expires": "No posted expiry",
       "status": "new",
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-19",
       "sourceCount": 4,
       "sources": [
         "https://tryhardguides.com/heartopia-codes/",
@@ -59,6 +59,22 @@
       "verification": "Confirmed by 2 independent current sources",
       "note": "Automatically published after the code quality gate passed.",
       "needsCheck": false
+    },
+    {
+      "code": "a4m8r2k7n6q5",
+      "reward": "Free rewards",
+      "expires": "No posted expiry",
+      "status": "new",
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "sourceCount": 3,
+      "sources": [
+        "https://tryhardguides.com/heartopia-codes/",
+        "https://heartopia-plus.com/giftcode/",
+        "https://hatopedia.com/"
+      ],
+      "verification": "Confirmed by 2 independent current sources",
+      "note": "Automatically published after the code quality gate passed."
     }
   ],
   "expired": [
@@ -1391,7 +1407,7 @@
     }
   ],
   "automation": {
-    "lastRun": "2026-10-18T12:04:11.358Z",
+    "lastRun": "2026-10-19T14:41:40.530Z",
     "successfulIndependentSources": 5,
     "policy": "Official announcement, or two independent current-source confirmations; conflicting candidates are withheld."
   }
