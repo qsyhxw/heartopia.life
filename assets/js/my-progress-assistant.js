@@ -3,7 +3,7 @@
     const mapRouteKey = 'heartopia.map.todayRouteChecklist';
     const eventGoalPrefix = 'heartopia.myProgress.eventGoals.';
     const progressItems = [
-        { id: 'fish', title: 'Fish collected', icon: '&#128031;', image: '/img/fish/Anglerfish.webp', storageKey: 'heartopia.collection.fish', total: 125, url: '/database/fish/', action: 'Open fish database', color: 'sky' },
+        { id: 'fish', title: 'Fish collected', icon: '&#128031;', image: '/img/fish/Anglerfish.webp', storageKey: 'heartopia.collection.fish', total: 124, url: '/database/fish/', action: 'Open fish database', color: 'sky' },
         { id: 'insects', title: 'Insects collected', icon: '&#129419;', image: '/img/insects/Abeja-Azul.webp', storageKey: 'heartopia.collection.insects', total: 106, url: '/database/insects/', action: 'Open insect database', color: 'sage' },
         { id: 'birds', title: 'Birds photographed', icon: '&#128038;', image: '/img/birds/African-Olive-Pigeon.webp', storageKey: 'heartopia.collection.birds', total: 115, url: '/database/birds/', action: 'Open bird database', color: 'coral' },
         { id: 'wildlife', title: 'Wildlife found', icon: '&#128062;', image: '/img/wildlife/Capybara.webp', storageKey: 'heartopia.collection.wildlife', total: 11, url: '/database/wildlife/', action: 'Open wildlife database', color: 'mint' },

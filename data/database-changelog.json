@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-18",
+  "updatedAt": "2026-10-25",
   "trackedCategories": [
     {
       "id": "fish",
@@ -69,7 +69,7 @@
     }
   ],
   "totals": {
-    "fish": 125,
+    "fish": 124,
     "birds": 115,
     "insects": 106,
     "wildlife": 11,
@@ -84,6 +84,49 @@
     "events": 18
   },
   "entries": [
+    {
+      "id": "2026-10-25-9906e1bfed890318",
+      "timestamp": "2026-10-25T06:21:47.411Z",
+      "date": "2026-10-25",
+      "title": "New Fish added",
+      "summary": "+5 Fish · 6 Fish removed",
+      "signature": "9906e1bfed890318",
+      "changes": [
+        {
+          "category": "Fish",
+          "singular": "Fish",
+          "categoryId": "fish",
+          "action": "added",
+          "count": 5,
+          "items": [
+            "Black Garfish",
+            "Brown Garfish",
+            "Golden Garfish",
+            "Pale Gold Garfish",
+            "Silver Garfish"
+          ],
+          "truncated": false,
+          "url": "/database/fish/"
+        },
+        {
+          "category": "Fish",
+          "singular": "Fish",
+          "categoryId": "fish",
+          "action": "removed",
+          "count": 6,
+          "items": [
+            "Blue Sea Angel",
+            "Golden Cuttlefish",
+            "Green Sea Angel",
+            "Pharaoh Cuttlefish",
+            "Purple Sea Angel",
+            "Spineless Cuttlefish"
+          ],
+          "truncated": false,
+          "url": "/database/fish/"
+        }
+      ]
+    },
     {
       "id": "2026-10-18-edf937923cf260ee",
       "timestamp": "2026-10-18T06:07:54.270Z",

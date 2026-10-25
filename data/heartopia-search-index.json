@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-18",
-  "count": 626,
+  "generatedAt": "2026-10-25",
+  "count": 625,
   "typeOrder": [
     "fish",
     "insects",
@@ -165,6 +165,21 @@
       "searchText": "beltfish fish zephyr sea lv 1 common 840 g beltfish rainbow sunny rainy day dawn dusk night large 105 157 210 420 840"
     },
     {
+      "id": "fish:black-garfish",
+      "name": "Black Garfish",
+      "normalized": "black garfish",
+      "aliases": [
+        "Black Garfish"
+      ],
+      "type": "Fish",
+      "typeKey": "fish",
+      "image": "/img/fish/Black-Garfish.webp",
+      "href": "/database/fish/?search=Black%20Garfish",
+      "listingHref": "/database/fish/?search=Black%20Garfish",
+      "meta": "Check in game | Lv. 1 | Auto-synced (location pending)",
+      "searchText": "black garfish fish check in game lv 1 auto synced location pending black garfish rainbow sunny rainy check in game check in game check in game"
+    },
+    {
       "id": "fish:blackspot-seabream",
       "name": "Blackspot Seabream",
       "normalized": "blackspot seabream",
@@ -225,21 +240,6 @@
       "searchText": "blue european crayfish fish forest lake lv 8 common 2 000 g blue european crayfish rainbow sunny rainy dusk night small 250 375 500 1 000 2 000"
     },
     {
-      "id": "fish:blue-sea-angel",
-      "name": "Blue Sea Angel",
-      "normalized": "blue sea angel",
-      "aliases": [
-        "Blue Sea Angel"
-      ],
-      "type": "Fish",
-      "typeKey": "fish",
-      "image": "/img/fish/Blue-Sea-Angel.webp",
-      "href": "/database/fish/?search=Blue%20Sea%20Angel",
-      "listingHref": "/database/fish/?search=Blue%20Sea%20Angel",
-      "meta": "Check in game | Lv. 1 | Auto-synced (location pending)",
-      "searchText": "blue sea angel fish check in game lv 1 auto synced location pending blue sea angel rainbow sunny rainy check in game check in game check in game"
-    },
-    {
       "id": "fish:blue-and-yellow-wrasse",
       "name": "Blue-and-Yellow Wrasse",
       "normalized": "blue and yellow wrasse",
@@ -283,6 +283,21 @@
       "listingHref": "/database/fish/?search=Bluegill",
       "meta": "Onsen Mountain Lake | Lv. 10 | Common | 3,160 G",
       "searchText": "bluegill fish onsen mountain lake lv 10 common 3 160 g bluegill rainbow sunny dusk night small 395 592 790 1 580 3 160"
+    },
+    {
+      "id": "fish:brown-garfish",
+      "name": "Brown Garfish",
+      "normalized": "brown garfish",
+      "aliases": [
+        "Brown Garfish"
+      ],
+      "type": "Fish",
+      "typeKey": "fish",
+      "image": "/img/fish/Brown-Garfish.webp",
+      "href": "/database/fish/?search=Brown%20Garfish",
+      "listingHref": "/database/fish/?search=Brown%20Garfish",
+      "meta": "Check in game | Lv. 1 | Auto-synced (location pending)",
+      "searchText": "brown garfish fish check in game lv 1 auto synced location pending brown garfish rainbow sunny rainy check in game check in game check in game"
     },
     {
       "id": "fish:burbot",
@@ -855,19 +870,19 @@
       "searchText": "goby fish east sea lv 4 common 1 200 g goby rainbow sunny rainy day dawn small 150 225 300 600 1 200"
     },
     {
-      "id": "fish:golden-cuttlefish",
-      "name": "Golden Cuttlefish",
-      "normalized": "golden cuttlefish",
+      "id": "fish:golden-garfish",
+      "name": "Golden Garfish",
+      "normalized": "golden garfish",
       "aliases": [
-        "Golden Cuttlefish"
+        "Golden Garfish"
       ],
       "type": "Fish",
       "typeKey": "fish",
-      "image": "/img/fish/Golden-Cuttlefish.webp",
-      "href": "/database/fish/?search=Golden%20Cuttlefish",
-      "listingHref": "/database/fish/?search=Golden%20Cuttlefish",
+      "image": "/img/fish/Golden-Garfish.webp",
+      "href": "/database/fish/?search=Golden%20Garfish",
+      "listingHref": "/database/fish/?search=Golden%20Garfish",
       "meta": "Check in game | Lv. 1 | Auto-synced (location pending)",
-      "searchText": "golden cuttlefish fish check in game lv 1 auto synced location pending golden cuttlefish rainbow sunny rainy check in game check in game check in game"
+      "searchText": "golden garfish fish check in game lv 1 auto synced location pending golden garfish rainbow sunny rainy check in game check in game check in game"
     },
     {
       "id": "fish:golden-king-crab",
@@ -928,21 +943,6 @@
       "listingHref": "/database/fish/?search=Green%20Brick%20Clownfish",
       "meta": "East Sea | Lv. 1 | Modular Streets | 800 G",
       "searchText": "green brick clownfish fish east sea lv 1 modular streets 800 g green brick clownfish rainbow sunny rainy day dawn dusk night small 100 150 200 400 800"
-    },
-    {
-      "id": "fish:green-sea-angel",
-      "name": "Green Sea Angel",
-      "normalized": "green sea angel",
-      "aliases": [
-        "Green Sea Angel"
-      ],
-      "type": "Fish",
-      "typeKey": "fish",
-      "image": "/img/fish/Green-Sea-Angel.webp",
-      "href": "/database/fish/?search=Green%20Sea%20Angel",
-      "listingHref": "/database/fish/?search=Green%20Sea%20Angel",
-      "meta": "Check in game | Lv. 1 | Auto-synced (location pending)",
-      "searchText": "green sea angel fish check in game lv 1 auto synced location pending green sea angel rainbow sunny rainy check in game check in game check in game"
     },
     {
       "id": "fish:green-sea-turtle",
@@ -1310,19 +1310,19 @@
       "searchText": "oriental shrimp fish river lv 1 common 400 g oriental shrimp shrimp heartopia shrimp heartopia shrimp location where to find shrimp in heartopia rainbow sunny rainy day dawn dusk night small 50 75 100 200 400"
     },
     {
-      "id": "fish:pharaoh-cuttlefish",
-      "name": "Pharaoh Cuttlefish",
-      "normalized": "pharaoh cuttlefish",
+      "id": "fish:pale-gold-garfish",
+      "name": "Pale Gold Garfish",
+      "normalized": "pale gold garfish",
       "aliases": [
-        "Pharaoh Cuttlefish"
+        "Pale Gold Garfish"
       ],
       "type": "Fish",
       "typeKey": "fish",
-      "image": "/img/fish/Pharaoh-Cuttlefish.webp",
-      "href": "/database/fish/?search=Pharaoh%20Cuttlefish",
-      "listingHref": "/database/fish/?search=Pharaoh%20Cuttlefish",
+      "image": "/img/fish/Pale-Gold-Garfish.webp",
+      "href": "/database/fish/?search=Pale%20Gold%20Garfish",
+      "listingHref": "/database/fish/?search=Pale%20Gold%20Garfish",
       "meta": "Check in game | Lv. 1 | Auto-synced (location pending)",
-      "searchText": "pharaoh cuttlefish fish check in game lv 1 auto synced location pending pharaoh cuttlefish rainbow sunny rainy check in game check in game check in game"
+      "searchText": "pale gold garfish fish check in game lv 1 auto synced location pending pale gold garfish rainbow sunny rainy check in game check in game check in game"
     },
     {
       "id": "fish:pink-betta",
@@ -1383,21 +1383,6 @@
       "listingHref": "/database/fish/?search=Purple%20Brick%20Clownfish",
       "meta": "East Sea | Lv. 1 | Modular Streets | 800 G",
       "searchText": "purple brick clownfish fish east sea lv 1 modular streets 800 g purple brick clownfish rainbow sunny rainy day dawn dusk night small 100 150 200 400 800"
-    },
-    {
-      "id": "fish:purple-sea-angel",
-      "name": "Purple Sea Angel",
-      "normalized": "purple sea angel",
-      "aliases": [
-        "Purple Sea Angel"
-      ],
-      "type": "Fish",
-      "typeKey": "fish",
-      "image": "/img/fish/Purple-Sea-Angel.webp",
-      "href": "/database/fish/?search=Purple%20Sea%20Angel",
-      "listingHref": "/database/fish/?search=Purple%20Sea%20Angel",
-      "meta": "Check in game | Lv. 1 | Auto-synced (location pending)",
-      "searchText": "purple sea angel fish check in game lv 1 auto synced location pending purple sea angel rainbow sunny rainy check in game check in game check in game"
     },
     {
       "id": "fish:rabbit-fish",
@@ -1610,6 +1595,21 @@
       "searchText": "shortfin mako shark fish event sea fishing lv 10 sea fishing 6 800 g shortfin mako shark rainbow day dawn golden 850 1 275 1 700 3 400 6 800"
     },
     {
+      "id": "fish:silver-garfish",
+      "name": "Silver Garfish",
+      "normalized": "silver garfish",
+      "aliases": [
+        "Silver Garfish"
+      ],
+      "type": "Fish",
+      "typeKey": "fish",
+      "image": "/img/fish/Silver-Garfish.webp",
+      "href": "/database/fish/?search=Silver%20Garfish",
+      "listingHref": "/database/fish/?search=Silver%20Garfish",
+      "meta": "Check in game | Lv. 1 | Auto-synced (location pending)",
+      "searchText": "silver garfish fish check in game lv 1 auto synced location pending silver garfish rainbow sunny rainy check in game check in game check in game"
+    },
+    {
       "id": "fish:skipjack-tuna",
       "name": "Skipjack Tuna",
       "normalized": "skipjack tuna",
@@ -1653,21 +1653,6 @@
       "listingHref": "/database/fish/?search=Spined%20Loach",
       "meta": "Giantwood River | Lv. 1 | Common | 400 G",
       "searchText": "spined loach fish giantwood river lv 1 common 400 g spined loach rainbow sunny rainy day dawn dusk night small 50 75 100 200 400"
-    },
-    {
-      "id": "fish:spineless-cuttlefish",
-      "name": "Spineless Cuttlefish",
-      "normalized": "spineless cuttlefish",
-      "aliases": [
-        "Spineless Cuttlefish"
-      ],
-      "type": "Fish",
-      "typeKey": "fish",
-      "image": "/img/fish/Spineless-Cuttlefish.webp",
-      "href": "/database/fish/?search=Spineless%20Cuttlefish",
-      "listingHref": "/database/fish/?search=Spineless%20Cuttlefish",
-      "meta": "Check in game | Lv. 1 | Auto-synced (location pending)",
-      "searchText": "spineless cuttlefish fish check in game lv 1 auto synced location pending spineless cuttlefish rainbow sunny rainy check in game check in game check in game"
     },
     {
       "id": "fish:stone-loach",

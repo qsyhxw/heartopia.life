@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://heartopia.life/</loc>
-        <lastmod>2026-10-18</lastmod>
+        <lastmod>2026-10-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -50,7 +50,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/database/</loc>
-        <lastmod>2026-10-18</lastmod>
+        <lastmod>2026-10-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -175,13 +175,13 @@
     </url>
     <url>
         <loc>https://heartopia.life/database/fish-prices/</loc>
-        <lastmod>2026-10-18</lastmod>
+        <lastmod>2026-10-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/database/fish/</loc>
-        <lastmod>2026-10-18</lastmod>
+        <lastmod>2026-10-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -682,19 +682,19 @@
     </url>
     <url>
         <loc>https://heartopia.life/guides/fish-locations/</loc>
-        <lastmod>2026-10-18</lastmod>
+        <lastmod>2026-10-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/guides/fishing-locations/</loc>
-        <lastmod>2026-10-18</lastmod>
+        <lastmod>2026-10-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/guides/fishing-spots/</loc>
-        <lastmod>2026-10-18</lastmod>
+        <lastmod>2026-10-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1126,13 +1126,13 @@
     </url>
     <url>
         <loc>https://heartopia.life/tools/fish-tracker/</loc>
-        <lastmod>2026-10-18</lastmod>
+        <lastmod>2026-10-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/tools/my-progress/</loc>
-        <lastmod>2026-10-18</lastmod>
+        <lastmod>2026-10-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -1372,7 +1372,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/database/changelog/</loc>
-        <lastmod>2026-10-18</lastmod>
+        <lastmod>2026-10-25</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1588,13 +1588,13 @@
     </url>
     <url>
         <loc>https://heartopia.life/id/codes/</loc>
-        <lastmod>2026-10-17</lastmod>
+        <lastmod>2026-10-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://heartopia.life/pt-br/codes/</loc>
-        <lastmod>2026-10-17</lastmod>
+        <lastmod>2026-10-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
