@@ -17,3 +17,6 @@ _tmp_semrush_analyze.py
 
 .tmp/
 data/monitor/
+
+/_private/
+/outputs/
