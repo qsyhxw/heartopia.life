@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-25",
+  "updatedAt": "2026-10-29",
   "trackedCategories": [
     {
       "id": "fish",
@@ -84,6 +84,28 @@
     "events": 18
   },
   "entries": [
+    {
+      "id": "2026-10-29-a06cf46f53b85d66",
+      "timestamp": "2026-10-29T06:57:56.795Z",
+      "date": "2026-10-29",
+      "title": "Database records updated",
+      "summary": "1 Event updated",
+      "signature": "a06cf46f53b85d66",
+      "changes": [
+        {
+          "category": "Events",
+          "singular": "Event",
+          "categoryId": "events",
+          "action": "updated",
+          "count": 1,
+          "items": [
+            "Party Festival"
+          ],
+          "truncated": false,
+          "url": "/events/"
+        }
+      ]
+    },
     {
       "id": "2026-10-25-9906e1bfed890318",
       "timestamp": "2026-10-25T06:21:47.411Z",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13",
+  "generatedAt": "2026-10-29",
   "count": 18,
   "events": [
     {
@@ -203,13 +203,13 @@
       "localSlug": "party-festival-september-2026",
       "name": "Party Festival",
       "status": "archive",
-      "type": "Official announcement",
+      "type": "Limited festival",
       "startDate": "September 19, 2026",
       "endDate": "October 9, 2026",
-      "dateLabel": "September 19, 2026",
+      "dateLabel": "September 19, 6:00 AM - October 9, 5:59 AM (Server Time)",
       "officialUrl": "https://store.steampowered.com/news/app/4025700/view/706656188498968594",
-      "officialImageUrl": "https://clan.fastly.steamstatic.com/images/45812445/fb510f2d4d91fc6b300d8a3c94c7acedbb4e8bce.jpg",
-      "officialVerified": true
+      "officialImageUrl": "",
+      "officialVerified": false
     },
     {
       "slug": "september-23-update-preview",
