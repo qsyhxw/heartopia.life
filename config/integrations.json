@@ -10561,7 +10561,7 @@
         },
         {
           "attributes": "",
-          "sha256": "b7fa3380a6bb524313da7c2e08d21fcdcb775a24767d7e65982d1ceed7ec83ff"
+          "sha256": "c68639cb4a458f664b29c28dcc4b29f02984a4a06134da46764ff13b36e9b14f"
         },
         {
           "attributes": "src=\"/assets/js/fish-tracker.js?v=9ff9bb6f94b2\"",
@@ -10683,11 +10683,11 @@
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
-          "attributes": "src=\"/assets/js/progress-catalog.js?v=252a4432b752\"",
+          "attributes": "src=\"/assets/js/progress-catalog.js?v=dda889b5bb5b\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
-          "attributes": "src=\"/assets/js/my-progress-assistant.js?v=dfd158cb4599\"",
+          "attributes": "src=\"/assets/js/my-progress-assistant.js?v=0470fc575e86\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
