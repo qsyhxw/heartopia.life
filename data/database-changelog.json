@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-08",
   "trackedCategories": [
     {
       "id": "fish",
@@ -84,6 +84,28 @@
     "events": 18
   },
   "entries": [
+    {
+      "id": "2026-11-08-95cfc260b9c62047",
+      "timestamp": "2026-11-08T00:04:52.934Z",
+      "date": "2026-11-08",
+      "title": "Event availability changed",
+      "summary": "1 Event status changed",
+      "signature": "95cfc260b9c62047",
+      "changes": [
+        {
+          "category": "Events",
+          "singular": "Event",
+          "categoryId": "events",
+          "action": "status",
+          "count": 1,
+          "items": [
+            "September 23 Update Preview: archive to upcoming"
+          ],
+          "truncated": false,
+          "url": "/events/"
+        }
+      ]
+    },
     {
       "id": "2026-11-01-e9ad040961d1dad3",
       "timestamp": "2026-11-01T07:42:34.761Z",
