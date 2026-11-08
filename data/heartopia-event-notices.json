@@ -1,0 +1,44 @@
+{
+  "reviewedAt": "2026-11-08",
+  "events": [
+    {
+      "slug": "my-little-pony-phase-2",
+      "localSlug": "my-little-pony-phase-2",
+      "name": "My Little Pony Phase 2",
+      "status": "upcoming",
+      "type": "Collaboration preview",
+      "startDate": "November 21, 2026",
+      "endDate": "",
+      "dateLabel": "Starts November 21, 2026",
+      "officialUrl": "https://steamcommunity.com/app/4025700/allnews/",
+      "officialImageUrl": "",
+      "officialVerified": true
+    },
+    {
+      "slug": "halloween-2026",
+      "localSlug": "halloween-2026",
+      "name": "Halloween 2026",
+      "status": "active",
+      "type": "Limited events",
+      "startDate": "October 30, 2026",
+      "endDate": "November 16, 2026",
+      "dateLabel": "October 30, 6:00 AM – November 16, 5:59 AM (Server Time)",
+      "officialUrl": "https://steamcommunity.com/app/4025700/allnews/",
+      "officialImageUrl": "",
+      "officialVerified": true
+    },
+    {
+      "slug": "cream-waltz",
+      "localSlug": "cream-waltz",
+      "name": "Cream Waltz",
+      "status": "active",
+      "type": "Gilded Acorn Exhibition",
+      "startDate": "October 31, 2026",
+      "endDate": "January 2, 2027",
+      "dateLabel": "October 31, 7:00 AM – January 2, 2027, 5:59 AM (Server Time)",
+      "officialUrl": "https://steamcommunity.com/app/4025700/allnews/",
+      "officialImageUrl": "",
+      "officialVerified": true
+    }
+  ]
+}

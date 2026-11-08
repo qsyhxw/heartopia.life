@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29",
+  "generatedAt": "2026-11-08",
   "count": 18,
   "events": [
     {
@@ -215,7 +215,7 @@
       "slug": "september-23-update-preview",
       "localSlug": "september-23-update-preview",
       "name": "September 23 Update Preview",
-      "status": "upcoming",
+      "status": "archive",
       "type": "Official update preview",
       "startDate": "September 23, 2026",
       "endDate": "",

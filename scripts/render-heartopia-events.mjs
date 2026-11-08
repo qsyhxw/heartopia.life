@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { statusForDatedEvent } from './event-date-status.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const aliases = {
@@ -10,6 +11,28 @@ const aliases = {
 };
 
 const profiles = {
+  "my-little-pony-phase-2": {
+    "hubOnly": true,
+    "type": "Collaboration preview",
+    "period": "Starts November 21, 2026",
+    "summary": "The second My Little Pony collaboration is announced. Confirm opening time and reward availability in the live event panel.",
+    "officialUrl": "https://steamcommunity.com/app/4025700/allnews/"
+  },
+  "halloween-2026": {
+    "hubOnly": true,
+    "type": "Limited events",
+    "period": "October 30, 6:00 AM – November 16, 5:59 AM (Server Time)",
+    "summary": "Claim the free Grimkin Pumpkin Candy Jar in the Event Store and place it to trade candy. Earn candy through event quests and listed activities, then exchange it for rewards. The Exchange Store stays open until November 23, 5:59 AM server time.",
+    "officialUrl": "https://steamcommunity.com/app/4025700/allnews/"
+  },
+  "cream-waltz": {
+    "hubOnly": true,
+    "type": "Gilded Acorn Exhibition",
+    "period": "October 31, 7:00 AM – January 2, 2027, 5:59 AM (Server Time)",
+    "summary": "Use Exhibition Passes for draws. Check the exhibition collection and souvenir exchange before choosing a reward.",
+    "officialUrl": "https://steamcommunity.com/app/4025700/allnews/"
+  },
+
   'party-festival-september-2026': {
     type: 'Limited festival',
     period: 'September 19, 6:00 AM - October 9, 5:59 AM (Server Time)',
@@ -296,7 +319,13 @@ export function renderHeartopiaEvents(events, updatedAt) {
       fs.writeFileSync(target, detailPage(event));
     }
   }
-  fs.writeFileSync(path.join(root, 'events', 'index.html'), rootPage(events, updatedAt));
+  const notices = JSON.parse(fs.readFileSync(path.join(root, 'data', 'heartopia-event-notices.json'), 'utf8'));
+  const additions = notices.events.filter(notice => {
+    const previewEnded = !notice.endDate && new Date(notice.startDate).valueOf() <= Date.now();
+    return !previewEnded && !events.some(event => route(event) === notice.localSlug);
+  });
+  const hubEvents = [...events, ...additions.map(notice => ({ ...notice, local: notice.localSlug, status: statusForDatedEvent(notice) }))];
+  fs.writeFileSync(path.join(root, 'events', 'index.html'), rootPage(hubEvents, updatedAt));
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === import.meta.filename) {
