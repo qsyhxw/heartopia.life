@@ -11525,6 +11525,150 @@
     "404.html": {
       "scripts": [],
       "containers": []
+    },
+    "database/recipes/chocolate-sauce/index.html": {
+      "scripts": [
+        {
+          "attributes": "async src=\"https://www.googletagmanager.com/gtag/js?id=G-FRJ91G3VRR\"",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "attributes": "",
+          "sha256": "5d5e6e5561a5be447d12bc493d1b9e859d4da9f429ffc11147fba938ae47c243"
+        },
+        {
+          "attributes": "src=\"https://cdn.tailwindcss.com\"",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "attributes": "",
+          "sha256": "fec07f9c76fe6f078928cf5bdf6fe65a2962c56775520da8f1ffaf337d0679cf"
+        },
+        {
+          "attributes": "data-cfasync=\"false\"",
+          "sha256": "9028819fdaba58b944901a6e4bacfc615ec6591faf42ab1bc45229615804a53e"
+        },
+        {
+          "attributes": "data-cfasync=\"false\" async src=\"https://s.nitropay.com/ads-2368.js\"",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "attributes": "",
+          "sha256": "4dc1ed979536c1a5b1fd2f456ace5e3c67aec9a34998023b2af9e303eecf9be9"
+        }
+      ],
+      "containers": [
+        "heartopia_in_content",
+        "heartopia_in_content_2"
+      ]
+    },
+    "guides/spider-lily/index.html": {
+      "scripts": [
+        {
+          "attributes": "async src=\"https://www.googletagmanager.com/gtag/js?id=G-FRJ91G3VRR\"",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "attributes": "",
+          "sha256": "5d5e6e5561a5be447d12bc493d1b9e859d4da9f429ffc11147fba938ae47c243"
+        },
+        {
+          "attributes": "src=\"https://cdn.tailwindcss.com\"",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "attributes": "",
+          "sha256": "fec07f9c76fe6f078928cf5bdf6fe65a2962c56775520da8f1ffaf337d0679cf"
+        },
+        {
+          "attributes": "data-cfasync=\"false\"",
+          "sha256": "9028819fdaba58b944901a6e4bacfc615ec6591faf42ab1bc45229615804a53e"
+        },
+        {
+          "attributes": "data-cfasync=\"false\" async src=\"https://s.nitropay.com/ads-2368.js\"",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "attributes": "",
+          "sha256": "4dc1ed979536c1a5b1fd2f456ace5e3c67aec9a34998023b2af9e303eecf9be9"
+        }
+      ],
+      "containers": [
+        "heartopia_in_content",
+        "heartopia_in_content_2"
+      ]
+    },
+    "guides/games-like-heartopia/index.html": {
+      "scripts": [
+        {
+          "attributes": "async src=\"https://www.googletagmanager.com/gtag/js?id=G-FRJ91G3VRR\"",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "attributes": "",
+          "sha256": "5d5e6e5561a5be447d12bc493d1b9e859d4da9f429ffc11147fba938ae47c243"
+        },
+        {
+          "attributes": "src=\"https://cdn.tailwindcss.com\"",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "attributes": "",
+          "sha256": "fec07f9c76fe6f078928cf5bdf6fe65a2962c56775520da8f1ffaf337d0679cf"
+        },
+        {
+          "attributes": "data-cfasync=\"false\"",
+          "sha256": "9028819fdaba58b944901a6e4bacfc615ec6591faf42ab1bc45229615804a53e"
+        },
+        {
+          "attributes": "data-cfasync=\"false\" async src=\"https://s.nitropay.com/ads-2368.js\"",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "attributes": "",
+          "sha256": "4dc1ed979536c1a5b1fd2f456ace5e3c67aec9a34998023b2af9e303eecf9be9"
+        }
+      ],
+      "containers": [
+        "heartopia_in_content",
+        "heartopia_in_content_2"
+      ]
+    },
+    "th/guides/house-ideas/index.html": {
+      "scripts": [
+        {
+          "attributes": "async src=\"https://www.googletagmanager.com/gtag/js?id=G-FRJ91G3VRR\"",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "attributes": "",
+          "sha256": "5d5e6e5561a5be447d12bc493d1b9e859d4da9f429ffc11147fba938ae47c243"
+        },
+        {
+          "attributes": "src=\"https://cdn.tailwindcss.com\"",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "attributes": "",
+          "sha256": "fec07f9c76fe6f078928cf5bdf6fe65a2962c56775520da8f1ffaf337d0679cf"
+        },
+        {
+          "attributes": "data-cfasync=\"false\"",
+          "sha256": "9028819fdaba58b944901a6e4bacfc615ec6591faf42ab1bc45229615804a53e"
+        },
+        {
+          "attributes": "data-cfasync=\"false\" async src=\"https://s.nitropay.com/ads-2368.js\"",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "attributes": "",
+          "sha256": "4dc1ed979536c1a5b1fd2f456ace5e3c67aec9a34998023b2af9e303eecf9be9"
+        }
+      ],
+      "containers": [
+        "heartopia_in_content",
+        "heartopia_in_content_2"
+      ]
     }
   }
 }

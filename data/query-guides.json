@@ -1,0 +1,153 @@
+[
+  {
+    "route": "/database/recipes/chocolate-sauce/",
+    "title": "Heartopia Chocolate Sauce Recipe and Unlock Steps",
+    "description": "Make Chocolate Sauce with four Cacao Beans. Check the Mixed Jam unlock, ingredient access, and batch quantities before cooking.",
+    "answer": "Chocolate Sauce uses <strong>4 Cacao Beans</strong> per batch. Community recipe guides identify it as a Mixed Jam variant. Cook Mixed Jam first, then use four beans in its ingredient slots to learn the sauce.",
+    "image": "/img/recipes/Chocolate-Sauce.webp",
+    "width": 180,
+    "height": 153,
+    "alt": "Chocolate Sauce jars in Heartopia",
+    "caption": "Chocolate Sauce inventory image.",
+    "dateLabel": "Checked November 9, 2026",
+    "sections": [
+      [
+        "unlock",
+        "Unlock and cook Chocolate Sauce",
+        "<ol><li>Unlock Cooking with Massimo and learn Mixed Jam.</li><li>Prepare Mixed Jam once before trying its variants.</li><li>Collect four Cacao Beans. Some English guides call them Cocoa Beans.</li><li>At the stove, choose the Mixed Jam base and fill the relevant ingredient slots with four beans. Complete the cooking actions.</li><li>Check the result and recipe book for Chocolate Sauce before making a larger batch.</li></ol><p>The unlock route is documented by <a href=\"https://heartopia.th.gl/guides/all-hidden-recipes\">TH.GL’s hidden recipe guide ↗</a> and <a href=\"https://allthings.how/heartopia-recipes-and-how-to-unlock-every-dish/\">AllThingsHow’s recipe guide ↗</a>. These are community instructions.</p>"
+      ],
+      [
+        "beans",
+        "If you cannot get Cacao Beans",
+        "<p>Check Blanc’s Gardening Store for Cacao Tree Seeds and read the unlock condition shown on your account. The recipe’s Cooking Level 1 label does not guarantee access to its farming ingredient. Grow and harvest the tree before attempting the recipe.</p><p>If the sauce appears in your recipe list but you have no beans, work on ingredient access first. Ordinary fruit produces a different jam variant. The shop inventory includes Cacao Tree Seeds. <a href=\"https://heartopia.lol/en/shops/gardening-store/\">Gardening Store inventory ↗</a></p>"
+      ],
+      [
+        "batches",
+        "Plan your harvest",
+        "<table><thead><tr><th>Sauce batches</th><th>Cacao Beans needed</th></tr></thead><tbody><tr><td>1</td><td>4</td></tr><tr><td>5</td><td>20</td></tr><tr><td>10</td><td>40</td></tr></tbody></table><p>These quantities assume four beans per batch, without ingredient-saving skill activations. Reserve sauce needed for another dish before selling the rest.</p>"
+      ],
+      [
+        "values",
+        "Check values before selling",
+        "<p>Heartodex lists 1,400 Gold and 80 energy for the first quality tier. TH.GL independently lists four Cocoa Beans at a stove. Other recipe sites show substantially different sale and energy values, so check your current item tooltip before making a profit plan. Ingredient costs also matter.</p><p><a href=\"https://www.heartodex.com/en/recipes/chocolate-sauce/\">Heartodex recipe ↗</a> · <a href=\"https://heartopia.th.gl/crafting/cooking-45230\">TH.GL recipe ↗</a></p>"
+      ]
+    ],
+    "related": "<a href=\"/database/recipes/\">All recipes</a> · <a href=\"/tools/recipe-calculator/\">Recipe calculator</a> · <a href=\"/hobbies/cooking/\">Cooking and Bread with No Flour</a>"
+  },
+  {
+    "route": "/guides/spider-lily/",
+    "title": "Heartopia Spider Lily Seeds and Growing Guide",
+    "description": "Find Spider Lily seeds at Blanc’s Gardening Store, check festival availability, and plan your growing and crossbreeding attempts.",
+    "answer": "<strong>Buy red, yellow or white Spider Lily seeds from Blanc’s festival seed selection.</strong> Spider Lily was introduced for Night of Divination. Check the event and shop timer before buying, then plant and water the flowers at home.",
+    "image": "/assets/images/query-guides/red-spider-lily-seed.webp",
+    "width": 512,
+    "height": 512,
+    "alt": "Red Spider Lily Seed packet in Heartopia",
+    "caption": "Red Spider Lily Seed game icon.",
+    "dateLabel": "Checked November 9, 2026",
+    "sections": [
+      [
+        "availability",
+        "Check the festival window",
+        "<p>The official festival notice introduced Spider Lily planting from October 10, 2026 at 6 AM server time. The community Gardening Store lists festival seeds through November 21. Use the current in-game timer for the purchase cutoff on your server.</p><p><a href=\"https://steamcommunity.com/app/4025700/allnews/\">Official Heartopia festival notices ↗</a> · <a href=\"https://heartopia.lol/en/shops/gardening-store/\">Gardening Store festival inventory ↗</a></p>"
+      ],
+      [
+        "seeds",
+        "Buy the starting seeds",
+        "<p>Visit Blanc and open the festival-limited flower seed selection. Red, yellow and white Spider Lily seeds are listed at 30 Gold each. Confirm the item name and price in the shop if you have several lily types in your bag.</p><ul><li>For decorating, start with the shop color that fits your home.</li><li>For Collection colors, keep a small group growing together.</li><li>If seeds are missing, check the festival, shop tab and account unlock conditions.</li></ul>"
+      ],
+      [
+        "grow",
+        "Plant, water and track results",
+        "<ol><li>Plant the seeds on your home plot with space to tend them.</li><li>Water them and check their growth status.</li><li>When mature, inspect the flower and any seed result.</li><li>Keep newly obtained colors for further breeding.</li></ol><p>The event-specific walkthrough shows the three base colors and progression from planted seeds to new variants. <a href=\"https://noleep.com/en/how-to-plant-and-crossbreed-spider-lilies-in-heartopia/\">Spider Lily growing walkthrough ↗</a></p>"
+      ],
+      [
+        "breeding",
+        "Plan with your Gardening Collection",
+        "<p>Open Spider Lily in the Gardening Collection and note the star tier of each color you own. Group the same species for breeding, water consistently and record the seeds you receive. Use the <a href=\"/guides/flower-crossbreeding/\">crossbreeding guide</a> for the general process.</p><p>Published guides disagree on how much parent color matters. A fixed red-plus-white formula needs stronger evidence. Use the current Collection tiers and your seed results to choose the next round. <a href=\"https://www.heartodex.com/en/hybridization/\">Heartodex breeding explanation ↗</a></p>"
+      ]
+    ],
+    "related": "<a href=\"/database/flowers/\">Flower database</a> · <a href=\"/events/\">Events</a> · <a href=\"/guides/flower-crossbreeding/\">Crossbreeding</a>"
+  },
+  {
+    "route": "/guides/games-like-heartopia/",
+    "title": "Games Like Heartopia for Social Play, Farming and Decorating",
+    "description": "Compare Palia, Stardew Valley and Animal Crossing by the Heartopia activities you want to keep, with platform and multiplayer checks.",
+    "answer": "For a shared-world hobby loop, compare <strong>Palia</strong>. For farming and longer-term goals, look at <strong>Stardew Valley</strong>. For island decorating and a daily routine, consider <strong>Animal Crossing: New Horizons</strong>. Choose around your favorite activity and current device.",
+    "image": "/assets/images/query-guides/heartopia-home.jpg",
+    "width": 1920,
+    "height": 1080,
+    "alt": "Heartopia house and garden with an outdoor pool",
+    "caption": "Heartopia promotional screenshot from XD’s Steam listing.",
+    "dateLabel": "Checked November 9, 2026",
+    "sections": [
+      [
+        "compare",
+        "Choose the activity you want to keep",
+        "<table><thead><tr><th>Your priority</th><th>Compare first</th><th>Check before choosing</th></tr></thead><tbody><tr><td>Online gathering, fishing and a home plot</td><td>Palia</td><td>Supported devices and joining friends</td></tr><tr><td>Farming, town relationships and progression</td><td>Stardew Valley</td><td>Platform-specific co-op and the daily clock</td></tr><tr><td>Island landscaping and furnishing</td><td>Animal Crossing: New Horizons</td><td>Nintendo hardware and visit requirements</td></tr></tbody></table><p>These are editorial matches based on published features. Start with the row closest to a normal Heartopia session for you.</p>"
+      ],
+      [
+        "social",
+        "Palia for a shared world",
+        "<p>Palia combines a home plot with gathering, fishing, crafting and other players in an online world. Steam lists it as free-to-play, with purchases offered separately. Compare it first if your favorite Heartopia sessions involve hobbies with friends.</p><p>Before moving a group, check supported stores for everyone’s devices and how joining friends works. A free download still needs a compatible device and online access. <a href=\"https://store.steampowered.com/app/2707930/Palia/\">Official Palia Steam listing ↗</a></p>"
+      ],
+      [
+        "farm",
+        "Stardew Valley for farming goals",
+        "<p>Stardew Valley centers progression on a farm, a town, seasonal activities and relationships. Steam supports single-player and cooperative play. Its PC listing also includes macOS, making it worth checking if native Mac support is why you want an alternative.</p><p>Compare its day clock and farming workload before buying for a group. Check the exact edition’s multiplayer support when someone will play on a phone. <a href=\"https://store.steampowered.com/app/413150/Stardew_Valley/\">Official Stardew Valley Steam listing ↗</a></p>"
+      ],
+      [
+        "decorate",
+        "Animal Crossing for island life",
+        "<p>New Horizons focuses on building an island life, collecting and furnishing spaces. Nintendo’s listing explains local and online ways to play together. It suits players who enjoy changing their environment and returning for a daily routine.</p><p>Check supported Nintendo hardware, player limits and Nintendo Switch Online requirements for the activity you want. Plan around island visits when comparing its social loop with Heartopia. <a href=\"https://www.nintendo.com/us/store/products/animal-crossing-new-horizons-switch/\">Official Nintendo listing ↗</a></p>"
+      ],
+      [
+        "decide",
+        "Before switching",
+        "<ol><li>Write down your two favorite Heartopia activities.</li><li>Check whether the alternative runs on your current device.</li><li>If friends matter, verify multiplayer arrangements and platforms.</li><li>Compare purchase model, optional spending and session length.</li><li>Watch current gameplay of those activities before committing.</li></ol><p>For other options, our <a href=\"/loftia/\">Loftia guides</a> and <a href=\"/petit-planet/\">Petit Planet overview</a> explain their own availability and gameplay scope.</p>"
+      ]
+    ],
+    "related": "<a href=\"/gameplay/what-is-heartopia/\">What Heartopia offers</a> · <a href=\"/download/mac/\">Heartopia on Mac</a> · <a href=\"/#more-games\">More games</a>"
+  },
+  {
+    "route": "/th/guides/house-ideas/",
+    "lang": "th",
+    "title": "บ้าน Heartopia เริ่มวางแปลนและแต่งบ้านอย่างไร",
+    "description": "แนวทางวางแปลนบ้าน Heartopia สำหรับมือใหม่ เลือกสไตล์ แบ่งพื้นที่ และตรวจทางเดินก่อนซื้อเฟอร์นิเจอร์เพิ่ม",
+    "answer": "เริ่มจากเลือกขนาดบ้านและการใช้งานหลักก่อน แล้ววางประตู ทางเดิน และเฟอร์นิเจอร์ชิ้นใหญ่ให้ลงตัว ค่อยเติมสี แสง และของตกแต่งทีหลัง จะได้เห็นว่าต้องใช้พื้นที่และของชิ้นไหนจริง ๆ",
+    "image": "/assets/images/query-guides/heartopia-home.jpg",
+    "width": 1920,
+    "height": 1080,
+    "alt": "บ้านสองชั้นและสวนพร้อมสระน้ำใน Heartopia",
+    "caption": "ภาพประชาสัมพันธ์เกม Heartopia จากหน้า Steam ของ XD",
+    "dateLabel": "ตรวจข้อมูล 9 พฤศจิกายน 2026",
+    "sections": [
+      [
+        "plan",
+        "เริ่มจากบ้านที่ใช้งานสะดวก",
+        "<ol><li>เลือกว่าจะเน้นอยู่อาศัย ทำอาหาร จัดสวน หรือรับเพื่อน</li><li>วางประตูและทางเดินหลักก่อน เพื่อไม่ให้เฟอร์นิเจอร์บังจุดเข้าออก</li><li>จัดเตียง โต๊ะ และอุปกรณ์ที่ใช้บ่อยให้เข้าถึงง่าย</li><li>เดินทดสอบจริง แล้วปรับตำแหน่งก่อนซื้อของตกแต่งเพิ่ม</li></ol><p>เป็นแนวทางวางแผนของหน้านี้ ขนาดห้องและของที่เลือกขึ้นอยู่กับพื้นที่และไอเทมที่คุณมี</p>"
+      ],
+      [
+        "expand",
+        "พื้นที่ไม่พอ ควรทำอย่างไร",
+        "<p>แยกก่อนว่าติดขอบที่ดิน หรือวางของเพิ่มไม่ได้เพราะน้ำหนักรวม หากเป็นที่ดิน ให้เปิดนาฬิกาข้อมือ ไปที่สมาคมนักพัฒนา แล้วเลือกไอคอนแปลงสี่ช่องข้างรูปบ้าน ตรวจแปลงที่ปลดล็อกได้และราคาก่อนซื้อ</p><p>คู่มือ Online Station ระบุว่าเริ่มซื้อแปลงเพิ่มได้ที่ D.G. Level 4 และเปิดพิมพ์เขียวที่ Level 8 ตรวจเงื่อนไขในเกมอีกครั้งหากเมนูของคุณต่างออกไป</p><p>เมื่อใช้พิมพ์เขียวได้ ให้บันทึกบ้านปัจจุบันก่อน แล้วทดลองจัดแบบใหม่ ตรวจวัสดุและเฟอร์นิเจอร์ที่ขาดก่อนนำแบบไปใช้จริง <a href=\"https://www.online-station.net/mobile-game/995283\">ขั้นตอนขยายบ้านและใช้พิมพ์เขียว ↗</a></p>"
+      ],
+      [
+        "style",
+        "เลือกสไตล์ให้เหมาะกับของที่มี",
+        "<ul><li><strong>บ้านเล็กอบอุ่น</strong> เริ่มจากห้องหลักหนึ่งห้อง ใช้ไม้และสีอ่อน แล้วแบ่งมุมด้วยเฟอร์นิเจอร์</li><li><strong>บ้านโมเดิร์น</strong> ใช้รูปทรงเรียบ เลือกสีหลักสองหรือสามสี และเว้นทางเดินให้ชัด</li><li><strong>บ้านพร้อมสวน</strong> แยกพื้นที่ปลูกต้นไม้ มุมนั่งเล่น และทางเข้าบ้าน เพื่อดูแลแต่ละส่วนได้สะดวก</li></ul><p>เลือกโครงที่ทำเสร็จได้ด้วยของในคลัง แล้วค่อยขยายส่วนที่ยังขาด</p><p>ลองแปลนตัว L เพื่อแยกมุมครัว ห้องนั่งเล่น และห้องนอน วางบันไดชิดขอบแล้วลองเดินผ่านก่อนใส่ของใต้บันได เป็นแนวทางจาก <a href=\"https://www.lemon8-app.com/@luna_moon7070/7608065403633385991?region=th\">ตัวอย่างสร้างบ้านของชุมชนบน Lemon8 ↗</a> ซึ่งควรปรับตามพื้นที่จริงของคุณ</p>"
+      ],
+      [
+        "build",
+        "ตรวจในโหมดสร้างก่อนยืนยัน",
+        "<p>กลับไปที่พื้นที่บ้านแล้วเปิดโหมดสร้าง ดูรายการชิ้นส่วนและเงื่อนไขปลดล็อกที่เกมแสดง ลองจัดโครงก่อนวางของละเอียด และตรวจยอดที่ต้องจ่ายทุกครั้งที่เพิ่มชิ้นส่วน</p><p>หากวางของไม่ได้ ให้ตรวจว่าของทับทางเดิน ชนขอบพื้นที่ หรือมีเงื่อนไขของชิ้นนั้นอยู่หรือไม่ หลังแก้แล้วลองเดินและใช้งานอีกครั้ง</p><p>วิดีโอสอนสร้างบ้านที่แยกขั้นตอนให้ดูได้ <a href=\"https://www.youtube.com/watch?v=i1e84R6Gwcg\">Complete HEARTOPIA Building Guide ภาษาอังกฤษ ↗</a></p>"
+      ],
+      [
+        "next",
+        "คู่มือต่อสำหรับรายละเอียด",
+        "<p>ดู <a href=\"/guides/house-layouts/\">แปลนห้อง ภาษาอังกฤษ</a> และ <a href=\"/guides/building/\">คู่มือสร้างบ้าน ภาษาอังกฤษ</a> สำหรับระบบก่อสร้าง หากต้องการภาพวาดบนของแต่งบ้าน ให้ดู <a href=\"/guides/painting-tools/\">Drawing Board ภาษาอังกฤษ</a></p><p>ภาพบ้านใช้เป็นตัวอย่างบรรยากาศ ของที่ใช้จริงขึ้นอยู่กับเวอร์ชันและความคืบหน้าในเกม <a href=\"https://store.steampowered.com/app/4025700/Heartopia/\">หน้าเกมจากผู้พัฒนา ↗</a></p>"
+      ]
+    ],
+    "related": "<a href=\"/th/guides/fishing-locations/\">จุดตกปลา</a> · <a href=\"/th/guides/top-up/\">เติมเงิน</a> · <a href=\"/guides/house-ideas/\">ไอเดียบ้าน ภาษาอังกฤษ</a>"
+  }
+]

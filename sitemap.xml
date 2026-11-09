@@ -442,7 +442,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/download/</loc>
-        <lastmod>2026-07-29</lastmod>
+        <lastmod>2026-11-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -790,7 +790,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/guides/meteor-shower/</loc>
-        <lastmod>2026-07-08</lastmod>
+        <lastmod>2026-11-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1396,7 +1396,7 @@
     </url>
     <url>
         <loc>https://heartopia.life/th/guides/fishing-locations/</loc>
-        <lastmod>2026-07-17</lastmod>
+        <lastmod>2026-11-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -1982,4 +1982,8 @@
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
+<url><loc>https://heartopia.life/database/recipes/chocolate-sauce/</loc><lastmod>2026-11-09</lastmod></url>
+<url><loc>https://heartopia.life/guides/spider-lily/</loc><lastmod>2026-11-09</lastmod></url>
+<url><loc>https://heartopia.life/guides/games-like-heartopia/</loc><lastmod>2026-11-09</lastmod></url>
+<url><loc>https://heartopia.life/th/guides/house-ideas/</loc><lastmod>2026-11-09</lastmod></url>
 </urlset>
