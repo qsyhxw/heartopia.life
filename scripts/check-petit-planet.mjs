@@ -18,6 +18,11 @@ for (const page of pages) {
   }
   for (const [, src] of html.matchAll(/<img[^>]+src="([^"]+)"/g)) if (!fs.existsSync(src.slice(1))) throw new Error(`Missing image ${src}`);
   const nav = html.match(/<nav aria-label="Petit Planet">(.*?)<\/nav>/s)[1];
+  for (const [, href, fragment] of html.matchAll(/href="(\/petit-planet\/[^"#]*)(#[^"]+)"/g)) {
+    const target = fs.readFileSync(`${href.slice(1)}index.html`, 'utf8');
+    if (!target.includes(`id="${fragment.slice(1)}"`)) throw Error(`Missing destination ${href}${fragment}`);
+  }
+  for (const [, fragment] of html.matchAll(/href="#([^"]+)"/g)) if (!html.includes(`id="${fragment}"`)) throw Error(`Missing anchor ${fragment}`);
   if ([...nav.matchAll(/href="([^"]+)"/g)].some(([,href]) => !href.startsWith('/petit-planet/'))) throw new Error('Wrong game navigation');
   console.log(`${route} PASS title=${page.metaTitle.length} description=${page.description.length}`);
 }
