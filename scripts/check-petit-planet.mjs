@@ -7,6 +7,7 @@ for (const page of pages) {
   const route = page.slug ? `/petit-planet/${page.slug}/` : '/petit-planet/';
   const file = `${route.slice(1)}index.html`;
   const html = fs.readFileSync(file, 'utf8');
+  if (/heartopia\.life/i.test(html.match(/<header[\s\S]*?<\/header>/)[0])) throw Error(`Unexpected host branding in section header: ${file}`);
   if (html.match(/<header[\s\S]*?<a[^>]+href="([^"]+)"/)[1] !== "/petit-planet/") throw Error(`Wrong section home: ${file}`);
   if ((html.match(/<h1>/g) || []).length !== 1 || /noindex|LOCAL EDITORIAL|Production notes/.test(html)) throw new Error(`Invalid published content ${file}`);
   if (!html.includes(`rel="canonical" href="https://heartopia.life${route}"`)) throw new Error(`Canonical ${file}`);
