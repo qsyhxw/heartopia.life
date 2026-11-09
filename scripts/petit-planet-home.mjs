@@ -21,5 +21,5 @@ export function renderPetitHome(html, page, faq) {
   return html.replace(/<main>[\s\S]*?<\/main>/,main)
     .replace('<body>','<body class="petit-home"><a class="skip-link" href="#main">Skip to content</a>')
     .replace('/assets/petit-planet/style.css','/assets/petit-planet/home.css')
-    .replace('<a class="brand" href="/">Heartopia.Life<small>PETIT PLANET GUIDES</small></a>','<a class="brand" href="/petit-planet/" aria-current="page"><span class="planet-mark" aria-hidden="true">✦</span><span>Petit Planet<small>A HEARTOPIA.LIFE GUIDE</small></span></a>');
+    .replace('<a class="brand" href="/petit-planet/">Petit Planet<small>A HEARTOPIA.LIFE GUIDE</small></a>','<a class="brand" href="/petit-planet/" aria-current="page"><span class="planet-mark" aria-hidden="true">✦</span><span>Petit Planet<small>A HEARTOPIA.LIFE GUIDE</small></span></a>');
 }

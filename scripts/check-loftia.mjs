@@ -7,6 +7,7 @@ if (groups.some(group => group.cards.some(card => !card[1]?.trim() || !card[2]?.
 const paths = ['loftia/index.html', ...pages.map(page => `loftia/${page.slug}/index.html`)];
 for (const file of paths) {
   const html = fs.readFileSync(file, 'utf8');
+  if (html.match(/<header[\s\S]*?<a[^>]+href="([^"]+)"/)[1] !== "/loftia/") throw Error(`Wrong section home: ${file}`);
   if ((html.match(/<h1>/g) || []).length !== 1) throw new Error(`H1: ${file}`);
   if (!html.includes('ads-2368.js') || (html.match(/createAd\('heartopia_/g) || []).length !== 6) throw new Error(`Nitro: ${file}`);
   for (const [, href] of html.matchAll(/href=["'](\/[^"'#]*)(?:#[^"']*)?["']/g)) {
