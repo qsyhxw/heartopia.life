@@ -1,5 +1,9 @@
 import fs from 'node:fs';
+import {groups} from './loftia-home.mjs';
 const pages = JSON.parse(fs.readFileSync('data/loftia/pages.json'));
+const grouped = groups.flatMap(group => group.cards.map(card => card[0]));
+if (new Set(grouped).size !== grouped.length || pages.some(page => !grouped.includes(page.slug)) || grouped.some(slug => !pages.some(page => page.slug === slug))) throw Error('Home task groups must cover each published guide exactly once');
+if (groups.some(group => group.cards.some(card => !card[1]?.trim() || !card[2]?.trim()))) throw Error('Missing home task title or summary');
 const paths = ['loftia/index.html', ...pages.map(page => `loftia/${page.slug}/index.html`)];
 for (const file of paths) {
   const html = fs.readFileSync(file, 'utf8');
