@@ -8,8 +8,8 @@
         "Updated: November 9, 2026 • Rare Weather Event"
       ],
       [
-        "md:col-span-2 space-y-8",
-        "md:col-span-2 space-y-8 min-w-0"
+        "class=\"md:col-span-2 space-y-8\"",
+        "class=\"md:col-span-2 space-y-8 min-w-0\""
       ]
     ]
   },
