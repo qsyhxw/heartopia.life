@@ -1970,4 +1970,16 @@
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
+    <url>
+        <loc>https://heartopia.life/petit-planet/</loc>
+        <lastmod>2026-11-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://heartopia.life/petit-planet/monetization/</loc>
+        <lastmod>2026-11-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>

@@ -1,0 +1,100 @@
+[
+  {
+    "slug": "",
+    "title": "Petit Planet guides, platforms and launch preparation",
+    "metaTitle": "Petit Planet Guides, Release Date & Platforms",
+    "description": "Prepare for Petit Planet with release dates, platform choices, official registration steps, beta save rules and a guide to cosmetic monetization.",
+    "answer": "Petit Planet is still in development. PC, iOS and Android launch on December 4, 2026, with pre-download announced for December 1. Nintendo Switch 2 is planned for 2027. Choose a launch-preparation task below.",
+    "image": "planet.webp",
+    "alt": "A Petit Planet player crosses a wooden bridge beside a house and flowering trees",
+    "sections": [
+      [
+        "Choose what you need",
+        "<div class=\"task-grid\"><a href=\"#section-1\"><strong>Prepare on PC</strong><span>HoYoPlay registration steps</span></a><a href=\"#section-2\"><strong>Choose a platform</strong><span>PC, mobile and Switch 2 plans</span></a><a href=\"#section-6\"><strong>Returning from beta?</strong><span>Data wipe and the Nalo exception</span></a><a href=\"/petit-planet/monetization/\"><strong>Check the payment model</strong><span>Random items, free Neighbors and beta changes</span></a></div>"
+      ],
+      [
+        "Pre-register on PC",
+        "\n<p>Open the latest HoYoPlay launcher and choose All Games, then Petit Planet. Select Pre-Register and sign in with the HoYoverse Account you intend to use. The launcher offers an optional automatic-download setting for release. If Petit Planet is missing, open Settings and About to check that HoYoPlay is current.</p>\n<p>The <a href=\"https://planet.hoyoverse.com/en-us/home?detail=165965\">official HoYoPlay announcement ↗</a> supplies this route. You can also start from the <a href=\"https://planet.hoyoverse.com/en-us/home\">official website ↗</a>. The <a href=\"https://planet.hoyoverse.com/en-us/home?detail=167135\">release announcement ↗</a> gives December 4.</p>\n"
+      ],
+      [
+        "Platforms and release dates",
+        "\n<table>\n<thead>\n<tr>\n<th>Platform</th>\n<th>Announced availability</th>\n<th>Preparation route</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Windows PC</td>\n<td>December 4, 2026</td>\n<td>HoYoPlay or Epic Games Store</td>\n</tr>\n<tr>\n<td>iOS</td>\n<td>December 4, 2026</td>\n<td>App Store pre-registration</td>\n</tr>\n<tr>\n<td>Android</td>\n<td>December 4, 2026</td>\n<td>Google Play pre-registration</td>\n</tr>\n<tr>\n<td>Nintendo Switch 2</td>\n<td>Planned for 2027</td>\n<td>Follow console announcements for a specific date</td>\n</tr>\n</tbody>\n</table>\n<p>The publisher's November 1 announcement confirms these release plans and names the mobile and Epic storefronts. It also announces pre-download starting December 1. The announcement gives calendar dates without a server-opening hour. The original Nintendo Switch has no release plan in this announcement. <a href=\"https://prtimes.jp/main/html/rd/p/000000463.000096124.html\">Publisher announcement ↗</a></p>\n<h3>Registration, pre-download and playing</h3>\n<p>Before December 1, pre-register through the official site or your platform's store. From December 1, check that destination for its pre-download option. Pre-downloading prepares files for launch. Plan to start playing on December 4, subject to the final server-opening announcement.</p>\n"
+      ],
+      [
+        "What the game involves",
+        "\n<p>HoYoverse describes a life simulator built around developing a planet, planting, decorating and meeting animal-like Neighbors. That puts it close to the home-building and collection interests served by Heartopia.Life. It remains a separate game with its own accounts, progression and currencies.</p>\n\n<p>For a first look, use the <a href=\"https://planet.hoyoverse.com/en-us/home?detail=159832\">official Cozy Cosmos trailer ↗</a>. Its development footage establishes the broad activities. A pre-release trailer cannot establish final unlock levels or recipe costs.</p>\n"
+      ],
+      [
+        "Before release",
+        "\n<p>Keep the account you pre-register with accessible. Choose your launch platform based on its current official listing. Wait for launch requirements before buying hardware specifically for this game, since a closed-test specification table applies to that test build.</p>\n<p>If you previously tested Petit Planet, check the <a href=\"/petit-planet/#section-6\">beta-save explanation</a> before expecting a decorated planet to return. If payment systems affect your decision, read the <a href=\"/petit-planet/monetization/\">developer statements on cosmetic monetization</a> before relying on an older beta economy guide.</p>\n"
+      ],
+      [
+        "Beta progress and Nalo memories",
+        "<p>The Final Beta ended on October 19, 2026 at 10:00 UTC+8. Its closure notice says test data would be deleted, with a separate survey-based choice to retain Nalo's memories. That option did not promise to transfer a decorated planet, inventory or general progress.</p><p>The test guide allowed shared PC/mobile progress within assigned access during the test. That describes movement between devices during that build. For launch preparation, plan around starting again and check any later account-specific entitlement separately.</p><p>The closure notice described the Cafe Untamed Feedback Survey before the servers closed. It supplies no post-closure survey route or general planet-recovery procedure. <a href=\"https://planet.hoyoverse.com/en-us/home?detail=166881\">Official closure notice ↗</a> · <a href=\"https://planet.hoyoverse.com/en-us/home?detail=166165\">Final Beta guide ↗</a></p>"
+      ],
+      [
+        "Playing with friends",
+        "<p>The Galactic Bazaar is the game’s shared social space. In a November 9 interview, lead game designer Murphy said a personal planet can host seven guests plus its owner. A larger Bazaar is a different type of multiplayer space. The interview does not give a complete launch cross-play or save-transfer policy. <a href=\"https://www.pockettactics.com/petit-planet/interview\">Developer interview ↗</a></p><figure><img alt=\"Players and a Neighbor gathered around a campfire beside a tent\" height=\"415\" loading=\"lazy\" src=\"/assets/petit-planet/campfire.webp\" width=\"738\"/><figcaption>Development scene. Multiplayer details may change before release.</figcaption></figure>"
+      ]
+    ],
+    "faqs": [
+      [
+        "When does Petit Planet release?",
+        "PC, iOS and Android are scheduled for December 4, 2026. Nintendo Switch 2 is planned for 2027."
+      ],
+      [
+        "Can I play as soon as I pre-download?",
+        "Pre-download is announced for December 1 and prepares files for the December 4 launch. A precise server-opening hour has not been confirmed in the cited announcement."
+      ],
+      [
+        "Does Final Beta progress carry over?",
+        "Final Beta was a data-wipe test. The closure notice described a separate survey option for Nalo’s memories, without promising to transfer general planet progress."
+      ]
+    ]
+  },
+  {
+    "slug": "monetization",
+    "title": "Is Petit Planet a gacha game?",
+    "metaTitle": "Is Petit Planet a Gacha Game? Free Neighbors & Cosmetics",
+    "description": "Check Petit Planet’s random-item purchase disclosure, free Neighbor access and cosmetic monetization, with beta systems separated from launch rules.",
+    "answer": "Yes, Petit Planet’s Google Play listing discloses purchases that include random items. The developers say Neighbors and their stories are free, with monetization focused on cosmetics. Final launch prices and draw guarantees still need checking.",
+    "image": "neighbors.webp",
+    "alt": "Three Petit Planet Neighbors standing beside the glowing Luca Arbor",
+    "sections": [
+      [
+        "What is confirmed about random purchases?",
+        "<p>Yes, the current Google Play listing labels Petit Planet with in-game purchases that include random items. This confirms a randomized purchase element. Separately, developers describe cosmetic monetization and free access to Neighbors and their stories. These facts answer different questions. <a href=\"https://play.google.com/store/apps/details?id=com.HoYoverse.Planet\">Google Play listing ↗</a></p><table><thead><tr><th>Your priority</th><th>What to use for the decision</th></tr></thead><tbody><tr><td>Meet Neighbors and read their stories</td><td>The developers say these are free. Character access is separate from acquiring a particular paid cosmetic.</td></tr><tr><td>Collect a specific outfit or decorative item</td><td>Check whether its release-shop route is direct purchase, random draw or progression, then read that route’s conditions.</td></tr><tr><td>Avoid all random-item purchases</td><td>The store disclosure flags random purchases. Free download alone does not settle whether the payment model suits you.</td></tr><tr><td>Estimate a maximum cost</td><td>A final price and probability/guarantee schedule is needed. This guide provides no verified launch cost ceiling.</td></tr></tbody></table>"
+      ],
+      [
+        "Separate character access from cosmetic purchases",
+        "\n<p>In a November 9 interview with Pocket Tactics, lead game designer Murphy described the core experience, NPC interactions and multiplayer as accessible to all players. She said monetization would focus on cosmetics, with all Neighbors and their stories available free. She also explained that the monetization used in earlier tests was still being revised.</p>\n<p>Read the <a href=\"https://www.pockettactics.com/petit-planet/interview\">developer interview ↗</a> for these statements. This is the developer's pre-release description. It does not supply a complete final price list, drop-rate table or spending ceiling.</p>\n"
+      ],
+      [
+        "Why older guides disagree",
+        "<p>Fanstanza's Stardrift hands-on account describes direct cosmetic purchases and a pass. Its November 3 revision adds the later Final Beta cosmetic draw system. Those descriptions refer to different development builds. A statement about the April test cannot settle the launch payment model. <a href=\"https://fanstanza.gg/is-petit-planet-gacha-currencies/\">Fanstanza's version comparison ↗</a></p><p>For a decision now, combine the current store disclosure with the developers' more recent statements. Recheck rates and item terms in the release build before using a beta-era currency conversion or purchase plan.</p>"
+      ],
+      [
+        "What to check before spending",
+        "\n<p>At release, inspect the actual shop terms for the item you want. Establish whether it is selected directly or obtained randomly. For a random reward, check the displayed probability and any stated guarantee. For a pass, check what buying it immediately grants and what still requires progression or another currency.</p>\n<p>Final prices and guarantees have not been verified. Check the release shop's own terms before deciding whether to buy.</p>\n"
+      ],
+      [
+        "What the free beta proves",
+        "\n<p>The <a href=\"https://planet.hoyoverse.com/en-us/home?detail=166165\">official Final Beta guide ↗</a> says that test had no in-game purchases. This establishes the test's purchase policy. The developer interview separately describes plans for paid cosmetics at launch.</p>\n"
+      ]
+    ],
+    "faqs": [
+      [
+        "Will I need to pay to get Neighbors?",
+        "In a November 9 interview, lead game designer Murphy said all Neighbors and their stories will be available free."
+      ],
+      [
+        "Are final gacha prices confirmed here?",
+        "Final launch prices, rates and guarantees have not been verified in this guide. Check the release shop disclosures for the specific item."
+      ],
+      [
+        "Did the Final Beta allow purchases?",
+        "The official Final Beta guide describes that test as having no in-game purchases. That test rule is separate from the release payment model."
+      ]
+    ]
+  }
+]
