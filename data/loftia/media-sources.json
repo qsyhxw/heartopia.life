@@ -1,0 +1,17 @@
+{
+  "checked": "2026-11-09",
+  "game": "Loftia",
+  "developer": "Qloud Games",
+  "steamAppId": 2320980,
+  "officialStore": "https://store.steampowered.com/app/2320980/Loftia/",
+  "purpose": "Editorial illustration of game tasks. Promotional images, with no claim of first-hand testing.",
+  "files": {
+    "world.jpg": {"steamScreenshotId": 11},
+    "overgrowth.jpg": {"steamScreenshotId": 18},
+    "rails.jpg": {"steamScreenshotId": 20},
+    "adventure.jpg": {"steamScreenshotId": 3},
+    "pets.jpg": {"steamScreenshotId": 9},
+    "hanging-gardens.webp": {"source": "https://cluefile.com/images/loftia/maps/hanging-gardens.webp", "type": "Unlabelled in-game world map, Qloud Games artwork"},
+    "crops.webp": {"source": "https://loftians.com/media/how-to-plant-seeds-in-loftia/hero-1920.webp", "type": "Game crop illustration"}
+  }
+}

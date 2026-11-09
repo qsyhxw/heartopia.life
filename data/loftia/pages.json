@@ -1,0 +1,195 @@
+[
+  {
+    "slug": "fishing",
+    "title": "Loftia fish locations and missing-fish checks",
+    "answer": "For Nassau Grouper and Giant Sea Bass, start at the Hanging Gardens lake. For Moapa Dace and Dalhousie Catfish, switch to Overgrowth. Bahia Brain Coral belongs to The Grove.",
+    "image": "hanging-gardens.webp",
+    "alt": "The Hanging Gardens world map with the central lake and northern forest",
+    "sections": [
+      [
+        "Choose the water before you cast",
+        "<table><tr><th>Target</th><th>Starting area</th></tr><tr><td>Nassau Grouper / Giant Sea Bass</td><td>Lake / Deep Lake</td></tr><tr><td>Moapa Dace / Dalhousie Catfish</td><td>Overgrowth</td></tr><tr><td>Bahia Brain Coral</td><td>The Grove</td></tr></table><p>The community <a href='https://loftiacodex.com/fishing/'>Codex fishing index ↗</a> separates these waters. This shortlist covers the fish in our current research set. The unlabelled game map provides regional orientation.</p>"
+      ],
+      [
+        "If Nassau Grouper still will not appear",
+        "<p>LadyGreyGhost reported catching grouper in a stream beside the large waterfall. Other players in the same thread reported long unsuccessful sessions around Central Lake, and some obtained a fish from another player. Treat the waterfall as a reported place to check, with no catch guarantee. The reports do not establish a confirmed game bug. <a href='https://www.reddit.com/r/loftia/comments/1xnfuvq/cant_find_nassau_grouper_fish/'>Player reports ↗</a></p>"
+      ],
+      [
+        "Check the minigame result",
+        "<p>The Early Access coral guide distinguishes good and critical catches from an ordinary result at the uncommon Grove node. Its 100 percent value is conditional on the result tier. Keep that condition when comparing databases. <a href='https://loftians.com/guides/where-to-find-bahia-brain-coral-in-loftia/'>Coral catch conditions ↗</a></p>"
+      ]
+    ]
+  },
+  {
+    "slug": "materials",
+    "title": "Loftia materials chain for ivy, lignin and carbon fiber",
+    "answer": "Bioluminescent Ivy needs Pruners Lv.2. Refine 5 ivy into Lignin at a Refining Station Lv.2. Carbon Fiber requires a later gathering route, so check your tools before searching.",
+    "image": "overgrowth.jpg",
+    "alt": "Players at Loftia's dark wooded Overgrowth entrance",
+    "sections": [
+      [
+        "Find the blocked step",
+        "<table><tr><th>Need</th><th>Requirement</th><th>Action</th></tr><tr><td>Bioluminescent Ivy</td><td>Pruners Lv.2</td><td>Gather glowing Hanging Gardens vines</td></tr><tr><td>Lignin</td><td>Refining Station Lv.2</td><td>5 ivy gives 1 lignin</td></tr><tr><td>Carbon Fiber</td><td>Hammer Lv.3 or Locator</td><td>Use a source your tool can harvest</td></tr><tr><td>Adobe</td><td>Refining Station Lv.1</td><td>5 clay gives 1 adobe</td></tr></table>"
+      ],
+      [
+        "Ivy and lignin preparation",
+        "<p>The level-two refining upgrade comes from completing a page of Central Lake research bundles. Building it needs 10 Screws, 2 Metal Plate and 2 Plank. Owning ivy alone is insufficient for this craft. <a href='https://loftia.th.gl/guides/how-to-make-lignin'>Station and lignin data ↗</a></p><p>The <a href='https://wikily.gg/loftia/items/bioluminescent-ivy'>ivy regional listing ↗</a> includes Overgrowth, Secret Lake and Bamboo Forest. Try accessible Overgrowth nodes before treating Secret Lake access as mandatory. See our <a href='/loftia/fishing/'>fish-area checklist</a> for research collecting.</p>"
+      ],
+      [
+        "Fiber before and after the Locator",
+        "<p>With Hammer Lv.3, check Lockbox Hammer nodes or Piles of Cars. Once you have a Locator, Residential Artifacts become another option. The Locator itself consumes 2 Carbon Fiber, so its artifact route cannot supply your first crafting pair. The Art of Letting Go awards fiber after the Locator crafting step. <a href='https://loftia.th.gl/guides/how-to-get-carbon-fiber'>Gathering and quest chain ↗</a></p><p>Budget another 3 Carbon Fiber for <a href='/loftia/rail-boots/'>Rail Boots</a>. Reserve the Locator pair separately if pursuing both unlocks.</p>"
+      ],
+      [
+        "Adobe is the earlier station task",
+        "<p>Gather Clay Mounds by hand and refine clay at the basic station. The station recipe comes during Permission to Glide and costs 5 Screws plus 3 Scrap Wire to build. This branch can precede the lignin upgrade. <a href='https://loftia.th.gl/guides/how-to-make-adobe'>Adobe recipe ↗</a></p>"
+      ]
+    ]
+  },
+  {
+    "slug": "rail-boots",
+    "title": "Loftia Rail Boots recipe and unlock checks",
+    "answer": "Claim the Rail Boots recipe from Electric Dreams at the Museum Research Station. Craft it at Project Station Lv.3 using 5 Magnets and 3 Carbon Fiber.",
+    "image": "rails.jpg",
+    "alt": "A Loftia character riding an elevated rail above a rocky adventure area",
+    "sections": [
+      [
+        "Separate the quest from the reward",
+        "<p>A November 7 player thread first points to Leela's Slip, Zip, Hooray quest in Gridfall. Its follow-up identifies Electric Dreams at the Museum Research Station as the recipe source. If you already did the dance step, check that research reward. <a href='https://www.reddit.com/r/loftia/comments/1xq8k1p/where_can_i_find_the_recipe_for_the_rail_shoes/'>Quest discussion ↗</a></p>"
+      ],
+      [
+        "Crafting checklist",
+        "<ol><li>Check Electric Dreams and claim its recipe reward.</li><li>Confirm Project Station Lv.3.</li><li>Set aside 5 Magnets and 3 Carbon Fiber.</li><li>Craft the boots and follow the quest instruction to try an air rail.</li></ol><p>The <a href='https://loftia.th.gl/db/recipes/recipe_recipe_crafting_tools_zipline_boots'>recipe record ↗</a> gives the tier and ingredients. Our <a href='/loftia/materials/'>materials chain</a> explains the first-fiber gate.</p>"
+      ],
+      [
+        "Choose the next check",
+        "<table><tr><th>Problem</th><th>Check</th></tr><tr><td>Quest started, recipe missing</td><td>Electric Dreams reward</td></tr><tr><td>Recipe owned, craft unavailable</td><td>Station tier and ingredients</td></tr><tr><td>Only enough fiber for one tool</td><td>Locator needs 2, boots need 3</td></tr></table><p>Qloud's <a href='https://loftia.gg/early-access'>Early Access overview ↗</a> identifies rail boots as the Gridfall rail-travel unlock. The promotional image illustrates rail traversal.</p>"
+      ]
+    ]
+  },
+  {
+    "slug": "pets",
+    "title": "How to get your first pet in Loftia",
+    "answer": "Continue the Hanging Gardens story to Joanna's Notes From the Fauna quest. Find five dog clues, bring 4 Lettuce and 2 Carrots to the Pet Bowl, adopt the dog and report back.",
+    "image": "pets.jpg",
+    "alt": "Loftia pet customization screen with an alpaca companion",
+    "sections": [
+      [
+        "Prepare before following clues",
+        "<p>During Kassim's Field Research, speak with Joanna and accept the missing-dog task. Bring the vegetables before heading toward The Grove. Inspect disturbed-ground dog tracks until the Dog Location Piece counter reaches five, then follow the bowl objective. <a href='https://www.whisperofthehouse.com/loftia/pets'>Dog rescue walkthrough ↗</a></p>"
+      ],
+      [
+        "Use the counter to choose your next step",
+        "<table><tr><th>Progress</th><th>Next action</th></tr><tr><td>Still in Loftia City</td><td>Advance to Hanging Gardens</td></tr><tr><td>Fewer than five clues</td><td>Inspect dog-track interactions</td></tr><tr><td>Five clues found</td><td>Follow the bowl objective with food</td></tr><tr><td>Dog adopted</td><td>Return to Joanna</td></tr></table><p>This is the first-dog route. The image shows customization with an alpaca and does not mark the missing dog's location.</p>"
+      ],
+      [
+        "Outfits and adoption",
+        "<p>An outfit that asks you to unlock its pet does not perform the adoption. Complete the rescue first, then choose your companion. Players asking why they had no pet after reaching the Airtram were directed to the Hanging Gardens main quest. <a href='https://www.reddit.com/r/loftia/comments/1xn6n49/upgrade_tools_pets/'>Progression question ↗</a></p>"
+      ]
+    ]
+  },
+  {
+    "slug": "scrambled-coordinates",
+    "title": "Loftia Scrambled Coordinates checks for Ryder",
+    "answer": "Accept Ryder's Adventure Awaits quest, then harvest resources around Loftia City until you have 3 Scrambled Coordinates. Return to Ryder for the adventure objective.",
+    "image": "adventure.jpg",
+    "alt": "Loftia players crossing a canyon on an adventure course",
+    "sections": [
+      [
+        "If harvesting gives no coordinates",
+        "<ol><li>Check that Adventure Awaits is active.</li><li>Return to Loftia City grass, scrap and clay gathering spots.</li><li>Keep gathering useful ordinary materials while waiting for drops.</li><li>Return to Ryder when the objective shows three coordinates.</li></ol><p>The <a href='https://cluefile.com/loftia/scrambled-coordinates/'>Early Access quest record ↗</a> identifies the active-quest gate and city sources. A single empty harvest does not establish that the spot is wrong.</p>"
+      ],
+      [
+        "First three versus later supplies",
+        "<p>The same record lists a 15-coordinate completion reward and a cost of 3 per adventure. Finish the introductory trip and report back before treating its reward as available. Older Demo objectives may call Ryder the Adventurer.</p><p>The developers changed the Daily Goodies Chest so coordinates and Bloom unlock after finishing Ryder's introductory quest. Checking it earlier will not solve the initial objective. <a href='https://www.reddit.com/r/loftia/comments/1xbjayl/loftia_demo_patch_notes_1/'>Developer patch notes ↗</a></p>"
+      ],
+      [
+        "Follow the current objective",
+        "<p>The image illustrates an adventure course. Complete Ryder's current objective before planning repeat trips. For later progression, see the <a href='/loftia/materials/'>materials checks</a> and <a href='/loftia/rail-boots/'>Rail Boots unlock</a>.</p>"
+      ]
+    ]
+  },
+  {
+    "slug": "steam-deck",
+    "title": "Loftia on Steam Deck: reported settings and checks",
+    "answer": "Players report using a 30 FPS cap or the lower-powered launch option. Start with one change, compare the same area, and check adventure controls separately from exploration.",
+    "image": "world.jpg",
+    "alt": "Loftia players gathered beside a forest waterfall",
+    "sections": [
+      [
+        "Choose a starting point from the reports",
+        "<table><tr><th>Symptom</th><th>Reported option</th><th>Limit</th></tr><tr><td>High fan noise or battery drain</td><td>Try a 30 FPS cap</td><td>One player still reported about 25 FPS in busy areas</td></tr><tr><td>Regular launch feels demanding</td><td>Try the lower-powered launch choice</td><td>Players used different names for it</td></tr><tr><td>Sudden poor behavior</td><td>Restart the Deck and compare</td><td>A single player reported improvement</td></tr></table><p>These community accounts come from the November 3 launch discussion. Some players were satisfied with defaults, while others preferred a lower-powered choice. <a href='https://www.reddit.com/r/loftia/comments/1xn21vi/best_steam_deck_settings_for_loftia/'>Settings reports ↗</a></p>"
+      ],
+      [
+        "Check adventures separately",
+        "<p>A November 6 discussion includes a player who uses Deck for ordinary play but switches to a computer for adventures. Test the jumping and camera controls you need before judging playability from a quiet walk. <a href='https://www.reddit.com/r/loftia/comments/1xphrge/how_is_this_game_on_steam_deck/'>Deck experience reports ↗</a></p><p>Change one setting at a time and revisit the same scene. A crowd and an empty area impose different workloads. The image illustrates shared-world play and contains no performance measurement.</p>"
+      ],
+      [
+        "Evidence limits",
+        "<p>This is a starting checklist assembled from player reports checked November 9, 2026. We have no first-hand Deck benchmark, measured best preset or battery-life figure.</p>"
+      ]
+    ]
+  },
+  {
+    "slug": "secret-lake",
+    "title": "Loftia Secret Lake route and preparation",
+    "answer": "Secret Lake is east of Overgrowth and north of Windmill Island in the Hanging Gardens. The story route uses the Glider Propeller. Players also report an earlier climb with Bounce Shoes and a Glider.",
+    "image": "hanging-gardens.webp",
+    "alt": "Hanging Gardens game map showing the northern forest and separate island to its east",
+    "sections": [
+      [
+        "Choose your access route",
+        "<p>The <a href=\"https://cluefile.com/loftia/hanging-gardens/\">Early Access district record ↗</a> separates the later story Propeller from the reported Overgrowth climb. If you prefer the story route, continue Gridfall progression. The climb below is a community route and may depend on current collision and movement behavior.</p>"
+      ],
+      [
+        "Reported Overgrowth climb",
+        "<ol><li>From Lower Village, head north into Overgrowth. Clear boulders with Hammer Lv.2 and brambles with Pruners Lv.2.</li><li>At the two banana trees, use the mushroom on their right with Bounce Shoes.</li><li>Head right toward the NPC wearing a pink bunny hat and climb the platform behind her.</li><li>Beyond the log, climb the rocks, turn left and follow grassy mountain edges.</li><li>Jump toward the tree-bearing cliff, then run, jump and glide to the lake.</li></ol><p>This route is reported by Kirthana K with credited player images. <a href=\"https://thegameswatch.com/guides/how-to-reach-the-secret-lake-in-loftia/\">Route walkthrough ↗</a></p>"
+      ],
+      [
+        "Decide whether the trip serves your target",
+        "<p>For Nassau Grouper or Giant Sea Bass, use the ordinary lake area. For Moapa Dace, use Overgrowth. The Secret Lake listing instead includes blind cave species and mineral catches. Check the <a href=\"/loftia/fishing/\">fish-area guide</a> before investing in the journey. Ivy also has other Hanging Gardens locations, as explained in <a href=\"/loftia/materials/\">Materials</a>.</p>"
+      ]
+    ]
+  },
+  {
+    "slug": "pineapple",
+    "title": "Loftia pineapple seeds, growth time and unlock checks",
+    "answer": "Buy Pineapple Seed at Hazel’s Seed Shop after its story unlock, then grow it in a Garden Bed. Current community records list 30 Dew per seed and a two-hour growth time.",
+    "image": "crops.webp",
+    "alt": "Loftia crops growing in raised soil garden beds",
+    "sections": [
+      [
+        "Seed shop or wrong container?",
+        "<p>The <a href=\"https://loftiacodex.com/items/pineapple/\">Codex pineapple record ↗</a> names Everything Is Connected as the main-quest unlock and lists Hazel as the seed vendor. If seeds are absent, check story progress before searching the wilderness. Pineapple is a Garden Bed crop.</p>"
+      ],
+      [
+        "Plan a small planting",
+        "<p>The November 6 <a href=\"https://loftians.com/guides/how-to-grow-pineapple-in-loftia/\">Early Access crop guide ↗</a> lists a 120-minute growth time, 30-Dew seed cost and 60-Dew ordinary harvest value. For four seeds, that means 120 Dew up front and 240 Dew gross harvest value, giving a 120-Dew difference before any other costs. This calculation assumes four ordinary successful harvests and excludes shiny bonuses.</p><p>Check the seed price and timer in your client before scaling up. Older beta-oriented guides list six hours and different prices, so their budgets do not fit this record.</p>"
+      ],
+      [
+        "Keep enough for your immediate task",
+        "<p>Pineapple is used in Pineapple Cake, Pineapple Fried Rice, Pineapple Skewer and Tropical Smoothie, and in Sweet and Spicy research. Check the research-station request before selling your whole harvest. Recipe availability is a separate gate from growing the crop.</p>"
+      ]
+    ]
+  },
+  {
+    "slug": "buying-checklist",
+    "title": "Is Loftia worth buying? An Early Access player-report checklist",
+    "answer": "Loftia looks most promising if you enjoy repeated gathering, customization and a shared social world. Read the concerns about fetch quests and Early Access before deciding whether that loop fits you.",
+    "image": "world.jpg",
+    "alt": "Players gathering together beside a waterfall in Loftia",
+    "sections": [
+      [
+        "Compare your preferences with the reports",
+        "<table><tr><th>You enjoy</th><th>Relevant player account</th></tr><tr><td>Scavenging and optional social contact</td><td>SanctumOfTheDamned liked the neighborhood system and enjoyed playing solo after a friend logged off</td></tr><tr><td>Clothes and home decoration</td><td>LowRexx spent much of their time customizing and decorating</td></tr><tr><td>Varied tasks with little repeated gathering</td><td>acuppamatcha found the fetch quests and scavenging tedious</td></tr></table><p>These named accounts come from a <a href=\"https://www.reddit.com/r/CozyGamers/comments/1xnsbhg/is_loftia_worth_getting_looking_for_honest/\">November 4 discussion ↗</a>. One additional negative account, OMFGitsjessi, explicitly describes the Demo, so it carries a different version boundary.</p>"
+      ],
+      [
+        "What the purchase decision depends on",
+        "<p>The same repeated-material loop attracts some players and puts others off. If collecting for another craft sounds satisfying, look at the <a href=\"/loftia/materials/\">materials chain</a> to see an example of the progression gates. If that sounds like work, waiting for further development may suit your preferences.</p><p>In the <a href=\"https://www.reddit.com/r/cozygames/comments/1xnsbwh/is_loftia_worth_getting_looking_for_honest/\">parallel buying discussion ↗</a>, peppermintblue described enjoyment after eight Early Access hours, following substantial Demo and beta play. MayaDaBee1250 advised uncertain buyers to wait. These are individual opinions from a self-selected discussion, with no representative satisfaction score implied.</p>"
+      ],
+      [
+        "Check the device and current offer",
+        "<p>Use the current <a href=\"https://store.steampowered.com/app/2320980/Loftia/\">Steam store ↗</a> for your regional price and system requirements. For handheld play, read the <a href=\"/loftia/steam-deck/\">Steam Deck reports</a>. This checklist summarizes other players’ experiences and is separate from a first-hand review.</p>"
+      ]
+    ]
+  }
+]
