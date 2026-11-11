@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08",
+  "generatedAt": "2026-11-11",
   "count": 625,
   "typeOrder": [
     "fish",
@@ -5838,7 +5838,7 @@
       "type": "Recipe",
       "typeKey": "recipes",
       "image": "/img/recipes/Chocolate-Sauce.webp",
-      "href": "/database/recipes/?search=Chocolate%20Sauce",
+      "href": "/database/recipes/chocolate-sauce/",
       "listingHref": "/database/recipes/?search=Chocolate%20Sauce",
       "meta": "Base Game | Lv. 1 | 5,600 G",
       "searchText": "chocolate sauce recipe base game lv 1 5 600 g chocolate sauce permanent object object"
