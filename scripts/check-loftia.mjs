@@ -21,6 +21,6 @@ for (const file of paths) {
   const nav = html.match(/<nav[\s\S]*?<\/nav>/)[0];
   if ([...nav.matchAll(/href="([^"]+)"/g)].some(match => !match[1].startsWith('/loftia/'))) throw new Error(`Wrong game navigation: ${file}`);
 }
-const home = fs.readFileSync('index.html', 'utf8').match(/<!-- LOFTIA RECOMMENDATION -->([\s\S]*?)<!-- END LOFTIA RECOMMENDATION -->/)?.[1]?.replace(/<!-- PETIT PLANET CARD -->[\s\S]*?<!-- END PETIT PLANET CARD -->/, '');
+const home = fs.readFileSync('index.html', 'utf8').match(/<!-- LOFTIA RECOMMENDATION -->([\s\S]*?)<!-- END LOFTIA RECOMMENDATION -->/)?.[1]?.replace(/<!-- PETIT PLANET CARD -->[\s\S]*?<!-- END PETIT PLANET CARD -->/, '').replace(/<!-- DREADMOOR CARD -->[\s\S]*?<!-- END DREADMOOR CARD -->/, '');
 if (!home || [...home.matchAll(/href="([^"]+)"/g)].some(match => !match[1].startsWith('/loftia/'))) throw new Error('Invalid recommendation');
 console.log(`Loftia structural checks PASS: ${paths.length} pages`);

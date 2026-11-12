@@ -1,0 +1,23 @@
+.dreadmoor-guide{margin:0}.dreadmoor-guide *{box-sizing:border-box}
+.dreadmoor-guide{--ink:#e7e4d7;--paper:#152426;--accent:#e4bd75;background:var(--paper);color:var(--ink);font-family:system-ui,sans-serif;line-height:1.75}
+.dreadmoor-guide header,.dreadmoor-guide footer{padding:1.4rem max(5%,calc((100% - 1180px)/2));background:#0c181b;border-bottom:1px solid #51615d}
+.dreadmoor-guide header{display:flex;align-items:center;justify-content:space-between;gap:2rem}
+.dreadmoor-guide a{color:var(--accent);text-underline-offset:4px}
+.dreadmoor-guide .brand{text-decoration:none;font:bold 1.4rem Georgia,serif;letter-spacing:.04em}
+.dreadmoor-guide small{display:block;font:normal .8rem system-ui;letter-spacing:0;color:#d4dacf}
+.dreadmoor-guide nav{display:flex;gap:1.2rem;flex-wrap:wrap}
+.dreadmoor-guide main{max-width:820px;margin:auto;padding:2.8rem 24px}
+.dreadmoor-guide h1,.dreadmoor-guide h2{font-family:Georgia,serif;line-height:1.2;color:#f7efdb}
+.dreadmoor-guide h1{font-size:clamp(2rem,4vw,3.3rem);margin:1rem 0 1.5rem}
+.dreadmoor-guide h2{font-size:1.65rem;margin:2.5rem 0 1rem}
+.dreadmoor-guide .answer{font-size:1.13rem;border-left:3px solid var(--accent);padding-left:1.2rem}
+.dreadmoor-guide .eyebrow,.dreadmoor-guide figcaption,.dreadmoor-guide .method{font-size:.85rem;color:#c4cec5}
+.dreadmoor-guide .toc{border-block:1px solid #51615d;padding:1rem 0;margin:1.5rem 0}
+.dreadmoor-guide figure{margin:2rem 0}.dreadmoor-guide img{display:block;width:100%;height:auto;border-radius:3px}
+.dreadmoor-guide figcaption{margin-top:.6rem}.dreadmoor-guide li{margin:.65rem 0}
+.dreadmoor-guide table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:.94rem}
+.dreadmoor-guide th,.dreadmoor-guide td{text-align:left;border:1px solid #52645f;padding:.7rem;vertical-align:top;overflow-wrap:anywhere}
+.dreadmoor-guide th{background:#263936;color:#f5e0b6}.dreadmoor-guide section{scroll-margin-top:1rem}
+.dreadmoor-guide .mobile{display:none}.dreadmoor-guide .skip{position:absolute;left:-9999px}.dreadmoor-guide .skip:focus{left:10px;top:10px;background:#0c181b;padding:1rem;z-index:2}
+.dreadmoor-guide :focus-visible{outline:3px solid #ffd98c;outline-offset:4px}
+@media(max-width:850px){.dreadmoor-guide .desktop{display:none}.dreadmoor-guide .mobile{display:block}.dreadmoor-guide header{align-items:start;padding:1rem 20px}.dreadmoor-guide .mobile nav{display:grid;gap:.7rem;padding-top:1rem}.dreadmoor-guide main{padding:2rem 20px}.dreadmoor-guide table{font-size:.85rem}.dreadmoor-guide td,.dreadmoor-guide th{padding:.4rem}}

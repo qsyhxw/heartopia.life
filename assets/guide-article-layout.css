@@ -1,0 +1,7 @@
+/* Shared task-article layout. Theme colors belong to each game's stylesheet. */
+.guide-layout main{margin-inline:auto;min-width:0}
+.guide-layout .toc{position:static;display:flex;flex-wrap:wrap;height:auto}
+.guide-layout section{max-width:85ch;margin-inline:auto}
+.guide-layout section:has(table){max-width:none}
+.guide-layout figure img{max-width:100%;height:auto}
+@media(max-width:600px){.guide-layout .toc a{padding-block:5px}}

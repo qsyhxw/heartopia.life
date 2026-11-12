@@ -3,3 +3,7 @@ execFileSync('python',['scripts/build-query-guides.py'],{stdio:'inherit'});
 execFileSync('python',['scripts/update-query-five.py'],{stdio:'inherit'});
 execFileSync('python',['scripts/update-query-eight.py'],{stdio:'inherit'});
 for(const file of ['scripts/build-recipes-page.mjs','scripts/build-loftia.mjs','scripts/check-loftia.mjs','scripts/build-petit-planet.mjs','scripts/check-petit-planet.mjs','scripts/audit-monthly-integrations.mjs']) execFileSync(process.execPath,[file],{stdio:'inherit'});
+
+execFileSync('python',['scripts/build_dreadmoor.py'],{stdio:'inherit'});
+execFileSync('python',['scripts/check_dreadmoor.py'],{stdio:'inherit'});
+execFileSync('python',['scripts/check_guide_layout.py'],{stdio:'inherit'});

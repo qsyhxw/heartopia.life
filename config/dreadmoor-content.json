@@ -1,0 +1,89 @@
+{
+  "checked": "2026-11-12",
+  "pages": [
+    {
+      "slug": "bloodgill",
+      "label": "Bloodgill",
+      "title": "DREADMOOR Bloodgill \u2014 Quest Marker, Bait & Missing Fish Checks",
+      "h1": "Find and catch Bloodgill for Father Matthias",
+      "description": "Find Bloodgill after Update #2, choose Rainbow Fin, keep the quest catch and separate missing markers from the later Father Matthias progression bug.",
+      "answer": "Install the current Early Access update, select Father Matthias's fishing objective and follow the Bloodgill marker added in Update #2. Check that the fishing school names Bloodgill, equip Rainbow Fin and keep the fish intact for delivery. If the marker remains unclear, the publisher has linked a community map with a fish finder.",
+      "image": "fishing",
+      "alt": "First-person rod and lure held over DREADMOOR's flooded waterway",
+      "caption": "Fishing context. This image does not identify a Bloodgill school.",
+      "sections": [
+        {
+          "id": "route",
+          "title": "Find the school before spending bait",
+          "html": "<ol><li>Let Steam finish installing the latest update, then restart the game. Update #2 added Bloodgill fishing spots and a quest marker for Father Matthias.</li><li>Check your active objective and its requested quantity. Keep the caught fish available until the delivery objective completes.</li><li>Follow the marker and read the school's species panel before casting. Nearby predator schools may contain Harpooner.</li><li>If the marker is absent or unclear, use the community map's Finder and select Bloodgill. Its layers start hidden, so choose the relevant layer or fish filter first.</li></ol><p>The publisher recommended Morakie's community map in the Steam discussion about missing Bloodgill. The thread also contains differing player reports about when the marker appeared. A marker problem alone does not establish a night-only requirement.</p><p><a href=\"https://steamcommunity.com/app/3629430/discussions/0/571554545009718419/\">Player reports and the publisher's map recommendation on Steam</a> \u00b7 <a href=\"https://dreadmoormap.pages.dev/\">Open Morakie's external fan map</a>. These links leave this website in the same tab.</p>"
+        },
+        {
+          "id": "bait",
+          "title": "Use a predator lure and preserve the catch",
+          "html": "<p>Rainbow Fin is the straightforward lure to bring. The Early Access fishing accounts linked below identify Bloodgill as a predator and describe moving the lure through its named school to attract a bite. After the hook, watch fish stamina and line tension.</p><p>Destructoid lists Rainbow Fin's recipe as one Fish Meat, one Metal Plate and one Chromatic Scales. It also lists Flaming Belly as an alternative, using Fish Meat, Jaws, Metal Plate and Swamp Lily. Check your unlocked recipe before setting out.</p><p>Reserve the requested whole fish for Father Matthias before selling or grinding surplus. Follow your current quest counter for the required number. Published guides disagree about that number.</p><p><a href=\"https://www.destructoid.com/where-to-catch-bloodgill-in-dreadmoor/\">Destructoid's Early Access location and bait account</a> \u00b7 <a href=\"https://tposegaming.com/dreadmoor-fish/\">Tpose Gaming's fishing account</a>.</p>"
+        },
+        {
+          "id": "stalled",
+          "title": "Choose the next check from the symptom",
+          "html": "<table><thead><tr><th>What you see</th><th>Next check</th></tr></thead><tbody><tr><td>No fish marker</td><td>Confirm the fish objective and current update, then compare the community Finder. Update #2 added markers, but players reported different behavior.</td></tr><tr><td>Only Harpooner catches</td><td>Recheck the school's species panel before using another lure.</td></tr><tr><td>Fish caught, delivery still pending</td><td>Read the active counter and retain whole catches. Processing or selling removes the fish you intended to deliver.</td></tr><tr><td>Later ritual blocked after losing ghoul parts</td><td>Install Update #3. Its Hymn to Deformity fix says the quest now completes automatically when a required ghoul body part is lost. This applies to the later ritual step.</td></tr></tbody></table><p>Older directions send players south of The Slough Trading Post. Start with your updated quest marker because Update #2 changed the available spots. If the ritual still stalls on the current version, report the active objective and missing item to Steam Discussions.</p><p><a href=\"https://steamcommunity.com/app/3629430/?l=english\">Developer Update #2 and Update #3 notes on Steam</a>.</p>"
+        }
+      ]
+    },
+    {
+      "slug": "map",
+      "label": "Map help",
+      "title": "DREADMOOR Map Help \u2014 Open, Close & Find Fishing Spots",
+      "h1": "Open the map and find the fishing spot you need",
+      "description": "Use M to toggle the DREADMOOR map after Update #3, check mouse-button bindings aboard the boat and use the publisher-linked fan map's fish finder.",
+      "answer": "Press M with the default PC controls. Update #3 lets the same button open and close the map. For fishing locations, Morakie's external fan map has a fish Finder and selectable layers. If a mouse-side-button binding works on foot but fails aboard the boat, first compare the default keyboard binding.",
+      "image": "navigation",
+      "alt": "DREADMOOR trawler travelling through flooded settlements in daylight",
+      "caption": "Boat navigation context. Fishing coordinates are provided by the linked fan map.",
+      "sections": [
+        {
+          "id": "controls",
+          "title": "Check the map binding on foot and aboard",
+          "html": "<ol><li>Install the current Steam update and launch the game again.</li><li>Use the default M key to open the map, then press it again to close it. Update #3 explicitly added same-button closing.</li><li>If you remapped the action to a mouse side button, compare M both on foot and while sailing. Restore a keyboard binding in the controls menu if that resolves the difference.</li><li>If neither binding responds, record whether another interface was open and report the issue with your current version and binding.</li></ol><p>In a November 11 player discussion, one person reported Mouse4 failing while sailing and another confirmed that M worked. This is a reported comparison to try. The thread does not establish a universal fix for every binding issue.</p><p><a href=\"https://steamcommunity.com/app/3629430/?l=english\">Official Update #3 map-control change</a> \u00b7 <a href=\"https://www.reddit.com/r/DreadmoorGame/comments/1xswdkh/feedback_after_12h_and_story_content_finished/\">Player discussion of boat and mouse bindings</a> (contains story spoilers).</p>"
+        },
+        {
+          "id": "finder",
+          "title": "Use the external fish finder",
+          "html": "<ol><li>Open Morakie's fan map using the link below.</li><li>Reveal the relevant layer. The map starts with markers hidden to reduce spoilers.</li><li>Open Finder, choose Fish and select the species you need. Use the zoom control to inspect the result.</li><li>Compare its location with your in-game map, then confirm the school name on arrival before casting.</li></ol><p>The map also exposes a fish log, collectible layers and a processing compendium. Its spoiler control covers story characters, Leviathan and puzzles. Reveal those layers only when you want those details.</p><p><a href=\"https://dreadmoormap.pages.dev/\">Open the external DREADMOOR fan map</a>. It opens in this tab and has its own storage and privacy behavior. <a href=\"https://steamcommunity.com/app/3629430/discussions/0/571554545009718419/\">Digital Vortex's Steam reply links this tool</a>.</p>"
+        },
+        {
+          "id": "versions",
+          "title": "Match the map to your objective",
+          "html": "<p>For Father Matthias's fish request, start with the Bloodgill marker added in Update #2. The fan map is a fallback when the marker is unclear. Our Bloodgill guide explains lure choice and hand-in checks.</p><p>Some fish databases still label their information as October Demo data. Early Access updates have added spots and changed prices. Use your current school panel and quest counter to confirm the target. The external map's interface says its positions come from game data, but its landing page does not identify the exact build, so a missing marker should be checked against the current game.</p>"
+        }
+      ]
+    },
+    {
+      "slug": "platforms",
+      "label": "Platforms & controllers",
+      "title": "DREADMOOR PS5, PC & Controllers \u2014 What to Choose Now",
+      "h1": "DREADMOOR platforms and PlayStation controller setup",
+      "description": "Check DREADMOOR's Windows Early Access release, PS5 console announcement status, native DualSense support and DualShock 4 Steam Input setup.",
+      "answer": "The verified release is Windows PC through Steam, in Early Access since 9 November 2026. The official sources checked here contain no PS5, Xbox or Switch release announcement. On PC, Update #1 added native DualSense support and directs DualShock 4 users to enable Steam Input.",
+      "image": "dock",
+      "alt": "DREADMOOR fishing trawler moored beside the Dry Dock workshop",
+      "caption": "Official PC gameplay imagery used to identify the game.",
+      "sections": [
+        {
+          "id": "choose",
+          "title": "Choose from your hardware",
+          "html": "<table><thead><tr><th>Your setup</th><th>Available route</th><th>What to check</th></tr></thead><tbody><tr><td>Windows PC</td><td>Steam Early Access</td><td>Read the live requirements and current price on the store before buying.</td></tr><tr><td>PC and DualSense</td><td>Native controller support added in Update #1</td><td>Install current updates and compare the game's controller prompts.</td></tr><tr><td>PC and DualShock 4</td><td>Steam Input</td><td>Enable Steam Input in the game's Steam controller settings.</td></tr><tr><td>PS5, Xbox or Switch console</td><td>Await a platform announcement</td><td>The sources reviewed provide no console release date.</td></tr><tr><td>Mac or Linux desktop</td><td>No native build listed in the checked store requirements</td><td>Compatibility-layer performance has not been tested here.</td></tr></tbody></table><p><a href=\"https://store.steampowered.com/app/3629430/DREADMOOR/\">DREADMOOR's Steam store and current requirements</a>. This is an external store link, opening in the same tab.</p><p>Dream Dock develops DREADMOOR and Digital Vortex Entertainment publishes it. Use Steam app 3629430 to identify the correct game when comparing keys or store listings. The official description identifies a first-person fishing adventure with on-foot exploration and combat. Dredge is a separate game.</p>"
+        },
+        {
+          "id": "controller",
+          "title": "Set up a PlayStation controller on PC",
+          "html": "<ol><li>Update DREADMOOR in Steam before comparing controls.</li><li>For DualSense, begin with the native support added in Update #1.</li><li>For DualShock 4, open the game's Steam Properties, choose Controller and enable Steam Input, as directed by the developer.</li><li>If switching from a gamepad to a mouse fails at a water-gate sluice, install Update #2, which specifically addresses that transition.</li></ol><p>Update #3 also adds a boat-camera auto-rotation setting. If camera movement is the problem, check that option separately from controller detection.</p><p><a href=\"https://steamcommunity.com/app/3629430/?l=english\">Developer Updates #1\u2013#3, including controller support and sluice fixes</a>.</p>"
+        },
+        {
+          "id": "coop",
+          "title": "Check single-player and handheld expectations",
+          "html": "<p>The developer FAQ describes DREADMOOR as single-player only, and Steam lists Single-player. For a shared co-op session, the checked release does not meet that requirement.</p><p>The October Demo announcement described work on Steam Deck playability and stated that the game had not yet received a Verified rating. That historical Demo statement cannot establish today's full-release performance or certification. Check the current Steam compatibility panel before choosing the handheld route.</p><p><a href=\"https://steamcommunity.com/app/3629430/discussions/0/632318982806920280/\">Developer FAQ on single-player support</a> \u00b7 <a href=\"https://store.steampowered.com/news/app/3629430\">Official announcement history</a>.</p>"
+        }
+      ]
+    }
+  ]
+}
