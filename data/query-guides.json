@@ -149,5 +149,125 @@
       ]
     ],
     "related": "<a href=\"/th/guides/fishing-locations/\">จุดตกปลา</a> · <a href=\"/th/guides/top-up/\">เติมเงิน</a> · <a href=\"/guides/house-ideas/\">ไอเดียบ้าน ภาษาอังกฤษ</a>"
+  },
+  {
+    "route": "/guides/trekking-pole/",
+    "title": "Heartopia Trekking Pole Quest: Vernie and Naughty",
+    "description": "For the Trekking Pole gossip, talk to Vernie at the Flower Fields, then report back to Naughty. Track the active quest and NPC if an event has moved her.",
+    "image": "/assets/images/query-guides/trekking-naughty.png",
+    "width": 1177,
+    "height": 662,
+    "alt": "Naughty on a wooden walkway in Heartopia",
+    "caption": "XD game screenshot via RM Studio, reproduced in AllThingsHow’s quest walkthrough.",
+    "sections": [
+      [
+        "steps",
+        "Follow the active gossip",
+        "<ol><li>Accept Naughty’s Treasure Hunt gossip and read the current objective.</li><li>Track Vernie and check the Flower Fields around the windmills.</li><li>Ask her about the trekking pole, then return to Naughty and finish his dialogue.</li><li>Inspect the quest completion and reward screen before leaving.</li></ol><p>The guide records a Retro Desk Lamp reward. <a href=\"https://allthings.how/heartopia-treasure-hunt-how-to-unlock-naughtys-trekking-pole-quest/\">Quest walkthrough ↗</a></p>"
+      ],
+      [
+        "missing",
+        "If Vernie is missing",
+        "<p>Use the current NPC marker. Players in the original question reported finding her at a concert during an event. Follow her marker before repeatedly searching the usual field position. If her dialogue has no quest option, confirm the gossip is active and reread its current objective. <a href=\"https://www.reddit.com/r/heartopia/comments/1qf3r9s/trekking_pole/\">Original question and event-location reports ↗</a></p>"
+      ],
+      [
+        "unlock",
+        "If Treasure Hunt has not appeared",
+        "<p>AllThingsHow describes earlier story deliveries to Cassie and Naughty, followed by an orange gossip marker. That prerequisite sequence is community documentation from January 2026. Continue available story requests and watch the map. A fixed waiting time cannot be established from that guide.</p><p>Once the gossip is active, the useful next action is Vernie’s dialogue. Compare the objective after each conversation if your client differs.</p>"
+      ]
+    ],
+    "related": "<a href=\"/guides/map/\">Map</a> · <a href=\"/npcs/\">NPC database</a>",
+    "answer": "For the Trekking Pole gossip, talk to Vernie at the Flower Fields, then report back to Naughty. Track the active quest and NPC if an event has moved her.",
+    "dateLabel": "Checked November 12, 2026"
+  },
+  {
+    "route": "/guides/shops/",
+    "title": "Heartopia Shops: Find the Right Store for Your Purchase",
+    "description": "Choose a store by what you need. Visit the General Store for general supplies, Blanc for gardening and Massimo for cooking. Use the top-up guide when buying paid currency.",
+    "image": "/img/npcs/Ka-Ching.webp",
+    "width": 324,
+    "height": 818,
+    "alt": "Ka Ching in Heartopia",
+    "caption": "Ka Ching character image.",
+    "sections": [
+      [
+        "choose",
+        "Which shop should you check?",
+        "<table><tr><th>Your goal</th><th>Start with</th><th>Check first</th></tr><tr><td>General supplies</td><td>Ka Ching’s General Store</td><td>Item name, unlock and quantity</td></tr><tr><td>Seeds and gardening supplies</td><td>Blanc’s Gardening Store</td><td>Hobby requirement and festival tab</td></tr><tr><td>Cooking ingredients or recipes</td><td>Massimo’s Cooking Store</td><td>Recipe ownership and ingredient stock</td></tr><tr><td>Furniture</td><td>Bob’s Furniture Store</td><td>Preview, currency and availability</td></tr><tr><td>Clothing</td><td>Dorothee’s Clothing Store</td><td>Exact style, color and purchase currency</td></tr></table><p>The community shop directory distinguishes these stores and event tabs. <a href=\"https://heartopia.lol/en/shops/\">Shop directory ↗</a></p>"
+      ],
+      [
+        "missing",
+        "An item is missing from the shop",
+        "<ol><li>Check the correct store and tab.</li><li>Read the item’s required level or quest.</li><li>Check the event timer if the item is seasonal.</li><li>Compare the preview and owned marker before purchasing.</li></ol><p>Use the <a href=\"/guides/map/\">town map</a> to locate the vendor and the <a href=\"/database/items/\">item database</a> to compare names. Stock and prices can change, so check the current shop screen.</p>"
+      ],
+      [
+        "paid",
+        "Buying currency or a limited item",
+        "<p>Use <a href=\"/guides/top-up/\">the payment-route guide</a> for XD WebPay, third-party delivery and checkout checks. For a limited exhibition, read its timer, draw currency and exchange rules before selecting a top-up pack. For MLP, consult the <a href=\"/events/my-little-pony-collaboration/\">current collaboration guide</a>.</p>"
+      ]
+    ],
+    "related": "<a href=\"/guides/top-up/\">Top-up options</a> · <a href=\"/database/\">Database</a>",
+    "answer": "Choose a store by what you need. Visit the General Store for general supplies, Blanc for gardening and Massimo for cooking. Use the top-up guide when buying paid currency.",
+    "dateLabel": "Checked November 12, 2026"
+  },
+  {
+    "route": "/faq/player-count/",
+    "title": "Heartopia Player Count: Steam Concurrent Players and Scope",
+    "description": "Valve’s current-player endpoint returned 4,986 concurrent Steam players when checked at 2026-11-12 00:37 UTC. Use a fresh Steam counter for the next snapshot. A total across all platforms was not established in this review.",
+    "image": "/assets/images/query-guides/heartopia-home.jpg",
+    "width": 1920,
+    "height": 1080,
+    "alt": "Heartopia home and garden",
+    "caption": "Heartopia promotional screenshot from XD’s Steam listing.",
+    "sections": [
+      [
+        "measure",
+        "Read the metric before comparing numbers",
+        "<table><tr><th>Metric</th><th>What it measures</th><th>How to use it</th></tr><tr><td>Current concurrent players</td><td>Players online at the sampled instant</td><td>Compare the platform and timestamp</td></tr><tr><td>Daily or monthly active users</td><td>Distinct users active over that period</td><td>Find a published methodology and period</td></tr><tr><td>Peak concurrency</td><td>Highest recorded simultaneous count</td><td>Use the same tracker for comparisons</td></tr></table><p>The sample above is a single retrieval from <a href=\"https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=4025700\">Valve’s public current-player endpoint ↗</a> for app 4025700.</p>"
+      ],
+      [
+        "trackers",
+        "Why tracker numbers differ",
+        "<p>SteamDB, Steam Charts and other trackers can sample at different times and retain different peak histories. Their opened results differed during this review. For a trend, choose one tracker, select its period and compare complete intervals. A single low snapshot is insufficient to describe the whole community’s activity.</p><p><a href=\"https://steamdb.info/app/4025700/charts/\">SteamDB ↗</a> · <a href=\"https://steamcharts.com/app/4025700\">Steam Charts ↗</a></p>"
+      ],
+      [
+        "friends",
+        "If you want to know whether you can find people",
+        "<p>Start with your server, region and usual play hours. Ask friends which region they use and test the activities you want to do together. A platform-wide counter cannot show how busy a particular town or event is at your local play time.</p><p>For current reasons to return, see <a href=\"/guides/updates/\">the update guide</a> and <a href=\"/events/\">events</a>. Global mobile and other-client activity remains unmeasured here.</p>"
+      ]
+    ],
+    "related": "<a href=\"/faq/global-vs-na-server-region/\">Region FAQ</a> · <a href=\"/guides/updates/\">Updates</a>",
+    "answer": "Valve’s current-player endpoint returned 4,986 concurrent Steam players when checked at 2026-11-12 00:37 UTC. Use a fresh Steam counter for the next snapshot. A total across all platforms was not established in this review.",
+    "dateLabel": "Checked November 12, 2026"
+  },
+  {
+    "route": "/guides/updates/",
+    "title": "Heartopia Update Guide: November 2026 Client and New Features",
+    "description": "The November 11 maintenance notice requires a full client update. Its UTC-5 window converts to November 12, 04:00–07:00 in China. Check subsequent official notices for completion status.",
+    "image": "/assets/images/query-guides/heartopia-home.jpg",
+    "width": 1920,
+    "height": 1080,
+    "alt": "Heartopia home and town environment",
+    "caption": "Heartopia promotional screenshot from XD’s Steam listing.",
+    "sections": [
+      [
+        "client",
+        "Get the supported client",
+        "<ol><li>Open the store or launcher used for your installation.</li><li>Install the full available client update.</li><li>Check account linking before any reinstall.</li><li>If login fails, read the latest maintenance notice and record the displayed error.</li></ol><p>Use the <a href=\"/download/\">download guide</a> to find the official platform route. Keep the receipt or account details available when contacting support about a purchase or login problem.</p>"
+      ],
+      [
+        "features",
+        "Choose your next task",
+        "<p>Dance Creation requires D.G. Level 18 and the main story “The Answer Lies Within.” Birthday settings require D.G. Level 10 and that story. The new MLP schedule begins with a November 14 pre-event and November 21 activities. <a href=\"https://steamcommunity.com/app/4025700/announcements/\">Official maintenance details ↗</a></p><p>If you want choreography, check your quest list for “Let the Dance Begin!” and follow its store purchase. If you want the collaboration, open <a href=\"/events/my-little-pony-collaboration/\">the MLP guide</a> and plan around the timer of each activity.</p>"
+      ],
+      [
+        "verify",
+        "Compare announcements with the installed game",
+        "<p>Keep three details together when diagnosing an update problem — the platform, installed version and announcement date. If a feature is absent, check the stated level and story requirement, then the event opening date. A scheduled activity may open after the client update itself.</p><p>This page is a dated November 12 review. Follow the official announcement feed for later patches and use the in-game notice for any revised maintenance window.</p>"
+      ]
+    ],
+    "related": "<a href=\"/download/\">Download</a> · <a href=\"/events/\">Event calendar</a>",
+    "answer": "The November 11 maintenance notice requires a full client update. Its UTC-5 window converts to November 12, 04:00–07:00 in China. Check subsequent official notices for completion status.",
+    "dateLabel": "Checked November 12, 2026"
   }
 ]
