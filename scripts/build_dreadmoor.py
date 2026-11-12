@@ -90,3 +90,6 @@ def build():
 
 if __name__ == '__main__':
     build()
+    # v3.20 presentation pass (SOP 00 §1.4/§4)
+    import subprocess, sys
+    subprocess.run([sys.executable, str(Path(__file__).resolve().parent / 'v320_present.py'), str(Path(__file__).resolve().parents[1])] + [f'dreadmoor/{p}' for p in ('index.html','bloodgill/index.html','map/index.html','platforms/index.html')], check=True)

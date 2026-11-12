@@ -1,0 +1,22 @@
+{
+  "/codes/": {
+    "max_external": 4,
+    "reason": "Official code channels (v3.20 review 2026-11-12)"
+  },
+  "/database/recipes/chocolate-sauce/": {
+    "max_external": 4,
+    "reason": "Action entries (official site, store, download, support); evidence links removed (v3.20 review 2026-11-12)"
+  },
+  "/ja/faq/safety/": {
+    "max_external": 4,
+    "reason": "Action entries (official site, store, download, support); evidence links removed (v3.20 review 2026-11-12)"
+  },
+  "/ko/": {
+    "max_external": 4,
+    "reason": "Action entries (official site, store, download, support); evidence links removed (v3.20 review 2026-11-12)"
+  },
+  "/loftia/": {
+    "max_external": 4,
+    "reason": "Action entries (official site, store, download, support); evidence links removed (v3.20 review 2026-11-12)"
+  }
+}
