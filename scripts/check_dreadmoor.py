@@ -54,7 +54,7 @@ assert soup.select_one('header .brand')['href'] == '/dreadmoor/'
 assert len(soup.select('h1')) == 1 and soup.select_one('body.dreadmoor-home')
 assert soup.select_one('link[rel="canonical"]')['href'] == 'https://heartopia.life/dreadmoor/'
 assert not soup.select_one('main .toc')
-assert {a['href'] for a in soup.select('.task-card a')} == {'/dreadmoor/'+p['slug']+'/' for p in pages}
+assert {a['href'] for a in soup.select('.task-row')} == {'/dreadmoor/'+p['slug']+'/' for p in pages}
 assert text.count("createAd('heartopia_") == 6
 for link in soup.select('a[href]'):
     check_link(path, link['href'])
