@@ -3,6 +3,7 @@ from pathlib import Path
 import json
 import re
 from dreadmoor_home import render_home
+from bs4 import BeautifulSoup
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -34,10 +35,43 @@ def build():
 <figure><img src="{image}" width="1280" height="720" alt="{page['alt']}"><figcaption>{page['caption']} Official Steam promotional gameplay image, Dream Dock / Digital Vortex Entertainment. Build unspecified.</figcaption></figure>
 {sections}<div id="heartopia_in_content_2" class="heartopia-ad-slot"></div><section><h2>Related DREADMOOR guides</h2><ul>{related}</ul></section><p class="method">Prepared from linked developer information and attributed player reports. Gameplay steps have not been personally tested. Early Access behavior may change after this check.</p><div id="heartopia_in_content_3" class="heartopia-ad-slot"></div></main>
 <footer><p>Published by <a href="../../">Heartopia.Life</a>. Independent fan resource, unaffiliated with Dream Dock or Digital Vortex Entertainment.</p><nav aria-label="Site information"><a href="../../about/">About</a><a href="../../contact/">Contact</a><a href="../../privacy/">Privacy</a><a href="/#more-games">More games</a></nav></footer>{AD_UNITS}</body></html>'''
-        target = ROOT / 'dreadmoor' / slug / 'index.html'
+        if slug == 'bloodgill':
+            home_source = html
+        soup = BeautifulSoup(html, 'html.parser')
+        soup.body['class'].extend(['dreadmoor-article', 'task-' + slug])
+        style = soup.new_tag('link', rel='stylesheet', href='/assets/dreadmoor/article.css')
+        soup.head.append(style)
+        main = soup.select_one('main')
+        intro = soup.new_tag('div', attrs={'class':'article-intro'})
+        copy = soup.new_tag('div', attrs={'class':'intro-copy'})
+        crumb = soup.new_tag('a', href='/dreadmoor/', attrs={'class':'back-link'})
+        crumb.string = 'All DREADMOOR guides'
+        copy.append(crumb)
+        for node in [main.select_one('.eyebrow'), main.h1, main.select_one('.answer')]:
+            copy.append(node.extract())
+        intro.append(copy)
+        figure = main.figure.extract()
+        figure.img['loading'] = 'eager'
+        intro.append(figure)
+        main.insert(0, intro)
+        if slug in ['map', 'platforms']:
+            main.select_one('section').insert_after(figure.extract())
+        labels = {'bloodgill':'Fishing & quests', 'map':'Map & navigation', 'platforms':'Platforms & controllers'}
+        copy.select_one('.eyebrow').string = labels[slug] + ' / Checked 12 November 2026'
+        for table in main.select('table'):
+            headings = [th.get_text() for th in table.select('thead th')]
+            for row in table.select('tbody tr'):
+                for cell, label in zip(row.select('td'), headings):
+                    cell['data-label'] = label
+        original_head = html[:html.index('<body')]
+        original_head = original_head.replace('</head>', '<link rel="stylesheet" href="/assets/dreadmoor/article.css"></head>')
+        body = str(soup.body)
+        body = re.sub(r'<script\b[^>]*>[\s\S]*?</script>', lambda m: AD_UNITS, body)
+        html = original_head + body + '</html>'
+        target = ROOT / 'dreadmoor' / slug / 'index.html' 
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(html, encoding='utf-8', newline='\n')
-    (ROOT / 'dreadmoor/index.html').write_text(render_home((ROOT / 'dreadmoor/bloodgill/index.html').read_text(encoding='utf-8')), encoding='utf-8', newline='\n')
+    (ROOT / 'dreadmoor/index.html').write_text(render_home(home_source), encoding='utf-8', newline='\n')
     card = '<!-- DREADMOOR CARD --><a href="/dreadmoor/" class="flex items-center gap-4 rounded-xl bg-white p-4 mt-4" style="max-width:560px"><img src="/assets/dreadmoor/fishing.webp" alt="DREADMOOR first-person fishing" width="120" height="68" loading="lazy" style="width:120px;height:68px;object-fit:cover;border-radius:8px"><span><strong>DREADMOOR</strong><br>Bloodgill fishing, map help and PC controller choices</span></a><!-- END DREADMOOR CARD -->'
     path = ROOT / 'index.html'
     home = path.read_text(encoding='utf-8')

@@ -1,0 +1,51 @@
+/* Article theme follows the harbour home while keeping task answers in view. */
+.dreadmoor-article{--paper:#e5e0d3;--ink:#27352f;--accent:#4c5940;background:var(--paper);color:var(--ink)}
+.dreadmoor-article header,.dreadmoor-article footer{background:#0c1b20;color:#d9ded5}
+.dreadmoor-article header a,.dreadmoor-article footer a{color:#e6d4aa}
+.dreadmoor-article header small{font-size:12px;color:#b7c1b8}
+.dreadmoor-article main{max-width:1180px;padding:48px 36px 64px}
+.dreadmoor-article h1,.dreadmoor-article h2{color:#263b34;font-weight:normal}
+.dreadmoor-article h1{font-size:clamp(32px,3.3vw,48px);margin:20px 0;max-width:21ch}
+.dreadmoor-article .article-intro{display:grid;grid-template-columns:1.15fr 1fr;gap:48px;align-items:center;padding-bottom:24px}
+.dreadmoor-article .back-link{display:inline-block;font-size:13px;margin-bottom:24px}
+.dreadmoor-article .eyebrow{font-size:11px;letter-spacing:.08em;color:#596652}
+.dreadmoor-article .answer{border:0;padding:0;font-size:17px;line-height:1.8;margin:0}
+.dreadmoor-article figure{margin:0}
+.dreadmoor-article figure img{border-radius:0}
+.dreadmoor-article figcaption{color:#626b5d;font-size:12px;line-height:1.65;margin-top:12px}
+.dreadmoor-article .toc{border-color:#b5b7a8;padding:18px 0;margin:16px 0 36px;gap:12px 24px}
+.dreadmoor-article .toc a{font-size:13px}
+.dreadmoor-article main>section,.dreadmoor-article .method{max-width:760px;margin-left:auto;margin-right:auto}
+.dreadmoor-article h2{font-size:30px;margin-top:36px}
+.dreadmoor-article section p{line-height:1.85}
+.dreadmoor-article ol{padding-left:26px}
+.dreadmoor-article ol li{padding:10px 0 14px 8px;border-bottom:1px solid #c2c4b6}
+.dreadmoor-article li::marker{color:#6e754f}
+.dreadmoor-article th{background:#263b34;color:#f0e6c9}
+.dreadmoor-article td,.dreadmoor-article th{border-color:#b4b9a8;padding:16px}
+.dreadmoor-article td{background:#eeebdf}
+.dreadmoor-article .method{color:#626b5d;border-top:1px solid #b4b9a8;padding-top:24px;font-size:13px}
+.dreadmoor-article a:focus-visible{outline-color:#9c692a}
+.task-platforms main>section:first-of-type{max-width:100%}
+.task-map #controls{border-left:3px solid #8e9469;padding-left:28px}
+@media(max-width:850px){
+ .dreadmoor-article main{padding:28px 22px 44px}
+ .dreadmoor-article .article-intro{grid-template-columns:1fr;gap:24px}
+ .dreadmoor-article h1{font-size:36px;max-width:25ch}
+ .dreadmoor-article .answer{font-size:16px}
+ .dreadmoor-article .back-link{margin-bottom:18px}
+ .dreadmoor-article figure{max-width:640px}
+ .dreadmoor-article .toc{gap:12px 20px}
+ .dreadmoor-article h2{font-size:28px}
+ .dreadmoor-article table,.dreadmoor-article tbody,.dreadmoor-article tr,.dreadmoor-article td{display:block;width:100%}
+ .dreadmoor-article thead{display:none}
+ .dreadmoor-article tr{margin-bottom:14px;border:1px solid #b4b9a8}
+ .dreadmoor-article td{border:0;padding:10px 14px;font-size:15px}
+ .dreadmoor-article td:first-child{background:#263b34;color:#f0e6c9;font-weight:600}
+ .dreadmoor-article td:not(:first-child)::before{content:attr(data-label);display:block;font-size:11px;letter-spacing:.04em;color:#626b5d;margin-bottom:4px}
+ .task-map #controls{padding-left:18px}
+}
+.task-map .article-intro,.task-platforms .article-intro{grid-template-columns:1fr}
+.task-map .intro-copy,.task-platforms .intro-copy{max-width:850px}
+.task-map h1,.task-platforms h1{max-width:30ch}
+.dreadmoor-article main>figure{max-width:760px;margin:32px auto}
