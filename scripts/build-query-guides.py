@@ -20,6 +20,10 @@ for page in pages:
     toc = ' · '.join(f'<a href="#{s[0]}">{s[1]}</a>' for s in page['sections'])
     main = f'<main class="max-w-6xl mx-auto px-4 py-10"><article class="query-body"><p>Heartopia · {page["dateLabel"]}</p><h1 class="font-display text-3xl md:text-5xl font-bold my-5">{page["title"]}</h1><p class="text-xl bg-white rounded-lg p-5">{page["answer"]}</p><nav aria-label="On this page">{toc}</nav><figure class="my-8"><img src="{page["image"]}" width="{page["width"]}" height="{page["height"]}" alt="{escape(page["alt"], quote=True)}"><figcaption class="text-sm text-cozy-wood">{page["caption"]}</figcaption></figure><div id="heartopia_in_content" class="heartopia-ad-slot"></div>{sections}<div id="heartopia_in_content_2" class="heartopia-ad-slot"></div><p>{page["related"]}</p><div id="heartopia_in_content_3" class="heartopia-ad-slot"></div></article></main>'
     html = re.sub(r'<main\b[^>]*>.*?</main>', lambda _: main, html, flags=re.S)
+    if page.get('localNav'):
+        links = ''.join(f'<a href="{url}" class="px-2 py-2">{label}</a>' for label, url in page['localNav'])
+        header = f'<header class="sticky top-0 z-50 bg-white border-b border-cozy-peach"><div class="max-w-6xl mx-auto px-4 py-3"><a class="font-display text-xl font-bold" href="{page["home"]}">{page["brand"]}</a><nav class="hidden md:flex gap-4 mt-3">{links}</nav><details class="md:hidden mt-2"><summary>{page["menu"]}</summary><nav class="flex flex-wrap">{links}</nav></details></div></header>'
+        html = re.sub(r'<header\b[^>]*>.*?</header>', lambda _: header, html, count=1, flags=re.S)
     trust = '<p class="text-sm mt-4"><a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="/privacy/">Privacy</a></p>'
     html = html.replace('</footer>', trust + '</footer>')
     target = ROOT / page['route'].strip('/') / 'index.html'

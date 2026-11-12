@@ -269,5 +269,149 @@
     "related": "<a href=\"/download/\">Download</a> · <a href=\"/events/\">Event calendar</a>",
     "answer": "The November 11 maintenance notice requires a full client update. Its UTC-5 window converts to November 12, 04:00–07:00 in China. Check subsequent official notices for completion status.",
     "dateLabel": "Checked November 12, 2026"
+  },
+  {
+    "route": "/ja/",
+    "lang": "ja",
+    "title": "ハートピア スローライフの始め方と攻略入口",
+    "description": "ハートピア スローライフは、家づくりや趣味、ほかのプレイヤーとの交流を楽しむゲームです。最初は案内クエストを進め、道具とマップの使い方を確認してから、好きな趣味を一つ選ぶと進めやすくなります。",
+    "answer": "ハートピア スローライフは、家づくりや趣味、ほかのプレイヤーとの交流を楽しむゲームです。最初は案内クエストを進め、道具とマップの使い方を確認してから、好きな趣味を一つ選ぶと進めやすくなります。",
+    "sections": [
+      [
+        "start",
+        "最初に進めること",
+        "<ol><li>ログイン方法と選んだ地域を控える。</li><li>案内クエストを進め、道具・バッグ・マップを開いてみる。</li><li>釣り、料理、園芸などから一つ選び、必要な素材を確認する。</li><li>素材が足りない場合は場所、時間、天気、趣味レベルを順に確認する。</li><li>家を大きく作り直す前に、今ある素材と設計を見直す。</li></ol><p>序盤の進行は新生活の案内を軸に整理しています。<a href=\"https://gamerch.com/heartopia/955579\">Gamerchの序盤ガイド ↗</a> · <a href=\"https://hatopedia.com/ja/guides/beginner/\">HatoPedia初心者ガイド ↗</a></p>"
+      ],
+      [
+        "choose",
+        "困っていることから選ぶ",
+        "<ul><li>報酬を受け取りたい → <a href=\"/ja/codes/\">交換コードと入力方法</a></li><li>料理の材料を調べたい → <a href=\"/ja/database/recipes/\">日本語レシピ検索</a></li><li>課金前に必要量を知りたい → <a href=\"/ja/guides/gacha/\">ガチャの費用計算</a></li><li>支払い先を確認したい → <a href=\"/ja/guides/top-up/\">課金ルート</a></li><li>ダウンロードやアカウントが不安 → <a href=\"/ja/faq/safety/\">安全確認</a></li></ul><p>詳細な生物データは<a href=\"/database/\">英語の図鑑</a>、位置は<a href=\"/guides/map/\">英語の地図</a>で確認できます。英語の名前をゲーム内の対象と照合してから移動してください。</p>"
+      ],
+      [
+        "official",
+        "公式のゲーム名と入手先",
+        "<p>日本語のSteamでは「ハートピアスローライフ」、英語ではHeartopiaと表示されます。開発元と販売元のXD、ストア内のゲームページを照合して入手先を確認してください。<a href=\"https://store.steampowered.com/app/4025700/Heartopia/?l=japanese\">日本語Steamページ ↗</a></p><p>このページは序盤の手順と目的別の案内です。個別クエストや全アイテムの攻略は、それぞれのページで条件を確認してください。</p>"
+      ]
+    ],
+    "related": "<a href=\"/ja/codes/\">コード</a> · <a href=\"/ja/faq/safety/\">安全確認</a> · <a href=\"/ko/\">한국어</a> · <a href=\"/zh-tw/\">繁體中文</a>",
+    "image": "/assets/images/query-guides/heartopia-home.jpg",
+    "width": 1920,
+    "height": 1080,
+    "alt": "Heartopiaの家と庭",
+    "caption": "XDのSteam掲載ゲーム画像。",
+    "dateLabel": "2026年11月12日確認",
+    "localNav": [
+      [
+        "コード",
+        "/ja/codes/"
+      ],
+      [
+        "安全確認",
+        "/ja/faq/safety/"
+      ],
+      [
+        "レシピ",
+        "/ja/database/recipes/"
+      ]
+    ],
+    "home": "/ja/",
+    "brand": "ハートピアの案内",
+    "menu": "メニュー"
+  },
+  {
+    "route": "/zh-tw/",
+    "lang": "zh-Hant",
+    "title": "心動小鎮入門指南與攻略入口",
+    "description": "先確認遊玩地區與登入方式，再跟著遊戲教學熟悉工具、地圖和任務。想領取禮包、查食譜或參加彩虹小馬聯動，可從下方對應入口開始。",
+    "answer": "先確認遊玩地區與登入方式，再跟著遊戲教學熟悉工具、地圖和任務。想領取禮包、查食譜或參加彩虹小馬聯動，可從下方對應入口開始。",
+    "sections": [
+      [
+        "start",
+        "開始遊玩前先確認",
+        "<ol><li>從所在地區的官方網站或商店確認下載入口。</li><li>記下登入方式與伺服器，方便找回原有角色。</li><li>完成遊戲教學，再選一項喜歡的生活嗜好。</li><li>遇到收集需求時，同時查地點、天氣、時段與嗜好等級。</li></ol><p>繁中官方網站提供遊戲與下載資訊。<a href=\"https://town.starforce.tw/\">心動小鎮繁中官網 ↗</a></p>"
+      ],
+      [
+        "tasks",
+        "按目標找資料",
+        "<ul><li>領獎勵 → <a href=\"/zh-tw/codes/\">禮包碼與兌換方法</a></li><li>準備料理 → <a href=\"/zh-tw/database/recipes/\">繁中食譜</a></li><li>聯動活動 → <a href=\"/zh-tw/events/my-little-pony-collaboration/\">彩虹小馬第二期時間與準備</a></li><li>購買付費商品 → <a href=\"/zh-tw/guides/top-up/\">儲值管道核對</a></li></ul><p><a href=\"/guides/map/\">地圖</a>與<a href=\"/database/\">完整圖鑑</a>目前以英文為主，請先對照遊戲內名稱與條件。</p>"
+      ],
+      [
+        "region",
+        "簡繁名稱與地區入口",
+        "<p>「心动小镇」與「心動小鎮」是玩家查找這款遊戲時常用的名稱。中國大陸官網與繁中地區入口分別提供當地資訊。帳號、活動時區與禮包碼資格請以所玩版本為準。</p><p><a href=\"https://town.xd.cn/\">心动小镇中國大陸官網 ↗</a> · <a href=\"https://www.taptap.cn/app/45213\">TapTap中國大陸遊戲頁 ↗</a></p><p>查找官方入口時，先選遊玩地區，再檢查開發商與下載平台。這能減少把其他地區公告套用到自己帳號的情況。</p>"
+      ]
+    ],
+    "related": "<a href=\"/zh-tw/codes/\">禮包碼</a> · <a href=\"/ja/\">日本語</a> · <a href=\"/ko/\">한국어</a>",
+    "image": "/assets/images/query-guides/heartopia-home.jpg",
+    "width": 1920,
+    "height": 1080,
+    "alt": "心動小鎮中的住宅、花園與泳池",
+    "caption": "XD於Steam刊登的遊戲宣傳畫面。",
+    "dateLabel": "2026年11月12日確認",
+    "localNav": [
+      [
+        "禮包碼",
+        "/zh-tw/codes/"
+      ],
+      [
+        "食譜",
+        "/zh-tw/database/recipes/"
+      ],
+      [
+        "彩虹小馬",
+        "/zh-tw/events/my-little-pony-collaboration/"
+      ]
+    ],
+    "home": "/zh-tw/",
+    "brand": "心動小鎮玩家指南",
+    "menu": "選單"
+  },
+  {
+    "route": "/zh-tw/events/my-little-pony-collaboration/",
+    "lang": "zh-Hant",
+    "title": "心動小鎮彩虹小馬第二期聯動時間與參加準備",
+    "description": "第二期聯動先於11月14日開啟「友誼之旅」，主要活動於11月21日起開放。先更新完整客戶端，再按遊戲內各活動的開放時間安排領取、抽取與兌換。",
+    "answer": "第二期聯動先於11月14日開啟「友誼之旅」，主要活動於11月21日起開放。先更新完整客戶端，再按遊戲內各活動的開放時間安排領取、抽取與兌換。",
+    "sections": [
+      [
+        "schedule",
+        "活動與兌換時間",
+        "<table><tr><th>項目</th><th>UTC+8時間</th></tr><tr><td>友誼之旅</td><td>11月14日06:00至12月28日05:59</td></tr><tr><td>和諧之樹與雲間飛馳</td><td>11月21日06:00至12月28日05:59</td></tr><tr><td>雲間飛馳兌換</td><td>11月21日06:00至2027年1月4日05:59</td></tr><tr><td>天界小馬主題抽取</td><td>11月21日07:00起</td></tr></table><p>日期依2026年11月12日繁中維護公告整理。開放時間不同的活動，請各自查看倒數。<a href=\"https://steamcommunity.com/app/4025700/announcements/?l=tchinese\">官方繁中公告 ↗</a></p>"
+      ],
+      [
+        "prepare",
+        "開放前後怎麼安排",
+        "<ol><li>先從原本下載平台更新完整客戶端。</li><li>11月14日起查看拼圖活動，每天檢查可點亮的拼圖與進度獎勵。</li><li>11月21日起先查看活動任務，再決定要投入哪種玩法。</li><li>抽取前查看展覽名稱、已有進度、缺少的車輛與所需通票。</li><li>保留兌換所需道具，並留意活動結束後的兌換期限。</li></ol><p>這份安排把更新、領獎與消費分成可逐項確認的步驟。已擁有的第一期收藏，請直接與第二期遊戲內收藏畫面對照。</p>"
+      ],
+      [
+        "versions",
+        "查看第一期資料時要核對什麼",
+        "<p>第一期內容可作收藏參考。第二期的抽取池、參加條件與兌換道具，請讀本期規則。回歸玩家先確認哪些進度已帶入，再估算還缺多少通票。</p><p>若要比較官方儲值與外部服務，先看<a href=\"/zh-tw/guides/top-up/\">繁中儲值指南</a>，核對帳號、伺服器、商品與最終付款金額。</p><p><a href=\"https://app.mycard520.com.tw/news-%E3%80%8A%E5%BF%83%E5%8B%95%E5%B0%8F%E9%8E%AE%E3%80%8Bx%E3%80%8A%E5%BD%A9%E8%99%B9%E5%B0%8F%E9%A6%AC%E3%80%8B%E8%81%AF%E5%8B%95%E5%B0%87%E6%96%BC%E6%98%8E%E6%97%A5%E5%B1%95%E9%96%8B%EF%BC%81/\">第一期圖文資料來源 ↗</a></p>"
+      ]
+    ],
+    "related": "<a href=\"/zh-tw/\">繁中入門</a> · <a href=\"/zh-tw/codes/\">禮包碼</a> · <a href=\"/events/my-little-pony-collaboration/\">英文聯動歷史資料</a>",
+    "image": "/assets/images/query-guides/mlp-harmony.webp",
+    "width": 1200,
+    "height": 675,
+    "alt": "第一期彩虹小馬和諧之樹活動介面與操作說明",
+    "caption": "第一期和諧之樹介面資料圖，出自MyCard刊登的聯動介紹。第二期規則請依下方最新公告。",
+    "dateLabel": "2026年11月12日確認",
+    "localNav": [
+      [
+        "禮包碼",
+        "/zh-tw/codes/"
+      ],
+      [
+        "食譜",
+        "/zh-tw/database/recipes/"
+      ],
+      [
+        "彩虹小馬",
+        "/zh-tw/events/my-little-pony-collaboration/"
+      ]
+    ],
+    "home": "/zh-tw/",
+    "brand": "心動小鎮玩家指南",
+    "menu": "選單"
   }
 ]
