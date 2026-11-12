@@ -25,6 +25,7 @@ for page in pages:
     path = ROOT / 'dreadmoor' / page['slug'] / 'index.html'
     text = path.read_text(encoding='utf-8')
     soup = BeautifulSoup(text, 'html.parser')
+    assert soup.select_one('header .brand')['href'] == '/dreadmoor/'
     assert len(soup.select('h1')) == 1
     assert soup.select_one('body.guide-layout')
     assert soup.select_one('link[rel="canonical"]')['href'] == f'https://heartopia.life/dreadmoor/{page["slug"]}/'
@@ -45,3 +46,19 @@ for link in cards.select('a[href]'):
     assert not urlsplit(link['href']).scheme and not link.has_attr('target') and not link.has_attr('onclick')
     check_link(home, link['href'])
 print('PASS 3 DREADMOOR pages, canonical/schema/media/anchors/ads and all discovery-card destinations')
+
+path = ROOT / 'dreadmoor/index.html'
+text = path.read_text(encoding='utf-8')
+soup = BeautifulSoup(text, 'html.parser')
+assert soup.select_one('header .brand')['href'] == '/dreadmoor/'
+assert len(soup.select('h1')) == 1 and soup.select_one('body.dreadmoor-home')
+assert soup.select_one('link[rel="canonical"]')['href'] == 'https://heartopia.life/dreadmoor/'
+assert not soup.select_one('main .toc')
+assert {a['href'] for a in soup.select('.task-card a')} == {'/dreadmoor/'+p['slug']+'/' for p in pages}
+assert text.count("createAd('heartopia_") == 6
+for link in soup.select('a[href]'):
+    check_link(path, link['href'])
+for image in soup.select('img'):
+    assert (ROOT / image['src'].lstrip('/')).is_file()
+assert cards.find('a', href='/dreadmoor/')
+print('PASS independent hub layout, all task groups and four section-brand targets')

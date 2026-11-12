@@ -2,6 +2,7 @@
 from pathlib import Path
 import json
 import re
+from dreadmoor_home import render_home
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -27,7 +28,7 @@ def build():
 <meta property="og:image" content="https://heartopia.life/assets/dreadmoor/{page['image']}.webp"><meta property="og:title" content="{page['title']}"><meta property="og:type" content="article"><meta property="og:url" content="{canonical}"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="../../assets/guide-article-layout.css"><link rel="stylesheet" href="../../assets/dreadmoor/guide.css">
 {HEAD_SCRIPTS}<script type="application/ld+json">{schema}</script></head>
-<body class="dreadmoor-guide guide-layout"><a class="skip" href="#main">Skip to guide</a><header><a class="brand" href="../bloodgill/">DREADMOOR <small>Fishing &amp; navigation guides</small></a><nav class="desktop" aria-label="DREADMOOR guides">{nav}</nav><details class="mobile"><summary>Menu</summary><nav aria-label="Mobile DREADMOOR guides">{nav}</nav></details></header>
+<body class="dreadmoor-guide guide-layout"><a class="skip" href="#main">Skip to guide</a><header><a class="brand" href="/dreadmoor/">DREADMOOR <small>Fishing &amp; navigation guides</small></a><nav class="desktop" aria-label="DREADMOOR guides">{nav}</nav><details class="mobile"><summary>Menu</summary><nav aria-label="Mobile DREADMOOR guides">{nav}</nav></details></header>
 <main id="main"><p class="eyebrow">EARLY ACCESS · CHECKED 12 NOVEMBER 2026</p><h1>{page['h1']}</h1><p class="answer">{page['answer']}</p><nav class="toc" aria-label="On this page">{toc}</nav>
 
 <figure><img src="{image}" width="1280" height="720" alt="{page['alt']}"><figcaption>{page['caption']} Official Steam promotional gameplay image, Dream Dock / Digital Vortex Entertainment. Build unspecified.</figcaption></figure>
@@ -36,7 +37,8 @@ def build():
         target = ROOT / 'dreadmoor' / slug / 'index.html'
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(html, encoding='utf-8', newline='\n')
-    card = '<!-- DREADMOOR CARD --><a href="/dreadmoor/bloodgill/" class="flex items-center gap-4 rounded-xl bg-white p-4 mt-4" style="max-width:560px"><img src="/assets/dreadmoor/fishing.webp" alt="DREADMOOR first-person fishing" width="120" height="68" loading="lazy" style="width:120px;height:68px;object-fit:cover;border-radius:8px"><span><strong>DREADMOOR</strong><br>Bloodgill fishing, map help and PC controller choices</span></a><!-- END DREADMOOR CARD -->'
+    (ROOT / 'dreadmoor/index.html').write_text(render_home((ROOT / 'dreadmoor/bloodgill/index.html').read_text(encoding='utf-8')), encoding='utf-8', newline='\n')
+    card = '<!-- DREADMOOR CARD --><a href="/dreadmoor/" class="flex items-center gap-4 rounded-xl bg-white p-4 mt-4" style="max-width:560px"><img src="/assets/dreadmoor/fishing.webp" alt="DREADMOOR first-person fishing" width="120" height="68" loading="lazy" style="width:120px;height:68px;object-fit:cover;border-radius:8px"><span><strong>DREADMOOR</strong><br>Bloodgill fishing, map help and PC controller choices</span></a><!-- END DREADMOOR CARD -->'
     path = ROOT / 'index.html'
     home = path.read_text(encoding='utf-8')
     home = re.sub(r'<!-- DREADMOOR CARD -->.*?<!-- END DREADMOOR CARD -->', '', home, flags=re.S)
@@ -45,9 +47,9 @@ def build():
     path.write_text(home, encoding='utf-8', newline='\n')
     path = ROOT / 'sitemap.xml'
     sitemap = path.read_text(encoding='utf-8')
-    for page in DATA['pages']:
-        url = f'https://heartopia.life/dreadmoor/{page["slug"]}/'
-        if url not in sitemap:
+    for page in [{'slug':''}] + DATA['pages']:
+        url = 'https://heartopia.life/dreadmoor/' + (page['slug'] + '/' if page['slug'] else '')
+        if f'<loc>{url}</loc>' not in sitemap:
             sitemap = sitemap.replace('</urlset>', f'<url><loc>{url}</loc><lastmod>2026-11-12</lastmod></url></urlset>')
     ET.fromstring(sitemap)
     path.write_text(sitemap, encoding='utf-8', newline='\n')
