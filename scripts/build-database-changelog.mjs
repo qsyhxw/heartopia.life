@@ -292,7 +292,7 @@ function replaceBlock(html, name, content) {
 
 function renderHomeBadge(latest) {
   const label = latest.signature === 'tracking-launch-v1' ? 'Database tracking live' : 'Database updated';
-  return `<a href="/database/changelog/" class="mb-6 inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-2 text-sm font-medium text-cozy-sage backdrop-blur hover:bg-white" aria-label="Open database changelog"><span class="h-2 w-2 rounded-full bg-green-500"></span><span>${label} · ${esc(formatDate(latest.date))}</span></a>`;
+  return `<a href="/database/changelog/" class="mb-4 md:mb-6 inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-2 text-sm font-medium text-cozy-sage backdrop-blur hover:bg-white" aria-label="Open database changelog"><span class="h-2 w-2 rounded-full bg-green-500"></span><span>${label} · ${esc(formatDate(latest.date))}</span></a>`;
 }
 
 function renderHomeSummary(latest) {
