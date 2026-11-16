@@ -159,7 +159,8 @@
         "https://heartopia-life.me/wiki/codes"
       ],
       "verification": "Confirmed by 2 independent current sources",
-      "note": "Automatically published after the code quality gate passed."
+      "note": "Automatically published after the code quality gate passed.",
+      "needsCheck": false
     }
   ],
   "expired": [
@@ -1492,7 +1493,7 @@
     }
   ],
   "automation": {
-    "lastRun": "2026-11-16T17:02:19.158Z",
+    "lastRun": "2026-11-16T22:44:22.067Z",
     "successfulIndependentSources": 4,
     "policy": "Official announcement, or two independent current-source confirmations; conflicting candidates are withheld."
   }
