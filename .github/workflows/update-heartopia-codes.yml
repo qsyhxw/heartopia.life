@@ -40,6 +40,7 @@ jobs:
         run: git diff -- data/heartopia-codes.json codes/index.html codes/expired/index.html ja/codes/index.html zh-tw/codes/index.html id/codes/index.html pt-br/codes/index.html sitemap.xml
 
       - name: Commit changes
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -49,4 +50,28 @@ jobs:
           else
             git commit -m "chore: update Heartopia codes"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      # SOP 05 §2.9.1 v3.27: email every automatic update and every failure
+      - name: Summarise real code changes
+        id: codes
+        if: ${{ steps.commit.outputs.changed == 'true' }}
+        run: python3 scripts/codes_change_summary.py "$RUNNER_TEMP/codes.txt"
+
+      - name: Email the code update
+        if: ${{ steps.codes.outputs.changed == 'true' }}
+        env:
+          GMAIL_USERNAME: ${{ secrets.GMAIL_USERNAME }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          EVENT_ALERT_EMAIL: ${{ secrets.EVENT_ALERT_EMAIL }}
+        run: |
+          python3 scripts/notify_email.py --subject "[heartopia.life] 兑换码已自动更新" --body "Heartopia 兑换码页已自动更新并发布：https://heartopia.life/codes/ 。兑换码变化：" --body-file "$RUNNER_TEMP/codes.txt" --diff data/heartopia-codes.json codes ja/codes zh-tw/codes id/codes pt-br/codes
+
+      - name: Email the failure
+        if: ${{ failure() }}
+        env:
+          GMAIL_USERNAME: ${{ secrets.GMAIL_USERNAME }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          EVENT_ALERT_EMAIL: ${{ secrets.EVENT_ALERT_EMAIL }}
+        run: python3 scripts/notify_email.py --subject "[heartopia.life] 自动任务失败：Update Heartopia Codes" --body "兑换码自动更新失败，页面未改动或未完整发布，请看运行日志。"
