@@ -46,15 +46,20 @@ jobs:
           mkdir -p "$RUNNER_TEMP/heartopia-discovery/listings"
 
       - name: Prepare temporary list-only fallback
+        # 尽力而为：直连失败时才会用到这些文件；单个或全部失败都不应让 job 提前中止。
+        continue-on-error: true
         shell: bash
         env:
           MONITOR_HOST: heartodex.com
         run: |
           base="https://r.jina.ai/http://www.${MONITOR_HOST}"
           for collection in fish birds insects wild-animals crops recipes achievements items ingredients collectibles npcs; do
-            curl --fail --silent --show-error --location --retry 2 --max-time 75 \
+            if ! curl --fail --silent --show-error --location --retry 2 --max-time 75 \
               "${base}/en/${collection}/" \
-              --output "$HEARTOPIA_DISCOVERY_FALLBACK_DIR/${collection}.md"
+              --output "$HEARTOPIA_DISCOVERY_FALLBACK_DIR/${collection}.md"; then
+              echo "::warning::Fallback prefetch failed for ${collection}; discovery will try other sources."
+              rm -f "$HEARTOPIA_DISCOVERY_FALLBACK_DIR/${collection}.md"
+            fi
           done
 
       - name: Restore latest private discovery baseline
@@ -80,8 +85,6 @@ jobs:
 
       - name: Check collection listings
         id: discovery
-        env:
-          HEARTOPIA_DISCOVERY_FORCE_PROXY: '1'
         run: node scripts/discover-heartopia-database-changes.mjs
 
       - name: Save private discovery baseline

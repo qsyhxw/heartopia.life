@@ -92,12 +92,20 @@ async function fetchText(url, { attempts = 1, timeout = 30000 } = {}) {
   throw lastError || new Error('request failed');
 }
 
+// 回退文件存在且非空才可用；空文件（例如下载失败后残留）视为不存在。
+const readFallbackFile = (file) => {
+  if (!file || !fs.existsSync(file) || fs.statSync(file).size === 0) return '';
+  return fs.readFileSync(file, 'utf8');
+};
+
 async function fetchListing(remotePath) {
   const directUrl = `${sourceBase}/en/${remotePath}/`;
   const fallbackDir = process.env.HEARTOPIA_DISCOVERY_FALLBACK_DIR;
   const fallbackFile = fallbackDir ? path.join(fallbackDir, `${remotePath}.md`) : '';
-  if (process.env.HEARTOPIA_DISCOVERY_FORCE_PROXY === '1' && fallbackFile && fs.existsSync(fallbackFile)) {
-    return { content: fs.readFileSync(fallbackFile, 'utf8'), format: 'markdown' };
+  // 强制代理仅用于本地调试；工作流默认直连优先（与 monitor-heartodex-collections 一致）。
+  if (process.env.HEARTOPIA_DISCOVERY_FORCE_PROXY === '1') {
+    const cached = readFallbackFile(fallbackFile);
+    if (cached) return { content: cached, format: 'markdown' };
   }
   let directError;
   if (process.env.HEARTOPIA_DISCOVERY_FORCE_PROXY !== '1') {
@@ -112,9 +120,8 @@ async function fetchListing(remotePath) {
     }
   }
   try {
-    if (fallbackFile && fs.existsSync(fallbackFile)) {
-      return { content: fs.readFileSync(fallbackFile, 'utf8'), format: 'markdown' };
-    }
+    const cached = readFallbackFile(fallbackFile);
+    if (cached) return { content: cached, format: 'markdown' };
     const proxyUrl = `https://r.jina.ai/http://www.heartodex.com/en/${remotePath}/`;
     const content = await fetchText(proxyUrl, { attempts: 2, timeout: 45000 });
     return { content, format: 'markdown' };
