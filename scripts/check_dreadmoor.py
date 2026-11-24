@@ -31,7 +31,7 @@ for page in pages:
     assert soup.select_one('link[rel="canonical"]')['href'] == f'https://heartopia.life/dreadmoor/{page["slug"]}/'
     assert text.count('ads-2368.js') == 1
     assert text.count("createAd('heartopia_") == 6
-    assert text.count('umami-nine-rust.vercel.app/script.js') == 1
+    assert text.count('stats.megabonk.org/script.js') == 1
     assert soup.select_one('figure img')
     for link in soup.select('a[href]'):
         check_link(path, link['href'])

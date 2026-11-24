@@ -12,7 +12,7 @@
     "about/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -45,7 +45,7 @@
     "beginner-guide/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -85,7 +85,7 @@
     "characters/eric/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -124,7 +124,7 @@
     "characters/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -164,7 +164,7 @@
     "codes/expired/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -213,7 +213,7 @@
     "codes/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -261,7 +261,7 @@
     "community/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -301,7 +301,7 @@
     "contact/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -334,7 +334,7 @@
     "database/birds/atlantic-puffin/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -378,7 +378,7 @@
     "database/birds/azores-bullfinch/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -422,7 +422,7 @@
     "database/birds/black-stork/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -466,7 +466,7 @@
     "database/birds/blue-footed-booby/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -510,7 +510,7 @@
     "database/birds/double-barred-finch/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -554,7 +554,7 @@
     "database/birds/european-robin/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -598,7 +598,7 @@
     "database/birds/golden-oriole/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -642,7 +642,7 @@
     "database/birds/green-peafowl/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -686,7 +686,7 @@
     "database/birds/hawfinch/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -730,7 +730,7 @@
     "database/birds/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -782,7 +782,7 @@
     "database/birds/snowy-owl/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -826,7 +826,7 @@
     "database/birds/spectacled-owl/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -870,7 +870,7 @@
     "database/birds/winter-mandarin-duck/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -914,7 +914,7 @@
     "database/birds/winter-smew/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -962,7 +962,7 @@
     "database/birds/wonga-pigeon/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -1006,7 +1006,7 @@
     "database/cats/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -1046,7 +1046,7 @@
     "database/changelog/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -1086,7 +1086,7 @@
     "database/collectibles/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -1130,7 +1130,7 @@
     "database/crops/corn/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -1170,7 +1170,7 @@
     "database/crops/grape/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -1210,7 +1210,7 @@
     "database/crops/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -1258,7 +1258,7 @@
     "database/crops/wheat/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -1298,7 +1298,7 @@
     "database/dogs/dalmatian/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -1337,7 +1337,7 @@
     "database/dogs/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -1377,7 +1377,7 @@
     "database/dogs/sled-dog/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -1417,7 +1417,7 @@
     "database/fish-prices/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -1457,7 +1457,7 @@
     "database/fish/anglerfish/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -1501,7 +1501,7 @@
     "database/fish/bluefin-tuna/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -1545,7 +1545,7 @@
     "database/fish/butterfly-koi/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -1588,7 +1588,7 @@
     "database/fish/european-mudminnow/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -1631,7 +1631,7 @@
     "database/fish/giant-oarfish/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -1675,7 +1675,7 @@
     "database/fish/green-sea-turtle/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -1719,7 +1719,7 @@
     "database/fish/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -1775,7 +1775,7 @@
     "database/fish/king-crab/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -1819,7 +1819,7 @@
     "database/fish/legendary-koi/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -1863,7 +1863,7 @@
     "database/fish/mahi-mahi/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -1907,7 +1907,7 @@
     "database/fish/rainbow-fish/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -1951,7 +1951,7 @@
     "database/fish/sardine/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -1995,7 +1995,7 @@
     "database/fish/seahorse/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -2039,7 +2039,7 @@
     "database/fish/smooth-hammerhead/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -2083,7 +2083,7 @@
     "database/fish/swordfish/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -2127,7 +2127,7 @@
     "database/fish/tilapia/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -2171,7 +2171,7 @@
     "database/fish/wels-catfish/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -2214,7 +2214,7 @@
     "database/fish/whale-shark/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -2258,7 +2258,7 @@
     "database/flowers/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -2302,7 +2302,7 @@
     "database/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -2341,7 +2341,7 @@
     "database/ingredients/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -2389,7 +2389,7 @@
     "database/insects/atlas-beetle/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -2429,7 +2429,7 @@
     "database/insects/bagworm-moth/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -2469,7 +2469,7 @@
     "database/insects/beautiful-leopard/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -2509,7 +2509,7 @@
     "database/insects/chrysochraon-dispar/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -2549,7 +2549,7 @@
     "database/insects/common-brimstone/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -2589,7 +2589,7 @@
     "database/insects/elegant-flower-beetle/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -2629,7 +2629,7 @@
     "database/insects/fire-colored-beetle/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -2669,7 +2669,7 @@
     "database/insects/glasswing-butterfly/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -2709,7 +2709,7 @@
     "database/insects/golden-stag-beetle/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -2749,7 +2749,7 @@
     "database/insects/goliath-beetle/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -2789,7 +2789,7 @@
     "database/insects/green-metalwing/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -2829,7 +2829,7 @@
     "database/insects/hercules-beetle/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -2869,7 +2869,7 @@
     "database/insects/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -2917,7 +2917,7 @@
     "database/insects/morpho-helena/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -2957,7 +2957,7 @@
     "database/insects/orchid-mantis/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -2997,7 +2997,7 @@
     "database/insects/purple-emperor/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -3037,7 +3037,7 @@
     "database/insects/purple-spotted-swallowtail/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -3077,7 +3077,7 @@
     "database/insects/queen-alexandras-birdwing/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -3117,7 +3117,7 @@
     "database/insects/rajah-brookes-birdwing/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -3157,7 +3157,7 @@
     "database/insects/scarce-morpho/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -3197,7 +3197,7 @@
     "database/insects/sulkowskys-morpho/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -3237,7 +3237,7 @@
     "database/insects/sunset-morpho/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -3277,7 +3277,7 @@
     "database/items/black-truffle/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -3317,7 +3317,7 @@
     "database/items/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -3365,7 +3365,7 @@
     "database/materials/fluorite/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -3408,7 +3408,7 @@
     "database/materials/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -3456,7 +3456,7 @@
     "database/materials/mushrooms/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -3499,7 +3499,7 @@
     "database/materials/roaming-oak-timber/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -3542,7 +3542,7 @@
     "database/pets/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -3582,7 +3582,7 @@
     "database/recipe-prices/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -3622,7 +3622,7 @@
     "database/recipes/grass-cake/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -3662,7 +3662,7 @@
     "database/recipes/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -3706,7 +3706,7 @@
     "database/recipes/onsen-egg/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -3746,7 +3746,7 @@
     "database/recipes/pancake/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -3786,7 +3786,7 @@
     "database/recipes/steamed-king-crab/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -3826,7 +3826,7 @@
     "database/wildlife/alpaca/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -3870,7 +3870,7 @@
     "database/wildlife/capybara/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -3914,7 +3914,7 @@
     "database/wildlife/deer/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -3958,7 +3958,7 @@
     "database/wildlife/dolphin/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -4002,7 +4002,7 @@
     "database/wildlife/ferret/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -4046,7 +4046,7 @@
     "database/wildlife/fox/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -4090,7 +4090,7 @@
     "database/wildlife/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -4142,7 +4142,7 @@
     "database/wildlife/panda/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -4186,7 +4186,7 @@
     "database/wildlife/sea-otter/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -4230,7 +4230,7 @@
     "database/wildlife/winter-bird/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -4274,7 +4274,7 @@
     "download/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -4314,7 +4314,7 @@
     "download/mac/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -4354,7 +4354,7 @@
     "events/autumn-moon-treasury/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -4394,7 +4394,7 @@
     "events/bait-insects/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -4434,7 +4434,7 @@
     "events/burger-bliss/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -4474,7 +4474,7 @@
     "events/call-of-whales/bubble-locations/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -4514,7 +4514,7 @@
     "events/call-of-whales/fashionwave-memory-journal/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -4554,7 +4554,7 @@
     "events/call-of-whales/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -4598,7 +4598,7 @@
     "events/call-of-whales/sunburn/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -4638,7 +4638,7 @@
     "events/dave-the-diver/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -4678,7 +4678,7 @@
     "events/dreamlight-cinematics/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -4718,7 +4718,7 @@
     "events/echo-of-ancients/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -4758,7 +4758,7 @@
     "events/frostspore-butterflies/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -4802,7 +4802,7 @@
     "events/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -4842,7 +4842,7 @@
     "events/maltese/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -4882,7 +4882,7 @@
     "events/midsummer-rhyme/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -4922,7 +4922,7 @@
     "events/modular-streets/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -4962,7 +4962,7 @@
     "events/my-little-pony-collaboration/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -5002,7 +5002,7 @@
     "events/nest-of-hundreds/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -5042,7 +5042,7 @@
     "events/party-festival-september-2026/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -5082,7 +5082,7 @@
     "events/pleasant-goat-and-big-big-wolf/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -5122,7 +5122,7 @@
     "events/qixi-fair/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -5162,7 +5162,7 @@
     "events/rainbow-verse/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -5202,7 +5202,7 @@
     "events/sanrio-characters-collaboration/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -5242,7 +5242,7 @@
     "events/sea-fishing/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -5282,7 +5282,7 @@
     "events/seasons/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -5322,7 +5322,7 @@
     "events/september-23-update-preview/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -5362,7 +5362,7 @@
     "events/tea-party/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -5402,7 +5402,7 @@
     "events/winter-2026/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -5442,7 +5442,7 @@
     "faq/ai-controversy/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -5482,7 +5482,7 @@
     "faq/buy-plot/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -5521,7 +5521,7 @@
     "faq/change-hair/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -5561,7 +5561,7 @@
     "faq/gallery/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -5600,7 +5600,7 @@
     "faq/global-vs-na-server-region/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -5640,7 +5640,7 @@
     "faq/platforms/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -5680,7 +5680,7 @@
     "faq/remove-weeds-in-inventory/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -5719,7 +5719,7 @@
     "faq/watering-crops/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -5758,7 +5758,7 @@
     "gameplay/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -5798,7 +5798,7 @@
     "gameplay/what-is-heartopia/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -5837,7 +5837,7 @@
     "guides/achievements/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -5881,7 +5881,7 @@
     "guides/animal-troughs/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -5921,7 +5921,7 @@
     "guides/aurora/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -5961,7 +5961,7 @@
     "guides/badges/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -6001,7 +6001,7 @@
     "guides/beetles/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -6041,7 +6041,7 @@
     "guides/best-crops/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -6081,7 +6081,7 @@
     "guides/best-food-to-sell/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -6121,7 +6121,7 @@
     "guides/bird-locations/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -6161,7 +6161,7 @@
     "guides/bubble-locations/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -6201,7 +6201,7 @@
     "guides/build-ideas/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -6240,7 +6240,7 @@
     "guides/building/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -6280,7 +6280,7 @@
     "guides/buying-plot/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -6320,7 +6320,7 @@
     "guides/call-of-whales-cooking/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -6360,7 +6360,7 @@
     "guides/cheats-trainer-truth/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -6399,7 +6399,7 @@
     "guides/controller-support/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -6439,7 +6439,7 @@
     "guides/cooking-profits/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -6479,7 +6479,7 @@
     "guides/cooking/green-roll-cake/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -6519,7 +6519,7 @@
     "guides/cooking/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -6559,7 +6559,7 @@
     "guides/daily-routine/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -6599,7 +6599,7 @@
     "guides/decoration/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -6639,7 +6639,7 @@
     "guides/egg-locations/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -6683,7 +6683,7 @@
     "guides/fish-locations/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -6723,7 +6723,7 @@
     "guides/fishing-locations/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -6763,7 +6763,7 @@
     "guides/fishing-spots/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -6803,7 +6803,7 @@
     "guides/flower-crossbreeding/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -6843,7 +6843,7 @@
     "guides/friends-invites-gifting/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -6883,7 +6883,7 @@
     "guides/frostspire-infection/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -6923,7 +6923,7 @@
     "guides/gacha/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -6967,7 +6967,7 @@
     "guides/gallery/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -7007,7 +7007,7 @@
     "guides/hidden-achievements/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -7047,7 +7047,7 @@
     "guides/highland-poppy/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -7087,7 +7087,7 @@
     "guides/house-ideas/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -7127,7 +7127,7 @@
     "guides/house-ideas/japanese/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -7167,7 +7167,7 @@
     "guides/house-ideas/modern/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -7207,7 +7207,7 @@
     "guides/house-layouts/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -7247,7 +7247,7 @@
     "guides/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -7287,7 +7287,7 @@
     "guides/insects/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -7327,7 +7327,7 @@
     "guides/ka-ching/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -7367,7 +7367,7 @@
     "guides/kitchen-upgrade/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -7407,7 +7407,7 @@
     "guides/leveling-gardening/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -7446,7 +7446,7 @@
     "guides/map/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -7494,7 +7494,7 @@
     "guides/meteor-shower/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -7533,7 +7533,7 @@
     "guides/money-making/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -7572,7 +7572,7 @@
     "guides/npc-locations/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -7612,7 +7612,7 @@
     "guides/painting-tools/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -7656,7 +7656,7 @@
     "guides/pet-favorite-food/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -7696,7 +7696,7 @@
     "guides/pet-personalities/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -7736,7 +7736,7 @@
     "guides/picasso/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -7776,7 +7776,7 @@
     "guides/please-water-the-flowers-sign/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -7816,7 +7816,7 @@
     "guides/quests/onsen-egg-promise/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -7855,7 +7855,7 @@
     "guides/quests/view-gallery/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -7894,7 +7894,7 @@
     "guides/rare-fish/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -7934,7 +7934,7 @@
     "guides/rare-timber/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -7974,7 +7974,7 @@
     "guides/rarest-pets/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8014,7 +8014,7 @@
     "guides/seamount-underwater-home/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8058,7 +8058,7 @@
     "guides/snow-sculpting/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8097,7 +8097,7 @@
     "guides/snowman-craft-furniture/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8137,7 +8137,7 @@
     "guides/take-photo/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8177,7 +8177,7 @@
     "guides/titles/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8217,7 +8217,7 @@
     "guides/top-up/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8261,7 +8261,7 @@
     "guides/trading/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8301,7 +8301,7 @@
     "guides/workbench-in-town/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8341,7 +8341,7 @@
     "hobbies/birdwatching/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8381,7 +8381,7 @@
     "hobbies/cat-care/favorite-food/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8420,7 +8420,7 @@
     "hobbies/cat-care/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8460,7 +8460,7 @@
     "hobbies/cooking/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8500,7 +8500,7 @@
     "hobbies/dog-care/breeds/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8540,7 +8540,7 @@
     "hobbies/dog-care/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8580,7 +8580,7 @@
     "hobbies/fishing/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8620,7 +8620,7 @@
     "hobbies/gardening/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8660,7 +8660,7 @@
     "hobbies/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8700,7 +8700,7 @@
     "hobbies/insect-catching/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8740,7 +8740,7 @@
     "hobbies/instruments/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8780,7 +8780,7 @@
     "hobbies/ocean-cleanup/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8820,7 +8820,7 @@
     "hobbies/snow-sculpting/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8860,7 +8860,7 @@
     "id/codes/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8889,7 +8889,7 @@
     "id/download/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8914,7 +8914,7 @@
     "id/events/autumn-moon-treasury/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8939,7 +8939,7 @@
     "id/events/burger-bliss/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8964,7 +8964,7 @@
     "id/events/call-of-whales/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -8993,7 +8993,7 @@
     "id/events/dave-the-diver/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9018,7 +9018,7 @@
     "id/events/echo-of-ancients/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9043,7 +9043,7 @@
     "id/events/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9068,7 +9068,7 @@
     "id/events/party-festival-september-2026/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9093,7 +9093,7 @@
     "id/events/qixi-fair/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9118,7 +9118,7 @@
     "id/events/sanrio-characters-collaboration/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9143,7 +9143,7 @@
     "id/events/september-23-update-preview/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9168,7 +9168,7 @@
     "id/faq/safety/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9193,7 +9193,7 @@
     "id/guides/gacha/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9226,7 +9226,7 @@
     "id/guides/top-up/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9270,7 +9270,7 @@
     "index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9322,7 +9322,7 @@
     "items/inflatable-insect-attractor/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9362,7 +9362,7 @@
     "ja/codes/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9402,7 +9402,7 @@
     "ja/database/recipes/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9442,7 +9442,7 @@
     "ja/database/wildlife/dolphin/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9482,7 +9482,7 @@
     "ja/events/autumn-moon-treasury/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9507,7 +9507,7 @@
     "ja/events/burger-bliss/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9532,7 +9532,7 @@
     "ja/events/call-of-whales/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9576,7 +9576,7 @@
     "ja/events/dave-the-diver/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9601,7 +9601,7 @@
     "ja/events/echo-of-ancients/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9626,7 +9626,7 @@
     "ja/events/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9651,7 +9651,7 @@
     "ja/events/party-festival-september-2026/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9676,7 +9676,7 @@
     "ja/events/qixi-fair/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9701,7 +9701,7 @@
     "ja/events/sanrio-characters-collaboration/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9726,7 +9726,7 @@
     "ja/events/september-23-update-preview/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9751,7 +9751,7 @@
     "ja/faq/safety/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9791,7 +9791,7 @@
     "ja/guides/gacha/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9831,7 +9831,7 @@
     "ja/guides/top-up/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9875,7 +9875,7 @@
     "ko/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9915,7 +9915,7 @@
     "locations/crater-lake/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9954,7 +9954,7 @@
     "locations/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -9998,7 +9998,7 @@
     "locations/meadow-lake/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -10038,7 +10038,7 @@
     "locations/naniwa/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -10077,7 +10077,7 @@
     "locations/petal-rain/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -10116,7 +10116,7 @@
     "locations/prairie-lake/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -10155,7 +10155,7 @@
     "locations/river-bank/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -10195,7 +10195,7 @@
     "locations/secret-pond/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -10234,7 +10234,7 @@
     "locations/under-the-sea/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -10273,7 +10273,7 @@
     "npcs/atara/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -10313,7 +10313,7 @@
     "npcs/bailey-j/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -10353,7 +10353,7 @@
     "npcs/bill/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -10393,7 +10393,7 @@
     "npcs/blanc/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -10433,7 +10433,7 @@
     "npcs/doris/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -10473,7 +10473,7 @@
     "npcs/dorothee/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -10513,7 +10513,7 @@
     "npcs/eric/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -10553,7 +10553,7 @@
     "npcs/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -10597,7 +10597,7 @@
     "npcs/ka-ching/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -10637,7 +10637,7 @@
     "npcs/massimo/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -10677,7 +10677,7 @@
     "npcs/mrs-joan/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -10717,7 +10717,7 @@
     "npcs/naniwa/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -10757,7 +10757,7 @@
     "npcs/vanya/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -10797,7 +10797,7 @@
     "npcs/vernie/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -10836,7 +10836,7 @@
     "npcs/will/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -10875,7 +10875,7 @@
     "privacy/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -10904,7 +10904,7 @@
     "progression/dg-levels/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -10944,7 +10944,7 @@
     "progression/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -10983,7 +10983,7 @@
     "progression/money-making/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11023,7 +11023,7 @@
     "pt-br/codes/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11052,7 +11052,7 @@
     "pt-br/download/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11077,7 +11077,7 @@
     "pt-br/events/autumn-moon-treasury/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11102,7 +11102,7 @@
     "pt-br/events/burger-bliss/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11127,7 +11127,7 @@
     "pt-br/events/call-of-whales/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11156,7 +11156,7 @@
     "pt-br/events/dave-the-diver/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11181,7 +11181,7 @@
     "pt-br/events/echo-of-ancients/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11206,7 +11206,7 @@
     "pt-br/events/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11231,7 +11231,7 @@
     "pt-br/events/party-festival-september-2026/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11256,7 +11256,7 @@
     "pt-br/events/qixi-fair/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11281,7 +11281,7 @@
     "pt-br/events/sanrio-characters-collaboration/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11306,7 +11306,7 @@
     "pt-br/events/september-23-update-preview/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11331,7 +11331,7 @@
     "pt-br/faq/safety/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11356,7 +11356,7 @@
     "pt-br/guides/gacha/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11389,7 +11389,7 @@
     "pt-br/guides/top-up/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11433,7 +11433,7 @@
     "th/database/food-prices/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11473,7 +11473,7 @@
     "th/guides/fishing-locations/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11513,7 +11513,7 @@
     "th/guides/rare-timber/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11553,7 +11553,7 @@
     "th/guides/top-up/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11597,7 +11597,7 @@
     "tier-lists/profitable-food/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11637,7 +11637,7 @@
     "tools/crop-planner/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11680,7 +11680,7 @@
     "tools/daily-tasks/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11728,7 +11728,7 @@
     "tools/fish-tracker/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11776,7 +11776,7 @@
     "tools/friendship-tracker/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11820,7 +11820,7 @@
     "tools/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11859,7 +11859,7 @@
     "tools/my-progress/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11910,7 +11910,7 @@
     "tools/recipe-calculator/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11949,7 +11949,7 @@
     "tools/search/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -11992,7 +11992,7 @@
     "troubleshooting/fail-to-acquire-resource-hotfix-configuration/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12032,7 +12032,7 @@
     "troubleshooting/login-glitch-overlapping/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12072,7 +12072,7 @@
     "zh-tw/codes/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12112,7 +12112,7 @@
     "zh-tw/database/recipes/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12152,7 +12152,7 @@
     "zh-tw/events/autumn-moon-treasury/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12177,7 +12177,7 @@
     "zh-tw/events/burger-bliss/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12202,7 +12202,7 @@
     "zh-tw/events/call-of-whales/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12246,7 +12246,7 @@
     "zh-tw/events/dave-the-diver/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12271,7 +12271,7 @@
     "zh-tw/events/echo-of-ancients/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12296,7 +12296,7 @@
     "zh-tw/events/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12321,7 +12321,7 @@
     "zh-tw/events/party-festival-september-2026/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12346,7 +12346,7 @@
     "zh-tw/events/qixi-fair/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12371,7 +12371,7 @@
     "zh-tw/events/sanrio-characters-collaboration/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12396,7 +12396,7 @@
     "zh-tw/events/september-23-update-preview/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12421,7 +12421,7 @@
     "zh-tw/guides/top-up/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12465,7 +12465,7 @@
     "loftia/fishing/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12497,7 +12497,7 @@
     "loftia/materials/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12529,7 +12529,7 @@
     "loftia/pets/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12561,7 +12561,7 @@
     "loftia/pineapple/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12593,7 +12593,7 @@
     "loftia/rail-boots/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12625,7 +12625,7 @@
     "loftia/scrambled-coordinates/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12657,7 +12657,7 @@
     "loftia/secret-lake/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12689,7 +12689,7 @@
     "loftia/steam-deck/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12721,7 +12721,7 @@
     "loftia/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12753,7 +12753,7 @@
     "loftia/buying-checklist/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12785,7 +12785,7 @@
     "petit-planet/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12817,7 +12817,7 @@
     "petit-planet/monetization/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12849,7 +12849,7 @@
     "404.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         }
       ],
@@ -12858,7 +12858,7 @@
     "database/recipes/chocolate-sauce/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12898,7 +12898,7 @@
     "guides/spider-lily/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12938,7 +12938,7 @@
     "guides/games-like-heartopia/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -12978,7 +12978,7 @@
     "th/guides/house-ideas/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -13018,7 +13018,7 @@
     "guides/trekking-pole/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -13058,7 +13058,7 @@
     "guides/shops/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -13098,7 +13098,7 @@
     "faq/player-count/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -13138,7 +13138,7 @@
     "guides/updates/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -13178,7 +13178,7 @@
     "ja/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -13218,7 +13218,7 @@
     "zh-tw/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -13258,7 +13258,7 @@
     "zh-tw/events/my-little-pony-collaboration/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -13298,7 +13298,7 @@
     "dreadmoor/bloodgill/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -13330,7 +13330,7 @@
     "dreadmoor/map/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -13362,7 +13362,7 @@
     "dreadmoor/platforms/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
@@ -13394,7 +13394,7 @@
     "dreadmoor/index.html": {
       "scripts": [
         {
-          "attributes": "defer src=\"https://umami-nine-rust.vercel.app/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
+          "attributes": "defer src=\"https://stats.megabonk.org/script.js\" data-website-id=\"c26db431-b7f2-41af-8453-25f9017d12ff\"",
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
