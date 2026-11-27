@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-11-26",
+  "lastChecked": "2026-11-27",
   "sources": [
     "https://tryhardguides.com/heartopia-codes/",
     "https://heartopia-plus.com/giftcode/",
@@ -15,7 +15,7 @@
       "expires": "No posted expiry",
       "status": "new",
       "firstSeen": "2026-10-05",
-      "lastSeen": "2026-11-26",
+      "lastSeen": "2026-11-27",
       "sourceCount": 2,
       "sources": [
         "https://heartopia-plus.com/giftcode/",
@@ -32,7 +32,7 @@
       "expires": "No posted expiry",
       "status": "new",
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-26",
+      "lastSeen": "2026-11-27",
       "sourceCount": 2,
       "sources": [
         "https://heartopia-plus.com/giftcode/",
@@ -48,7 +48,7 @@
       "expires": "No posted expiry",
       "status": "new",
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-11-26",
+      "lastSeen": "2026-11-27",
       "sourceCount": 2,
       "sources": [
         "https://tryhardguides.com/heartopia-codes/",
@@ -66,7 +66,7 @@
       "expires": "No posted expiry",
       "status": "new",
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-11-26",
+      "lastSeen": "2026-11-27",
       "sourceCount": 2,
       "sources": [
         "https://tryhardguides.com/heartopia-codes/",
@@ -84,7 +84,7 @@
       "expires": "No posted expiry",
       "status": "new",
       "firstSeen": "2026-10-26",
-      "lastSeen": "2026-11-26",
+      "lastSeen": "2026-11-27",
       "sourceCount": 2,
       "sources": [
         "https://heartopia-plus.com/giftcode/",
@@ -101,7 +101,7 @@
       "expires": "No posted expiry",
       "status": "new",
       "firstSeen": "2026-11-01",
-      "lastSeen": "2026-11-26",
+      "lastSeen": "2026-11-27",
       "sourceCount": 2,
       "sources": [
         "https://heartopia-plus.com/giftcode/",
@@ -118,7 +118,7 @@
       "expires": "No posted expiry",
       "status": "new",
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-26",
+      "lastSeen": "2026-11-27",
       "sourceCount": 3,
       "sources": [
         "https://heartopia-plus.com/giftcode/",
@@ -135,7 +135,7 @@
       "expires": "No posted expiry",
       "status": "new",
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-26",
+      "lastSeen": "2026-11-27",
       "sourceCount": 3,
       "sources": [
         "https://heartopia-plus.com/giftcode/",
@@ -152,7 +152,7 @@
       "expires": "No posted expiry",
       "status": "new",
       "firstSeen": "2026-11-16",
-      "lastSeen": "2026-11-26",
+      "lastSeen": "2026-11-27",
       "sourceCount": 3,
       "sources": [
         "https://heartopia-plus.com/giftcode/",
@@ -169,7 +169,7 @@
       "expires": "No posted expiry",
       "status": "new",
       "firstSeen": "2026-11-19",
-      "lastSeen": "2026-11-26",
+      "lastSeen": "2026-11-27",
       "sourceCount": 3,
       "sources": [
         "https://heartopia-plus.com/giftcode/",
@@ -1491,7 +1491,7 @@
       "contexts": [
         "a5n7k2q8r4m1"
       ],
-      "lastSeen": "2026-11-26",
+      "lastSeen": "2026-11-27",
       "sourceCount": 1,
       "reason": "insufficient_independent_evidence"
     },
@@ -1506,9 +1506,24 @@
       "contexts": [
         "GRATEFUL11"
       ],
-      "lastSeen": "2026-11-26",
+      "lastSeen": "2026-11-27",
       "sourceCount": 1,
       "reason": "insufficient_independent_evidence"
+    },
+    {
+      "code": "stone1126",
+      "reward": "Unknown",
+      "firstSeen": "2026-11-27",
+      "status": "possibly_expired",
+      "sources": [
+        "https://sticweb.tw/%E5%BF%83%E5%8B%95%E5%B0%8F%E9%8E%AE-%E5%85%8C%E6%8F%9B%E7%A2%BC/"
+      ],
+      "contexts": [
+        "Copyright © 2026 網雲科技(統一編號 82351448)|宜蘭縣冬山鄉柯林村境安一路156巷7號四樓|官方 LINE @stone1126"
+      ],
+      "lastSeen": "2026-11-27",
+      "sourceCount": 0,
+      "reason": "conflicting_or_expired_evidence"
     },
     {
       "code": "Update6",
@@ -1541,7 +1556,7 @@
     }
   ],
   "automation": {
-    "lastRun": "2026-11-26T17:43:37.859Z",
+    "lastRun": "2026-11-27T17:28:19.118Z",
     "successfulIndependentSources": 4,
     "policy": "Official announcement, or two independent current-source confirmations; conflicting candidates are withheld."
   }
